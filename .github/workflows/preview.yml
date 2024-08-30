@@ -1,0 +1,19 @@
+name: Preview
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Build Docker image
+      run: |
+        docker build -t stage6_se .
+
+    - name: Run Docker container
+      run: |
+        docker run -it -v ./_site:/src/_build/html stage6_se
