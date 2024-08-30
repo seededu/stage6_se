@@ -1,15 +1,29 @@
 # Software Engineering Stage 6
 
-## Setup
+## Local Setup
 
 Run `setup.sh`
 
-## Generate html
+### Generate html
 
-### Option 1: Generate static docs
+#### Option 1: Generate static docs
 
 `make html`
 
-### Option 2: Live preview of changes
+#### Option 2: Live preview of changes
 
 `make livehtml`
+
+## Docker
+
+### Build container
+
+`docker build -t stage6_se .`
+
+### Run container
+
+`docker run -it stage6_se`
+
+## Testing Github Workflows and Actions
+
+`act push`

@@ -6,14 +6,45 @@ on:
       - main
 
 jobs:
-  build-and-run:
+  build:
     runs-on: ubuntu-latest
 
     steps:
+
+    - name: Checkout
+      uses: actions/checkout@v4
+
     - name: Build Docker image
       run: |
         docker build -t stage6_se .
 
-    - name: Run Docker container
+    - name: Build HTML
       run: |
+        mkdir _site
         docker run -it -v ./_site:/src/_build/html stage6_se
+
+    - name: Upload Artifact
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: ./_site
+
+  deploy:
+    # Add a dependency to the build job
+    needs: build
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
