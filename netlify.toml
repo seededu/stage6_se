@@ -1,3 +1,0 @@
-[build]
-  publish = "_build/html"
-  command = "docker build -t stage6_se ."

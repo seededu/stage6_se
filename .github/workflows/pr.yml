@@ -1,0 +1,29 @@
+name: Netlify PR Preview
+
+on:
+  pull_request:
+    types: ['opened', 'edited', 'synchronize']
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Build Docker image
+      run: |
+        docker build -t stage6_se .
+
+    - name: Build HTML
+      run: |
+        mkdir _site
+        docker run -v ./_site:/src/_build/html stage6_se
+
+    - uses: jsmrcaga/action-netlify-deploy@v2.0.0
+      with:
+        build_directory: _site
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
