@@ -19,8 +19,8 @@ jobs:
 
     - name: Build HTML
       run: |
-        mkdir build
-        docker run -v ./build:/src/_build/html stage6_se
+        mkdir /github/home/build
+        docker run -v ./github/home/build:/src/_build/html stage6_se
 
     - name: Deploy Netlify
       uses: danakim/gh-action-deploy-netlify@master
