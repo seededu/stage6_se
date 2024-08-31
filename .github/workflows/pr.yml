@@ -19,7 +19,7 @@ jobs:
 
     - name: Build HTML
       run: |
-        mkdir /github/home/build
+        mkdir -p /github/home/build
         docker run -v /github/home/build:/src/_build/html stage6_se
 
     - name: Deploy Netlify
