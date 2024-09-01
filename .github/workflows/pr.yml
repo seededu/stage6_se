@@ -37,11 +37,11 @@ jobs:
     #   run: |
     #     netlify deploy --dir ./_site --site=${{ secrets.NETLIFY_SITE_ID }} --auth=${{ secrets.NETLIFY_AUTH_TOKEN }} --timeout=600 --message "Deployed on $(date)"
 
-      - name: deploy to preview mode
-        uses: thundermiracle/netlify-deploy@v3
-        with:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN}}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID}}
-          deploy-dir: "./_site"
-          production: false
-          node: 14
+    - name: deploy to preview mode
+      uses: thundermiracle/netlify-deploy@v3
+      with:
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN}}
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID}}
+        deploy-dir: "./_site"
+        production: false
+        node: 14
