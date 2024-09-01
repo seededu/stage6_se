@@ -9,20 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      actions: none
-      attestations: none
-      checks: none
       contents: read
-      deployments: none
-      id-token: none
-      issues: none
-      discussions: none
-      packages: none
-      pages: none
       pull-requests: write
-      repository-projects: none
-      security-events: none
-      statuses: none
 
     steps:
     - name: Checkout
