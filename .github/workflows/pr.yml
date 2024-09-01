@@ -4,21 +4,13 @@ on:
   pull_request:
     types: ['opened', 'edited', 'synchronize']
 
-permissions: write-all
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    outputs:
-      NETLIFY_PREVIEW_URL:
-        description: "preview URL"
-        value: ${{ steps.deploy_preview.outputs.NETLIFY_PREVIEW_URL }}
-
-
+    permissins: write-all
 
     steps:
-
     - name: Checkout
       uses: actions/checkout@v4
 
