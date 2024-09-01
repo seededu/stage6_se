@@ -44,11 +44,9 @@ jobs:
     - name: Install the Netlify CLI
       run: npm install netlify-cli -g
 
-    # - name: Deploy to Netlify
-    #   run: |
-    #     netlify deploy --dir ./_site --site=${{ secrets.NETLIFY_SITE_ID }} --auth=${{ secrets.NETLIFY_AUTH_TOKEN }} --timeout=600 --message "Deployed on $(date)"
+    # Following steps based on https://github.com/thundermiracle/netlify-deploy/tree/main
 
-    - name: deploy to preview mode
+    - name: Deploy Preview to Netlify
       id: deploy_preview
       shell: bash
       run: |
@@ -60,8 +58,7 @@ jobs:
         echo "::set-output name=NETLIFY_PREVIEW_URL::$NETLIFY_PREVIEW_URL"
         echo "::set-output name=NETLIFY_LOGS_URL::$NETLIFY_LOGS_URL"
 
-
-    - name: find the comment
+    - name: Find the Netlify Comment
       uses: peter-evans/find-comment@v2
       id: fc
       with:
@@ -69,7 +66,7 @@ jobs:
         comment-author: 'github-actions[bot]'
         body-includes: Netlify Preview Deployment Information
 
-    - name: create or update comment
+    - name: Create or Update Netlify Comment
       uses: peter-evans/create-or-update-comment@v2
       with:
         comment-id: ${{ steps.fc.outputs.comment-id }}

@@ -8,7 +8,7 @@
 
 project = 'stage6_se'
 copyright = '2024, Alison Wong, Stephen Tierney'
-author = 'TEST Alison Wong, Stephen Tierney'
+author = 'Alison Wong, Stephen Tierney'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
