@@ -4,6 +4,7 @@ on:
   pull_request:
     types: ['opened', 'edited', 'synchronize']
 
+permissions: write-all
 
 jobs:
   deploy:
@@ -14,7 +15,7 @@ jobs:
         description: "preview URL"
         value: ${{ steps.deploy_preview.outputs.NETLIFY_PREVIEW_URL }}
 
-    permissions: write-all
+
 
     steps:
 
