@@ -1,4 +1,4 @@
-name: Preview
+name: Preview Main
 
 on:
   push:
