@@ -26,10 +26,6 @@ jobs:
         mkdir _site
         docker run -v ./_site:/src/_build/html stage6_se
 
-    - name: List site files
-      run: |
-        ls -all ./_site
-
     - name: Install the Netlify CLI
       run: npm install netlify-cli -g
 
@@ -38,10 +34,33 @@ jobs:
     #     netlify deploy --dir ./_site --site=${{ secrets.NETLIFY_SITE_ID }} --auth=${{ secrets.NETLIFY_AUTH_TOKEN }} --timeout=600 --message "Deployed on $(date)"
 
     - name: deploy to preview mode
-      uses: thundermiracle/netlify-deploy@v3
+      id: deploy_preview
+      shell: bash
+      run: |
+        COMMAND="netlify deploy --dir ./_site --site=${{ secrets.NETLIFY_SITE_ID }} --auth=${{ secrets.NETLIFY_AUTH_TOKEN }}"
+        OUTPUT=$(sh -c "$COMMAND")
+        NETLIFY_OUTPUT=$(echo "$OUTPUT")
+        NETLIFY_PREVIEW_URL=$(echo "$OUTPUT" | grep -Eo '(http|https)://[a-zA-Z0-9./?=_-]*(--)[a-zA-Z0-9./?=_-]*')
+        NETLIFY_LOGS_URL=$(echo "$OUTPUT" | grep -Eo '(http|https)://app.netlify.com/[a-zA-Z0-9./?=_-]*')
+        echo "::set-output name=NETLIFY_PREVIEW_URL::$NETLIFY_PREVIEW_URL"
+        echo "::set-output name=NETLIFY_LOGS_URL::$NETLIFY_LOGS_URL"
+
+
+    - name: find the comment
+      uses: peter-evans/find-comment@v2
+      id: fc
       with:
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN}}
-        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID}}
-        deploy-dir: "./_site"
-        production: false
-        node: 14
+        issue-number: ${{ github.event.pull_request.number }}
+        comment-author: 'github-actions[bot]'
+        body-includes: Netlify Preview Deployment Information
+
+    - name: create or update comment
+      uses: peter-evans/create-or-update-comment@v2
+      with:
+        comment-id: ${{ steps.fc.outputs.comment-id }}
+        issue-number: ${{ github.event.pull_request.number }}
+        body: |
+          Netlify Preview Deployment Information
+          - Log URL: ${{ steps.deploy_preview.outputs.NETLIFY_LOGS_URL }}
+          - Preview URL: ${{ steps.deploy_preview.outputs.NETLIFY_PREVIEW_URL }}
+        edit-mode: replace
