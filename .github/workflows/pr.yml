@@ -26,16 +26,13 @@ jobs:
         mkdir _site
         docker run -v ./_site:/src/_build/html stage6_se
 
+    - name: List site files
+      run: |
+        ls -all ./_site
+
     - name: Install the Netlify CLI
       run: npm install netlify-cli -g
 
     - name: Deploy to Netlify
       run: |
-        netlify deploy --dir _site --site=${{ secrets.NETLIFY_SITE_ID }} --auth=${{ secrets.NETLIFY_AUTH_TOKEN }} --timeout=600 --message "Deployed on $(date)"
-
-    # - name: Deploy Netlify
-    #   uses: danakim/gh-action-deploy-netlify@master
-    #   with:
-    #     AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-    #     SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-    #     DEPLOY_PROD: true
+        netlify deploy --dir ./_site --site=${{ secrets.NETLIFY_SITE_ID }} --auth=${{ secrets.NETLIFY_AUTH_TOKEN }} --timeout=600 --message "Deployed on $(date)"
