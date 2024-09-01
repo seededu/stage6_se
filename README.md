@@ -26,4 +26,10 @@ Run `setup.sh`
 
 ## Testing Github Workflows and Actions
 
+### Main branch
+
 `act push`
+
+### Pull requests
+
+act -s NETLIFY_SITE_ID={SECRET_SITE_ID} -s NETLIFY_AUTH_TOKEN=={SECRET_AUTH TOKEN} pull_request
