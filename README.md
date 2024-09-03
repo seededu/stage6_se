@@ -1,6 +1,6 @@
 # Software Engineering Stage 6
 
-[![View on Github Pages](https://github.com/seededu/stage6_se/actions/workflows/preview.yml/badge.svg)](https://github.com/seededu/stage6_se/actions/workflows/preview.yml)
+[![View on Github Pages](https://github.com/seededu/stage6_se/actions/workflows/preview.yml/badge.svg)](https://seededu.github.io/stage6_se/)
 
 ## Local Setup
 
