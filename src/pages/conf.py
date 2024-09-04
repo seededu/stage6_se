@@ -15,6 +15,7 @@ author = 'Alison Wong, Stephen Tierney'
 
 extensions = [
     'sphinx_exec_code',
+    'sphinx_copybutton',
 ]
 
 templates_path = ['_templates']
