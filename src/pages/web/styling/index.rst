@@ -1,4 +1,4 @@
-Hypertext
+Styling
 ====================
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor orci at 
@@ -13,9 +13,6 @@ rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
 .. toctree::
     :maxdepth: 2
 
-    hypertext
-    html_intro
-    html_tags
-    html_tags_common
+    css_intro
 
    

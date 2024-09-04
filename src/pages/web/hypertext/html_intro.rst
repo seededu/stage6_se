@@ -15,6 +15,7 @@ Below is an example of a simple HTML document.
 
 .. code-block:: html
     :caption: index.html
+    :linenos:
 
     <!DOCTYPE html>    
     <html>
@@ -76,79 +77,31 @@ standard sets rules for how HTML should be written. Software engineers must foll
 these rules to make sure their site looks and functions properly for everyone, no 
 matter what browser they're using.
 
-HTML Tags
----------
+HTML Document Structure
+-----------------------
 
-In HTML, tags are like labels that tell a web browser how to display different parts 
-of a webpage. Each tag is written inside angle brackets, like this: <tag>. Most tags 
-come in pairs with an opening tag, like <p>, and a closing tag, like </p>. The closing 
-tag is almost the same as the opening tag, but it has a forward slash / before the 
-name. Everything between the opening and closing tags is affected by them. For example, 
-the <p></p> tags are used to create a paragraph of text.
+Tags
+^^^^^^^^^^^^^^^^^^^
 
-Valid and Invalid Tags
-^^^^^^^^^^^^^^^^^^^^^^
+The main building block of HTML are tags, which define how to display different parts 
+of a webpage. Each tag is written inside angle brackets, like this: :html:`<tag>`.
+A HTML page is a hierarchy of tags, with tags nesting inside each other.
 
-Here's an example of a valid use of tags:
+Most  tags come in pairs with an opening tag, like :html:`<p>`, and a closing tag, like 
+:html:`</p>`. The closing  tag is almost the same as the opening tag, but it has a 
+forward slash / before the name. Everything between the opening and closing tags is 
+affected by them.
+
+Example of the paragraph, :html:`<p></p>`, tag:
 
 .. code-block:: html
 
     <p>This is a paragraph of text.</p>
 
 
-In this example, the tags :html:`<p>` and :html:`</p>` correctly wrap around the text, 
-creating a paragraph.
+.. hint::
 
-An invalid use of tags would be something like this:
-
-.. code-block:: html
-
-    <p>This is a paragraph of text.</div>
-
-Here, the opening tag :html:`<p>` and closing tag :html:`</div>` don't match, so the 
-browser won't understand how to properly display the content.
-
-Nesting Tags
-^^^^^^^^^^^^^^^^^^^^^^
-
-Tags can also be nested, meaning you can place one set of tags inside another. 
-For example, if you want to make a word bold within a paragraph, you can do this:
-
-.. code-block:: html
-
-    <p>This is a <strong>bold</strong> word in a paragraph.</p>
-
-This is valid because the :html:`<strong></strong>` tags are completely inside the 
-:html:`<p></p>` tags. But if you accidentally place the tags incorrectly, like this:
-
-.. code-block:: html
-
-    <p>This is a <strong>bold</p> word in a paragraph.</strong>
-
-It becomes invalid, because the tags overlap in a way that doesn't make sense to the 
-browser.
-
-Comments
-^^^^^^^^
-
-It is common programming practice to document or explain pieces of code using comments,
-which are lines in code that are ignored by the interpreter or compiler.
-
-HTML also supports comments 
-
-.. code-block:: html
-
-    <!--This is a single line comment -->
-
-    <!--
-        This is a multi-line comment.
-        Every line in this comment is ignored by the browser engine.
-        <p>Even valid HTML is ignored such as this paragraph!</p>
-    -->
-
-
-HTML Document Structure
------------------------
+   Further detail about tags can be found on :doc:`tags_html`.
 
 DOCTYPE declaration
 ^^^^^^^^^^^^^^^^^^^
@@ -218,6 +171,25 @@ Example:
     </body>
 
 
+Comments
+^^^^^^^^^^^^^^^^^^^
+
+It is common programming practice to document or explain pieces of code using comments,
+which are lines in code that are ignored by the interpreter or compiler.
+
+HTML also supports comments 
+
+.. code-block:: html
+
+    <!--This is a single line comment -->
+
+    <!--
+        This is a multi-line comment.
+        Every line in this comment is ignored by the browser engine.
+        <p>Even valid HTML is ignored such as this paragraph!</p>
+    -->
+
+
 
 A Complete Example
 -----------------------
@@ -230,6 +202,7 @@ A Complete Example
 
 .. code-block:: html
     :caption: index.html
+    :linenos:
 
     <!DOCTYPE html>    
     <html>
@@ -245,6 +218,11 @@ A Complete Example
             </ol>
         </body>
     </html>
+
+.. warning::
+
+    TODO: ADD IMAGE HERE DIAGRAMMING DOCUMENT STRUCTURE
+
 
 
 Glossary

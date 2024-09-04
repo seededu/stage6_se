@@ -46,7 +46,7 @@ Modern Usage
 
 Today, hypertext remains at the core of how we use the web. Hyperlinks, created using 
 HTML (HyperText Markup Language), connect billions of web pages, making it possible to 
-navigate the internet effortlessly. But the web has evolved far beyond simple hypertext 
+navigate the web effortlessly. But the web has evolved far beyond simple hypertext 
 links. Modern web technologies like CSS (for styling), JavaScript (for interactivity), 
 and frameworks like React and Angular have transformed web pages into dynamic 
 applications that can handle everything from streaming videos to online shopping.
