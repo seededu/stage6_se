@@ -27,6 +27,7 @@ easier to read and navigate.
 
 Common block elements include:
 
+* :html:`<div>` for generic divisions or sections of a page
 * :html:`<p>` for paragraphs
 * :html:`<h1>`, :html:`<h2>`, etc for headings
 * :html:`<ul>`, :html:`<ol>` for unordered and ordered lists

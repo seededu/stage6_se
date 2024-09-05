@@ -67,7 +67,10 @@ Nesting Tags
 -----------------------
 
 Non-void element tags support nesting, meaning you can place one set of tags inside 
-another. For example, if you want to make a word bold within a paragraph, you can do 
+another. We call a tag that encloses other tags a :term:`parent`, while the tags inside 
+it are the :term:`children`.
+
+For example, if you want to make a word bold within a paragraph, you can do 
 this:
 
 .. code-block:: html
@@ -75,10 +78,10 @@ this:
     <p>This is a <strong>bold</strong> word in a paragraph.</p>
 
 This is valid because the :html:`<strong></strong>` tags are contained within the 
-enclosing :term:`contents` of the :html:`<p></p>` tags.
+enclosing :term:`contents` of the :term:`parent` :html:`<p></p>` tags.
 
-Every end tag must be contained within the :term:`contents` of the same tag in which 
-the starting tag is contained.
+Every end tag must be contained within the :term:`contents` of the tag in which the 
+starting tag is contained.
 
 If you accidentally misnest the tags like this:
 
@@ -103,7 +106,7 @@ Key points:
 * attributes are not case sensitive, but lowercase is recommended
 * you should enclose values in quote marks
 
-Here's the general format of tag attributes, where each attribute has an associated 
+Here's the general syntax of tag attributes, where each attribute has an associated 
 value:
 
 .. code-block:: html
@@ -136,9 +139,14 @@ Glossary
 --------
 
 .. glossary::
+    Children
+        TODO.
+
     Elements
         TODO.
     
     Contents
         TODO.
     
+    Parent
+        TODO

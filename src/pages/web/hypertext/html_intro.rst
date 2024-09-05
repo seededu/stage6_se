@@ -101,7 +101,7 @@ Example of the paragraph, :html:`<p></p>`, tag:
 
 .. hint::
 
-   Further detail about tags can be found on :doc:`tags_html`.
+   Further detail about tags can be found on :doc:`html_elements_tags`.
 
 DOCTYPE declaration
 ^^^^^^^^^^^^^^^^^^^
