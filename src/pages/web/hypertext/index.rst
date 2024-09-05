@@ -15,7 +15,8 @@ rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
 
     hypertext
     html_intro
-    html_tags
-    html_tags_common
+    html_elements_tags
+    html_elements_body
+    html_elements_sites
 
    

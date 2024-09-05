@@ -150,7 +150,7 @@ Example:
 
 .. note:: 
 
-    We will learn more about the options available in the head tag later.
+    We will learn more about the options available in :doc:`/web/interactivity/index`.
 
 
 body tag

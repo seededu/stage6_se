@@ -56,7 +56,7 @@ that it doesn't require closing.
 
     <h2>Sub-heading</h2>
 
-    <This is the first paragraph in a new section> 
+    <p>This is the first paragraph in a new section</p>
 
 .. hint::
     
