@@ -13,7 +13,7 @@ rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
 .. toctree::
     :maxdepth: 2
 
-    hypertext
+    overview
     html_intro
     html_elements_tags
     html_elements_body

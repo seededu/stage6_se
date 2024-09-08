@@ -1,4 +1,4 @@
-Programming for the Web 
+Web Servers (WIP)
 ====================
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor orci at 
@@ -9,11 +9,11 @@ iaculis erat, sed consequat turpis quam eget libero. Donec pharetra lobortis vel
 aliquet. Nam ut dolor nibh. Proin egestas augue quis leo ullamcorper, at semper nisl 
 rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
 
-.. toctree::
-   :maxdepth: 2
-   :numbered: 3
 
-   hypertext/index
-   styling/index
-   interactivity/index
-   server/index
+.. toctree::
+    :maxdepth: 2
+
+    overview
+    http_intro
+    server_side_scripting
+   
