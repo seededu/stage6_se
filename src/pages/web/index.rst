@@ -10,7 +10,7 @@ aliquet. Nam ut dolor nibh. Proin egestas augue quis leo ullamcorper, at semper 
 rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :numbered: 3
 
    hypertext/index
