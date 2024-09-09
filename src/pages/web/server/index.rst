@@ -16,4 +16,8 @@ rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
     overview
     http_intro
     server_side_scripting
-   
+    .. flask_basics (routing)
+    .. templating
+    .. queries
+    .. forms
+    .. databases

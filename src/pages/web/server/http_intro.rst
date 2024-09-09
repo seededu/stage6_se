@@ -1,4 +1,4 @@
-HTTP Introduction
+HTTP
 ====================
 
 So far, the HTML files we've created are just sitting on the computer we made them on. 

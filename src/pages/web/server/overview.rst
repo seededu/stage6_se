@@ -1,16 +1,15 @@
 Overview
 ====================
 
-A web server is a powerful computer system that delivers web pages and other resources 
+A web server is a computer system that delivers web pages and other resources 
 to your browser when you request them. Whether you're checking social media, streaming 
 videos, or shopping online, you're interacting with a web server through the Hypertext 
 Transfer Protocol (HTTP). This foundational technology supports every website on the 
-internet, enabling global communication, online shopping, social networking, and access 
-to information. HTTP servers have transformed commerce and society, affecting how we 
+internet. HTTP servers have transformed commerce and society, affecting how we 
 live, work, and interact with the world. Every time you browse the web, download an 
 app, or use an online service, you're relying on the same basic HTTP technology that 
 powers the entire internet.
-
+    
 History
 --------------------
 
@@ -42,7 +41,7 @@ Today, web servers are more versatile than ever, thanks to powerful programming
 languages like Python and frameworks like Flask. These allow developers to build 
 dynamic websites and web applications that can handle complex tasks, such as processing 
 payments, managing databases, and supporting user authentication. Modern web servers 
-\use WSGI (Web Server Gateway Interface) to bridge the gap between web applications and 
+use WSGI (Web Server Gateway Interface) to bridge the gap between web applications and 
 server software, making it easier to create and scale interactive web systems. This 
 technology powers the websites and services we rely on daily, from social media and 
 entertainment to education and commerce, playing a central role in the digital world we 
