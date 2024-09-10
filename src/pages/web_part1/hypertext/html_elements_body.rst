@@ -35,7 +35,7 @@ Common block elements include:
 .. note::
     
     We will learn more about the definition of block elements, their attributes, 
-    behaviours and customisation in :doc:`/web/styling/index`.
+    behaviours and customisation in :doc:`/web_part1/styling/index`.
 
 Inline elements
 -----------------------

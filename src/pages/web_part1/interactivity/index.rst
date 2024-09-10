@@ -1,5 +1,5 @@
-Interactivity (PLACEHOLDER)
-====================
+Interactivity (WIP)
+===========================
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor orci at 
 ultrices vehicula. Fusce volutpat hendrerit enim fringilla aliquet. Integer hendrerit 
@@ -9,9 +9,15 @@ iaculis erat, sed consequat turpis quam eget libero. Donec pharetra lobortis vel
 aliquet. Nam ut dolor nibh. Proin egestas augue quis leo ullamcorper, at semper nisl 
 rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
 
+Topic List
+
 
 .. toctree::
     :maxdepth: 2
 
-    intro_js
+    overview
+    dom
+    find
+    edit
+    events
    

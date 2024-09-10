@@ -22,5 +22,6 @@ rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
    :caption: Contents
 
    python/index
+   javascript/index
    web_part1/index
    web_part2/index

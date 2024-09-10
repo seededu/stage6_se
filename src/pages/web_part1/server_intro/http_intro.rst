@@ -15,7 +15,7 @@ we call the "World Wide Web."
 HTTP Protocol Overview
 ----------------------
 
-The Hypertext Transfer Protocol (HTTP) defines a client-server :term:`protocol`` for the 
+The Hypertext Transfer Protocol (HTTP) defines a client-server :term:`protocol` for the 
 transmission of HTML (and associated) files over standard internet technology.
 
 The term :term:`client` is interchangably used to mean the user's physicsl device and web 

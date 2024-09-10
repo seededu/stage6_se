@@ -20,7 +20,7 @@ Selectors allow software engineers to specify exactly which elements are to be a
 by the style based on the element type, id or class.
 
 General Syntax
-------------
+--------------
 
 Selectors are a way of specifying which page elements a style should be applied to. The 
 syntax for selectors is the selector followed by a block of CSS declarations enclosed 

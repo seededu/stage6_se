@@ -1,4 +1,4 @@
-Web Part 2
+Web Part 2 (PLACEHOLDER)
 =========================
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor orci at 
