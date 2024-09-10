@@ -17,3 +17,5 @@ rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
     http_intro
     server_side_scripting
     flask_basics
+    flask_routing
+    flask_static
