@@ -1,12 +1,5 @@
-.. stage6_se documentation master file, created by
-   sphinx-quickstart on Thu Aug 29 18:21:51 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-
-
-Software Engineering, Stage 6
-=============================
+Web Part 2
+=========================
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor orci at 
 ultrices vehicula. Fusce volutpat hendrerit enim fringilla aliquet. Integer hendrerit 
@@ -16,11 +9,11 @@ iaculis erat, sed consequat turpis quam eget libero. Donec pharetra lobortis vel
 aliquet. Nam ut dolor nibh. Proin egestas augue quis leo ullamcorper, at semper nisl 
 rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
 
-
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents
+    :maxdepth: 2
+    :numbered: 3
 
-   python/index
-   web_part1/index
-   web_part2/index
+    orm/index
+    uiux/index
+    security/index
+    pwa/index

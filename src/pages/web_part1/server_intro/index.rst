@@ -1,4 +1,4 @@
-Web Servers (WIP)
+Backend Introduction
 ====================
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor orci at 
@@ -16,8 +16,4 @@ rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
     overview
     http_intro
     server_side_scripting
-    .. flask_basics (routing)
-    .. templating
-    .. queries
-    .. forms
-    .. databases
+    flask_basics
