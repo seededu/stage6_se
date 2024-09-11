@@ -72,8 +72,8 @@ In this example:
     which returns a simple message for the home page.
 *   The second route (:python:`@app.route("/about")``) maps to the function 
     :python:`about()`, which handles the "about" page.
-*   When you visit ``http://127.0.0.1:5000/``, the home page will show, and when you 
-    visit ``http://127.0.0.1:5000/about``, the about page will appear.
+*   When you visit `<http://127.0.0.1:5000/>`_, the home page will show, and when you 
+    visit `<http://127.0.0.1:5000/about>`_, the about page will appear.
 
 
 Variables in Routes
@@ -104,8 +104,8 @@ Let's understand the ``hello`` decorator and function:
 *   The value provided in the URL is passed to the :python:`hello()`` function as a 
     parameter, and Flask will embed that value in the response.
 
-For example, if you go to ``http://127.0.0.1:5000/hello/Alice``, the page will display 
-``"Hello, Alice!"``. If you visit ``http://127.0.0.1:5000/hello/Bob``, it will display 
+For example, if you go to `<http://127.0.0.1:5000/hello/Alice>`_, the page will display 
+``"Hello, Alice!"``. If you visit `<http://127.0.0.1:5000/hello/Bob>`_, it will display 
 ``"Hello, Bob!"``.
 
 A Complete Example

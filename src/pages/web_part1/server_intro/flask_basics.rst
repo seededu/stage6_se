@@ -77,7 +77,7 @@ To run the Flask app, follow these steps:
 
     python app.py
 
-4. Open your browser and go to ``http://127.0.0.1:5000/``. 
+4. Open your browser and go to `<http://127.0.0.1:5000/>`_
 
 .. hint::
 
@@ -131,7 +131,7 @@ The steps to run the "What's the time?" app are similar as "Hello World":
 
     python time.py
 
-4. Open your browser and go to ``http://127.0.0.1:5000/``. 
+4. Open your browser and go to `<http://127.0.0.1:5000/>`_. 
 
 .. hint::
 
