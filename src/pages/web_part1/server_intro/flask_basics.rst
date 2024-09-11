@@ -16,13 +16,14 @@ companies build some or all of their web applications using Flask. For example:
 * Linkedin 
 * Uber [1]_
 
+.. caution::
+
+    TODO: FIX THESE LINKS
+
 Flask simplifies web development by allowing you to create a web application using 
 Python functions. All you need to do is define routes and write code to respond to 
 requests — Flask takes care of the rest!
 
-.. caution::
-
-    TODO: FIX THESE LINKS
 
 Hello World with Flask
 ------------------------
