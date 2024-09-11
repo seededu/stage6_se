@@ -1,12 +1,5 @@
-.. stage6_se documentation master file, created by
-   sphinx-quickstart on Thu Aug 29 18:21:51 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-
-
-Software Engineering, Stage 6
-=============================
+Backend Introduction
+====================
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor orci at 
 ultrices vehicula. Fusce volutpat hendrerit enim fringilla aliquet. Integer hendrerit 
@@ -18,11 +11,11 @@ rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
 
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents
+    :maxdepth: 2
 
-   syllabus/year12/web_syllabus
-   python/index
-   javascript/index
-   web_part1/index
-   web_part2/index
+    overview
+    http_intro
+    server_side_scripting
+    flask_basics
+    flask_routing
+    flask_static
