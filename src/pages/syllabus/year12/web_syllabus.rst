@@ -55,7 +55,7 @@ Data transmission using the web
    * streaming service management
 
 Designing web applications
---------------------------
+-----------------------
 
 * Investigate and explain the role of the World Wide Web Consortium (W3C) in the development of applications for the web
 
