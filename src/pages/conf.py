@@ -14,8 +14,7 @@ author = 'Alison Wong, Stephen Tierney'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'sphinx_exec_code',
-    'sphinx_copybutton',
+    'sphinx_exec_code', 'sphinx_design', 'sphinx_copybutton'
 ]
 
 templates_path = ['_templates']
