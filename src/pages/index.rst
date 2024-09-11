@@ -14,5 +14,6 @@ Software Engineering, Stage 6
    :maxdepth: 2
    :caption: Contents:
 
+   syllabus/year12/web_syllabus
    python/basics/index
    python/conditionals/index
