@@ -46,7 +46,7 @@ Examples of web browsers (sorted by market share [1]_):
 
 At the core of a web browser contains is the :term:`engine`, which is responsible for 
 interpreting HTML and :term:`rendering` it into a visual form, along with any multimedia
-to be embded such as images.
+to be embedded such as images.
 
 .. warning::
 
@@ -97,6 +97,12 @@ Example of the paragraph, :html:`<p></p>`, tag:
 .. code-block:: html
 
     <p>This is a paragraph of text.</p>
+
+Example of a heading, :html:`<h1></h1>`, tag:
+
+.. code-block:: html
+
+    <h1>This is a heading.</h1>
 
 
 .. hint::
@@ -212,10 +218,6 @@ A Complete Example
         <body>
             <h1>Welcome to My Webpage!</h1>
             <p>This is a paragraph of text.</p>
-            <ol>
-                <li>List item 1</li>
-                <li>List item 2</li>
-            </ol>
         </body>
     </html>
 

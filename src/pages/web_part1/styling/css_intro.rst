@@ -16,7 +16,7 @@ Customisation of a web page's style brings several advantages including:
 * pages can be designed to be :term:`accessible` for people with visual impairments
 
 One of the key principles of CSS is the :term:`separation of content and presentation`. 
-This  means that HTML is used to organize the content of the page (like text, images, 
+This  means that HTML is used to organise the content of the page (like text, images, 
 and links), while CSS is used to control how that content looks. By keeping the 
 structure and the style separate, software engineers can easily update the design 
 without changing the content, and they can apply the same style across multiple pages 

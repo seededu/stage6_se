@@ -22,7 +22,7 @@ Block Elements
 -----------------------
 
 Block elements occupy the full width of the page and each one starts on a new line. 
-Block elements help structure your content by organizing it  into sections, making it 
+Block elements help structure your content by organising it into sections, making it 
 easier to read and navigate.
 
 Common block elements include:
@@ -31,6 +31,21 @@ Common block elements include:
 * :html:`<p>` for paragraphs
 * :html:`<h1>`, :html:`<h2>`, etc for headings
 * :html:`<ul>`, :html:`<ol>` for unordered and ordered lists
+* :html:`<li>`, for list elements
+
+Here are two list examples:
+
+.. code-block:: html
+
+   <ul>
+      <li>First item</li>
+      <li>Second item</li>
+   </ul>
+
+   <ol>
+      <li>First item</li>
+      <li>Second item</li>
+   </ol>
 
 .. note::
     
@@ -51,8 +66,8 @@ clickable links.
 Examples of inline elements include links:
 
 * :html:`<a>` for anchors or hyperlinks
-* :html:`<em>` for *emphasised* text
-* :html:`<strong>` for **bold** text
+* :html:`<em>` for *italicised* text
+* :html:`<b>` for **bold** text
 
 Multimedia
 -----------------------
@@ -67,11 +82,26 @@ Examples of multimedia elements:
 * :html:`<video>` for videos
 * :html:`<audio>` for audio
 
+Here is an example image. We specify ``src``, which is a URL of an image. The 
+height specifies the height of the image in pixels.
+
+.. code-block:: html
+
+   <img src="/_images/chicken.jpg", width="400">
+
+
+.. figure:: img/chicken.jpg
+    :width: 400
+    :align: center
+
+    Mrs Weasley
+
+
 Tables
 -----------------------
 
 
-Table elements allow you to organize data in rows and columns. The main tags used for 
+Table elements allow you to organise data in rows and columns. The main tags used for 
 tables include:
 
 * :html:`<table>` to create the table, 

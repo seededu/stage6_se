@@ -22,13 +22,13 @@ Here is an example:
 
    <h1 id="heading1">This is a paragraph of text.</h1>
 
-   <p id="para1">This is a <strong id="bolded-text">paragraph</strong> of text.</p>
+   <p id="para1">This is a <b id="bolded-text">paragraph</b> of text.</p>
 
 In the example there are three id's assigned:
 
 * ``heading1`` to the first level heading :html:`<h1>`
 * ``para1`` to the paragraph :html:`<p>`
-* ``bolded-text`` to the strong text :html:`<strong>`
+* ``bolded-text`` to the b text :html:`<b>`
 
 **Rules for IDs:**
 

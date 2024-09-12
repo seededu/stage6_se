@@ -72,13 +72,13 @@ A powerful feature of CSS is that they are :term:`cascading`, which means that a
 defined by a parent tag, is applied to all children until it is overwritten. This 
 cascading of styles is applied until the last child tag.
 
-In the example below, the child :html:`<strong>` tag overwrites the colour of the 
+In the example below, the child :html:`<b>` tag overwrites the colour of the 
 parent :html:`<p>.`
 
 .. code-block:: html
 
     <p style="color: red !important;">
-        Some <strong style="color: black">really</strong> important warning!
+        Some <b style="color: black">really</b> important warning!
     </p>
 
 .. topic:: Preview
@@ -87,7 +87,7 @@ parent :html:`<p>.`
 
         <div style="background-color: white;">
             <p style="color: red !important;">
-                Some <strong style="color: black">really</strong> important warning!
+                Some <b style="color: black">really</b> important warning!
             </p>
         <div>
 
