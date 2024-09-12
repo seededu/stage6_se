@@ -47,5 +47,8 @@ html_theme_options = {
             # The type of image to be used (see below for details)
             "type": "fontawesome",
         }
-   ]
+   ],
+   "analytics": {
+       "google_analytics_id": "G-4F2QYM28MP",
+   }
 }
