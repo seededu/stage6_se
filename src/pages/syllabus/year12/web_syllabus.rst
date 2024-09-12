@@ -1,8 +1,11 @@
 .. role:: python(code)
    :language: python
 
-Programming for the web
+Syllabus Map
 =======================
+
+Programming for the Web
+-------------------------------
 
 Proposed Sequence:
 
@@ -13,7 +16,7 @@ Proposed Sequence:
 * :bdg-dark:`Other` This content will be covered in a later module
 
 Data transmission using the web
--------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 *  .. dropdown:: Explore the applications of web Programming
@@ -21,155 +24,170 @@ Data transmission using the web
       :color: warning
 
       And some content!
+\
 
-.. topic::
-   Including:
+.. div:: sd-ml-5
 
-   * .. dropdown:: interactive website/webpages
-      :class-title: sd-font-weight-light
-      :color:  warning
+   .. 
+      
+      Including:
 
-      And some content!
+      * .. dropdown:: interactive website/webpages
+         :class-title: sd-font-weight-light
+         :color:  warning
 
-   * .. dropdown:: e-commerce
-      :class-title: sd-font-weight-light
-      :color:  warning
+         And some content!
 
-      And some content!
-      :doc:`/python/basics/variables`
+      * .. dropdown:: e-commerce
+         :class-title: sd-font-weight-light
+         :color:  warning
 
-   * .. dropdown:: progressive web apps (PWAs)
-      :class-title: sd-font-weight-light
-      :color: warning
+         And some content!
+         :doc:`/python/basics/variables`
 
-      And some content!
+      * .. dropdown:: progressive web apps (PWAs)
+         :class-title: sd-font-weight-light
+         :color: warning
 
+         And some content!
+\
 
 *  .. dropdown:: Investigate and practise how data is transferred on the internet
       :class-title: sd-font-weight-light
       :color: primary
 
       And some content!
+\
 
-.. topic::
-   Including:
+.. div:: sd-ml-5
 
-   * .. dropdown:: data packets
-      :class-title: sd-font-weight-light
-      :color:  primary
+   .. 
 
-      And some content!
+      Including:
 
-   * .. dropdown:: internet protocol (IP) addresses, including IPv4
-      :class-title: sd-font-weight-light
-      :color:  primary
+      * .. dropdown:: data packets
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-      And some content!
+         And some content!
 
-   * .. dropdown:: domain name systems (DNS)
-      :class-title: sd-font-weight-light
-      :color:  primary
+      * .. dropdown:: internet protocol (IP) addresses, including IPv4
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-      And some content!
+         And some content!
+
+      * .. dropdown:: domain name systems (DNS)
+         :class-title: sd-font-weight-light
+         :color:  primary
+
+         And some content!
 
 *  .. dropdown:: Investigate and describe the function of web protocols and their ports
       :class-title: sd-font-weight-light
       :color: primary
 
       And some content!
+\
 
-.. topic::
-   Including:
+.. div:: sd-ml-5
 
-   * .. dropdown:: HTTP, HTTPS
-      :class-title: sd-font-weight-light
-      :color:  primary
+   .. 
 
-      And some content!
+      Including:
 
-   * .. dropdown:: TCP/IP
-      :class-title: sd-font-weight-light
-      :color:  primary
+      * .. dropdown:: HTTP, HTTPS
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-      And some content!
+         And some content!
 
-   * .. dropdown:: DNS
-      :class-title: sd-font-weight-light
-      :color:  primary
+      * .. dropdown:: TCP/IP
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-      And some content!
+         And some content!
 
-   * .. dropdown:: FTP, SFTP
-      :class-title: sd-font-weight-light
-      :color:  primary
+      * .. dropdown:: DNS
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-      And some content!
+         And some content!
 
-   * .. dropdown:: SSL, TLS
-      :class-title: sd-font-weight-light
-      :color:  primary
+      * .. dropdown:: FTP, SFTP
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-      And some content!
+         And some content!
 
-   * .. dropdown:: SMTP, POP 3, IMAP
-      :class-title: sd-font-weight-light
-      :color:  primary
+      * .. dropdown:: SSL, TLS
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-      And some content!
+         And some content!
+
+      * .. dropdown:: SMTP, POP 3, IMAP
+         :class-title: sd-font-weight-light
+         :color:  primary
+
+         And some content!
 
 *  .. dropdown:: Explain the processes for securing the web
       :class-title: sd-font-weight-light
       :color: warning
 
       And some content!
+\
 
+.. div:: sd-ml-5
 
-.. topic::
-   Including:
+   .. 
 
-   * .. dropdown:: Secure Sockets Layer (SSL) certificates
-      :class-title: sd-font-weight-light
-      :color:  warning
+      Including:
 
-      And some content!
+      * .. dropdown:: Secure Sockets Layer (SSL) certificates
+         :class-title: sd-font-weight-light
+         :color:  warning
 
-   * .. dropdown:: encryption algorithms
-      :class-title: sd-font-weight-light
-      :color:  warning
+         And some content!
 
-      And some content!
-      :doc:`/python/basics/variables`
+      * .. dropdown:: encryption algorithms
+         :class-title: sd-font-weight-light
+         :color:  warning
 
-   * .. dropdown:: encryption keys
-      :class-title: sd-font-weight-light
-      :color: warning
+         And some content!
+         :doc:`/python/basics/variables`
 
-      And some content!
+      * .. dropdown:: encryption keys
+         :class-title: sd-font-weight-light
+         :color: warning
 
-   * .. dropdown:: plain text and cipher text
-      :class-title: sd-font-weight-light
-      :color:  warning
+         And some content!
 
-      And some content!
+      * .. dropdown:: plain text and cipher text
+         :class-title: sd-font-weight-light
+         :color:  warning
 
-   * .. dropdown:: authentication and authorisation
-      :class-title: sd-font-weight-light
-      :color:  warning
+         And some content!
 
-      And some content!
-      :doc:`/python/basics/variables`
+      * .. dropdown:: authentication and authorisation
+         :class-title: sd-font-weight-light
+         :color:  warning
 
-   * .. dropdown:: hash values
-      :class-title: sd-font-weight-light
-      :color: warning
+         And some content!
+         :doc:`/python/basics/variables`
 
-      And some content!
+      * .. dropdown:: hash values
+         :class-title: sd-font-weight-light
+         :color: warning
 
-   * .. dropdown:: digital signatures
-      :class-title: sd-font-weight-light
-      :color: warning
+         And some content!
 
-      And some content!
+      * .. dropdown:: digital signatures
+         :class-title: sd-font-weight-light
+         :color: warning
+
+         And some content!
 
 
 *  .. dropdown:: Investigate the effect of big data on web architecture
@@ -177,75 +195,81 @@ Data transmission using the web
       :color: warning
 
       And some content!
+\
 
+.. div:: sd-ml-5
 
-.. topic::
-   Including:
+   .. 
+      
+      Including:
 
-   * .. dropdown:: data mining
-      :class-title: sd-font-weight-light
-      :color:  warning
+      * .. dropdown:: data mining
+         :class-title: sd-font-weight-light
+         :color:  warning
 
-      And some content!
+         And some content!
 
-   * .. dropdown:: metadata
-      :class-title: sd-font-weight-light
-      :color:  warning
+      * .. dropdown:: metadata
+         :class-title: sd-font-weight-light
+         :color:  warning
 
-      And some content!
-      :doc:`/python/basics/variables`
+         And some content!
+         :doc:`/python/basics/variables`
 
-   * .. dropdown:: streaming service management
-      :class-title: sd-font-weight-light
-      :color: warning
+      * .. dropdown:: streaming service management
+         :class-title: sd-font-weight-light
+         :color: warning
 
-      And some content!
+         And some content!
 
 
 Designing web applications
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 *  .. dropdown:: Investigate and explain the role of the World Wide Web Consortium (W3C) in the development of applications for the web
       :class-title: sd-font-weight-light
       :color: warning
 
       And some content!
+\
 
+.. div:: sd-ml-5
 
-.. topic::
-   Including:
+   .. 
+      
+      Including:
 
-   * .. dropdown:: Web Accessibility Initiative (WAI)
-      :class-title: sd-font-weight-light
-      :color:  warning
+      * .. dropdown:: Web Accessibility Initiative (WAI)
+         :class-title: sd-font-weight-light
+         :color:  warning
 
-      And some content!
+         And some content!
 
-   * .. dropdown:: internationalisation
-      :class-title: sd-font-weight-light
-      :color:  warning
+      * .. dropdown:: internationalisation
+         :class-title: sd-font-weight-light
+         :color:  warning
 
-      And some content!
-      :doc:`/python/basics/variables`
+         And some content!
+         :doc:`/python/basics/variables`
 
-   * .. dropdown:: web security
-      :class-title: sd-font-weight-light
-      :color: warning
+      * .. dropdown:: web security
+         :class-title: sd-font-weight-light
+         :color: warning
 
-      And some content!
+         And some content!
 
-   * .. dropdown:: privacy
-      :class-title: sd-font-weight-light
-      :color:  warning
+      * .. dropdown:: privacy
+         :class-title: sd-font-weight-light
+         :color:  warning
 
-      And some content!
+         And some content!
 
-   * .. dropdown:: machine-readable data
-      :class-title: sd-font-weight-light
-      :color:  warning
+      * .. dropdown:: machine-readable data
+         :class-title: sd-font-weight-light
+         :color:  warning
 
-      And some content!
-      :doc:`/python/basics/variables`
+         And some content!
+         :doc:`/python/basics/variables`
 
 
 *  .. dropdown:: Model elements that form a web development system
@@ -253,27 +277,31 @@ Designing web applications
       :color: primary
 
       And some content!
+\
 
-.. topic::
-   Including:
+.. div:: sd-ml-5
 
-   * .. dropdown:: client-side (front-end) web programming
-      :class-title: sd-font-weight-light
-      :color:  primary
+   .. 
+      
+      Including:
 
-      And some content!
+      * .. dropdown:: client-side (front-end) web programming
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-   * .. dropdown:: server-side (back-end) web programming
-      :class-title: sd-font-weight-light
-      :color:  primary
+         And some content!
 
-      And some content!
+      * .. dropdown:: server-side (back-end) web programming
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-   * .. dropdown:: interfacing with databases that are based on Structured Query Language (SQL) or non-SQL
-      :class-title: sd-font-weight-light
-      :color:  primary
+         And some content!
 
-      And some content!
+      * .. dropdown:: interfacing with databases that are based on Structured Query Language (SQL) or non-SQL
+         :class-title: sd-font-weight-light
+         :color:  primary
+
+         And some content!
 
 
 *  .. dropdown:: Explore and explain the influence of a web browser on web development, including the use of developer (dev) tools
@@ -288,27 +316,31 @@ Designing web applications
       :color: primary
 
       And some content!
+\
 
-.. topic::
-   Including:
+.. div:: sd-ml-5
 
-   * .. dropdown:: consistency of appearance
-      :class-title: sd-font-weight-light
-      :color:  primary
+   .. 
+      
+      Including:
 
-      And some content!
+      * .. dropdown:: consistency of appearance
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-   * .. dropdown:: flexibility with browsers or display devices
-      :class-title: sd-font-weight-light
-      :color:  primary
+         And some content!
 
-      And some content!
+      * .. dropdown:: flexibility with browsers or display devices
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-   * .. dropdown:: CSS maintenance tools
-      :class-title: sd-font-weight-light
-      :color:  primary
+         And some content!
 
-      And some content!
+      * .. dropdown:: CSS maintenance tools
+         :class-title: sd-font-weight-light
+         :color:  primary
+
+         And some content!
 
 *  .. dropdown:: Investigate cascading style sheets (CSS) and its impact on the design of a web application
       :class-title: sd-font-weight-light
@@ -321,28 +353,32 @@ Designing web applications
       :color: warning
 
       And some content!
+\
 
-.. topic::
-   Including:
+.. div:: sd-ml-5
 
-   * .. dropdown:: frameworks that control complex web applications
-      :class-title: sd-font-weight-light
-      :color:  warning
+   .. 
+      
+      Including:
 
-      And some content!
+      * .. dropdown:: frameworks that control complex web applications
+         :class-title: sd-font-weight-light
+         :color:  warning
 
-   * .. dropdown:: template engines
-      :class-title: sd-font-weight-light
-      :color:  warning
+         And some content!
 
-      And some content!
-      :doc:`/python/basics/variables`
+      * .. dropdown:: template engines
+         :class-title: sd-font-weight-light
+         :color:  warning
 
-   * .. dropdown:: predesigned CSS classes
-      :class-title: sd-font-weight-light
-      :color: warning
+         And some content!
+         :doc:`/python/basics/variables`
 
-      And some content!
+      * .. dropdown:: predesigned CSS classes
+         :class-title: sd-font-weight-light
+         :color: warning
+
+         And some content!
 
 
 *  .. dropdown:: Explain the use and development of open-source software in relation to web development
@@ -374,39 +410,43 @@ Designing web applications
       :color: primary
 
       And some content!
+\
 
-.. topic::
-   Including:
+.. div:: sd-ml-5
 
-   * .. dropdown:: role of webserver software
-      :class-title: sd-font-weight-light
-      :color:  primary
+   .. 
+      
+      Including:
 
-      And some content!
+      * .. dropdown:: role of webserver software
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-   * .. dropdown:: web framework
-      :class-title: sd-font-weight-light
-      :color:  primary
+         And some content!
 
-      And some content!
+      * .. dropdown:: web framework
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-   * .. dropdown:: objects
-      :class-title: sd-font-weight-light
-      :color:  primary
+         And some content!
 
-      And some content!
+      * .. dropdown:: objects
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-   * .. dropdown:: libraries
-      :class-title: sd-font-weight-light
-      :color:  primary
+         And some content!
 
-      And some content!
+      * .. dropdown:: libraries
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-   * .. dropdown:: databases
-      :class-title: sd-font-weight-light
-      :color:  primary
+         And some content!
 
-      And some content!
+      * .. dropdown:: databases
+         :class-title: sd-font-weight-light
+         :color:  primary
+
+         And some content!
 
 *  .. dropdown:: Develop a web application using an appropriate scripting language with shell scripts to make files and directories, and searching for text in a text file
       :class-title: sd-font-weight-light
@@ -419,39 +459,43 @@ Designing web applications
       :color:  primary
 
       And some content!
+\
 
-.. topic::
-   Including:
+.. div:: sd-ml-5
 
-   * .. dropdown:: selecting fields
-      :class-title: sd-font-weight-light
-      :color:  primary
+   .. 
+      
+      Including:
 
-      And some content!
+      * .. dropdown:: selecting fields
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-   * .. dropdown:: incorporating ‘group by’
-      :class-title: sd-font-weight-light
-      :color:  primary
+         And some content!
 
-      And some content!
+      * .. dropdown:: incorporating ‘group by’
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-   * .. dropdown:: common SQL queries
-      :class-title: sd-font-weight-light
-      :color:  primary
+         And some content!
 
-      And some content!
+      * .. dropdown:: common SQL queries
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-   * .. dropdown:: constraints using WHERE keyword
-      :class-title: sd-font-weight-light
-      :color:  primary
+         And some content!
 
-      And some content!
+      * .. dropdown:: constraints using WHERE keyword
+         :class-title: sd-font-weight-light
+         :color:  primary
 
-   * .. dropdown:: table joins
-      :class-title: sd-font-weight-light
-      :color:  primary
+         And some content!
 
-      And some content!
+      * .. dropdown:: table joins
+         :class-title: sd-font-weight-light
+         :color:  primary
+
+         And some content!
 
 *  .. dropdown:: Compare Object-Relational Mapping (ORM) to SQL
       :class-title: sd-font-weight-light
@@ -470,19 +514,23 @@ Designing web applications
       :color: warning
 
       And some content!
+\
 
-.. topic::
-   Including:
+.. div:: sd-ml-5
 
-   * .. dropdown:: the application of design and user interface (UI) and user experience (UX) principles of font, colour, audio, video and navigation
-      :class-title: sd-font-weight-light
-      :color:  warning
+   .. 
+      
+      Including:
 
-      And some content!
+      * .. dropdown:: the application of design and user interface (UI) and user experience (UX) principles of font, colour, audio, video and navigation
+         :class-title: sd-font-weight-light
+         :color:  warning
 
-   * .. dropdown:: a UI that considers accessibility and inclusivity
-      :class-title: sd-font-weight-light
-      :color:  warning
+         And some content!
 
-      And some content!
-      :doc:`/python/basics/variables`
+      * .. dropdown:: a UI that considers accessibility and inclusivity
+         :class-title: sd-font-weight-light
+         :color:  warning
+
+         And some content!
+         :doc:`/python/basics/variables`
