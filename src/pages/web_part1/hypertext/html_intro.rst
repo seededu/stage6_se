@@ -13,20 +13,17 @@ Your First HTML Document
 
 Below is an example of a simple HTML document.
 
-.. code-block:: html
-    :caption: index.html
-    :linenos:
+.. literalinclude:: /_static/examples/html/hello_world.html
+  :language: html
+  :caption: index.html
 
-    <!DOCTYPE html>    
-    <html>
-        <title>My First HTML Document</title>
-        <p>Hello World!</p>
-    </html>
+.. grid::
 
-.. hint::
+    .. grid-item-card::
 
-   Using a text editor paste the following HTML into a new document and
-   save as ``index.html``. Open this file with your web browser.
+        .. raw:: html
+
+            <iframe class="sd-w-100" height="200px" src="/_static/examples/html/hello_world.html"></iframe>
 
 
 Web Browser
@@ -206,20 +203,18 @@ A Complete Example
    browser to see changes as you make them.
 
 
-.. code-block:: html
-    :caption: index.html
-    :linenos:
+.. literalinclude:: /_static/examples/html/intro_complete.html
+  :language: html
+  :caption: index.html
 
-    <!DOCTYPE html>    
-    <html>
-        <head>
-            <title>My Awesome Webpage</title>
-        </head>
-        <body>
-            <h1>Welcome to My Webpage!</h1>
-            <p>This is a paragraph of text.</p>
-        </body>
-    </html>
+.. grid::
+
+    .. grid-item-card::
+
+        .. raw:: html
+
+            <iframe class="sd-w-100" height="200px" src="/_static/examples/html/intro_complete.html"></iframe>
+
 
 .. warning::
 

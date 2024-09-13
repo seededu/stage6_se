@@ -51,25 +51,17 @@ To select based on id, use a ``#`` followed by the id as the selector e.g.
 
 An example:
 
-.. code-block:: html
-   :caption: index.html
 
-   <html>
-      <head>
-         <style>
-            #heading1 {
-               text-align: center;
-            }
-         </style>
-      <head>
+.. literalinclude:: /_static/examples/css/id_selector_full.html
+  :language: html
 
-      <body>
+.. grid::
 
-         <h1 id="heading1">My Business Website</h1>
+    .. grid-item-card::
 
-      </body>
-   </html>
+        .. raw:: html
 
+            <iframe class="sd-w-100" height="200px" src="/_static/examples/css/id_selector_full.html"></iframe>
 
 Element Class
 ------------------------
@@ -114,33 +106,19 @@ In the example below you can see how the second paragraph belongs to two classes
 which contribute different aspects of the styling, which are italics and center text 
 alignment.
 
-.. code-block:: html
-   :caption: index.html
+.. literalinclude:: /_static/examples/css/class_selector_full.html
+  :language: html
 
-   <html>
-      <head>
-         <style>
-            .main-para {
-               text-align: left;
-            }
+.. grid::
 
-            .italic {
-                font-style: italic;
-            }
+    .. grid-item-card::
 
-            .quote-para {
-               text-align: center;  
-            }
-         </style>
-      <head>
+        .. raw:: html
 
-      <body>
-        <p class="main-para">This is a paragraph of text.</p>
-        <p class="quote-para italic">Talk is cheap. Show me the code.</p>
-      </body>
-   </html>
+            <iframe class="sd-w-100" height="200px" src="/_static/examples/css/class_selector_full.html"></iframe>
 
-To limit the class to specific element types place the element type before the `.` In 
+
+To limit the class to specific element types place the element type before the ``.`` In 
 the example below only :html:`<p>` elements with ``class="quote-para"`` will be 
 center-aligned.
 
