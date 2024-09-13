@@ -69,7 +69,7 @@ You may place as many different selectors inside the :html:`<style>` tag as you 
 In the example below styles will be applied to all first level headings and 
 paragraphs.
 
-.. literalinclude:: /_static/examples/css/internal.html
+.. literalinclude:: ../../_static/examples/css/internal.html
   :language: html
   :caption: index.html
 
@@ -79,7 +79,7 @@ paragraphs.
 
         .. raw:: html
 
-            <iframe src="/_static/examples/css/internal.html"></iframe>
+            <iframe src="../../_static/examples/css/internal.html"></iframe>
 
 
 
@@ -99,13 +99,13 @@ Example of external CSS definition. You can flick through the HTML and CSS tabs.
 
    .. tab-item:: HTML
 
-      .. literalinclude:: /_static/examples/css/external/external.html
+      .. literalinclude:: ../../_static/examples/css/external/external.html
          :language: html
          :caption: index.html
 
    .. tab-item:: CSS
 
-      .. literalinclude:: /_static/examples/css/external/style.css
+      .. literalinclude:: ../../_static/examples/css/external/style.css
          :language: css
          :caption: index.html
 
@@ -115,7 +115,7 @@ Example of external CSS definition. You can flick through the HTML and CSS tabs.
 
         .. raw:: html
 
-            <iframe src="/_static/examples/css/external/external.html"></iframe>
+            <iframe src="../../_static/examples/css/external/external.html"></iframe>
 
 
 Glossary

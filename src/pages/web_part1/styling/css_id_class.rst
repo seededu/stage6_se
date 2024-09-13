@@ -52,7 +52,7 @@ To select based on id, use a ``#`` followed by the id as the selector e.g.
 An example:
 
 
-.. literalinclude:: /_static/examples/css/id_selector_full.html
+.. literalinclude:: ../../_static/examples/css/id_selector_full.html
   :language: html
 
 .. grid::
@@ -61,7 +61,7 @@ An example:
 
         .. raw:: html
 
-            <iframe class="sd-w-100" height="200px" src="/_static/examples/css/id_selector_full.html"></iframe>
+            <iframe class="sd-w-100" height="200px" src="../../_static/examples/css/id_selector_full.html"></iframe>
 
 Element Classes
 ------------------------
@@ -104,7 +104,7 @@ To select based on class, use a ``.`` followed by the class name as the selector
 
 Have a look at the example below.
 
-.. literalinclude:: /_static/examples/css/class_selector_full.html
+.. literalinclude:: ../../_static/examples/css/class_selector_full.html
   :language: html
 
 .. grid::
@@ -113,7 +113,7 @@ Have a look at the example below.
 
         .. raw:: html
 
-            <iframe class="sd-w-100" height="300px" src="/_static/examples/css/class_selector_full.html"></iframe>
+            <iframe class="sd-w-100" height="300px" src="../../_static/examples/css/class_selector_full.html"></iframe>
 
 A few things to note:
 
@@ -126,7 +126,7 @@ To limit the class to specific element types place the element type before the `
 the example below only :html:`<p>` elements with ``class="quote-para"`` will be 
 center-aligned.
 
-.. literalinclude:: /_static/examples/css/tag_class_selector_full.html
+.. literalinclude:: ../../_static/examples/css/tag_class_selector_full.html
   :language: html
 
 .. grid::
@@ -135,4 +135,4 @@ center-aligned.
 
         .. raw:: html
 
-            <iframe class="sd-w-100" height="200px" src="/_static/examples/css/tag_class_selector_full.html"></iframe>
+            <iframe class="sd-w-100" height="200px" src="../../_static/examples/css/tag_class_selector_full.html"></iframe>
