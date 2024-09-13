@@ -49,21 +49,17 @@ Inline CSS is written directly inside an HTML tag using the `style` attribute.
 
 In the example below the font size is set to 64 pixels tall.
 
-.. code-block:: html
+.. literalinclude:: /_static/examples/css/big_red_snippet.html
+  :language: html
 
-    <p style="font-size: 64px; color: red;">
-        Big RED text
-    </p>
+.. grid::
 
-.. topic:: Preview
+    .. grid-item-card::
 
-    .. raw:: html
+        .. raw:: html
 
-        <div style="background-color: white;">
-            <p style="font-size:32px;color:red !important;">
-                Big RED text
-            </p>
-        </div>
+            <iframe class="sd-w-100" height="100px" src="/_static/examples/css/big_red_full.html"></iframe>
+
 
 Cascading
 ----------
@@ -72,24 +68,24 @@ A powerful feature of CSS is that they are :term:`cascading`, which means that a
 defined by a parent tag, is applied to all children until it is overwritten. This 
 cascading of styles is applied until the last child tag.
 
-In the example below, the child :html:`<strong>` tag overwrites the colour of the 
+In the example below, the child :html:`<b>` tag overwrites the colour of the 
 parent :html:`<p>.`
 
-.. code-block:: html
+As shown in the example below the :html:`<span>` tag is a generic tag than can be used to 
+select a section of the document. Here the child :html:`<span>` tag overwrites the 
+colour of the parent :html:`<p>`. Note that the font size doesn't change because that 
+hasn't been overwritten.
 
-    <p style="color: red !important;">
-        Some <strong style="color: black">really</strong> important warning!
-    </p>
+.. literalinclude:: /_static/examples/css/cascading_snippet.html
+  :language: html
 
-.. topic:: Preview
+.. grid::
 
-    .. raw:: html
+    .. grid-item-card::
 
-        <div style="background-color: white;">
-            <p style="color: red !important;">
-                Some <strong style="color: black">really</strong> important warning!
-            </p>
-        <div>
+        .. raw:: html
+
+            <iframe class="sd-w-100" height="250px" src="/_static/examples/css/cascading_full.html"></iframe>
 
 Glossary
 --------

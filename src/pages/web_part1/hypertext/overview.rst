@@ -1,7 +1,7 @@
 Overview
 ====================
 
-Hypertext is a way of organizing and linking information that allows users to jump 
+Hypertext is a way of organising and linking information that allows users to jump 
 between related topics or documents easily. Hypertext lets users explore information 
 in a more flexible, non-linear way by following links. These links, known as 
 hyperlinks, can connect different pieces of information, making it easier to explore 
@@ -9,7 +9,7 @@ related ideas across various documents or media.
 
 Hypertext is a fundamental idea behind many digital systems and is used not just on 
 the web but in software, documentation, and multimedia projects. The key concept is 
-that information doesn’t need to be organized in a strict order; instead, it can be 
+that information doesn’t need to be organised in a strict order; instead, it can be 
 interconnected, allowing users to follow their own paths through it.
 
 History
@@ -28,8 +28,8 @@ information. HyperCard became a popular tool for education and multimedia projec
 was an important step in making hypertext accessible to more people.
 
 Around the same time, another major development was taking place at CERN, a research 
-organization in Switzerland. In 1989, Tim Berners-Lee, a British scientist working at 
-CERN, proposed a new system that used hypertext to share and organize information among 
+organisation in Switzerland. In 1989, Tim Berners-Lee, a British scientist working at 
+CERN, proposed a new system that used hypertext to share and organise information among 
 researchers. This system became the World Wide Web. By combining hypertext with the 
 emerging global network known as the Internet, Berners-Lee created a way to link 
 documents across different computers worldwide. He also developed the first web 
