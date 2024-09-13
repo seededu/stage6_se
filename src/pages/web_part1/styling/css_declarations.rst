@@ -75,10 +75,15 @@ cascading of styles is applied until the last child tag.
 In the example below, the child :html:`<b>` tag overwrites the colour of the 
 parent :html:`<p>.`
 
+As shown in the example below the :html:`<span>` tag is a generic tag than can be used to 
+select a section of the document. Here the child :html:`<span>` tag overwrites the 
+colour of the parent :html:`<p>`. Note that the font size doesn't change because that 
+hasn't been overwritten.
+
 .. code-block:: html
 
-    <p style="color: red !important;">
-        Some <b style="color: black">really</b> important warning!
+    <p style="font-size: 64px; color: red !important;">
+        Some <span style="color: black">really</span> important warning!
     </p>
 
 .. topic:: Preview
@@ -86,8 +91,8 @@ parent :html:`<p>.`
     .. raw:: html
 
         <div style="background-color: white;">
-            <p style="color: red !important;">
-                Some <b style="color: black">really</b> important warning!
+            <p style="font-size: 64px; color: red !important;">
+                Some <span style="color: black">really</span> important warning!
             </p>
         <div>
 
