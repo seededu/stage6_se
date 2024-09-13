@@ -49,7 +49,7 @@ Inline CSS is written directly inside an HTML tag using the `style` attribute.
 
 In the example below the font size is set to 64 pixels tall.
 
-.. literalinclude:: /_static/examples/css/big_red_snippet.html
+.. literalinclude:: ../../_static/examples/css/big_red_snippet.html
   :language: html
 
 .. grid::
@@ -58,7 +58,7 @@ In the example below the font size is set to 64 pixels tall.
 
         .. raw:: html
 
-            <iframe class="sd-w-100" height="100px" src="/_static/examples/css/big_red_full.html"></iframe>
+            <iframe class="sd-w-100" height="100px" src="../../_static/examples/css/big_red_full.html"></iframe>
 
 
 Cascading
@@ -76,7 +76,7 @@ select a section of the document. Here the child :html:`<span>` tag overwrites t
 colour of the parent :html:`<p>`. Note that the font size doesn't change because that 
 hasn't been overwritten.
 
-.. literalinclude:: /_static/examples/css/cascading_snippet.html
+.. literalinclude:: ../../_static/examples/css/cascading_snippet.html
   :language: html
 
 .. grid::
@@ -85,7 +85,7 @@ hasn't been overwritten.
 
         .. raw:: html
 
-            <iframe class="sd-w-100" height="250px" src="/_static/examples/css/cascading_full.html"></iframe>
+            <iframe class="sd-w-100" height="260px" src="../../_static/examples/css/cascading_full.html"></iframe>
 
 Glossary
 --------
