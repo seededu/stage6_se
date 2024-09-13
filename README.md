@@ -2,6 +2,10 @@
 
 [![View on Github Pages](https://github.com/seededu/stage6_se/actions/workflows/preview.yml/badge.svg)](https://seededu.github.io/stage6_se/)
 
+## View Online
+
+[https://seededu.github.io/stage6_se/](https://seededu.github.io/stage6_se/)
+
 ## Local Setup
 
 Run `setup.sh`
