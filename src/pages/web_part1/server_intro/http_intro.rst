@@ -18,7 +18,7 @@ HTTP Protocol Overview
 The Hypertext Transfer Protocol (HTTP) defines a client-server :term:`protocol` for the 
 transmission of HTML (and associated) files over standard internet technology.
 
-The term :term:`client` is interchangably used to mean the user's physicsl device and web 
+The term :term:`client` is interchangably used to mean the user's physical device and web 
 browser. While the term :term:`server` is interchangably used to refer to the software 
 which processes the requests then returns appropriate responses and the physical device 
 on which the software is running.

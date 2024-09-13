@@ -58,7 +58,7 @@ In the example below the font size is set to 64 pixels tall.
 
         .. raw:: html
 
-            <iframe class="sd-w-100" height="200px" src="/_static/examples/css/big_red_full.html"></iframe>
+            <iframe class="sd-w-100" height="100px" src="/_static/examples/css/big_red_full.html"></iframe>
 
 
 Cascading
@@ -85,7 +85,7 @@ hasn't been overwritten.
 
         .. raw:: html
 
-            <iframe class="sd-w-100" height="300px" src="/_static/examples/css/cascading_full.html"></iframe>
+            <iframe class="sd-w-100" height="250px" src="/_static/examples/css/cascading_full.html"></iframe>
 
 Glossary
 --------
