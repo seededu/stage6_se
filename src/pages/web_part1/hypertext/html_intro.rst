@@ -1,6 +1,8 @@
 .. role:: html(code)
    :language: html
 
+.. |base_url| replace:: replacement *text*
+
 HTML
 ====================
 
@@ -13,7 +15,7 @@ Your First HTML Document
 
 Below is an example of a simple HTML document.
 
-.. literalinclude:: /_static/examples/html/hello_world.html
+.. literalinclude:: ../../_static/examples/html/hello_world.html
   :language: html
   :caption: index.html
 
@@ -23,7 +25,7 @@ Below is an example of a simple HTML document.
 
         .. raw:: html
 
-            <iframe class="sd-w-100" height="200px" src="/_static/examples/html/hello_world.html"></iframe>
+            <iframe class="sd-w-100" height="200px" src="../../_static/examples/html/hello_world.html"></iframe>
 
 
 Web Browser
@@ -203,7 +205,7 @@ A Complete Example
    browser to see changes as you make them.
 
 
-.. literalinclude:: /_static/examples/html/intro_complete.html
+.. literalinclude:: ../../_static/examples/html/intro_complete.html
   :language: html
   :caption: index.html
 
@@ -213,7 +215,7 @@ A Complete Example
 
         .. raw:: html
 
-            <iframe class="sd-w-100" height="200px" src="/_static/examples/html/intro_complete.html"></iframe>
+            <iframe class="sd-w-100" height="200px" src="../../_static/examples/html/intro_complete.html"></iframe>
 
 
 .. warning::
