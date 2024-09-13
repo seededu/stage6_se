@@ -11,5 +11,6 @@ learn about styling our web pages using Cascading Style Sheets (CSS).
     css_declarations
     css_selectors
     css_id_class
+    css_adv_selectors
 
    

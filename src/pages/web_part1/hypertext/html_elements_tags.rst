@@ -75,21 +75,29 @@ this:
 
 .. code-block:: html
 
-    <p>This is a <strong>bold</strong> word in a paragraph.</p>
+    <p>This is a <b>bold</b> word in a paragraph.</p>
 
-This is valid because the :html:`<strong></strong>` tags are contained within the 
+This is valid because the :html:`<b></b>` tags are contained within the 
 enclosing :term:`contents` of the :term:`parent` :html:`<p></p>` tags.
 
 Every end tag must be contained within the :term:`contents` of the tag in which the 
 starting tag is contained.
 
+.. figure:: img/rainbow3.png
+    :width: 600
+    :align: center
+
+    You can visualise this by drawing a 'rainbow' between each pair of opening and closing 
+    tags. The arches of the 'rainbow' should never cross.
+
+
 If you accidentally misnest the tags like this:
 
 .. code-block:: html
 
-    <p>This is a <strong>bold</p> word in a paragraph.</strong>
+    <p>This is a <b>bold</p> word in a paragraph.</b>
 
-It becomes invalid, because the closing tag of :html:`</strong>` is outside the 
+It becomes invalid, because the closing tag of :html:`</b>` is outside the 
 enclosing contents of the :html:`<p></p>` tags.
 
 Tag Attributes

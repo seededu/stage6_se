@@ -32,7 +32,7 @@ The syntax is:
 
    selector {
       property1: value1;
-      property2: value2
+      property2: value2;
    }
 
 where ``selector`` is a a reference to a particular element. The formatting is optional, 
@@ -69,67 +69,54 @@ You may place as many different selectors inside the :html:`<style>` tag as you 
 In the example below styles will be applied to all first level headings and 
 paragraphs.
 
-.. code-block:: html
-   :caption: index.html
+.. literalinclude:: /_static/examples/css/internal.html
+  :language: html
+  :caption: index.html
 
-   <html>
-      <head>
-         <style>
-            h1 {
-               text-align: center;
-            }
+.. grid::
 
-            p {
-               color: red;
-            }
-         </style>
-      <head>
+    .. grid-item-card::
 
-      <body>
+        .. raw:: html
 
-         <h1>My Business Website</h1>
+            <iframe src="/_static/examples/css/internal.html"></iframe>
 
-         <p>Here's some inspiring text!</p>
 
-      </body>
-   </html>
 
 External CSS
 ------------
 
-Your CSS might become quite lenghty and hard to manage. To keep your HTML simple you 
-can define the CSS in a separate file with a ``.css`` extension. To include the styles
-defined in this file it is linked using a :html:`<link>` tag.
+Your CSS might become quite lengthy and hard to manage. To keep your HTML simple you 
+can define the CSS in a separate file with a ``.css`` extension. To include the styles 
+defined in this file it is linked using a :html:`<link>` tag. You need to specify how 
+the linked file is **re**\lated to the HTML, in this case we have a stylesheet, which 
+specifies the formatting. Then we specify the **h**\ypertext **ref**\erence, i.e the name 
+of the ``.css``.
 
-Example of external CSS definition:
+Example of external CSS definition. You can flick through the HTML and CSS tabs.
 
-.. code-block:: css
-   :caption: style.css
+.. tab-set::
 
-   h1 {
-      text-align: center;
-   }
+   .. tab-item:: HTML
 
-   p {
-      color: red;
-   }
+      .. literalinclude:: /_static/examples/css/external/external.html
+         :language: html
+         :caption: index.html
 
-.. code-block:: html
-   :caption: index.html
+   .. tab-item:: CSS
 
-   <html>
-      <head>
-         <link rel="stylesheet" href="style.css">
-      <head>
+      .. literalinclude:: /_static/examples/css/external/style.css
+         :language: css
+         :caption: index.html
 
-      <body>
+.. grid::
 
-         <h1>My Business Website</h1>
+    .. grid-item-card::
 
-         <p>Here's some inspiring text!</p>
+        .. raw:: html
 
-      </body>
-   </html>
+            <iframe src="/_static/examples/css/external/external.html"></iframe>
+
 
 Glossary
 --------
