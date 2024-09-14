@@ -9,12 +9,12 @@ iaculis erat, sed consequat turpis quam eget libero. Donec pharetra lobortis vel
 aliquet. Nam ut dolor nibh. Proin egestas augue quis leo ullamcorper, at semper nisl 
 rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
 
-
 .. toctree::
     :maxdepth: 2
 
-    databases
+    python_databases
+    flask_databases
+    flask_templating
+    flask_query_string
     flask_variables
-    templating
-    queries
-    forms
+    flask_forms

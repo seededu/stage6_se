@@ -4,7 +4,7 @@
 Variables in Routes
 ====================
 
-Sometimes, you may want to pass information in the URL itself. Flask allows you to 
+Often, you will want to pass information in the URL itself. Flask allows you to 
 include variables in a route and then use them in your function.
 
 Here's an example where the URL includes a person's name:
