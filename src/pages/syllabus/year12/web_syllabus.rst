@@ -42,10 +42,6 @@ Data transmission using the web
       :class-title: sd-font-weight-light
       :color: warning
 
-
-
-
-
 .. card:: Investigate and practise how data is transferred on the internet
 
    Including
@@ -237,7 +233,6 @@ Designing web applications
       :color: warning
 
 .. dropdown:: Investigate the reasons for version control and apply it when developing web application
-   :class-title: sd-font-weight-light
    :color: dark
 
    This will not be covered under *Programming for the Web*. Students will cover this 
@@ -263,19 +258,15 @@ Designing web applications
 
 
 .. dropdown:: Explain the use and development of open-source software in relation to web development
-   :class-title: sd-font-weight-light
    :color: danger
 
 .. dropdown:: Investigate methods to support and manage the load times of web pages/applications
-   :class-title: sd-font-weight-light
    :color: warning
 
 .. dropdown:: Research, experiment with and evaluate the prevalence and use of web content management systems (CMS)
-   :class-title: sd-font-weight-light
    :color: danger
 
 .. dropdown:: Assess the contribution of back-end web development to the success of a web application
-   :class-title: sd-font-weight-light
    :color: danger
 
 .. card:: Observe and describe the back-end process used to manage a web request
@@ -318,7 +309,6 @@ Designing web applications
       * :doc:`/web_part1/server_cont/databases`
 
 .. dropdown:: Develop a web application using an appropriate scripting language with shell scripts to make files and directories, and searching for text in a text file
-   :class-title: sd-font-weight-light
    :color: info
 
    * :doc:`/web_part1/server_intro/flask_basics`
@@ -365,13 +355,10 @@ Designing web applications
       * :doc:`/web_part1/databases/joins`
 
 .. dropdown:: Compare Object-Relational Mapping (ORM) to SQL
-      :class-title: sd-font-weight-light
       :color: warning
 
 .. dropdown:: Describe how collaborative work practices between front-end and back-end developers improve the development of a web solution
-      :class-title: sd-font-weight-light
       :color: danger
-
 
 .. card:: Design, develop and implement a progressive web app (PWA)
       
