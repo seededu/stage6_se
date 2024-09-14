@@ -14,6 +14,7 @@ rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
     :maxdepth: 2
 
     databases
+    flask_variables
     templating
     queries
     forms
