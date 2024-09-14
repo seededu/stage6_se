@@ -18,6 +18,7 @@ rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
     where
     order_by
     limit
+    group_by
     insert
     update
     delete

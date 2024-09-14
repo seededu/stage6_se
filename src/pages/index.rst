@@ -21,8 +21,8 @@ rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
    :maxdepth: 2
    :caption: Contents
 
+
    syllabus/year12/web_syllabus
    python/index
-   javascript/index
    web_part1/index
-   web_part2/index
+   about
