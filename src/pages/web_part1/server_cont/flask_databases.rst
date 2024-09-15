@@ -30,7 +30,7 @@ insert the results as a list in our HTML.
     @app.route('/')
     def home():
         # SQL query to select all movies
-        query = text("SELECT * FROM movies")
+        query = text("SELECT * FROM reviews")
         result = connection.execute(query).fetchall()
 
         # Create a list of <li> strings, one for each movie/review
@@ -95,7 +95,7 @@ the SQL query to sort the results by ``review_date`` in descending order.
     @app.route('/')
     def home():
         # SQL query to select all movies
-        query = text("SELECT * FROM movies ORDER BY review_date DESC")
+        query = text("SELECT * FROM reviews ORDER BY review_date DESC")
         result = connection.execute(query).fetchall()
 
         # Create a list of <li> strings, one for each movie/review
@@ -157,7 +157,7 @@ them by score.
     @app.route('/')
     def home():
         # SQL query to select all movies
-        query = text("SELECT * FROM movies ORDER BY review_score DESC LIMIT 10")
+        query = text("SELECT * FROM reviews ORDER BY review_score DESC LIMIT 10")
         result = connection.execute(query).fetchall()
 
         # Create a list of <li> strings, one for each movie/review
