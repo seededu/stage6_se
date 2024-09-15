@@ -12,6 +12,7 @@ rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
 .. toctree::
     :maxdepth: 2
 
+    db_case_study
     python_databases
     flask_databases
     flask_templating

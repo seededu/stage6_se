@@ -26,7 +26,7 @@ Let's understand the ``hello`` decorator and function:
 
 *   The ``<name>`` part of the URL is a placeholder for any name that a user types in 
     the URL.
-*   The value provided in the URL is passed to the :python:`hello()`` function as a 
+*   The value provided in the URL is passed to the :python:`hello()` function as a 
     parameter, and Flask will embed that value in the response.
 
 For example, if you go to `<http://127.0.0.1:5000/hello/Alice>`_, the page will display 

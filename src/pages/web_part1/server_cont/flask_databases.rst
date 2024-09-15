@@ -1,151 +1,200 @@
 .. role:: python(code)
    :language: python
 
-Databases
+.. role:: sql(code)
+   :language: sql
+
+Databases with Flask
 ====================
 
-Imagine you're building a personal movie review website. You need a place to store information about the movies you review—things like the title, release year, your review score, and what you thought of the movie. A database is perfect for this because it helps store, organize, and retrieve all of this data in a structured way.
+Displaying Data from a Database
+---------------------------------
 
-In this tutorial, we’ll use a Flask web app connected to a database through SQLAlchemy Core. You’ll learn how to connect to a database, display movies from it, list the most recent reviews, and show the top-rated movies, all using `session.execute` with raw SQL queries.
+In this example, we'll display a list of all movies from our database on the home page. 
+We'll use :python:`session.execute` to run a SQL query that selects all movies then 
+insert the results as a list in our HTML.
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 13-14, 22, 41
+
+    from flask import Flask
+    from sqlalchemy import create_engine, text
+
+    app = Flask(__name__)
+
+    # Connect to the database
+    engine = create_engine('sqlite:///movies.db')
+    connection = engine.connect()
+
+    @app.route('/')
+    def home():
+        # SQL query to select all movies
+        query = text("SELECT * FROM movies")
+        result = connection.execute(query).fetchall()
+
+        # Create a list of <li> strings, one for each movie/review
+        list_items = []
+        for row in range(result):
+            title = row[1]
+            year = row[2]
+            score = row[5]
+            list_items.append("<li>{} ({}) - Score: {}</li>".format(title, year, row))
+
+        # Combine all <li> strings into a single string
+        list_items_str = "\n".join(list_items)
+
+        # Insert <li> string into the homepage
+        return '''
+        <!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <title>Movie Reviews</title>
+            </head>
+            <body>
+                <h1>Movie Reviews</h1>
+                <ul>
+                    {}
+                </ul>
+            </body>
+        </html>
+        '''.format(list_items_str)
+
+    app.run(debug=True, reloader_type='stat', port=5000)
+
+Explanation:
+
+*   We define the Flask app and connect to the database using the SQLite database 
+    stored in the file ``movies.db``. The connection is created by 
+    :python:`engine.connect()`.
+*   Inside the ``home()`` function, we define a SQL query to fetch all the movies from 
+    the database using ``session.execute``.
+*   The result of the query is processed to generate a list of HTML list items, which 
+    is then displayed on the home page.
 
 
+Sort Results - Most Recent Reviews
+---------------------------------
 
----
+Let's display the most recently reviewed movies first on the home page. We'll modify 
+the SQL query to sort the results by ``review_date`` in descending order.
 
-### First Example: Home Page Showing a List of Movies
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 13
 
-#### Concept: Displaying Data from a Database
-In this example, we’ll display a list of all movies from our database on the home page. We’ll use `session.execute` to run a raw SQL query that selects all movies.
+    from flask import Flask
+    from sqlalchemy import create_engine, text
 
-#### Code Example:
-```python
-from flask import Flask, render_template
-from sqlalchemy import create_engine, text
-from sqlalchemy.orm import sessionmaker
+    app = Flask(__name__)
 
-app = Flask(__name__)
+    # Connect to the database
+    engine = create_engine('sqlite:///movies.db')
+    connection = engine.connect()
 
-# Connect to the database
-engine = create_engine('sqlite:///movies.db')
-Session = sessionmaker(bind=engine)
-session = Session()
+    @app.route('/')
+    def home():
+        # SQL query to select all movies
+        query = text("SELECT * FROM movies ORDER BY review_date DESC")
+        result = connection.execute(query).fetchall()
 
-@app.route('/')
-def home():
-    # SQL query to select all movies
-    query = text("SELECT * FROM movies")
-    result = session.execute(query).fetchall()
+        # Create a list of <li> strings, one for each movie/review
+        list_items = []
+        for row in range(result):
+            title = row[1]
+            year = row[2]
+            score = row[5]
+            list_items.append("<li>{} ({}) - Score: {}</li>".format(title, year, row))
 
-    return render_template('home.html', movies=result)
+        # Combine all <li> strings into a single string
+        list_items_str = "\n".join(list_items)
 
-if __name__ == '__main__':
-    app.run(debug=True)
-```
+        # Insert <li> string into the homepage
+        return '''
+        <!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <title>Movie Reviews</title>
+            </head>
+            <body>
+                <h1>Movie Reviews</h1>
+                <ul>
+                    {}
+                </ul>
+            </body>
+        </html>
+        '''.format(list_items_str)
 
-#### Code Breakdown:
-- **Session**: We use the `session.execute` method to run raw SQL queries directly.
-- **Querying all movies**: The query `"SELECT * FROM movies"` selects all rows and columns from the `movies` table.
-- **Rendering the movies**: The results are passed to the `home.html` template to be displayed as a list on the webpage.
+    app.run(debug=True, reloader_type='stat', port=5000)
 
-Here’s what the `home.html` template might look like:
+Explanation:
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Reviews</title>
-</head>
-<body>
-    <h1>Movie Reviews</h1>
-    <ul>
-        {% for movie in movies %}
-        <li>{{ movie.title }} ({{ movie.release_year }}) - Score: {{ movie.review_score }}</li>
-        {% endfor %}
-    </ul>
-</body>
-</html>
-```
+*   This example is similar to the previous one, but now the SQL query is modified to 
+    sort the movies based on ``review_date`` in descending order.
+*   The rest of the function works the same way by displaying the movies and their 
+    reviews sorted by the most recent date.
 
----
+Sort and Limit Results - Top 10 Movies
+---------------------------------
 
-### Second Example: Showing Most Recently Reviewed Movies
+In this example, we'll display the top 10 highest-rated movies, sorted by their 
+``review_score``. We'll modify the SQL query to limit the number of results and order 
+them by score.
 
-#### Concept: Ordering Data by Date
-Now, we want to display the most recently reviewed movies first on the home page. We’ll modify the SQL query to sort the results by `review_date` in descending order.
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 13
 
-#### Code Example:
-```python
-from sqlalchemy import text
+    from flask import Flask
+    from sqlalchemy import create_engine, text
 
-@app.route('/')
-def home():
-    # SQL query to select movies, ordered by review date (most recent first)
-    query = text("SELECT * FROM movies ORDER BY review_date DESC")
-    result = session.execute(query).fetchall()
+    app = Flask(__name__)
 
-    return render_template('home.html', movies=result)
-```
+    # Connect to the database
+    engine = create_engine('sqlite:///movies.db')
+    connection = engine.connect()
 
-#### Code Breakdown:
-- **Ordering by review date**: The query `"SELECT * FROM movies ORDER BY review_date DESC"` sorts the movies by the `review_date` column in descending order.
-- **Fetching and displaying the results**: We use `session.execute(query)` to run the query and fetch the results.
+    @app.route('/')
+    def home():
+        # SQL query to select all movies
+        query = text("SELECT * FROM movies ORDER BY review_score DESC LIMIT 10")
+        result = connection.execute(query).fetchall()
 
-This query ensures that the most recent movie reviews are shown first.
+        # Create a list of <li> strings, one for each movie/review
+        list_items = []
+        for row in range(result):
+            title = row[1]
+            year = row[2]
+            score = row[5]
+            list_items.append(
+                "<li>{} ({}) - Score: {}</li>".format(title, year, row)
+            )
 
----
+        # Combine all <li> strings into a single string
+        list_items_str = "\n".join(list_items)
 
-### Third Example: Showing the Top 10 Movies
+        # Insert <li> string into the homepage
+        return '''
+        <!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <title>Movie Reviews</title>
+            </head>
+            <body>
+                <h1>Top 10 Movies</h1>
+                <ul>
+                    {}
+                </ul>
+            </body>
+        </html>
+        '''.format(list_items_str)
 
-#### Concept: Limiting Results and Sorting by Review Score
-In this example, we’ll display the top 10 highest-rated movies, sorted by their `review_score`. We’ll modify the SQL query to limit the number of results and order them by score.
+    app.run(debug=True, reloader_type='stat', port=5000)
 
-#### Code Example:
-```python
-@app.route('/top')
-def top_movies():
-    # SQL query to select the top 10 movies, ordered by review score
-    query = text("SELECT * FROM movies ORDER BY review_score DESC LIMIT 10")
-    result = session.execute(query).fetchall()
 
-    return render_template('top.html', movies=result)
-```
+Explanation:
 
-#### Code Breakdown:
-- **Ordering by review score**: The query `"SELECT * FROM movies ORDER BY review_score DESC LIMIT 10"` sorts the movies by `review_score` in descending order.
-- **Limiting results**: The `LIMIT 10` part ensures that only the top 10 movies are returned.
-- **Rendering the top 10 movies**: The result is passed to a template (`top.html`) to display the top-rated movies.
-
-Here’s the `top.html` template to display the top 10 movies:
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top 10 Movies</title>
-</head>
-<body>
-    <h1>Top 10 Movies</h1>
-    <ul>
-        {% for movie in movies %}
-        <li>{{ movie.title }} ({{ movie.release_year }}) - Score: {{ movie.review_score }}</li>
-        {% endfor %}
-    </ul>
-</body>
-</html>
-```
-
----
-
-### Conclusion
-
-Using SQLAlchemy Core with Flask, combined with raw SQL queries through `session.execute` and `text`, allows us to directly control and execute SQL in a flexible way. In this tutorial, we learned how to:
-1. Connect to a database and run basic queries using SQLAlchemy sessions.
-2. Display all movies on a webpage.
-3. Show the most recent reviews by ordering results.
-4. Display the top 10 highest-rated movies.
-
-This approach gives you fine control over your database interactions, making it perfect for dynamic web apps that manage structured data efficiently!
+*   This query fetches the top 10 movies with the highest review scores by using 
+    :sql:`ORDER BY review_score DESC LIMIT 10`.
+*   We then process the results the same way as before, displaying only the top 
+    10 movies on the home page.
