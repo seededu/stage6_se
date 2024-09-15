@@ -73,11 +73,9 @@ Project structure:
    └── templates
        └── index.html
 
-**Flask app using a template:**
-
 .. tab-set::
 
-   .. tab-item:: Python
+   .. tab-item:: Server
 
         .. code-block:: python
             :caption: app.py
@@ -172,6 +170,7 @@ pages.
 
         *   ``{% extends 'base.html' %}`` makes ``index.html`` inherit the layout from 
             ``base.html``.
+        *   ``{% block title %}`` overrides the title from the base template.
         *   ``{% block content %}`` is overridden to display the list of movies.
 
 
@@ -199,8 +198,8 @@ pages.
 
         Explanation:
 
-        *   ``{% block title %}`` and ``{% block content %}`` are placeholders that child 
-            templates can override.
+        *   ``{% block title %}`` and ``{% block content %}`` are placeholders that 
+            child templates can override.
 
 
 
