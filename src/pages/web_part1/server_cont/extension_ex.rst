@@ -13,5 +13,3 @@ Extension Exercises
 
 3.  Add users or names to reviews so that multiple people can leave reviews
 
-4.  Add a movie poster image to each review
-

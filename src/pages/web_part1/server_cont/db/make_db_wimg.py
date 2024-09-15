@@ -4,7 +4,7 @@ from datetime import datetime
 import os
 
 # Check if 'movies.db' exists and delete it if found
-db_path = 'movies.db'
+db_path = 'movies_wimg.db'
 if os.path.exists(db_path):
     os.remove(db_path)
     print(f"{db_path} has been deleted.")
@@ -24,7 +24,8 @@ connection.execute(text("""
         genre TEXT,
         review_date DATE,
         review_score INTEGER,
-        review_text TEXT
+        review_text TEXT,
+        poster_image_path TEXT
     );
 """))
 

@@ -17,6 +17,6 @@ rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
     flask_databases
     flask_templating
     flask_variables
-    flask_forms
-    flask_query_string
+    flask_forms_get
+    flask_forms_post
     extension_ex
