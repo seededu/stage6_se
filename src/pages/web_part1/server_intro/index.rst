@@ -14,7 +14,6 @@ rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
     :maxdepth: 2
 
     overview
-    networking
     http_intro
     server_side_scripting
     flask_basics
