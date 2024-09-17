@@ -95,7 +95,6 @@ Data transmission using the web
       :color: info
 
       * :doc:`/web_part1/server_intro/networking`
-      * :doc:`/web_part2/security/index`
 
    .. dropdown:: SMTP, POP 3, IMAP
       :class-title: sd-font-weight-light

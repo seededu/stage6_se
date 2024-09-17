@@ -15,6 +15,7 @@ rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
 
    hypertext/index
    styling/index
+   networking/index
    server_intro/index
    databases/index
    server_cont/index
