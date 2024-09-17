@@ -90,7 +90,8 @@ see.
 Without DNS, you would have to remember IP addresses for every website, which would be 
 a lot harder than remembering domain names.
 
----
+Glossary
+------------------------------------
 
 .. glossary::
 
