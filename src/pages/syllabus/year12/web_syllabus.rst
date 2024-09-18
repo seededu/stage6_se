@@ -28,9 +28,14 @@ Data transmission using the web
       :class-title: sd-font-weight-light
       :color:  info
 
+      Server-side:
+
       * :doc:`/web_part1/server_intro/index`
       * :doc:`/web_part1/server_cont/index`
-      * :doc:`/web_part2/interactivity/index`
+
+      Client-side:
+
+      * Javascript and related modules coming in Web Part 2.
 
    .. dropdown:: e-commerce
       :class-title: sd-font-weight-light
@@ -42,28 +47,29 @@ Data transmission using the web
       :class-title: sd-font-weight-light
       :color: warning
 
+      * Coming in Web Part 2.
+
 .. card:: Investigate and practise how data is transferred on the internet
 
    Including
-
 
    .. dropdown:: data packets
       :class-title: sd-font-weight-light
       :color: success
 
-      * :doc:`/web_part1/server_intro/networking`
+      * :doc:`/web_part1/networking/ip`
 
    .. dropdown:: internet protocol (IP) addresses, including IPv4
       :class-title: sd-font-weight-light
       :color: success
 
-      * :doc:`/web_part1/server_intro/networking`
+      * :doc:`/web_part1/networking/ip`
 
    .. dropdown:: domain name systems (DNS)
       :class-title: sd-font-weight-light
       :color: success
 
-      * :doc:`/web_part1/server_intro/networking`
+      * :doc:`/web_part1/networking/application`
 
 
 
@@ -75,38 +81,54 @@ Data transmission using the web
       :class-title: sd-font-weight-light
       :color: info
 
+      HTTP
+
       * :doc:`HTTP Overview </web_part1/server_intro/overview>`
       * :doc:`/web_part1/server_intro/http_intro`
+      * :doc:`/web_part1/server_intro/server_side_scripting`
+      * continued throughout :doc:`/web_part1/server_intro/index` and :doc:`/web_part1/server_cont/index`
+
+      HTTPS
+
+      * Coming in Web Part 2
 
    .. dropdown:: TCP/IP
       :class-title: sd-font-weight-light
       :color: success
 
-      * :doc:`/web_part1/server_intro/networking`
+      * :doc:`/web_part1/networking/index`
+      * :doc:`/web_part1/networking/ip`
+      * :doc:`/web_part1/networking/tcp`
 
    .. dropdown:: DNS
       :class-title: sd-font-weight-light
       :color: success
 
-      * :doc:`/web_part1/server_intro/networking`
+      * :doc:`/web_part1/networking/application`
 
    .. dropdown:: FTP, SFTP
       :class-title: sd-font-weight-light
       :color: info
 
-      * :doc:`/web_part1/server_intro/networking`
+      * :doc:`/web_part1/networking/application`
 
    .. dropdown:: SMTP, POP 3, IMAP
       :class-title: sd-font-weight-light
       :color: success
 
-      * :doc:`/web_part1/server_intro/networking`
+      * :doc:`/web_part1/networking/application`
 
    .. dropdown:: SSL, TLS
       :class-title: sd-font-weight-light
       :color: warning
 
+      * Coming in Web Part 2
+
 .. card:: Explain the processes for securing the web
+
+   *These topics build on top of technologies such as HTTP. Therefore we will address 
+   then in Web Part 2 once students have been equipped with a foundational 
+   understanding of web technology.*
 
    Including:
 
@@ -114,30 +136,43 @@ Data transmission using the web
       :class-title: sd-font-weight-light
       :color:  warning
 
+      * Coming in Web Part 2
 
    .. dropdown:: encryption algorithms
       :class-title: sd-font-weight-light
       :color:  warning
 
+      * Coming in Web Part 2
+
    .. dropdown:: encryption keys
       :class-title: sd-font-weight-light
       :color: warning
+
+      * Coming in Web Part 2
 
    .. dropdown:: plain text and cipher text
       :class-title: sd-font-weight-light
       :color:  warning
 
+      * Coming in Web Part 2
+
    .. dropdown:: authentication and authorisation
       :class-title: sd-font-weight-light
       :color:  warning
+
+      * Coming in Web Part 2
 
    .. dropdown:: hash values
       :class-title: sd-font-weight-light
       :color: warning
 
+      * Coming in Web Part 2
+
    .. dropdown:: digital signatures
       :class-title: sd-font-weight-light
       :color: warning
+
+      * Coming in Web Part 2
 
 
 
@@ -149,13 +184,19 @@ Data transmission using the web
       :class-title: sd-font-weight-light
       :color:  warning
 
+      * Coming in Web Part 2
+
    .. dropdown:: metadata
       :class-title: sd-font-weight-light
       :color:  warning
 
+      * Coming in Web Part 2
+
    .. dropdown:: streaming service management
       :class-title: sd-font-weight-light
       :color: warning
+
+      * Coming in Web Part 2
 
 
 Designing web applications
@@ -169,21 +210,31 @@ Designing web applications
       :class-title: sd-font-weight-light
       :color:  warning
 
+      * Coming in Web Part 2
+
    .. dropdown:: internationalisation
       :class-title: sd-font-weight-light
       :color:  warning
+
+      * Coming in Web Part 2
 
    .. dropdown:: web security
       :class-title: sd-font-weight-light
       :color: warning
 
+      * Coming in Web Part 2
+
    .. dropdown:: privacy
       :class-title: sd-font-weight-light
       :color:  warning
 
+      * Coming in Web Part 2
+
    .. dropdown:: machine-readable data
       :class-title: sd-font-weight-light
       :color:  warning
+
+      * Coming in Web Part 2
 
 .. card:: Model elements that form a web development system
 
@@ -193,7 +244,10 @@ Designing web applications
       :class-title: sd-font-weight-light
       :color: info
 
-      * :doc:`/web_part1/hypertext/index`
+      * :doc:`/web_part1/hypertext/index` module
+      * :doc:`/web_part1/styling/index` module
+      * continued throughout :doc:`/web_part1/server_intro/index` and :doc:`/web_part1/server_cont/index`
+      * Javascript and related modules coming in Web Part 2
 
    .. dropdown:: server-side (back-end) web programming
       :class-title: sd-font-weight-light
@@ -201,17 +255,20 @@ Designing web applications
 
       * :doc:`/web_part1/server_intro/index`
       * :doc:`/web_part1/server_cont/index`
+      * to be continued in Web Part 2
 
    .. dropdown:: interfacing with databases that are based on Structured Query Language (SQL) or non-SQL
       :class-title: sd-font-weight-light
       :color: success
 
+      * :doc:`/web_part1/databases/index`
       * :doc:`/web_part1/server_cont/index`
 
 
 .. dropdown:: Explore and explain the influence of a web browser on web development, including the use of developer (dev) tools
    :color: warning
 
+   * Coming in Web Part 2
 
 .. card:: Investigate cascading style sheets (CSS) and its impact on the design of a web application
 
@@ -222,20 +279,25 @@ Designing web applications
       :color: info
 
       * :doc:`/web_part1/styling/css_intro`
+      * to be continued in Web Part 2
 
    .. dropdown:: flexibility with browsers or display devices
       :class-title: sd-font-weight-light
       :color: warning
 
+      * Coming in Web Part 2
+
    .. dropdown:: CSS maintenance tools
       :class-title: sd-font-weight-light
       :color: warning
 
+      * Coming in Web Part 2
+
 .. dropdown:: Investigate the reasons for version control and apply it when developing web application
    :color: dark
 
-   This will not be covered under *Programming for the Web*. Students will cover this 
-   in the *Software engineering project*.
+   *This will not be covered under "Programming for the Web". Students will cover this 
+   in the "Software engineering project".
 
 .. card:: Explore the types and significance of code libraries for front-end web development
 
@@ -244,6 +306,8 @@ Designing web applications
    .. dropdown:: frameworks that control complex web applications
       :class-title: sd-font-weight-light
       :color:  warning
+
+      * Coming in Web Part 2
 
    .. dropdown:: template engines
       :class-title: sd-font-weight-light
@@ -255,18 +319,28 @@ Designing web applications
       :class-title: sd-font-weight-light
       :color: warning
 
+      * Coming in Web Part 2
+
 
 .. dropdown:: Explain the use and development of open-source software in relation to web development
-   :color: danger
+   :color: warning
+
+   * Coming in Web Part 2
 
 .. dropdown:: Investigate methods to support and manage the load times of web pages/applications
    :color: warning
 
+   * Coming in Web Part 2
+
 .. dropdown:: Research, experiment with and evaluate the prevalence and use of web content management systems (CMS)
-   :color: danger
+   :color: warning
+
+   * Coming in Web Part 2
 
 .. dropdown:: Assess the contribution of back-end web development to the success of a web application
-   :color: danger
+   :color: warning
+
+   * Coming in Web Part 2
 
 .. card:: Observe and describe the back-end process used to manage a web request
 
@@ -284,13 +358,13 @@ Designing web applications
       :class-title: sd-font-weight-light
       :color: success
 
-      :doc:`/web_part1/server_intro/flask_basics`
+      * :doc:`/web_part1/server_intro/flask_basics`
 
    .. dropdown:: objects
       :class-title: sd-font-weight-light
-      :color: warning
+      :color: success
 
-      :doc:`/web_part2/orm/index`
+      * :doc:`/web_part1/server_intro/flask_basics`
 
    .. dropdown:: libraries
       :class-title: sd-font-weight-light
@@ -311,7 +385,7 @@ Designing web applications
    :color: info
 
    * :doc:`/web_part1/server_intro/flask_basics`
-   * A project meeting this point will be included at the end of Web Part 1
+   * A project meeting this point will be included at the end of Web Part 2.
 
 .. card:: Apply a web-based database and construct script that executes SQL
 
@@ -354,19 +428,29 @@ Designing web applications
       * :doc:`/web_part1/databases/joins`
 
 .. dropdown:: Compare Object-Relational Mapping (ORM) to SQL
-      :color: warning
+   :color: warning
+
+   * Coming in Web Part 2
 
 .. dropdown:: Describe how collaborative work practices between front-end and back-end developers improve the development of a web solution
-      :color: danger
+   :color: warning
+
+   * Coming in Web Part 2
 
 .. card:: Design, develop and implement a progressive web app (PWA)
-      
+   
+   *The design elements will be separately addressed from progessive web apps.*
+
    Including:
 
    .. dropdown:: the application of design and user interface (UI) and user experience (UX) principles of font, colour, audio, video and navigation
       :class-title: sd-font-weight-light
       :color:  warning
 
+      * Coming in Web Part 2
+
    .. dropdown:: a UI that considers accessibility and inclusivity
       :class-title: sd-font-weight-light
       :color:  warning
+
+      * Coming in Web Part 2
