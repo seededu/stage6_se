@@ -330,4 +330,6 @@ Glossary
 .. glossary::
 
     Query String
-        TODO
+        A query string is the part of a URL that contains additional information or 
+        parameters that a web server can use to process a request, often appearing 
+        after a "?" in the URL (e.g., ``?search=books``).

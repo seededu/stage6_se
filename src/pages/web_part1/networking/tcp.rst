@@ -99,18 +99,24 @@ Glossary
 .. glossary::
 
     Ephemeral port
-        TODO
+        An ephemeral port is a temporary port used by a computer to establish a c
+        onnection with a server, typically for short-lived communication like web 
+        browsing.
 
     TCP
         See :term:`Transmission Control Protocol`
 
     Transmission Control Protocol
-        TODO
+        Transmission Control Protocol (TCP) is a set of rules that makes sure data sent 
+        over the internet arrives correctly and in the right order.
 
     Three-way handshake
-        TODO
+        The three-way handshake is the process TCP uses to establish a connection 
+        between two devices, involving three steps: SYN, SYN-ACK, and ACK to ensure 
+        both sides are ready to communicate.
 
     Port
-        TODO
+        A port is a virtual entry point on a computer that allows different services 
+        (like web browsing or email) to communicate over the internet.
 
 

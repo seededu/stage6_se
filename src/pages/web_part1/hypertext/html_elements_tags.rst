@@ -148,13 +148,19 @@ Glossary
 
 .. glossary::
     Children
-        TODO.
+        Children are elements nested inside another element. For example, if a 
+        paragraph is inside a ``<div>``, the paragraph is the "child" of the ``<div>``.
 
     Elements
-        TODO.
+        HTML elements are the building blocks of a webpage. They are written with 
+        tags, and they define the structure and content of a webpage.
     
     Contents
-        TODO.
+        The contents of an HTML element are the text, images, or other elements that 
+        are placed inside an element's opening and closing tags. For example, in 
+        ``<p>Hello World!</p>``, "Hello World!" is the content of the paragraph element.
     
     Parent
-        TODO
+        A parent element is one that contains other elements (its children). For 
+        example, if a list item (``<li>``) is inside a ``<ul>`` (unordered list), the 
+        ``<ul>`` is the parent of the ``<li>``.

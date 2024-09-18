@@ -143,8 +143,3 @@ which would appear as
      - 75
    * - Alison
      - 95
-
-Glossary
---------
-
-.. glossary::

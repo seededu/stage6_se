@@ -304,6 +304,9 @@ Glossary
 .. glossary::
 
     Render
-        TODO
+        Rendering templates is the process of combining a predefined HTML template with 
+        dynamic data on the server to generate a complete web page that is then sent to 
+        the user's browser. This allows for content to change while maintaining the 
+        same layout and structure.
 
 
