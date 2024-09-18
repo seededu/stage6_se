@@ -9,6 +9,7 @@ mathematics, statistics, machine learning, data visualisation and programming.
 .. grid:: 2
 
     .. grid-item-card::  Dr Stephen Tierney
+        :columns: 12 12 6 6
 
         .. figure:: img/stephen_tierney.jpeg
             :width: 180px
@@ -25,7 +26,7 @@ mathematics, statistics, machine learning, data visualisation and programming.
 
         
     .. grid-item-card::  Dr Alison Wong
-
+        :columns: 12 12 6 6
 
         .. figure:: img/alison_wong.jpg
             :width: 180px
