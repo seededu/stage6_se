@@ -70,7 +70,7 @@ In this example:
 
 *   The first route (:python:`@app.route("/")`) maps to the function :python:`home()`, 
     which returns a simple message for the home page.
-*   The second route (:python:`@app.route("/about")``) maps to the function 
+*   The second route (:python:`@app.route("/about")`) maps to the function 
     :python:`about()`, which handles the "about" page.
 *   When you visit `<http://127.0.0.1:5000/>`_, the home page will show, and when you 
     visit `<http://127.0.0.1:5000/about>`_, the about page will appear.

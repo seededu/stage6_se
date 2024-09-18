@@ -89,19 +89,32 @@ Glossary
 .. glossary::
 
     Application Layer
-        TODO
+        The Application Layer is where users interact with the internet, using 
+        protocols like HTTP for websites and SMTP for emails to send and receive data 
+        through apps like browsers or email clients.
     
     Network Access Layer
-        TODO
+        The Network Access Layer is responsible for the physical transmission of data, 
+        using devices like routers and cables to send data over networks like Ethernet 
+        or Wi-Fi.
 
     Network Protocol
-        TODO
+        A network protocol is a set of rules that allows devices to communicate over a 
+        network, ensuring data is transmitted and received correctly. Examples include 
+        HTTP, TCP, and IP.
 
     TCP/IP model
-        TODO
+        The TCP/IP model is a framework that organizes how data is sent over the 
+        internet, dividing the process into four layers to ensure reliable and 
+        efficient communication.
 
     Transport Layer
-        TODO
+        The Transport Layer ensures that data is delivered reliably between devices by 
+        breaking it into packets, sending them, and reassembling them correctly at the 
+        destination.
 
     Internet Layer
-        TODO
+        The Internet Layer handles the routing of data packets across different 
+        networks, ensuring that they reach the correct destination using IP addresses.
+
+

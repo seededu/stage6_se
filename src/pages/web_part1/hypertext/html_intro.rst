@@ -82,7 +82,7 @@ HTML Document Structure
 Tags
 ^^^^^^^^^^^^^^^^^^^
 
-The main building block of HTML are tags, which define how to display different parts 
+The main building block of HTML are :term:`tags <tag>`, which define how to display different parts 
 of a webpage. Each tag is written inside angle brackets, like this: :html:`<tag>`.
 A HTML page is a hierarchy of tags, with tags nesting inside each other.
 
@@ -155,7 +155,7 @@ Example:
 
 .. note:: 
 
-    We will learn more about the options available in :doc:`/web_part1/interactivity/index`.
+    We will learn more about the options available in :doc:`/web_part1/styling/index`.
 
 
 body tag
@@ -238,7 +238,15 @@ Glossary
         such as images. 
 
     Rendering
-        The process of transforming HTML into a visual form.
+        Rendering is the process by which a web browser interprets HTML, CSS, and 
+        JavaScript code to display a webpage on your screen. It turns the code into 
+        the visible elements you interact with, like text, images, and buttons.
+
+    Tag
+        A tag is a piece of code that tells the browser how to display content. Tags 
+        usually come in pairs: an opening tag (like ``<p>``) to start the element and a 
+        closing tag (like ``</p>``) to end it. Together, they define the start and end 
+        of a page element.
     
 
 

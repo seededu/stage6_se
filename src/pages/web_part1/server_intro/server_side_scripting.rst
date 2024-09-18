@@ -52,7 +52,7 @@ Databases
 A :term:`dynamic` web site usually needs a source of data to fill out the page contents. 
 This data is often stored in a database. In this case the script used to generate the 
 HTML content also needs to fetch data from the database. We will explain how to 
-achieve this in :doc:`/web_part1/server_cont/databases`.
+achieve this in :doc:`/web_part1/server_cont/flask_databases`.
 
 .. figure:: img/server_side2.png
     :width: 480
@@ -66,11 +66,16 @@ Glossary
 
 .. glossary::
     Dynamic
-        TODO
+        Dynamic content on a website changes based on user interactions or data from a 
+        server, such as personalized recommendations or live updates.
     
     Server Side Scripting
-        TODO
+        Server-side scripting is the process of running code on the server to generate 
+        dynamic content for a webpage before sending it to the client, often using 
+        languages like Python, PHP, or Node.js.
 
     WSGI
-        TODO
+        WSGI is a standard interface between web servers and Python applications, 
+        allowing them to communicate so that Python web apps can serve dynamic content 
+        on the internet.
 

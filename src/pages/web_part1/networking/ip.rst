@@ -33,7 +33,7 @@ transmission, only that packet needs to be re-sent, not the whole image.
 Internet Protocol (IP)
 ------------------------
 
-:term:`Internet Protocol (IP)`` is the set of rules that governs how data is sent and 
+:term:`Internet Protocol (IP)` is the set of rules that governs how data is sent and 
 received over the internet. Every device that communicates on the internet uses IP to 
 exchange data packets. IP is the implementation of of the internet layer. The most 
 common version of IP today is :term:`IPv4`, which uses addresses that look like this: 
@@ -102,19 +102,27 @@ Glossary
 .. glossary::
 
     Internet Protocol
-        TODO
+         Internet Protocol is a set of rules that governs how data is sent and received 
+         over the internet, using IP addresses to ensure data reaches the correct 
+         destination.
 
     IP
         See :term:`Internet Protocol`
 
     IPv4
-        TODO
+         IPv4 (Internet Protocol version 4) is the most commonly used version of IP, 
+         which assigns unique addresses to devices using a format of four numbers 
+         separated by dots (e.g., ``192.168.1.1``).
 
     IP Address
-        TODO
+        An IP address is a unique number assigned to each device connected to the 
+        internet, acting like a home address to ensure data is sent to the right place.
 
     Data packets
-        TODO
+        Data packets are small units of information that are broken down and sent over 
+        the internet, which are reassembled at the destination to form the original 
+        data.
 
     Packet Routing
-        TODO
+        Packet routing is the process of directing data packets across different 
+        networks, using routers to ensure they take the best path to their destination.

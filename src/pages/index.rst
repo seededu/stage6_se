@@ -8,19 +8,19 @@
 Software Engineering, Stage 6
 =============================
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor orci at 
-ultrices vehicula. Fusce volutpat hendrerit enim fringilla aliquet. Integer hendrerit 
-vestibulum ligula sit amet cursus. Duis ante lacus, venenatis in nisl nec, condimentum 
-ultricies elit. Duis ullamcorper, ante scelerisque efficitur venenatis, libero sem 
-iaculis erat, sed consequat turpis quam eget libero. Donec pharetra lobortis velit eu 
-aliquet. Nam ut dolor nibh. Proin egestas augue quis leo ullamcorper, at semper nisl 
-rutrum. Curabitur et nunc tempus, tempor mi vel, ultrices tortor.
+Welcome to Software Engineering, Stage 6!
 
+This is a free and open source resource for year 11 and 12 
+students completing the `"Software Engineering" <https://curriculum.nsw.
+edu.au/learning-areas/tas/software-engineering-11-12-2022/overview>`_ subject in NSW.
+
+.. caution::
+   
+   This resource is a work in progress. The structure and content may change frequently.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents
-
 
    syllabus/year12/web_syllabus
    python/index

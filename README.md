@@ -2,42 +2,24 @@
 
 [![View on Github Pages](https://github.com/seededu/stage6_se/actions/workflows/preview.yml/badge.svg)](https://seededu.github.io/stage6_se/)
 
+Welcome to Software Engineering, Stage 6!
+
+This is a free and open source resource for year 11 and 12 
+students completing the `"Software Engineering" <https://curriculum.nsw.
+edu.au/learning-areas/tas/software-engineering-11-12-2022/overview>`_ subject in NSW.
+
 ## View Online
 
 [https://seededu.github.io/stage6_se/](https://seededu.github.io/stage6_se/)
 
-## Local Setup
 
-Run `setup.sh`
+## Contributing
 
-### Generate html
+Contributions are welcome 
 
-#### Option 1: Generate static docs
+## Building
 
-`make html`
+Refer to `BUILD.MD`
 
-#### Option 2: Live preview of changes
 
-`make livehtml`
 
-## Docker
-
-### Build container
-
-`docker build -t stage6_se .`
-
-### Run container
-
-`docker run -it stage6_se`
-
-## Testing Github Workflows and Actions
-
-### Main branch
-
-`act push`
-
-### Pull requests
-
-This will probably fail because `act` doesn't handle binding volumes correctly.
-
-`act -s NETLIFY_SITE_ID={SECRET_SITE_ID} -s NETLIFY_AUTH_TOKEN=={SECRET_AUTH TOKEN} pull_request`
