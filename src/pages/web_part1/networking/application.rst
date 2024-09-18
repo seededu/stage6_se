@@ -87,7 +87,7 @@ don't understand these names. They need the IP addresses of the servers that hos
 websites. This is where the :term:`Domain Name System (DNS) <Domain Name System>` comes 
 in.
 
-:term:`DNS`` is like the internet's phonebook. When you type a domain name into your 
+:term:`DNS` is like the internet's phonebook. When you type a domain name into your 
 browser, your computer asks a DNS server to look up the corresponding IP address. 
 
 Here's how it works:
@@ -108,19 +108,25 @@ Glossary
 .. glossary::
 
     Domain Name System
-        TODO
+        DNS is like the internet's phonebook, translating human-friendly domain names 
+        (like google.com) into IP addresses that computers use to find and communicate 
+        with websites.
 
     DNS
         See :term:`Domain Name System`
 
     HTTP
-        TODO
+        HTTP is the protocol used by web browsers to request and load web pages from 
+        servers, allowing you to browse websites on the internet.
 
     IMAP
-        TODO
+        IMAP is a protocol used to receive emails, allowing you to view your messages 
+        on multiple devices by keeping them stored on the email server.
 
     POP3
-        TODO
+        POP3 is a protocol used to receive emails, typically downloading messages from 
+        the server to your device and removing them from the server afterward.
 
     SMTP
-        TODO
+        SMTP is the protocol used for sending emails from your device to a mail 
+        server, which then forwards the message to the recipient's server.

@@ -91,11 +91,19 @@ Glossary
 --------
 
 .. glossary::
-   Cascading
-      TODO
+    Cascading
+        Cascading refers to the way styles are applied in a specific order of 
+        importance. If multiple styles conflict, CSS follows rules to decide which one 
+        to apply. For example, styles in a more specific rule or applied later will 
+        usually override earlier ones.
 
-   Property
-      TODO
+    Property
+        A CSS property is an aspect of an element that you want to style, like ``color``, 
+        ``font-size``, or ``margin``. It defines what part of the element you are 
+        customizing.
 
-   Value
-      TODO
+    Value
+        A CSS value is the setting you give to a property. For instance, if the 
+        property is color, the value might be ``blue`` or ``#0000FF``, telling the 
+        browser what color to use for the text.
+

@@ -123,5 +123,7 @@ Glossary
 
 .. glossary::
    DRY
-      TODO
+      Don't Repeat Yourself is a programming principle that encourages writing code in 
+      a way that avoids duplication. Instead of repeating the same code in multiple 
+      places, you write it once and reuse it whenever needed.
 

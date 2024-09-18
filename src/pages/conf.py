@@ -29,6 +29,7 @@ html_theme = "sphinx_book_theme"
 html_title = "Software Engineering Stage 6"
 html_static_path = ['_static']
 
+
 html_theme_options = {
     "logo": {
         "text": "SE - Stage 6",
@@ -48,7 +49,22 @@ html_theme_options = {
             "type": "fontawesome",
         }
    ],
-   "analytics": {
-       "google_analytics_id": "G-4F2QYM28MP",
-   }
+    # "repository_url": "https://github.com/seededu/stage6_se",
+    # "repository_branch": "main",
+    # "use_edit_page_button": True,
+    "use_source_button": True,
+    # "use_issues_button": True,
+    "use_download_button": False,
+    "analytics": {
+        "google_analytics_id": "G-4F2QYM28MP",
+    }
+}
+
+
+html_context = {
+    # "github_url": "https://github.com", # or your GitHub Enterprise interprise
+    "github_user": "seededu",
+    "github_repo": "stage6_se",
+    "github_version": "main",
+    "doc_path": "src/pages",
 }

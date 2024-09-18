@@ -1,7 +1,7 @@
 .. role:: python(code)
    :language: python
 
-Forms
+Forms - Part 1
 =====================
 
 HTML forms are essential for collecting user input on webpages. In this section we will 
@@ -330,4 +330,6 @@ Glossary
 .. glossary::
 
     Query String
-        TODO
+        A query string is the part of a URL that contains additional information or 
+        parameters that a web server can use to process a request, often appearing 
+        after a "?" in the URL (e.g., ``?search=books``).
