@@ -4,8 +4,8 @@
 More Joins
 ==============================
 
-The type of JOIN that we have just learnt is an :sql:`INNER JOIN`. There are a few more 
-types of :sql:`JOIN`s that we will cover briefly. 
+The type of JOIN that we have just learnt is an :sql:`INNER JOIN` There are a few more 
+types of :sql:`JOIN`\s that we will cover briefly. 
 
 To demonstrate how these joins work, we will continue to use our ``student`` and 
 ``marks`` tables.

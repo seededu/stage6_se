@@ -87,7 +87,7 @@ don't understand these names. They need the IP addresses of the servers that hos
 websites. This is where the :term:`Domain Name System (DNS) <Domain Name System>` comes 
 in.
 
-:term:`DNS`` is like the internet's phonebook. When you type a domain name into your 
+:term:`DNS` is like the internet's phonebook. When you type a domain name into your 
 browser, your computer asks a DNS server to look up the corresponding IP address. 
 
 Here's how it works:

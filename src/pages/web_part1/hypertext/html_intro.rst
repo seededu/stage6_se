@@ -155,7 +155,7 @@ Example:
 
 .. note:: 
 
-    We will learn more about the options available in :doc:`/web_part1/interactivity/index`.
+    We will learn more about the options available in :doc:`/web_part1/styling/index`.
 
 
 body tag

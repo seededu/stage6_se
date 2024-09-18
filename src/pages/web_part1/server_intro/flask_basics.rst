@@ -48,9 +48,9 @@ Let's breakdown the Python script
 
 *   :python:`from flask import Flask`: This line imports the Flask class from the 
     flask module.
-*   :python:`app = Flask(__name__)``: Here, we create a new Flask application. 
+*   :python:`app = Flask(__name__)`: Here, we create a new Flask application. 
     :python:`__name__` helps Flask figure out the root path of your application.
-*   :python:`@app.route("/")``: This is called a route. It tells Flask which URL should 
+*   :python:`@app.route("/")`: This is called a route. It tells Flask which URL should 
     trigger the function right below it. In this case, it's the home page (``/``).
 *   :python:`def hello_world():`: This function is triggered when the user visits the 
     home page, and it returns the message ``"Hello, World!"``.

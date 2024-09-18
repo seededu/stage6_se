@@ -85,7 +85,7 @@ Examples of multimedia elements:
 Here is an example image. We specify ``src``, which is a URL of an image. The 
 height specifies the height of the image in pixels.
 
-.. code-block:: html
+.. code-block::
 
    <img src="/_images/chicken.jpg", width="400">
 

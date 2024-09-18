@@ -66,7 +66,7 @@ different services. For example:
     A server normally occupies a port indefinitely. However, clients such 
     as your web browser need to make multiple connections simultaneously, all of which 
     require a port. To solve this, the web browser will use a random port for each 
-    connection, known as an :term:`ephermeral port`. These ports are immediately 
+    connection, known as an :term:`ephemeral port`. These ports are immediately 
     vacated once the data transfer is complete so that they are free for other software.
 
 TCP Connection Process

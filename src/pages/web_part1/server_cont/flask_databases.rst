@@ -74,7 +74,7 @@ Explanation:
 
 
 Sort Results - Most Recent Reviews
----------------------------------
+-------------------------------------
 
 Let's display the most recently reviewed movies first on the home page. We'll modify 
 the SQL query to sort the results by ``review_date`` in descending order.
@@ -135,7 +135,7 @@ Explanation:
     reviews sorted by the most recent date.
 
 Sort and Limit Results - Top 10 Movies
----------------------------------
+-----------------------------------------
 
 In this example, we'll display the top 10 highest-rated movies, sorted by their 
 ``review_score``. We'll modify the SQL query to limit the number of results and order 

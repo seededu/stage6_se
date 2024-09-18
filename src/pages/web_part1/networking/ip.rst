@@ -33,7 +33,7 @@ transmission, only that packet needs to be re-sent, not the whole image.
 Internet Protocol (IP)
 ------------------------
 
-:term:`Internet Protocol (IP)`` is the set of rules that governs how data is sent and 
+:term:`Internet Protocol (IP)` is the set of rules that governs how data is sent and 
 received over the internet. Every device that communicates on the internet uses IP to 
 exchange data packets. IP is the implementation of of the internet layer. The most 
 common version of IP today is :term:`IPv4`, which uses addresses that look like this: 
