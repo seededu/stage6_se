@@ -1,7 +1,7 @@
 .. role:: python(code)
    :language: python
 
-Forms (POST)
+Forms - Part 2
 =====================
 
 In this section, we'll learn how to make HTML forms that send the form data using a  

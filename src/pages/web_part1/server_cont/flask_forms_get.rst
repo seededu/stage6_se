@@ -1,7 +1,7 @@
 .. role:: python(code)
    :language: python
 
-Forms
+Forms - Part 1
 =====================
 
 HTML forms are essential for collecting user input on webpages. In this section we will 
