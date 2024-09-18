@@ -5,8 +5,7 @@
 Welcome to Software Engineering, Stage 6!
 
 This is a free and open source resource for year 11 and 12 
-students completing the `"Software Engineering" <https://curriculum.nsw.
-edu.au/learning-areas/tas/software-engineering-11-12-2022/overview>`_ subject in NSW.
+students completing the [Software Engineering](https://curriculum.nsw.edu.au/learning-areas/tas/software-engineering-11-12-2022/overview) subject in NSW.
 
 ## View Online
 
