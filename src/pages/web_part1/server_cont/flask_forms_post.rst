@@ -4,20 +4,17 @@
 Forms (POST)
 =====================
 
-In this section, we'll learn how to make HTML forms used to POST data and how Flask 
-handles form submissions using the POST method. We'll also cover how to handle file 
-uploads.
+In this section, we'll learn how to make HTML forms that send the form data using a  
+HTTP ``POST`` request and how Flask handles such form submissions. We'll also cover 
+how to handle file uploads.
 
-Forms are commonly used for:
+Forms that use ``POST`` requests send data in the body of the request and are 
+used for forms that submit data for the web server to retain or file uploads.
+
+Forms that use ``POST`` requests are commonly used for:
 
 *   Login and registration pages
 *   Adding or updating data (e.g., reviews, blog posts, comments)
-
-Everyday examples of forms include search bars on websites, comment sections on blog 
-posts, and user registration pages.
-
-*   ``POST``: Sends data in the body of the request (invisible to users), used for 
-    submitting large amounts of data like form submissions or file uploads.
 
 
 Form Example
@@ -26,6 +23,8 @@ Form Example
 Here's a HTML form that collects a user's name and email:
 
 .. code-block:: html
+    :linenos:
+    :emphasize-lines: 8
 
     <!DOCTYPE html>
     <html>

@@ -1,13 +1,68 @@
 .. role:: python(code)
    :language: python
 
-Forms (GET)
+Forms
 =====================
 
-HTML forms are essential for collecting user input, and the GET method is one of the 
-key ways to send that data to a server. In this section, we'll explore how GET forms 
-work, how Flask handles GET requests, and how we can use query strings to filter data. 
-We'll also build a movie filtering page as an example.
+HTML forms are essential for collecting user input on webpages. In this section we will 
+learn how to create forms with HTML, how to send the form data to a webserver using 
+a HTTP ``GET`` request using :term:`query strings <query string>` and handle the 
+request on a web server.
+
+We'll use these form submissions to filter movie reviews in our case study as an 
+example.
+
+HTML Forms
+--------------------------
+
+A HTML form consists of
+
+*   a ``form`` element
+*   a set of ``input`` elements inside the form element.
+
+Here's an example of a form
+
+.. code-block:: html
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Search Form</title>
+    </head>
+    <body>
+        <h1>Search</h1>
+        <form>
+            <label for="query">Enter your search:</label>
+            <input type="text" id="term" name="term"><br><br>
+            
+            <input type="submit" value="Search">
+        </form>
+    </body>
+    </html>
+
+Explanation
+
+*   ``<form>`` specifies the start of a form and encapsulates all the inputs that are 
+    to be submitted with the form.
+*   ``<input type="text" id="term" name="term">`` creates a text input for the user's 
+    search term. The ``name`` attribute will become the key in the query string.
+*   ``<input type="submit" value="Search">`` creates a button to submit the form data.
+
+Form Inputs
+--------------------------
+
+The HTML specification defines a number of valid ``input`` types. Common examples are:
+
+*   ``checkbox``
+*   ``number``
+*   ``radio``
+*   ``text``
+
+There is also a special type called ``submit``, which creates a button that submits 
+the form when clicked.
+
+A full list of valid ``input`` types can be found here 
+`<https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input>`_
 
 Forms over HTTP
 --------------------------
@@ -20,15 +75,13 @@ HTTP. The two most common methods are:
 *   ``POST``: Sends data in the body of the request, used for 
     submitting data such as forms or file uploads.
 
-We will focus on the ``GET`` method on this page. Forms involving ``POST`` are 
-described on :doc:`/web_part1/server_cont/flask_forms_post`.
+We will focus on submititng forms using ``GET`` requests on this page.
 
-HTML Forms
---------------------------
+.. note::
+    Forms using ``POST`` requests are described in
+    :doc:`/web_part1/server_cont/flask_forms_post`.
 
-A HTML form that uses is a structure that allows users to submit data through the URL 
-of a web page. For forms using ``GET`` the data is encoded in the URL itself, making 
-them ideal for:
+For forms using ``GET`` the data is encoded in the URL itself, making them ideal for:
 
 *   Search queries
 *   Filters for content (e.g., filtering movies by genre)
@@ -58,6 +111,8 @@ Example Form
 Here's an example of a form using ``GET`` where users can search by name:
 
 .. code-block:: html
+    :linenos:
+    :emphasize-lines: 8
 
     <!DOCTYPE html>
     <html>
@@ -67,7 +122,7 @@ Here's an example of a form using ``GET`` where users can search by name:
     <body>
         <h1>Search</h1>
         <form action="/search" method="GET">
-            <label for="query">Enter your search:</label>
+            <label for="term">Enter your search:</label>
             <input type="text" id="term" name="term"><br><br>
             
             <input type="submit" value="Search">
@@ -81,9 +136,6 @@ Explanation
 *   ``<form action="/search" method="GET">`` creates a form that submits data to the 
     ``/search`` URL using the GET method. This means the input will appear in the URL 
     after submission.
-*   ``<input type="text" id="term" name="term">`` creates a text input for the user's 
-    search term. The ``name`` attribute will become the key in the query string.
-*   ``<input type="submit" value="Search">`` creates a button to submit the form data.
 
 When the form is submitted with "Flask" as the search term, the URL will look like this:
 
