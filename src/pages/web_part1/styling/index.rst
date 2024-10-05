@@ -9,6 +9,7 @@ learn about styling our web pages using Cascading Style Sheets (CSS).
 
     css_intro
     css_declarations
+    css_box_model
     css_selectors
     css_id_class
     css_adv_selectors
