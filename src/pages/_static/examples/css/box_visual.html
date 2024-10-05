@@ -1,0 +1,71 @@
+<!DOCTYPE html>    
+<html>
+    <head>
+        <style>
+            div.margin {
+                width: 100%;
+
+                padding-top: 24px;
+                padding-bottom: 66px;
+                padding-left: 66px;
+                padding-right: 66px;
+
+                background-color: lightgray;
+                border:dashed dimgray;
+                color:black;
+                
+            }
+
+            div.border {
+                background-color: lightgreen;
+            }
+
+            div.padding {
+                background-color: lightsteelblue;
+            }
+
+            div.content {
+                background-color: white;
+                border:dashed dimgray;
+                padding-top: 66px;
+            }
+
+            .content-title {
+                text-align: center;
+                display: block;
+                /* padding-top: 32px; */
+            }
+
+            .title {
+                text-align: center;
+                display: block;
+                padding-bottom: 24px;
+            }
+
+
+
+            .box-model {
+                box-sizing: border-box;
+                font-size: 18px;
+                padding-top: 24px;
+                padding-bottom: 66px;
+                padding-left: 66px;
+                padding-right: 66px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="margin box-model">
+            <span class="title">Margin</span>
+            <div class="border box-model">
+                <span class="title">Border</span>
+                <div class="padding box-model">
+                    <span class="title">Padding</span>
+                    <div class="content box-model">
+                        <span class="content-title">Content</span>
+                    </div>
+                </div>
+            </div>
+          </div>      
+    </body>
+</html>
