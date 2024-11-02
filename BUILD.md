@@ -6,6 +6,8 @@ Run `setup.sh`
 
 ### Generate html
 
+Don't forget to activate your virtual environment!
+
 #### Option 1: Generate static docs
 
 `make html`
