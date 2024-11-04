@@ -1,11 +1,8 @@
 .. role:: python(code)
    :language: python
 
-Syllabus Map
-=======================
-
 Programming for the Web
--------------------------------
+=======================
 
 Proposed Sequence:
 
@@ -18,7 +15,7 @@ Proposed Sequence:
 * :bdg-dark:`Other` covered in a later module
 
 Data transmission using the web
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------
 
 .. card:: Explore the applications of web programming
 
@@ -200,7 +197,7 @@ Data transmission using the web
 
 
 Designing web applications
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------
 
 .. card:: Investigate and explain the role of the World Wide Web Consortium (W3C) in the development of applications for the web
 

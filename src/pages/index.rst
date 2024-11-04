@@ -22,7 +22,7 @@ edu.au/learning-areas/tas/software-engineering-11-12-2022/overview>`_ subject in
    :maxdepth: 2
    :caption: Contents
 
-   syllabus/year12/web_syllabus
+   syllabus/index
    python/index
    web_part1/index
    about
