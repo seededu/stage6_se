@@ -1,8 +1,6 @@
 .. role:: python(code)
    :language: python
 
-Getting Started
-====================
 
 Python
 --------------------
@@ -17,25 +15,3 @@ The best way to learn Python is to practice, practice, practice!
   :width: 400
   :align: center
 
-Printing
---------------------
-
-In order to get the computer to display information to the screen, we use the print() function.
-
-Try running the code below!
-
-.. code-block:: python
-
-    print('I love Python')
-
-
-Take note of the following:
-
-- ``print`` must be in lower case. If you try using ``Print``, it won't work! This is because the computer is fussy! It can only understand very specific instructions.
-- ``'I love Python'`` is just a piece of text. This is the information we want to display.
-- We use ' ' or " " to indicate text. (We actually refer to text as a string; more on this later.)
-- We tell the computer what to display by placing the contents in circular brackets ().
-
-This is the structure of the print() function:
-
-:python:`print(information_you_want_to_display)`.

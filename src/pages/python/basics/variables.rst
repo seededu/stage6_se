@@ -38,51 +38,71 @@ Here is an example:
 
 Note that the variable x does not have quotes but the string 'Alison' does!
 
-Types
---------------------
 
-Python has different types of variables. Here are some of the most commonly used
-variables.
+.. dropdown:: Question 1
+    :open:
+    :color: info
+    :icon: question
 
-* **integer**: a whole number
+    What do you think the output of the following code will be?
 
-  * :python:`x = 5`
+    .. code-block:: python
 
-  * :python:`num = 21`
+      name = 'Steve'
+      print('Hello')
+      print(name)
 
-* **float**: a decimal number
+    * 
 
-  * :python:`cost = 1.50`
+      .. code-block:: python
 
-  * :python:`pi = 3.14159`
+        Hello
 
-* **string**: text
+    * 
 
-  * :python:`name = 'steve'`
+      .. code-block:: python
 
-  * :python:`message = "great job"`
+        Steve
 
-.. note:: You can use either single quotes ``' '`` or double quotes ``" "`` to
-  indicate a string as long as you start and end with the same type.
+    * 
 
-* **char**: a single character
+      .. code-block:: python
 
-  * :python:`letter = 'a'`
+        Hello
+        name
 
-  * :python:`symbol = '@'`
+    * 
 
+      .. code-block:: python
 
-.. note:: Python does not distinguish between characters and strings and will
-  treat a single character as a string. But other languages will treat them
-  differently!
-
-If you want to know the type of a certain variable, we can use the
-:python:`type` function.
+        Hello
+        Steve
 
 
-.. exec_code::
-  :language: python
+    .. dropdown:: Solution
+        :class-title: sd-font-weight-bold
+        :color: dark
 
-  print(type(3))
-  print(type(3.0))
-  print(type('3'))
+        :octicon:`x-circle;1em;sd-text-danger;` ``print["I can code!"]``
+
+        **Invalid.**  Uses square brackets instead of circular brackets
+
+        :octicon:`issue-closed;1em;sd-text-success;` ``print('Computers are fun!')``
+
+        **Valid.**
+
+        :octicon:`x-circle;1em;sd-text-danger;` ``print('Programming is awesome!)``
+
+        **Invalid.** Missing the quote at the end of the string
+
+        :octicon:`x-circle;1em;sd-text-danger;` ``print(Developing software is cool!)``
+
+        **Invalid.** Missing quotes altogether
+
+        :octicon:`issue-closed;1em;sd-text-success;` ``print('Programming rules!')``
+
+        **Valid.**
+
+        :octicon:`x-circle;1em;sd-text-danger;` ``print('Don't code while sleepy!')``
+
+        **Invalid.** Python is using single quotes to identify the start and end of the string. In this case the ``'`` in don't is registering as a closing  quote so python thinks that the string is Don. 
