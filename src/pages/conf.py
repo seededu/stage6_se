@@ -28,7 +28,6 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = "sphinx_book_theme"
 html_title = "Software Engineering Stage 6"
 html_static_path = ['_static']
-html_css_files = ['custom.css']
 
 html_theme_options = {
     "logo": {
@@ -67,11 +66,3 @@ html_context = {
     "github_version": "main",
     "doc_path": "src/pages",
 }
-
-sphinx_immaterial_custom_admonitions = [
-    {
-        "name": "pied-piper",
-        "color": (43, 155, 70),
-        "icon": "fontawesome/brands/pied-piper-alt",
-    },
-]

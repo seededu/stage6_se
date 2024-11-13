@@ -30,47 +30,85 @@ This is the structure of the print() function:
     :color: info
     :icon: question
 
-    Which of the following code snippets are valid? *Select all that apply.*
+    Which of the following code snippets are **valid**? *Select all that apply.*
 
-    :octicon:`circle;1em;sd-text-black;` ``print["I can code!"]``
+    A. 
 
-    :octicon:`circle;1em;sd-text-black;` ``print('Computers are fun!')``
+      .. code-block:: python
 
-    :octicon:`circle;1em;sd-text-black;` ``print('Programming is awesome!)``
+        print["I can code!"]
 
-    :octicon:`circle;1em;sd-text-black;` ``print(Developing software is cool!)``
+    B. 
 
-    :octicon:`circle;1em;sd-text-black;` ``print('Programming rules!')``
+      .. code-block:: python
 
-    :octicon:`circle;1em;sd-text-black;` ``print('Don't code while sleepy!')``
+        print('Computers are fun!')
+
+    C. 
+
+      .. code-block:: python
+
+        print('Programming is awesome!)
+
+    D. 
+
+      .. code-block:: python
+
+        print(Developing software is cool!)
+
+    E. 
+
+      .. code-block:: python
+        
+        print('Programming rules!')
+
+    F. 
+
+      .. code-block:: python
+
+        print('Don't code while sleepy!')
 
     .. dropdown:: Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        :octicon:`x-circle;1em;sd-text-danger;` ``print["I can code!"]``
+        .. code-block:: python
 
-        **Invalid.**  Uses square brackets instead of circular brackets
+            print["I can code!"]
 
-        :octicon:`issue-closed;1em;sd-text-success;` ``print('Computers are fun!')``
+        :octicon:`x-circle;1em;sd-text-danger;` **Invalid.**  Uses square brackets instead of circular brackets
 
-        **Valid.**
+        .. code-block:: python
 
-        :octicon:`x-circle;1em;sd-text-danger;` ``print('Programming is awesome!)``
+            print('Computers are fun!')
 
-        **Invalid.** Missing the quote at the end of the string
 
-        :octicon:`x-circle;1em;sd-text-danger;` ``print(Developing software is cool!)``
+        :octicon:`issue-closed;1em;sd-text-success;` **Valid.**
 
-        **Invalid.** Missing quotes altogether
+        .. code-block:: python
 
-        :octicon:`issue-closed;1em;sd-text-success;` ``print('Programming rules!')``
+            print('Programming is awesome!)
 
-        **Valid.**
 
-        :octicon:`x-circle;1em;sd-text-danger;` ``print('Don't code while sleepy!')``
+        :octicon:`x-circle;1em;sd-text-danger;` **Invalid.** Missing the quote at the end of the string
 
-        **Invalid.** Python is using single quotes to identify the start and end of the string. In this case the ``'`` in don't is registering as a closing  quote so python thinks that the string is Don. 
+        .. code-block:: python
+
+            print(Developing software is cool!)
+
+        :octicon:`x-circle;1em;sd-text-danger;` **Invalid.** Missing quotes altogether
+
+        .. code-block:: python
+            
+            print('Programming rules!')
+
+        :octicon:`issue-closed;1em;sd-text-success;` **Valid.**
+
+        .. code-block:: python
+
+            print('Don't code while sleepy!')
+
+        :octicon:`x-circle;1em;sd-text-danger;` **Invalid.** Python is using single quotes to identify the start and end of the string. In this case the ``'`` in don't is registering as a closing  quote so python thinks that the string is Don. 
 
 .. dropdown:: Code challenge: Hello World!
     :color: warning

@@ -52,26 +52,26 @@ Note that the variable x does not have quotes but the string 'Alison' does!
       print('Hello')
       print(name)
 
-    * 
+    A. 
 
       .. code-block:: python
 
         Hello
 
-    * 
+    B. 
 
       .. code-block:: python
 
         Steve
 
-    * 
+    C. 
 
       .. code-block:: python
 
         Hello
         name
 
-    * 
+    D. 
 
       .. code-block:: python
 
@@ -83,26 +83,130 @@ Note that the variable x does not have quotes but the string 'Alison' does!
         :class-title: sd-font-weight-bold
         :color: dark
 
-        :octicon:`x-circle;1em;sd-text-danger;` ``print["I can code!"]``
+        First the program will print the string ``'Hello'``, then the code will print the information stored in the variable name. This will result in the program printing
 
-        **Invalid.**  Uses square brackets instead of circular brackets
+        .. code-block:: python
 
-        :octicon:`issue-closed;1em;sd-text-success;` ``print('Computers are fun!')``
+          Hello
+          Steve
 
-        **Valid.**
+.. dropdown:: Question 2
+    :open:
+    :color: info
+    :icon: question
 
-        :octicon:`x-circle;1em;sd-text-danger;` ``print('Programming is awesome!)``
+    What do you think the output of the following code will be?
 
-        **Invalid.** Missing the quote at the end of the string
+    .. code-block:: python
 
-        :octicon:`x-circle;1em;sd-text-danger;` ``print(Developing software is cool!)``
+      x = '3'
+      print('My lucky number is')
+      print('x')
 
-        **Invalid.** Missing quotes altogether
+    A. 
 
-        :octicon:`issue-closed;1em;sd-text-success;` ``print('Programming rules!')``
+      .. code-block:: html
 
-        **Valid.**
+        My lucky number is
+        3
 
-        :octicon:`x-circle;1em;sd-text-danger;` ``print('Don't code while sleepy!')``
+    B. 
 
-        **Invalid.** Python is using single quotes to identify the start and end of the string. In this case the ``'`` in don't is registering as a closing  quote so python thinks that the string is Don. 
+      .. code-block:: html
+
+        My lucky number is
+        x
+
+    C. 
+
+      .. code-block:: html
+
+        My lucky number is
+
+    D. 
+
+      .. code-block:: html
+
+        3
+
+    .. dropdown:: Solution
+        :class-title: sd-font-weight-bold
+        :color: dark
+
+        First the program will print the string ``'My lucky name is'``, then the code will print the string ``'x'``. This is because there are quotes around the x so it's treated as a string.
+
+        This will result in the program printing
+
+        .. code-block:: html
+
+          My lucky name is
+          x
+
+.. dropdown:: Question 3
+    :open:
+    :color: info
+    :icon: question
+
+    Which of the following are **valid**? *Select all that apply*.
+
+    A. 
+
+      .. code-block:: html
+
+        print(x)
+
+    B. 
+
+      .. code-block:: html
+
+        'message' = Happy Birthday
+        print(message)
+
+    C. 
+
+      .. code-block:: html
+
+        day = 'Monday'
+        print('Today is')
+        print(day)
+
+    D. 
+
+      .. code-block:: html
+
+        print('I do not like')
+        print(dislike)
+        dislike = 'eggs and ham'
+
+    .. dropdown:: Solution
+        :class-title: sd-font-weight-bold
+        :color: dark
+
+        .. code-block:: html
+
+          print(x)
+
+        :octicon:`x-circle;1em;sd-text-danger;` **Invalid.**  The variable ``x`` does not exist so when the program tries to access it you get an error.
+
+        .. code-block:: html
+
+          'message' = Happy Birthday
+          print(message)
+
+        :octicon:`x-circle;1em;sd-text-danger;` **Invalid.** Variables should be defined without the quotes and strings should be defined with quotes. Note that the variable name must always be to the left of the ``=``.
+
+        .. code-block:: html
+
+          day = 'Monday'
+          print('Today is')
+          print(day)
+
+        :octicon:`issue-closed;1em;sd-text-success;` **Valid.**
+
+        .. code-block:: html
+
+          print('I do not like')
+          print(dislike)
+          dislike = 'eggs and ham'
+
+        :octicon:`x-circle;1em;sd-text-danger;` **Invalid.** The program will run line by line. The variable ``dislike`` isn't defined until line 3, so when the program tries to access the variable on line 2, it doesn't exist yet!
