@@ -70,7 +70,7 @@ Additional Challenges
 
         ``{:.2f}`` will convert the discounted price to 2 decimal places.
 
-.. dropdown:: Favourite Foods
+.. dropdown:: Code challenge: Favourite Foods
     :color: warning
     :icon: star
 

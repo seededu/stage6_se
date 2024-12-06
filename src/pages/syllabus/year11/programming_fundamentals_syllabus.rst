@@ -35,6 +35,8 @@ Software development
         :class-title: sd-font-weight-light
         :color:  info
 
+        * :doc:`/python/conditionals/code_testing`
+
     .. dropdown:: installation
         :class-title: sd-font-weight-light
         :color:  info
@@ -53,6 +55,17 @@ Designing algorithms
 .. card:: Apply divide and conquer and backtracking as algorithmic design strategies
 
 .. card:: Develop structured algorithms using pseudocode and flowcharts, including the use of subprograms
+
+  Pseudocode
+    * :doc:`/python/conditionals/pseudocode`
+
+  Flowcharts
+    * :doc:`/python/conditionals/ifs`
+    * :doc:`/python/conditionals/if_else`
+    * :doc:`/python/conditionals/if_elif_else`
+    * :doc:`/python/conditionals/more_if_elif_else`
+
+  Subprograms
 
 .. card:: Use modelling tools including structure charts, abstraction and refinement diagrams to support top-down and bottom-up design
 
@@ -89,27 +102,42 @@ Data for software engineering
 
 .. card:: Investigate standard data types
 
+  * :doc:`/python/basics/types_of_variables`
+  * :doc:`/python/basics/dont_mix_and_match_var_types`
+  * :doc:`/python/basics/type_conversions`
+
     Including
 
     .. dropdown:: char (character) and string
       :class-title: sd-font-weight-light
       :color:  info
 
+      * :doc:`/python/basics/types_of_variables`
+
     .. dropdown:: Boolean
       :class-title: sd-font-weight-light
       :color:  info
+
+      * :doc:`/python/conditionals/booleans`
 
     .. dropdown:: real
       :class-title: sd-font-weight-light
       :color:  info
 
+      * :doc:`/python/basics/types_of_variables`
+      *We have interpreted a 'real' variable to be a real number, e.g. an integer or float.*
+
     .. dropdown:: single precision floating point
       :class-title: sd-font-weight-light
       :color:  info
 
+      * :doc:`/python/basics/types_of_variables`
+
     .. dropdown:: integer
       :class-title: sd-font-weight-light
       :color:  info
+
+      * :doc:`/python/basics/types_of_variables`
 
     .. dropdown:: date and time
       :class-title: sd-font-weight-light
@@ -133,6 +161,11 @@ Developing solutions with code
     .. dropdown:: using control structures
       :class-title: sd-font-weight-light
       :color:  info
+
+      * :doc:`/python/conditionals/ifs`
+      * :doc:`/python/conditionals/if_else`
+      * :doc:`/python/conditionals/if_elif_else`
+      * :doc:`/python/conditionals/more_if_elif_else`
 
     .. dropdown:: using data structures
       :class-title: sd-font-weight-light
@@ -212,12 +245,20 @@ Developing solutions with code
       :class-title: sd-font-weight-light
       :color:  info
 
+      * :doc:`/python/conditionals/code_testing`
+
     .. dropdown:: path coverage
       :class-title: sd-font-weight-light
       :color:  info
+
+      * :doc:`/python/conditionals/code_testing`
 
     .. dropdown:: faulty and abnormal data
       :class-title: sd-font-weight-light
       :color:  info
 
+      * :doc:`/python/conditionals/code_testing`
+
 .. card:: Determine typical errors experienced when developing code, including syntax, logic and runtime, and explain their likely causes
+
+    * :doc:`/python/basics/error_msgs`
