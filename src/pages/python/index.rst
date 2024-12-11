@@ -1,4 +1,4 @@
-Python 
+Python
 ====================
 
 .. toctree::
@@ -6,3 +6,4 @@ Python
 
    basics/index
    conditionals/index
+   lists_loops/index

@@ -77,6 +77,8 @@ Designing algorithms
       :class-title: sd-font-weight-light
       :color:  info
 
+      * :doc:`/python/conditionals/code_testing`
+
     .. dropdown:: determining the purpose of the algorithm
       :class-title: sd-font-weight-light
       :color:  info
@@ -191,6 +193,9 @@ Developing solutions with code
     .. dropdown:: lists
       :class-title: sd-font-weight-light
       :color:  info
+
+      * :doc:`/python/lists_loops/lists`
+      * :doc:`/python/lists_loops/indexing`
 
     .. dropdown:: trees
       :class-title: sd-font-weight-light
