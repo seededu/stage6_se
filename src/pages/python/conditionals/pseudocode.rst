@@ -190,43 +190,45 @@ Here's an example!
             Display 'Stop!'
         ENDIF
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        D. 
+        .. D. 
 
-            .. code-block:: markdown
+        ..     .. code-block:: markdown
 
-                IF light == 'green' THEN
-                    Display 'GO!'
-                ENDIF
-                IF light == 'yellow' THEN
-                    Display 'Slow down!'
-                ENDIF
-                IF light == 'red' THEN
-                    Display 'Stop!'
-                ENDIF
+        ..         IF light == 'green' THEN
+        ..             Display 'GO!'
+        ..         ENDIF
+        ..         IF light == 'yellow' THEN
+        ..             Display 'Slow down!'
+        ..         ENDIF
+        ..         IF light == 'red' THEN
+        ..             Display 'Stop!'
+        ..         ENDIF
 
 
-        A few things to note:
+        .. A few things to note:
 
-        * This program only uses ``IF`` statements.
+        .. * This program only uses ``IF`` statements.
 
-        * Each ``IF`` needs an ``ENDIF`` closing tag
+        .. * Each ``IF`` needs an ``ENDIF`` closing tag
 
-        Here's the corresponding code:
+        .. Here's the corresponding code:
 
-        .. code-block::
+        .. .. code-block::
 
-            light = input('What colour is the traffic light? ')
+        ..     light = input('What colour is the traffic light? ')
 
-            if light == 'green':
-                print('GO!')
-            if light == 'yellow':
-                print('Slow down!')
-            if light == 'red':
-                print('Stop!')
+        ..     if light == 'green':
+        ..         print('GO!')
+        ..     if light == 'yellow':
+        ..         print('Slow down!')
+        ..     if light == 'red':
+        ..         print('Stop!')
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Starting Player
     :color: warning
@@ -248,23 +250,25 @@ Here's an example!
 
     Write the Python code that corresponds to the given pseudocode.
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block::
+        .. .. code-block::
 
-            roll1 = 3
-            roll2 = 4
-            age1 = 10
-            age2 = 12
+        ..     roll1 = 3
+        ..     roll2 = 4
+        ..     age1 = 10
+        ..     age2 = 12
 
-            if roll1 > roll2:
-                print('Player 1 starts')
-            elif roll2 > roll1:
-                print('Player 2 starts')
-            else:
-                if age1 < age2:
-                    print('Player 1 starts')
-                else:
-                    print('Player 2 starts')
+        ..     if roll1 > roll2:
+        ..         print('Player 1 starts')
+        ..     elif roll2 > roll1:
+        ..         print('Player 2 starts')
+        ..     else:
+        ..         if age1 < age2:
+        ..             print('Player 1 starts')
+        ..         else:
+        ..             print('Player 2 starts')
+
+        *Solution is locked*

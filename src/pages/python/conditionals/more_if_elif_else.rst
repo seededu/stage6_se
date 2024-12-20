@@ -155,31 +155,33 @@ In this example, if the first condition evaluates to ``True`` the code is direct
         red = 0
         blue = 0
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        :octicon:`x-circle;1em;sd-text-danger;` ``red = 5``, ``blue = 0``
+        .. :octicon:`x-circle;1em;sd-text-danger;` ``red = 5``, ``blue = 0``
 
-        :octicon:`issue-closed;1em;sd-text-success;` ``red = 2``, ``blue = 2``
+        .. :octicon:`issue-closed;1em;sd-text-success;` ``red = 2``, ``blue = 2``
 
-        :octicon:`x-circle;1em;sd-text-danger;` ``red = 2``, ``blue = 4``
+        .. :octicon:`x-circle;1em;sd-text-danger;` ``red = 2``, ``blue = 4``
 
-        :octicon:`issue-closed;1em;sd-text-success;` ``red = 0``, ``blue = 0``
+        .. :octicon:`issue-closed;1em;sd-text-success;` ``red = 0``, ``blue = 0``
 
-        In program 1, if all the conditions evaluate to ``False`` we end up in the ``else`` branch which means that the program will print *It's a draw!*. There is then a final print statement which is outside the ``if``-``elif``-``else``. This print statement will always execute so the program will always print *Congratulations to the winning team!*.
+        .. In program 1, if all the conditions evaluate to ``False`` we end up in the ``else`` branch which means that the program will print *It's a draw!*. There is then a final print statement which is outside the ``if``-``elif``-``else``. This print statement will always execute so the program will always print *Congratulations to the winning team!*.
 
-        .. image:: img/4_question3b.png
-            :width: 600
-            :align: center
+        .. .. image:: img/4_question3b.png
+        ..     :width: 600
+        ..     :align: center
 
-        In program 2 you'll see that the structure is slightly different. In this case ``print('Congratulations to the winning team!')`` is inside the first ``else`` branch and will only print if there is not a draw between the red and blue team. So in this example it won't print.
+        .. In program 2 you'll see that the structure is slightly different. In this case ``print('Congratulations to the winning team!')`` is inside the first ``else`` branch and will only print if there is not a draw between the red and blue team. So in this example it won't print.
 
-        .. image:: img/4_question3a.png
-            :width: 600
-            :align: center      
+        .. .. image:: img/4_question3a.png
+        ..     :width: 600
+        ..     :align: center      
 
-.. dropdown:: Code challenge: Red team blue team
+        *Solution is locked*
+
+.. dropdown:: Code challenge: Red Team Blue Team
     :color: warning
     :icon: star
 
@@ -189,29 +191,31 @@ In this example, if the first condition evaluates to ``True`` the code is direct
         :width: 600
         :align: center
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block::
+        .. .. code-block::
 
-            red = 4
-            blue = 5
+        ..     red = 4
+        ..     blue = 5
 
-            if red == blue:
-                print("It's a draw!")
-            else:
-                if red > blue:
-                    print('Red team wins!')
-                else:
-                    print('Blue team wins!')
-                print('Congratulations to the winning team!')
+        ..     if red == blue:
+        ..         print("It's a draw!")
+        ..     else:
+        ..         if red > blue:
+        ..             print('Red team wins!')
+        ..         else:
+        ..             print('Blue team wins!')
+        ..         print('Congratulations to the winning team!')
 
-        Things to note:
+        .. Things to note:
 
-        * We encouter the second ``if`` statement if the first ``if`` statement evaluates to ``False``
+        .. * We encouter the second ``if`` statement if the first ``if`` statement evaluates to ``False``
 
-        * The ``print('Congratulations to the winning team!')`` happens if the first ``if`` statement evaluates to ``False``, but will execute regardless of the outcome of the second condition. This means it's inside the ``else`` branch of the first ``if`` statement, but is not inside the second ``if`` statement.
+        .. * The ``print('Congratulations to the winning team!')`` happens if the first ``if`` statement evaluates to ``False``, but will execute regardless of the outcome of the second condition. This means it's inside the ``else`` branch of the first ``if`` statement, but is not inside the second ``if`` statement.
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Order x, y and z
     :color: warning
@@ -250,28 +254,30 @@ In this example, if the first condition evaluates to ``True`` the code is direct
         z: 8
         8 > 6 > 4
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block::
+        .. .. code-block::
 
-            x = int(input('x: '))
-            y = int(input('y: '))
-            z = int(input('z: '))
+        ..     x = int(input('x: '))
+        ..     y = int(input('y: '))
+        ..     z = int(input('z: '))
 
-            if x > y and x > z:
-                if y > z:
-                    print('{} > {} > {}'.format(x, y, z))
-                else:
-                    print('{} > {} > {}'.format(x, z, y))
-            elif y > z:
-                if x > z:
-                    print('{} > {} > {}'.format(y, x, z))
-                else:
-                    print('{} > {} > {}'.format(y, z, x))
-            else:
-                if x > y:
-                    print('{} > {} > {}'.format(z, x, y))
-                else:
-                    print('{} > {} > {}'.format(z, y, x))
+        ..     if x > y and x > z:
+        ..         if y > z:
+        ..             print('{} > {} > {}'.format(x, y, z))
+        ..         else:
+        ..             print('{} > {} > {}'.format(x, z, y))
+        ..     elif y > z:
+        ..         if x > z:
+        ..             print('{} > {} > {}'.format(y, x, z))
+        ..         else:
+        ..             print('{} > {} > {}'.format(y, z, x))
+        ..     else:
+        ..         if x > y:
+        ..             print('{} > {} > {}'.format(z, x, y))
+        ..         else:
+        ..             print('{} > {} > {}'.format(z, y, x))
+
+        *Solution is locked*

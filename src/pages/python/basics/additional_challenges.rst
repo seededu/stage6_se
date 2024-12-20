@@ -25,13 +25,15 @@ Additional Challenges
 
         Python's awesome!
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: 
+        .. .. code-block:: 
 
-            print("Python's awesome!")
+        ..     print("Python's awesome!")
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: 30% off!
     :color: warning
@@ -55,20 +57,22 @@ Additional Challenges
         Enter the price ($): 79.99
         $55.99
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: 
+        .. .. code-block:: 
 
-            price = float(input('Enter the price ($): '))
-            print('${:.2f}'.format(price - price * 0.3))
+        ..     price = float(input('Enter the price ($): '))
+        ..     print('${:.2f}'.format(price - price * 0.3))
 
-        The key things to remember in this solution are:
+        .. The key things to remember in this solution are:
 
-        ``input()`` values are always strings. You will need to convert price to a float.
+        .. ``input()`` values are always strings. You will need to convert price to a float.
 
-        ``{:.2f}`` will convert the discounted price to 2 decimal places.
+        .. ``{:.2f}`` will convert the discounted price to 2 decimal places.
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Favourite Foods
     :color: warning
@@ -115,21 +119,23 @@ Additional Challenges
         2. peaches
         3. lemons
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: 
+        .. .. code-block:: 
 
-            print("What are your 3 favourite foods?")
+        ..     print("What are your 3 favourite foods?")
 
-            first = input()
-            second = input()
-            third = input()
+        ..     first = input()
+        ..     second = input()
+        ..     third = input()
 
-            print("Your top 3 favourite foods are:")
-            print("1. {}".format(first))
-            print("2. {}".format(second))
-            print("3. {}".format(third))
+        ..     print("Your top 3 favourite foods are:")
+        ..     print("1. {}".format(first))
+        ..     print("2. {}".format(second))
+        ..     print("3. {}".format(third))
 
-        You can obtain user input without displaying a message by leaving the input() brackets empty.
+        .. You can obtain user input without displaying a message by leaving the input() brackets empty.
+
+        *Solution is locked*

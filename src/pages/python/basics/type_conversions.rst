@@ -48,13 +48,15 @@ It is often useful to change the type of your variables. This is called casting.
         z = str(x)
         print(z * y)
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        33333
+        .. 33333
 
-        ``y`` contains the integer ``5`` and ``z`` contains the string ``'3'``. When you multiply a string by the number 5 that string gets repeated 5 times. This results in the string ``'33333'``.
+        .. ``y`` contains the integer ``5`` and ``z`` contains the string ``'3'``. When you multiply a string by the number 5 that string gets repeated 5 times. This results in the string ``'33333'``.
+
+        *Solution is locked*
 
 .. dropdown:: Question 3
     :open:
@@ -69,14 +71,15 @@ It is often useful to change the type of your variables. This is called casting.
         y = '2'
         print(float( x + y))
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        12
+        .. 12
 
-        ``x`` and ``y`` contain the strings ``'1'`` and ``'2'``. The ``+`` operator will concatenate two strings so ``x + y`` results in the string ``'12'``. This string is then converted into a float which gives the number ``12.0``.
+        .. ``x`` and ``y`` contain the strings ``'1'`` and ``'2'``. The ``+`` operator will concatenate two strings so ``x + y`` results in the string ``'12'``. This string is then converted into a float which gives the number ``12.0``.
 
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Nesting
     :color: warning
@@ -94,13 +97,15 @@ It is often useful to change the type of your variables. This is called casting.
 
     .. note:: While it might look nicer to reduce the size of your code by combining multiple lines into one, spreading your code over more lines might make it easier for other people to read. In general, try to make your code easy to read. This will come with experience but it's something to keep in mind.
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: python
+        .. .. code-block:: python
 
-            n = int(input('Enter a number: '))
-            print(n + 1)
+        ..     n = int(input('Enter a number: '))
+        ..     print(n + 1)
 
-        We can convert the user input to an integer on the same line we read it in! This is quite convenient because it means that when we use n it has already been converted to an appropriate type and we don't have to constantly remember to convert it in the future.
+        .. We can convert the user input to an integer on the same line we read it in! This is quite convenient because it means that when we use n it has already been converted to an appropriate type and we don't have to constantly remember to convert it in the future.
+
+        *Solution is locked*

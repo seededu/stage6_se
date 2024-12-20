@@ -58,13 +58,15 @@ Another slightly odd behaviour is that you can multiply a string with a number. 
         y = '4'
         print(x + y)
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        34
+        .. 34
 
-        Here ``x`` and ``y`` are *strings*. This means the ``+`` operator concatenates them. Think back to the example ``'red' + 'blue'`` which gives ``'redblue'``. Here were have ``'3' + '4'`` which gives ``'34'``.
+        .. Here ``x`` and ``y`` are *strings*. This means the ``+`` operator concatenates them. Think back to the example ``'red' + 'blue'`` which gives ``'redblue'``. Here were have ``'3' + '4'`` which gives ``'34'``.
+
+        *Solution is locked*
 
 .. dropdown:: Question 3
     :open:
@@ -113,46 +115,48 @@ Another slightly odd behaviour is that you can multiply a string with a number. 
         y = 2
         print(x * y)
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: python
+        .. .. code-block:: python
 
-            x = '1'
-            y = '2'
-            print(x - y)
+        ..     x = '1'
+        ..     y = '2'
+        ..     print(x - y)
 
-        :octicon:`x-circle;1em;sd-text-danger;` **Error.** You cannot subtract a string from a string.
+        .. :octicon:`x-circle;1em;sd-text-danger;` **Error.** You cannot subtract a string from a string.
 
-        .. code-block:: python
+        .. .. code-block:: python
 
-            x = '1'
-            y = '2'
-            print(x + y)
+        ..     x = '1'
+        ..     y = '2'
+        ..     print(x + y)
 
-        :octicon:`issue-closed;1em;sd-text-success;` **Valid.** You can add a string with a string. This is called *concatenation*.
+        .. :octicon:`issue-closed;1em;sd-text-success;` **Valid.** You can add a string with a string. This is called *concatenation*.
 
-        .. code-block:: python
+        .. .. code-block:: python
 
-            x = '1'
-            y = 2
-            print(x + y)
+        ..     x = '1'
+        ..     y = 2
+        ..     print(x + y)
 
-        :octicon:`x-circle;1em;sd-text-danger;` **Error.** You cannot add a string to an integer. That's like asking the computer, 'What is *apple* + 2?'
+        .. :octicon:`x-circle;1em;sd-text-danger;` **Error.** You cannot add a string to an integer. That's like asking the computer, 'What is *apple* + 2?'
 
-        .. code-block:: python
+        .. .. code-block:: python
 
-            x = 1
-            y = 2
-            print(x * y)
+        ..     x = 1
+        ..     y = 2
+        ..     print(x * y)
 
-        :octicon:`issue-closed;1em;sd-text-success;` **Valid.** You can multiply two numbers together.
+        .. :octicon:`issue-closed;1em;sd-text-success;` **Valid.** You can multiply two numbers together.
 
-        .. code-block:: python
+        .. .. code-block:: python
 
-            x = '1'
-            y = 2
-            print(x * y)
+        ..     x = '1'
+        ..     y = 2
+        ..     print(x * y)
 
-        :octicon:`issue-closed;1em;sd-text-success;` **Valid.** You can multiply a number and a string. This results in the string being repeated.
+        .. :octicon:`issue-closed;1em;sd-text-success;` **Valid.** You can multiply a number and a string. This results in the string being repeated.
+
+        *Solution is locked*

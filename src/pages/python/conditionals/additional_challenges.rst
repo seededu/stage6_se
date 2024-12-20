@@ -36,20 +36,22 @@ Additional Challenges
         Today's date: 25
         Merry Christmas!
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block::
+        .. .. code-block::
 
-            day = int(input("Today's date: "))
+        ..     day = int(input("Today's date: "))
 
-            if day == 24:
-                print('1 sleep until Christmas')
-            elif day < 24:
-                print('{} sleeps until Christmas'.format(25 - day))
-            else:
-                print('Merry Christmas!')
+        ..     if day == 24:
+        ..         print('1 sleep until Christmas')
+        ..     elif day < 24:
+        ..         print('{} sleeps until Christmas'.format(25 - day))
+        ..     else:
+        ..         print('Merry Christmas!')
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: pH Scale
     :color: warning
@@ -73,24 +75,26 @@ Additional Challenges
 
     Write the Python code that corresponds to the given pseudocode.
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: 
+        .. .. code-block:: 
 
-            ph = float(input('What is the pH? '))
+        ..     ph = float(input('What is the pH? '))
 
-            if ph == 7:
-                print('neutral')
-            elif ph > 4.5 and ph < 7:
-                print('acidic')
-            elif ph < 4.5:
-                print('very acidic')
-            elif ph > 7 and ph < 10.5:
-                print('alkaline')
-            else:
-                print('very alkaline')
+        ..     if ph == 7:
+        ..         print('neutral')
+        ..     elif ph > 4.5 and ph < 7:
+        ..         print('acidic')
+        ..     elif ph < 4.5:
+        ..         print('very acidic')
+        ..     elif ph > 7 and ph < 10.5:
+        ..         print('alkaline')
+        ..     else:
+        ..         print('very alkaline')
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Algorithm Implementation
     :color: warning
@@ -102,37 +106,39 @@ Additional Challenges
         :width: 700
         :align: center
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: 
+        ..     .. code-block:: 
 
-            x = 'X'
-            y = True
-            z = 2
+        ..         x = 'X'
+        ..         y = True
+        ..         z = 2
 
-            if x == 'Y' or z < 4:
-                if y:
-                    print('A')
-                else:
-                    print('B')
-                if z < 0:
-                    print('C')
-                    print('D')
-            elif z == 2 and z == 'X':
-                print('E')
-            else:
-                print('F')
-            print('G')
-    
-    Things to note:
+        ..         if x == 'Y' or z < 4:
+        ..             if y:
+        ..                 print('A')
+        ..             else:
+        ..                 print('B')
+        ..             if z < 0:
+        ..                 print('C')
+        ..                 print('D')
+        ..         elif z == 2 and z == 'X':
+        ..             print('E')
+        ..         else:
+        ..             print('F')
+        ..         print('G')
+        
+        .. Things to note:
 
-    * The ``True`` branch of the first ``if`` statements contains an ``if``-``else`` statement corresponding to the condition ``y`` and an ``if`` statement corresponding to the condition ``z < 0``. 
+        .. * The ``True`` branch of the first ``if`` statements contains an ``if``-``else`` statement corresponding to the condition ``y`` and an ``if`` statement corresponding to the condition ``z < 0``. 
 
-    * This means that the ``elif`` and ``else`` part of the first ``if`` statement join back *after* the ``if``-``else`` and ``if`` statements.
+        .. * This means that the ``elif`` and ``else`` part of the first ``if`` statement join back *after* the ``if``-``else`` and ``if`` statements.
 
-    * The ``print('G')`` is not inside the ``if``-``elif``-``else`` statement, so it is not indented.
+        .. * The ``print('G')`` is not inside the ``if``-``elif``-``else`` statement, so it is not indented.
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Simple Calculator
     :color: warning
@@ -186,26 +192,28 @@ Additional Challenges
         Operation: power
         Error! Unknown operation.
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: 
+        .. .. code-block:: 
 
-            x = float(input('x: '))
-            y = float(input('y: '))
-            operation = input('Operation: ')
+        ..     x = float(input('x: '))
+        ..     y = float(input('y: '))
+        ..     operation = input('Operation: ')
 
-            if operation == 'add':
-                print('{:.2f}'.format(x+y))
-            elif operation == 'subtract':
-                print('{:.2f}'.format(x-y))
-            elif operation == 'multiply':
-                print('{:.2f}'.format(x*y))
-            elif operation == 'divide':
-                print('{:.2f}'.format(x/y))
-            else:
-                print('Error! Unknown operation.')
+        ..     if operation == 'add':
+        ..         print('{:.2f}'.format(x+y))
+        ..     elif operation == 'subtract':
+        ..         print('{:.2f}'.format(x-y))
+        ..     elif operation == 'multiply':
+        ..         print('{:.2f}'.format(x*y))
+        ..     elif operation == 'divide':
+        ..         print('{:.2f}'.format(x/y))
+        ..     else:
+        ..         print('Error! Unknown operation.')
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: HSC Bands
     :color: warning
@@ -255,26 +263,28 @@ Additional Challenges
         Enter your mark: 24
         Band 1
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: python
+        .. .. code-block:: python
 
-            mark = int(input('Enter your mark: '))
+        ..     mark = int(input('Enter your mark: '))
 
-            if mark < 50:
-                print('Band 1')
-            elif mark < 60:
-                print('Band 2')
-            elif mark < 70:
-                print('Band 3')
-            elif mark < 80:
-                print('Band 4')
-            elif mark < 90:
-                print('Band 5')
-            else:
-                print('Band 6')
+        ..     if mark < 50:
+        ..         print('Band 1')
+        ..     elif mark < 60:
+        ..         print('Band 2')
+        ..     elif mark < 70:
+        ..         print('Band 3')
+        ..     elif mark < 80:
+        ..         print('Band 4')
+        ..     elif mark < 90:
+        ..         print('Band 5')
+        ..     else:
+        ..         print('Band 6')
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Tennis Calls
     :color: warning
@@ -374,46 +384,48 @@ Additional Challenges
         Player 2: 6
         Advantage player 1.
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block::
+        .. .. code-block::
 
-            p1 = int(input('Player 1: '))
-            p2 = int(input('Player 2: '))
+        ..     p1 = int(input('Player 1: '))
+        ..     p2 = int(input('Player 2: '))
 
-            if p1 >= 4 or p2 >=4:
-                if p1 == p2:
-                    print('Deuce.')
-                elif p1 == p2 + 1:
-                    print('Advantage player 1.')
-                elif p2 == p1 + 1:
-                    print('Advantage player 2.')
-                elif p1 == p2 + 2:
-                    print('Game. Player 1 wins.')
-                else:
-                    print('Game. Player 2 wins.')
-            else:
-                if p1 >= 3 and p1 > p2 + 1:
-                    print('Game. Player 1 wins.')
-                elif p2 >= 3 and p2 > p1 + 1:
-                    print('Game. Player 2 wins.')
-                else:
-                    if p1 == 0:
-                        call1 = 'Love'
-                    elif p1 == 1:
-                        call1 = '15'
-                    elif p1 == 2:
-                        call1 = '30'
-                    else:
-                        call1 = '40'
-                    if p2 == 0:
-                        call2 = 'Love'
-                    elif p2 == 1:
-                        call2 = '15'
-                    elif p2 == 2:
-                        call2 = '30'
-                    else:
-                        call2 = '40'
-                    print('{}-{}'.format(call1, call2))
+        ..     if p1 >= 4 or p2 >=4:
+        ..         if p1 == p2:
+        ..             print('Deuce.')
+        ..         elif p1 == p2 + 1:
+        ..             print('Advantage player 1.')
+        ..         elif p2 == p1 + 1:
+        ..             print('Advantage player 2.')
+        ..         elif p1 == p2 + 2:
+        ..             print('Game. Player 1 wins.')
+        ..         else:
+        ..             print('Game. Player 2 wins.')
+        ..     else:
+        ..         if p1 >= 3 and p1 > p2 + 1:
+        ..             print('Game. Player 1 wins.')
+        ..         elif p2 >= 3 and p2 > p1 + 1:
+        ..             print('Game. Player 2 wins.')
+        ..         else:
+        ..             if p1 == 0:
+        ..                 call1 = 'Love'
+        ..             elif p1 == 1:
+        ..                 call1 = '15'
+        ..             elif p1 == 2:
+        ..                 call1 = '30'
+        ..             else:
+        ..                 call1 = '40'
+        ..             if p2 == 0:
+        ..                 call2 = 'Love'
+        ..             elif p2 == 1:
+        ..                 call2 = '15'
+        ..             elif p2 == 2:
+        ..                 call2 = '30'
+        ..             else:
+        ..                 call2 = '40'
+        ..             print('{}-{}'.format(call1, call2))
+
+        *Solution is locked*

@@ -154,32 +154,34 @@ In this example the second condition is ``True`` so the second ``print`` stateme
 
         light = 'purple'
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em`  Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        :octicon:`x-circle;1em;sd-text-danger;` ``light = 'green'``
+        .. :octicon:`x-circle;1em;sd-text-danger;` ``light = 'green'``
 
-        :octicon:`x-circle;1em;sd-text-danger;` ``light = 'yellow'``
+        .. :octicon:`x-circle;1em;sd-text-danger;` ``light = 'yellow'``
 
-        :octicon:`x-circle;1em;sd-text-danger;` ``light = 'red'``
+        .. :octicon:`x-circle;1em;sd-text-danger;` ``light = 'red'``
 
-        :octicon:`issue-closed;1em;sd-text-success;` ``light = 'blue'``
+        .. :octicon:`issue-closed;1em;sd-text-success;` ``light = 'blue'``
 
-        :octicon:`issue-closed;1em;sd-text-success;` ``light = 'purple'``
+        .. :octicon:`issue-closed;1em;sd-text-success;` ``light = 'purple'``
 
 
-        In program 1, if all the conditions evaluate to ``False``, you'll see that none of the print statements execute.
+        .. In program 1, if all the conditions evaluate to ``False``, you'll see that none of the print statements execute.
 
-        .. image:: img/3_question2b.png
-            :width: 300
-            :align: center
+        .. .. image:: img/3_question2b.png
+        ..     :width: 300
+        ..     :align: center
 
-        In program 2, you'll see that if all of the conditions evaluate to ``False`` the final print statement saying *That can't be right. Traffic lights can't be blue* will run. Note that this is fundamentally different to program 1. If you tried to add a print at the end of program 1, it will *always* run, whereas the final print statement in program 2 only runs when all conditions are ``False``.  
+        .. In program 2, you'll see that if all of the conditions evaluate to ``False`` the final print statement saying *That can't be right. Traffic lights can't be blue* will run. Note that this is fundamentally different to program 1. If you tried to add a print at the end of program 1, it will *always* run, whereas the final print statement in program 2 only runs when all conditions are ``False``.  
 
-        .. image:: img/3_question2a.png
-            :width: 700
-            :align: center
+        .. .. image:: img/3_question2a.png
+        ..     :width: 700
+        ..     :align: center
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Red team blue
     :color: warning
@@ -191,25 +193,27 @@ In this example the second condition is ``True`` so the second ``print`` stateme
         :width: 700
         :align: center
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: python
+        .. .. code-block:: python
 
-            red = 3
-            blue = 3
+        ..     red = 3
+        ..     blue = 3
 
-            if red > blue:
-                print('Red team wins!')
-            elif blue > red:
-                print('Blue team wins!')
-            else:
-                print("It's a draw!")
-            print('Congratulations to all players!')
+        ..     if red > blue:
+        ..         print('Red team wins!')
+        ..     elif blue > red:
+        ..         print('Blue team wins!')
+        ..     else:
+        ..         print("It's a draw!")
+        ..     print('Congratulations to all players!')
 
-        Things to note:
+        .. Things to note:
 
-        * In this example both conditions evaluate to ``False``, which means that the red and blue team have the same score.
+        .. * In this example both conditions evaluate to ``False``, which means that the red and blue team have the same score.
 
-        * The ``print('Congratulations to all players!')`` is not inside the ``if``-``elif``-``else`` statement, so it is not indented.
+        .. * The ``print('Congratulations to all players!')`` is not inside the ``if``-``elif``-``else`` statement, so it is not indented.
+
+        *Solution is locked*

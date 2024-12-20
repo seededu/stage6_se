@@ -57,13 +57,19 @@ Designing algorithms
 .. card:: Develop structured algorithms using pseudocode and flowcharts, including the use of subprograms
 
   Pseudocode
-    * :doc:`/python/conditionals/pseudocode`
+    * Conditionals: :doc:`/python/conditionals/pseudocode`
+    * Loops: :doc:`/python/lists_loops/pseudocode`
 
   Flowcharts
     * :doc:`/python/conditionals/ifs`
     * :doc:`/python/conditionals/if_else`
     * :doc:`/python/conditionals/if_elif_else`
     * :doc:`/python/conditionals/more_if_elif_else`
+    * :doc:`/python/lists_loops/while_loops`
+    * :doc:`/python/lists_loops/while_loop_conditionals`
+    * :doc:`/python/lists_loops/for_loops`
+    * :doc:`/python/lists_loops/for_loop_conditionals`
+    * :doc:`/python/lists_loops/nested_loops`
 
   Subprograms
 
@@ -160,6 +166,21 @@ Developing solutions with code
       :class-title: sd-font-weight-light
       :color:  info
 
+      from flow charts to code
+
+        * :doc:`/python/conditionals/more_if_elif_else` Code challenge: Red Team Blue Team
+        * :doc:`/python/conditionals/pseudocode` Question 2
+        * :doc:`/python/lists_loops/while_loops`
+        * :doc:`/python/lists_loops/while_loop_conditionals`
+        * :doc:`/python/lists_loops/for_loops`
+        * :doc:`/python/lists_loops/for_loop_conditionals`
+        * :doc:`/python/lists_loops/nested_loops`
+
+      from pseudocode to code
+
+        * :doc:`/python/conditionals/pseudocode` Code challenge: Starting Player
+      
+
     .. dropdown:: using control structures
       :class-title: sd-font-weight-light
       :color:  info
@@ -168,6 +189,11 @@ Developing solutions with code
       * :doc:`/python/conditionals/if_else`
       * :doc:`/python/conditionals/if_elif_else`
       * :doc:`/python/conditionals/more_if_elif_else`
+      * :doc:`/python/lists_loops/while_loops`
+      * :doc:`/python/lists_loops/while_loop_conditionals`
+      * :doc:`/python/lists_loops/for_loops`
+      * :doc:`/python/lists_loops/for_loop_conditionals`
+      * :doc:`/python/lists_loops/nested_loops`
 
     .. dropdown:: using data structures
       :class-title: sd-font-weight-light
@@ -196,6 +222,9 @@ Developing solutions with code
 
       * :doc:`/python/lists_loops/lists`
       * :doc:`/python/lists_loops/indexing`
+      * :doc:`/python/lists_loops/operations`
+      * :doc:`/python/lists_loops/joins`
+      * :doc:`/python/lists_loops/range` (Coverting to a list)
 
     .. dropdown:: trees
       :class-title: sd-font-weight-light
@@ -266,4 +295,9 @@ Developing solutions with code
 
 .. card:: Determine typical errors experienced when developing code, including syntax, logic and runtime, and explain their likely causes
 
-    * :doc:`/python/basics/error_msgs`
+    * :doc:`/python/basics/error_msgs`: NameError, SyntaxError, TypeError, ValueError
+    * :doc:`/python/lists_loops/while_loop_errors`: NameError, IndentationError
+    * :doc:`/python/lists_loops/while_loop_input`: Question 1
+    * :doc:`/python/lists_loops/while_loop_conditionals`: Question 3
+    * :doc:`/python/lists_loops/for_loops`: Question 3
+    * :doc:`/python/modules_functions/math_module`: ImportError

@@ -235,29 +235,31 @@ Whether your not these inputs should be invalid or not will depend on the progra
 
     D. Thursday, True
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        **B. Friday, False**
+        .. **B. Friday, False**
 
-        Input pairs 1, 2, and 3 all satisfy the first condition because ``holiday`` is ``True``.
+        .. Input pairs 1, 2, and 3 all satisfy the first condition because ``holiday`` is ``True``.
 
-        .. image:: img/5_question3a.png
-            :width: 500
-            :align: center
+        .. .. image:: img/5_question3a.png
+        ..     :width: 500
+        ..     :align: center
 
-        Input pair 4 satisfies the second condition because ``holidays`` is ``False`` but ``today`` is ``Sunday``.
+        .. Input pair 4 satisfies the second condition because ``holidays`` is ``False`` but ``today`` is ``Sunday``.
 
-        .. image:: img/5_question3b.png
-            :width: 500
-            :align: center
+        .. .. image:: img/5_question3b.png
+        ..     :width: 500
+        ..     :align: center
 
-        Thus we are looking for a input-output pair where both conditions evaluate to ``False``. This is true for option B.
+        .. Thus we are looking for a input-output pair where both conditions evaluate to ``False``. This is true for option B.
 
-        .. image:: img/5_question3c.png
-            :width: 500
-            :align: center
+        .. .. image:: img/5_question3c.png
+        ..     :width: 500
+        ..     :align: center
+
+        *Solution is locked*
 
 .. dropdown:: Question 4
     :open:
@@ -302,13 +304,15 @@ Whether your not these inputs should be invalid or not will depend on the progra
         else:
             print('x is 0!')
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        **No**
+        .. **No**
 
-        The program needs to be able to handle *floats*. If you tried example 2 you'll see that it doesn't work.
+        .. The program needs to be able to handle *floats*. If you tried example 2 you'll see that it doesn't work.
+
+        *Solution is locked*
 
 .. dropdown:: Question 5
     :open:
@@ -340,32 +344,34 @@ Whether your not these inputs should be invalid or not will depend on the progra
 
     F. 26
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        :octicon:`issue-closed;1em;sd-text-success;` 14
+        .. :octicon:`issue-closed;1em;sd-text-success;` 14
 
-        :octicon:`issue-closed;1em;sd-text-success;` 15
+        .. :octicon:`issue-closed;1em;sd-text-success;` 15
 
-        :octicon:`x-circle;1em;sd-text-danger;` 16
+        .. :octicon:`x-circle;1em;sd-text-danger;` 16
 
-        :octicon:`x-circle;1em;sd-text-danger;` 24
+        .. :octicon:`x-circle;1em;sd-text-danger;` 24
 
-        :octicon:`issue-closed;1em;sd-text-success;` 25
+        .. :octicon:`issue-closed;1em;sd-text-success;` 25
 
-        :octicon:`issue-closed;1em;sd-text-success;` 26
+        .. :octicon:`issue-closed;1em;sd-text-success;` 26
 
-        Boundary values can be used to identify when a program changes behaviour. In this case this is when temp goes from 14 to 15 and when it goes from 25 to 26.
+        .. Boundary values can be used to identify when a program changes behaviour. In this case this is when temp goes from 14 to 15 and when it goes from 25 to 26.
 
-        * If ``temp`` is 14 the program outputs: *Take a jumper!*
+        .. * If ``temp`` is 14 the program outputs: *Take a jumper!*
 
-        * If ``temp`` is 15 the program doesn't output anything
+        .. * If ``temp`` is 15 the program doesn't output anything
 
 
-        * If ``temp`` is 25 the program doesn't output anything
+        .. * If ``temp`` is 25 the program doesn't output anything
 
-        * If ``temp`` is 26 the program outputs: *Take a fan*.
+        .. * If ``temp`` is 26 the program outputs: *Take a fan*.
+
+        *Solution is locked*
 
 .. dropdown:: Question 6
     :open:
@@ -393,12 +399,14 @@ Whether your not these inputs should be invalid or not will depend on the progra
 
     D. ``17.5``
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        **valid:** ``-4``
+        .. **valid:** ``-4``
 
-        **faulty/invalid:** ``'cold'``, ``'three'``, ``17.5``
+        .. **faulty/invalid:** ``'cold'``, ``'three'``, ``17.5``
 
-        This program is expecting integers. ``'cold'`` and ``'three'`` are strings, so they are invalid. ``17.5`` is a float so this is invalid.
+        .. This program is expecting integers. ``'cold'`` and ``'three'`` are strings, so they are invalid. ``17.5`` is a float so this is invalid.
+
+        *Solution is locked*

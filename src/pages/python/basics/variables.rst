@@ -129,18 +129,20 @@ Note that the variable x does not have quotes but the string 'Alison' does!
 
         3
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        First the program will print the string ``'My lucky name is'``, then the code will print the string ``'x'``. This is because there are quotes around the x so it's treated as a string.
+        .. First the program will print the string ``'My lucky name is'``, then the code will print the string ``'x'``. This is because there are quotes around the x so it's treated as a string.
 
-        This will result in the program printing
+        .. This will result in the program printing
 
-        .. code-block:: html
+        .. .. code-block:: html
 
-          My lucky name is
-          x
+        ..   My lucky name is
+        ..   x
+
+        *Solution is locked*
 
 .. dropdown:: Question 3
     :open:
@@ -178,35 +180,37 @@ Note that the variable x does not have quotes but the string 'Alison' does!
         print(dislike)
         dislike = 'eggs and ham'
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: html
+        .. .. code-block:: html
 
-          print(x)
+        ..   print(x)
 
-        :octicon:`x-circle;1em;sd-text-danger;` **Invalid.**  The variable ``x`` does not exist so when the program tries to access it you get an error.
+        .. :octicon:`x-circle;1em;sd-text-danger;` **Invalid.**  The variable ``x`` does not exist so when the program tries to access it you get an error.
 
-        .. code-block:: html
+        .. .. code-block:: html
 
-          'message' = Happy Birthday
-          print(message)
+        ..   'message' = Happy Birthday
+        ..   print(message)
 
-        :octicon:`x-circle;1em;sd-text-danger;` **Invalid.** Variables should be defined without the quotes and strings should be defined with quotes. Note that the variable name must always be to the left of the ``=``.
+        .. :octicon:`x-circle;1em;sd-text-danger;` **Invalid.** Variables should be defined without the quotes and strings should be defined with quotes. Note that the variable name must always be to the left of the ``=``.
 
-        .. code-block:: html
+        .. .. code-block:: html
 
-          day = 'Monday'
-          print('Today is')
-          print(day)
+        ..   day = 'Monday'
+        ..   print('Today is')
+        ..   print(day)
 
-        :octicon:`issue-closed;1em;sd-text-success;` **Valid.**
+        .. :octicon:`issue-closed;1em;sd-text-success;` **Valid.**
 
-        .. code-block:: html
+        .. .. code-block:: html
 
-          print('I do not like')
-          print(dislike)
-          dislike = 'eggs and ham'
+        ..   print('I do not like')
+        ..   print(dislike)
+        ..   dislike = 'eggs and ham'
 
-        :octicon:`x-circle;1em;sd-text-danger;` **Invalid.** The program will run line by line. The variable ``dislike`` isn't defined until line 3, so when the program tries to access the variable on line 2, it doesn't exist yet!
+        .. :octicon:`x-circle;1em;sd-text-danger;` **Invalid.** The program will run line by line. The variable ``dislike`` isn't defined until line 3, so when the program tries to access the variable on line 2, it doesn't exist yet!
+
+        *Solution is locked*

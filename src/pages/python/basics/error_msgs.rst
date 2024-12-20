@@ -91,13 +91,15 @@ Common Types of Errors
 
     D. ValueError
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        This is an example of a **NameError**. 
+        .. This is an example of a **NameError**. 
 
-        You'll notice that they keyword ``print`` has been capitalised. Since Python is case sensitive it doesn't register ``Print`` as a keyword. The program is looking for ``Print`` to be defined somewhere in the code, but it can't find it.
+        .. You'll notice that they keyword ``print`` has been capitalised. Since Python is case sensitive it doesn't register ``Print`` as a keyword. The program is looking for ``Print`` to be defined somewhere in the code, but it can't find it.
+
+        *Solution is locked*
 
 .. dropdown:: Question 3
     :open:
@@ -119,13 +121,15 @@ Common Types of Errors
 
     D. ValueError
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        This is an example of a **ValueError**. 
+        .. This is an example of a **ValueError**. 
 
-        This is because the ``{}`` has been given invalid formatting instructions. It should be given ``:.2f`` instead of ``:2.f``. Remember that the ``.2`` indicates that there should be 2 digits *after* the decimal point.
+        .. This is because the ``{}`` has been given invalid formatting instructions. It should be given ``:.2f`` instead of ``:2.f``. Remember that the ``.2`` indicates that there should be 2 digits *after* the decimal point.
+
+        *Solution is locked*
 
 .. dropdown:: Question 4
     :open:
@@ -146,14 +150,16 @@ Common Types of Errors
 
     D. ValueError
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        This is an example of a **TypeError**.
+        .. This is an example of a **TypeError**.
 
-        TypeError: An operation is being applied to variables of the wrong type.
-        This is because you cannot subtract a string from another string, so the subtraction operator is being applied to variables of the wrong type.
+        .. TypeError: An operation is being applied to variables of the wrong type.
+        .. This is because you cannot subtract a string from another string, so the subtraction operator is being applied to variables of the wrong type.
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Add Two Numbers
     :color: warning
@@ -200,13 +206,15 @@ Common Types of Errors
         The sum of your two numbers is: -509.82
 
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: python
+        .. .. code-block:: python
 
-            x = float(input('Enter a number: '))
-            y = float(input('Enter another number: '))
+        ..     x = float(input('Enter a number: '))
+        ..     y = float(input('Enter another number: '))
 
-            print('The sum of your two numbers is: {:.2f}'.format(x + y))
+        ..     print('The sum of your two numbers is: {:.2f}'.format(x + y))
+
+        *Solution is locked*

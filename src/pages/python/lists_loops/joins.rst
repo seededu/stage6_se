@@ -271,3 +271,4 @@ Note that ``.join()`` can only be used on lists containing strings. The followin
         charms = ['\U0001F517', '\U0001F3B1', '\U0001F9F8', '\U0001F369', '\U0001F3A0', '\U0001FA9D']
 
         print(' ------- '.join(charms))
+        

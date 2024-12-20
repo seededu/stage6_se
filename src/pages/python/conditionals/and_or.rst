@@ -56,15 +56,17 @@ You can visualise these rules using a truth table:
         x = 1
         print(x < 2 and x > 3)
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        ``x < 0`` is True
+        .. ``x < 0`` is True
 
-        ``x > 3`` is False
+        .. ``x > 3`` is False
 
-        True and False = **False**
+        .. True and False = **False**
+
+        *Solution is locked*
 
 .. dropdown:: Question 3
     :open:
@@ -81,15 +83,17 @@ You can visualise these rules using a truth table:
 
         print(z > x or y > 2)
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        ``z > x`` is True
+        .. ``z > x`` is True
 
-        ``y > 2`` is False
+        .. ``y > 2`` is False
 
-        True or False = **True**
+        .. True or False = **True**
+
+        *Solution is locked*
 
 .. dropdown:: Question 3
     :open:
@@ -104,12 +108,14 @@ You can visualise these rules using a truth table:
         month = 'November'
         print(day == 5 and month != 'November')
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        ``day == 5`` is True
+        .. ``day == 5`` is True
 
-        ``month != 'November'`` is False
+        .. ``month != 'November'`` is False
 
-        True and False = **False**
+        .. True and False = **False**
+
+        *Solution is locked*

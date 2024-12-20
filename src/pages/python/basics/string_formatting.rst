@@ -102,15 +102,17 @@ We are also able to format floats to a specific number of decimal places. Instea
 
         print('{} and {} make twenty'.format('ten', 10))
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: html
+        .. .. code-block:: html
 
-            ten and 10 make twenty
+        ..     ten and 10 make twenty
 
-        When there are multiple variables they are unpacked in order. This means ``'ten'`` will fill the first placeholder ``{}`` and ``10`` will fill the second placeholder ``{}``.
+        .. When there are multiple variables they are unpacked in order. This means ``'ten'`` will fill the first placeholder ``{}`` and ``10`` will fill the second placeholder ``{}``.
+
+        *Solution is locked*
 
 .. dropdown:: Question 3
     :open:
@@ -123,15 +125,17 @@ We are also able to format floats to a specific number of decimal places. Instea
 
         print('1/3 is approximately {:.2f}'.format(1/3))
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: html
+        .. .. code-block:: html
 
-            1/3 is approximately 0.33
+        ..     1/3 is approximately 0.33
 
-        Variables given to ``.format()`` will be evaluated. In this case the ``1/3`` will evaluate to ``0.33333...``. This will then be unpacked into the ``{:.2f}``. The ``.2`` will say there will be 2 digits after the decimal place and ``f`` indicates that the variable will be treated as a float.
+        .. Variables given to ``.format()`` will be evaluated. In this case the ``1/3`` will evaluate to ``0.33333...``. This will then be unpacked into the ``{:.2f}``. The ``.2`` will say there will be 2 digits after the decimal place and ``f`` indicates that the variable will be treated as a float.
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Nice to Meet You!
     :color: warning
@@ -164,15 +168,17 @@ We are also able to format floats to a specific number of decimal places. Instea
 
     .. Hint:: Don't forget to take note of the punctuation and the capitalisation. You need to match the spelling exactly!
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: python
+        .. .. code-block:: python
 
-            name = input('Enter your name: ')
-            print('Hello ' + name + '.')
-            print('Nice to meet you!')
+        ..     name = input('Enter your name: ')
+        ..     print('Hello ' + name + '.')
+        ..     print('Nice to meet you!')
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Round to 2 Decimal Places
     :color: warning
@@ -196,14 +202,16 @@ We are also able to format floats to a specific number of decimal places. Instea
         Enter a number: 3.14159
         Your number to 2 decimal places is: 3.14
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: python
+        .. .. code-block:: python
 
-            n = float(input('Enter a number: '))
-            print('Your number to 2 decimal places is: {:.2f}'.format(n))
+        ..     n = float(input('Enter a number: '))
+        ..     print('Your number to 2 decimal places is: {:.2f}'.format(n))
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Seconds in Day
     :color: warning
@@ -229,13 +237,15 @@ We are also able to format floats to a specific number of decimal places. Instea
 
     .. hint:: There are 24 hours in 1 day, 60 minutes in 1 hour and 60 seconds in 1 minute. This means there are 24 x 60 x 60 seconds in a day!
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: python
+        .. .. code-block:: python
 
-            days = int(input('How many days? '))
+        ..     days = int(input('How many days? '))
 
-            seconds = days * 24 * 60 * 60
-            print('There are {} seconds in {} days.'.format(seconds, days))
+        ..     seconds = days * 24 * 60 * 60
+        ..     print('There are {} seconds in {} days.'.format(seconds, days))
+
+        *Solution is locked*

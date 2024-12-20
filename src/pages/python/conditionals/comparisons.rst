@@ -56,11 +56,13 @@ We can compare values using the following operators:
         x = 7.2
         print(x <= 7.2)
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        **True.** ``x`` is equal to 7.2.
+        .. **True.** ``x`` is equal to 7.2.
+
+        *Solution is locked*
 
 .. dropdown:: Question 3
     :open:
@@ -74,11 +76,13 @@ We can compare values using the following operators:
         x = 2 + 4
         print(x == 6)
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        **True.** ``x`` is equal to 6.
+        .. **True.** ``x`` is equal to 6.
+
+        *Solution is locked*
 
 .. dropdown:: Question 4
     :open:
@@ -92,11 +96,13 @@ We can compare values using the following operators:
         x = 4*3
         print(x != 5)
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        **True.** ``x`` is not equal to 5.
+        .. **True.** ``x`` is not equal to 5.
+
+        *Solution is locked*
 
 .. dropdown:: Question 5
     :open:
@@ -110,11 +116,13 @@ We can compare values using the following operators:
         x = 2**2
         print(x != 4)
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        **False.** ``x`` is equal to 4.
+        .. **False.** ``x`` is equal to 4.
+
+        *Solution is locked*
 
 .. dropdown:: Question 6
     :open:
@@ -128,11 +136,13 @@ We can compare values using the following operators:
         x = 10
         print((x - 1) % 3 == 0 )
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        **True.** ``9 % 3`` is equal to 0 because 9 is divisible by 3 and doesn't leave a remainder.
+        .. **True.** ``9 % 3`` is equal to 0 because 9 is divisible by 3 and doesn't leave a remainder.
+
+        *Solution is locked*
 
 .. dropdown:: Question 7
     :open:
@@ -146,8 +156,10 @@ We can compare values using the following operators:
         x = 'red'
         print(x == 'red')
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        **True.** ``x`` is equal to 'red'.
+        .. **True.** ``x`` is equal to 'red'.
+
+        *Solution is locked*

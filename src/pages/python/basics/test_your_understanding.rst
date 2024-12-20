@@ -90,11 +90,13 @@ Test Your Understanding
 
   D. list
 
-  .. dropdown:: Solution
+  .. dropdown:: :material-regular:`lock;1.5em` Solution
       :class-title: sd-font-weight-bold
       :color: dark
 
-      float
+      .. float
+
+      *Solution is locked*
 
 .. dropdown:: Question 3
   :open:
@@ -130,13 +132,15 @@ Test Your Understanding
             print("Total cost: ${}".format(cost * quantity)) 
         TypeError: can't multiply sequence by non-int of type 'str'
 
-  .. dropdown:: Solution
+  .. dropdown:: :material-regular:`lock;1.5em` Solution
       :class-title: sd-font-weight-bold
       :color: dark
       
-      Total cost: $1.251.251.25
+      .. Total cost: $1.251.251.25
 
-      Here ``cost`` is a string and when a string is multiplied by an integer it causes the string to be repeated. So ``cost * qunatity`` results in ``1.251.251.25``, which is likely not what the code intends. 
+      .. Here ``cost`` is a string and when a string is multiplied by an integer it causes the string to be repeated. So ``cost * qunatity`` results in ``1.251.251.25``, which is likely not what the code intends. 
+
+      *Solution is locked*
 
 .. dropdown:: Question 4
   :open:
@@ -149,10 +153,12 @@ Test Your Understanding
 
     x = 2**2 + 2
 
-  .. dropdown:: Solution
+  .. dropdown:: :material-regular:`lock;1.5em` Solution
       :class-title: sd-font-weight-bold
       :color: dark
 
-      6
+      .. 6
 
-      This is equivalent to :math:`2^2 + 2`.
+      .. This is equivalent to :math:`2^2 + 2`.
+
+      *Solution is locked*

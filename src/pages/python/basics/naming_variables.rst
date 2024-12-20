@@ -158,10 +158,12 @@ Finally, you must ensure you don't name your variables using **keywords**. Keywo
       It will result in an error
 
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        It will result in an error
+        .. It will result in an error
 
-        This program will result in an error saying the variable ``New_years`` has not been defined. This is because Python is case sensitive. The variable ``new_year`` on line 1 is spelt with a lower case ``n`` and Python does not treat it the same as ``New_years`` on line 2 which has a capital ``N``. 
+        .. This program will result in an error saying the variable ``New_years`` has not been defined. This is because Python is case sensitive. The variable ``new_year`` on line 1 is spelt with a lower case ``n`` and Python does not treat it the same as ``New_years`` on line 2 which has a capital ``N``. 
+
+        *Solution is locked*

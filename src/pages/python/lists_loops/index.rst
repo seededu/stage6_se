@@ -8,3 +8,16 @@ Lists and Loops
    indexing
    operations
    joins
+   loops
+   while_loops
+   while_loop_errors
+   while_loop_list
+   while_loop_input
+   while_loop_conditionals
+   for_loops
+   range
+   for_loop_conditionals
+   equivalent_loops
+   nested_loops
+   pseudocode
+   test_your_understanding

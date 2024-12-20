@@ -36,33 +36,35 @@ Test Your Understanding
 
         print(3**2 == 8)
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
       :class-title: sd-font-weight-bold
       :color: dark
 
-      .. code-block:: python
+      .. .. code-block:: python
 
-        print(5%2 == 0)
+      ..   print(5%2 == 0)
 
-      :octicon:`x-circle;1em;sd-text-danger;` **False.** ``%`` gives the remainder, so ``5%2`` is 1 because 5 divided by 2 leaves a remainder of 1. This is not 0.
+      .. :octicon:`x-circle;1em;sd-text-danger;` **False.** ``%`` gives the remainder, so ``5%2`` is 1 because 5 divided by 2 leaves a remainder of 1. This is not 0.
 
-      .. code-block:: python
+      .. .. code-block:: python
 
-        print(5 < 2**2)
+      ..   print(5 < 2**2)
 
-      :octicon:`x-circle;1em;sd-text-danger;` **False.** ``2**2`` is read as '2 to the power of 2', i.e. :math:`2^2`, which is 4. 4 is not greater than 5.
+      .. :octicon:`x-circle;1em;sd-text-danger;` **False.** ``2**2`` is read as '2 to the power of 2', i.e. :math:`2^2`, which is 4. 4 is not greater than 5.
 
-      .. code-block:: python
+      .. .. code-block:: python
 
-        print(5 != 3)
+      ..   print(5 != 3)
 
-      :octicon:`issue-closed;1em;sd-text-success;` **True.** 5 is not equal to 3.
+      .. :octicon:`issue-closed;1em;sd-text-success;` **True.** 5 is not equal to 3.
 
-      .. code-block:: python
+      .. .. code-block:: python
 
-        print(3**2 == 8)
+      ..   print(3**2 == 8)
 
-      :octicon:`x-circle;1em;sd-text-danger;` **False.** ``3**2`` is read as '3 to the power of 2', i.e. :math:`3^2`, which is 9. 9 is not equal to 8.
+      .. :octicon:`x-circle;1em;sd-text-danger;` **False.** ``3**2`` is read as '3 to the power of 2', i.e. :math:`3^2`, which is 9. 9 is not equal to 8.
+
+      *Solution is locked*
 
 .. dropdown:: Question 2
     :open:
@@ -85,18 +87,19 @@ Test Your Understanding
 
     D. The first line should be ``x == 5``.
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
       :class-title: sd-font-weight-bold
       :color: dark
 
-      :octicon:`issue-closed;1em;sd-text-success;` A. Missing ``:`` at the end of line 2.
+      .. :octicon:`issue-closed;1em;sd-text-success;` A. Missing ``:`` at the end of line 2.
 
-      :octicon:`x-circle;1em;sd-text-danger;` B. The third line should not be indented.
+      .. :octicon:`x-circle;1em;sd-text-danger;` B. The third line should not be indented.
 
-      :octicon:`x-circle;1em;sd-text-danger;` C. ``if`` should be spelt ``If`` with a capital *i*.
+      .. :octicon:`x-circle;1em;sd-text-danger;` C. ``if`` should be spelt ``If`` with a capital *i*.
 
-      :octicon:`x-circle;1em;sd-text-danger;` D. The first line should be ``x == 5``.
+      .. :octicon:`x-circle;1em;sd-text-danger;` D. The first line should be ``x == 5``.
 
+    *Solution is locked*
 
 .. dropdown:: Question 3
     :open:
@@ -119,14 +122,16 @@ Test Your Understanding
       else:
           print('D')
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        **C**
+        .. **C**
 
-        In this example the first and second conditions are ``False``, but the third condition is ``True`` because ``y < 10`` is ``True`` and ``y**2 == 25`` is ``True`` since :math:`5^2 = 25`. This means the program outputs C.
+        .. In this example the first and second conditions are ``False``, but the third condition is ``True`` because ``y < 10`` is ``True`` and ``y**2 == 25`` is ``True`` since :math:`5^2 = 25`. This means the program outputs C.
 
-        .. image:: img/6_question2.png
-          :width: 700
-          :align: center
+        .. .. image:: img/6_question2.png
+        ..   :width: 700
+        ..   :align: center
+
+        *Solution is locked*

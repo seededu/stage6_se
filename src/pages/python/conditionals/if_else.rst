@@ -103,25 +103,27 @@ In this example the condition is False so the second print statement runs.
 
         print('I hope we get pizza for dinner!')
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: html
+        .. .. code-block:: html
 
-            I'm hungry.
-            It's dinner time!
-            I hope we get pizza for dinner!
+        ..     I'm hungry.
+        ..     It's dinner time!
+        ..     I hope we get pizza for dinner!
 
-        The first print statement will run because it's not inside an ``if``-``else`` statement.
+        .. The first print statement will run because it's not inside an ``if``-``else`` statement.
 
-        .. image:: img/2_question2.png
-            :width: 550
-            :align: center
+        .. .. image:: img/2_question2.png
+        ..     :width: 550
+        ..     :align: center
 
-        In the ``if``-``else`` block of code the condition in the ``if`` statement evaluates to ``True`` so the code indented in the ``if`` statement will execute, but the code under the ``else`` will not.
+        .. In the ``if``-``else`` block of code the condition in the ``if`` statement evaluates to ``True`` so the code indented in the ``if`` statement will execute, but the code under the ``else`` will not.
 
-        The final ``print`` statement will always run because it's not inside an ``if``-``else`` statement.
+        .. The final ``print`` statement will always run because it's not inside an ``if``-``else`` statement.
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Elevator
     :color: warning
@@ -133,30 +135,32 @@ In this example the condition is False so the second print statement runs.
             :width: 400
             :align: center
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: python
+        .. .. code-block:: python
 
-                pressed = 'up'
+        ..         pressed = 'up'
 
-                print('Doors closing')
+        ..         print('Doors closing')
 
-                if pressed == 'up':
-                    print('Moving up')
-                else:
-                    print('Moving down')
+        ..         if pressed == 'up':
+        ..             print('Moving up')
+        ..         else:
+        ..             print('Moving down')
 
-                print('Doors opening')
+        ..         print('Doors opening')
 
-        Things to remember:
+        .. Things to remember:
 
-        * Code inside the ``if`` and the ``else`` statements have to be indented. The rest of the code should not be indented.
+        .. * Code inside the ``if`` and the ``else`` statements have to be indented. The rest of the code should not be indented.
 
-        * Use ``==`` for comparison.
+        .. * Use ``==`` for comparison.
 
-        * The ``else`` statement is lonely. *The else is by itself!*
+        .. * The ``else`` statement is lonely. *The else is by itself!*
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Odd Even
     :color: warning
@@ -185,15 +189,17 @@ In this example the condition is False so the second print statement runs.
 
         * When odd numbers are divided by 2 the remainder is 0
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block::
+        .. .. code-block::
 
-            x = int(input('Enter a number: '))
+        ..     x = int(input('Enter a number: '))
 
-            if x % 2 == 0:
-                print('This number is even')
-            else:
-                print('This number is odd')
+        ..     if x % 2 == 0:
+        ..         print('This number is even')
+        ..     else:
+        ..         print('This number is odd')
+
+        *Solution is locked*

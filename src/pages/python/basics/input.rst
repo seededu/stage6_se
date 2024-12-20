@@ -64,14 +64,16 @@ Make sure you double check the variable type when you use ``input()``! If you ar
             :width: 200
             :align: center
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: python
+        .. .. code-block:: python
 
-            msg = input('Say something! ')
-            print(msg)
+        ..     msg = input('Say something! ')
+        ..     print(msg)
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Double that Number!
     :color: warning
@@ -98,11 +100,13 @@ Make sure you double check the variable type when you use ``input()``! If you ar
 
     .. hint:: Don't forget that input values are always strings!
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: html
+        .. .. code-block:: html
 
-            n = int(input('Enter a number: '))
-            print(2 * n)
+        ..     n = int(input('Enter a number: '))
+        ..     print(2 * n)
+
+        *solution is locked*
