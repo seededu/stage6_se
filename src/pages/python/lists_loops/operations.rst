@@ -113,13 +113,15 @@ Conveniently, we can perform operations on lists. Here are a few examples:
       fruits = ['apples', 'bananas', 'pears']
       print(len(fruits))
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        **3**
+        .. **3**
 
-        ``len`` tells you the number of elements in a list. In this case there are 3 elements in the list which is why ``len(fruits)`` is 3.
+        .. ``len`` tells you the number of elements in a list. In this case there are 3 elements in the list which is why ``len(fruits)`` is 3.
+
+        *Solution is locked*
 
 .. dropdown:: Question 3
     :open:
@@ -133,13 +135,15 @@ Conveniently, we can perform operations on lists. Here are a few examples:
       numbers = [7, 2, -1, 3, 9]
       print(min(numbers))
     
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        **-1**
+        .. **-1**
 
-        ``min`` will give you the minimum value in a list. -1 is the minimum value in the list so the result is -1.
+        .. ``min`` will give you the minimum value in a list. -1 is the minimum value in the list so the result is -1.
+
+        *Solution is locked*
 
 .. dropdown:: Question 4
     :open:
@@ -153,13 +157,15 @@ Conveniently, we can perform operations on lists. Here are a few examples:
       numbers = [7, 2, -1, 3, 9]
       print(sum(numbers))
     
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        **20**
+        .. **20**
 
-        ``sum`` will give you the sum of all the values in the given list. In this case 7 + 2 -1 + 3 + 9 = 20, so the result is 20.
+        .. ``sum`` will give you the sum of all the values in the given list. In this case 7 + 2 -1 + 3 + 9 = 20, so the result is 20.
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Another Thing To do
     :color: warning
@@ -189,14 +195,16 @@ Conveniently, we can perform operations on lists. Here are a few examples:
         What else do you need to do? Empty bins
         ['Buy carrots', 'Wash car', 'Study for quiz', 'Empty bins']
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: 
+        .. .. code-block:: 
 
-          todo = ['Buy carrots', 'Wash car', 'Study for quiz']
+        ..   todo = ['Buy carrots', 'Wash car', 'Study for quiz']
 
-          task = input('What else do you need to do? ')
-          todo.append(task)
-          print(todo)
+        ..   task = input('What else do you need to do? ')
+        ..   todo.append(task)
+        ..   print(todo)
+
+        *Solution is locked*

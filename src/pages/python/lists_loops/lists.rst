@@ -116,10 +116,12 @@ A list is actually another type of variable.
 
       print(list1 == list2)
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
       :class-title: sd-font-weight-bold
       :color: dark
 
-      **False.**
+      .. **False.**
       
-      The order of the elements in the list matter. A list is only the same as another list if all the elements are the same and also in the same order.
+      .. The order of the elements in the list matter. A list is only the same as another list if all the elements are the same and also in the same order.
+
+      *Solution is locked*

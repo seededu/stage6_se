@@ -141,31 +141,33 @@ Note that ``.join()`` can only be used on lists containing strings. The followin
 
       | Mon | Tue | Wed | Thur | Fri | Sat | Sun |
 
-  .. dropdown:: Solution
+  .. dropdown:: :material-regular:`lock;1.5em` Solution
     :class-title: sd-font-weight-bold
     :color: dark
 
-    :octicon:`x-circle;1em;sd-text-danger;` ``Mon|Tue|Wed|Thur|Fri|Sat|Sun``
+    .. :octicon:`x-circle;1em;sd-text-danger;` ``Mon|Tue|Wed|Thur|Fri|Sat|Sun``
 
-    :octicon:`x-circle;1em;sd-text-danger;` ``|Mon|Tue|Wed|Thur|Fri|Sat|Sun|``
+    .. :octicon:`x-circle;1em;sd-text-danger;` ``|Mon|Tue|Wed|Thur|Fri|Sat|Sun|``
 
-    :octicon:`issue-closed;1em;sd-text-success;` ``Mon | Tue | Wed | Thur | Fri | Sat | Sun``
+    .. :octicon:`issue-closed;1em;sd-text-success;` ``Mon | Tue | Wed | Thur | Fri | Sat | Sun``
 
-    :octicon:`x-circle;1em;sd-text-danger;` ``| Mon | Tue | Wed | Thur | Fri | Sat | Sun |``
+    .. :octicon:`x-circle;1em;sd-text-danger;` ``| Mon | Tue | Wed | Thur | Fri | Sat | Sun |``
 
-    There are 3 components to our print statement.
+    .. There are 3 components to our print statement.
 
-    * First we have ``'| '`` 
+    .. * First we have ``'| '`` 
 
-    * Next we have ``' | '.join(days)``
+    .. * Next we have ``' | '.join(days)``
 
-    * Finally we have  ``' |'`` 
+    .. * Finally we have  ``' |'`` 
 
-    .. image:: img/join_concat.png
-        :width: 400
-        :align: center
+    .. .. image:: img/join_concat.png
+    ..     :width: 400
+    ..     :align: center
 
-    This results in ``| Mon | Tue | Wed | Thur | Fri | Sat | Sun |``
+    .. This results in ``| Mon | Tue | Wed | Thur | Fri | Sat | Sun |``
+
+    *Solution is locked*
 
 .. dropdown:: Question 3
   :open:
@@ -206,37 +208,39 @@ Note that ``.join()`` can only be used on lists containing strings. The followin
       numbers = ['5', '4', '3', '2', '1']
       print('... '.join(numbers))
 
-  .. dropdown:: Solution
+  .. dropdown:: :material-regular:`lock;1.5em` Solution
       :class-title: sd-font-weight-bold
       :color: dark
 
-      .. code-block::
+      .. .. code-block::
 
-        numbers = [5, 4, 3, 2, 1]
-        print('...'.join(numbers))
+      ..   numbers = [5, 4, 3, 2, 1]
+      ..   print('...'.join(numbers))
 
-      :octicon:`x-circle;1em;sd-text-danger;` **Incorrect.** You cannot join list items that are not strings.
+      .. :octicon:`x-circle;1em;sd-text-danger;` **Incorrect.** You cannot join list items that are not strings.
 
-      .. code-block::
+      .. .. code-block::
 
-        numbers = [1, 2, 3, 4, 5]
-        print('...'.join(numbers))
+      ..   numbers = [1, 2, 3, 4, 5]
+      ..   print('...'.join(numbers))
 
-      :octicon:`x-circle;1em;sd-text-danger;` **Incorrect.** You cannot join list items that are not strings.
+      .. :octicon:`x-circle;1em;sd-text-danger;` **Incorrect.** You cannot join list items that are not strings.
 
-      .. code-block::
+      .. .. code-block::
 
-        numbers = ['5', '4', '3', '2', '1']
-        print('...'.join(numbers))
+      ..   numbers = ['5', '4', '3', '2', '1']
+      ..   print('...'.join(numbers))
 
-      :octicon:`x-circle;1em;sd-text-danger;` **Incorrect.** This is missing a space after the ``'...'``.
+      .. :octicon:`x-circle;1em;sd-text-danger;` **Incorrect.** This is missing a space after the ``'...'``.
 
-      .. code-block::
+      .. .. code-block::
 
-        numbers = ['5', '4', '3', '2', '1']
-        print('... '.join(numbers))
+      ..   numbers = ['5', '4', '3', '2', '1']
+      ..   print('... '.join(numbers))
 
-      :octicon:`issue-closed;1em;sd-text-success;` **Correct.**
+      .. :octicon:`issue-closed;1em;sd-text-success;` **Correct.**
+
+      *Solution is locked*
 
 .. dropdown:: Code challenge: Charm Bracelet
     :color: warning
@@ -262,13 +266,14 @@ Note that ``.join()`` can only be used on lists containing strings. The followin
 
       🔗 ------- 🎱 ------- 🧸 ------- 🍩 ------- 🎠 ------- 🪝
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
       :class-title: sd-font-weight-bold
       :color: dark
 
-      .. code-block::
+      .. .. code-block::
 
-        charms = ['\U0001F517', '\U0001F3B1', '\U0001F9F8', '\U0001F369', '\U0001F3A0', '\U0001FA9D']
+      ..   charms = ['\U0001F517', '\U0001F3B1', '\U0001F9F8', '\U0001F369', '\U0001F3A0', '\U0001FA9D']
 
-        print(' ------- '.join(charms))
+      ..   print(' ------- '.join(charms))
         
+      *Solution is locked*

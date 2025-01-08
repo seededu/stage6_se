@@ -138,15 +138,17 @@ Note: the last item in the list starts at -1 whereas the first item in the list 
         
         print(days[-2])
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: python
+        .. .. code-block:: python
         
-            print(days[1:3])
+        ..     print(days[1:3])
 
-        Remember that the start index is *inclusive* and the last index is *exclusive*. This means that we start at index 1 and go up to, but not including index 3, which means we get ``['Tue', 'Wed']``.
+        .. Remember that the start index is *inclusive* and the last index is *exclusive*. This means that we start at index 1 and go up to, but not including index 3, which means we get ``['Tue', 'Wed']``.
+
+        *Solution is locked*
 
 .. dropdown:: Question 3
     :open:
@@ -160,15 +162,41 @@ Note: the last item in the list starts at -1 whereas the first item in the list 
         days = ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun']
         print(days[:3])
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: python
+        .. .. code-block:: python
 
-            ['Mon', 'Tue', 'Wed']
+        ..     ['Mon', 'Tue', 'Wed']
 
-        If the start index is not included, the default start is 0. Remember that the start index is *inclusive* and the last index is *exclusive*. This means that we start at index 0 and go up to, but not including index 3, which means we get ``['Mon', 'Tue', 'Wed']``.
+        .. If the start index is not included, the default start is 0. Remember that the start index is *inclusive* and the last index is *exclusive*. This means that we start at index 0 and go up to, but not including index 3, which means we get ``['Mon', 'Tue', 'Wed']``.
+
+        *Solution is locked*
+
+.. dropdown:: Question 4
+    :open:
+    :color: info
+    :icon: question
+    
+    What do you think the output of the following code will be?
+
+    .. code-block:: python
+
+        days = ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun']
+        print(days[-4:])
+
+    .. dropdown:: :material-regular:`lock;1.5em` olution
+        :class-title: sd-font-weight-bold
+        :color: dark
+
+        .. .. code-block:: python
+
+        ..     ['Mon', 'Tue', 'Wed']
+
+        .. With negative indices, the *last* item is ``-1`` and then you start counting backwards. If the end index is not included, you will automatically get to the end of the list. This means that we start at index **-4** and go to the end of the list. This means we get ``['Thur', 'Fri', 'Sat', 'Sun']``.
+
+        *Solution is locked*
 
 .. dropdown:: Question 5
     :open:
@@ -212,19 +240,21 @@ Note: the last item in the list starts at -1 whereas the first item in the list 
 
         days[5]
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        :octicon:`issue-closed;1em;sd-text-success;` ``days[-2]``
+        .. :octicon:`issue-closed;1em;sd-text-success;` ``days[-2]``
 
-        :octicon:`issue-closed;1em;sd-text-success;` ``days[5:6]``
+        .. :octicon:`issue-closed;1em;sd-text-success;` ``days[5:6]``
 
-        :octicon:`issue-closed;1em;sd-text-success;` ``days[-2:-1]``
+        .. :octicon:`issue-closed;1em;sd-text-success;` ``days[-2:-1]``
 
-        :octicon:`issue-closed;1em;sd-text-success;` ``days[5]``
+        .. :octicon:`issue-closed;1em;sd-text-success;` ``days[5]``
 
-        One thing that you'll notice is that when you index one value, you're extracting out a single value, so ``days[-2]`` and ``days[5]`` will extract out a single element, in this case ``'Sat'``, whereas when you select out a range of values you will get a list because there's potential that you may retrieve multiple elements.
+        .. One thing that you'll notice is that when you index one value, you're extracting out a single value, so ``days[-2]`` and ``days[5]`` will extract out a single element, in this case ``'Sat'``, whereas when you select out a range of values you will get a list because there's potential that you may retrieve multiple elements.
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Item Number
     :color: warning
@@ -254,16 +284,18 @@ Note: the last item in the list starts at -1 whereas the first item in the list 
         Enter an index: 2
         You need to buy chocolate
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block:: 
+        .. .. code-block:: 
 
-            shopping_list = ["carrots", "avocado", "chocolate", "toothpaste", "tomatoes"]
+        ..     shopping_list = ["carrots", "avocado", "chocolate", "toothpaste", "tomatoes"]
 
-            index = int(input("Enter an index: "))
-            print("You need to buy {}".format(shopping_list[index]))
+        ..     index = int(input("Enter an index: "))
+        ..     print("You need to buy {}".format(shopping_list[index]))
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: What Month Is It?
     :color: warning
@@ -291,19 +323,21 @@ Note: the last item in the list starts at -1 whereas the first item in the list 
         Enter a month: 6
         June
 
-    .. dropdown:: Solution
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. code-block::
+        .. .. code-block::
 
-            months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+        ..     months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
-            month = int(input('Enter a month: '))
-            print(months[month - 1])
+        ..     month = int(input('Enter a month: '))
+        ..     print(months[month - 1])
         
-        The key things to remember in this solution are:
+        .. The key things to remember in this solution are:
 
-        * ``input()`` values are always strings. You will need to convert month to an integer.
+        .. * ``input()`` values are always strings. You will need to convert month to an integer.
 
-        * Don't forget that *Python indexing starts at 0!* This means that even though January is month 1, it is at index 0! Including month -1 will convert the month to the appropriate index.
+        .. * Don't forget that *Python indexing starts at 0!* This means that even though January is month 1, it is at index 0! Including month -1 will convert the month to the appropriate index.
+
+        *Solution is locked*

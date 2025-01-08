@@ -4,7 +4,7 @@
 Pseudocode
 ====================
 
-Sometimes it can be useful to write algorithms in code form without the syntax of a specific language. We can do this using **pseudocode**.
+Sometimes it can be useful to write algorithms in code form without the syntax of a specific language. We can do this using **pseudocode**. This is a way of writing code in a format that is easy for a human to read. The exact symbols and keywords may vary depending on the convention you use. 
 
 The way in which we represent ``if``-``elif``-``else`` statements as follows. This is an example with 3 conditions.
 

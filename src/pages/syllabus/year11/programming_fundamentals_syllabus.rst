@@ -89,6 +89,8 @@ Designing algorithms
       :class-title: sd-font-weight-light
       :color:  info
 
+      * :doc:`/python/lists_loops/pseudocode` Question 3
+
     .. dropdown:: desk checking and peer checking
       :class-title: sd-font-weight-light
       :color:  info
@@ -224,7 +226,7 @@ Developing solutions with code
       * :doc:`/python/lists_loops/indexing`
       * :doc:`/python/lists_loops/operations`
       * :doc:`/python/lists_loops/joins`
-      * :doc:`/python/lists_loops/range` (Coverting to a list)
+      * :doc:`/python/lists_loops/to_lists`
 
     .. dropdown:: trees
       :class-title: sd-font-weight-light
