@@ -1,5 +1,10 @@
 User Interface and User Experience (UI/UX)
 ==========================================
 
+- responsive web site
+- frameworks that control complex web applications
+- predesigned CSS classes
+- css maintenance tools
+- performance
 
-emphasis on div, the css box model and @media
+  - Investigate methods to support and manage the load times of web pages/applications
