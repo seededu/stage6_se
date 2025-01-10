@@ -13,5 +13,7 @@ Javascript
     strings
     conditionals
     arrays
+    loops
     functions
+    objects
 

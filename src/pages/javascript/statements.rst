@@ -1,3 +1,6 @@
+.. role:: js(code)
+   :language: javascript
+
 Programs, Statements and Expressions
 =====================================
 
