@@ -8,7 +8,7 @@ Lists and Loops
    indexing
    operations
    joins
-   to_lists
+   to_list
    loops
    while_loops
    while_loop_errors

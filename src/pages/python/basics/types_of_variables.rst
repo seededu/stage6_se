@@ -4,8 +4,12 @@
 Types of Variables
 ==================
 
-Python has different types of variables. Here are some of the most commonly used
-variables.
+Python has different types of variables. We'll look at a couple of common ones here.
+
+Numeric Variables
+-----------------
+
+Two of the most commonly used numeric variables are integers and floats. These are types of **real** numbers. 
 
 * **integer**: a whole number
 
@@ -18,6 +22,9 @@ variables.
   * :python:`cost = 1.50`
 
   * :python:`pi = 3.14159`
+
+Text Variables
+-----------------
 
 * **string**: text
 
@@ -38,6 +45,9 @@ variables.
 .. note:: Python does not distinguish between characters and strings and will
   treat a single character as a string. But other languages will treat them
   differently!
+
+Checking Variable Types
+-----------------------
 
 If you want to know the type of a certain variable, we can use the
 :python:`type` function.

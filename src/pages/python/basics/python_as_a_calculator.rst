@@ -52,6 +52,25 @@ Order of operations
 
 Python follows the stand standard order of mathematical operations, i.e. **BODMAS**: Brackets Orders Division Multiplication Addition Subtraction.
 
+Float Point Representation
+--------------------------
+Some decimal values cannot be represented exactly by a computer and sometimes arithmetic containing floating points numbers will contain errors.  Here are some examples.
+
+.. exec_code::
+  :language: python
+
+    print(10/3)
+
+
+.. exec_code::
+  :language: python
+
+    print(1.2 - 1.0)
+
+This is not a bug in the code that can be fixed - it is inherent to all programming languages. Remembering these issues will help you build code robust enough to handle the inaccuracies for floating point representations. 
+
+Note that some decimal values can be stored to a higher precision than other decimal values and the level of precision these values are stored at depends on how much memory is allocated to the variable in the computer. **Double-precision** float point numbers can store decimals to a greater precision than **single-precision** floating point numbers because double-precision floating points numbers have 64 bits of memory allocated to them compared to single-precision floating point numbers which only have 32 bits of memory.
+
 .. dropdown:: Question 1
     :open:
     :color: info

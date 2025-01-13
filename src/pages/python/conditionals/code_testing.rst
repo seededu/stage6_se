@@ -22,17 +22,10 @@ It's important that you're able to test your code to verify that it will behave 
 This program has 3 possible paths. 
 
 
-.. image:: img/5_example1a.png
+.. image:: img/5_example1.png
   :width: 650
   :align: center
 
-.. image:: img/5_example1b.png
-  :width: 650
-  :align: center
-
-.. image:: img/5_example1c.png
-  :width: 650
-  :align: center
 
 So examples of input-output pairs we can use to test this program so that we get path coverage are:
 
