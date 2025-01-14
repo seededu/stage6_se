@@ -67,7 +67,7 @@ actions in real-time. JavaScript enables:
 - Single-page applications like Gmail and Twitter that load content without reloading the entire page.
 - A more accessible and engaging internet for billions of users.
 
-The dependence on and prevalence of JavaScript has been so strong, that modern CPU architectures such as those used by
-Apple and Qualcomm even contain JavaScript specific instructions, e.g. `FJCVTZS <https://developer.arm.com/documentation/ddi0602/2022-03/SIMD-FP-Instructions/FJCVTZS--Floating-point-Javascript-Convert-to-Signed-fixed-point--rounding-toward-Zero->`_.
+The language's growth has been so significant that even computer hardware manufacturers, such as Apple and Qualcomm,
+now design their processors to include JavaScript `specific instructions <https://developer.arm.com/documentation/ddi0602/2022-03/SIMD-FP-Instructions/FJCVTZS--Floating-point-Javascript-Convert-to-Signed-fixed-point--rounding-toward-Zero->`_, ensuring websites run smoothly on all kinds of devices.
 
 
