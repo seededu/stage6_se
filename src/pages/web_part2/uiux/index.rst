@@ -1,10 +1,10 @@
 User Interface and User Experience (UI/UX)
 ==========================================
 
-- responsive web site
-- frameworks that control complex web applications
-- predesigned CSS classes
-- css maintenance tools
-- performance
+.. toctree::
+    :maxdepth: 2
 
-  - Investigate methods to support and manage the load times of web pages/applications
+    overview
+    responsive
+    frameworks
+    performance
