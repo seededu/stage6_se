@@ -56,4 +56,4 @@ def create_task():
 # Run the app
 # -------------------------------------------------------
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, reloader_type='stat', port=5000)
