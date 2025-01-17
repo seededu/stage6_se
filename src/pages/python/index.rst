@@ -8,3 +8,4 @@ Python
    conditionals/index
    lists_loops/index
    modules_functions/index
+   algorithms/index

@@ -7,7 +7,7 @@ Programming fundamentals
 
 * :bdg-info:`Programming Fundamentals` covered in programming fundamentals
 
-* :bdg-success:`The object-orient paradigm` moved to OOP
+* :bdg-success:`OOP I` moved to the object-oriented paradigm part I
 
 * :bdg-warning:`Delayed` will be covered in programming fundamentals
 
@@ -62,10 +62,29 @@ Designing algorithms
 --------------------
 
 .. dropdown:: Apply computational thinking and algorithmic design by defining the key features of standard algorithms, including sequence, selection, iteration and identifying data that should be stored
+  :color: info
+
+  Sequence, selection, iteration (and subroutines)
+
+  * :doc:`/python/algorithms/algorithms`
+  * :doc:`/python/algorithms/box_algorithm`
+
+  Identifying data that should be stored
+
+  * :doc:`/python/algorithms/representing_and_storing_data`
+  * *We anticipate that students will organically develop this skill as they get more practice converting pseudocode into code and also implementing programs to solve problems.*
+
+
+
+.. dropdown:: Apply divide and conquer and backtracking as algorithmic design strategies
   :color: danger
 
-.. card:: Apply divide and conquer and backtracking as algorithmic design strategies
-  :color: danger
+  Backtracking
+
+  * :doc:`/python/algorithms/maze_example`
+  * :doc:`/python/algorithms/8_queens_example`
+
+  Divide and Conquer
 
 .. card:: Develop structured algorithms using pseudocode and flowcharts, including the use of subprograms
 
@@ -76,6 +95,7 @@ Designing algorithms
     * Conditionals: :doc:`/python/conditionals/pseudocode`
     * Loops: :doc:`/python/lists_loops/pseudocode`
     * Modules and functions: :doc:`/python/modules_functions/pseudocode_flowcharts`: covers subprograms
+    * :doc:`/python/algorithms/box_algorithm`
 
   .. dropdown:: Flowcharts
     :class-title: sd-font-weight-light
@@ -91,6 +111,7 @@ Designing algorithms
     * :doc:`/python/lists_loops/for_loop_conditionals`
     * :doc:`/python/lists_loops/nested_loops`
     * :doc:`/python/modules_functions/pseudocode_flowcharts`: covers subprograms
+    * :doc:`/python/algorithms/box_algorithm`
 
 .. dropdown:: Use modelling tools including structure charts, abstraction and refinement diagrams to support top-down and bottom-up design
     :color:  danger
@@ -109,15 +130,33 @@ Designing algorithms
       :class-title: sd-font-weight-light
       :color:  danger
 
+      *We anticipate that students will organically develop this skill as they become more fluent at reading flowcharts and pseudocode, particularly after completing the algorithms module where they were be exposed to more examples of pseudocode.*
+
+      Practice questions
+
       * :doc:`/python/lists_loops/pseudocode` Question 3
 
     .. dropdown:: desk checking and peer checking
       :class-title: sd-font-weight-light
       :color:  danger
 
+      Desk checking
+
+      * :doc:`/python/algorithms/desk_checking`
+      * :doc:`/python/algorithms/box_desk_check`
+      * :doc:`/python/algorithms/8_queens_example`
+
+      Peer checking
+
     .. dropdown:: determining connections of written algorithms to other subroutines or functions
       :class-title: sd-font-weight-light
-      :color:  danger
+      :color:  info
+
+      * :doc:`/python/modules_functions/pseudocode_flowcharts`
+      * :doc:`/python/algorithms/algorithms`
+      * :doc:`/python/algorithms/box_algorithm`
+
+      *Students should be comfortable with this after completing the 'Modules and Functions' and 'Algorithms' modules where they will have practice writing subroutines and functions in both pseudocode and Python.*
 
 .. dropdown:: Identify procedures and functions in an algorithm
   :color: info
@@ -135,14 +174,14 @@ Data for software engineering
 .. dropdown:: Investigate the use of number systems for computing purposes, including binary, decimal and hexadecimal
   :color: info
 
-    * :doc:`/python/modules_functions/binary`: decimal and binary numbers
-    * :doc:`/python/modules_functions/hexadecimal`: hexadecimal numbers
-    * :doc:`/python/modules_functions/ascii`: decimal, binary and hexadecimal characters
+  * :doc:`/python/modules_functions/binary`: decimal and binary numbers
+  * :doc:`/python/modules_functions/hexadecimal`: hexadecimal numbers
+  * :doc:`/python/modules_functions/ascii`: decimal, binary and hexadecimal characters
 
 .. dropdown:: Represent integers using two’s complement
   :color: info
 
-  * :doc:`/python/modules_functions/twos_complement
+  * :doc:`/python/modules_functions/twos_complement`
 
 .. card:: Investigate standard data types
 
@@ -191,6 +230,8 @@ Data for software engineering
 
 .. dropdown:: Create data dictionaries as a tool to describe data and data types, structure data, and record relationships
   :color: danger
+
+  * :doc:`/python/algorithms/representing_and_storing_data`
 
 .. card:: Use data structures of arrays, records, trees and sequential files
 
