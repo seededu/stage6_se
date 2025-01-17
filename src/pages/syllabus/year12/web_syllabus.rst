@@ -294,7 +294,7 @@ Designing web applications
    :color: dark
 
    *This will not be covered under "Programming for the Web". Students will cover this 
-   in the "Software engineering project".
+   in the "Software engineering project".*
 
 .. card:: Explore the types and significance of code libraries for front-end web development
 
@@ -310,7 +310,7 @@ Designing web applications
       :class-title: sd-font-weight-light
       :color:  success
 
-      :doc:`/web_part1/server_cont/templating`
+      :doc:`/web_part1/server_cont/flask_templating`
 
    .. dropdown:: predesigned CSS classes
       :class-title: sd-font-weight-light
@@ -368,15 +368,15 @@ Designing web applications
       :color: success
 
       * :doc:`/web_part1/server_intro/flask_basics`
-      * :doc:`/web_part1/server_cont/databases`
-      * :doc:`/web_part1/server_cont/templating`
+      * :doc:`/web_part1/server_cont/flask_databases`
+      * :doc:`/web_part1/server_cont/flask_templating`
 
    .. dropdown:: databases
       :class-title: sd-font-weight-light
       :color: success
 
       * :doc:`/web_part1/databases/index`
-      * :doc:`/web_part1/server_cont/databases`
+      * :doc:`/web_part1/server_cont/flask_databases`
 
 .. dropdown:: Develop a web application using an appropriate scripting language with shell scripts to make files and directories, and searching for text in a text file
    :color: info
@@ -409,7 +409,6 @@ Designing web applications
       * :doc:`/web_part1/databases/insert`
       * :doc:`/web_part1/databases/update`
       * :doc:`/web_part1/databases/delete`
-      * :doc:`/web_part1/databases/relationships`
 
    .. dropdown:: constraints using WHERE keyword
       :class-title: sd-font-weight-light
@@ -421,7 +420,6 @@ Designing web applications
       :class-title: sd-font-weight-light
       :color: success
 
-      * :doc:`/web_part1/databases/relationships`
       * :doc:`/web_part1/databases/joins`
 
 .. dropdown:: Compare Object-Relational Mapping (ORM) to SQL

@@ -5,7 +5,7 @@ SQLAlchemy is a popular Python ORM library that simplifies database interactions
 classes and objects instead of raw SQL. It automatically maps these classes to database tables, so you can think about
 your data in an object-oriented way rather than in rows and columns.
 
-.. info::
+.. note::
 
     On this and subsequent pages we will use the example of a database of books.
 

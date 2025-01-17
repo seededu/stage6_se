@@ -27,7 +27,7 @@ Where:
 - :js:`message` is the object to be printed, for example a string.
 
 More Examples!
------------
+----------------
 
 Printing Numbers
 
@@ -78,7 +78,7 @@ These comments start with ``/*`` and end with ``*/``. They can span as many line
     let name = "Alice";
 
 Common Printing Mistakes
---------------------
+-------------------------
 
 **Don't forget quotes for strings**
 

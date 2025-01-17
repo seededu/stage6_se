@@ -241,7 +241,14 @@ Example:
 
     Spend $5 more to get a discount.
 
+Glossary
+--------
 
+.. glossary::
+
+    Block statement
+        A block statement is used to denote a sequence of statements. A block statement begins and ends with a pair of
+        curly braces.
 
 
 

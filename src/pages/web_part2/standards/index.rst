@@ -1,6 +1,12 @@
 Standards and History (TODO)
 ==========================================
 
+.. toctree::
+    :maxdepth: 2
+
+    overview
+    tools
+
 
 Investigate and explain the role of the World Wide Web Consortium (W3C) in the development of applications for the web
 

@@ -8,7 +8,7 @@ In this module, you will learn the syntax of JavaScript as a general purpose pro
 will learn how JavaScript is used to build interactive web pages.
 
 Why Learn JavaScript?
---------------------
+----------------------
 
 After learning JavaScript you will be able to:
 
@@ -31,7 +31,7 @@ To get up to speed on the history of Javascript, watch the video below.
     <iframe width="560" height="315" src="https://www.youtube.com/embed/_UjYWgM8guY?si=B0HELDrqDWJDkKVb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 The Birth of JavaScript
---------------------
+-------------------------
 
 JavaScript was created in 1995 by Brendan Eich, a developer at Netscape Communications. Netscape wanted a language to
 enhance interactivity on web pages. The language was initially called Mocha (later renamed LiveScript), it was finally
@@ -42,7 +42,7 @@ To address this, JavaScript was standardized by the European Computer Manufactur
 led to the creation of ECMAScript, the standardized version of JavaScript we use today.
 
 The Evolution of JavaScript
---------------------
+----------------------------
 
 When JavaScript was first introduced, it was limited to small tasks like form validation e.g., ensuring a user
 entered their email address. Since then JavaScript has expanded into powerful language that runs not just in browsers
