@@ -9,4 +9,5 @@ Standards and History
     browsers
     oss
     cms
+    collab
     bigdata
