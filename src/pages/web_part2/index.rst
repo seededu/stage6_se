@@ -8,8 +8,6 @@ Web Part 2
     interactivity/index
     uiux/index
     orm/index
-    security/index
     standards/index
-    big_data/index
     pwa/index
 
