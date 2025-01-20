@@ -10,7 +10,7 @@ A Brief History of Open Source
 
 .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=Rgc28TRuy00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rgc28TRuy00?si=8XL92_OBQPz98mF_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 - Early Beginnings: The roots of open-source software can be traced back to the early days of computing when sharing
   code was common practice among researchers and hobbyists. This collaborative spirit laid the groundwork for what
