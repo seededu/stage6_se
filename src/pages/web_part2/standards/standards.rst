@@ -20,7 +20,7 @@ The W3C has three core design principles as part of its `mission <https://www.w3
 
     The web has transformed the way we communicate with each other. In doing so, it has also modified the nature of our
     social relationships. People now meet on the web and carry out commercial and personal relationships, in some cases
-    without ever meeting in person. W3C recognizes that trust is a social phenomenon, but technology design can foster
+    without ever meeting in person. W3C recognises that trust is a social phenomenon, but technology design can foster
     trust and confidence. As more activity moves online, it will become even more important to support complex
     interactions among parties around the globe.
 
@@ -118,8 +118,8 @@ between different working groups:
 
     We recommend reading the following pages from the I18n Activity website:
 
-    - `About internationalization <https://www.w3.org/International/i18n-drafts/nav/about>`_
-    - `Getting Started with Internationalization <https://www.w3.org/International/i18n-drafts/getting-started/index.html>`_
+    - `About internationalisation <https://www.w3.org/International/i18n-drafts/nav/about>`_
+    - `Getting Started with Internationalisation <https://www.w3.org/International/i18n-drafts/getting-started/index.html>`_
 
 
 Web Security and Privacy

@@ -64,5 +64,5 @@ almost instantly, and delays can lead to frustration and high bounce rates.
 You’ll learn:
 
 - How performance affects user experience and SEO.
-- Strategies to optimize performance, such as image compression and lazy loading.
+- Strategies to optimise performance, such as image compression and lazy loading.
 - Tools to measure and improve website performance.

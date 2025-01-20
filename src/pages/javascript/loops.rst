@@ -17,13 +17,13 @@ Syntax:
 
 .. code-block:: javascript
 
-    for (initialization; condition; increment/decrement) {
+    for (initialisation; condition; increment/decrement) {
         // Code to run in each iteration
     }
 
 Explanation:
 
-- initialization: Sets the starting point for the loop (e.g., :js:`let i = 0`).
+- initialisation: Sets the starting point for the loop (e.g., :js:`let i = 0`).
 - condition: Specifies when the loop should stop (e.g., :js:`i < 5`).
 - increment/decrement: Updates the loop variable (e.g., :js:`i++`).
 

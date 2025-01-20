@@ -164,7 +164,7 @@ Where
 Classes: A Thin Wrapper
 -------------------------------------
 
-In JavaScript, classes provide a way to create and organize objects, but at their core, they are essentially a thin
+In JavaScript, classes provide a way to create and organise objects, but at their core, they are essentially a thin
 wrapper around JavaScript’s built-in object and prototype system.
 
 JavaScript has always been object-oriented, even before the introduction of the class keyword in ES6. Classes were

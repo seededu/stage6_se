@@ -38,8 +38,8 @@ enhance interactivity on web pages. The language was initially called Mocha (lat
 branded as JavaScript to exploit the popularity and hype of Java at that time.
 
 Microsoft soon created their own version of JavaScript called JScript, leading to inconsistencies across web browsers.
-To address this, JavaScript was standardized by the European Computer Manufacturers Association (ECMA) in 1997. This
-led to the creation of ECMAScript, the standardized version of JavaScript we use today.
+To address this, JavaScript was standardised by the European Computer Manufacturers Association (ECMA) in 1997. This
+led to the creation of ECMAScript, the standardised version of JavaScript we use today.
 
 The Evolution of JavaScript
 ----------------------------
@@ -54,7 +54,7 @@ Key milestones in JavaScript's evolution:
   handling.
 - 2009: The release of Node.js, a runtime that allows JavaScript to run on servers, opened the door for full-stack
   development.
-- 2015: ECMAScript 6 (ES6) introduced significant features like let, const, arrow functions, and classes, modernizing
+- 2015: ECMAScript 6 (ES6) introduced significant features like let, const, arrow functions, and classes, modernising
   JavaScript.
 
 JavaScript's Impact

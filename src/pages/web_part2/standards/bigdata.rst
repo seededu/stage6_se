@@ -3,14 +3,14 @@ Big Data's Impact on the Web
 
 Big data has dramatically reshaped web architecture, introducing new complexities and opportunities in how websites and
 web applications collect, manage, and analyze vast amounts of information. Key aspects of this transformation include
-data mining, metadata utilization, and streaming data management, each bringing innovative technologies and techniques
+data mining, metadata utilisation, and streaming data management, each bringing innovative technologies and techniques
 that influence modern web systems.
 
 Big Data
 ---------------
 
 Big data refers to extremely large and complex datasets that traditional data processing tools cannot efficiently
-manage. It is characterized by the "3 Vs":
+manage. It is characterised by the "3 Vs":
 
 - Volume: The enormous amount of data generated every second from various sources like social media, sensors,
   transactions, and more.
@@ -41,8 +41,8 @@ file properties, or system logs.
 
 How Is Metadata Helpful?
 
-- **Organization and Retrieval**: Metadata helps structure large datasets, making it easier to search, retrieve, and
-  manage information. For example, image metadata such as tags, descriptions, and creation dates assist in organizing
+- **Organisation and Retrieval**: Metadata helps structure large datasets, making it easier to search, retrieve, and
+  manage information. For example, image metadata such as tags, descriptions, and creation dates assist in organising
   media libraries.
 - **Data Context**: By providing context to raw data, metadata aids in understanding user behavior, content relevance,
   and system performance. This additional layer can guide content recommendations and targeted advertising.

@@ -5,7 +5,7 @@ Functions
 =============
 
 A function is a reusable block of code designed to perform a specific task. You can think of it as a "mini-program"
-within your program. Functions make your programs more organized, efficient, and easier to debug.
+within your program. Functions make your programs more organised, efficient, and easier to debug.
 
 The basic syntax for defining a function in JavaScript is:
 

@@ -15,8 +15,8 @@ A Brief History of Open Source
 - Early Beginnings: The roots of open-source software can be traced back to the early days of computing when sharing
   code was common practice among researchers and hobbyists. This collaborative spirit laid the groundwork for what
   would become the open-source movement.
-- Rise of the Term: In the late 1990s, the term "open source" was coined to describe a more formalized approach to
-  sharing code. This came as a response to the growing popularity of proprietary software models, emphasizing the
+- Rise of the Term: In the late 1990s, the term "open source" was coined to describe a more formalised approach to
+  sharing code. This came as a response to the growing popularity of proprietary software models, emphasising the
   value of collaboration and transparency.
 - Community and Collaboration: Projects like the Linux operating system, Apache HTTP Server, and the GNU Project became
   landmarks of the open-source movement. These projects demonstrated that a community-driven approach could produce
@@ -33,7 +33,7 @@ Popular Open-Source Tools and Frameworks:
 - Content Management Systems (CMS): Platforms like WordPress, Joomla, and Drupal are open-source CMS solutions that
   allow developers to create and manage websites with ease.
 - Development Tools: Text editors like VS Code and tools like Git for version control are open-source, supporting a
-  robust ecosystem where developers can contribute and customize tools to suit their needs.
+  robust ecosystem where developers can contribute and customise tools to suit their needs.
 
 Impact on Web Standards
 
@@ -48,7 +48,7 @@ Advantages of Using Open-Source Software
 - Transparency and Security: With open-source code, anyone can inspect it for errors or potential security
   vulnerabilities. This transparency often leads to more robust and secure software, as a large community of developers
   can review and improve the code.
-- Customization and Flexibility: Open-source software can be modified to fit specific project needs. Developers are
+- Customisation and Flexibility: Open-source software can be modified to fit specific project needs. Developers are
   free to tweak and extend functionality, ensuring the final product aligns perfectly with their vision.
 - Community Support: A vibrant community often surrounds open-source projects, offering forums, documentation,
   tutorials, and direct help. This support network can be invaluable, especially when tackling complex development

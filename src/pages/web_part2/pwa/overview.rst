@@ -61,7 +61,7 @@ Feature                 Traditional Web Apps       Native Apps                PW
 ======================= ========================== ========================== =================================
 Installation            No installation needed     Download from app store    Add to home screen from browser
 Offline Support         Limited or none            Full offline functionality Works offline using caching
-Performance             Browser-dependent          Optimized for the device   Native app-like
+Performance             Browser-dependent          Optimised for the device   Native app-like
 Updates                 Manual updates by user     Via app store              Automatic updates via the web
 Cross-Platform Support  Universal across browsers  Platform-specific builds   Universal via modern browsers
 ======================= ========================== ========================== =================================
