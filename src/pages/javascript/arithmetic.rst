@@ -105,3 +105,4 @@ Number).
 .. code-block:: javascript
 
     console.log("hello" / 2); // Prints: NaN
+
