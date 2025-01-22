@@ -64,27 +64,44 @@ Order of Operations (PEMDAS)
 
 JavaScript follows the order of operations, also known as PEMDAS:
 
-Parentheses
-Exponents
-Multiplication and Division
-Addition and Subtraction
-Example:
+1. **P**\arentheses
+2. **E**\xponents
+3. **M**\ultiplication (and **m**\odulo) and **D**\ivision
+4. **A**\ddition and **S**\ubtraction
 
-let result = 5 + 2 * 3;
-console.log(result); // Prints: 11 (Multiplication happens before addition)
+**Example**: Multiplication happens before addition
 
-let resultWithParentheses = (5 + 2) * 3;
-console.log(resultWithParentheses); // Prints: 21 (Parentheses are evaluated first)
+.. code-block:: javascript
+
+    let result = 5 + 2 * 3;
+    console.log(result); // Prints: 11
+
+**Example**: Parentheses are evaluated first
+
+.. code-block:: javascript
+
+    let resultWithParentheses = (5 + 2) * 3;
+    console.log(resultWithParentheses); // Prints: 21
 
 Special Cases
 -------------------------------
 
 Dividing by Zero
+^^^^^^^^^^^^^^^^^
+
 In JavaScript, dividing by zero results in Infinity or -Infinity for positive and negative numbers, respectively.
-Example:
-console.log(5 / 0); // Prints: Infinity
-console.log(-5 / 0); // Prints: -Infinity
+
+.. code-block:: javascript
+
+    console.log(5 / 0); // Prints: Infinity
+    console.log(-5 / 0); // Prints: -Infinity
+
 Not a Number (NaN)
-If an arithmetic operation involves invalid inputs (like dividing a string by a number), JavaScript returns NaN (Not a Number).
-Example:
-console.log("hello" / 2); // Prints: NaN
+^^^^^^^^^^^^^^^^^^^
+
+If an arithmetic operation involves invalid inputs (like dividing a string by a number), JavaScript returns NaN (Not a
+Number).
+
+.. code-block:: javascript
+
+    console.log("hello" / 2); // Prints: NaN
