@@ -134,9 +134,9 @@ You can insert variables or expressions directly into a string using ${}.
 
 .. code-block:: javascript
 
-    let name = "Alice";
+    let person = "Alice";
     let age = 16;
-    let message = `My name is ${name} and I am ${age} years old.`;
+    let message = `My name is ${person} and I am ${age} years old.`;
     console.log(message); // Prints: My name is Alice and I am 16 years old.
 
 

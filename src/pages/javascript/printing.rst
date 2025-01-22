@@ -39,8 +39,8 @@ Printing Variables - More about variables on the next pages!
 
 .. code-block:: javascript
 
-    let name = "Alice";
-    console.log(name);
+    let person = "Alice";
+    console.log(person);
 
 Combining Strings
 
@@ -75,7 +75,7 @@ These comments start with ``/*`` and end with ``*/``. They can span as many line
     This is a multi-line comment.
     It can explain a more complex piece of code.
     */
-    let name = "Alice";
+    let person = "Alice";
 
 Common Printing Mistakes
 -------------------------
