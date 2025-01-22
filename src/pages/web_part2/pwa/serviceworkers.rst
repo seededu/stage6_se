@@ -81,19 +81,24 @@ Example
 
 .. code-block:: javascript
 
-    // Fetch event: Serve resources from cache or network
-    self.addEventListener('fetch', event => {
-        event.respondWith(
-            cache = caches.open('my-pwa-cache');
-            cache.match(event.request).then(response => {
-                return response || fetch(event.request);
-            })
-        );
-    });
+   // Fetch event: Serve resources from cache or network
+   self.addEventListener('fetch', event => {
+       event.respondWith(
+           caches.open('my-pwa-cache')
+               .then(cache => {
+                   return cache.match(event.request)
+                       .then(response => {
+                           return response || fetch(event.request);
+                       });
+               })
+       );
+   });
+
 
 **Explanation**
 
 Fetch event:
+
 - The 'fetch' event is triggered whenever the browser makes a network request.
 - This includes requests for HTML, CSS, JavaScript, images, APIs, and more.
 - The service worker listens for these fetch events and can intercept, modify, or respond to the requests.
@@ -101,6 +106,7 @@ Fetch event:
 The fetch event is part of the service worker API, which gives you control over how network requests are handled.
 
 Caches:
+
 - ``caches.open`` returns a cache object associated to the name provided and creates a new cache if it doesn't exist
 - ``cache.match`` checks the cache for a resource associated with the request
 
