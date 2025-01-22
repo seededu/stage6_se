@@ -21,7 +21,7 @@ JavaScript allows you to define strings using either single or double quotes.
 
     let singleQuoteString = 'Hello, world!';
 
-Double quotes**
+**Double quotes**
 
 .. code-block:: javascript
 
