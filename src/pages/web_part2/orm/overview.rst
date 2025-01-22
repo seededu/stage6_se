@@ -32,3 +32,55 @@ manually them yourself. Fortunately most ORMs allow you to write raw SQL in thes
 Example
 ---------------------
 
+Let's take a look at some examples to understand the difference.
+
+Defining a Table
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Using SQL we can define a table
+
+.. code-block:: python
+
+    create_table_query = """
+    CREATE TABLE IF NOT EXISTS Book (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        title VARCHAR(150) NOT NULL,
+        author VARCHAR(100) NOT NULL,
+        publication_date VARCHAR(10),
+        genre VARCHAR(50)
+    );
+    """
+
+    cursor.execute(create_table_query)
+    conn.commit()
+
+Or using Python and SQLAlchemy (we'll learn about it on the next page)
+
+.. code-block:: python
+
+    class Book(db.Model):
+        id = db.Column(db.Integer, primary_key=True)
+        title = db.Column(db.String(150), nullable=False)
+        author = db.Column(db.String(100), nullable=False)
+        publication_date = db.Column(db.String(10))
+        genre = db.Column(db.String(50))
+
+
+Querying
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If we want to search for records matching some criteria we would write SQL like:
+
+.. code-block:: python
+
+    author_name = "Arthur Conan Doyle"
+    select_by_author_query = "SELECT * FROM Book WHERE author = ?;"
+
+    cursor.execute(select_by_author_query, (author_name,))
+    author_books = cursor.fetchall()
+
+Or using Python and SQLAlchemy we would write:
+
+.. code-block:: python
+
+    books = Book.query.filter_by(author="Arthur Conan Doyle").all()
