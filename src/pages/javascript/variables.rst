@@ -27,7 +27,7 @@ Example:
 .. code-block:: javascript
 
     let age = 16; // A variable named 'age' storing the number 16
-    let name = "Stevie"; // A variable named 'name' storing the string "Stevie"
+    let person = "Stevie"; // A variable named 'name' storing the string "Stevie"
 
 You can also define a variable without giving it an initial value:
 

@@ -16,8 +16,8 @@ Examples of statements:
 
 .. code-block:: javascript
 
-    let name = "Alice"; // Declares a variable and assigns a value
-    console.log(name);  // Prints the value of 'name' to the console
+    let person = "Alice"; // Declares a variable and assigns a value
+    console.log(person);  // Prints the value of 'name' to the console
 
 Semicolons
 ----------------------------------------------

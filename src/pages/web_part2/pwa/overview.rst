@@ -31,8 +31,6 @@ Examples of PWAs
 When you visit any of the above examples with a PWA compatible browser such as Google Chrome, you will be prompted to
 download and install it as a local application.
 
-
-
 Principles of PWAs
 ---------------------
 
@@ -54,22 +52,48 @@ PWAs are built on three main principles:
 Comparison of App Types
 --------------------------------
 
-The table below summarises the differences in usage and features between traditional web apps, native apps and PWAs.
+The table below summarises the differences in usage and features between native apps, traditional web apps, and PWAs.
 
 ======================= ========================== ========================== =================================
-Feature                 Traditional Web Apps       Native Apps                PWAs
+Feature                 Native Apps                Traditional Web Apps       PWAs
 ======================= ========================== ========================== =================================
-Installation            No installation needed     Download from app store    Add to home screen from browser
-Offline Support         Limited or none            Full offline functionality Works offline using caching
-Performance             Browser-dependent          Optimised for the device   Native app-like
-Updates                 Manual updates by user     Via app store              Automatic updates via the web
-Cross-Platform Support  Universal across browsers  Platform-specific builds   Universal via modern browsers
+Installation            Download from app store    No installation needed     Add to home screen from browser
+Offline Support         Full offline functionality Limited or none            Works offline using caching
+Performance             Optimised for the device   Browser-dependent          Native app-like
+Updates                 Via app store              Manual updates by user     Automatic updates via the web
+Cross-Platform Support  Platform-specific builds   Universal across browsers  Universal via modern browsers
 ======================= ========================== ========================== =================================
+
 
 Technology of PWAs
 --------------------------------
 
-PWAs rely on three key technologies, the first two will be covered in detail in the following pages:
+Progressive Web Apps (PWAs) efficiently utilize the browser engine that is already installed on a user's device.
+Instead of bundling a separate rendering engine, PWAs rely on the capabilities of the user's preferred browser to
+interpret and execute the application's code. Using an existing browser engine means that PWAs are typically smaller
+in size than native applications and work cross platform.
+
+
+.. figure:: img/pwa-environment.svg
+    :width: 480
+    :align: center
+
+    PWA, traditional web apps and native apps compared. Image from
+    `Mozilla <https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/What_is_a_progressive_web_app>`_.
+
+The figure above visualises the difference in interaction between software layers for PWAs, traditional web apps and
+native apps (platform-specific). The operating system controls the lifecycle of native apps and they are closely coupled
+together. Native apps often make use of operating system specific functionality, which means that they require more
+development effort to create cross platform software.
+
+On the other hand PWAs the app interacts with the browser engine, using web technologies rather than operating system
+specific functionality. This means that PWAs will generally work cross platform without any design or development
+effort.
+
+PWA Requirements
+--------------------------------
+
+PWAs must provide or comply with the following, the first two will be explained on the following pages:
 
 1. **Web App Manifest**
 
@@ -85,8 +109,12 @@ PWAs rely on three key technologies, the first two will be covered in detail in 
    - All PWAs must be served over HTTPS to ensure security and protect user data.
 
 
-[TODO] Add a section and graphics explaining how PWAs use existing installed browser engine.
+Further Reading
+--------------------------------
 
+We recommend the following resources:
+
+1. `What is a progressive web app? (Mozilla) <https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/What_is_a_progressive_web_app>`_
 
 
 
