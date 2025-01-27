@@ -18,7 +18,7 @@ This isn't unique to Python. Many other languages use 0 indexing.
 
 Below we show you the index corresponding to each item in the list months.
 
-.. code-block:: python
+.. exec_code::
 
     # index:    0      1      2      3      4      5      6      7      8       9     10      11
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
@@ -38,7 +38,7 @@ Note:
 
 Here is an example. We start at month 2 (March) and go up to, but *not including*, month 7 (August).
 
-.. code-block:: python
+.. exec_code::
 
     # index:    0      1      2      3      4      5      6      7      8       9     10      11
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
@@ -46,7 +46,7 @@ Here is an example. We start at month 2 (March) and go up to, but *not including
 
 If you omit the *start* index, you will automatically start at index 0.
 
-.. code-block:: python
+.. exec_code::
 
     # index:    0      1      2      3      4      5      6      7      8       9     10      11
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
@@ -54,7 +54,7 @@ If you omit the *start* index, you will automatically start at index 0.
 
 If you omit the *end* index, you will automatically end at the last item in the list. Here is an example.
 
-.. code-block:: python
+.. exec_code::
 
     # index:    0      1      2      3      4      5      6      7      8       9     10      11
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
@@ -62,7 +62,7 @@ If you omit the *end* index, you will automatically end at the last item in the 
 
 You can also index from the end of the list by using negative indices. Here is an example. 
 
-.. code-block:: python
+.. exec_code::
 
     # negative index:
     #          -12    -11    -10    -9     -8     -7     -6     -5     -4      -3     -2     -1
@@ -70,6 +70,26 @@ You can also index from the end of the list by using negative indices. Here is a
     print(months[-3])
 
 Note: the last item in the list starts at -1 whereas the first item in the list starts at 0.
+
+Index Errors
+------------
+If you try to access an index that does not exist you will get an *IndexError*. See what happens when you run the following code.
+
+.. code::
+
+    # index:    0      1      2      3      4      5      6      7      8       9     10      11
+    months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
+    print(months[12])
+
+.. code:: text
+
+    Traceback (most recent call last):
+      File "/home/main.py", line 3, in <module>
+          print(months[12])
+                ~~~~~~^^^^
+      IndexError: list index out of range
+      
+This is a common error as often we forget to account for the fact that Python indexing starts at 0.
 
 .. dropdown:: Question 1 
     :open:

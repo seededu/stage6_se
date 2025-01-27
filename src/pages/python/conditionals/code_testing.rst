@@ -4,6 +4,9 @@
 Code Testing
 ====================
 
+Path Coverage
+-------------
+
 It's important that you're able to test your code to verify that it will behave the way you intend. An common way to test code is to come up with **input-output** pairs and check whether your program produces the correct output. We also want to be selective when choosing our input output pairs so that we get **path coverage**, i.e. our input-output pairs test every possible path in our code.
 
 **Example:**  The purpose of this program is to identify whether x is positive, negative or 0.
@@ -44,7 +47,18 @@ So examples of input-output pairs we can use to test this program so that we get
 
 Note that the second column is our *expected output*. We should run our code to determine whether the code output actually matches our expected output.
 
-Another thing we often want to test are **boundary values**. These are where it causes our program to change. When looking at boundary values we also want to be aware of *valid* and *invalid* inputs, i.e. what are the allowed values our program should take, and does it work for those values?
+Boundary Values
+----------------
+
+Another thing we often want to test are boundary values. These are where it causes our program to change. When we have a condition, e.g. ``x < 3``, we should check what happens when ``x`` is:
+
+* less than 3
+
+* exactly 3
+
+* greater than 3
+
+And ensure the results are what we expect.
 
 **Example**
 
@@ -65,13 +79,24 @@ In this program we want to test what happens when ``current_speed`` is near ``sp
 
 * At exactly 40 our program outputs *You are travelling within the speed limit.*
 
-This program only accepts integer values.
+* And at 39 (just below 40) our program again outputs *You are travelling within the speed limit.*
 
-* Character inputs e.g. `'hello'`` are *invalid* i.e. faulty
 
-* Float inputs e.g. `3.5`` are *invalid*
+Faulty and Abnormal Data
+------------------------
 
-Whether your not these inputs should be invalid or not will depend on the program **specifications**, which describes what the code is meant to do (or not meant to do).
+Faulty and abnormal data is when the values fall outside the expectations of the system. Whether your not these inputs should be invalid or not will depend on the program **specifications**, which describes what the code is meant to do (or not meant to do). The program should always be able to handle all valid inputs, but what happens when invalid data is entered is often up to the programmer to decide.
+
+**Example**
+
+If we look at the same program as in the previous example, *invalid*, i.e. *faulty*/*abnormal* input data would include anything that cannot be converted to an integer. This is because in the first line of the program the user input is converted to an integer. 
+
+.. code-block:: python
+
+    current_speed = int(input('What is your current speed? '))
+
+
+Examples of faulty and abnormal data would include ``hello`` and ``3.5``.
 
 .. dropdown:: Question 1
     :open:
@@ -345,20 +370,23 @@ Whether your not these inputs should be invalid or not will depend on the progra
 
         .. :octicon:`issue-closed;1em;sd-text-success;` 15
 
-        .. :octicon:`x-circle;1em;sd-text-danger;` 16
+        .. :octicon:`issue-closed;1em;sd-text-success;` 16
 
-        .. :octicon:`x-circle;1em;sd-text-danger;` 24
+        .. :octicon:`issue-closed;1em;sd-text-success;` 24
 
         .. :octicon:`issue-closed;1em;sd-text-success;` 25
 
         .. :octicon:`issue-closed;1em;sd-text-success;` 26
 
-        .. Boundary values can be used to identify when a program changes behaviour. In this case this is when temp goes from 14 to 15 and when it goes from 25 to 26.
+        .. Boundary values can be used to identify when a program changes behaviour. In this case we have the conditions ``temp < 15`` and ``temp > 25``. We should check values just above, just below and equal to the values on the right had side of these conditions.
 
         .. * If ``temp`` is 14 the program outputs: *Take a jumper!*
 
         .. * If ``temp`` is 15 the program doesn't output anything
 
+        .. * If ``temp`` is 16 the program doesn't output anything
+
+        .. * If ``temp`` is 24 the program doesn't output anything
 
         .. * If ``temp`` is 25 the program doesn't output anything
 

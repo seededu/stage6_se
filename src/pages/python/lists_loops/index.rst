@@ -21,4 +21,3 @@ Lists and Loops
    equivalent_loops
    nested_loops
    pseudocode
-   test_your_understanding
