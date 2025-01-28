@@ -1,0 +1,18 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book List</title>
+</head>
+<body>
+    <h1>My Book Collection</h1>
+    <ul>
+        {% for book in books %}
+          <li>{{ book.title }} by {{ book.author }}</li>
+        {% else %}
+          <li>No books found yet!</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -59,6 +59,7 @@ html_theme_options = {
     }
 }
 
+
 html_context = {
     # "github_url": "https://github.com", # or your GitHub Enterprise interprise
     "github_user": "seededu",

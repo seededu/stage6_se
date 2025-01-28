@@ -43,13 +43,13 @@ Software development
     .. dropdown:: integration
         :class-title: sd-font-weight-light
         :color:  info
-
+        
         * :doc:`/python/algorithms/developing_software`
 
     .. dropdown:: testing and debugging
         :class-title: sd-font-weight-light
         :color:  info
-
+        
         * :doc:`/python/conditionals/code_testing`
         * :doc:`/python/algorithms/developing_software`
 
@@ -134,6 +134,7 @@ Designing algorithms
     * :doc:`/python/algorithms/top_down_bottom_up`
     * :doc:`/python/algorithms/structure_charts`
 
+
 .. card:: Analyse the logic and structure of written algorithms
 
     Including
@@ -195,8 +196,10 @@ Designing algorithms
 
     *Moved to OOP*
 
+
 Data for software engineering
 -----------------------------
+
 
 .. dropdown:: Investigate the use of number systems for computing purposes, including binary, decimal and hexadecimal
   :color: info
@@ -228,11 +231,13 @@ Data for software engineering
       :class-title: sd-font-weight-light
       :color:  info
 
+
       * :doc:`/python/conditionals/booleans`
 
     .. dropdown:: real
       :class-title: sd-font-weight-light
       :color:  info
+
 
       * :doc:`/python/basics/types_of_variables`: integers and floats are examples of real numbers.
 
@@ -287,6 +292,7 @@ Data for software engineering
       :color:  info
 
       * :doc:`/python/data_structures/sequential_files`
+
 
 Developing solutions with code
 ------------------------------
@@ -393,6 +399,7 @@ Developing solutions with code
       :class-title: sd-font-weight-light
       :color:  info
 
+
       * :doc:`/python/data_structures/stacks`
 
     .. dropdown:: hash tables
@@ -412,6 +419,7 @@ Developing solutions with code
   :color: info
 
   * :doc:`/python/algorithms/tic_tac_toe`
+  
 
 .. card:: Use debugging tools
 

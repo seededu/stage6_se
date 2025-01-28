@@ -22,7 +22,7 @@ mathematics, statistics, machine learning, data visualisation and programming.
         Dr Stephen Tierney holds a PhD in Machine Learning and BA Computer Science 
         (Honours).
 
-        `University of Sydney Profile Page <https://www.sydney.edu.au/business/about/our-people/academic-staff/stephen.tierney.html>`_
+        `Stephen's University of Sydney Profile Page <https://www.sydney.edu.au/business/about/our-people/academic-staff/stephen.tierney.html>`_
 
         
     .. grid-item-card::  Dr Alison Wong
@@ -36,7 +36,7 @@ mathematics, statistics, machine learning, data visualisation and programming.
 
         Dr Alison Wong holds a PhD in Astrophysics and BA Science (Honours)
 
-        `University of Sydney Profile Page <https://www.sydney.edu.au/business/about/our-people/academic-staff/a-wong.html>`_
+        `Alison's University of Sydney Profile Page <https://www.sydney.edu.au/business/about/our-people/academic-staff/a-wong.html>`_
 
 
 

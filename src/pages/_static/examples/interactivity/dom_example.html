@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Example</title>
+</head>
+<body>
+    <h1 id="title">Welcome to the DOM</h1>
+    <p id="description">This text will change when you click the button.</p>
+    <button onclick="updateContent()">Click Me</button>
+
+    <script>
+        // JavaScript function to update the DOM
+        function updateContent() {
+            // Find elements by their IDs
+            const title = document.getElementById("title");
+            const description = document.getElementById("description");
+
+            // Update their content
+            title.textContent = "DOM Updated!";
+            description.textContent = "The content has been changed with JavaScript.";
+        }
+    </script>
+</body>
+</html>

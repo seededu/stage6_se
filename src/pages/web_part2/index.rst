@@ -1,4 +1,4 @@
-Web Part 2 (PLACEHOLDER)
+Web Part 2
 =========================
 
 .. toctree::
@@ -6,7 +6,7 @@ Web Part 2 (PLACEHOLDER)
     :numbered: 3
 
     interactivity/index
-    orm/index
     uiux/index
-    security/index
+    orm/index
+    standards/index
     pwa/index
