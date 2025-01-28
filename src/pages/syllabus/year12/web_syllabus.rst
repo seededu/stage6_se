@@ -77,6 +77,7 @@ Data transmission using the web
 
    .. dropdown:: HTTP, HTTPS
       :class-title: sd-font-weight-light
+
       :color: success
 
       HTTP
@@ -208,11 +209,13 @@ Designing web applications
 
       * :doc:`/web_part2/standards/standards`
 
+
    .. dropdown:: internationalisation
       :class-title: sd-font-weight-light
       :color:  warning
 
       * :doc:`/web_part2/standards/standards`
+
 
    .. dropdown:: web security
       :class-title: sd-font-weight-light

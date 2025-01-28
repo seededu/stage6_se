@@ -2,7 +2,7 @@
    :language: python
 
 Booleans
-====================
+========
 
 A Boolean is another variable type (like integers, floats and string). A
 Boolean can be a ``True`` or a ``False``.

@@ -126,11 +126,3 @@ This example removes the ``<li>`` with the text "Item 2" from the list.
     </script>
 
 
-
-
-
-
-
-
-
-

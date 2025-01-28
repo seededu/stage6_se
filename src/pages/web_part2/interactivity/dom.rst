@@ -98,4 +98,3 @@ Explanation:
     - Finds the ``<h1>`` and ``<p>`` elements using ``document.getElementById()``.
     - Updates the text content of these elements.
 
-

@@ -57,12 +57,3 @@ Try it out yourself!
         .. raw:: html
 
             <iframe src="../../_static/examples/interactivity/hello_world.html"></iframe>
-
-
-
-
-
-
-
-
-

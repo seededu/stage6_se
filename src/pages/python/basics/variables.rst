@@ -38,51 +38,179 @@ Here is an example:
 
 Note that the variable x does not have quotes but the string 'Alison' does!
 
-Types
---------------------
 
-Python has different types of variables. Here are some of the most commonly used
-variables.
+.. dropdown:: Question 1
+    :open:
+    :color: info
+    :icon: question
 
-* **integer**: a whole number
+    What do you think the output of the following code will be?
 
-  * :python:`x = 5`
+    .. code-block:: python
 
-  * :python:`num = 21`
+      name = 'Steve'
+      print('Hello')
+      print(name)
 
-* **float**: a decimal number
+    A. 
 
-  * :python:`cost = 1.50`
+      .. code-block:: python
 
-  * :python:`pi = 3.14159`
+        Hello
 
-* **string**: text
+    B. 
 
-  * :python:`name = 'steve'`
+      .. code-block:: python
 
-  * :python:`message = "great job"`
+        Steve
 
-.. note:: You can use either single quotes ``' '`` or double quotes ``" "`` to
-  indicate a string as long as you start and end with the same type.
+    C. 
 
-* **char**: a single character
+      .. code-block:: python
 
-  * :python:`letter = 'a'`
+        Hello
+        name
 
-  * :python:`symbol = '@'`
+    D. 
 
+      .. code-block:: python
 
-.. note:: Python does not distinguish between characters and strings and will
-  treat a single character as a string. But other languages will treat them
-  differently!
-
-If you want to know the type of a certain variable, we can use the
-:python:`type` function.
+        Hello
+        Steve
 
 
-.. exec_code::
-  :language: python
+    .. dropdown:: Solution
+        :class-title: sd-font-weight-bold
+        :color: dark
 
-  print(type(3))
-  print(type(3.0))
-  print(type('3'))
+        First the program will print the string ``'Hello'``, then the code will print the information stored in the variable name. This will result in the program printing
+
+        .. code-block:: python
+
+          Hello
+          Steve
+
+.. dropdown:: Question 2
+    :open:
+    :color: info
+    :icon: question
+
+    What do you think the output of the following code will be?
+
+    .. code-block:: python
+
+      x = '3'
+      print('My lucky number is')
+      print('x')
+
+    A. 
+
+      .. code-block:: html
+
+        My lucky number is
+        3
+
+    B. 
+
+      .. code-block:: html
+
+        My lucky number is
+        x
+
+    C. 
+
+      .. code-block:: html
+
+        My lucky number is
+
+    D. 
+
+      .. code-block:: html
+
+        3
+
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
+        :class-title: sd-font-weight-bold
+        :color: dark
+
+        .. First the program will print the string ``'My lucky name is'``, then the code will print the string ``'x'``. This is because there are quotes around the x so it's treated as a string.
+
+        .. This will result in the program printing
+
+        .. .. code-block:: html
+
+        ..   My lucky name is
+        ..   x
+
+        *Solution is locked*
+
+.. dropdown:: Question 3
+    :open:
+    :color: info
+    :icon: question
+
+    Which of the following are **valid**? *Select all that apply*.
+
+    A. 
+
+      .. code-block:: html
+
+        print(x)
+
+    B. 
+
+      .. code-block:: html
+
+        'message' = Happy Birthday
+        print(message)
+
+    C. 
+
+      .. code-block:: html
+
+        day = 'Monday'
+        print('Today is')
+        print(day)
+
+    D. 
+
+      .. code-block:: html
+
+        print('I do not like')
+        print(dislike)
+        dislike = 'eggs and ham'
+
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
+        :class-title: sd-font-weight-bold
+        :color: dark
+
+        .. .. code-block:: html
+
+        ..   print(x)
+
+        .. :octicon:`x-circle;1em;sd-text-danger;` **Invalid.**  The variable ``x`` does not exist so when the program tries to access it you get an error.
+
+        .. .. code-block:: html
+
+        ..   'message' = Happy Birthday
+        ..   print(message)
+
+        .. :octicon:`x-circle;1em;sd-text-danger;` **Invalid.** Variables should be defined without the quotes and strings should be defined with quotes. Note that the variable name must always be to the left of the ``=``.
+
+        .. .. code-block:: html
+
+        ..   day = 'Monday'
+        ..   print('Today is')
+        ..   print(day)
+
+        .. :octicon:`issue-closed;1em;sd-text-success;` **Valid.**
+
+        .. .. code-block:: html
+
+        ..   print('I do not like')
+        ..   print(dislike)
+        ..   dislike = 'eggs and ham'
+
+        .. :octicon:`x-circle;1em;sd-text-danger;` **Invalid.** The program will run line by line. The variable ``dislike`` isn't defined until line 3, so when the program tries to access the variable on line 2, it doesn't exist yet!
+
+        *Solution is locked*

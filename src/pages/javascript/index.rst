@@ -16,4 +16,3 @@ Javascript
     loops
     functions
     objects
-
