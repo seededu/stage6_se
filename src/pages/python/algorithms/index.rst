@@ -20,3 +20,4 @@ Algorithms and Code Design
    top_down_bottom_up
    structure_charts
    collaboration
+   waterfall_agile
