@@ -5,9 +5,9 @@
 Input
 ================
 
-It is often useful for a user to interact directly with their program. To do this, we can use input() to collect information from the user.
+It is often useful for a user to interact directly with their program. To do this, we can use ``input()`` to collect information from the user.
 
-Here is the structure of the input() statement.
+Here is the structure of the ``input()`` statement.
 
 ``variable_name = input(message_displayed_to_user)``
 
