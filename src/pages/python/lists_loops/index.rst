@@ -21,3 +21,4 @@ Lists and Loops
    equivalent_loops
    nested_loops
    pseudocode
+   additional_challenges

@@ -74,7 +74,7 @@ Since the condition ``i == 3`` is ``False`` we don't do anything else. Since 4 i
 This is how we can represent this code diagrammatically.
 
 .. image:: img/8_example1.png
-    :width: 350
+    :width: 320
     :align: center
 
 .. dropdown:: Question 1
