@@ -65,7 +65,7 @@ If you must use the same type of quote, use a backslash (``\``) to escape the ne
 Useful String Methods
 ----------------------
 
-JavaScript strings arecome with built-in methods for performing common tasks. Here are some examples:
+JavaScript strings come with built-in methods for performing common tasks. Here are some examples:
 
 **Finding the Length of a String**
 
