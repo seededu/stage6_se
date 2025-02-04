@@ -13,7 +13,8 @@ At the end of the tutorial you will have built a web app that:
 Setup
 ---------------------
 
-To begin, we will make a basic Flask web app that shows a list of books in the database, which at start will be empty.
+To begin, we will make a basic Flask web app that shows a list of books in the database, which will be empty to start
+with.
 
 We will use the `flask-sqlalchemy <https://flask-sqlalchemy.readthedocs.io/en/stable/>`_ extension, which simplifies
 the integration of SQLAlchemy's ORM with Flask.
