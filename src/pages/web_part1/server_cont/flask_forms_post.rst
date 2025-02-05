@@ -115,12 +115,15 @@ Importantly we will need two route functions in our Flask app for the form:
 Project structure:
 
 .. code-block:: text
+    :caption: Directory structure
 
-   ├── app.py
-   ├── movies.db
-   └── templates/
-       └── index.html
-       └── new_review.html
+    movie-reviews
+    │
+    ├── app.py
+    ├── movies.db
+    └── templates/
+        ├── index.html
+        └── new_review.html
 
 .. tab-set::
 

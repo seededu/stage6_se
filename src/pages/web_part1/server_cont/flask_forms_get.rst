@@ -184,12 +184,15 @@ the results will be displayed based on the selected filters.
 Project structure:
 
 .. code-block:: text
+    :caption: Directory structure
 
-   ├── app.py
-   ├── movies.db
-   └── templates/
-       └── search.html
-       └── filter.html
+    movie-reviews
+    │
+    ├── app.py
+    ├── movies.db
+    └── templates/
+        ├── search.html
+        └── filter.html
 
 .. tab-set::
 
