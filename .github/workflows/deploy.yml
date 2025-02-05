@@ -20,7 +20,7 @@ jobs:
     - name: Build HTML
       run: |
         mkdir _site
-        docker run -v ./_site:/src/_build/html stage6_se
+        docker run -v ./_site:/src/_build/html stage6_se build
 
     - name: Upload Artifact
       uses: actions/upload-pages-artifact@v3
