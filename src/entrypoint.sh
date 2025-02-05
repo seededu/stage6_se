@@ -11,7 +11,9 @@ shift  # Remove first argument and keep the rest
 case "$COMMAND" in
     build)
         echo "Building Sphinx documentation with options: $SPHINXOPTS"
-        uv run make clean
+        echo "Cleaning build directory..."
+        find /src/_build/html -mindepth 1 -delete || true  # Deletes contents but keeps the folder
+        echo "Building html..."
         uv run make html SPHINXOPTS="$SPHINXOPTS"
         ;;
     lint)
