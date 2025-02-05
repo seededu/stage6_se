@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  pr_tests_build:
     runs-on: ubuntu-latest
 
     steps:
