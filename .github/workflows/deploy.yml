@@ -1,4 +1,4 @@
-name: Preview Main
+name: Github Pages Deploy
 
 on:
   push:
@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
     - name: Checkout
       uses: actions/checkout@v4
 
