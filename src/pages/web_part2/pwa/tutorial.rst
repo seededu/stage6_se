@@ -119,10 +119,21 @@ Manifest
 The manifest provides some basic information to the web browser and operating system about how the PWA should be
 installed and presented to the user.
 
+You'll notice:
+
+- The ``manifest.json`` file is located under ``/static``
+- The manifest is referenced in the ``index.html`` template so that the browser knows that the app is a PWA.
+
 .. literalinclude:: ../../_static/tutorials/pwa/02_install/static/manifest.json
     :language: json
     :caption: manifest.json
     :linenos:
+
+.. literalinclude:: ../../_static/tutorials/pwa/02_install/templates/index.html
+    :language: html
+    :caption: Exerpt of ``index.html``
+    :linenos:
+    :lines: 1-9
 
 Icon
 ^^^^^^^^^^^^^^^^^^^^^^
