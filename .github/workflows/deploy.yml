@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  deploy_build:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,7 +25,7 @@ jobs:
     - name: Upload Artifact
       uses: actions/upload-pages-artifact@v3
 
-  deploy:
+  deploy_deploy:
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:

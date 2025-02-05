@@ -5,7 +5,7 @@ on:
     types: ['opened', 'edited', 'synchronize']
 
 jobs:
-  deploy:
+  pr_preview_deploy:
     runs-on: ubuntu-latest
 
     permissions:
