@@ -66,7 +66,5 @@ def delete_task(task_id):
 # -------------------------------------------------------
 # Run the app
 # -------------------------------------------------------
-
-if __name__ == "__main__":
-    app.run(debug=True, reloader_type='stat', port=5000)
+app.run(debug=True, reloader_type='stat', port=5000)
 

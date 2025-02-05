@@ -52,8 +52,18 @@ def create_task():
     db.session.commit()
     return jsonify(new_task.to_dict()), 201
 
+@app.route("/api/tasks/<int:task_id>", methods=["DELETE"])
+def delete_task(task_id):
+    """Delete an existing task."""
+    task = Task.query.get(task_id)
+    if not task:
+        return jsonify({"error": "Task not found"}), 404
+
+    db.session.delete(task)
+    db.session.commit()
+    return jsonify({"message": f"Task {task_id} deleted"}), 200
+
 # -------------------------------------------------------
 # Run the app
 # -------------------------------------------------------
-if __name__ == "__main__":
-    app.run(debug=True, reloader_type='stat', port=5000)
+app.run(debug=True, reloader_type='stat', port=5000)
