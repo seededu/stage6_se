@@ -117,30 +117,6 @@ Variables declared outside any function are part of the global scope.
     showMessage(); // Prints: I am global!
 
 
-Arrow Functions
--------------------
-
-Introduced in ES6, arrow functions provide a shorter syntax for writing functions. They are especially useful for
-simple operations. We're introducing them here because you will often see them when reading other people's code.
-
-**Syntax**
-
-.. code-block:: javascript
-
-    const functionName = (parameters) => {
-        // Code to execute
-    };
-
-**Example**
-
-.. code-block:: javascript
-
-    const multiply = (a, b) => {
-        return a * b;
-    };
-
-    console.log(multiply(4, 5)); // Prints: 20
-
 Functions as Values
 -------------------
 
@@ -149,13 +125,17 @@ with built in JavaScript functions and other libraries.
 
 **Example: Assigning Functions to Variables**
 
+A function called ``sayHello`` is defined. The function reference is assigned to the variable ``x``, which we can call.
+
 .. code-block:: javascript
 
-    const sayHello = function() {
+    function sayHello() {
         console.log("Hello!");
     };
 
-    sayHello(); // Prints: Hello!
+    let x = sayHello;
+
+    x();
 
 **Example: Passing Functions as Arguments**
 
@@ -169,14 +149,31 @@ The ``repeat`` function will call the passed ``action`` function ``n`` times.
         }
     }
 
-    repeat(() => console.log("Repeating..."), 3);
+    function printMsg() {
+        console.log("Repeating...");
+    }
+
+    repeat(printMsg, 3);
+
+
 
 Anonymous Functions
 -------------------
 
 Functions without a name are called anonymous functions. They are often used as arguments to other functions.
 
+**Syntax**
+
+.. code-block::
+
+    function (parameters) {
+        // Code to execute
+    }
+
 **Example**
+
+We are passing an anonymous function (which logs This message appears after 2 seconds) to the ``setTimeout`` function.
+This means that after 2000 milliseconds have elapsed the anonymous function will be called.
 
 .. code-block:: javascript
 
@@ -184,5 +181,42 @@ Functions without a name are called anonymous functions. They are often used as 
         console.log("This message appears after 2 seconds.");
     }, 2000);
 
-In this case we are passing an anonymous function to the :js:`setTimeout` function. This means that after `2000`
-milliseconds have elapsed the anonymous function will be called.
+
+
+Arrow Functions
+-------------------
+
+Arrow functions provide a shorter syntax for writing anonymous functions. They are especially useful for simple
+operations. We're introducing them here because you will often see them when reading other people's code.
+
+**Syntax**
+
+.. code-block::
+
+    (parameters) => {
+        // Code to execute
+    }
+
+**Example: Set Timeout**
+
+We can rewrite the previous example as:
+
+.. code-block:: javascript
+
+    setTimeout(
+        () => {console.log("This message appears after 2 seconds.");},
+        2000
+    );
+
+
+**Example: Assigning arrow function to a variable**
+
+In the example below the function is still anonymous but assigned to a variable so that we can reference it.
+
+.. code-block:: javascript
+
+    const multiply = (a, b) => {
+        return a * b;
+    };
+
+    console.log(multiply(4, 5));

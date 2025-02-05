@@ -4,6 +4,10 @@ Tutorial: ORMs in Flask
 In this tutorial we will work step-by-step to build a web app using Flask and SQLAlchemy ORM to keep track of a list of
 books in your personal collection.
 
+To begin, we will make a basic Flask web app that shows a list of books in the database, which will be empty to start
+with. We will use the `flask-sqlalchemy <https://flask-sqlalchemy.readthedocs.io/en/stable/>`_ extension, which
+simplifies the integration of SQLAlchemy's ORM with Flask.
+
 At the end of the tutorial you will have built a web app that:
 
 - lists all books in your collection
@@ -13,11 +17,7 @@ At the end of the tutorial you will have built a web app that:
 Setup
 ---------------------
 
-To begin, we will make a basic Flask web app that shows a list of books in the database, which will be empty to start
-with.
-
-We will use the `flask-sqlalchemy <https://flask-sqlalchemy.readthedocs.io/en/stable/>`_ extension, which simplifies
-the integration of SQLAlchemy's ORM with Flask.
+Our app will have the following folder and file structure:
 
 .. code-block::
     :caption: Directory structure
@@ -69,7 +69,7 @@ To add books we need to:
 Homepage template
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-The template for the homepage should now include a form for adding books, like the one shown below.
+The template for the homepage now includes a form for adding books.
 
 .. literalinclude:: ../../_static/tutorials/orm/02_form/templates/index.html
     :language: html
@@ -79,9 +79,7 @@ The template for the homepage should now include a form for adding books, like t
 Flask app
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Now we need a corresponding route in our Flask app to accept the form data.
-
-Below is the route function that we need to add.
+A route to accept the form data has been added to the Flask app, as shown below.
 
 .. literalinclude:: ../../_static/tutorials/orm/02_form/app.py
     :language: python

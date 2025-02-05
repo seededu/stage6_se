@@ -7,6 +7,7 @@ Javascript
 
     introduction
     printing
+    comments
     statements
     variables
     arithmetic
