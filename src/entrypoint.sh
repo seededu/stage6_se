@@ -1,3 +1,4 @@
 #!/bin/sh
 
-uv run make html
+uv run make clean
+uv run make html SPHINXOPTS="$SPHINXOPTS"

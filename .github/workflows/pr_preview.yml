@@ -5,7 +5,7 @@ on:
     types: ['opened', 'edited', 'synchronize']
 
 jobs:
-  deploy:
+  pr_preview_deploy:
     runs-on: ubuntu-latest
 
     permissions:
@@ -18,11 +18,7 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t stage6_se .
-
-    - name: Build Docker image
-      run: |
-        docker build -t stage6_se .
+        docker build --build-arg SPHINXOPTS="-W --keep-going -n" -t stage6_se .
 
     - name: Build HTML
       run: |
