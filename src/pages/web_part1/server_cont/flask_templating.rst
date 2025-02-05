@@ -66,12 +66,15 @@ movies.
 Project structure:
 
 .. code-block:: text
-   :emphasize-lines: 3
+    :emphasize-lines: 5
+    :caption: Directory structure
 
-   ├── app.py
-   ├── movies.db
-   └── templates
-       └── index.html
+    movie-reviews
+    │
+    ├── app.py
+    ├── movies.db
+    └── templates
+        └── index.html
 
 .. tab-set::
 
@@ -230,15 +233,18 @@ Here's a simple example:
 Project structure:
 
 .. code-block:: text
-   :emphasize-lines: 4
+    :emphasize-lines: 6
+    :caption: Directory structure
 
-   ├── app.py
-   ├── movies.db
-   ├── static
-   │   └── style.css
-   └── templates
-       ├── base.html
-       └── index.html
+    movie-reviews
+    │
+    ├── app.py
+    ├── movies.db
+    ├── static
+    │   └── style.css
+    └── templates
+        ├── base.html
+        └── index.html
 
 .. tab-set::
 

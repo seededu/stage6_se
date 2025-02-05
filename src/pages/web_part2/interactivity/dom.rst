@@ -37,7 +37,7 @@ In the example below, a tree visualisation of the HTML content is provided.
     html
     ├── head
     │   └── title
-    ├── body
+    └── body
         ├── h1
         └── p
 
