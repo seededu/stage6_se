@@ -17,4 +17,8 @@ jobs:
       run: |
         docker build --build-arg SPHINXOPTS="-W --keep-going -n" -t stage6_se .
 
+    - name: Build HTML
+      run: |
+        mkdir _site
+        docker run -v ./_site:/src/_build/html stage6_se
 
