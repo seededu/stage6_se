@@ -157,11 +157,75 @@ Querying Objects
 To search or query for Book's in the database we use the ``query`` method of the session and provide the class of the
 model we are searching. Then filters (equivalent to ``WHERE`` clauses) can be applied.
 
+**Querying**
+
+The ``all`` method returns the results as a ``list``.
+
 .. code-block:: python
 
-    # Fetch a book by title
-    sherlock = session.query(Book).filter_by(title="The Adventures of Sherlock Holmes").first()
-    print(sherlock.author, sherlock.publication_date)
+    books = session.query(Book).all()
+    for book in books:
+        print(book.title)
+
+**Filtering**
+
+Use the filter method to restrict the results to those that meet the criteria.
+
+Syntax
+
+.. code-block::
+
+    session.query(Model).filter(Model.column expression)
+
+where ``expression`` is a query expression such as:
+
+- ``== some_value``
+- ``!= some_value``
+- ``> some_value`` or ``>= some_value``
+- ``< some_value`` or ``<= some_value``
+
+Example: Single filter
+
+.. code-block:: python
+
+    doyle_books = session.query(Book).filter(Book.author=="Arthur Conan Doyle").all()
+
+    for book in doyle_books:
+        print(book.title)
+
+Example: Multiple conditions
+
+Separate each condition with a comma.
+
+.. code-block:: python
+
+    doyle_books = session.query(Book).filter(
+        Book.author=="Arthur Conan Doyle",
+        Book.publication_date < date(1893, 1, 1)
+    ).all()
+
+    for book in doyle_books:
+        print(book.title)
+
+
+**Ordering**
+
+.. code-block:: python
+
+    doyle_books = session.query(Book).filter(
+            Book.author=="Arthur Conan Doyle"
+        ).order_by(Book.publication_date.desc()).all()
+
+    for book in doyle_books:
+        print(book.title)
+
+**Limiting**
+
+.. code-block:: python
+
+    doyle_books = session.query(Book).limit(5).all()
+    for book in doyle_books:
+        print(book.title)
 
 Update an Object
 ^^^^^^^^^^^^^^^^^^^^^^^^^
