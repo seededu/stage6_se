@@ -16,8 +16,8 @@ case "$COMMAND" in
         echo "Building html..."
         uv run make html SPHINXOPTS="$SPHINXOPTS"
         ;;
-    lint)
-        echo "Linting..."
+    checkfmt)
+        echo "Checking RST formatting..."
         uv run doc8 pages
         ;;
     *)

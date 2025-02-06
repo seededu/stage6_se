@@ -34,4 +34,4 @@ jobs:
 
     - name: Lint
       run: |
-        docker run stage6_se lint
+        docker run stage6_se checkfmt
