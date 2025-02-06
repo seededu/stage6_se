@@ -1,24 +1,21 @@
-.. role:: python(code)
-   :language: python
-
 Forms - Part 1
-=====================
+==============
 
-HTML forms are essential for collecting user input on webpages. In this section we will 
-learn how to create forms with HTML, how to send the form data to a webserver using 
-a HTTP ``GET`` request using :term:`query strings <query string>` and handle the 
-request on a web server.
+HTML forms are essential for collecting user input on webpages. In this section we will
+learn how to create forms with HTML, how to send the form data to a webserver using a
+HTTP ``GET`` request using :term:`query strings <query string>` and handle the request
+on a web server.
 
-We'll use these form submissions to filter movie reviews in our case study as an 
+We'll use these form submissions to filter movie reviews in our case study as an
 example.
 
 HTML Forms
---------------------------
+----------
 
 A HTML form consists of
 
-*   a ``form`` element
-*   a set of ``input`` elements inside the form element.
+- a ``form`` element
+- a set of ``input`` elements inside the form element.
 
 Here's an example of a form
 
@@ -34,7 +31,7 @@ Here's an example of a form
         <form>
             <label for="query">Enter your search:</label>
             <input type="text" id="term" name="term"><br><br>
-            
+
             <input type="submit" value="Search">
         </form>
     </body>
@@ -42,71 +39,70 @@ Here's an example of a form
 
 Explanation
 
-*   ``<form>`` specifies the start of a form and encapsulates all the inputs that are 
-    to be submitted with the form.
-*   ``<input type="text" id="term" name="term">`` creates a text input for the user's 
-    search term. The ``name`` attribute will become the key in the query string.
-*   ``<input type="submit" value="Search">`` creates a button to submit the form data.
+- ``<form>`` specifies the start of a form and encapsulates all the inputs that are to
+  be submitted with the form.
+- ``<input type="text" id="term" name="term">`` creates a text input for the user's
+  search term. The ``name`` attribute will become the key in the query string.
+- ``<input type="submit" value="Search">`` creates a button to submit the form data.
 
 Form Inputs
---------------------------
+-----------
 
 The HTML specification defines a number of valid ``input`` types. Common examples are:
 
-*   ``checkbox``
-*   ``number``
-*   ``radio``
-*   ``text``
+- ``checkbox``
+- ``number``
+- ``radio``
+- ``text``
 
-There is also a special type called ``submit``, which creates a button that submits 
-the form when clicked.
+There is also a special type called ``submit``, which creates a button that submits the
+form when clicked.
 
-A full list of valid ``input`` types can be found here 
-`<https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input>`_
+A full list of valid ``input`` types can be found here
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
 
 Forms over HTTP
---------------------------
+---------------
 
-When a form is submitted, the browser sends the form data to the server using 
-HTTP. The two most common methods are:
+When a form is submitted, the browser sends the form data to the server using HTTP. The
+two most common methods are:
 
-*   ``GET``: Sends data as part of the URL, typically used for 
-    retrieving data.
-*   ``POST``: Sends data in the body of the request, used for 
-    submitting data such as forms or file uploads.
+- ``GET``: Sends data as part of the URL, typically used for retrieving data.
+- ``POST``: Sends data in the body of the request, used for submitting data such as
+  forms or file uploads.
 
 We will focus on submititng forms using ``GET`` requests on this page.
 
 .. note::
+
     Forms using ``POST`` requests are described in
     :doc:`/web_part1/server_cont/flask_forms_post`.
 
 For forms using ``GET`` the data is encoded in the URL itself, making them ideal for:
 
-*   Search queries
-*   Filters for content (e.g., filtering movies by genre)
-*   Bookmarkable URLs (since the data is visible in the URL, users can save and share 
-    the link)
+- Search queries
+- Filters for content (e.g., filtering movies by genre)
+- Bookmarkable URLs (since the data is visible in the URL, users can save and share the
+  link)
 
-Everyday examples include search bars on websites (e.g., Google) and filters on 
+Everyday examples include search bars on websites (e.g., Google) and filters on
 e-commerce sites (e.g., filtering by price or category).
 
 Query Strings
---------------------------
+-------------
 
-When using the ``GET``, the data is sent in the URL as a :term:`query string`. Query 
+When using the ``GET``, the data is sent in the URL as a :term:`query string`. Query
 strings consist of key-value pairs appended to the URL, and they follow this format:
 
 .. code-block::
 
     http://example.com/search?key1=value1&key2=value2
 
-
-*   **Key**: The name of the input field in the form.
-*   **Value**: The value entered by the user.
+- **Key**: The name of the input field in the form.
+- **Value**: The value entered by the user.
 
 Example Form
---------------------------
+------------
 
 Here's an example of a form using ``GET`` where users can search by name:
 
@@ -124,26 +120,24 @@ Here's an example of a form using ``GET`` where users can search by name:
         <form action="/search" method="GET">
             <label for="term">Enter your search:</label>
             <input type="text" id="term" name="term"><br><br>
-            
+
             <input type="submit" value="Search">
         </form>
     </body>
     </html>
 
-
 Explanation
 
-*   ``<form action="/search" method="GET">`` creates a form that submits data to the 
-    ``/search`` URL using the GET method. This means the input will appear in the URL 
-    after submission.
+- ``<form action="/search" method="GET">`` creates a form that submits data to the
+  ``/search`` URL using the GET method. This means the input will appear in the URL
+  after submission.
 
 When the form is submitted with "Flask" as the search term, the URL will look like this:
 
     http://localhost:5000/search?term=Flask
 
-
 Handling Query Strings
---------------------------
+----------------------
 
 Here's how you can handle the query string data in Flask:
 
@@ -157,7 +151,7 @@ Here's how you can handle the query string data in Flask:
     def search():
         # Access the query string data
         term = request.args.get('term', '')
-        
+
         if term:
             return f"You searched for: {term}"
         else:
@@ -167,18 +161,17 @@ Here's how you can handle the query string data in Flask:
 
 Explanation
 
-*   The ``/search`` route listens for GET requests.
-*   :python:`request.args.get('term', '')` is used to retrieve the value of the 
-    ``term`` parameter from the URL. The `request.args` dictionary contains all the 
-    query string data. If no value is provided, it defaults to an empty string 
-    (:python:`''`).
-*   The server returns a message that displays what the user searched for.
+- The ``/search`` route listens for GET requests.
+- ``request.args.get('term', '')`` is used to retrieve the value of the ``term``
+  parameter from the URL. The `request.args` dictionary contains all the query string
+  data. If no value is provided, it defaults to an empty string (``''``).
+- The server returns a message that displays what the user searched for.
 
 Example: Filter Reviews
---------------------------
+-----------------------
 
-Let's create an example where we filter the movies in the "Movie Reviews" database by 
-attributes like genre or review score. The user will select filters using a form, and 
+Let's create an example where we filter the movies in the "Movie Reviews" database by
+attributes like genre or review score. The user will select filters using a form, and
 the results will be displayed based on the selected filters.
 
 Project structure:
@@ -206,7 +199,7 @@ Project structure:
             from sqlalchemy import create_engine, text
 
             app = Flask(__name__)
-            
+
             # Connect to the database
             engine = create_engine('sqlite:///movies.db')
 
@@ -238,19 +231,19 @@ Project structure:
 
 
         Explanation
-        
-        *   ``<form action="/filter" method="GET">`` creates a form that submits the 
+
+        *   ``<form action="/filter" method="GET">`` creates a form that submits the
             selected filters to the ``/filter`` URL using the GET method.
-        *   ``<select id="genre" name="genre">`` creates a dropdown list of genres. 
-            The ``name="genre"`` attribute ensures that the selected genre is sent as 
+        *   ``<select id="genre" name="genre">`` creates a dropdown list of genres.
+            The ``name="genre"`` attribute ensures that the selected genre is sent as
             a query string parameter.
-        *   ``<input type="number" id="score" name="score">`` allows users to specify 
-            a minimum review score. The `name="score"` attribute ensures this value is 
+        *   ``<input type="number" id="score" name="score">`` allows users to specify
+            a minimum review score. The `name="score"` attribute ensures this value is
             sent as a query string parameter.
-        *   ``<input type="submit" value="Filter Movies">`` sends the selected filter 
+        *   ``<input type="submit" value="Filter Movies">`` sends the selected filter
             options to the server when clicked.
 
-        When the form is submitted with "Action" as the genre and "8" as the minimum 
+        When the form is submitted with "Action" as the genre and "8" as the minimum
         score, the URL will look like this:
 
             http://localhost:5000/filter?genre=Action&score=8
@@ -289,15 +282,15 @@ Project structure:
 
         Explanation
 
-        *   The ``/filter`` route listens for GET requests with query string parameters 
+        *   The ``/filter`` route listens for GET requests with query string parameters
             for filtering movies.
-        *   :python:`request.args.get('genre', '')` and 
-            :python:`request.args.get('score', '')` retrieve the values of the 
-            ``genre`` and ``score`` parameters from the URL. If no value is provided, 
+        *   :python:`request.args.get('genre', '')` and
+            :python:`request.args.get('score', '')` retrieve the values of the
+            ``genre`` and ``score`` parameters from the URL. If no value is provided,
             they default to an empty string (``''``).
-        *   The `reviews`` table is queried to retrieve reviews that match the 
+        *   The `reviews`` table is queried to retrieve reviews that match the
             conditions.
-        *   The filtered list of movies is passed to the ``movie_list.html`` template, 
+        *   The filtered list of movies is passed to the ``movie_list.html`` template,
             which displays the movies.
 
 
@@ -324,15 +317,15 @@ Project structure:
 
         Explanation
 
-        *   This template loops through the filtered movies and displays each movie's 
+        *   This template loops through the filtered movies and displays each movie's
             title, genre, and review score in a list.
 
 Glossary
---------------
+--------
 
 .. glossary::
 
     Query String
-        A query string is the part of a URL that contains additional information or 
-        parameters that a web server can use to process a request, often appearing 
+        A query string is the part of a URL that contains additional information or
+        parameters that a web server can use to process a request, often appearing
         after a "?" in the URL (e.g., ``?search=books``).

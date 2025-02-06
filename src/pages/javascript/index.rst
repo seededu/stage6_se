@@ -1,5 +1,5 @@
 Javascript
-========================
+==========
 
 .. toctree::
     :maxdepth: 2

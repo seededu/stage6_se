@@ -1,13 +1,11 @@
-.. role:: python(code)
-   :language: python
-
 Pseudocode and Flowcharts
 =========================
 
 Pseudocode
 ----------
 
-When representing a function in pseudocode we use the keywords ``BEGIN`` and ``END`` to indicate the start and end of the function.
+When representing a function in pseudocode we use the keywords ``BEGIN`` and ``END`` to
+indicate the start and end of the function.
 
 .. code-block:: text
 
@@ -15,8 +13,8 @@ When representing a function in pseudocode we use the keywords ``BEGIN`` and ``E
         process
     END function_name
 
-
-If the function returns a value we use the keyword ``RETURN`` followed by the values that are returned
+If the function returns a value we use the keyword ``RETURN`` followed by the values
+that are returned
 
 .. code-block:: text
 
@@ -39,7 +37,8 @@ Here's an example.
         RETURN x + y
     END add (x, y)
 
-Once you have the pseudocode for a function, you can use this function in other scripts. For your main script you can simply use ``BEGIN`` and ``END``.
+Once you have the pseudocode for a function, you can use this function in other scripts.
+For your main script you can simply use ``BEGIN`` and ``END``.
 
 **Python code**
 
@@ -47,6 +46,7 @@ Once you have the pseudocode for a function, you can use this function in other 
 
     def add(x, y):
         return x + y
+
 
     for i in range(3):
         doubled = add(i, i)
@@ -73,12 +73,11 @@ Flowcharts
 We now introduce two new shapes. The terminator and the subprocess.
 
 .. image:: img/terminator_subprocess.png
-   :width: 350   
-   :align: center
+    :width: 350
+    :align: center
 
-* **Terminator - oval:** Used to indicate the start and end of a program.
-
-* **Subprocess - bordered rectangle:** Used to refer to another program
+- **Terminator - oval:** Used to indicate the start and end of a program.
+- **Subprocess - bordered rectangle:** Used to refer to another program
 
 Here's an example.
 
@@ -89,6 +88,7 @@ Here's an example.
     def add(x, y):
         return x + y
 
+
     for i in range(3):
         doubled = add(i, i)
         print(doubled)
@@ -96,22 +96,24 @@ Here's an example.
 **Flow chart**
 
 .. image:: img/1_example1.png
-   :width: 450   
-   :align: center
+    :width: 450
+    :align: center
 
-Note that there are **two** flow charts here. The first shows the main script and the second shows the function ``add()``. The main script refers to the ``add()`` function in the subprocess node.
+Note that there are **two** flow charts here. The first shows the main script and the
+second shows the function ``add()``. The main script refers to the ``add()`` function in
+the subprocess node.
 
 We have now seen all the flowchart symbols we will need.
 
 .. image:: img/flow_charts.png
-   :width: 850   
-   :align: center
+    :width: 850
+    :align: center
 
 Note that the colours are arbitrary and what's important are the shapes.
 
 .. image:: img/flow_charts_bw.png
-   :width: 850   
-   :align: center
+    :width: 850
+    :align: center
 
 .. dropdown:: Question 1
     :open:
@@ -126,7 +128,7 @@ Note that the colours are arbitrary and what's important are the shapes.
             my_numbers = [5, -2, 0, 4, 0, -3, -3]
             description = []
             FOR i = 0 TO Length(my_numbers) - 1 STEP 1
-                d = sign(my_numbers[i]) 
+                d = sign(my_numbers[i])
                 Append d to description
             NEXT i
             Display description
@@ -141,7 +143,7 @@ Note that the colours are arbitrary and what's important are the shapes.
                 RETURN '0'
         END sign(x)
 
-    A. 
+    A.
 
      .. code-block:: python
 
@@ -159,7 +161,7 @@ Note that the colours are arbitrary and what's important are the shapes.
         else:
             return '0'
 
-    B. 
+    B.
 
      .. code-block:: python
 
@@ -177,7 +179,7 @@ Note that the colours are arbitrary and what's important are the shapes.
             else:
                 return '0'
 
-    C. 
+    C.
 
      .. code-block:: python
 
@@ -195,7 +197,7 @@ Note that the colours are arbitrary and what's important are the shapes.
             description.append(sign(my_numbers[i]))
         print(description)
 
-    D. 
+    D.
 
      .. code-block:: python
 
@@ -253,13 +255,13 @@ Note that the colours are arbitrary and what's important are the shapes.
                 RETURN '0'
         END sign(x)
 
-    A. 
+    A.
 
     .. image:: img/1_question2a.png
         :width: 800
         :align: center
 
-    B. 
+    B.
 
     .. image:: img/1_question2b.png
         :width: 800
@@ -301,7 +303,7 @@ Note that the colours are arbitrary and what's important are the shapes.
     :color: info
     :icon: question
 
-    Write the Python code the corresponds to the given flowchart. 
+    Write the Python code the corresponds to the given flowchart.
 
     .. image:: img/1_question4.png
         :width: 800

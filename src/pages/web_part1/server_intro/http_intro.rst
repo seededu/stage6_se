@@ -179,43 +179,43 @@ Glossary
 .. glossary::
 
     Client
-        A client is the device (like your computer or phone) that requests information 
+        A client is the device (like your computer or phone) that requests information
         from a server, such as when you use a web browser to load a website.
 
     Method
-        An HTTP method is the action that the client wants to perform, such as ``GET`` 
+        An HTTP method is the action that the client wants to perform, such as ``GET``
         to request data or ``POST`` to send data to the server.
 
     Plain text
-        Plain text refers to data that is not encrypted or formatted, such as regular 
+        Plain text refers to data that is not encrypted or formatted, such as regular
         text that can be easily read by both humans and machines.
 
     Server
-        A server is a powerful computer that stores and delivers content (like web 
+        A server is a powerful computer that stores and delivers content (like web
         pages) to clients when they request it.
 
     Stateless
-        In HTTP, stateless means that each request from a client to a server is 
-        independent, and the server does not remember previous interactions with the 
+        In HTTP, stateless means that each request from a client to a server is
+        independent, and the server does not remember previous interactions with the
         client.
 
     Static
-        Static refers to web content that does not change or interact with the user, 
+        Static refers to web content that does not change or interact with the user,
         like a simple HTML page without dynamic features.
 
     Status Code
-        A status code is a number returned by the server to indicate the result of a 
-        request, such as ``200 OK`` for success or ``404 Not Found`` when a page doesn't 
+        A status code is a number returned by the server to indicate the result of a
+        request, such as ``200 OK`` for success or ``404 Not Found`` when a page doesn't
         exist.
 
     Protocol
-        A protocol is a set of rules for how data is exchanged over a network, like 
+        A protocol is a set of rules for how data is exchanged over a network, like
         HTTP, which defines how web clients and servers communicate.
 
     Resource
-        A resource is any data or content (like a webpage, image, or file) that is 
+        A resource is any data or content (like a webpage, image, or file) that is
         available on a server and can be requested by a client.
 
     Request header field
-        A request header field is extra information sent by the client to the server, 
+        A request header field is extra information sent by the client to the server,
         such as the type of browser being used or the desired content type.

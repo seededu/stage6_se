@@ -1,64 +1,72 @@
 Big Data's Impact on the Web
-=========================================
+============================
 
-Big data has dramatically reshaped web architecture, introducing new complexities and opportunities in how websites and
-web applications collect, manage, and analyze vast amounts of information. Key aspects of this transformation include
-data mining, metadata utilisation, and streaming data management, each bringing innovative technologies and techniques
-that influence modern web systems.
+Big data has dramatically reshaped web architecture, introducing new complexities and
+opportunities in how websites and web applications collect, manage, and analyze vast
+amounts of information. Key aspects of this transformation include data mining, metadata
+utilisation, and streaming data management, each bringing innovative technologies and
+techniques that influence modern web systems.
 
 Big Data
----------------
+--------
 
-Big data refers to extremely large and complex datasets that traditional data processing tools cannot efficiently
-manage. It is characterised by the "3 Vs":
+Big data refers to extremely large and complex datasets that traditional data processing
+tools cannot efficiently manage. It is characterised by the "3 Vs":
 
-- Volume: The enormous amount of data generated every second from various sources like social media, sensors,
-  transactions, and more.
-- Velocity: The speed at which new data is created and needs to be processed, often in real-time or near real-time.
-- Variety: The diverse types of data—structured, semi-structured, and unstructured—that range from text and images to
-  videos and sensor data.
+- Volume: The enormous amount of data generated every second from various sources like
+  social media, sensors, transactions, and more.
+- Velocity: The speed at which new data is created and needs to be processed, often in
+  real-time or near real-time.
+- Variety: The diverse types of data—structured, semi-structured, and unstructured—that
+  range from text and images to videos and sensor data.
 
-These attributes necessitate advanced technologies and methodologies for collection, storage, analysis, and management,
-fundamentally shaping modern web architecture and decision-making processes.
+These attributes necessitate advanced technologies and methodologies for collection,
+storage, analysis, and management, fundamentally shaping modern web architecture and
+decision-making processes.
 
 Data Mining
----------------
+-----------
 
-Data mining involves extracting useful patterns, trends, and insights from large datasets. In the context of web
-architecture, it means collecting user behavior data, transaction logs, and other digital footprints to inform
-decision-making and improve services.
+Data mining involves extracting useful patterns, trends, and insights from large
+datasets. In the context of web architecture, it means collecting user behavior data,
+transaction logs, and other digital footprints to inform decision-making and improve
+services.
 
-Modern web architectures handle data mining through distributed storage and processing frameworks. Technologies like
-Apache Hadoop use the MapReduce paradigm to process massive datasets across clusters of computers. Frameworks such as
-Apache Spark provide in-memory processing capabilities for faster analysis, making it feasible to sift through
-petabytes of data in real-time or near real-time.
+Modern web architectures handle data mining through distributed storage and processing
+frameworks. Technologies like Apache Hadoop use the MapReduce paradigm to process
+massive datasets across clusters of computers. Frameworks such as Apache Spark provide
+in-memory processing capabilities for faster analysis, making it feasible to sift
+through petabytes of data in real-time or near real-time.
 
 Metadata
----------------
+--------
 
-Metadata is data that describes other data. In web systems, it often encompasses information about user interactions,
-file properties, or system logs.
+Metadata is data that describes other data. In web systems, it often encompasses
+information about user interactions, file properties, or system logs.
 
 How Is Metadata Helpful?
 
-- **Organisation and Retrieval**: Metadata helps structure large datasets, making it easier to search, retrieve, and
-  manage information. For example, image metadata such as tags, descriptions, and creation dates assist in organising
-  media libraries.
-- **Data Context**: By providing context to raw data, metadata aids in understanding user behavior, content relevance,
-  and system performance. This additional layer can guide content recommendations and targeted advertising.
-- **Improved Data Quality**: Metadata can track data lineage and transformations, ensuring accuracy and consistency
-  throughout the data lifecycle.
+- **Organisation and Retrieval**: Metadata helps structure large datasets, making it
+  easier to search, retrieve, and manage information. For example, image metadata such
+  as tags, descriptions, and creation dates assist in organising media libraries.
+- **Data Context**: By providing context to raw data, metadata aids in understanding
+  user behavior, content relevance, and system performance. This additional layer can
+  guide content recommendations and targeted advertising.
+- **Improved Data Quality**: Metadata can track data lineage and transformations,
+  ensuring accuracy and consistency throughout the data lifecycle.
 
 Streaming Data Management
-------------------------------
+-------------------------
 
-Streaming data refers to continuous, rapid data flows generated by sources like user clicks, sensor readings, or
-financial transactions. Handling this in web architecture requires systems that can process data in motion rather than
-in batches.
+Streaming data refers to continuous, rapid data flows generated by sources like user
+clicks, sensor readings, or financial transactions. Handling this in web architecture
+requires systems that can process data in motion rather than in batches.
 
 How Is Streaming Data Handled?
 
-- **Message Brokers**: Technologies like Apache Kafka, RabbitMQ, and Amazon Kinesis act as intermediaries that collect,
-  buffer, and distribute streams of data to various processing systems.
-- **Real-Time Processing Framework**s: Tools such as Apache Storm, Apache Flink, and Spark Streaming enable real-time
-  analysis of data as it arrives. These frameworks process streams of data on-the-fly, allowing immediate insights and actions.
+- **Message Brokers**: Technologies like Apache Kafka, RabbitMQ, and Amazon Kinesis act
+  as intermediaries that collect, buffer, and distribute streams of data to various
+  processing systems.
+- **Real-Time Processing Frameworks**: Tools such as Apache Storm, Apache Flink, and
+  Spark Streaming enable real-time analysis of data as it arrives. These frameworks
+  process streams of data on-the-fly, allowing immediate insights and actions.

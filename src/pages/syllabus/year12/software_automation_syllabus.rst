@@ -1,6 +1,3 @@
-.. role:: python(code)
-   :language: python
-
 Software automation
 ===================
 
@@ -122,7 +119,6 @@ Significance and impact of ML and AI
     .. dropdown:: the economy and distribution of wealth
         :class-title: sd-font-weight-light
         :color:  info
-
 
 .. card:: Explore by implementation how patterns in human behaviour influence ML and AI software development
 

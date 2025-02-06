@@ -1,6 +1,3 @@
-.. role:: python(code)
-   :language: python
-
 Additional Challenges
 =====================
 
@@ -163,8 +160,8 @@ Additional Challenges
         3
         2
 
-        *  
-        ** 
+        *
+        **
         *****
         *****
 
@@ -184,9 +181,9 @@ Additional Challenges
         3
         1
 
-            *     
-            *** * 
-        *  ****** 
+            *
+            *** *
+        *  ******
         ** ********
 
     .. dropdown:: :material-regular:`lock;1.5em` Solution

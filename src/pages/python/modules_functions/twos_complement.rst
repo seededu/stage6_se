@@ -1,142 +1,150 @@
-.. role:: python(code)
-   :language: python
-
 Two's Complement
 ================
 
 Two's Complement
 
-Thus far, we have only looked at representing positive numbers, but often we will want to represent negative numbers. This can be tricky using bits as we can only work with 0's and 1's. 
+Thus far, we have only looked at representing positive numbers, but often we will want
+to represent negative numbers. This can be tricky using bits as we can only work with
+0's and 1's.
 
-A common way of representing positive and negative numbers in binary is using two's complement. In this system, the first bit in the sequence is the most significant bit. This value is treated as a negative number. These are shown in the tables below in :math:`\textcolor{red}{\text{red}}`.
+A common way of representing positive and negative numbers in binary is using two's
+complement. In this system, the first bit in the sequence is the most significant bit.
+This value is treated as a negative number. These are shown in the tables below in
+:math:`\textcolor{red}{\text{red}}`.
 
-.. list-table:: 
-   :header-rows: 0
+.. list-table::
+    :header-rows: 0
 
-   * - :math:`\textcolor{red}{-2^4}` 
-     - :math:`2^3`
-     - :math:`2^2`
-     - :math:`2^1`
-     - :math:`2^0`
-   * - :math:`\textcolor{red}{-16}`
-     - :math:`8`
-     - :math:`4`
-     - :math:`2`
-     - :math:`1`
+    - - :math:`\textcolor{red}{-2^4}`
+      - :math:`2^3`
+      - :math:`2^2`
+      - :math:`2^1`
+      - :math:`2^0`
+    - - :math:`\textcolor{red}{-16}`
+      - :math:`8`
+      - :math:`4`
+      - :math:`2`
+      - :math:`1`
 
-.. list-table:: 
-   :header-rows: 0
+.. list-table::
+    :header-rows: 0
 
-   * - :math:`\textcolor{red}{-2^7}` 
-     - :math:`2^6`
-     - :math:`2^5`
-     - :math:`2^4`
-     - :math:`2^3`
-     - :math:`2^2`
-     - :math:`2^1`
-     - :math:`2^0`
-   * - :math:`\textcolor{red}{-128}`
-     - :math:`64`
-     - :math:`32`
-     - :math:`16`
-     - :math:`8`
-     - :math:`4`
-     - :math:`2`
-     - :math:`1`
+    - - :math:`\textcolor{red}{-2^7}`
+      - :math:`2^6`
+      - :math:`2^5`
+      - :math:`2^4`
+      - :math:`2^3`
+      - :math:`2^2`
+      - :math:`2^1`
+      - :math:`2^0`
+    - - :math:`\textcolor{red}{-128}`
+      - :math:`64`
+      - :math:`32`
+      - :math:`16`
+      - :math:`8`
+      - :math:`4`
+      - :math:`2`
+      - :math:`1`
 
-
-From here, conversion between decimal and binary works much the same way. 
+From here, conversion between decimal and binary works much the same way.
 
 **Example**
 
 Let's take the number 10101 as an example and fill it into the table below.
 
-.. list-table:: 
-   :header-rows: 1
+.. list-table::
+    :header-rows: 1
 
-   * - | :math:`\textcolor{red}{-2^4}` 
-       | :math:`\textcolor{red}{-16}`
-     - | :math:`2^3`
-       | :math:`8`
-     - | :math:`2^2`
-       | :math:`4`
-     - | :math:`2^1`
-       | :math:`2`
-     - | :math:`2^0`
-       | :math:`1`
-   * - :math:`\textcolor{red}{\textbf{1}}`
-     - :math:`\textbf{0}`
-     - :math:`\textbf{1}`
-     - :math:`\textbf{0}`
-     - :math:`\textbf{1}`
+    - - |   :math:`\textcolor{red}{-2^4}`
+        |   :math:`\textcolor{red}{-16}`
+      - |   :math:`2^3`
+        |   :math:`8`
+      - |   :math:`2^2`
+        |   :math:`4`
+      - |   :math:`2^1`
+        |   :math:`2`
+      - |   :math:`2^0`
+        |   :math:`1`
+    - - :math:`\textcolor{red}{\textbf{1}}`
+      - :math:`\textbf{0}`
+      - :math:`\textbf{1}`
+      - :math:`\textbf{0}`
+      - :math:`\textbf{1}`
 
+:math:`(\textcolor{red}{\mathbf{1} \times -16}) + (\mathbf{0} \times 8) + (\mathbf{1}
+\times 4) + (\mathbf{0} \times 2) + (\mathbf{1} \times 1) = \mathbf{-11}`
 
-:math:`(\textcolor{red}{\mathbf{1} \times -16}) + (\mathbf{0} \times 8) + (\mathbf{1} \times 4) + (\mathbf{0} \times 2) + (\mathbf{1} \times 1) = \mathbf{-11}`
+Note that this is different to the result we obtained using the standard binary system
+in which 10101 represented the decimal number 21.
 
-Note that this is different to the result we obtained using the standard binary system in which 10101 represented the decimal number 21.
+A cool property of using two's complement is you can toggle between positive and
+negative values by **flipping bits**, i.e. 1's becomes 0's and 0's become 1's and **then
+adding 1**. Flipping all the bits in 10101 results in 01010, adding 1 then gives us
+01011. Filling out the table gives us
 
-A cool property of using two's complement is you can toggle between positive and negative values by **flipping bits**, i.e. 1's becomes 0's and 0's become 1's and **then adding 1**. Flipping all the bits in 10101 results in 01010, adding 1 then gives us 01011. Filling out the table gives us
+.. list-table::
+    :header-rows: 1
 
-.. list-table:: 
-   :header-rows: 1
+    - - |   :math:`\textcolor{red}{-2^4}`
+        |   :math:`\textcolor{red}{-16}`
+      - |   :math:`2^3`
+        |   :math:`8`
+      - |   :math:`2^2`
+        |   :math:`4`
+      - |   :math:`2^1`
+        |   :math:`2`
+      - |   :math:`2^0`
+        |   :math:`1`
+    - - :math:`\textcolor{red}{\textbf{0}}`
+      - :math:`\textbf{1}`
+      - :math:`\textbf{0}`
+      - :math:`\textbf{1}`
+      - :math:`\textbf{1}`
 
-   * - | :math:`\textcolor{red}{-2^4}` 
-       | :math:`\textcolor{red}{-16}`
-     - | :math:`2^3`
-       | :math:`8`
-     - | :math:`2^2`
-       | :math:`4`
-     - | :math:`2^1`
-       | :math:`2`
-     - | :math:`2^0`
-       | :math:`1`
-   * - :math:`\textcolor{red}{\textbf{0}}`
-     - :math:`\textbf{1}`
-     - :math:`\textbf{0}`
-     - :math:`\textbf{1}`
-     - :math:`\textbf{1}`
-
-:math:`(\textcolor{red}{\mathbf{0} \times -16}) + (\mathbf{1} \times 8) + (\mathbf{0} \times 4) + (\mathbf{1} \times 2) + (\mathbf{1} \times 1) = \mathbf{11}`
+:math:`(\textcolor{red}{\mathbf{0} \times -16}) + (\mathbf{1} \times 8) + (\mathbf{0}
+\times 4) + (\mathbf{1} \times 2) + (\mathbf{1} \times 1) = \mathbf{11}`
 
 A quick note on addition in binary
 ----------------------------------
 
-First think about how addition in the decimal system works. You add corresponding digits together and then if the digit exceeds 9, you carry 1 over into the next column.
+First think about how addition in the decimal system works. You add corresponding digits
+together and then if the digit exceeds 9, you carry 1 over into the next column.
 
-For example, when we add 39 and 2, 9+2 gives us 11, so we carry the :math:`\textcolor{red}{1}` over into the tens column.
+For example, when we add 39 and 2, 9+2 gives us 11, so we carry the
+:math:`\textcolor{red}{1}` over into the tens column.
 
-.. list-table:: 
-   :header-rows: 1
+.. list-table::
+    :header-rows: 1
 
-   * - |
-       | :math:`+`
-     - | :math:`3^\textcolor{red}{1}`
-       |
-     - | :math:`9`
-       | :math:`2`
-   * - 
-     - :math:`4`
-     - :math:`1`
+    - - |
+        |   :math:`+`
+      - |   :math:`3^\textcolor{red}{1}`
+        |
+      - |   :math:`9`
+        |   :math:`2`
+    - -
+      - :math:`4`
+      - :math:`1`
 
 Addition in binary works much the same way, but we carry 1 over if the digit exceeds 1.
 
 For example
 
-.. list-table:: 
-   :header-rows: 1
+.. list-table::
+    :header-rows: 1
 
-   * - |
-       | :math:`+`
-     - | :math:`1^\textcolor{red}{1}`
-       |
-     - | :math:`0^\textcolor{red}{1}`
-       | :math:`1`
-     - | :math:`1`
-       | :math:`1`
-   * - :math:`1`
-     - :math:`0`
-     - :math:`0`
-     - :math:`0`
+    - - |
+        |   :math:`+`
+      - |   :math:`1^\textcolor{red}{1}`
+        |
+      - |   :math:`0^\textcolor{red}{1}`
+        |   :math:`1`
+      - |   :math:`1`
+        |   :math:`1`
+    - - :math:`1`
+      - :math:`0`
+      - :math:`0`
+      - :math:`0`
 
 If you want to verify this, 101 + 11 = 1000 in binary is 5 + 3 = 8 in decimal.
 
@@ -166,10 +174,10 @@ If you want to verify this, 101 + 11 = 1000 in binary is 5 + 3 = 8 in decimal.
 
         The largest value you can represent in standard binary using 8 bits is 11111111.
 
-        .. list-table:: 
+        .. list-table::
            :header-rows: 1
 
-           * - | :math:`2^7` 
+           * - | :math:`2^7`
                | :math:`128`
              - | :math:`2^6`
                | :math:`64`
@@ -185,14 +193,14 @@ If you want to verify this, 101 + 11 = 1000 in binary is 5 + 3 = 8 in decimal.
                | :math:`2`
              - | :math:`2^0`
                | :math:`1`
-           * - **1** 
-             - **0** 
-             - **0** 
-             - **1** 
-             - **1** 
-             - **1** 
-             - **0** 
-             - **1** 
+           * - **1**
+             - **0**
+             - **0**
+             - **1**
+             - **1**
+             - **1**
+             - **0**
+             - **1**
 
         1111111 corresponds to 128 + 64 + 32 + 16 + 8 + 4 + 2 + 1, which is the decimal number 255.
 
@@ -285,7 +293,7 @@ If you want to verify this, 101 + 11 = 1000 in binary is 5 + 3 = 8 in decimal.
     * return: the resultant binary string after adding 1 (``str``)
 
     **Example**
-    
+
     .. code-block:: python
 
         import binary

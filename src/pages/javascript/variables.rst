@@ -1,26 +1,25 @@
-.. role:: js(code)
-   :language: javascript
-
 Variables
-====================
+=========
 
-Variables allow you to store information and use it throughout your program. In this section, you’ll learn how to
-define and use variables in JavaScript, understand common data types, and explore key concepts like naming conventions,
-:js:`typeof`, and the difference between :js:`let` and :js:`const`.
+Variables allow you to store information and use it throughout your program. In this
+section, you’ll learn how to define and use variables in JavaScript, understand common
+data types, and explore key concepts like naming conventions, ``typeof``, and the
+difference between ``let`` and ``const``.
 
 Defining Variables
-----------------------
+------------------
 
-In JavaScript, you define variables using the :js:`let` keyword. The syntax looks like this:
+In JavaScript, you define variables using the ``let`` keyword. The syntax looks like
+this:
 
 .. code-block:: javascript
 
     let variableName = value;
 
-- :js:`let` is the keyword that tells JavaScript you’re creating a variable.
-- :js:`variableName` is the name you give the variable.
-- :js:`=` is the assignment operator
-- :js:`value` is the data you want to store in the variable.
+- ``let`` is the keyword that tells JavaScript you’re creating a variable.
+- ``variableName`` is the name you give the variable.
+- ``=`` is the assignment operator
+- ``value`` is the data you want to store in the variable.
 
 Example:
 
@@ -35,10 +34,11 @@ You can also define a variable without giving it an initial value:
 
     let favoriteColor;
 
-This creates a variable called favoriteColor with no value assigned to it yet. We'll come back to this idea later!
+This creates a variable called favoriteColor with no value assigned to it yet. We'll
+come back to this idea later!
 
 Using Variables
-----------------------
+---------------
 
 Once a variable is defined, you can use it in your code:
 
@@ -55,11 +55,11 @@ You can also update the value of a variable:
     score = 20; // Updating the value of 'score' to 20
     console.log(score); // Prints: 20
 
-
 Common Data Types
-----------------------
+-----------------
 
-Variables in JavaScript can store different types of data. Here are the three most common:
+Variables in JavaScript can store different types of data. Here are the three most
+common:
 
 **String**
 
@@ -79,16 +79,16 @@ Numeric values (both integers and decimals)
 
 **Boolean**
 
-Represents :js`true` or :js:`false` values, which are lowercase.
+Represents :js`true` or ``false`` values, which are lowercase.
 
 .. code-block:: javascript
 
     let isLoggedIn = true;
 
 Checking Data Types
---------------------------------------------
+-------------------
 
-You can use the :js:`typeof` operator to check the type of a variable:
+You can use the ``typeof`` operator to check the type of a variable:
 
 .. code-block:: javascript
 
@@ -100,22 +100,22 @@ You can use the :js:`typeof` operator to check the type of a variable:
     let number = 42;
     console.log(typeof number); // Prints: number
 
-You can also use :js:`typeof` like a function e.g
+You can also use ``typeof`` like a function e.g
 
 .. code-block:: javascript
 
     let example = "Hello";
     console.log(typeof(example)); // Prints: string
 
-
 Variable Naming
--------------------------------
+---------------
 
 When naming variables, you must follow these rules:
 
-- Variable names can only include letters, numbers, underscores (_), or dollar signs ($).
+- Variable names can only include letters, numbers, underscores (_), or dollar signs
+  ($).
 - Variable names must start with a letter, underscore, or dollar sign.
-- Variable names cannot be reserved keywords (e.g., :js:`let`, :js:`const`, :js:`if`).
+- Variable names cannot be reserved keywords (e.g., ``let``, ``const``, ``if``).
 
 Examples of valid variable names:
 
@@ -125,7 +125,6 @@ Examples of valid variable names:
     let $amount;
     let _isAvailable;
 
-
 Invalid variable names:
 
 .. code-block:: javascript
@@ -134,9 +133,10 @@ Invalid variable names:
     let let;     // 'let' is a reserved keyword
 
 CamelCase Convention
--------------------------------
+--------------------
 
-JavaScript developers often use the `camelCase <https://en.wikipedia.org/wiki/Camel_case>`_ naming convention for variable names:
+JavaScript developers often use the `camelCase
+<https://en.wikipedia.org/wiki/Camel_case>`_ naming convention for variable names:
 
 - The first word starts with a lowercase letter.
 - Each subsequent word starts with an uppercase letter.
@@ -150,10 +150,11 @@ Examples:
     let isUserLoggedIn;
 
 let vs const
-----------------
+------------
 
-Aside from :js:`let`, you can also define variables with :js:`const`, which is short for "constant". Variables
-defined with :js:`const` are used when the variable's value should not change.
+Aside from ``let``, you can also define variables with ``const``, which is short for
+"constant". Variables defined with ``const`` are used when the variable's value should
+not change.
 
 Example:
 
@@ -162,15 +163,14 @@ Example:
     const PI = 3.14;
     PI = 3.15; // This will cause an error
 
-
 undefined and null
---------------------
+------------------
 
 JavaScript has two special values to represent variables with no meaningful data:
 
 **undefined**
 
-A variable is :js:`undefined` when it is declared but not assigned a value.
+A variable is ``undefined`` when it is declared but not assigned a value.
 
 .. code-block:: javascript
 

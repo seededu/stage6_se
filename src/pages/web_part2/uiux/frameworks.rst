@@ -1,37 +1,36 @@
-.. role:: js(code)
-   :language: javascript
-
 Front End Frameworks
-========================
+====================
 
-Building a responsive website from scratch can be a lot of work. Fortunately, front-end frameworks like Bootstrap can
-make your life much easier! They provide pre-designed styles, responsive layouts, and powerful components that allow
-you to create beautiful, functional websites without starting from zero.
+Building a responsive website from scratch can be a lot of work. Fortunately, front-end
+frameworks like Bootstrap can make your life much easier! They provide pre-designed
+styles, responsive layouts, and powerful components that allow you to create beautiful,
+functional websites without starting from zero.
 
-In this page, we’ll dive into `Bootstrap 5 <https://getbootstrap.com>`_, one of the most popular front-end frameworks,
-and show you how to use it effectively.
+In this page, we’ll dive into `Bootstrap 5 <https://getbootstrap.com>`_, one of the most
+popular front-end frameworks, and show you how to use it effectively.
 
 What Are Front-End Frameworks?
----------------------------------
+------------------------------
 
-A front-end framework is a collection of pre-written CSS and JavaScript that simplifies the process of designing and
-building websites. Instead of writing styles and scripts from scratch, you can use a framework to:
+A front-end framework is a collection of pre-written CSS and JavaScript that simplifies
+the process of designing and building websites. Instead of writing styles and scripts
+from scratch, you can use a framework to:
 
 - Create responsive designs effortlessly.
 - Add stylish components like buttons, modals, and navigation bars with minimal effort.
 - Save time and focus on your website’s content and functionality.
 
 Getting Started
----------------------------------
+---------------
 
-To use Bootstrap, you need to include its CSS and JavaScript files in your project. The easiest way to do this is by
-using a Content Delivery Network (CDN).
+To use Bootstrap, you need to include its CSS and JavaScript files in your project. The
+easiest way to do this is by using a Content Delivery Network (CDN).
 
 Adding Bootstrap to Your Project
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Add the following ``<link>`` and ``<script>`` tags to the <head> and just before the closing <body> tag of your HTML
-file:
+Add the following ``<link>`` and ``<script>`` tags to the <head> and just before the
+closing <body> tag of your HTML file:
 
 .. code-block:: html
 
@@ -57,10 +56,10 @@ file:
     </html>
 
 Bootstrap's Grid System
----------------------------------
+-----------------------
 
-The grid system is one of Bootstrap’s most powerful features. It divides your webpage into rows and columns, making it
-easy to create responsive layouts.
+The grid system is one of Bootstrap’s most powerful features. It divides your webpage
+into rows and columns, making it easy to create responsive layouts.
 
 Key Concepts:
 
@@ -87,31 +86,34 @@ Explanation
     </div>
 
 Responsive Design and Breakpoints
-------------------------------------
+---------------------------------
 
-Bootstrap’s grid is responsive by default, but you can customize how it behaves at different screen sizes using
-breakpoints. Breakpoints are predefined widths that let you control the layout for specific device sizes.
+Bootstrap’s grid is responsive by default, but you can customize how it behaves at
+different screen sizes using breakpoints. Breakpoints are predefined widths that let you
+control the layout for specific device sizes.
 
 **Breakpoints in Bootstrap**
 
-When using classes such as ``col-4``, you can optionally specify the breakpoint by appending one of the class infixes
-defined in the table below.
+When using classes such as ``col-4``, you can optionally specify the breakpoint by
+appending one of the class infixes defined in the table below.
 
-By default, or without the infix, the breakpoint is defined at the "Extra small" level e.g. ``col-12`` defines a 12
-column width at the extra small breakpoint, while ``col-lg-4`` defines a 4 column width at the large breakpoint.
+By default, or without the infix, the breakpoint is defined at the "Extra small" level
+e.g. ``col-12`` defines a 12 column width at the extra small breakpoint, while
+``col-lg-4`` defines a 4 column width at the large breakpoint.
 
-It is good practice to define your layout, i.e. assign classes, for each breakpoint size that you anticipate.
+It is good practice to define your layout, i.e. assign classes, for each breakpoint size
+that you anticipate.
 
-=================== ============= ============
-Breakpoint          Class infix   Dimensions
-=================== ============= ============
-Extra small         None          <576px
-Small               sm            ≥576px
-Medium              md            ≥768px
-Large               lg            ≥992px
-Extra large         xl            ≥1200px
-Extra extra large   xxl           ≥1400px
-=================== ============= ============
+================= =========== ==========
+Breakpoint        Class infix Dimensions
+================= =========== ==========
+Extra small       None        <576px
+Small             sm          ≥576px
+Medium            md          ≥768px
+Large             lg          ≥992px
+Extra large       xl          ≥1200px
+Extra extra large xxl         ≥1400px
+================= =========== ==========
 
 **Example**
 
@@ -132,17 +134,19 @@ Explanation:
     </div>
 
 Styling
-------------------------------------
+-------
 
-Bootstrap comes with tons of prebuilt CSS classes that save you time when styling your webpage.
+Bootstrap comes with tons of prebuilt CSS classes that save you time when styling your
+webpage.
 
 .. hint::
 
-    For a full listing of the classes and components please refer directly to the Bootstrap 5 documenation here
+    For a full listing of the classes and components please refer directly to the
+    Bootstrap 5 documenation here
     https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
 Classes
-^^^^^^^^^^^^^^^^^^
+~~~~~~~
 
 Below are some of the most commonly used classes to give you an idea of what's possible.
 
@@ -163,7 +167,8 @@ Adding buttons with different meanings is straight forward with the ``btn`` clas
 
 **Spacing Classes**
 
-Bootstrap provides consistent spacing through their ``m`` and ``p`` classes for margins and padding.
+Bootstrap provides consistent spacing through their ``m`` and ``p`` classes for margins
+and padding.
 
 - ``m-3``: Adds margin to all sides.
 - ``p-4``: Adds padding to all sides.
@@ -181,15 +186,16 @@ Example
     </div>
 
 Components
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~
 
-One of the most exciting features of Bootstrap is its wide range of prebuilt components. These components save you
-time and effort by providing ready-made, customizable elements like cards and forms.
+One of the most exciting features of Bootstrap is its wide range of prebuilt components.
+These components save you time and effort by providing ready-made, customizable elements
+like cards and forms.
 
 **Cards**
 
-Cards are a versatile component for displaying content in a structured, visually appealing way. For example you might
-use cards to present products on a store website.
+Cards are a versatile component for displaying content in a structured, visually
+appealing way. For example you might use cards to present products on a store website.
 
 Example
 
@@ -207,13 +213,14 @@ Example
 Explanation:
 
 - The ``card`` class styles the container.
-- Additional classes like ``card-title`` and ``card-text`` format the content inside the card.
+- Additional classes like ``card-title`` and ``card-text`` format the content inside the
+  card.
 - The ``card-img-top`` class ensures the image sits nicely at the top of the card.
 
 **Forms**
 
-Forms are an essential part of any website. Using the bootstrap form components and classes allows you to make them
-responsive.
+Forms are an essential part of any website. Using the bootstrap form components and
+classes allows you to make them responsive.
 
 Example
 
@@ -236,8 +243,3 @@ Explanation:
 
 - The ``form-control`` class styles ``input`` fields.
 - The ``form-label`` and ``form-text`` classes apply professional styling.
-
-
-
-
-

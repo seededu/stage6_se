@@ -1,7 +1,3 @@
-.. role:: python(code)
-   :language: python
-
-
 Test Your Understanding
 =======================
 
@@ -12,25 +8,25 @@ Test Your Understanding
 
     Which of these variables have **valid** names? *Select all that apply.*
 
-    A. 
+    A.
 
       .. code-block:: python
 
         lucky_number = 3
 
-    B. 
+    B.
 
       .. code-block:: python
 
         price($) = 2.78
 
-    C. 
+    C.
 
       .. code-block:: python
 
         4th_place = 'John'
 
-    D. 
+    D.
 
       .. code-block:: python
 
@@ -72,93 +68,93 @@ Test Your Understanding
       :octicon:`issue-closed;1em;sd-text-success;` **Valid.**
 
 .. dropdown:: Question 2
-  :open:
-  :color: info
-  :icon: question
+    :open:
+    :color: info
+    :icon: question
 
-  What is the type of the variable ``x``?
+    What is the type of the variable ``x``?
 
-  .. code-block:: python
+    .. code-block:: python
 
-    x = 3.3
+      x = 3.3
 
-  A. integer
+    A. integer
 
-  B. float
-  
-  C. string
+    B. float
 
-  D. list
+    C. string
 
-  .. dropdown:: :material-regular:`lock;1.5em` Solution
-      :class-title: sd-font-weight-bold
-      :color: dark
+    D. list
 
-      .. float
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
+        :class-title: sd-font-weight-bold
+        :color: dark
 
-      *Solution is locked*
+        .. float
+
+        *Solution is locked*
 
 .. dropdown:: Question 3
-  :open:
-  :color: info
-  :icon: question
+    :open:
+    :color: info
+    :icon: question
 
-  What would you expect to be the output of the following code?
+    What would you expect to be the output of the following code?
 
-  .. code-block:: python
+    .. code-block:: python
 
-    cost = '1.25'
-    quantity = 3
-    print('Total cost: ${}'.format(cost * quantity))
+      cost = '1.25'
+      quantity = 3
+      print('Total cost: ${}'.format(cost * quantity))
 
-  A. 
+    A.
 
-    .. code-block::
+      .. code-block::
 
-        Total cost: $1.251.251.25
+          Total cost: $1.251.251.25
 
-  B.
+    B.
 
-    .. code-block::
+      .. code-block::
 
-        Total cost: $3.75
+          Total cost: $3.75
 
-  C.
+    C.
 
-    .. code-block::
+      .. code-block::
 
-        Traceback (most recent call last): 
-          File "main.py3", line 3, in  <modlue>
-            print("Total cost: ${}".format(cost * quantity)) 
-        TypeError: can't multiply sequence by non-int of type 'str'
+          Traceback (most recent call last):
+            File "main.py3", line 3, in  <modlue>
+              print("Total cost: ${}".format(cost * quantity))
+          TypeError: can't multiply sequence by non-int of type 'str'
 
-  .. dropdown:: :material-regular:`lock;1.5em` Solution
-      :class-title: sd-font-weight-bold
-      :color: dark
-      
-      .. Total cost: $1.251.251.25
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
+        :class-title: sd-font-weight-bold
+        :color: dark
 
-      .. Here ``cost`` is a string and when a string is multiplied by an integer it causes the string to be repeated. So ``cost * qunatity`` results in ``1.251.251.25``, which is likely not what the code intends. 
+        .. Total cost: $1.251.251.25
 
-      *Solution is locked*
+        .. Here ``cost`` is a string and when a string is multiplied by an integer it causes the string to be repeated. So ``cost * qunatity`` results in ``1.251.251.25``, which is likely not what the code intends.
+
+        *Solution is locked*
 
 .. dropdown:: Question 4
-  :open:
-  :color: info
-  :icon: question
+    :open:
+    :color: info
+    :icon: question
 
-  What is the value of ``x``?
+    What is the value of ``x``?
 
-  .. code-block::
+    .. code-block::
 
-    x = 2**2 + 2
+      x = 2**2 + 2
 
-  .. dropdown:: :material-regular:`lock;1.5em` Solution
-      :class-title: sd-font-weight-bold
-      :color: dark
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
+        :class-title: sd-font-weight-bold
+        :color: dark
 
-      .. 6
+        .. 6
 
-      .. This is equivalent to :math:`2^2 + 2`.
+        .. This is equivalent to :math:`2^2 + 2`.
 
-      *Solution is locked*
+        *Solution is locked*

@@ -1,6 +1,3 @@
-.. role:: python(code)
-   :language: python
-
 Secure software architecture
 ============================
 
@@ -246,4 +243,3 @@ Impact of safe and secure software development
     .. dropdown:: digital disruption
         :class-title: sd-font-weight-light
         :color:  info
-

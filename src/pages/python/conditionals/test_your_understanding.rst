@@ -1,7 +1,3 @@
-.. role:: python(code)
-   :language: python
-
-
 Test Your Understanding
 =======================
 
@@ -12,25 +8,25 @@ Test Your Understanding
 
     Which of the following evaluates to ``True``? *Select all that apply*.
 
-    A. 
+    A.
 
       .. code-block:: python
 
         print(5%2 == 0)
 
-    B. 
+    B.
 
       .. code-block:: python
 
         print(5 < 2**2)
 
-    C. 
+    C.
 
       .. code-block:: python
 
         print(5 != 3)
 
-    D. 
+    D.
 
       .. code-block:: python
 

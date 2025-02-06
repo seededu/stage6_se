@@ -1,10 +1,10 @@
-.. role:: python(code)
-   :language: python
-
 While Loops With Conditionals
 =============================
 
-So far the loops we have looked at have had simple blocks of code inside the loop, i.e. the blocks that were being repeated were quite simple. What you'll see is that the code inside the loop can be as complicated as you'd like. For example, we can add conditionals inside the loop.
+So far the loops we have looked at have had simple blocks of code inside the loop, i.e.
+the blocks that were being repeated were quite simple. What you'll see is that the code
+inside the loop can be as complicated as you'd like. For example, we can add
+conditionals inside the loop.
 
 Here's an example with an ``if`` statement.
 
@@ -21,9 +21,10 @@ Here's an example with an ``if`` statement.
 
 **What's happening here?**
 
-We can see that the condition we have set for our while loop is ``i < 5``. 
+We can see that the condition we have set for our while loop is ``i < 5``.
 
-At the **first** iteration ``i = 0``. This means the loop condition is ``True``. We execute the code block: 
+At the **first** iteration ``i = 0``. This means the loop condition is ``True``. We
+execute the code block:
 
 .. code-block:: python
 
@@ -38,25 +39,31 @@ This means that we output:
 
     0
 
-Then since the condition ``i == 3`` is ``False``, we increment ``i`` and move onto the next iteration.
+Then since the condition ``i == 3`` is ``False``, we increment ``i`` and move onto the
+next iteration.
 
-At the **second** iteration ``i = 1``. This means the loop condition is ``True``. Again, we execute the code block and we output:
+At the **second** iteration ``i = 1``. This means the loop condition is ``True``. Again,
+we execute the code block and we output:
 
 .. code-block:: python
 
     1
 
-Then since the condition ``i == 3`` is ``False``, we increment ``i`` and move onto the next iteration.
+Then since the condition ``i == 3`` is ``False``, we increment ``i`` and move onto the
+next iteration.
 
-At the **third** iteration ``i = 2``. This means the loop condition is ``True``. Again, we execute the code block and we output:
+At the **third** iteration ``i = 2``. This means the loop condition is ``True``. Again,
+we execute the code block and we output:
 
 .. code-block:: python
 
     2
 
-Then since the condition ``i == 3`` is ``False``, we increment ``i`` and move onto the next iteration.
+Then since the condition ``i == 3`` is ``False``, we increment ``i`` and move onto the
+next iteration.
 
-At the **fourth** iteration ``i = 3``. This means the loop condition is ``True``. Again, we execute the code block and we output:
+At the **fourth** iteration ``i = 3``. This means the loop condition is ``True``. Again,
+we execute the code block and we output:
 
 .. code-block:: python
 
@@ -70,38 +77,44 @@ This time the condition ``i == 3`` is ``True``, so we also output:
 
 We increment ``i`` and move onto the next iteration.
 
-At the **fifth** iteration ``i = 4``. This means that the loop condition is ``True``. Again, we execute the code block and we output:
+At the **fifth** iteration ``i = 4``. This means that the loop condition is ``True``.
+Again, we execute the code block and we output:
 
 .. code-block:: python
 
     4
 
-Then since the condition ``i == 3`` is ``False``, we increment ``i`` and move onto the next iteration.
+Then since the condition ``i == 3`` is ``False``, we increment ``i`` and move onto the
+next iteration.
 
-At the sixth iteration ``i = 5``. This means that the loop condition is ``False``. We do not execute the code block.
+At the sixth iteration ``i = 5``. This means that the loop condition is ``False``. We do
+not execute the code block.
 
 This is how we can represent this code diagrammatically.
 
 .. image:: img/5_example1.png
-   :width: 350
-   :align: center
+    :width: 350
+    :align: center
 
-Note that there are *two* ``False`` routes running down the right hand side of the figure. This means that there should be *two* levels of indentation in the code.
+Note that there are *two* ``False`` routes running down the right hand side of the
+figure. This means that there should be *two* levels of indentation in the code.
 
 Here's an example of an ``if``-``else`` statement inside a loop using ``input()``.
 
 .. code-block:: python
 
-    n = input('Enter a number: ')
+    n = input("Enter a number: ")
 
-    while n != '':
+    while n != "":
         if int(n) % 2 == 0:
-            print('even')
+            print("even")
         else:
-            print('odd')
-        n = input('Enter a number: ')
+            print("odd")
+        n = input("Enter a number: ")
 
-What you'll notice with this loop is that this loop is going to keep asking the user for a number. With each number, the program will check whether ``int(n) % 2 == 0``, i.e. checks whether the number is even or not. If the number is even the program will output:
+What you'll notice with this loop is that this loop is going to keep asking the user for
+a number. With each number, the program will check whether ``int(n) % 2 == 0``, i.e.
+checks whether the number is even or not. If the number is even the program will output:
 
 .. code-block:: text
 
@@ -113,13 +126,14 @@ otherwise it will output:
 
     odd
 
-This program will keep going until the user enters an empty string. 
+This program will keep going until the user enters an empty string.
 
 .. image:: img/5_example2.png
-   :width: 400
-   :align: center
+    :width: 400
+    :align: center
 
-Again there are *two* ``False`` routes running down the right hand side of the figure, which corresponds to *two* levels of indentation in the code.
+Again there are *two* ``False`` routes running down the right hand side of the figure,
+which corresponds to *two* levels of indentation in the code.
 
 .. dropdown:: Question 1
     :open:
@@ -175,7 +189,7 @@ Again there are *two* ``False`` routes running down the right hand side of the f
             if i%10 == 0:
                 print(i)
             i = i + 1
-            
+
         This means that at each iteration we check to see whether ``i`` is divisible by 10 and if it is, we ``print(i)``. This means we get the output:
 
         .. code-block:: text
@@ -266,7 +280,7 @@ Again there are *two* ``False`` routes running down the right hand side of the f
     .. code-block:: text
 
         divisible by 3
-    
+
     otherwise the program will do nothing.
 
     The program will terminate only if the user doesn't provide input, e.g. enters an empty string.
@@ -313,7 +327,7 @@ Again there are *two* ``False`` routes running down the right hand side of the f
         :width: 300
         :align: center
 
-    
+
     .. dropdown:: :material-regular:`lock;1.5em` Solution
       :class-title: sd-font-weight-bold
       :color: dark
@@ -329,7 +343,7 @@ Again there are *two* ``False`` routes running down the right hand side of the f
     .. code-block:: python
 
         numbers = [5, 12, 39, 45, 2, 61, 22, 49, 50, 73, 11, 84, 32, 40, 18, 39, 85, 16, 14, 49, 99, 68, 57, 35, 66]
-   
+
     Write a program that loops through the lists and sums all the odd numbers. Print your result.
 
     .. dropdown:: :material-regular:`lock;1.5em` Solution

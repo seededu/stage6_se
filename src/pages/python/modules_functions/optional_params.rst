@@ -1,18 +1,19 @@
-.. role:: python(code)
-   :language: python
-
 Optional Parameters (Keyword Arguments)
 =======================================
 
-Python allows you to have parameters that are optional. These are called **keyword arguments**. Keyword arguments must come *after* all of our mandatory parameters. We must also set a default value. Like with mandatory parameters, we can have multiple keyword arguments. The syntax for this is as follows:
+Python allows you to have parameters that are optional. These are called **keyword
+arguments**. Keyword arguments must come *after* all of our mandatory parameters. We
+must also set a default value. Like with mandatory parameters, we can have multiple
+keyword arguments. The syntax for this is as follows:
 
 .. code-block:: text
-   
+
     def function_name(param_1, param_2, ..., k_param_1=default, k_param_2=default):
 
 **Example 1: Numeric keyword argument**
 
-The ``increase`` function will by default, increase ``x`` by 1. But if you specify a different increment amount it will increase ``x`` by the specified amount.
+The ``increase`` function will by default, increase ``x`` by 1. But if you specify a
+different increment amount it will increase ``x`` by the specified amount.
 
 .. exec_code::
     :language: python
@@ -25,7 +26,9 @@ The ``increase`` function will by default, increase ``x`` by 1. But if you speci
 
 **Example 2: Boolean keyword argument**
 
-The ``difference`` function will calculate the difference between ``x`` and ``y``. If the keyword ``positive`` is ``True`` it will return a positive value, otherwise it will return a negative value.
+The ``difference`` function will calculate the difference between ``x`` and ``y``. If
+the keyword ``positive`` is ``True`` it will return a positive value, otherwise it will
+return a negative value.
 
 .. exec_code::
     :language: python
@@ -41,10 +44,13 @@ The ``difference`` function will calculate the difference between ``x`` and ``y`
     print(difference(5, 2))
     print(difference(5, 2, positive=False))
 
-Keyword arguments must come *after* all of our mandatory parameters. If you try to switch the order you will get a **SyntaxError** with the error *parameter without a default follows parameter with a default*, which essentially is telling you that a mandatory parameter is following a keyword argument.
+Keyword arguments must come *after* all of our mandatory parameters. If you try to
+switch the order you will get a **SyntaxError** with the error *parameter without a
+default follows parameter with a default*, which essentially is telling you that a
+mandatory parameter is following a keyword argument.
 
 .. code-block:: python
-    
+
     def difference(x, positive=True, y):
         diff = x - y
 
@@ -63,11 +69,16 @@ Keyword arguments must come *after* all of our mandatory parameters. If you try 
 Parameters vs Arguments
 -----------------------
 
-Often the terms 'parameter' and 'argument' are used interchangeably, but there is a subtle distinction between the two terms. *Parameters* are the names of the variables as specified in the function definition, i.e. the variable names used when creating the function, whereas *arguments* are the actual values that are passed to the function when the function is called.
+Often the terms 'parameter' and 'argument' are used interchangeably, but there is a
+subtle distinction between the two terms. *Parameters* are the names of the variables as
+specified in the function definition, i.e. the variable names used when creating the
+function, whereas *arguments* are the actual values that are passed to the function when
+the function is called.
 
 **Example**
 
-In this ``add`` function ``x`` and ``y`` are the *parameters*. When the function is called we pass it the *arguments* ``5`` and ``3``.
+In this ``add`` function ``x`` and ``y`` are the *parameters*. When the function is
+called we pass it the *arguments* ``5`` and ``3``.
 
 .. exec_code::
     :language: python
@@ -77,12 +88,14 @@ In this ``add`` function ``x`` and ``y`` are the *parameters*. When the function
 
     print(add(5, 3))
 
-If you give a function the wrong number of arguments it will result in a **TypeError** and notify you that you're missing an argument.
+If you give a function the wrong number of arguments it will result in a **TypeError**
+and notify you that you're missing an argument.
 
 .. code-block:: python
 
     def add(x, y):
         return x + y
+
 
     print(add(5))
 
@@ -108,25 +121,25 @@ If you give a function the wrong number of arguments it will result in a **TypeE
 
         print(calc_speed(5))
 
-    A. 
+    A.
 
      .. code-block:: python
 
         100.0
 
-    B. 
+    B.
 
      .. code-block:: python
 
         5.0
 
-    C. 
+    C.
 
      .. code-block:: python
 
         20.0
 
-    D. 
+    D.
 
      .. code-block:: python
 
@@ -154,25 +167,25 @@ If you give a function the wrong number of arguments it will result in a **TypeE
 
         print(calc_speed(2, 200))
 
-    A. 
+    A.
 
      .. code-block:: python
 
         100.0
 
-    B. 
+    B.
 
      .. code-block:: python
 
         5.0
 
-    C. 
+    C.
 
      .. code-block:: python
 
         20.0
 
-    D. 
+    D.
 
      .. code-block:: python
 
@@ -219,7 +232,7 @@ If you give a function the wrong number of arguments it will result in a **TypeE
             return n
 
         print(double(repeat=2, 5))
-    
+
     A. When the function is defined the keyword argument should appear before the mandatory parameters. i.e. the first line of the function should be ``def double(repeat=1, n):``
 
 
@@ -293,9 +306,9 @@ If you give a function the wrong number of arguments it will result in a **TypeE
     .. code-block:: python
 
         print(happy_birthday(10))
-    
+
     .. code-block:: text
-    
+
         Happy 10th Birthday!
 
     **Example 2**
@@ -303,7 +316,7 @@ If you give a function the wrong number of arguments it will result in a **TypeE
     .. code-block:: python
 
         print(happy_birthday(21, suffix='st'))
-    
+
     .. code-block:: text
 
         Happy 21st Birthday!
@@ -347,9 +360,9 @@ If you give a function the wrong number of arguments it will result in a **TypeE
     .. code-block:: python
 
         print(weight(10))
-    
+
     .. code-block:: text
-    
+
         98.06649999999999
 
     **Example 2**
@@ -357,7 +370,7 @@ If you give a function the wrong number of arguments it will result in a **TypeE
     .. code-block:: python
 
         print(weight(8, 2.56))
-    
+
     .. code-block:: text
 
         20.48

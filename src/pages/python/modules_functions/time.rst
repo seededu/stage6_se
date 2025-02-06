@@ -1,10 +1,8 @@
-.. role:: python(code)
-   :language: python
-
 Time
 ====
 
-The ``time`` module is another useful module. It can be used to add pauses in a program, or it can be used to time how long it takes for a program to run.
+The ``time`` module is another useful module. It can be used to add pauses in a program,
+or it can be used to time how long it takes for a program to run.
 
 To use the time library, we import it with:
 
@@ -28,14 +26,15 @@ Where *seconds specifies* how long the program will pause for. Here is an exampl
     import time
 
     for i in range(3):
-        print('tick')
+        print("tick")
         time.sleep(1)
-    print('BOOM!')
+    print("BOOM!")
 
 Timing a Program
 ----------------
 
-The function ``time.time()`` tells us the current unix time (time since 00:00:00 UTC on 1 January 1970) in seconds.
+The function ``time.time()`` tells us the current unix time (time since 00:00:00 UTC on
+1 January 1970) in seconds.
 
 .. code-block:: python
 
@@ -43,7 +42,9 @@ The function ``time.time()`` tells us the current unix time (time since 00:00:00
 
     print(time.time())
 
-To measure the time it takes for our code to run, we check the time at the start of our code and then check the time at the end of our code. The difference in these times tells us how much time has elapsed in seconds.
+To measure the time it takes for our code to run, we check the time at the start of our
+code and then check the time at the end of our code. The difference in these times tells
+us how much time has elapsed in seconds.
 
 .. code-block:: python
 
@@ -55,7 +56,9 @@ To measure the time it takes for our code to run, we check the time at the start
 
     print(end - start)
 
-Here it takes approximately ``5e-07`` seconds for the program to run. The ``e-07`` is scientific notation for :math:`\times10^{-7}`, which means it takes about half a microsecond for this program to run.
+Here it takes approximately ``5e-07`` seconds for the program to run. The ``e-07`` is
+scientific notation for :math:`\times10^{-7}`, which means it takes about half a
+microsecond for this program to run.
 
 .. dropdown:: Question 1
     :open:
@@ -77,7 +80,7 @@ Here it takes approximately ``5e-07`` seconds for the program to run. The ``e-07
             time.sleep(wait)
             print('Surprise!')
 
-        ``random.randrange(11)`` will randomly select an integer from 0 (included) to 11 (not included) and store this integer in the variable ``wait``. The program will then wait that many seconds before printing *Surprise!* 
+        ``random.randrange(11)`` will randomly select an integer from 0 (included) to 11 (not included) and store this integer in the variable ``wait``. The program will then wait that many seconds before printing *Surprise!*
 
 .. dropdown:: Question 2
     :open:
@@ -108,7 +111,7 @@ Here it takes approximately ``5e-07`` seconds for the program to run. The ``e-07
         :class-title: sd-font-weight-bold
         :color: dark
 
-        *Solution is locked*       
+        *Solution is locked*
 
 .. dropdown:: Question 3
     :open:
@@ -144,7 +147,7 @@ Here it takes approximately ``5e-07`` seconds for the program to run. The ``e-07
         :class-title: sd-font-weight-bold
         :color: dark
 
-        *Solution is locked*      
+        *Solution is locked*
 
 .. dropdown:: Question 4
     :open:
@@ -163,13 +166,13 @@ Here it takes approximately ``5e-07`` seconds for the program to run. The ``e-07
         :class-title: sd-font-weight-bold
         :color: dark
 
-        *Solution is locked*    
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Factorial Time!
     :color: warning
     :icon: star
 
-    Write a program to see how long it takes for Python to calculate $5000!$. Print your answer in seconds to 6 decimal places. 
+    Write a program to see how long it takes for Python to calculate $5000!$. Print your answer in seconds to 6 decimal places.
 
     Your output should look like this (with the X's replaced by numbers):
 
@@ -243,13 +246,13 @@ Here it takes approximately ``5e-07`` seconds for the program to run. The ``e-07
 
     How good are you at estimating 5 seconds?
 
-    Your program should ask the user *How good are you at estimating 5 seconds?*. It should then tell the user to *Press enter to start* and then *Press enter to end*. The program should time how long it takes between the user pressing the enter key and tell the user the amount of time that has elapsed in seconds to 4 decimal places. 
+    Your program should ask the user *How good are you at estimating 5 seconds?*. It should then tell the user to *Press enter to start* and then *Press enter to end*. The program should time how long it takes between the user pressing the enter key and tell the user the amount of time that has elapsed in seconds to 4 decimal places.
 
     For this exercise you must:
 
     * get the start and end time using ``time.time()``
 
-    **Example:** The user presses the enter key after the Press enter to start and Press enter to end messages. 
+    **Example:** The user presses the enter key after the Press enter to start and Press enter to end messages.
 
     .. code-block:: text
 

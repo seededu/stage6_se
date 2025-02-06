@@ -1,7 +1,3 @@
-.. role:: python(code)
-   :language: python
-
-
 Additional Challenges
 =====================
 
@@ -9,9 +5,9 @@ Additional Challenges
     :color: warning
     :icon: star
 
-    It's December! That means it's almost Christmas. 
+    It's December! That means it's almost Christmas.
 
-    Write a program that asks the user for the day of the month. Your program should either say how many sleeps until Christmas. Note that on the 24th there is only one sleep until Christmas so your program should not say 1 sleeps until Christmas, because it's grammatically incorrect. If it's the 25th of December your program should say Merry Christmas!. 
+    Write a program that asks the user for the day of the month. Your program should either say how many sleeps until Christmas. Note that on the 24th there is only one sleep until Christmas so your program should not say 1 sleeps until Christmas, because it's grammatically incorrect. If it's the 25th of December your program should say Merry Christmas!.
 
     You program will only be given values 1-25 inclusive.
 
@@ -21,14 +17,14 @@ Additional Challenges
 
         Today's date: 10
         15 sleeps until Christmas
-    
+
     **Example 2**
 
     .. code-block:: markdown
 
         Today's date: 24
         1 sleep until Christmas
-    
+
     **Example 3**
 
     .. code-block:: markdown
@@ -79,7 +75,7 @@ Additional Challenges
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. .. code-block:: 
+        .. .. code-block::
 
         ..     ph = float(input('What is the pH? '))
 
@@ -110,7 +106,7 @@ Additional Challenges
         :class-title: sd-font-weight-bold
         :color: dark
 
-        ..     .. code-block:: 
+        ..     .. code-block::
 
         ..         x = 'X'
         ..         y = True
@@ -129,10 +125,10 @@ Additional Challenges
         ..         else:
         ..             print('F')
         ..         print('G')
-        
+
         .. Things to note:
 
-        .. * The ``True`` branch of the first ``if`` statements contains an ``if``-``else`` statement corresponding to the condition ``y`` and an ``if`` statement corresponding to the condition ``z < 0``. 
+        .. * The ``True`` branch of the first ``if`` statements contains an ``if``-``else`` statement corresponding to the condition ``y`` and an ``if`` statement corresponding to the condition ``z < 0``.
 
         .. * This means that the ``elif`` and ``else`` part of the first ``if`` statement join back *after* the ``if``-``else`` and ``if`` statements.
 
@@ -146,8 +142,8 @@ Additional Challenges
 
     Write a program to act as a simple calculator. The program will ask the user for two numbers, x and y (these can be floats). It will then ask the user for an operation and return the corresponding calculation.
 
-    .. list-table:: 
-        :widths: 50 50 
+    .. list-table::
+        :widths: 50 50
         :header-rows: 1
 
         * - Operation
@@ -186,7 +182,7 @@ Additional Challenges
     **Example 3**
 
     .. code-block:: markdown
-            
+
         x: 6
         y: 2
         Operation: power
@@ -196,7 +192,7 @@ Additional Challenges
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. .. code-block:: 
+        .. .. code-block::
 
         ..     x = float(input('x: '))
         ..     y = float(input('y: '))
@@ -221,8 +217,8 @@ Additional Challenges
 
     Write a program that asks for the user's mark, and then states their corresponding HSC band.
 
-    .. list-table:: 
-        :widths: 50 50 
+    .. list-table::
+        :widths: 50 50
         :header-rows: 1
 
         * - Mark
@@ -243,7 +239,7 @@ Additional Challenges
     Here are some examples of how your code should run.
 
     **Example 1**
-    
+
     .. code-block:: markdown
 
         Enter your mark: 63
@@ -290,10 +286,10 @@ Additional Challenges
     :color: warning
     :icon: star
 
-    Write a program that converts tennis points to the umpire's call. It's a little confusing but here are how the first four points are scored. 
+    Write a program that converts tennis points to the umpire's call. It's a little confusing but here are how the first four points are scored.
 
-    .. list-table:: 
-        :widths: 50 50 
+    .. list-table::
+        :widths: 50 50
         :header-rows: 1
         :width: 50
 
@@ -314,8 +310,8 @@ Additional Challenges
 
     Once is on 4 points or more it gets even more complicated. Here are the call rules.
 
-    .. list-table:: 
-        :widths: 50 50 
+    .. list-table::
+        :widths: 50 50
         :header-rows: 1
         :width: 50
 
@@ -347,7 +343,7 @@ Additional Challenges
     **Example 1**
 
     .. code-block:: markdown
-    
+
         Player 1: 1
         Player 2: 1
         15-15
@@ -375,7 +371,7 @@ Additional Challenges
         Player 1: 5
         Player 2: 3
         Game. Player 1 wins.
-    
+
     **Example 5**
 
     .. code-block:: markdown

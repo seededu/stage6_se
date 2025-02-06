@@ -1,10 +1,7 @@
-.. role:: python(code)
-   :language: python
-
 For Loops With Conditionals
 ===========================
 
-Just like we saw with ``while`` loops, we can put conditionals inside our ``for`` loops. 
+Just like we saw with ``while`` loops, we can put conditionals inside our ``for`` loops.
 
 Here is an example with an ``if`` statement.
 
@@ -18,14 +15,14 @@ Here is an example with an ``if`` statement.
 
 **What's happening here?**
 
-We have used ``range(5)``, which means that ``i`` will take on the values ``[0, 1, 2, 3, 4]``. At each iteration we execute the code block:
+We have used ``range(5)``, which means that ``i`` will take on the values ``[0, 1, 2, 3,
+4]``. At each iteration we execute the code block:
 
 .. code-block:: text
 
     print(i)
     if i == 3:
         print("Third time's the charm!")
-
 
 At the **first** iteration ``i = 0``. We ``print(i)`` and output
 
@@ -54,7 +51,7 @@ Since the condition ``i == 3`` is ``False``, we move onto the next iteration.
 At the **fourth** iteration ``i = 3``. We ``print(i)`` and output
 
 .. code-block:: text
-    
+
     3
 
 This time the condition ``i == 3`` is ``True``, so we also output
@@ -69,7 +66,8 @@ At the **fifth** iteration ``i = 4``. We ``print(i)`` and output
 
     4
 
-Since the condition ``i == 3`` is ``False`` we don't do anything else. Since 4 is the last number in the sequence, we exit the loop.
+Since the condition ``i == 3`` is ``False`` we don't do anything else. Since 4 is the
+last number in the sequence, we exit the loop.
 
 This is how we can represent this code diagrammatically.
 
@@ -101,7 +99,7 @@ This is how we can represent this code diagrammatically.
 
         Let's trace through this code.
 
-        We can see our iterable is the list ``['alligators', 'bears', 'cows']``, and ``i`` is our variable name. 
+        We can see our iterable is the list ``['alligators', 'bears', 'cows']``, and ``i`` is our variable name.
 
         At the **first** iteration, ``i`` will store the **first** value in our list i.e. ``i = 'alligators'``. Then we will execute the code on ``line 2`` and print
 
@@ -120,19 +118,19 @@ This is how we can represent this code diagrammatically.
         .. code-block:: text
 
             I like bears!
-    
+
         Then we'll check the ``if`` conditions, only the second condition ``i == 'bears'`` is ``True``, so we print
 
         .. code-block:: text
-    
+
             GRRRRRRR
-    
+
         At the **third** iteration, ``i`` will store the **third** value in our list i.e. ``i = 'cows'``. Then we will execute the code on ``line 2`` and print
 
         .. code-block:: text
 
             I like cows!
-    
+
         Then we'll check the if conditions, only the **third** condition ``i == 'cows'`` is ``True``, so we print
 
         .. code-block:: text
@@ -153,7 +151,7 @@ This is how we can represent this code diagrammatically.
             if i % 2 == 0:
                 print(foods[i])
 
-    A. 
+    A.
 
      .. code-block:: python
 
@@ -165,7 +163,7 @@ This is how we can represent this code diagrammatically.
         5
         6
 
-    B. 
+    B.
 
      .. code-block:: python
 
@@ -174,7 +172,7 @@ This is how we can represent this code diagrammatically.
         4
         6
 
-    C. 
+    C.
 
      .. code-block:: python
 
@@ -183,7 +181,7 @@ This is how we can represent this code diagrammatically.
         lasagne
         dumplings
 
-    D. 
+    D.
 
      .. code-block:: python
 
@@ -191,7 +189,7 @@ This is how we can represent this code diagrammatically.
         waffles
         sundae
 
-    E. 
+    E.
 
      .. code-block:: python
 
@@ -254,7 +252,7 @@ This is how we can represent this code diagrammatically.
       :class-title: sd-font-weight-bold
       :color: dark
 
-      *Solution is locked*    
+      *Solution is locked*
 
 .. dropdown:: Code challenge: Count Up and Down
     :color: warning
@@ -320,7 +318,7 @@ This is how we can represent this code diagrammatically.
             print('a'.upper())
             print('A'.lower())
 
-    
+
     .. dropdown:: :material-regular:`lock;1.5em` Solution
       :class-title: sd-font-weight-bold
       :color: dark

@@ -1,14 +1,13 @@
-.. role:: python(code)
-   :language: python
-
 More Complicated if-elif-else Statements
 ========================================
 
 Combining conditions
 --------------------
-Don't forget you can make more complex conditions by combining multiple conditions using ``and`` and ``or``.
 
-.. code-block:: 
+Don't forget you can make more complex conditions by combining multiple conditions using
+``and`` and ``or``.
+
+.. code-block::
 
     food = 'steak'
     side = 'salad'
@@ -19,29 +18,31 @@ Don't forget you can make more complex conditions by combining multiple conditio
         print('Enjoy your {} and {}!'.format(food, side))
 
 .. image:: img/4_example1.png
-  :width: 600
-  :align: center
+    :width: 600
+    :align: center
 
 Nesting
 -------
 
-You can also put ``if``-``elif``-``else`` statements *inside* other ``if``-``elif``-``else`` statements. **Pay close attention to the indentation.**
+You can also put ``if``-``elif``-``else`` statements *inside* other
+``if``-``elif``-``else`` statements. **Pay close attention to the indentation.**
 
-In this example, if the first condition evaluates to ``True`` the code is directed to another ``if``-``else`` statement.
+In this example, if the first condition evaluates to ``True`` the code is directed to
+another ``if``-``else`` statement.
 
 .. code-block:: python
 
     x = 4
 
-    if x%2 == 0:
-        if x%3 == 0:
-            print('{} is divisible by both 2 and 3'.format(x))
+    if x % 2 == 0:
+        if x % 3 == 0:
+            print("{} is divisible by both 2 and 3".format(x))
         else:
-            print('{} is divisible by 2 but not by 3'.format(x))
-    elif x%3 == 0:
-        print('{} is divisible by 3 but not by 2'.format(x))
+            print("{} is divisible by 2 but not by 3".format(x))
+    elif x % 3 == 0:
+        print("{} is divisible by 3 but not by 2".format(x))
     else:
-        print('{} is not divisible by either 2 or 3'.format(x))
+        print("{} is not divisible by either 2 or 3".format(x))
 
 .. image:: img/4_example2.png
     :width: 600
@@ -75,7 +76,7 @@ In this example, if the first condition evaluates to ``True`` the code is direct
 
             Today is a school day.
 
-        The first condition evaluates to ``False``, so we go down the ``else`` branch. Inside this branch we have another ``if``-``else`` statement. This condition also evaluates to ``False``, so the program will print *Today is a school day*. 
+        The first condition evaluates to ``False``, so we go down the ``else`` branch. Inside this branch we have another ``if``-``else`` statement. This condition also evaluates to ``False``, so the program will print *Today is a school day*.
 
         .. image:: img/4_question1.png
             :width: 600
@@ -127,28 +128,28 @@ In this example, if the first condition evaluates to ``True`` the code is direct
     Suppose we changed the value stored in the variables ``red`` and ``blue``. For which of the following will program 1 and program 2 result in **different** outputs? *Select all that apply*.
 
 
-    A. 
+    A.
 
       .. code-block:: python
 
         red = 5
         blue = 0
 
-    B. 
+    B.
 
       .. code-block:: python
 
         red = 2
         blue = 2
 
-    C. 
+    C.
 
       .. code-block:: python
 
         red = 2
         blue = 4
 
-    D. 
+    D.
 
       .. code-block:: python
 
@@ -177,7 +178,7 @@ In this example, if the first condition evaluates to ``True`` the code is direct
 
         .. .. image:: img/4_question3a.png
         ..     :width: 600
-        ..     :align: center      
+        ..     :align: center
 
         *Solution is locked*
 
@@ -240,7 +241,7 @@ In this example, if the first condition evaluates to ``True`` the code is direct
 
     .. code-block:: html
 
-        x: 2  
+        x: 2
         y: 5
         z: 9
         9 > 5 > 2
@@ -249,7 +250,7 @@ In this example, if the first condition evaluates to ``True`` the code is direct
 
     .. code-block:: html
 
-        x: 6   
+        x: 6
         y: 4
         z: 8
         8 > 6 > 4

@@ -1,31 +1,31 @@
-.. role:: js(code)
-   :language: javascript
-
 Responsive Web Design
-========================
+=====================
 
-Responsive web design ensures that your website looks great and works well on all devices, whether it’s a widescreen
-desktop, a tablet, or a smartphone. Instead of designing separate versions of a website for each device, a responsive
-website adapts to any screen size seamlessly.
+Responsive web design ensures that your website looks great and works well on all
+devices, whether it’s a widescreen desktop, a tablet, or a smartphone. Instead of
+designing separate versions of a website for each device, a responsive website adapts to
+any screen size seamlessly.
 
-Let's take a look at how to detect and respond to different device sizes. On the following pages, we'll look at how to
-use frameworks to simplify this process for us.
+Let's take a look at how to detect and respond to different device sizes. On the
+following pages, we'll look at how to use frameworks to simplify this process for us.
 
 Flexbox and Grids
-------------------------------------
+-----------------
 
-When building responsive web designs, you must be able to control how elements are arranged and spaced on a page.
-CSS provides two powerful tools for creating layouts: Flexbox and Grid. These layout systems allow you to structure
-your page while making it adaptable to different screen sizes.
+When building responsive web designs, you must be able to control how elements are
+arranged and spaced on a page. CSS provides two powerful tools for creating layouts:
+Flexbox and Grid. These layout systems allow you to structure your page while making it
+adaptable to different screen sizes.
 
-You don’t have to pick one over the other. Many modern layouts use Grid for the overall structure and Flexbox for
-arranging smaller components within the grid items.
+You don’t have to pick one over the other. Many modern layouts use Grid for the overall
+structure and Flexbox for arranging smaller components within the grid items.
 
 Flexbox
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~
 
-Flexbox, short for Flexible Box Layout, is a one-dimensional layout system. It’s perfect for arranging items in a row
-or a column and controlling their alignment, spacing, and order.
+Flexbox, short for Flexible Box Layout, is a one-dimensional layout system. It’s perfect
+for arranging items in a row or a column and controlling their alignment, spacing, and
+order.
 
 Key concepts:
 
@@ -34,8 +34,9 @@ Key concepts:
 
 .. hint::
 
-    For greater detail we recommend reading https://css-tricks.com/snippets/css/a-guide-to-flexbox/, which contains
-    great visualisations to help understand Flexbox layouts.
+    For greater detail we recommend reading
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/, which contains great
+    visualisations to help understand Flexbox layouts.
 
 **Example**
 
@@ -81,10 +82,11 @@ In the example below:
     </html>
 
 Grid
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~
 
-Grid layout is a two-dimensional layout system, meaning it can handle both rows and columns simultaneously. It’s ideal
-for creating complex layouts like entire webpages or sections with rows and columns.
+Grid layout is a two-dimensional layout system, meaning it can handle both rows and
+columns simultaneously. It’s ideal for creating complex layouts like entire webpages or
+sections with rows and columns.
 
 Key concepts:
 
@@ -97,7 +99,8 @@ Key concepts:
 In the example below:
 
 - The ``.grid-container`` uses ``display: grid`` to enable Grid.
-- ``grid-template-columns: 1fr 1fr 1fr`` divides the container into 3 equal-width columns.
+- ``grid-template-columns: 1fr 1fr 1fr`` divides the container into 3 equal-width
+  columns.
 - ``gap: 10px`` adds spacing between the grid items.
 
 .. code-block:: html
@@ -136,18 +139,19 @@ In the example below:
     </body>
     </html>
 
-
 Detecting the Device Display Size
-------------------------------------
+---------------------------------
 
-Websites use CSS Media Queries to detect the size of the user’s screen. Media queries allow you to apply different
-styles based on the device’s width, height, or even orientation (portrait or landscape).
+Websites use CSS Media Queries to detect the size of the user’s screen. Media queries
+allow you to apply different styles based on the device’s width, height, or even
+orientation (portrait or landscape).
 
 **Example: Media Query for Different Screen Sizes**
 
 In this example:
 
-- On small screens (e.g., smartphones), the .box element takes up 100% of the width and has a light blue background.
+- On small screens (e.g., smartphones), the .box element takes up 100% of the width and
+  has a light blue background.
 - On medium screens (e.g., tablets), it takes up 50% of the width and turns light green.
 - On large screens (e.g., desktops), it takes up 30% of the width and changes to coral.
 
@@ -197,15 +201,16 @@ In this example:
     </html>
 
 Adjusting Content Size and Layout
-------------------------------------
-Responsive design isn’t just about changing colors or widths — it’s also about rearranging content to fit smaller or
-larger screens.
+---------------------------------
+
+Responsive design isn’t just about changing colors or widths — it’s also about
+rearranging content to fit smaller or larger screens.
 
 Adjusting Font Sizes
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~
 
-Smaller devices often require larger, more readable fonts. Media queries can help you adjust font sizes based on the
-screen width.
+Smaller devices often require larger, more readable fonts. Media queries can help you
+adjust font sizes based on the screen width.
 
 **Example**
 
@@ -229,12 +234,11 @@ screen width.
         }
     </style>
 
-
 Adjusting Layouts
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~
 
-Using flexbox or CSS grid, you can rearrange content dynamically. For example, a three-column layout might stack into
-a single column on smaller screens.
+Using flexbox or CSS grid, you can rearrange content dynamically. For example, a
+three-column layout might stack into a single column on smaller screens.
 
 **Example**
 
@@ -271,23 +275,25 @@ In this example:
         <div class="box">Box 3</div>
     </div>
 
-
 The Viewport Meta Tag
-------------------------------------
+---------------------
 
-You might have noticed the meta tag in the header of the earlier example. This tag tells the browser how to display and
-scale your webpage on devices with different screen sizes, especially on mobile devices.
+You might have noticed the meta tag in the header of the earlier example. This tag tells
+the browser how to display and scale your webpage on devices with different screen
+sizes, especially on mobile devices.
 
-Without the viewport meta tag, browsers will assume a fixed width for the webpage, often around 980px, regardless of
-the device's actual screen size. This assumption made sense in the early days of the web when most users accessed sites
-on desktop computers, but it causes problems on modern devices with smaller screens.
+Without the viewport meta tag, browsers will assume a fixed width for the webpage, often
+around 980px, regardless of the device's actual screen size. This assumption made sense
+in the early days of the web when most users accessed sites on desktop computers, but it
+causes problems on modern devices with smaller screens.
 
 Without the viewport meta tag you might face the following issues:
 
-1. **Incorrect Scaling on Mobile Devices**, where the browser shrinks the entire webpage to fit its fixed width into
-   the screen.
-2. **Malfunction of Responsive Layouts**, since without the viewport meta tag, the browser may not correctly interpret
-   responsive styles, and your responsive design won’t work as intended.
+1. **Incorrect Scaling on Mobile Devices**, where the browser shrinks the entire webpage
+   to fit its fixed width into the screen.
+2. **Malfunction of Responsive Layouts**, since without the viewport meta tag, the
+   browser may not correctly interpret responsive styles, and your responsive design
+   won’t work as intended.
 
 **Meta Viewport Tag - Parameter Explanation**
 
@@ -307,8 +313,5 @@ Without the viewport meta tag you might face the following issues:
 
    - Sets the initial zoom level of the webpage.
    - A value of 1.0 means the page will not be zoomed in or out when it first loads.
-   - Without this attribute, the browser may zoom out to fit a larger virtual viewport, making content appear tiny.
-
-
-
-
+   - Without this attribute, the browser may zoom out to fit a larger virtual viewport,
+     making content appear tiny.

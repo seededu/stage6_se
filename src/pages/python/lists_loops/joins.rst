@@ -1,32 +1,32 @@
-.. role:: python(code)
-   :language: python
-
-
 List Joins
 ==========
 
-When we print lists they'll be displayed using square brackets with list items separated by commas. 
+When we print lists they'll be displayed using square brackets with list items separated
+by commas.
 
 .. code-block:: python
 
-  todo = ['Buy carrots', 'Wash car', 'Study for quiz']
-  print(todo)
+    todo = ["Buy carrots", "Wash car", "Study for quiz"]
+    print(todo)
 
-Sometimes we want to display list items differently. To help us, we can use the ``.join()`` method. This allows us to join all the elements in a list together with a specified separator.
+Sometimes we want to display list items differently. To help us, we can use the
+``.join()`` method. This allows us to join all the elements in a list together with a
+specified separator.
 
 Here is the syntax for joining:
 
-:python:`separator.join(list)`
+``separator.join(list)``
 
 Here is an example where we use the separator ``', '`` ( a comma followed by a space).
 
 .. exec_code::
-  :language: python
+    :language: python
 
-  todo = ['Buy carrots', 'Wash car', 'Study for quiz']
-  print(', '.join(todo))
+    todo = ['Buy carrots', 'Wash car', 'Study for quiz']
+    print(', '.join(todo))
 
-You'll notice that the separate only goes *between* list items and doesn't appear at the start or at the end. 
+You'll notice that the separate only goes *between* list items and doesn't appear at the
+start or at the end.
 
 .. image:: img/joins.png
     :width: 400
@@ -35,212 +35,213 @@ You'll notice that the separate only goes *between* list items and doesn't appea
 Here is another example where use use ``'\n'`` (a newline character).
 
 .. exec_code::
-  :language: python
+    :language: python
 
-  todo = ['Buy carrots', 'Wash car', 'Study for quiz']
-  print('\n'.join(todo))
+    todo = ['Buy carrots', 'Wash car', 'Study for quiz']
+    print('\n'.join(todo))
 
-Note that ``.join()`` can only be used on lists containing strings. The following will result in an error since the list elements are *integers*.
+Note that ``.join()`` can only be used on lists containing strings. The following will
+result in an error since the list elements are *integers*.
 
 .. code-block:: python
-  
-	numbers = [7, 4, -1, 3]
-	print(', '.join(numbers))
+
+    numbers = [7, 4, -1, 3]
+    print(", ".join(numbers))
 
 .. code-block:: markdown
 
-	Traceback (most recent call last):
-		File "/home/main.py", line 2, in <module>
-			print(', '.join(numbers))
-						^^^^^^^^^^^^^^^^^^
-	TypeError: sequence item 0: expected str instance, int found
+    Traceback (most recent call last):
+            File "/home/main.py", line 2, in <module>
+                    print(', '.join(numbers))
+                                            ^^^^^^^^^^^^^^^^^^
+    TypeError: sequence item 0: expected str instance, int found
 
 .. dropdown:: Question 1
-  :open:
-  :color: info
-  :icon: question
+    :open:
+    :color: info
+    :icon: question
 
-  What do you think the output of the following code will be?
+    What do you think the output of the following code will be?
 
-  .. code-block:: python
+    .. code-block:: python
 
-    letters = ['a', 'b', 'c', 'd', 'e']
-    print('-'.join(letters))
+      letters = ['a', 'b', 'c', 'd', 'e']
+      print('-'.join(letters))
 
-  A. 
+    A.
 
-    .. code-block:: markdown
+      .. code-block:: markdown
 
-      -a-b-c-d-e-
+        -a-b-c-d-e-
 
-  B. 
+    B.
 
-    .. code-block:: markdown
+      .. code-block:: markdown
 
-      a-b-c-d-e
+        a-b-c-d-e
 
-  C. 
+    C.
 
-    .. code-block:: markdown
+      .. code-block:: markdown
 
-      -a-b-c-d-e
+        -a-b-c-d-e
 
-  D. 
+    D.
 
-    .. code-block:: markdown
+      .. code-block:: markdown
 
-      a-b-c-d-e-
+        a-b-c-d-e-
 
-  .. dropdown:: Solution
-    :class-title: sd-font-weight-bold
-    :color: dark
-
-    :octicon:`x-circle;1em;sd-text-danger;` ``-a-b-c-d-e-``
-
-    :octicon:`issue-closed;1em;sd-text-success;` ``a-b-c-d-e``
-
-    :octicon:`x-circle;1em;sd-text-danger;` ``-a-b-c-d-e``
-
-    :octicon:`x-circle;1em;sd-text-danger;` ``a-b-c-d-e-``
-
-    Here we use ``'-'`` as the separator. This will only appear *between* each element of the list after they are joined, i.e. it won't appear on either end.
-
-.. dropdown:: Question 2
-  :open:
-  :color: info
-  :icon: question
-
-  What do you think the output of the following code will be?
-
-  .. code-block:: python
-
-    days = ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun']
-    print('| ' + ' | '.join(days) + ' |')
-
-  A. 
-
-    .. code-block:: markdown
-
-      Mon|Tue|Wed|Thur|Fri|Sat|Sun
-
-  B. 
-
-    .. code-block:: markdown
-
-      |Mon|Tue|Wed|Thur|Fri|Sat|Sun|
-
-  C. 
-
-    .. code-block:: markdown
-
-      Mon | Tue | Wed | Thur | Fri | Sat | Sun
-
-  D. 
-
-    .. code-block:: markdown
-
-      | Mon | Tue | Wed | Thur | Fri | Sat | Sun |
-
-  .. dropdown:: :material-regular:`lock;1.5em` Solution
-    :class-title: sd-font-weight-bold
-    :color: dark
-
-    .. :octicon:`x-circle;1em;sd-text-danger;` ``Mon|Tue|Wed|Thur|Fri|Sat|Sun``
-
-    .. :octicon:`x-circle;1em;sd-text-danger;` ``|Mon|Tue|Wed|Thur|Fri|Sat|Sun|``
-
-    .. :octicon:`issue-closed;1em;sd-text-success;` ``Mon | Tue | Wed | Thur | Fri | Sat | Sun``
-
-    .. :octicon:`x-circle;1em;sd-text-danger;` ``| Mon | Tue | Wed | Thur | Fri | Sat | Sun |``
-
-    .. There are 3 components to our print statement.
-
-    .. * First we have ``'| '`` 
-
-    .. * Next we have ``' | '.join(days)``
-
-    .. * Finally we have  ``' |'`` 
-
-    .. .. image:: img/join_concat.png
-    ..     :width: 400
-    ..     :align: center
-
-    .. This results in ``| Mon | Tue | Wed | Thur | Fri | Sat | Sun |``
-
-    *Solution is locked*
-
-.. dropdown:: Question 3
-  :open:
-  :color: info
-  :icon: question
-
-  Which of the following code snippets would result in the output
-
-  .. code-block:: markdown
-
-    5... 4... 3... 2... 1
-
-  A. 
-
-    .. code-block::
-
-      numbers = [5, 4, 3, 2, 1]
-      print('...'.join(numbers))
-
-  B. 
-
-    .. code-block::
-
-      numbers = [1, 2, 3, 4, 5]
-      print('...'.join(numbers))
-
-  C. 
-
-    .. code-block::
-
-      numbers = ['5', '4', '3', '2', '1']
-      print('...'.join(numbers))
-
-  D. 
-
-    .. code-block::
-
-      numbers = ['5', '4', '3', '2', '1']
-      print('... '.join(numbers))
-
-  .. dropdown:: :material-regular:`lock;1.5em` Solution
+    .. dropdown:: Solution
       :class-title: sd-font-weight-bold
       :color: dark
 
-      .. .. code-block::
+      :octicon:`x-circle;1em;sd-text-danger;` ``-a-b-c-d-e-``
 
-      ..   numbers = [5, 4, 3, 2, 1]
-      ..   print('...'.join(numbers))
+      :octicon:`issue-closed;1em;sd-text-success;` ``a-b-c-d-e``
 
-      .. :octicon:`x-circle;1em;sd-text-danger;` **Incorrect.** You cannot join list items that are not strings.
+      :octicon:`x-circle;1em;sd-text-danger;` ``-a-b-c-d-e``
 
-      .. .. code-block::
+      :octicon:`x-circle;1em;sd-text-danger;` ``a-b-c-d-e-``
 
-      ..   numbers = [1, 2, 3, 4, 5]
-      ..   print('...'.join(numbers))
+      Here we use ``'-'`` as the separator. This will only appear *between* each element of the list after they are joined, i.e. it won't appear on either end.
 
-      .. :octicon:`x-circle;1em;sd-text-danger;` **Incorrect.** You cannot join list items that are not strings.
+.. dropdown:: Question 2
+    :open:
+    :color: info
+    :icon: question
 
-      .. .. code-block::
+    What do you think the output of the following code will be?
 
-      ..   numbers = ['5', '4', '3', '2', '1']
-      ..   print('...'.join(numbers))
+    .. code-block:: python
 
-      .. :octicon:`x-circle;1em;sd-text-danger;` **Incorrect.** This is missing a space after the ``'...'``.
+      days = ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun']
+      print('| ' + ' | '.join(days) + ' |')
 
-      .. .. code-block::
+    A.
 
-      ..   numbers = ['5', '4', '3', '2', '1']
-      ..   print('... '.join(numbers))
+      .. code-block:: markdown
 
-      .. :octicon:`issue-closed;1em;sd-text-success;` **Correct.**
+        Mon|Tue|Wed|Thur|Fri|Sat|Sun
+
+    B.
+
+      .. code-block:: markdown
+
+        |Mon|Tue|Wed|Thur|Fri|Sat|Sun|
+
+    C.
+
+      .. code-block:: markdown
+
+        Mon | Tue | Wed | Thur | Fri | Sat | Sun
+
+    D.
+
+      .. code-block:: markdown
+
+        | Mon | Tue | Wed | Thur | Fri | Sat | Sun |
+
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
+      :class-title: sd-font-weight-bold
+      :color: dark
+
+      .. :octicon:`x-circle;1em;sd-text-danger;` ``Mon|Tue|Wed|Thur|Fri|Sat|Sun``
+
+      .. :octicon:`x-circle;1em;sd-text-danger;` ``|Mon|Tue|Wed|Thur|Fri|Sat|Sun|``
+
+      .. :octicon:`issue-closed;1em;sd-text-success;` ``Mon | Tue | Wed | Thur | Fri | Sat | Sun``
+
+      .. :octicon:`x-circle;1em;sd-text-danger;` ``| Mon | Tue | Wed | Thur | Fri | Sat | Sun |``
+
+      .. There are 3 components to our print statement.
+
+      .. * First we have ``'| '``
+
+      .. * Next we have ``' | '.join(days)``
+
+      .. * Finally we have  ``' |'``
+
+      .. .. image:: img/join_concat.png
+      ..     :width: 400
+      ..     :align: center
+
+      .. This results in ``| Mon | Tue | Wed | Thur | Fri | Sat | Sun |``
 
       *Solution is locked*
+
+.. dropdown:: Question 3
+    :open:
+    :color: info
+    :icon: question
+
+    Which of the following code snippets would result in the output
+
+    .. code-block:: markdown
+
+      5... 4... 3... 2... 1
+
+    A.
+
+      .. code-block::
+
+        numbers = [5, 4, 3, 2, 1]
+        print('...'.join(numbers))
+
+    B.
+
+      .. code-block::
+
+        numbers = [1, 2, 3, 4, 5]
+        print('...'.join(numbers))
+
+    C.
+
+      .. code-block::
+
+        numbers = ['5', '4', '3', '2', '1']
+        print('...'.join(numbers))
+
+    D.
+
+      .. code-block::
+
+        numbers = ['5', '4', '3', '2', '1']
+        print('... '.join(numbers))
+
+    .. dropdown:: :material-regular:`lock;1.5em` Solution
+        :class-title: sd-font-weight-bold
+        :color: dark
+
+        .. .. code-block::
+
+        ..   numbers = [5, 4, 3, 2, 1]
+        ..   print('...'.join(numbers))
+
+        .. :octicon:`x-circle;1em;sd-text-danger;` **Incorrect.** You cannot join list items that are not strings.
+
+        .. .. code-block::
+
+        ..   numbers = [1, 2, 3, 4, 5]
+        ..   print('...'.join(numbers))
+
+        .. :octicon:`x-circle;1em;sd-text-danger;` **Incorrect.** You cannot join list items that are not strings.
+
+        .. .. code-block::
+
+        ..   numbers = ['5', '4', '3', '2', '1']
+        ..   print('...'.join(numbers))
+
+        .. :octicon:`x-circle;1em;sd-text-danger;` **Incorrect.** This is missing a space after the ``'...'``.
+
+        .. .. code-block::
+
+        ..   numbers = ['5', '4', '3', '2', '1']
+        ..   print('... '.join(numbers))
+
+        .. :octicon:`issue-closed;1em;sd-text-success;` **Correct.**
+
+        *Solution is locked*
 
 .. dropdown:: Code challenge: Charm Bracelet
     :color: warning
@@ -275,5 +276,5 @@ Note that ``.join()`` can only be used on lists containing strings. The followin
       ..   charms = ['\U0001F517', '\U0001F3B1', '\U0001F9F8', '\U0001F369', '\U0001F3A0', '\U0001FA9D']
 
       ..   print(' ------- '.join(charms))
-        
+
       *Solution is locked*

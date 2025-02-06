@@ -1,14 +1,11 @@
-.. role:: js(code)
-   :language: javascript
-
 Arrays
-=============
+======
 
-An array is a sequence of items (called elements) stored in a specific order. Arrays can hold any data type,
-including numbers, strings, booleans, and even other arrays.
+An array is a sequence of items (called elements) stored in a specific order. Arrays can
+hold any data type, including numbers, strings, booleans, and even other arrays.
 
 Defining an Array
--------------------
+-----------------
 
 You can create an array using square brackets
 
@@ -18,11 +15,12 @@ Syntax
 
     [item0, item1, item2, ...., itemN]
 
-- Start and end the array definition with square brackets :js:`[]`.
+- Start and end the array definition with square brackets ``[]``.
 - Reference each item, e.g. variable or expression, in the desired order
 - Separate each item with a comma ``,``
 
-In the example below an array containing three strings is created, assigned to the variable :js:`fruits` and printed
+In the example below an array containing three strings is created, assigned to the
+variable ``fruits`` and printed
 
 .. code-block:: javascript
 
@@ -40,12 +38,11 @@ The example below shows mixing strings, numbers and booleans.
     let myData = ["Hello World", 3.14, false];
     console.log(myData); // Prints: ["Hello World", 3.14, false]
 
-
 Indexing
--------------------
+--------
 
-Arrays are zero-indexed, meaning the first element is at position 0, the second is at position 1, and so on. You can
-access any element using its index.
+Arrays are zero-indexed, meaning the first element is at position 0, the second is at
+position 1, and so on. You can access any element using its index.
 
 .. code-block:: javascript
 
@@ -59,7 +56,7 @@ access any element using its index.
     blue
 
 Adding Elements
------------------------------------------
+---------------
 
 Let's look at the three main ways you can insert elements into an array.
 
@@ -79,7 +76,8 @@ To add to the end of an array, use the ``push`` array method.
 
 **Add at the Start**
 
-Adding at the start can be achieved with the ``unshift`` method, we'll see why it's called that in a moment.
+Adding at the start can be achieved with the ``unshift`` method, we'll see why it's
+called that in a moment.
 
 .. code-block:: javascript
 
@@ -105,7 +103,8 @@ where:
 
 - ``array`` is the array you are modifying
 - ``start`` is the index where the new element is to be placed
-- ``deleteCount`` is the number of elements to remove after the ``start``, in case you want to replace/remove elements
+- ``deleteCount`` is the number of elements to remove after the ``start``, in case you
+  want to replace/remove elements
 - ``itemN`` are the new elements to insert
 
 For inserting an element we usually set ``deleteCount`` to ``0``.
@@ -122,9 +121,8 @@ Example
 
     ["cat", "rabbit", "dog"]
 
-
 Removing Elements
------------------------------------------
+-----------------
 
 Like adding elements, we have a variety of ways to remove elements from arrays.
 
@@ -140,8 +138,8 @@ The ``pop`` method removes the last element of an array.
 
 **Remove from the Start**
 
-The ``shift`` method removes the first element of an array. You can think of this like shifting the array to the left
-and the element in the negative position is dropped.
+The ``shift`` method removes the first element of an array. You can think of this like
+shifting the array to the left and the element in the negative position is dropped.
 
 .. code-block:: javascript
 
@@ -151,7 +149,8 @@ and the element in the negative position is dropped.
 
 **Remove from any Position**
 
-The ``splice`` method can be used to remove one or more elements by ignoring the ``itemN`` parameters.
+The ``splice`` method can be used to remove one or more elements by ignoring the
+``itemN`` parameters.
 
 .. code-block:: javascript
 
@@ -163,7 +162,7 @@ The ``splice`` method can be used to remove one or more elements by ignoring the
     console.log(fruits); // Prints: ["apple", "orange", "cherry"]
 
 Useful Methods
------------------------------------------
+--------------
 
 **Length of an Array**
 
@@ -176,8 +175,8 @@ The ``length`` attribute returns the number of elements in an array.
 
 **Reverse an Array**
 
-Use the ``reverse`` method to flip the order of elements in an array. This operation happens in place, meaning that the
-original array is changed.
+Use the ``reverse`` method to flip the order of elements in an array. This operation
+happens in place, meaning that the original array is changed.
 
 .. code-block:: javascript
 
@@ -187,11 +186,10 @@ original array is changed.
 
 **Joining Elements into a String**
 
-You can join the elements into a single string with the ``join`` method. This method takes a string parameter, which is
-used as the separator.
+You can join the elements into a single string with the ``join`` method. This method
+takes a string parameter, which is used as the separator.
 
 .. code-block:: javascript
 
     let words = ["JavaScript", "is", "fun"];
     console.log(words.join(" ")); // Prints: "JavaScript is fun"
-

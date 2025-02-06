@@ -1,23 +1,28 @@
-.. role:: python(code)
-   :language: python
-
 Function Returns
 ================
 
 Multiple Return Values
 ----------------------
 
-We are able to return multiple values from a function. We do this by specifying multiple values after the ``return`` keyword where each value is separated by a comma.
+We are able to return multiple values from a function. We do this by specifying multiple
+values after the ``return`` keyword where each value is separated by a comma.
 
 .. code-block:: text
 
     return value_1, value_2, ...
 
-The values are returned to the user as a *tuple*. A tuple is another variable type, which is similar to a list, but is *immutable* (cannot be changed). Tuples look a lot like lists but use parentheses ``()`` instead of square brackets ``[]``. The order the values are returned in will match the order of the values in the ``return`` statement.
+The values are returned to the user as a *tuple*. A tuple is another variable type,
+which is similar to a list, but is *immutable* (cannot be changed). Tuples look a lot
+like lists but use parentheses ``()`` instead of square brackets ``[]``. The order the
+values are returned in will match the order of the values in the ``return`` statement.
 
 **Example: 2 return values**
 
-The function ``zero_nonzero`` counts the number of zero and non-zero values in the given list. In this example where we give the function ``[3, 0, 0, 0, 1, 5, 0, 0, 2, 0]`` there are 6 elements that are zero and 4 elements that are non-zero. This function returns these values as the *tuple* ``(6, 4)``. Note that these are in the same order as in the ``return`` statement, ``zero, nonzero``.
+The function ``zero_nonzero`` counts the number of zero and non-zero values in the given
+list. In this example where we give the function ``[3, 0, 0, 0, 1, 5, 0, 0, 2, 0]``
+there are 6 elements that are zero and 4 elements that are non-zero. This function
+returns these values as the *tuple* ``(6, 4)``. Note that these are in the same order as
+in the ``return`` statement, ``zero, nonzero``.
 
 .. exec_code::
     :language: python
@@ -37,17 +42,24 @@ The function ``zero_nonzero`` counts the number of zero and non-zero values in t
 Unpacking Return Values
 -----------------------
 
-It can often be useful to unpack values. You can do this by having multiple values on the left-hand-side of the ``=`` sign. Each variable name should be separated by a comma:
+It can often be useful to unpack values. You can do this by having multiple values on
+the left-hand-side of the ``=`` sign. Each variable name should be separated by a comma:
 
 .. code-block:: text
 
     variable_1, variable_2, ... = ...
 
-If you have more than one variable on the left-hand-side, the number of variable names on the left-hand-side of the ``=`` must match the number of values on the right-hand-side of the ``=``. The values are unpacked into variables in order.
+If you have more than one variable on the left-hand-side, the number of variable names
+on the left-hand-side of the ``=`` must match the number of values on the
+right-hand-side of the ``=``. The values are unpacked into variables in order.
 
 **Example: Unpacking values from a function**
 
-Here the ``zero_nonzero`` function is going to return two values, the values stored in the variables ``zero`` and ``nonzero``, which for the given list is 6 and 4 respectively. We can see that we unpack these into the values ``x`` and ``y``, which are on the left-hand-side of the ``=``. This means the first value 6 gets unpacked into the variable ``x`` and the second value 4 gets unpacked into the variable ``y``.
+Here the ``zero_nonzero`` function is going to return two values, the values stored in
+the variables ``zero`` and ``nonzero``, which for the given list is 6 and 4
+respectively. We can see that we unpack these into the values ``x`` and ``y``, which are
+on the left-hand-side of the ``=``. This means the first value 6 gets unpacked into the
+variable ``x`` and the second value 4 gets unpacked into the variable ``y``.
 
 .. exec_code::
     :language: python
@@ -66,7 +78,11 @@ Here the ``zero_nonzero`` function is going to return two values, the values sto
     print('Number of zeros: {}'.format(x))
     print('Number of non-zeros: {}'.format(y))
 
-.. note:: You can also unpack values directly from a list! You just need to ensure the number of variables on the left-hand-side of the ``=`` matches the number of elements in the list.
+.. note::
+
+    You can also unpack values directly from a list! You just need to ensure the number
+    of variables on the left-hand-side of the ``=`` matches the number of elements in
+    the list.
 
 **Example: Unpacking values from a list**
 
@@ -80,11 +96,14 @@ Here the ``zero_nonzero`` function is going to return two values, the values sto
 No Return Value - Procedures
 ----------------------------
 
-It's also possible for functions not to have a return value back to the main program. In this case, the return will be ``None``. These are also known as **procedures**.
+It's also possible for functions not to have a return value back to the main program. In
+this case, the return will be ``None``. These are also known as **procedures**.
 
 **Example: no return**
 
-The function ``box`` doesn't have a return statement. We follow the indentation to know where the function ends. Note that we only need to call the function, we don't need to ``print`` the results of the function.
+The function ``box`` doesn't have a return statement. We follow the indentation to know
+where the function ends. Note that we only need to call the function, we don't need to
+``print`` the results of the function.
 
 .. exec_code::
     :language: python
@@ -96,7 +115,9 @@ The function ``box`` doesn't have a return statement. We follow the indentation 
 
     box()
 
-Printing the results of the function will result in ``None`` as the function doesn't have an output. Note that the function is still called and since there are ``print`` statements inside the function, the box will still print.
+Printing the results of the function will result in ``None`` as the function doesn't
+have an output. Note that the function is still called and since there are ``print``
+statements inside the function, the box will still print.
 
 .. exec_code::
     :language: python
@@ -155,7 +176,7 @@ Printing the results of the function will result in ``None`` as the function doe
         def get_status(x):
             if x == 1:
                 print('On schedule')
-            elif x == 2: 
+            elif x == 2:
                 print('Behind schedule')
             elif x == 3:
                 print('Complete')
@@ -185,7 +206,7 @@ Printing the results of the function will result in ``None`` as the function doe
 
         print(times_table(7))
 
-    A. 
+    A.
 
      .. code-block:: text
 
@@ -193,7 +214,7 @@ Printing the results of the function will result in ``None`` as the function doe
         14
         21
 
-    B. 
+    B.
 
      .. code-block:: text
 
@@ -202,7 +223,7 @@ Printing the results of the function will result in ``None`` as the function doe
         21
         None
 
-    C. 
+    C.
 
      .. code-block:: text
 
@@ -210,7 +231,7 @@ Printing the results of the function will result in ``None`` as the function doe
         7
         14
 
-    D. 
+    D.
 
      .. code-block:: text
 
@@ -219,7 +240,7 @@ Printing the results of the function will result in ``None`` as the function doe
         14
         None
 
-    E. 
+    E.
 
      .. code-block:: text
 
@@ -241,42 +262,42 @@ Printing the results of the function will result in ``None`` as the function doe
     .. code-block:: python
 
         def sing(phrase, repeats=2):
-            for i in range(repeats): 
+            for i in range(repeats):
                 print(phrase)
 
         sing('Who let the dogs out? Who, who, who, who, who?', repeats=4)
 
-    A. 
+    A.
 
      .. code-block:: text
 
         Who let the dogs out? Who, who, who, who, who?
 
-    B. 
+    B.
 
      .. code-block:: text
 
         Who let the dogs out? Who, who, who, who, who?
         Who let the dogs out? Who, who, who, who, who?
 
-    C. 
-
-     .. code-block:: text
-
-        Who let the dogs out? Who, who, who, who, who?
-        Who let the dogs out? Who, who, who, who, who?
-        Who let the dogs out? Who, who, who, who, who?
-
-    D. 
+    C.
 
      .. code-block:: text
 
         Who let the dogs out? Who, who, who, who, who?
         Who let the dogs out? Who, who, who, who, who?
         Who let the dogs out? Who, who, who, who, who?
+
+    D.
+
+     .. code-block:: text
+
+        Who let the dogs out? Who, who, who, who, who?
+        Who let the dogs out? Who, who, who, who, who?
+        Who let the dogs out? Who, who, who, who, who?
         Who let the dogs out? Who, who, who, who, who?
 
-    E. 
+    E.
 
      .. code-block:: text
 

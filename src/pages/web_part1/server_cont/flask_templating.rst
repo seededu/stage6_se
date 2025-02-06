@@ -1,66 +1,64 @@
-.. role:: python(code)
-   :language: python
-
 Templating
-======================
+==========
 
-As we've seen in previous examples, it's possible to return HTML code directly from a 
-route function, but this approach quickly becomes difficult to manage. Imagine writing 
-the same HTML structure repeatedly, or trying to change the layout of multiple pages - 
-it can become a real headache! Instead of writing HTML inside our Python code, Flask 
+As we've seen in previous examples, it's possible to return HTML code directly from a
+route function, but this approach quickly becomes difficult to manage. Imagine writing
+the same HTML structure repeatedly, or trying to change the layout of multiple pages -
+it can become a real headache! Instead of writing HTML inside our Python code, Flask
 allows us to use templates.
 
-Templates make it possible to separate the HTML structure from the logic in our Python 
-code. Flask uses the `Jinja2 <https://jinja.palletsprojects.com/en/3.1.x/>`_ templating 
-engine, which allows us to create dynamic HTML pages by inserting Python-like logic 
+Templates make it possible to separate the HTML structure from the logic in our Python
+code. Flask uses the `Jinja2 <https://jinja.palletsprojects.com/en/3.1.x/>`_ templating
+engine, which allows us to create dynamic HTML pages by inserting Python-like logic
 (loops, variables, etc.) into the HTML.
 
 Jinja
-----------------------
+-----
 
-Jinja is a powerful templating language for Python. It allows you to embed variables, 
-use control structures like loops, and create reusable layouts. Here's an example of how 
+Jinja is a powerful templating language for Python. It allows you to embed variables,
+use control structures like loops, and create reusable layouts. Here's an example of how
 Jinja works:
 
 .. code-block:: python
-   :linenos:
-   :emphasize-lines: 4, 7
+    :linenos:
+    :emphasize-lines: 4, 7
 
-   from jinja2 import Template
+    from jinja2 import Template
 
-   # Create a Jinja2 template
-   template = Template('Hello, {{ name }}!')
+    # Create a Jinja2 template
+    template = Template("Hello, {{ name }}!")
 
-   # Render the template with a value for "name"
-   rendered = template.render(name='John')
-   print(rendered)
+    # Render the template with a value for "name"
+    rendered = template.render(name="John")
+    print(rendered)
 
 Explanation:
 
-*   Line 4: A template is created with a placeholder for the :python:`name` variable.
-*   Line 7: The template is :term:`rendered<Render>` with the value :python:`"John"` passed to 
-    :python:`name`, and it outputs: ``"Hello, John!"``.
+- Line 4: A template is created with a placeholder for the ``name`` variable.
+- Line 7: The template is :term:`rendered<Render>` with the value ``"John"`` passed to
+  ``name``, and it outputs: ``"Hello, John!"``.
 
 Jinja Syntax
-----------------------
+------------
 
-The `Template Designer Documentation <https://jinja.palletsprojects.com/en/3.1.x/templates/>`_ 
-provided by Jinja outlines the syntax available inside Jinja templates including:
+The `Template Designer Documentation
+<https://jinja.palletsprojects.com/en/3.1.x/templates/>`_ provided by Jinja outlines the
+syntax available inside Jinja templates including:
 
-*   variables
-*   filters
-*   loops
+- variables
+- filters
+- loops
 
 Templates in Flask
-------------------------
+------------------
 
-Flask looks for template files inside a folder called `templates` in your project. 
-Instead of returning HTML directly, you can load and render templates using the 
+Flask looks for template files inside a folder called `templates` in your project.
+Instead of returning HTML directly, you can load and render templates using the
 ``render_template()`` function.
 
 **Complete Example**
 
-Let's see how we can use templates in the movie reviews website to display the list of 
+Let's see how we can use templates in the movie reviews website to display the list of
 movies.
 
 Project structure:
@@ -78,74 +76,74 @@ Project structure:
 
 .. tab-set::
 
-   .. tab-item:: Server
+    .. tab-item:: Server
 
-        .. code-block:: python
-            :caption: app.py
-            :linenos:
-            :emphasize-lines: 15, 16
+         .. code-block:: python
+             :caption: app.py
+             :linenos:
+             :emphasize-lines: 15, 16
 
-            from flask import Flask, render_template
-            from sqlalchemy import create_engine, text
+             from flask import Flask, render_template
+             from sqlalchemy import create_engine, text
 
-            app = Flask(__name__)
+             app = Flask(__name__)
 
-            # Connect to the database
-            engine = create_engine('sqlite:///movies.db')
+             # Connect to the database
+             engine = create_engine('sqlite:///movies.db')
 
-            @app.route('/')
-            def home():
-                # SQL query to select all movies
-                query = text("SELECT * FROM reviews")
-                result = engine.execute(query).fetchall()
+             @app.route('/')
+             def home():
+                 # SQL query to select all movies
+                 query = text("SELECT * FROM reviews")
+                 result = engine.execute(query).fetchall()
 
-                # Render the template and pass the result
-                return render_template('index.html', movies=result)
+                 # Render the template and pass the result
+                 return render_template('index.html', movies=result)
 
-            app.run(debug=True)
+             app.run(debug=True)
 
-        Explanation:
+         Explanation:
 
-        *   :python:`render_template()` is used to:
+         *   :python:`render_template()` is used to:
 
-            *   load the ``index.html`` file from the ``templates``` folder, 
-            *   pass the query :python:`result` to the template engine, named 
-                :python:`movies` inside the template context.
+             *   load the ``index.html`` file from the ``templates``` folder,
+             *   pass the query :python:`result` to the template engine, named
+                 :python:`movies` inside the template context.
 
-   .. tab-item:: Template
+    .. tab-item:: Template
 
-        This is the ``index.html`` template file inside the ``templates`` folder:
+         This is the ``index.html`` template file inside the ``templates`` folder:
 
-        .. code-block:: html
-            :caption: index.html
-            :linenos:
-            :emphasize-lines: 9-11
+         .. code-block:: html
+             :caption: index.html
+             :linenos:
+             :emphasize-lines: 9-11
 
-            <!DOCTYPE html>
-            <html lang="en">
-                <head>
-                    <title>Movie Reviews</title>
-                </head>
-                <body>
-                    <h1>Movie Reviews</h1>
-                    <ul>
-                        {% for movie in movies %}
-                            <li>{{ movie[1] }} ({{ movie[2] }}) - Score: {{ movie[5] }}</li>
-                        {% endfor %}
-                    </ul>
-                </body>
-            </html>
+             <!DOCTYPE html>
+             <html lang="en">
+                 <head>
+                     <title>Movie Reviews</title>
+                 </head>
+                 <body>
+                     <h1>Movie Reviews</h1>
+                     <ul>
+                         {% for movie in movies %}
+                             <li>{{ movie[1] }} ({{ movie[2] }}) - Score: {{ movie[5] }}</li>
+                         {% endfor %}
+                     </ul>
+                 </body>
+             </html>
 
-        Explanation:
+         Explanation:
 
-        *   Lines 9-11: The ``for`` loop iterates over each movie and displays its 
-            title, year, and score using Jinja2 syntax.
+         *   Lines 9-11: The ``for`` loop iterates over each movie and displays its
+             title, year, and score using Jinja2 syntax.
 
 Extending Templates
 -------------------
 
-Flask templates can be extended to create a base layout that other pages can inherit. 
-This is useful when you have common elements like headers or footers across multiple 
+Flask templates can be extended to create a base layout that other pages can inherit.
+This is useful when you have common elements like headers or footers across multiple
 pages.
 
 .. tab-set::
@@ -171,7 +169,7 @@ pages.
 
         Explanation:
 
-        *   ``{% extends 'base.html' %}`` makes ``index.html`` inherit the layout from 
+        *   ``{% extends 'base.html' %}`` makes ``index.html`` inherit the layout from
             ``base.html``.
         *   ``{% block title %}`` overrides the title from the base template.
         *   ``{% block content %}`` is overridden to display the list of movies.
@@ -201,16 +199,14 @@ pages.
 
         Explanation:
 
-        *   ``{% block title %}`` and ``{% block content %}`` are placeholders that 
+        *   ``{% block title %}`` and ``{% block content %}`` are placeholders that
             child templates can override.
 
-
-
 Static Files in Templates
---------------------------
+-------------------------
 
-As we saw previously in :doc:`/web_part1/server_intro/flask_static`, Flask serves static files like CSS, JavaScript, or images 
-from a folder called ``static``. 
+As we saw previously in :doc:`/web_part1/server_intro/flask_static`, Flask serves static
+files like CSS, JavaScript, or images from a folder called ``static``.
 
 We manually specified the path to a stylesheet. For example:
 
@@ -218,9 +214,9 @@ We manually specified the path to a stylesheet. For example:
 
     <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
 
-However this path will change if we change ``static_url_path`` when we create the 
-``Flask`` object. To make sure that we correctly reference the path to static files 
-we can use the ``url_for`` template function.
+However this path will change if we change ``static_url_path`` when we create the
+``Flask`` object. To make sure that we correctly reference the path to static files we
+can use the ``url_for`` template function.
 
 Here's a simple example:
 
@@ -274,9 +270,9 @@ Project structure:
 
         Explanation:
 
-        *   Line 5: ``{{ url_for('static', filename='style.css') }}`` generates the 
+        *   Line 5: ``{{ url_for('static', filename='style.css') }}`` generates the
             correct URL to the ``style.css`` file.
-        *   Now, the custom styles from ``style.css`` will be applied to all pages that 
+        *   Now, the custom styles from ``style.css`` will be applied to all pages that
             use the ``base.html`` layout.
 
 
@@ -303,16 +299,13 @@ Project structure:
                     margin-bottom: 10px;
                 }
 
-
 Glossary
---------------
+--------
 
 .. glossary::
 
     Render
-        Rendering templates is the process of combining a predefined HTML template with 
-        dynamic data on the server to generate a complete web page that is then sent to 
-        the user's browser. This allows for content to change while maintaining the 
+        Rendering templates is the process of combining a predefined HTML template with
+        dynamic data on the server to generate a complete web page that is then sent to
+        the user's browser. This allows for content to change while maintaining the
         same layout and structure.
-
-

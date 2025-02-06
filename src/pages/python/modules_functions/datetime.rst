@@ -1,10 +1,8 @@
-.. role:: python(code)
-   :language: python
-
 Datetime
 ========
 
-The `datetime <https://docs.python.org/3/library/datetime.html>`_  module is very handy when working with dates and times.
+The `datetime <https://docs.python.org/3/library/datetime.html>`_ module is very handy
+when working with dates and times.
 
 Date
 ----
@@ -15,7 +13,8 @@ We can import date from the datetime module.
 
     from datetime import date
 
-This will allow us to create date objects, which we can treat as a new type of Python variable specifically used for handling dates. We create a date object as follows:
+This will allow us to create date objects, which we can treat as a new type of Python
+variable specifically used for handling dates. We create a date object as follows:
 
 .. code-block:: text
 
@@ -29,7 +28,8 @@ This will allow us to create date objects, which we can treat as a new type of P
     d = date(2025, 1, 31) # 31st of January 2024
     print(d)
 
-We can extract the year, month and day of a date using ``.year``, ``.month`` and ``.day`` respectively.
+We can extract the year, month and day of a date using ``.year``, ``.month`` and
+``.day`` respectively.
 
 .. exec_code::
     :language: python
@@ -41,7 +41,8 @@ We can extract the year, month and day of a date using ``.year``, ``.month`` and
     print(d.month)
     print(d.day)
 
-We can also extract out the day of the week. ``.weekday()`` will return an integer where Monday is 0 and Sunday is 6. We can then use this to index a list.
+We can also extract out the day of the week. ``.weekday()`` will return an integer where
+Monday is 0 and Sunday is 6. We can then use this to index a list.
 
 .. exec_code::
     :language: python
@@ -65,10 +66,11 @@ We can import time from the datetime module.
 This will allow us to create time objects using the following (in 24 hour time):
 
 .. code-block:: text
-    
+
     time(hour, minute, second)
 
-We can also access the hour, minute and second using ``.hour``, ``.minute`` and ``.second``. 
+We can also access the hour, minute and second using ``.hour``, ``.minute`` and
+``.second``.
 
 .. exec_code::
     :language: python
@@ -84,7 +86,8 @@ We can also access the hour, minute and second using ``.hour``, ``.minute`` and 
 Datetime
 --------
 
-``datetime`` objects combine the functionality of ``date`` and ``time`` objects. To import this we use
+``datetime`` objects combine the functionality of ``date`` and ``time`` objects. To
+import this we use
 
 .. code-block:: text
 
@@ -104,7 +107,8 @@ We can create a ``datetime`` object using
     dt = datetime(2025, 1, 31, 17, 35, 20)
     print(dt)
 
-Just like with the ``date`` and ``time`` objects we can extract out the year, month, day, day of the week, hour minute and second.
+Just like with the ``date`` and ``time`` objects we can extract out the year, month,
+day, day of the week, hour minute and second.
 
 .. exec_code::
     :language: python
@@ -139,14 +143,17 @@ Timedelta
 
     from datetime import timedelta
 
-
-Often the greek symbol delta (:math:`\Delta`) is used to indicate a change in a quantity, which in our case will be time. When creating a ``timedelta`` object you can specify days, second, minutes, hours or weeks, all of which are optional and by default each is 0. This allows us to increment times.
+Often the greek symbol delta (:math:`\Delta`) is used to indicate a change in a
+quantity, which in our case will be time. When creating a ``timedelta`` object you can
+specify days, second, minutes, hours or weeks, all of which are optional and by default
+each is 0. This allows us to increment times.
 
 .. code-block:: text
 
     timedelta(days=days, seconds=seconds, minutes=minutes, hours=hours, weeks=weeks)
 
-For example, we can add '5 days and 2 hours' to the 31st of January 2025 at 17:35:20, which gets us to the 5th of February 2025 at 19:35:20.
+For example, we can add '5 days and 2 hours' to the 31st of January 2025 at 17:35:20,
+which gets us to the 5th of February 2025 at 19:35:20.
 
 .. exec_code::
     :language: python
@@ -158,11 +165,18 @@ For example, we can add '5 days and 2 hours' to the 31st of January 2025 at 17:3
 
     print(dt + delta)
 
-``timedelta`` objects only allow you to extract days ``.days`` and seconds ``.seconds`` (of the time component). This means that to obtain hours, minutes and seconds you need to perform a calculation.
+``timedelta`` objects only allow you to extract days ``.days`` and seconds ``.seconds``
+(of the time component). This means that to obtain hours, minutes and seconds you need
+to perform a calculation.
 
-To obtain hours, we need to take the seconds, divide by 60 to get minutes and then divide by 60 to get the number of hours. This is equivalent to dividing by 3600. We then need to round down. We can round down by performing integer division which uses a ``//``. This performs a division and truncates the result to an integer.
+To obtain hours, we need to take the seconds, divide by 60 to get minutes and then
+divide by 60 to get the number of hours. This is equivalent to dividing by 3600. We then
+need to round down. We can round down by performing integer division which uses a
+``//``. This performs a division and truncates the result to an integer.
 
-To obtain minutes, we convert the seconds to minutes by dividing by 60. But then we only want remainder of minutes that didn't contribute to a full hour. Since an hour is 60 minutes, we then perform ``% 60``.
+To obtain minutes, we convert the seconds to minutes by dividing by 60. But then we only
+want remainder of minutes that didn't contribute to a full hour. Since an hour is 60
+minutes, we then perform ``% 60``.
 
 .. exec_code::
     :language: python
@@ -180,7 +194,6 @@ To obtain minutes, we convert the seconds to minutes by dividing by 60. But then
     print('Hours: {}'.format(hours))
     print('Minutes: {}'.format(minutes))
 
-
 .. dropdown:: Question 1
     :open:
     :color: info
@@ -188,31 +201,31 @@ To obtain minutes, we convert the seconds to minutes by dividing by 60. But then
 
     We have previously seen how hours and minutes can be extracted from a timedelta object. Which of the following would allow you to extract seconds?
 
-    A. 
+    A.
 
      .. code-block:: python
-    	
+
         seconds = delta.seconds
 
-    B. 
+    B.
 
      .. code-block:: python
 
         seconds = delta.seconds % 60
 
-    C. 
+    C.
 
      .. code-block:: python
 
         seconds = delta.seconds % 3600
 
-    D. 
+    D.
 
      .. code-block:: python
 
         seconds = (delta.seconds//3600) % 60
 
-    E. 
+    E.
 
      .. code-block:: python
 
@@ -253,25 +266,25 @@ To obtain minutes, we convert the seconds to minutes by dividing by 60. But then
         t = time(8, 10, 5)
         print('{}:{}'.format(t.hour, t.minute))
 
-    A. 
+    A.
 
      .. code-block:: python
-    	
+
         8:10:5
 
-    B. 
+    B.
 
      .. code-block:: python
 
         8:10
 
-    C. 
+    C.
 
      .. code-block:: python
 
         10:5
 
-    D. 
+    D.
 
      .. code-block:: python
 
@@ -279,7 +292,7 @@ To obtain minutes, we convert the seconds to minutes by dividing by 60. But then
         10
         5
 
-    E. 
+    E.
 
      .. code-block:: python
 
@@ -361,7 +374,7 @@ To obtain minutes, we convert the seconds to minutes by dividing by 60. But then
 
     * get the current time using ``now()`` from ``datetime.datetime``
 
-    * Extension: Update the text so that if any of the values are 1 the following word becomes singular. E.g. instead of 1 hours it would say 1 hour. * 
+    * Extension: Update the text so that if any of the values are 1 the following word becomes singular. E.g. instead of 1 hours it would say 1 hour. *
 
     .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold

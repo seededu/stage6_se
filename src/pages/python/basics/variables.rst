@@ -1,11 +1,8 @@
-.. role:: python(code)
-   :language: python
-
 Variables
-====================
+=========
 
 Introduction
---------------------
+------------
 
 Python stores data in variables. To assign data to a variable we use the = sign.
 
@@ -13,31 +10,30 @@ For example,
 
 .. code-block:: python
 
-    x = 'Alison'
+    x = "Alison"
 
-One way to think of variables is to treat them like a box. In the above example,
-we have a box named x, and the box is storing the value 10.
+One way to think of variables is to treat them like a box. In the above example, we have
+a box named x, and the box is storing the value 10.
 
 .. image:: img/variable_in.png
-  :width: 400
-  :align: center
+    :width: 400
+    :align: center
 
 When we want to use the value x, we look for the box labelled x and extract the
 contents.
 
 .. image:: img/variable_out.png
-  :width: 400
-  :align: center
+    :width: 400
+    :align: center
 
 Here is an example:
 
 .. code-block:: python
 
-  x = 'Alison'
-  print(x)
+    x = "Alison"
+    print(x)
 
 Note that the variable x does not have quotes but the string 'Alison' does!
-
 
 .. dropdown:: Question 1
     :open:
@@ -52,26 +48,26 @@ Note that the variable x does not have quotes but the string 'Alison' does!
       print('Hello')
       print(name)
 
-    A. 
+    A.
 
       .. code-block:: python
 
         Hello
 
-    B. 
+    B.
 
       .. code-block:: python
 
         Steve
 
-    C. 
+    C.
 
       .. code-block:: python
 
         Hello
         name
 
-    D. 
+    D.
 
       .. code-block:: python
 
@@ -103,27 +99,27 @@ Note that the variable x does not have quotes but the string 'Alison' does!
       print('My lucky number is')
       print('x')
 
-    A. 
+    A.
 
       .. code-block:: html
 
         My lucky number is
         3
 
-    B. 
+    B.
 
       .. code-block:: html
 
         My lucky number is
         x
 
-    C. 
+    C.
 
       .. code-block:: html
 
         My lucky number is
 
-    D. 
+    D.
 
       .. code-block:: html
 
@@ -151,20 +147,20 @@ Note that the variable x does not have quotes but the string 'Alison' does!
 
     Which of the following are **valid**? *Select all that apply*.
 
-    A. 
+    A.
 
       .. code-block:: html
 
         print(x)
 
-    B. 
+    B.
 
       .. code-block:: html
 
         'message' = Happy Birthday
         print(message)
 
-    C. 
+    C.
 
       .. code-block:: html
 
@@ -172,7 +168,7 @@ Note that the variable x does not have quotes but the string 'Alison' does!
         print('Today is')
         print(day)
 
-    D. 
+    D.
 
       .. code-block:: html
 

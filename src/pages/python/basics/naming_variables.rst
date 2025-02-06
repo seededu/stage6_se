@@ -1,9 +1,13 @@
 Naming Variables
 ================
 
-It is important you give your variables appropriate names - like how you might label boxes at home. If you don't **choose descriptive variable names**, it can be very difficult for yourself or others to read your code. This will become increasingly important as you write longer and more complex programs.
+It is important you give your variables appropriate names - like how you might label
+boxes at home. If you don't **choose descriptive variable names**, it can be very
+difficult for yourself or others to read your code. This will become increasingly
+important as you write longer and more complex programs.
 
-Below are two examples of code that calculates the cost of 4 pens and 2 highlighters. Which is easier to interpret?
+Below are two examples of code that calculates the cost of 4 pens and 2 highlighters.
+Which is easier to interpret?
 
 **Program 1**
 
@@ -12,7 +16,7 @@ Below are two examples of code that calculates the cost of 4 pens and 2 highligh
     a = 2.89
     b = 1.97
     c = 4 * a + 2 * b
-    print(c) 
+    print(c)
 
 **Program 2**
 
@@ -21,15 +25,16 @@ Below are two examples of code that calculates the cost of 4 pens and 2 highligh
     pen = 2.89
     highlighter = 1.97
     cost = 4 * pen + 2 * highlighter
-    print(cost) 
+    print(cost)
 
-In addition to using descriptive names, there are rules that you must follow when choosing a variable name. A variable name:
+In addition to using descriptive names, there are rules that you must follow when
+choosing a variable name. A variable name:
 
-* Must start with a letter or an underscore character
+- Must start with a letter or an underscore character
+- Can only contain alpha-numeric characters and underscores
 
-* Can only contain alpha-numeric characters and underscores
-
-Further, variable names are **case sensitive**. This means that ``age`` and ``Age``, are not the same.
+Further, variable names are **case sensitive**. This means that ``age`` and ``Age``, are
+not the same.
 
 .. code-block:: python
 
@@ -39,14 +44,15 @@ Further, variable names are **case sensitive**. This means that ``age`` and ``Ag
     print(age)
     print(Age)
 
-Finally, you must ensure you don't name your variables using **keywords**. Keywords are special words in Python that have a special meaning. You will notice that often they will be formatted in a different colour. For example, print is a keyword. If you end up assigning a value to a keyword, you will overwrite it and your code won't work properly.
+Finally, you must ensure you don't name your variables using **keywords**. Keywords are
+special words in Python that have a special meaning. You will notice that often they
+will be formatted in a different colour. For example, print is a keyword. If you end up
+assigning a value to a keyword, you will overwrite it and your code won't work properly.
 
 .. code-block:: python
 
-    print = 'hello'
+    print = "hello"
     print(print)
-
-
 
 .. dropdown:: Question 1
     :open:
@@ -55,34 +61,34 @@ Finally, you must ensure you don't name your variables using **keywords**. Keywo
 
     Which of the following code snippets are **valid**? *Select all that apply.*
 
-    A. 
+    A.
 
       .. code-block:: html
 
         number
 
-    B. 
+    B.
 
       .. code-block:: html
 
         deg2rad
 
-    C. 
+    C.
 
       .. code-block:: html
 
         10th
 
-    D. 
+    D.
 
       .. code-block:: html
 
         float
 
-    E. 
+    E.
 
       .. code-block:: html
-        
+
         ten%
 
 
@@ -115,10 +121,10 @@ Finally, you must ensure you don't name your variables using **keywords**. Keywo
 
             float
 
-        :octicon:`x-circle;1em;sd-text-danger;` **Invalid.** Technically this works, but should not be done since float is a keyword in Python. 
+        :octicon:`x-circle;1em;sd-text-danger;` **Invalid.** Technically this works, but should not be done since float is a keyword in Python.
 
         .. code-block:: html
-            
+
             10%
 
         :octicon:`x-circle;1em;sd-text-danger;` **Invalid.** Variables can only contain alpha-numeric characters (a-z, A-Z, 0-9) and underscores.
@@ -135,25 +141,25 @@ Finally, you must ensure you don't name your variables using **keywords**. Keywo
       new_years = '1st January'
       print(New_years)
 
-    A. 
+    A.
 
       .. code-block:: html
 
         1st January
 
-    B. 
+    B.
 
       .. code-block:: html
 
         New_years
 
-    C. 
+    C.
 
       .. code-block:: html
 
         new_years
 
-    D. 
+    D.
 
       It will result in an error
 
@@ -164,6 +170,6 @@ Finally, you must ensure you don't name your variables using **keywords**. Keywo
 
         .. It will result in an error
 
-        .. This program will result in an error saying the variable ``New_years`` has not been defined. This is because Python is case sensitive. The variable ``new_year`` on line 1 is spelt with a lower case ``n`` and Python does not treat it the same as ``New_years`` on line 2 which has a capital ``N``. 
+        .. This program will result in an error saying the variable ``New_years`` has not been defined. This is because Python is case sensitive. The variable ``new_year`` on line 1 is spelt with a lower case ``n`` and Python does not treat it the same as ``New_years`` on line 2 which has a capital ``N``.
 
         *Solution is locked*

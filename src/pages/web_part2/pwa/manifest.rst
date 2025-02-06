@@ -1,14 +1,15 @@
 Web App Manifest
-=============================
+================
 
-The web app manifest is a JSON file that provides essential metadata about your Progressive Web App (PWA). It tells the
-browser how your app should appear and behave when installed on a device. It defines the app’s name, icons, theme
-colors, and more.
+The web app manifest is a JSON file that provides essential metadata about your
+Progressive Web App (PWA). It tells the browser how your app should appear and behave
+when installed on a device. It defines the app’s name, icons, theme colors, and more.
 
 Including the Manifest File in Your HTML
-------------------------------------------
+----------------------------------------
 
-To use a web app manifest, you need to link it in the ``<head>`` of your HTML file using a ``<link>`` tag:
+To use a web app manifest, you need to link it in the ``<head>`` of your HTML file using
+a ``<link>`` tag:
 
 **Example**
 
@@ -31,10 +32,10 @@ To use a web app manifest, you need to link it in the ``<head>`` of your HTML fi
     </html>
 
 manifest.json
-------------------------------------------
+-------------
 
-A web app manifest is a simple JSON file that defines various properties of your PWA. Below is an example of a basic
-``manifest.json`` file:
+A web app manifest is a simple JSON file that defines various properties of your PWA.
+Below is an example of a basic ``manifest.json`` file:
 
 .. code-block:: json
 
@@ -61,11 +62,11 @@ A web app manifest is a simple JSON file that defines various properties of your
 
 .. hint::
 
-    The full specification for the manifest is available here https://developer.mozilla.org/en-US/docs/Web/Manifest
-
+    The full specification for the manifest is available here
+    https://developer.mozilla.org/en-US/docs/Web/Manifest
 
 Required Members
-^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 The following members are required for a valid manifest.json file:
 
@@ -124,9 +125,10 @@ Example:
     "display": "standalone"
 
 Optional Members
-^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
-The following members are optional but can enhance the user experience. This list is not exhaustive.
+The following members are optional but can enhance the user experience. This list is not
+exhaustive.
 
 **short_name**
 
@@ -150,7 +152,8 @@ Example:
 
 **theme_color**
 
-Defines the theme color of the app, which can affect the browser’s UI (e.g., the color of the address bar).
+Defines the theme color of the app, which can affect the browser’s UI (e.g., the color
+of the address bar).
 
 Example:
 
@@ -177,5 +180,3 @@ Example:
 .. code-block:: json
 
     "description": "A PWA that tracks your daily tasks."
-
-

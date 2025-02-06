@@ -1,10 +1,9 @@
-.. role:: python(code)
-   :language: python
-
 Equivalent Loops
 ================
 
-When programming, you'll find that there are often multiple ways to write your program and have it do the same thing! Have a look at the examples below. You will find that in each example, the programs do the exact same thing.
+When programming, you'll find that there are often multiple ways to write your program
+and have it do the same thing! Have a look at the examples below. You will find that in
+each example, the programs do the exact same thing.
 
 **Example 1:** Count 0 to 4
 
@@ -13,7 +12,7 @@ When programming, you'll find that there are often multiple ways to write your p
 
     i = 0
     while i < 5:
-        print(i) 
+        print(i)
         i = i + 1
 
 .. exec_code::
@@ -22,10 +21,9 @@ When programming, you'll find that there are often multiple ways to write your p
     for i in range(5):
         print(i)
 
-
 .. image:: img/9_example1.png
-   :width: 600
-   :align: center
+    :width: 600
+    :align: center
 
 **Example 2:** Print each colour
 
@@ -35,7 +33,7 @@ When programming, you'll find that there are often multiple ways to write your p
     colours = ['red', 'green', 'blue', 'yellow']
     i = 0
     while i < len(colours):
-        print(colours[i]) 
+        print(colours[i])
         i = i + 1
 
 .. exec_code::
@@ -53,14 +51,16 @@ When programming, you'll find that there are often multiple ways to write your p
         print(i)
 
 .. image:: img/9_example2.png
-   :width: 900
-   :align: center
+    :width: 900
+    :align: center
 
-When you write a loop you will have to choose whether you use a ``for`` loop or a ``while`` loop. Often, it won't matter which one you choose as both will work. But in general, you would use:
+When you write a loop you will have to choose whether you use a ``for`` loop or a
+``while`` loop. Often, it won't matter which one you choose as both will work. But in
+general, you would use:
 
-* a ``while`` loop if you don't know how many times to repeat your code - instead, you will terminate your loop once a certain *condition* is met
-
-* a ``for`` loop if you know how many times you want to repeat your code
+- a ``while`` loop if you don't know how many times to repeat your code - instead, you
+  will terminate your loop once a certain *condition* is met
+- a ``for`` loop if you know how many times you want to repeat your code
 
 .. dropdown:: Question 1
     :open:
@@ -74,7 +74,7 @@ When you write a loop you will have to choose whether you use a ``for`` loop or 
         for i in range(5, 10):
             print(i)
 
-    A. 
+    A.
 
      .. code-block:: python
 
@@ -83,7 +83,7 @@ When you write a loop you will have to choose whether you use a ``for`` loop or 
             print(i)
             i = i + 1
 
-    B. 
+    B.
 
      .. code-block:: python
 
@@ -92,7 +92,7 @@ When you write a loop you will have to choose whether you use a ``for`` loop or 
             print(i)
             i = i + 1
 
-    C. 
+    C.
 
      .. code-block:: python
 
@@ -101,7 +101,7 @@ When you write a loop you will have to choose whether you use a ``for`` loop or 
             print(i)
             i = i + 5
 
-    D. 
+    D.
 
      .. code-block:: python
 

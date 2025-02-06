@@ -1,6 +1,3 @@
-.. role:: python(code)
-   :language: python
-
 The object-oriented paradigm
 ============================
 
@@ -92,7 +89,7 @@ Understanding OOP
 Programming in OOP
 ------------------
 
-.. card::  Design and implement computer programs involving branching, iteration and functions in an OOP language for an identified need or opportunity
+.. card:: Design and implement computer programs involving branching, iteration and functions in an OOP language for an identified need or opportunity
 
 .. card:: Implement and modify OOP programming code
 

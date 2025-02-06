@@ -1,10 +1,7 @@
-.. role:: sql(code)
-   :language: sql
-
 Insert
-==============================
+======
 
-To update a database, you may need to add new records to a table. To add a record, you 
+To update a database, you may need to add new records to a table. To add a record, you
 need to specify the attribute names and the corresponding record values.
 
 We use the following structure:
@@ -14,8 +11,8 @@ We use the following structure:
     INSERT INTO table (attribute_1, attibute_2, attribute_3, ...)
     VALUES (value_1, value_2, value_3, ...);
 
-Below is an example of inserting a new customer into the database. We then create a 
-second query to check the new values have been inserted. We use a ``;`` at the end of 
+Below is an example of inserting a new customer into the database. We then create a
+second query to check the new values have been inserted. We use a ``;`` at the end of
 each query.
 
 .. code-block:: sql
@@ -27,15 +24,15 @@ each query.
     FROM customers;
 
 Inserting multiple records
-----------------------------
+--------------------------
 
-You are also able to insert more than one person at a time by separating the records 
-by a comma.
+You are also able to insert more than one person at a time by separating the records by
+a comma.
 
 .. code-block:: sql
 
     INSERT INTO table (attribute_1, attribute_2, attribute_3, ...)
-    VALUES 
+    VALUES
         (values_for_record_1),
         (values_for_record_2),
         ...

@@ -1,26 +1,22 @@
-.. role:: python(code)
-   :language: python
-
 And/Or
-====================
+======
 
 It is possible to build more complex conditions using ``and`` or ``or``.
 
-* ``and``: **both** conditions have to be ``True`` to evaluate as ``True``
-
-* ``or``: only **one** condition has to be ``True`` to evaluate as ``True``
+- ``and``: **both** conditions have to be ``True`` to evaluate as ``True``
+- ``or``: only **one** condition has to be ``True`` to evaluate as ``True``
 
 One way to remember this is:
 
-* if you want fish **and** chips, you are expecting **both**.
-
-* if you want fish **or** chips, you are only expecting **one** or the other, but you're also happy if you get both.
+- if you want fish **and** chips, you are expecting **both**.
+- if you want fish **or** chips, you are only expecting **one** or the other, but you're
+  also happy if you get both.
 
 You can visualise these rules using a truth table:
 
 .. image:: img/truth_table.png
-  :width: 500
-  :align: center
+    :width: 500
+    :align: center
 
 .. dropdown:: Question 1
     :open:
@@ -30,7 +26,7 @@ You can visualise these rules using a truth table:
     Does the following program return ``True`` or ``False``?
 
     .. code-block:: python
-        
+
         x = 4
         print(x > 2 or x < 10)
 
@@ -52,7 +48,7 @@ You can visualise these rules using a truth table:
     Does the following program return ``True`` or ``False``?
 
     .. code-block:: python
-        
+
         x = 1
         print(x < 2 and x > 3)
 
@@ -76,7 +72,7 @@ You can visualise these rules using a truth table:
     Does the following program return ``True`` or ``False``?
 
     .. code-block:: python
-        
+
         x = 6
         y = 2
         z = x * y
@@ -103,7 +99,7 @@ You can visualise these rules using a truth table:
     Does the following program return ``True`` or ``False``?
 
     .. code-block:: python
-        
+
         day = 5
         month = 'November'
         print(day == 5 and month != 'November')

@@ -1,10 +1,10 @@
-.. role:: python(code)
-   :language: python
-
 Pseudocode
 ==========
 
-We can write our control structures such as loops in a form using pseudocode which allows us to write out a program without worrying about syntax. Sometimes the symbols and keywords used in pseudocode will vary depending on the convention you are using, but the idea is that pseudocode should be easy to humans to read.
+We can write our control structures such as loops in a form using pseudocode which
+allows us to write out a program without worrying about syntax. Sometimes the symbols
+and keywords used in pseudocode will vary depending on the convention you are using, but
+the idea is that pseudocode should be easy to humans to read.
 
 While loops
 -----------
@@ -26,7 +26,7 @@ Here is an example
     i = 0
     while i < 3:
         print(i)
-        i = i + 1 # increment i by 1
+        i = i + 1  # increment i by 1
 
 **Pseudocode**
 
@@ -44,11 +44,11 @@ Here is another example
 
 .. code-block:: python
 
-    colour = input('Enter a colour: ')
+    colour = input("Enter a colour: ")
 
-    while colour != 'red':
-        print('That is not red!')
-        colour = input('Enter a colour: ')
+    while colour != "red":
+        print("That is not red!")
+        colour = input("Enter a colour: ")
 
 **Pseudocode**
 
@@ -61,8 +61,8 @@ Here is another example
         Display 'Enter a colour: '
         Get colour
     ENDWHILE
-    
-Note that ``<>`` can be used to indicate not equal and is equivalent to using ``!=``. 
+
+Note that ``<>`` can be used to indicate not equal and is equivalent to using ``!=``.
 
 For loops
 ---------
@@ -70,7 +70,7 @@ For loops
 We write ``for`` loops using pseudocode as follows
 
 .. code-block:: text
-        
+
     FOR variable = start TO finish STEP increment
         process
     NEXT variable
@@ -92,7 +92,8 @@ Here is an example
         Display i
     NEXT i
 
-Not that for ``For`` loops in pseudocode, the loop *includes* the start and end values. This means that ``FOR i = 0 TO 2 STEP 1`` means that ``i`` takes the values 0, 1 and 2.
+Not that for ``For`` loops in pseudocode, the loop *includes* the start and end values.
+This means that ``FOR i = 0 TO 2 STEP 1`` means that ``i`` takes the values 0, 1 and 2.
 
 .. dropdown:: Question 1
     :open:
@@ -107,28 +108,28 @@ Not that for ``For`` loops in pseudocode, the loop *includes* the start and end 
             Display i
         NEXT i
 
-    A. 
+    A.
 
      .. code-block:: python
 
         for i in range(10):
             print(i)
 
-    B. 
+    B.
 
      .. code-block:: python
 
         for i in range(10, 0):
             print(i)
 
-    C. 
+    C.
 
      .. code-block:: python
 
         for i in range(10, 0, -2):
             print(i)
 
-    D. 
+    D.
 
      .. code-block:: python
 
@@ -187,7 +188,7 @@ Not that for ``For`` loops in pseudocode, the loop *includes* the start and end 
             NEXT i
 
         Display c
-    
+
     A. It adds all the elements in the list ``a`` to the corresponding elements in the list ``b`` and stores the result in ``c``. E.g. if a is the list ``[7, 1, 3]`` and ``b`` is the list ``[-1, 5, 8]`` then ``c`` will be the list ``[6, 6, 11]``.
 
 

@@ -1,5 +1,5 @@
 Progressive Web Apps
-=============================
+====================
 
 .. toctree::
     :maxdepth: 2
@@ -8,4 +8,3 @@ Progressive Web Apps
     manifest
     serviceworkers
     tutorial
-

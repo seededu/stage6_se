@@ -1,28 +1,29 @@
-.. role:: python(code)
-   :language: python
-
 Don't Mix and Match Variables Types
 ===================================
 
-It's important to know that you can't mix and match operations between different data types and that it doesn't always make sense to apply mathematical operations to strings.
+It's important to know that you can't mix and match operations between different data
+types and that it doesn't always make sense to apply mathematical operations to strings.
 
 .. code-block:: python
 
-    print('red' - 'blue')
+    print("red" - "blue")
 
-However, if you use the ``+`` operator, you'll find that it actually *concatenates* (joins) the strings together.
-
-.. code-block:: python
-
-    print('red' + 'blue')
-
-This means that there is a difference between the *number* ``3`` and the *string* ``'3'``.
-
-Another slightly odd behaviour is that you can multiply a string with a number. This results in the string being repeated.
+However, if you use the ``+`` operator, you'll find that it actually *concatenates*
+(joins) the strings together.
 
 .. code-block:: python
 
-    x = 'red'
+    print("red" + "blue")
+
+This means that there is a difference between the *number* ``3`` and the *string*
+``'3'``.
+
+Another slightly odd behaviour is that you can multiply a string with a number. This
+results in the string being repeated.
+
+.. code-block:: python
+
+    x = "red"
     y = 3
     print(x * y)
 
@@ -75,7 +76,7 @@ Another slightly odd behaviour is that you can multiply a string with a number. 
 
     Which of the following code snippets will result in an error? *Select all that apply.*
 
-    A. 
+    A.
 
       .. code-block:: python
 
@@ -83,7 +84,7 @@ Another slightly odd behaviour is that you can multiply a string with a number. 
         y = '2'
         print(x - y)
 
-    B. 
+    B.
 
       .. code-block:: python
 
@@ -91,7 +92,7 @@ Another slightly odd behaviour is that you can multiply a string with a number. 
         y = '2'
         print(x + y)
 
-    C. 
+    C.
 
       .. code-block:: python
 
@@ -99,7 +100,7 @@ Another slightly odd behaviour is that you can multiply a string with a number. 
         y = 2
         print(x + y)
 
-    D. 
+    D.
 
       .. code-block:: python
 
@@ -107,7 +108,7 @@ Another slightly odd behaviour is that you can multiply a string with a number. 
         y = 2
         print(x * y)
 
-    E. 
+    E.
 
       .. code-block:: python
 

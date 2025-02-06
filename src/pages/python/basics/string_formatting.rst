@@ -1,7 +1,3 @@
-.. role:: python(code)
-   :language: python
-
-
 String Formatting
 =================
 
@@ -11,15 +7,16 @@ For example, you might use string concatenation.
 
 .. code-block:: python
 
-    age = '10'
-    print('You are ' + age + ' years old')
+    age = "10"
+    print("You are " + age + " years old")
 
-However, you will notice that age in the above example is a string. This won't work the same way if age is an integer. 
+However, you will notice that age in the above example is a string. This won't work the
+same way if age is an integer.
 
 .. code-block:: python
 
     age = 10
-    print('You are ' + age + ' years old')
+    print("You are " + age + " years old")
 
 Remember, you can't mix and match types!
 
@@ -31,43 +28,46 @@ We can format strings using ``.format()``. Here is an example:
 .. code-block:: python
 
     age = 10
-    print('You are {} years old'.format(age))
+    print("You are {} years old".format(age))
 
-* ``.format()`` comes *after* the last ``'``.
-
-* The information we want to display goes into the ``()``.
-
-* ``{}`` is a placeholder. The information will be placed where the ``{}`` is in the string.
+- ``.format()`` comes *after* the last ``'``.
+- The information we want to display goes into the ``()``.
+- ``{}`` is a placeholder. The information will be placed where the ``{}`` is in the
+  string.
 
 .. image:: img/format1.png
-  :width: 370
-  :align: center
+    :width: 370
+    :align: center
 
-We can format multiple pieces of information! Each piece of information is separated by a ``,`` and unpacked into their respective ``{}`` placeholders.
+We can format multiple pieces of information! Each piece of information is separated by
+a ``,`` and unpacked into their respective ``{}`` placeholders.
 
 .. code-block:: python
 
-    name = 'Alice'
+    name = "Alice"
     age = 10
-    print('Hi {}, you are {} years old'.format(name, age))
+    print("Hi {}, you are {} years old".format(name, age))
 
-* Each piece of information we want to display goes into the ``()``.
-
-* ``{}`` are placeholders. The information will be placed in order where the ``{}``'s are in the string.
+- Each piece of information we want to display goes into the ``()``.
+- ``{}`` are placeholders. The information will be placed in order where the ``{}``'s
+  are in the string.
 
 .. image:: img/format2.png
-  :width: 500
-  :align: center
+    :width: 500
+    :align: center
 
-
-We are also able to format floats to a specific number of decimal places. Instead of using an empty ``{}`` placeholder, we can use ``{:.xf}`` to display the first x decimal places (you can remember ``.x`` means '*x digits after the decimal point*' and the ``f`` means that you are formatting a *float*). For example, ``{:.2f}`` will display to 2 decimal places and ``{:.5f}`` will display to the first 5 decimal places.
+We are also able to format floats to a specific number of decimal places. Instead of
+using an empty ``{}`` placeholder, we can use ``{:.xf}`` to display the first x decimal
+places (you can remember ``.x`` means '*x digits after the decimal point*' and the ``f``
+means that you are formatting a *float*). For example, ``{:.2f}`` will display to 2
+decimal places and ``{:.5f}`` will display to the first 5 decimal places.
 
 .. code-block:: python
 
     pi = 3.14159265359
-    print('Pi to 2 decimal places: {:.2f}'.format(pi))
-    print('Pi to 5 decimal places: {:.5f}'.format(pi))
-    print('Pi to 10 decimal places: {:.10f}'.format(pi))
+    print("Pi to 2 decimal places: {:.2f}".format(pi))
+    print("Pi to 5 decimal places: {:.5f}".format(pi))
+    print("Pi to 10 decimal places: {:.10f}".format(pi))
 
 .. dropdown:: Question 1
     :open:
@@ -141,11 +141,11 @@ We are also able to format floats to a specific number of decimal places. Instea
     :color: warning
     :icon: star
 
-    Write a program that reads in a user's name and prints out 
+    Write a program that reads in a user's name and prints out
 
     .. code-block:: html
 
-        Hello name. 
+        Hello name.
         Nice to meet you!
 
     Here are some examples of how your code should run.
@@ -155,7 +155,7 @@ We are also able to format floats to a specific number of decimal places. Instea
     .. code-block:: html
 
         Enter your name: Jess
-        Hello Jess. 
+        Hello Jess.
         Nice to meet you!
 
     **Example 2**
@@ -163,7 +163,7 @@ We are also able to format floats to a specific number of decimal places. Instea
     .. code-block:: html
 
         Enter your name: Ali
-        Hello Ali. 
+        Hello Ali.
         Nice to meet you!
 
     .. Hint:: Don't forget to take note of the punctuation and the capitalisation. You need to match the spelling exactly!

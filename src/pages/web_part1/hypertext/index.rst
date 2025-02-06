@@ -1,6 +1,5 @@
 Hypertext
-====================
-
+=========
 
 .. toctree::
     :maxdepth: 2
@@ -10,5 +9,3 @@ Hypertext
     html_elements_tags
     html_elements_body
     html_elements_sites
-
-   

@@ -1,24 +1,20 @@
-.. role:: python(code)
-   :language: python
-
 Forms - Part 2
-=====================
+==============
 
-In this section, we'll learn how to make HTML forms that send the form data using a  
-HTTP ``POST`` request and how Flask handles such form submissions. We'll also cover 
-how to handle file uploads.
+In this section, we'll learn how to make HTML forms that send the form data using a HTTP
+``POST`` request and how Flask handles such form submissions. We'll also cover how to
+handle file uploads.
 
-Forms that use ``POST`` requests send data in the body of the request and are 
-used for forms that submit data for the web server to retain or file uploads.
+Forms that use ``POST`` requests send data in the body of the request and are used for
+forms that submit data for the web server to retain or file uploads.
 
 Forms that use ``POST`` requests are commonly used for:
 
-*   Login and registration pages
-*   Adding or updating data (e.g., reviews, blog posts, comments)
-
+- Login and registration pages
+- Adding or updating data (e.g., reviews, blog posts, comments)
 
 Form Example
---------------------------
+------------
 
 Here's a HTML form that collects a user's name and email:
 
@@ -36,10 +32,10 @@ Here's a HTML form that collects a user's name and email:
             <form action="/submit" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name"><br><br>
-                
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email"><br><br>
-                
+
                 <input type="submit" value="Submit">
             </form>
         </body>
@@ -47,24 +43,24 @@ Here's a HTML form that collects a user's name and email:
 
 Explanation
 
-*   Form Element
+- Form Element
 
-    *   ``<form action="/submit" method="POST">`` creates a form that submits data to 
-        the ``/submit`` URL using the POST method.
+  - ``<form action="/submit" method="POST">`` creates a form that submits data to the
+    ``/submit`` URL using the POST method.
 
-*   Input Fields 
+- Input Fields
 
-    *   ``<input type="text" id="name" name="name">`` creates a text input for the user's 
-        name.
-    *   ``<input type="email" id="email" name="email">`` creates an email input.
+  - ``<input type="text" id="name" name="name">`` creates a text input for the user's
+    name.
+  - ``<input type="email" id="email" name="email">`` creates an email input.
 
-*   Submit Button
+- Submit Button
 
-    *   ``<input type="submit" value="Submit">`` creates a button to send the form data 
-        to the server when clicked.
+  - ``<input type="submit" value="Submit">`` creates a button to send the form data to
+    the server when clicked.
 
 Handling Form Data
---------------------------
+------------------
 
 Here's how to handle the form data in Flask:
 
@@ -74,43 +70,44 @@ Here's how to handle the form data in Flask:
 
     app = Flask(__name__)
 
-    @app.route('/submit', methods=['POST'])
+
+    @app.route("/submit", methods=["POST"])
     def submit_form():
-        name = request.form['name']
-        email = request.form['email']
+        name = request.form["name"]
+        email = request.form["email"]
         return f"Name: {name}, Email: {email}"
 
-    app.run(debug=True), port=5000)
 
+    app.run(debug=True, port=5000)
 
 Explanation
 
-*   Route Definition
+- Route Definition
 
-    *   The route ``/submit`` listens for POST requests. We specify this with 
-        ``methods=['POST']`` so Flask knows this endpoint will handle form submissions.
+  - The route ``/submit`` listens for POST requests. We specify this with
+    ``methods=['POST']`` so Flask knows this endpoint will handle form submissions.
 
-*   Accessing Form Data 
+- Accessing Form Data
 
-    *   ``request.form['name']`` and ``request.form['email']`` access the submitted 
-        form data. The ``request.form`` dictionary contains the data sent by the form.
+  - ``request.form['name']`` and ``request.form['email']`` access the submitted form
+    data. The ``request.form`` dictionary contains the data sent by the form.
 
-*   Returning a Response
+- Returning a Response
 
-    *   The form data is displayed back to the user by returning a string with the 
-        name and email values.
+  - The form data is displayed back to the user by returning a string with the name and
+    email values.
 
 Example: New Movie Review
---------------------------
+-------------------------
 
-Let's build a form for adding a new movie review to our "Movie Reviews" website. 
-We'll create a form page to submit data such as the movie title, release year, genre, 
-review score, and review text. The review date will be automatically set.
+Let's build a form for adding a new movie review to our "Movie Reviews" website. We'll
+create a form page to submit data such as the movie title, release year, genre, review
+score, and review text. The review date will be automatically set.
 
 Importantly we will need two route functions in our Flask app for the form:
 
-*   the first to return the form HTML
-*   the second to process the form data
+- the first to return the form HTML
+- the second to process the form data
 
 Project structure:
 
@@ -187,19 +184,19 @@ Project structure:
                     <form action="/add_review" method="POST">
                         <label for="title">Movie Title:</label>
                         <input type="text" id="title" name="title"><br><br>
-                        
+
                         <label for="release_year">Release Year:</label>
                         <input type="number" id="release_year" name="release_year"><br><br>
-                        
+
                         <label for="genre">Genre:</label>
                         <input type="text" id="genre" name="genre"><br><br>
-                        
+
                         <label for="review_score">Review Score (1-10):</label>
                         <input type="number" id="review_score" name="review_score"><br><br>
-                        
+
                         <label for="review_text">Review Text:</label><br>
                         <textarea id="review_text" name="review_text"></textarea><br><br>
-                        
+
                         <input type="submit" value="Submit Review">
                     </form>
                 </body>
@@ -207,23 +204,24 @@ Project structure:
 
 Explanation
 
-*   HTML Form
+- HTML Form
 
-    *   The form collects details like the movie title, release year, genre, score, and review text. 
-    *   When the form is submitted, it sends a POST request to ``/add_review``.
+  - The form collects details like the movie title, release year, genre, score, and
+    review text.
+  - When the form is submitted, it sends a POST request to ``/add_review``.
 
-*   Flask Handling
+- Flask Handling
 
-    *   The :python:`add_review()` function receives the form data, extracts it using 
-        :python:`request.form`, and adds the review to database.
+  - The ``add_review()`` function receives the form data, extracts it using
+    ``request.form``, and adds the review to database.
 
-*   Redirecting
+- Redirecting
 
-    *   After the review is added, the user is redirected back to the form page to 
-        indicate success.
+  - After the review is added, the user is redirected back to the form page to indicate
+    success.
 
 HTML Forms - Uploading Files
------------------------------
+----------------------------
 
 Here's an example of an HTML form that allows users to upload files:
 
@@ -237,15 +235,15 @@ Here's an example of an HTML form that allows users to upload files:
 
 Explanation:
 
-*   The ``enctype="multipart/form-data"`` attribute is required for forms that handle 
-    file uploads.
-*   The ``<input type="file">`` element allows the user to choose a file to upload.
+- The ``enctype="multipart/form-data"`` attribute is required for forms that handle file
+  uploads.
+- The ``<input type="file">`` element allows the user to choose a file to upload.
 
 Handling File Data
------------------------------
+------------------
 
-When a file is uploaded, Flask uses the :python:`request.files` dictionary to access 
-the file. Flask also allows you to save the file to the server.
+When a file is uploaded, Flask uses the ``request.files`` dictionary to access the file.
+Flask also allows you to save the file to the server.
 
 .. code-block::
 
@@ -257,43 +255,40 @@ the file. Flask also allows you to save the file to the server.
     def upload_file():
         if 'file' not in request.files:
             return "No file part"
-        
+
         file = request.files['file']
-        
+
         if file.filename == '':
             return "No selected file"
-        
+
         # Save the file to the uploads directory
         file.save(f'uploads/{file.filename}')
-        
+
         return f"File {file.filename} uploaded successfully!"
 
     app.run(debug=True, port=5000)
 
 Explanation
 
-*   :python:`request.files['file']` retrieves the uploaded file.
-*   :python:`file.save()` saves the file to a specified directory on the server.
-
+- ``request.files['file']`` retrieves the uploaded file.
+- ``file.save()`` saves the file to a specified directory on the server.
 
 Example: Image Uploads
------------------------------
+----------------------
 
-To allow users to upload an image along with their movie review, we need to modify 
-both the form and the Flask code.
+To allow users to upload an image along with their movie review, we need to modify both
+the form and the Flask code.
 
 Project structure:
 
 .. code-block:: text
 
-   ├── app.py
-   ├── movies.db
-   └── templates/
-       └── index.html
-       └── new_review.html
-   └── uploads/
-
-
+    ├── app.py
+    ├── movies.db
+    └── templates/
+        └── index.html
+        └── new_review.html
+    └── uploads/
 
 .. tab-set::
 
@@ -325,7 +320,7 @@ Project structure:
                 review_text = request.form['review_text']
 
                 review_date = datetime.now().strftime("%Y-%m-%d")
-                
+
                 # Handle file upload
                 if 'image' in request.files:
                     image = request.files['image']
@@ -372,41 +367,40 @@ Project structure:
                     <form action="/add_review" method="POST" enctype="multipart/form-data">
                         <label for="title">Movie Title:</label>
                         <input type="text" id="title" name="title"><br><br>
-                        
+
                         <label for="release_year">Release Year:</label>
                         <input type="number" id="release_year" name="release_year"><br><br>
-                        
+
                         <label for="genre">Genre:</label>
                         <input type="text" id="genre" name="genre"><br><br>
-                        
+
                         <label for="review_score">Review Score (1-10):</label>
                         <input type="number" id="review_score" name="review_score"><br><br>
-                        
+
                         <label for="review_text">Review Text:</label><br>
                         <textarea id="review_text" name="review_text"></textarea><br><br>
-                        
+
                         <!-- New file upload field -->
                         <label for="image">Upload Poster Image:</label>
                         <input type="file" id="image" name="image"><br><br>
-                        
+
                         <input type="submit" value="Submit Review">
                     </form>
                 </body>
             </html>
 
-
 Explanation
 
-*   The form now includes a file input field for uploading a movie poster.
-*   The :python:`add_review()` function checks for the image, saves it in the 
-    ``uploads/`` folder, and stores the file path in the review data.
+- The form now includes a file input field for uploading a movie poster.
+- The ``add_review()`` function checks for the image, saves it in the ``uploads/``
+  folder, and stores the file path in the review data.
 
-To store the image path in the database, the ``reviews`` table should have an additional 
+To store the image path in the database, the ``reviews`` table should have an additional
 column, which can be achieved with the following SQL:
 
 .. code-block::
 
     ALTER TABLE reviews ADD COLUMN poster_image_path TEXT;
 
-You can download a version of the database with this change  
-:download:`movies.db <db/movies_wimg.db>`.
+You can download a version of the database with this change :download:`movies.db
+<db/movies_wimg.db>`.

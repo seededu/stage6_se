@@ -1,17 +1,16 @@
-.. role:: js(code)
-   :language: javascript
-
 Strings
-===========
+=======
 
-Strings are one of the most common data types in JavaScript, used to store and manipulate text. This page will
-introduce you to defining strings, combining them, working with quotes, using common string methods, and formatting
-text with template literals.
+Strings are one of the most common data types in JavaScript, used to store and
+manipulate text. This page will introduce you to defining strings, combining them,
+working with quotes, using common string methods, and formatting text with template
+literals.
 
 Defining Strings
----------------------
+----------------
 
-A string is a sequence of characters, such as letters, numbers, symbols, or spaces, enclosed in quotes.
+A string is a sequence of characters, such as letters, numbers, symbols, or spaces,
+enclosed in quotes.
 
 JavaScript allows you to define strings using either single or double quotes.
 
@@ -27,10 +26,11 @@ JavaScript allows you to define strings using either single or double quotes.
 
     let doubleQuoteString = "Hello, world!";
 
-Both single and double quotes work the same way, but you should be consistent in your code.
+Both single and double quotes work the same way, but you should be consistent in your
+code.
 
 String Concatenation
-----------------------
+--------------------
 
 You can combine (or concatenate) strings using the + operator.
 
@@ -42,9 +42,10 @@ You can combine (or concatenate) strings using the + operator.
     console.log(fullName); // Prints: Alice Johnson
 
 Nesting Quotes
-----------------------
+--------------
 
-Sometimes, you need to include quotes inside a string. Use the opposite type of quote for the string and the nested quotes.
+Sometimes, you need to include quotes inside a string. Use the opposite type of quote
+for the string and the nested quotes.
 
 Example:
 
@@ -53,7 +54,8 @@ Example:
     let sentence = "She said, 'JavaScript is fun!'";
     console.log(sentence); // Prints: She said, 'JavaScript is fun!'
 
-If you must use the same type of quote, use a backslash (``\``) to escape the nested quotes:
+If you must use the same type of quote, use a backslash (``\``) to escape the nested
+quotes:
 
 .. code-block:: javascript
 
@@ -61,11 +63,11 @@ If you must use the same type of quote, use a backslash (``\``) to escape the ne
     let escapedSentence = 'It\'s a great day for coding.';
     console.log(escapedSentence); // Prints: It's a great day for coding.
 
-
 Useful String Methods
-----------------------
+---------------------
 
-JavaScript strings come with built-in methods for performing common tasks. Here are some examples:
+JavaScript strings come with built-in methods for performing common tasks. Here are some
+examples:
 
 **Finding the Length of a String**
 
@@ -111,12 +113,11 @@ You can check if a string contains another string using includes().
     let phrase = "I love programming!";
     console.log(phrase.includes("love")); // Prints: true
 
-
 Template Literals
-----------------------
+-----------------
 
-Template literals make working with strings easier and more powerful. They use backticks (`````)
-instead of quotes.
+Template literals make working with strings easier and more powerful. They use backticks
+(`````) instead of quotes.
 
 **Multiline Strings**
 
@@ -126,7 +127,6 @@ instead of quotes.
     a string
     on multiple lines.`;
     console.log(multiline);
-
 
 **Embedding Expressions**
 
@@ -139,7 +139,6 @@ You can insert variables or expressions directly into a string using ${}.
     let message = `My name is ${person} and I am ${age} years old.`;
     console.log(message); // Prints: My name is Alice and I am 16 years old.
 
-
 **Including Quotes Without Escaping**
 
 .. code-block:: javascript
@@ -148,10 +147,10 @@ You can insert variables or expressions directly into a string using ${}.
     console.log(quote);
 
 Formatting Numbers
-----------------------
+------------------
 
-When working with numbers, you can format them to a specific number of decimal places using the :js:`toFixed()` method.
-The result is always returned as a string.
+When working with numbers, you can format them to a specific number of decimal places
+using the ``toFixed()`` method. The result is always returned as a string.
 
 Example:
 
@@ -160,4 +159,3 @@ Example:
     let price = 19.99;
     let formattedPrice = price.toFixed(1); // Keeps 1 decimal place
     console.log(formattedPrice); // Prints: 20.0
-

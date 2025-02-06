@@ -1,17 +1,19 @@
-.. role:: python(code)
-   :language: python
-
 Code Testing
-====================
+============
 
 Path Coverage
 -------------
 
-It's important that you're able to test your code to verify that it will behave the way you intend. An common way to test code is to come up with **input-output** pairs and check whether your program produces the correct output. We also want to be selective when choosing our input output pairs so that we get **path coverage**, i.e. our input-output pairs test every possible path in our code.
+It's important that you're able to test your code to verify that it will behave the way
+you intend. An common way to test code is to come up with **input-output** pairs and
+check whether your program produces the correct output. We also want to be selective
+when choosing our input output pairs so that we get **path coverage**, i.e. our
+input-output pairs test every possible path in our code.
 
-**Example:**  The purpose of this program is to identify whether x is positive, negative or 0.
+**Example:** The purpose of this program is to identify whether x is positive, negative
+or 0.
 
-.. code-block:: 
+.. code-block::
 
     x = int(input('x: '))
 
@@ -22,41 +24,41 @@ It's important that you're able to test your code to verify that it will behave 
     else:
         print('x is 0!')
 
-This program has 3 possible paths. 
-
+This program has 3 possible paths.
 
 .. image:: img/5_example1.png
-  :width: 650
-  :align: center
+    :width: 650
+    :align: center
 
+So examples of input-output pairs we can use to test this program so that we get path
+coverage are:
 
-So examples of input-output pairs we can use to test this program so that we get path coverage are:
+.. list-table::
+    :widths: 30 70
+    :header-rows: 1
 
-.. list-table:: 
-   :widths: 30 70 
-   :header-rows: 1
+    - - Input
+      - Expected output
+    - - -3
+      - x is a negative number
+    - - 0
+      - x is 0!
+    - - 2
+      - x is a positive number
 
-   * - Input
-     - Expected output
-   * - -3
-     - x is a negative number
-   * - 0
-     - x is 0!
-   * - 2
-     - x is a positive number
-
-Note that the second column is our *expected output*. We should run our code to determine whether the code output actually matches our expected output.
+Note that the second column is our *expected output*. We should run our code to
+determine whether the code output actually matches our expected output.
 
 Boundary Values
-----------------
+---------------
 
-Another thing we often want to test are boundary values. These are where it causes our program to change. When we have a condition, e.g. ``x < 3``, we should check what happens when ``x`` is:
+Another thing we often want to test are boundary values. These are where it causes our
+program to change. When we have a condition, e.g. ``x < 3``, we should check what
+happens when ``x`` is:
 
-* less than 3
-
-* exactly 3
-
-* greater than 3
+- less than 3
+- exactly 3
+- greater than 3
 
 And ensure the results are what we expect.
 
@@ -64,37 +66,47 @@ And ensure the results are what we expect.
 
 .. code-block:: python
 
-    current_speed = int(input('What is your current speed? '))
+    current_speed = int(input("What is your current speed? "))
 
     speed_limit = 40
 
     if current_speed > speed_limit:
-        print('You are speeding! {}km/h is above the speed limit of {}km/h. Slow down!'.format(current_speed, speed_limit))
+        print(
+            "You are speeding! {}km/h is above the speed limit of {}km/h. Slow down!".format(
+                current_speed, speed_limit
+            )
+        )
     else:
-        print('You are travelling within the speed limit.')
+        print("You are travelling within the speed limit.")
 
-In this program we want to test what happens when ``current_speed`` is near ``speed_limit``.
+In this program we want to test what happens when ``current_speed`` is near
+``speed_limit``.
 
-* If we test 41 (just above 40) our program outputs *You are speeding! 41km/h is above the speed limit of 40km/h. Slow down!*
-
-* At exactly 40 our program outputs *You are travelling within the speed limit.*
-
-* And at 39 (just below 40) our program again outputs *You are travelling within the speed limit.*
-
+- If we test 41 (just above 40) our program outputs *You are speeding! 41km/h is above
+  the speed limit of 40km/h. Slow down!*
+- At exactly 40 our program outputs *You are travelling within the speed limit.*
+- And at 39 (just below 40) our program again outputs *You are travelling within the
+  speed limit.*
 
 Faulty and Abnormal Data
 ------------------------
 
-Faulty and abnormal data is when the values fall outside the expectations of the system. Whether your not these inputs should be invalid or not will depend on the program **specifications**, which describes what the code is meant to do (or not meant to do). The program should always be able to handle all valid inputs, but what happens when invalid data is entered is often up to the programmer to decide.
+Faulty and abnormal data is when the values fall outside the expectations of the system.
+Whether your not these inputs should be invalid or not will depend on the program
+**specifications**, which describes what the code is meant to do (or not meant to do).
+The program should always be able to handle all valid inputs, but what happens when
+invalid data is entered is often up to the programmer to decide.
 
 **Example**
 
-If we look at the same program as in the previous example, *invalid*, i.e. *faulty*/*abnormal* input data would include anything that cannot be converted to an integer. This is because in the first line of the program the user input is converted to an integer. 
+If we look at the same program as in the previous example, *invalid*, i.e.
+*faulty*/*abnormal* input data would include anything that cannot be converted to an
+integer. This is because in the first line of the program the user input is converted to
+an integer.
 
 .. code-block:: python
 
-    current_speed = int(input('What is your current speed? '))
-
+    current_speed = int(input("What is your current speed? "))
 
 Examples of faulty and abnormal data would include ``hello`` and ``3.5``.
 
@@ -107,17 +119,17 @@ Examples of faulty and abnormal data would include ``hello`` and ``3.5``.
 
     Below is table of input-output pairs.
 
-    .. list-table:: 
-        :widths: 10 30 60 
+    .. list-table::
+        :widths: 10 30 60
         :header-rows: 1
 
-        * - 
+        * -
           - Input
           - Expected output
         * - A
           - rainy
           - Take an umbrealla!
-            
+
             Don't forget to take your phone!
         * - B
           - sunny
@@ -127,14 +139,14 @@ Examples of faulty and abnormal data would include ``hello`` and ``3.5``.
         * - C
           - cold
           - Take a jumper
-            
+
             Don't forget to take your phone!
         * - D
           - windy
           - Don't forgt to take your phone!
 
     Which input-output pairs does the following code fail on?
-    
+
     .. code-block:: python
 
         weather = input("What's the weather like today? ")
@@ -149,7 +161,7 @@ Examples of faulty and abnormal data would include ``hello`` and ``3.5``.
 
         if weather == 'cold':
             print('Take a jumper!')
-    
+
     *Select all that apply*.
 
     .. dropdown:: Solution
@@ -246,7 +258,7 @@ Examples of faulty and abnormal data would include ``hello`` and ``3.5``.
     Which of the following additional input pairs do we require to ensure our test cases cover all possible paths? *Select all that apply*.
 
     A. Monday, True
-    
+
     B. Friday, False
 
     C. Sunday, False
@@ -294,7 +306,7 @@ Examples of faulty and abnormal data would include ``hello`` and ``3.5``.
 
         x: 3
         x is positive
-    
+
     **Example 2**
 
     .. code-block:: markdown

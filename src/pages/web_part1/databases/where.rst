@@ -1,17 +1,14 @@
-.. role:: sql(code)
-   :language: sql
-
 Where
-==============================
+=====
 
-Sometimes we only want to select rows from our dataset which meet a particular 
-criteria. For example, we might only want to look at customers with a postcodes greater 
-than 8000, or were an item costs more than $2.00.
+Sometimes we only want to select rows from our dataset which meet a particular criteria.
+For example, we might only want to look at customers with a postcodes greater than 8000,
+or were an item costs more than $2.00.
 
-To select rows based on a particular criteria, we use the :sql:`WHERE`` clause. The 
-:sql:`WHERE`` clause comes **after** the :sql:`SELECT` and :sql:`FROM` statements.
+To select rows based on a particular criteria, we use the ``WHERE``` clause. The
+``WHERE``` clause comes **after** the ``SELECT`` and ``FROM`` statements.
 
-The structure of the :sql:`WHERE` clause is as follows:
+The structure of the ``WHERE`` clause is as follows:
 
 .. code-block:: sql
 
@@ -19,16 +16,15 @@ The structure of the :sql:`WHERE` clause is as follows:
 
 In SQL we can compare values using the following operators:
 
-*   ``<`` less than
-*   ``>`` greater than
-*   ``<=`` less than or equal to
-*   ``>=`` greater than or equal to
-*   ``=`` check values are equal
-*   ``!=`` check values are not equal
-
+- ``<`` less than
+- ``>`` greater than
+- ``<=`` less than or equal to
+- ``>=`` greater than or equal to
+- ``=`` check values are equal
+- ``!=`` check values are not equal
 
 .. note::
-    
+
     Note that we use a single = sign for comparisons in SQL.
 
 Here is an example.
@@ -41,11 +37,11 @@ Here is an example.
 
 .. note::
 
-    Note! You might want to click the square button on the right of the code toolbar 
-    to make the example full screen before you run it.
+    Note! You might want to click the square button on the right of the code toolbar to
+    make the example full screen before you run it.
 
-We can also construct :sql:`WHERE` statements using multiple conditions using the 
-keywords :sql:`AND` and :sql:`OR` separating each criterion.
+We can also construct ``WHERE`` statements using multiple conditions using the keywords
+``AND`` and ``OR`` separating each criterion.
 
 .. code-block:: sql
 
