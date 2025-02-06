@@ -13,6 +13,8 @@ author = 'Alison Wong, Stephen Tierney'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
+suppress_warnings = ['misc.highlighting_failure']
+
 extensions = [
     'sphinx_exec_code', 'sphinx_design', 'sphinx_copybutton'
 ]

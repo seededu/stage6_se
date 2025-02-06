@@ -4,10 +4,11 @@ Representing Numbers in Binary
 Decimal (base 10)
 -----------------
 
-When dealing with number day-to-day we use the decimal system. This uses the digits 0-9.
-How does this work?
+When dealing with number day-to-day we use the decimal system. This uses the
+digits 0-9. How does this work?
 
-Let's take the number **34 078** as an example and fill it into the table below.
+Let's take the number **34 078** as an example and fill it into the table
+below.
 
 .. list-table::
     :header-rows: 1
@@ -30,26 +31,27 @@ Let's take the number **34 078** as an example and fill it into the table below.
 
 The way we interpret the number 34 078 is that it is
 
-:math:`(\mathbf{3} \times 10^4) + (\mathbf{4} \times 10^3) + (\mathbf{0} \times 10^2) +
-(\mathbf{7} \times 10^1) + (\mathbf{8} \times 10^0) = \mathbf{34\,078}`
+:math:`(\mathbf{3} \times 10^4) + (\mathbf{4} \times 10^3) + (\mathbf{0} \times
+10^2) + (\mathbf{7} \times 10^1) + (\mathbf{8} \times 10^0) = \mathbf{34\,078}`
 
 or alternatively
 
-:math:`(\mathbf{3} \times 10\,000) + (\mathbf{4} \times 1\,000) + (\mathbf{0} \times
-100) + (\mathbf{7} \times 10) + (\mathbf{8} \times 1) = \mathbf{34\,078}`
+:math:`(\mathbf{3} \times 10\,000) + (\mathbf{4} \times 1\,000) + (\mathbf{0}
+\times 100) + (\mathbf{7} \times 10) + (\mathbf{8} \times 1) =
+\mathbf{34\,078}`
 
 Binary (base 2)
 ---------------
 
-When computers store information they do so using the binary system. Information is
-transferred using binary digits, or bits. Typically we think of computer storage in
-terms of bytes, where a byte is equal to 8 bits.
+When computers store information they do so using the binary system.
+Information is transferred using binary digits, or bits. Typically we think of
+computer storage in terms of bytes, where a byte is equal to 8 bits.
 
-Bits are mainly represented using digits 1 and 0, which can also represent values such
-as True/False and On/Off.
+Bits are mainly represented using digits 1 and 0, which can also represent
+values such as True/False and On/Off.
 
-The binary system differs from the decimal system in that it operates in based 2 rather
-than base 10.
+The binary system differs from the decimal system in that it operates in based
+2 rather than base 10.
 
 Binary to Decimal
 ~~~~~~~~~~~~~~~~~
@@ -79,8 +81,8 @@ Let's take the number 10101 as an example and fill it into the table below.
 
 The way we interpret the binary number 10101 is
 
-:math:`(\mathbf{1} \times 2^4) + (\mathbf{0} \times 2^3) + (\mathbf{1} \times 2^2) +
-(\mathbf{0} \times 2^1) + (\mathbf{1} \times 2^0) = \mathbf{21}`
+:math:`(\mathbf{1} \times 2^4) + (\mathbf{0} \times 2^3) + (\mathbf{1} \times
+2^2) + (\mathbf{0} \times 2^1) + (\mathbf{1} \times 2^0) = \mathbf{21}`
 
 or alternatively
 
@@ -123,21 +125,22 @@ Let's take the number 10011101, and again fill it out in a table.
 
 The way we interpret the binary number 10011101 is
 
-:math:`(\mathbf{1} \times 2^7) + (\mathbf{0} \times 2^6) + (\mathbf{0} \times 2^5) +
-(\mathbf{1} \times 2^4) + (\mathbf{1} \times 2^3) + (\mathbf{1} \times 2^2) +
-(\mathbf{0} \times 2^1) + (\mathbf{1} \times 2^0) = \mathbf{157}`
+:math:`(\mathbf{1} \times 2^7) + (\mathbf{0} \times 2^6) + (\mathbf{0} \times
+2^5) + (\mathbf{1} \times 2^4) + (\mathbf{1} \times 2^3) + (\mathbf{1} \times
+2^2) + (\mathbf{0} \times 2^1) + (\mathbf{1} \times 2^0) = \mathbf{157}`
 
 or alternatively
 
-:math:`(\mathbf{1} \times 128) + (\mathbf{0} \times 64) + (\mathbf{0} \times 32) +
-(\mathbf{1} \times 16) + (\mathbf{1} \times 8) + (\mathbf{1} \times 4) + (\mathbf{0}
-\times 2) + (\mathbf{1} \times 1) = \mathbf{157}`
+:math:`(\mathbf{1} \times 128) + (\mathbf{0} \times 64) + (\mathbf{0} \times
+32) + (\mathbf{1} \times 16) + (\mathbf{1} \times 8) + (\mathbf{1} \times 4) +
+(\mathbf{0} \times 2) + (\mathbf{1} \times 1) = \mathbf{157}`
 
 Decimal to Binary
 ~~~~~~~~~~~~~~~~~
 
-Converting from the decimal system is a bit more challenging. Below is the algorithm
-used to convert a decimal number :math:`n` to its binary representation.
+Converting from the decimal system is a bit more challenging. Below is the
+algorithm used to convert a decimal number :math:`n` to its binary
+representation.
 
 .. code-block:: text
 
@@ -161,32 +164,32 @@ used to convert a decimal number :math:`n` to its binary representation.
 
 **Example**
 
-Suppose :math:`n = \textcolor{blue}{21}`. The highest value of :math:`x` for which
-:math:`2^x <= 21` is :math:`x = 4`. :math:`2^4 = 16`. :math:`16 <= 21`.
+Suppose :math:`n = \textcolor{blue}{21}`. The highest value of :math:`x` for
+which :math:`2^x <= 21` is :math:`x = 4`. :math:`2^4 = 16`. :math:`16 <= 21`.
 
 Next we'll iterate through values :math:`x = 4, 3, 2, 1, 0`.
 
-:math:`2^4 = \textcolor{red}{16}`. :math:`16 <= \textcolor{blue}{21}` is **True**, so
-the next digit in :math:`b` is 1 and update :math:`n` to be :math:`\textcolor{blue}{21}
-- \textcolor{red}{16} = \textcolor{blue}{5}`.
+:math:`2^4 = \textcolor{red}{16}`. :math:`16 <= \textcolor{blue}{21}` is
+**True**, so the next digit in :math:`b` is 1 and update :math:`n` to be
+:math:`\textcolor{blue}{21} - \textcolor{red}{16} = \textcolor{blue}{5}`.
 
-:math:`2^3 = \textcolor{red}{8}`. :math:`8 <= \textcolor{blue}{5}` is **False**, so the
-next digit in :math:`b` is 0.
+:math:`2^3 = \textcolor{red}{8}`. :math:`8 <= \textcolor{blue}{5}` is
+**False**, so the next digit in :math:`b` is 0.
 
-:math:`2^2 = \textcolor{red}{4}`. :math:`4 <=\textcolor{blue}{5}` is **True**, so the
-next digit in :math:`b` is 1 and update :math:`n` to be :math:`\textcolor{blue}{5} -
-\textcolor{red}{4} = \textcolor{blue}{1}`.
+:math:`2^2 = \textcolor{red}{4}`. :math:`4 <=\textcolor{blue}{5}` is **True**,
+so the next digit in :math:`b` is 1 and update :math:`n` to be
+:math:`\textcolor{blue}{5} - \textcolor{red}{4} = \textcolor{blue}{1}`.
 
-:math:`2^1 = \textcolor{red}{2}`. :math:`2 <= \textcolor{blue}{1}` is **False**, so the
-next digit in :math:`b` is 0.
+:math:`2^1 = \textcolor{red}{2}`. :math:`2 <= \textcolor{blue}{1}` is
+**False**, so the next digit in :math:`b` is 0.
 
-:math:`2^0 = \textcolor{red}{1}`. :math:`1 <= \textcolor{blue}{1}` is **True**, so the
-next digit in $b$ is 1 and update :math:`n` to be :math:`\textcolor{blue}{1} -
-\textcolor{red}{1} = \textcolor{blue}{0}`.
+:math:`2^0 = \textcolor{red}{1}`. :math:`1 <= \textcolor{blue}{1}` is **True**,
+so the next digit in $b$ is 1 and update :math:`n` to be
+:math:`\textcolor{blue}{1} - \textcolor{red}{1} = \textcolor{blue}{0}`.
 
-Hence the binary representation of 21 is 10101. Another way to think about it is that
-you want to put 1's and 0's in the empty boxes such that if there is a 1 in the box, you
-add the values in the boxes above to get to 21.
+Hence the binary representation of 21 is 10101. Another way to think about it
+is that you want to put 1's and 0's in the empty boxes such that if there is a
+1 in the box, you add the values in the boxes above to get to 21.
 
 .. list-table::
     :header-rows: 1
@@ -230,39 +233,40 @@ i.e.
 
 **Example**
 
-Suppose :math:`n = \textcolor{blue}{157}`. The highest value of :math:`x` for which
-:math:`2^x <= 157` is :math:`x = 7`. :math:`2^7 = 128`. :math:`128 <= 157`.
+Suppose :math:`n = \textcolor{blue}{157}`. The highest value of :math:`x` for
+which :math:`2^x <= 157` is :math:`x = 7`. :math:`2^7 = 128`. :math:`128 <=
+157`.
 
 Next we'll iterate through values :math:`x = 7, 6, 5, 4, 3, 2, 1, 0`.
 
-:math:`2^7 = \textcolor{red}{128}`. :math:`128 <= \textcolor{blue}{157}` is **True**, so
-the next digit in $b$ is 1 and update $n$ to be :math:`\textcolor{blue}{157} -
-\textcolor{red}{128} = \textcolor{blue}{29}`.
+:math:`2^7 = \textcolor{red}{128}`. :math:`128 <= \textcolor{blue}{157}` is
+**True**, so the next digit in $b$ is 1 and update $n$ to be
+:math:`\textcolor{blue}{157} - \textcolor{red}{128} = \textcolor{blue}{29}`.
 
-:math:`2^6 = \textcolor{red}{64}`. :math:`64 <= \textcolor{blue}{29}` is **False**, so
-the next digit in :math:`b` is 0.
+:math:`2^6 = \textcolor{red}{64}`. :math:`64 <= \textcolor{blue}{29}` is
+**False**, so the next digit in :math:`b` is 0.
 
-:math:`2^5 = \textcolor{red}{32}`. :math:`32 <= \textcolor{blue}{29}` is **False**, so
-the next digit in :math:`b` is 0.
+:math:`2^5 = \textcolor{red}{32}`. :math:`32 <= \textcolor{blue}{29}` is
+**False**, so the next digit in :math:`b` is 0.
 
-:math:`2^4 = \textcolor{red}{16}`. :math:`16 <= \textcolor{blue}{29}` is **True**, so
-the next digit in :math:`b` is 1 and update :math:`n` to be :math:`\textcolor{blue}{29}
-- \textcolor{red}{16} = \textcolor{blue}{13}`.
+:math:`2^4 = \textcolor{red}{16}`. :math:`16 <= \textcolor{blue}{29}` is
+**True**, so the next digit in :math:`b` is 1 and update :math:`n` to be
+:math:`\textcolor{blue}{29} - \textcolor{red}{16} = \textcolor{blue}{13}`.
 
-:math:`2^3 = \textcolor{red}{8}`. :math:`8 <= \textcolor{blue}{13}` is **True**, so the
-next digit in :math:`b` is 1 and update $n$ to be :math:`\textcolor{blue}{13} -
-\textcolor{red}{8} = \textcolor{blue}{5}`.
+:math:`2^3 = \textcolor{red}{8}`. :math:`8 <= \textcolor{blue}{13}` is
+**True**, so the next digit in :math:`b` is 1 and update $n$ to be
+:math:`\textcolor{blue}{13} - \textcolor{red}{8} = \textcolor{blue}{5}`.
 
-:math:`2^2 = \textcolor{red}{4}`. :math:`4 <= \textcolor{blue}{5}` is **True**, so the
-next digit in :math:`b` is 1 and update $n$ to be :math:`\textcolor{blue}{5} -
-\textcolor{red}{4} = \textcolor{blue}{1}`.
+:math:`2^2 = \textcolor{red}{4}`. :math:`4 <= \textcolor{blue}{5}` is **True**,
+so the next digit in :math:`b` is 1 and update $n$ to be
+:math:`\textcolor{blue}{5} - \textcolor{red}{4} = \textcolor{blue}{1}`.
 
-:math:`2^1 = \textcolor{red}{2}`. :math:`2 <= \textcolor{blue}{1}` is **False**, so the
-next digit in :math:`b` is 0.
+:math:`2^1 = \textcolor{red}{2}`. :math:`2 <= \textcolor{blue}{1}` is
+**False**, so the next digit in :math:`b` is 0.
 
-:math:`2^0 = \textcolor{red}{1}`. :math:`1 <= \textcolor{blue}{1}` is **True**, so the
-next digit in :math:`b` is 1 and update :math:`n` to be :math:`\textcolor{blue}{1} -
-\textcolor{red}{1} = \textcolor{blue}{0}`.
+:math:`2^0 = \textcolor{red}{1}`. :math:`1 <= \textcolor{blue}{1}` is **True**,
+so the next digit in :math:`b` is 1 and update :math:`n` to be
+:math:`\textcolor{blue}{1} - \textcolor{red}{1} = \textcolor{blue}{0}`.
 
 Hence the binary representation of 157 is 100110101.
 
@@ -296,8 +300,8 @@ Hence the binary representation of 157 is 100110101.
 
 .. note::
 
-    There are only 10 types of people in this world. Those who understand binary and
-    those who don't!
+    There are only 10 types of people in this world. Those who understand
+    binary and those who don't!
 
 .. dropdown:: Question 1
     :open:

@@ -1,25 +1,25 @@
 Window, Document and Elements
 =============================
 
-The DOM specifies two key objects available in your JavaScript to represent the content
-on the page. They are the:
+The DOM specifies two key objects available in your JavaScript to represent the
+content on the page. They are the:
 
 - ``window``
 - ``document``
 
-These objects are globally available to any JavaScript on a page. These objects are
-managed by the browser's JavaScript runtime.
+These objects are globally available to any JavaScript on a page. These objects
+are managed by the browser's JavaScript runtime.
 
-Though these objects you can access each ``element`` on the page. Let's take a look at
-all three objects!
+Though these objects you can access each ``element`` on the page. Let's take a
+look at all three objects!
 
 Window Object
 -------------
 
-The ``window`` object is the global object in the browser that represents the browser
-window or tab where your webpage is displayed. It provides access to the browser's
-features and environment, as well as being the top-level object that contains the
-``document`` object.
+The ``window`` object is the global object in the browser that represents the
+browser window or tab where your webpage is displayed. It provides access to
+the browser's features and environment, as well as being the top-level object
+that contains the ``document`` object.
 
 The Window object provides a wide range of properties and methods to:
 
@@ -30,8 +30,8 @@ The Window object provides a wide range of properties and methods to:
 
 1. ``location``
 
-The ``location`` object provides information about the current URL and allows you to
-redirect or reload the page.
+The ``location`` object provides information about the current URL and allows
+you to redirect or reload the page.
 
 .. code-block::
 
@@ -42,8 +42,8 @@ redirect or reload the page.
 
 2. ``navigator``
 
-The ``navigator`` object provides information about the user’s browser and operating
-system.
+The ``navigator`` object provides information about the user’s browser and
+operating system.
 
 .. code-block::
 
@@ -60,9 +60,9 @@ Get the width and height of the browser window’s viewport.
 Document Object
 ---------------
 
-The ``document`` object is the entry point to the page contents. It represents the
-entire HTML document and provides methods and properties to interact with the webpage.
-Like the ``window`` object it is globally available.
+The ``document`` object is the entry point to the page contents. It represents
+the entire HTML document and provides methods and properties to interact with
+the webpage. Like the ``window`` object it is globally available.
 
 From the ``document`` object you can:
 
@@ -93,13 +93,13 @@ From the ``document`` object you can:
 Elements
 --------
 
-The content of the page is made of individual ``element`` objects, arranged in a tree
-structure. Each page element has its own type but inherits a set of common properties
-and methods.
+The content of the page is made of individual ``element`` objects, arranged in
+a tree structure. Each page element has its own type but inherits a set of
+common properties and methods.
 
-For example a ``<div>`` element is an instance of ``HTMLDivElement``, which inherits
-from ``HTMLElement``, which in turn inherits from ``Element``. The chain of inheritance
-looks like this:
+For example a ``<div>`` element is an instance of ``HTMLDivElement``, which
+inherits from ``HTMLElement``, which in turn inherits from ``Element``. The
+chain of inheritance looks like this:
 
 .. code-block::
 
@@ -107,8 +107,8 @@ looks like this:
 
 **Examples**
 
-The Element class provides a range of common properties all elements inherit. These
-include:
+The Element class provides a range of common properties all elements inherit.
+These include:
 
 1. ``id``: Gets or sets the unique id of the element.
 

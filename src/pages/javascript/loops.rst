@@ -1,9 +1,10 @@
 Loops
 =====
 
-Loops allow you to repeat a block of code multiple times. They are especially useful
-when working with arrays, processing data, or performing repetitive tasks. JavaScript
-offers several types of loops, each suited to different scenarios.
+Loops allow you to repeat a block of code multiple times. They are especially
+useful when working with arrays, processing data, or performing repetitive
+tasks. JavaScript offers several types of loops, each suited to different
+scenarios.
 
 for Loop
 --------
@@ -26,9 +27,9 @@ Explanation:
 
 .. note::
 
-    The increment/decrement expression of a ``for`` loop often uses in place increment
-    ``++`` or decrement ``--`` operators. These add or subtract ``1`` from the value of
-    the operand, e.g. ``i``.
+    The increment/decrement expression of a ``for`` loop often uses in place
+    increment ``++`` or decrement ``--`` operators. These add or subtract ``1``
+    from the value of the operand, e.g. ``i``.
 
 **Examples**
 
@@ -82,8 +83,8 @@ Count backward from 10 to 1:
 while Loop
 ----------
 
-The while loop repeats a block of code as long as a condition is true. Use it when the
-number of iterations isn’t fixed or known beforehand.
+The while loop repeats a block of code as long as a condition is true. Use it
+when the number of iterations isn’t fixed or known beforehand.
 
 Syntax:
 
@@ -128,9 +129,9 @@ Stop when a random number exceeds 0.8
 Looping Over Objects
 --------------------
 
-The ``for...of`` loop is designed for iterating over iterable objects, such as arrays,
-strings, or sets. This style of loop makes your life easier because it handles stepping
-through the elements for you.
+The ``for...of`` loop is designed for iterating over iterable objects, such as
+arrays, strings, or sets. This style of loop makes your life easier because it
+handles stepping through the elements for you.
 
 Syntax:
 

@@ -1,7 +1,8 @@
 Lists
 =====
 
-In Python, a list allows us to store a collection of items in a particular order.
+In Python, a list allows us to store a collection of items in a particular
+order.
 
 Here is an example of a to do list that you might have.
 

@@ -1,12 +1,12 @@
 Where
 =====
 
-Sometimes we only want to select rows from our dataset which meet a particular criteria.
-For example, we might only want to look at customers with a postcodes greater than 8000,
-or were an item costs more than $2.00.
+Sometimes we only want to select rows from our dataset which meet a particular
+criteria. For example, we might only want to look at customers with a postcodes
+greater than 8000, or were an item costs more than $2.00.
 
-To select rows based on a particular criteria, we use the ``WHERE``` clause. The
-``WHERE``` clause comes **after** the ``SELECT`` and ``FROM`` statements.
+To select rows based on a particular criteria, we use the ``WHERE``` clause.
+The ``WHERE``` clause comes **after** the ``SELECT`` and ``FROM`` statements.
 
 The structure of the ``WHERE`` clause is as follows:
 
@@ -37,11 +37,11 @@ Here is an example.
 
 .. note::
 
-    Note! You might want to click the square button on the right of the code toolbar to
-    make the example full screen before you run it.
+    Note! You might want to click the square button on the right of the code
+    toolbar to make the example full screen before you run it.
 
-We can also construct ``WHERE`` statements using multiple conditions using the keywords
-``AND`` and ``OR`` separating each criterion.
+We can also construct ``WHERE`` statements using multiple conditions using the
+keywords ``AND`` and ``OR`` separating each criterion.
 
 .. code-block:: sql
 

@@ -4,7 +4,8 @@ Variables
 Introduction
 ------------
 
-Python stores data in variables. To assign data to a variable we use the = sign.
+Python stores data in variables. To assign data to a variable we use the =
+sign.
 
 For example,
 
@@ -12,8 +13,8 @@ For example,
 
     x = "Alison"
 
-One way to think of variables is to treat them like a box. In the above example, we have
-a box named x, and the box is storing the value 10.
+One way to think of variables is to treat them like a box. In the above
+example, we have a box named x, and the box is storing the value 10.
 
 .. image:: img/variable_in.png
     :width: 400

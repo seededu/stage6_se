@@ -1,8 +1,8 @@
 List Joins
 ==========
 
-When we print lists they'll be displayed using square brackets with list items separated
-by commas.
+When we print lists they'll be displayed using square brackets with list items
+separated by commas.
 
 .. code-block:: python
 
@@ -10,14 +10,15 @@ by commas.
     print(todo)
 
 Sometimes we want to display list items differently. To help us, we can use the
-``.join()`` method. This allows us to join all the elements in a list together with a
-specified separator.
+``.join()`` method. This allows us to join all the elements in a list together
+with a specified separator.
 
 Here is the syntax for joining:
 
 ``separator.join(list)``
 
-Here is an example where we use the separator ``', '`` ( a comma followed by a space).
+Here is an example where we use the separator ``', '`` ( a comma followed by a
+space).
 
 .. exec_code::
     :language: python
@@ -25,8 +26,8 @@ Here is an example where we use the separator ``', '`` ( a comma followed by a s
     todo = ['Buy carrots', 'Wash car', 'Study for quiz']
     print(', '.join(todo))
 
-You'll notice that the separate only goes *between* list items and doesn't appear at the
-start or at the end.
+You'll notice that the separate only goes *between* list items and doesn't
+appear at the start or at the end.
 
 .. image:: img/joins.png
     :width: 400
@@ -40,8 +41,8 @@ Here is another example where use use ``'\n'`` (a newline character).
     todo = ['Buy carrots', 'Wash car', 'Study for quiz']
     print('\n'.join(todo))
 
-Note that ``.join()`` can only be used on lists containing strings. The following will
-result in an error since the list elements are *integers*.
+Note that ``.join()`` can only be used on lists containing strings. The
+following will result in an error since the list elements are *integers*.
 
 .. code-block:: python
 

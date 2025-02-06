@@ -10,8 +10,8 @@ For example, you might use string concatenation.
     age = "10"
     print("You are " + age + " years old")
 
-However, you will notice that age in the above example is a string. This won't work the
-same way if age is an integer.
+However, you will notice that age in the above example is a string. This won't
+work the same way if age is an integer.
 
 .. code-block:: python
 
@@ -32,15 +32,15 @@ We can format strings using ``.format()``. Here is an example:
 
 - ``.format()`` comes *after* the last ``'``.
 - The information we want to display goes into the ``()``.
-- ``{}`` is a placeholder. The information will be placed where the ``{}`` is in the
-  string.
+- ``{}`` is a placeholder. The information will be placed where the ``{}`` is
+  in the string.
 
 .. image:: img/format1.png
     :width: 370
     :align: center
 
-We can format multiple pieces of information! Each piece of information is separated by
-a ``,`` and unpacked into their respective ``{}`` placeholders.
+We can format multiple pieces of information! Each piece of information is
+separated by a ``,`` and unpacked into their respective ``{}`` placeholders.
 
 .. code-block:: python
 
@@ -49,18 +49,19 @@ a ``,`` and unpacked into their respective ``{}`` placeholders.
     print("Hi {}, you are {} years old".format(name, age))
 
 - Each piece of information we want to display goes into the ``()``.
-- ``{}`` are placeholders. The information will be placed in order where the ``{}``'s
-  are in the string.
+- ``{}`` are placeholders. The information will be placed in order where the
+  ``{}``'s are in the string.
 
 .. image:: img/format2.png
     :width: 500
     :align: center
 
-We are also able to format floats to a specific number of decimal places. Instead of
-using an empty ``{}`` placeholder, we can use ``{:.xf}`` to display the first x decimal
-places (you can remember ``.x`` means '*x digits after the decimal point*' and the ``f``
-means that you are formatting a *float*). For example, ``{:.2f}`` will display to 2
-decimal places and ``{:.5f}`` will display to the first 5 decimal places.
+We are also able to format floats to a specific number of decimal places.
+Instead of using an empty ``{}`` placeholder, we can use ``{:.xf}`` to display
+the first x decimal places (you can remember ``.x`` means '*x digits after the
+decimal point*' and the ``f`` means that you are formatting a *float*). For
+example, ``{:.2f}`` will display to 2 decimal places and ``{:.5f}`` will
+display to the first 5 decimal places.
 
 .. code-block:: python
 

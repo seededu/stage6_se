@@ -1,8 +1,8 @@
 Type Conversions
 ================
 
-It is often useful to change the type of your variables. This is called casting. Here
-are some useful functions:
+It is often useful to change the type of your variables. This is called
+casting. Here are some useful functions:
 
 - ``int()``: convert to integer
 - ``float()``: convert to float

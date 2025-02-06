@@ -1,9 +1,10 @@
 Random Floats and Using Probabilities
 =====================================
 
-Sometimes we want an event to occur with a specific probability. This can be achieved
-using ``random.random()``. This function produces a random float between 0 (inclusive)
-and 1 (not inclusive), i.e. we will get a value :math:`r` where :math:`0 \leq r < 1`.
+Sometimes we want an event to occur with a specific probability. This can be
+achieved using ``random.random()``. This function produces a random float
+between 0 (inclusive) and 1 (not inclusive), i.e. we will get a value :math:`r`
+where :math:`0 \leq r < 1`.
 
 .. code-block:: python
 
@@ -11,12 +12,12 @@ and 1 (not inclusive), i.e. we will get a value :math:`r` where :math:`0 \leq r 
 
     print(random.random())
 
-We can then check whether the random value is less than or equal to :math:`p`, the
-probability with which we want the event to occur.
+We can then check whether the random value is less than or equal to :math:`p`,
+the probability with which we want the event to occur.
 
-For example, we can write a program to generate weather conditions, which is common in a
-lot of games. Our simple program will say that it's sunny 80% of the time and say that
-it's rainy 20% of the time.
+For example, we can write a program to generate weather conditions, which is
+common in a lot of games. Our simple program will say that it's sunny 80% of
+the time and say that it's rainy 20% of the time.
 
 .. code-block:: python
 

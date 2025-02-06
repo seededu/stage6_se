@@ -1,8 +1,8 @@
 Time
 ====
 
-The ``time`` module is another useful module. It can be used to add pauses in a program,
-or it can be used to time how long it takes for a program to run.
+The ``time`` module is another useful module. It can be used to add pauses in a
+program, or it can be used to time how long it takes for a program to run.
 
 To use the time library, we import it with:
 
@@ -19,7 +19,8 @@ You can add a pause to a program using ``time.sleep()``
 
     time.sleep(seconds)
 
-Where *seconds specifies* how long the program will pause for. Here is an example.
+Where *seconds specifies* how long the program will pause for. Here is an
+example.
 
 .. code-block:: python
 
@@ -33,8 +34,8 @@ Where *seconds specifies* how long the program will pause for. Here is an exampl
 Timing a Program
 ----------------
 
-The function ``time.time()`` tells us the current unix time (time since 00:00:00 UTC on
-1 January 1970) in seconds.
+The function ``time.time()`` tells us the current unix time (time since
+00:00:00 UTC on 1 January 1970) in seconds.
 
 .. code-block:: python
 
@@ -42,9 +43,9 @@ The function ``time.time()`` tells us the current unix time (time since 00:00:00
 
     print(time.time())
 
-To measure the time it takes for our code to run, we check the time at the start of our
-code and then check the time at the end of our code. The difference in these times tells
-us how much time has elapsed in seconds.
+To measure the time it takes for our code to run, we check the time at the
+start of our code and then check the time at the end of our code. The
+difference in these times tells us how much time has elapsed in seconds.
 
 .. code-block:: python
 
@@ -56,9 +57,9 @@ us how much time has elapsed in seconds.
 
     print(end - start)
 
-Here it takes approximately ``5e-07`` seconds for the program to run. The ``e-07`` is
-scientific notation for :math:`\times10^{-7}`, which means it takes about half a
-microsecond for this program to run.
+Here it takes approximately ``5e-07`` seconds for the program to run. The
+``e-07`` is scientific notation for :math:`\times10^{-7}`, which means it takes
+about half a microsecond for this program to run.
 
 .. dropdown:: Question 1
     :open:

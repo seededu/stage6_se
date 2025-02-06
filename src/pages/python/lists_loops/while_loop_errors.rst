@@ -379,6 +379,7 @@ You can also get an **IndentationError** if your indentation isn't consistent. I
       the number of times specified. The program should finish by printing
 
    .. code-block:: text
+
       Baby shark!
    
    Here are some examples of how your program should run.

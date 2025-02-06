@@ -1,16 +1,17 @@
 Comments
 ========
 
-In the rest of this module we will use comments to help explain the code so let's look
-at how they work.
+In the rest of this module we will use comments to help explain the code so
+let's look at how they work.
 
-JavaScript supports two types of comments: single-line comments and multi-line comments.
-Comments allow you to add notes or explanations to your code that are ignored when the
-program runs.
+JavaScript supports two types of comments: single-line comments and multi-line
+comments. Comments allow you to add notes or explanations to your code that are
+ignored when the program runs.
 
 **Single-Line Comments**
 
-These comments start with ``//`` and anything after that point is treated as a comment.
+These comments start with ``//`` and anything after that point is treated as a
+comment.
 
 .. code-block:: javascript
 
@@ -19,8 +20,8 @@ These comments start with ``//`` and anything after that point is treated as a c
 
 **Multi-Line Comments**
 
-These comments start with ``/*`` and end with ``*/``. They can span as many lines as you
-like.
+These comments start with ``/*`` and end with ``*/``. They can span as many
+lines as you like.
 
 .. code-block:: javascript
 

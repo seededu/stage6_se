@@ -1,8 +1,9 @@
 Arithmetic
 ==========
 
-Arithmetic operations are the foundation of many programming tasks. They allow you to
-perform calculations, manipulate numbers, and build more complex logic in your programs.
+Arithmetic operations are the foundation of many programming tasks. They allow
+you to perform calculations, manipulate numbers, and build more complex logic
+in your programs.
 
 Operators
 ---------
@@ -48,8 +49,8 @@ Finds the remainder when one number is divided by another.
 
 **Power (Exponent)**
 
-The first number is the base and the second number is the power. For example you would
-read ``4**2`` as ‘4 to the power of 2’, i.e., which is 16.
+The first number is the base and the second number is the power. For example
+you would read ``4**2`` as ‘4 to the power of 2’, i.e., which is 16.
 
 .. code-block:: javascript
 
@@ -86,8 +87,8 @@ Special Cases
 Dividing by Zero
 ~~~~~~~~~~~~~~~~
 
-In JavaScript, dividing by zero results in Infinity or -Infinity for positive and
-negative numbers, respectively.
+In JavaScript, dividing by zero results in Infinity or -Infinity for positive
+and negative numbers, respectively.
 
 .. code-block:: javascript
 
@@ -97,8 +98,8 @@ negative numbers, respectively.
 Not a Number (NaN)
 ~~~~~~~~~~~~~~~~~~
 
-If an arithmetic operation involves invalid inputs (like dividing a string by a number),
-JavaScript returns NaN (Not a Number).
+If an arithmetic operation involves invalid inputs (like dividing a string by a
+number), JavaScript returns NaN (Not a Number).
 
 .. code-block:: javascript
 

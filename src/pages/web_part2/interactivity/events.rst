@@ -1,9 +1,9 @@
 Events
 ======
 
-Events are web developers can program responses to things like clicks, typing, or even
-the page loading. JavaScript lets you "listen" for these events and react to them with
-your code.
+Events are web developers can program responses to things like clicks, typing,
+or even the page loading. JavaScript lets you "listen" for these events and
+react to them with your code.
 
 An event is any interaction that happens in the browser, like:
 
@@ -12,18 +12,19 @@ An event is any interaction that happens in the browser, like:
 - Typing in an input box.
 - The page finishing loading.
 
-Programmers can create an "event handler" function that will run when an event fires.
+Programmers can create an "event handler" function that will run when an event
+fires.
 
 Event Properties
 ----------------
 
-The simplest way to listen for an event is by assigning a function to an element’s event
-property, such as ``onclick``.
+The simplest way to listen for an event is by assigning a function to an
+element’s event property, such as ``onclick``.
 
 **Example: Click Event**
 
-In this example the ``onclick`` property of the button is set to a function that
-triggers an alert.
+In this example the ``onclick`` property of the button is set to a function
+that triggers an alert.
 
 .. code-block:: html
 
@@ -40,8 +41,8 @@ triggers an alert.
 Event Listeners
 ---------------
 
-For more flexibility, use the ``addEventListener()`` method. It lets you add multiple
-event handlers to the same element.
+For more flexibility, use the ``addEventListener()`` method. It lets you add
+multiple event handlers to the same element.
 
 **Syntax**
 
@@ -144,8 +145,8 @@ Some events are specific to the browser or document lifecycle.
 
 **DOMContentLoaded**
 
-Fires when the HTML is fully loaded and parsed (but before external resources like
-images are loaded).
+Fires when the HTML is fully loaded and parsed (but before external resources
+like images are loaded).
 
 .. code-block:: javascript
 
@@ -155,7 +156,8 @@ images are loaded).
 
 **load**
 
-Fires when the entire page (including images, stylesheets, etc.) has finished loading.
+Fires when the entire page (including images, stylesheets, etc.) has finished
+loading.
 
 .. code-block:: javascript
 

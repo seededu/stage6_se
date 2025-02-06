@@ -18,7 +18,7 @@ case "$COMMAND" in
         ;;
     lint)
         echo "Linting..."
-        uv run doc8
+        uv run doc8 pages
         ;;
     *)
         echo "Unknown command: $COMMAND"

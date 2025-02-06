@@ -1,23 +1,24 @@
 Templating
 ==========
 
-As we've seen in previous examples, it's possible to return HTML code directly from a
-route function, but this approach quickly becomes difficult to manage. Imagine writing
-the same HTML structure repeatedly, or trying to change the layout of multiple pages -
-it can become a real headache! Instead of writing HTML inside our Python code, Flask
-allows us to use templates.
+As we've seen in previous examples, it's possible to return HTML code directly
+from a route function, but this approach quickly becomes difficult to manage.
+Imagine writing the same HTML structure repeatedly, or trying to change the
+layout of multiple pages - it can become a real headache! Instead of writing
+HTML inside our Python code, Flask allows us to use templates.
 
-Templates make it possible to separate the HTML structure from the logic in our Python
-code. Flask uses the `Jinja2 <https://jinja.palletsprojects.com/en/3.1.x/>`_ templating
-engine, which allows us to create dynamic HTML pages by inserting Python-like logic
-(loops, variables, etc.) into the HTML.
+Templates make it possible to separate the HTML structure from the logic in our
+Python code. Flask uses the `Jinja2
+<https://jinja.palletsprojects.com/en/3.1.x/>`_ templating engine, which allows
+us to create dynamic HTML pages by inserting Python-like logic (loops,
+variables, etc.) into the HTML.
 
 Jinja
 -----
 
-Jinja is a powerful templating language for Python. It allows you to embed variables,
-use control structures like loops, and create reusable layouts. Here's an example of how
-Jinja works:
+Jinja is a powerful templating language for Python. It allows you to embed
+variables, use control structures like loops, and create reusable layouts.
+Here's an example of how Jinja works:
 
 .. code-block:: python
     :linenos:
@@ -35,15 +36,15 @@ Jinja works:
 Explanation:
 
 - Line 4: A template is created with a placeholder for the ``name`` variable.
-- Line 7: The template is :term:`rendered<Render>` with the value ``"John"`` passed to
-  ``name``, and it outputs: ``"Hello, John!"``.
+- Line 7: The template is :term:`rendered<Render>` with the value ``"John"``
+  passed to ``name``, and it outputs: ``"Hello, John!"``.
 
 Jinja Syntax
 ------------
 
 The `Template Designer Documentation
-<https://jinja.palletsprojects.com/en/3.1.x/templates/>`_ provided by Jinja outlines the
-syntax available inside Jinja templates including:
+<https://jinja.palletsprojects.com/en/3.1.x/templates/>`_ provided by Jinja
+outlines the syntax available inside Jinja templates including:
 
 - variables
 - filters
@@ -52,14 +53,14 @@ syntax available inside Jinja templates including:
 Templates in Flask
 ------------------
 
-Flask looks for template files inside a folder called `templates` in your project.
-Instead of returning HTML directly, you can load and render templates using the
-``render_template()`` function.
+Flask looks for template files inside a folder called `templates` in your
+project. Instead of returning HTML directly, you can load and render templates
+using the ``render_template()`` function.
 
 **Complete Example**
 
-Let's see how we can use templates in the movie reviews website to display the list of
-movies.
+Let's see how we can use templates in the movie reviews website to display the
+list of movies.
 
 Project structure:
 
@@ -142,9 +143,9 @@ Project structure:
 Extending Templates
 -------------------
 
-Flask templates can be extended to create a base layout that other pages can inherit.
-This is useful when you have common elements like headers or footers across multiple
-pages.
+Flask templates can be extended to create a base layout that other pages can
+inherit. This is useful when you have common elements like headers or footers
+across multiple pages.
 
 .. tab-set::
 
@@ -205,8 +206,9 @@ pages.
 Static Files in Templates
 -------------------------
 
-As we saw previously in :doc:`/web_part1/server_intro/flask_static`, Flask serves static
-files like CSS, JavaScript, or images from a folder called ``static``.
+As we saw previously in :doc:`/web_part1/server_intro/flask_static`, Flask
+serves static files like CSS, JavaScript, or images from a folder called
+``static``.
 
 We manually specified the path to a stylesheet. For example:
 
@@ -214,9 +216,9 @@ We manually specified the path to a stylesheet. For example:
 
     <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
 
-However this path will change if we change ``static_url_path`` when we create the
-``Flask`` object. To make sure that we correctly reference the path to static files we
-can use the ``url_for`` template function.
+However this path will change if we change ``static_url_path`` when we create
+the ``Flask`` object. To make sure that we correctly reference the path to
+static files we can use the ``url_for`` template function.
 
 Here's a simple example:
 

@@ -4,8 +4,8 @@ More Complicated if-elif-else Statements
 Combining conditions
 --------------------
 
-Don't forget you can make more complex conditions by combining multiple conditions using
-``and`` and ``or``.
+Don't forget you can make more complex conditions by combining multiple
+conditions using ``and`` and ``or``.
 
 .. code-block::
 
@@ -25,10 +25,11 @@ Nesting
 -------
 
 You can also put ``if``-``elif``-``else`` statements *inside* other
-``if``-``elif``-``else`` statements. **Pay close attention to the indentation.**
+``if``-``elif``-``else`` statements. **Pay close attention to the
+indentation.**
 
-In this example, if the first condition evaluates to ``True`` the code is directed to
-another ``if``-``else`` statement.
+In this example, if the first condition evaluates to ``True`` the code is
+directed to another ``if``-``else`` statement.
 
 .. code-block:: python
 

@@ -3,9 +3,9 @@
 HTML
 ====
 
-HTML (Hypertext Markup Language) is the main language used to create and structure web
-pages. Web pages are the main content of the world wide web, which is the main public
-hypertext network used today.
+HTML (Hypertext Markup Language) is the main language used to create and
+structure web pages. Web pages are the main content of the world wide web,
+which is the main public hypertext network used today.
 
 Your First HTML Document
 ------------------------
@@ -27,10 +27,10 @@ Below is an example of a simple HTML document.
 Web Browser
 -----------
 
-A :term:`web browser` is a software application that transforms HTML documents into
-interactive pages. Web browsers are available on most modern computing devices inlcuding
-desktop, laptop and mobile devices. It is likely that you are using a web browser right
-now to read this text.
+A :term:`web browser` is a software application that transforms HTML documents
+into interactive pages. Web browsers are available on most modern computing
+devices inlcuding desktop, laptop and mobile devices. It is likely that you are
+using a web browser right now to read this text.
 
 Examples of web browsers (sorted by market share [1]_ ):
 
@@ -39,13 +39,14 @@ Examples of web browsers (sorted by market share [1]_ ):
 - Firefox
 - Opera
 
-At the core of a web browser contains is the :term:`engine`, which is responsible for
-interpreting HTML and :term:`rendering` it into a visual form, along with any multimedia
-to be embedded such as images.
+At the core of a web browser contains is the :term:`engine`, which is
+responsible for interpreting HTML and :term:`rendering` it into a visual form,
+along with any multimedia to be embedded such as images.
 
 .. warning::
 
-    TODO: ADD IMAGE HERE SHOWING RELATIONSHIP BETWEEN BROWSER, ENGINE AND HTML FILE
+    TODO: ADD IMAGE HERE SHOWING RELATIONSHIP BETWEEN BROWSER, ENGINE AND HTML
+    FILE
 
 HTML Standard
 -------------
@@ -54,21 +55,21 @@ HTML Standard
 
     You can find the latest standard here https://html.spec.whatwg.org.
 
-HTML is standardized by the World Wide Web Consortium (W3C) and the Web Hypertext
-Application Technology Working Group (Web Hypertext Application Technology Working
-Group) to make sure that web pages work the same way across different web browsers and
-devices.
+HTML is standardized by the World Wide Web Consortium (W3C) and the Web
+Hypertext Application Technology Working Group (Web Hypertext Application
+Technology Working Group) to make sure that web pages work the same way across
+different web browsers and devices.
 
-The HTML standard is important because, without a set of common rules, every browser
-might interpet HTML or display page content differently. Imagine if one browser showed a
-website with all the images out of order, while another browser made the text really
-small. The HTML standard creates a consistent and reliable experience for everyone using
-the web.
+The HTML standard is important because, without a set of common rules, every
+browser might interpet HTML or display page content differently. Imagine if one
+browser showed a website with all the images out of order, while another
+browser made the text really small. The HTML standard creates a consistent and
+reliable experience for everyone using the web.
 
-The standard is also important for software engineers who are writing HTML. The standard
-sets rules for how HTML should be written. Software engineers must follow these rules to
-make sure their site looks and functions properly for everyone, no matter what browser
-they're using.
+The standard is also important for software engineers who are writing HTML. The
+standard sets rules for how HTML should be written. Software engineers must
+follow these rules to make sure their site looks and functions properly for
+everyone, no matter what browser they're using.
 
 HTML Document Structure
 -----------------------
@@ -76,14 +77,15 @@ HTML Document Structure
 Tags
 ~~~~
 
-The main building block of HTML are :term:`tags <tag>`, which define how to display
-different parts of a webpage. Each tag is written inside angle brackets, like this:
-``<tag>``. A HTML page is a hierarchy of tags, with tags nesting inside each other.
+The main building block of HTML are :term:`tags <tag>`, which define how to
+display different parts of a webpage. Each tag is written inside angle
+brackets, like this: ``<tag>``. A HTML page is a hierarchy of tags, with tags
+nesting inside each other.
 
-Most tags come in pairs with an opening tag, like ``<p>``, and a closing tag, like
-``</p>``. The closing tag is almost the same as the opening tag, but it has a forward
-slash / before the name. Everything between the opening and closing tags is affected by
-them.
+Most tags come in pairs with an opening tag, like ``<p>``, and a closing tag,
+like ``</p>``. The closing tag is almost the same as the opening tag, but it
+has a forward slash / before the name. Everything between the opening and
+closing tags is affected by them.
 
 Example of the paragraph, ``<p></p>``, tag:
 
@@ -104,12 +106,13 @@ Example of a heading, ``<h1></h1>``, tag:
 DOCTYPE declaration
 ~~~~~~~~~~~~~~~~~~~
 
-All HTML documents start with a ``<!DOCTYPE>`` declaration. This is considered different
-from a tag and does not have a matching closing tag. This declaration is used to specify
-the version of HTML standard that the rest of the document uses.
+All HTML documents start with a ``<!DOCTYPE>`` declaration. This is considered
+different from a tag and does not have a matching closing tag. This declaration
+is used to specify the version of HTML standard that the rest of the document
+uses.
 
-In most cases, you will want to use the HTML5 standard, which is indicated with the
-declaration
+In most cases, you will want to use the HTML5 standard, which is indicated with
+the declaration
 
 .. code-block:: html
 
@@ -118,8 +121,8 @@ declaration
 html tag
 ~~~~~~~~
 
-Next are the ``<html></html>`` tags, which wraps around the rest of the document,
-including the head and body tags.
+Next are the ``<html></html>`` tags, which wraps around the rest of the
+document, including the head and body tags.
 
 .. code-block:: html
 
@@ -130,10 +133,11 @@ including the head and body tags.
 head tag
 ~~~~~~~~
 
-The head section, declared with ``<head></head>`` tags, contains information about the
-webpage that is not directly visible to users. This section includes things like the
-title of the page (which shows up in the browser window or tab), links to external files
-like CSS for styling, and meta tags that help search engines understand the page.
+The head section, declared with ``<head></head>`` tags, contains information
+about the webpage that is not directly visible to users. This section includes
+things like the title of the page (which shows up in the browser window or
+tab), links to external files like CSS for styling, and meta tags that help
+search engines understand the page.
 
 Example:
 
@@ -146,14 +150,15 @@ Example:
 
 .. note::
 
-    We will learn more about the options available in :doc:`/web_part1/styling/index`.
+    We will learn more about the options available in
+    :doc:`/web_part1/styling/index`.
 
 body tag
 ~~~~~~~~
 
-The body section, declared with ``<body></body>`` tags, contains everything that you
-actually see on the webpage, such as text, images, buttons, and links. This is where the
-main content of your webpage goes.
+The body section, declared with ``<body></body>`` tags, contains everything
+that you actually see on the webpage, such as text, images, buttons, and links.
+This is where the main content of your webpage goes.
 
 Example:
 
@@ -168,8 +173,9 @@ Example:
 Comments
 ~~~~~~~~
 
-It is common programming practice to document or explain pieces of code using comments,
-which are lines in code that are ignored by the interpreter or compiler.
+It is common programming practice to document or explain pieces of code using
+comments, which are lines in code that are ignored by the interpreter or
+compiler.
 
 HTML also supports comments
 
@@ -188,8 +194,8 @@ A Complete Example
 
 .. hint::
 
-    Try this example yourself and change the text. Use the refresh function of your
-    browser to see changes as you make them.
+    Try this example yourself and change the text. Use the refresh function of
+    your browser to see changes as you make them.
 
 .. literalinclude:: ../../_static/examples/html/intro_complete.html
     :language: html

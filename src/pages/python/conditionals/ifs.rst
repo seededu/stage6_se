@@ -1,7 +1,8 @@
 If Statements
 =============
 
-The ``if`` statement lets us execute a section of code if a specified condition is True.
+The ``if`` statement lets us execute a section of code if a specified condition
+is True.
 
 .. image:: img/1_example3.png
     :width: 320
@@ -20,9 +21,11 @@ Take note of the following:
 - The condition must evaluate to either ``True`` or ``False``
 - The code inside the if statement only executes if the condition is ``True``
 - ``:`` is placed at the end of the condition
-- The code inside the if statement must be indented. The indentation defines the code
-  block. This allows you to put multiple lines inside the if statement.
-- The indentation can be done using tab or spaces, as long as you're consistent!
+- The code inside the if statement must be indented. The indentation defines
+  the code block. This allows you to put multiple lines inside the if
+  statement.
+- The indentation can be done using tab or spaces, as long as you're
+  consistent!
 
 Here is an example of a simple if statement.
 
@@ -36,8 +39,8 @@ Here is an example of a simple if statement.
 
 In this example the condition is ``True`` so the print statement runs.
 
-This is how we can represent this code diagrammatically. The green line indicates the
-'path' the code takes.
+This is how we can represent this code diagrammatically. The green line
+indicates the 'path' the code takes.
 
 .. image:: img/1_example2.png
     :width: 320

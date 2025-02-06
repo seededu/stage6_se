@@ -1,8 +1,8 @@
 The Hexadecimal System
 ======================
 
-The hexadecimal system works in base 16. This means it uses the digits 0-9 and the
-letters a-f.
+The hexadecimal system works in base 16. This means it uses the digits 0-9 and
+the letters a-f.
 
 .. list-table::
     :header-rows: 1
@@ -40,8 +40,8 @@ letters a-f.
       - e
       - f
 
-        Conversion between the hexadecimal system and decimal system works much the same
-        way as conversions between the binary and decimal systems.
+        Conversion between the hexadecimal system and decimal system works much
+        the same way as conversions between the binary and decimal systems.
 
 Hexadecimal to Decimal
 ----------------------
@@ -90,40 +90,44 @@ Let's take the number 2f9a as an example and fill it into the table below.
 
 The way we interpret the hexadecimal number 2f9a is
 
-:math:`(\textbf{2}\times16^3) + (\textbf{f}\times16^2) + (\textbf{9}\times16^1) +
-(\textbf{a}\times16^0) = \textbf{12186}`
+:math:`(\textbf{2}\times16^3) + (\textbf{f}\times16^2) + (\textbf{9}\times16^1)
++ (\textbf{a}\times16^0) = \textbf{12186}`
 
 or alternatively
 
 :math:`(\textbf{2}\times4096) + (\textbf{15}\times256) + (\textbf{9}\times16) +
 (\textbf{10}\times1) = \textbf{12186}`
 
-What you may have noticed is that you can represented much larger numbers with fewer
-characters in the hexadecimal system compared to the binary system.
+What you may have noticed is that you can represented much larger numbers with
+fewer characters in the hexadecimal system compared to the binary system.
 
 Applications: Colours
 ---------------------
 
-While computers don't 'think' using the hexadecimal system, programmers often use it
-because it's easier for humans to read. 8 bits can be represented using just 2 digits in
-the hexadecimal system. A common example is colours, which are often represented using
-the hexadecimal system.
+While computers don't 'think' using the hexadecimal system, programmers often
+use it because it's easier for humans to read. 8 bits can be represented using
+just 2 digits in the hexadecimal system. A common example is colours, which are
+often represented using the hexadecimal system.
 
-We often represent colours using RGB (red, green, blue) values, where were specify a
-number between 0 and 255 for the amount of red, green and blue a colour has.
+We often represent colours using RGB (red, green, blue) values, where were
+specify a number between 0 and 255 for the amount of red, green and blue a
+colour has.
 
 **Examples**
 
-- Red would be represented as (255, 0, 0), which has maximum red, and no green and no
-  blue
-- Blue would be represented as (0, 0, 255), which has no red, no green, but maximum blue
-- Purple could be represented as (100, 0, 100), which has no green, but equal amounts of
-  red and blue
-- White would be represented as (255, 255, 255), which is maximum red, green and blue
+- Red would be represented as (255, 0, 0), which has maximum red, and no green
+  and no blue
+- Blue would be represented as (0, 0, 255), which has no red, no green, but
+  maximum blue
+- Purple could be represented as (100, 0, 100), which has no green, but equal
+  amounts of red and blue
+- White would be represented as (255, 255, 255), which is maximum red, green
+  and blue
 
-These RGB values are then often represented in hexadecimal with a 6-character number.
-The first 2 characters indicate the amount of red, the middle 2 characters indicate the
-amount of green and the last 2 characters indicate the amount of blue.
+These RGB values are then often represented in hexadecimal with a 6-character
+number. The first 2 characters indicate the amount of red, the middle 2
+characters indicate the amount of green and the last 2 characters indicate the
+amount of blue.
 
 ** Examples**
 

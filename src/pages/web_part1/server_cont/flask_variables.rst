@@ -1,15 +1,15 @@
 Variables in URLs
 =================
 
-In this section, we'll explore how Flask allows us to create dynamic web pages by
-passing variables through URLs. This is useful when we want our web pages to display
-different content depending on the value passed in the URL.
+In this section, we'll explore how Flask allows us to create dynamic web pages
+by passing variables through URLs. This is useful when we want our web pages to
+display different content depending on the value passed in the URL.
 
 Basic Example
 -------------
 
-Let's start with a simple example where we'll use Flask to display a message that
-includes a variable from the URL.
+Let's start with a simple example where we'll use Flask to display a message
+that includes a variable from the URL.
 
 .. code-block:: python
 
@@ -29,27 +29,30 @@ Explanation
 
 - Defining the route:
 
-  - The ``@app.route('/greet/<name>')`` decorator tells Flask that when someone visits a
-    URL that matches ``/greet/<name>``, the `greet()` function should be executed.
-  - ``<name>`` is a placeholder in the URL that acts as a variable. Whatever value the
-    user types in place of ``<name>`` will be passed to the ``greet()`` function.
+  - The ``@app.route('/greet/<name>')`` decorator tells Flask that when someone
+    visits a URL that matches ``/greet/<name>``, the `greet()` function should
+    be executed.
+  - ``<name>`` is a placeholder in the URL that acts as a variable. Whatever
+    value the user types in place of ``<name>`` will be passed to the
+    ``greet()`` function.
 
 - Route function:
 
-  - The function ``greet(name)`` accepts ``name`` as a parameter. Flask automatically
-    extracts the value from the URL and passes it to the function.
-  - We return a simple message that includes the ``name`` variable, which will be
-    displayed on the web page.
+  - The function ``greet(name)`` accepts ``name`` as a parameter. Flask
+    automatically extracts the value from the URL and passes it to the
+    function.
+  - We return a simple message that includes the ``name`` variable, which will
+    be displayed on the web page.
 
 Review Page
 -----------
 
-Now let's take a look at how we can use this concept in our "Movie Reviews" website.
-We'll create a page that shows all the information for a movie review based on its
-``id``. The ``id`` is passed as a variable in the URL.
+Now let's take a look at how we can use this concept in our "Movie Reviews"
+website. We'll create a page that shows all the information for a movie review
+based on its ``id``. The ``id`` is passed as a variable in the URL.
 
-For example, visiting http://127.0.0.1:5000/movie/2 would display the details of
-"Barbie."
+For example, visiting http://127.0.0.1:5000/movie/2 would display the details
+of "Barbie."
 
 .. tab-set::
 
@@ -110,22 +113,23 @@ Explanation
 
 - Defining the Route:
 
-  - The ``@app.route('/movie/<int:movie_id>')`` decorator registers a route where
-    ``movie_id`` is an integer variable that will be extracted from the URL.
-  - When someone visits ``/movie/1``, Flask will extract the value ``1`` and pass it to
-    the ``movie_page()`` function as ``movie_id``.
+  - The ``@app.route('/movie/<int:movie_id>')`` decorator registers a route
+    where ``movie_id`` is an integer variable that will be extracted from the
+    URL.
+  - When someone visits ``/movie/1``, Flask will extract the value ``1`` and
+    pass it to the ``movie_page()`` function as ``movie_id``.
 
 - Function Logic:
 
-  - Inside the ``movie_page()`` function, we use `movie_reviews.get(movie_id)` to
-    retrieve the movie data that matches the given ``id``. If a movie with that ``id``
-    exists, it returns the corresponding data. If not, it returns a 404 error with
-    message ``"Movie not found"``.
+  - Inside the ``movie_page()`` function, we use `movie_reviews.get(movie_id)`
+    to retrieve the movie data that matches the given ``id``. If a movie with
+    that ``id`` exists, it returns the corresponding data. If not, it returns a
+    404 error with message ``"Movie not found"``.
 
 - Rendering the Template:
 
-  - The ``render_template('movie_page.html', movie=movie)`` line uses Flask's template
-    engine to render an HTML page and pass the movie data to it.
+  - The ``render_template('movie_page.html', movie=movie)`` line uses Flask's
+    template engine to render an HTML page and pass the movie data to it.
 
 Complete Example
 ----------------

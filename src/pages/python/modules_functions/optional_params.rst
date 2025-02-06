@@ -1,10 +1,10 @@
 Optional Parameters (Keyword Arguments)
 =======================================
 
-Python allows you to have parameters that are optional. These are called **keyword
-arguments**. Keyword arguments must come *after* all of our mandatory parameters. We
-must also set a default value. Like with mandatory parameters, we can have multiple
-keyword arguments. The syntax for this is as follows:
+Python allows you to have parameters that are optional. These are called
+**keyword arguments**. Keyword arguments must come *after* all of our mandatory
+parameters. We must also set a default value. Like with mandatory parameters,
+we can have multiple keyword arguments. The syntax for this is as follows:
 
 .. code-block:: text
 
@@ -12,8 +12,9 @@ keyword arguments. The syntax for this is as follows:
 
 **Example 1: Numeric keyword argument**
 
-The ``increase`` function will by default, increase ``x`` by 1. But if you specify a
-different increment amount it will increase ``x`` by the specified amount.
+The ``increase`` function will by default, increase ``x`` by 1. But if you
+specify a different increment amount it will increase ``x`` by the specified
+amount.
 
 .. exec_code::
     :language: python
@@ -26,9 +27,9 @@ different increment amount it will increase ``x`` by the specified amount.
 
 **Example 2: Boolean keyword argument**
 
-The ``difference`` function will calculate the difference between ``x`` and ``y``. If
-the keyword ``positive`` is ``True`` it will return a positive value, otherwise it will
-return a negative value.
+The ``difference`` function will calculate the difference between ``x`` and
+``y``. If the keyword ``positive`` is ``True`` it will return a positive value,
+otherwise it will return a negative value.
 
 .. exec_code::
     :language: python
@@ -44,10 +45,10 @@ return a negative value.
     print(difference(5, 2))
     print(difference(5, 2, positive=False))
 
-Keyword arguments must come *after* all of our mandatory parameters. If you try to
-switch the order you will get a **SyntaxError** with the error *parameter without a
-default follows parameter with a default*, which essentially is telling you that a
-mandatory parameter is following a keyword argument.
+Keyword arguments must come *after* all of our mandatory parameters. If you try
+to switch the order you will get a **SyntaxError** with the error *parameter
+without a default follows parameter with a default*, which essentially is
+telling you that a mandatory parameter is following a keyword argument.
 
 .. code-block:: python
 
@@ -69,16 +70,16 @@ mandatory parameter is following a keyword argument.
 Parameters vs Arguments
 -----------------------
 
-Often the terms 'parameter' and 'argument' are used interchangeably, but there is a
-subtle distinction between the two terms. *Parameters* are the names of the variables as
-specified in the function definition, i.e. the variable names used when creating the
-function, whereas *arguments* are the actual values that are passed to the function when
-the function is called.
+Often the terms 'parameter' and 'argument' are used interchangeably, but there
+is a subtle distinction between the two terms. *Parameters* are the names of
+the variables as specified in the function definition, i.e. the variable names
+used when creating the function, whereas *arguments* are the actual values that
+are passed to the function when the function is called.
 
 **Example**
 
-In this ``add`` function ``x`` and ``y`` are the *parameters*. When the function is
-called we pass it the *arguments* ``5`` and ``3``.
+In this ``add`` function ``x`` and ``y`` are the *parameters*. When the
+function is called we pass it the *arguments* ``5`` and ``3``.
 
 .. exec_code::
     :language: python
@@ -88,8 +89,8 @@ called we pass it the *arguments* ``5`` and ``3``.
 
     print(add(5, 3))
 
-If you give a function the wrong number of arguments it will result in a **TypeError**
-and notify you that you're missing an argument.
+If you give a function the wrong number of arguments it will result in a
+**TypeError** and notify you that you're missing an argument.
 
 .. code-block:: python
 

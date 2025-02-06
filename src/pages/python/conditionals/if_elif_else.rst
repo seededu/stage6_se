@@ -7,8 +7,8 @@ To add more conditions to an ``if``-``else`` statement, we can use ``elif``.
     :width: 500
     :align: center
 
-The ``elif`` statement must be used *between* the ``if`` and the ``else`` statements.
-You can also have as many ``elif`` statements as you want!
+The ``elif`` statement must be used *between* the ``if`` and the ``else``
+statements. You can also have as many ``elif`` statements as you want!
 
 Here is how we use the ``elif`` statement:
 
@@ -29,11 +29,11 @@ Take note of the following:
     - ``elif`` is a keyword
     - Each condition must evaluate to either ``True`` or ``False``
     - ``:`` is placed at the end of *each* condition
-    - The *first* condition that evaluates to ``True`` controls which section of code
-      executes
-    - The code inside the ``elif`` statement must be **indented**. Note that only the
-      code blocks are indented. The lines beginning with ``if``, ``elif`` or ``else``
-      are not indented.
+    - The *first* condition that evaluates to ``True`` controls which section
+      of code executes
+    - The code inside the ``elif`` statement must be **indented**. Note that
+      only the code blocks are indented. The lines beginning with ``if``,
+      ``elif`` or ``else`` are not indented.
 
 Here is an example of an ``if``-``elif``-``else`` statement.
 
@@ -48,7 +48,8 @@ Here is an example of an ``if``-``elif``-``else`` statement.
     else:
         print("x is 0!")
 
-In this example the second condition is ``True`` so the second ``print`` statement runs.
+In this example the second condition is ``True`` so the second ``print``
+statement runs.
 
 .. image:: img/3_example2.png
     :width: 650

@@ -4,14 +4,15 @@ Code Testing
 Path Coverage
 -------------
 
-It's important that you're able to test your code to verify that it will behave the way
-you intend. An common way to test code is to come up with **input-output** pairs and
-check whether your program produces the correct output. We also want to be selective
-when choosing our input output pairs so that we get **path coverage**, i.e. our
-input-output pairs test every possible path in our code.
+It's important that you're able to test your code to verify that it will behave
+the way you intend. An common way to test code is to come up with
+**input-output** pairs and check whether your program produces the correct
+output. We also want to be selective when choosing our input output pairs so
+that we get **path coverage**, i.e. our input-output pairs test every possible
+path in our code.
 
-**Example:** The purpose of this program is to identify whether x is positive, negative
-or 0.
+**Example:** The purpose of this program is to identify whether x is positive,
+negative or 0.
 
 .. code-block::
 
@@ -30,8 +31,8 @@ This program has 3 possible paths.
     :width: 650
     :align: center
 
-So examples of input-output pairs we can use to test this program so that we get path
-coverage are:
+So examples of input-output pairs we can use to test this program so that we
+get path coverage are:
 
 .. list-table::
     :widths: 30 70
@@ -52,9 +53,9 @@ determine whether the code output actually matches our expected output.
 Boundary Values
 ---------------
 
-Another thing we often want to test are boundary values. These are where it causes our
-program to change. When we have a condition, e.g. ``x < 3``, we should check what
-happens when ``x`` is:
+Another thing we often want to test are boundary values. These are where it
+causes our program to change. When we have a condition, e.g. ``x < 3``, we
+should check what happens when ``x`` is:
 
 - less than 3
 - exactly 3
@@ -82,27 +83,29 @@ And ensure the results are what we expect.
 In this program we want to test what happens when ``current_speed`` is near
 ``speed_limit``.
 
-- If we test 41 (just above 40) our program outputs *You are speeding! 41km/h is above
-  the speed limit of 40km/h. Slow down!*
-- At exactly 40 our program outputs *You are travelling within the speed limit.*
-- And at 39 (just below 40) our program again outputs *You are travelling within the
-  speed limit.*
+- If we test 41 (just above 40) our program outputs *You are speeding! 41km/h
+  is above the speed limit of 40km/h. Slow down!*
+- At exactly 40 our program outputs *You are travelling within the speed
+  limit.*
+- And at 39 (just below 40) our program again outputs *You are travelling
+  within the speed limit.*
 
 Faulty and Abnormal Data
 ------------------------
 
-Faulty and abnormal data is when the values fall outside the expectations of the system.
-Whether your not these inputs should be invalid or not will depend on the program
-**specifications**, which describes what the code is meant to do (or not meant to do).
-The program should always be able to handle all valid inputs, but what happens when
-invalid data is entered is often up to the programmer to decide.
+Faulty and abnormal data is when the values fall outside the expectations of
+the system. Whether your not these inputs should be invalid or not will depend
+on the program **specifications**, which describes what the code is meant to do
+(or not meant to do). The program should always be able to handle all valid
+inputs, but what happens when invalid data is entered is often up to the
+programmer to decide.
 
 **Example**
 
 If we look at the same program as in the previous example, *invalid*, i.e.
-*faulty*/*abnormal* input data would include anything that cannot be converted to an
-integer. This is because in the first line of the program the user input is converted to
-an integer.
+*faulty*/*abnormal* input data would include anything that cannot be converted
+to an integer. This is because in the first line of the program the user input
+is converted to an integer.
 
 .. code-block:: python
 

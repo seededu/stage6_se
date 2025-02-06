@@ -1,12 +1,12 @@
 Error Messages
 ==============
 
-Quite often while you're programming you'll find that you make mistakes and your program
-won't run or it does the wrong thing.
+Quite often while you're programming you'll find that you make mistakes and
+your program won't run or it does the wrong thing.
 
-An important skill to learn is *debuggin\*g. This is the process of locating and
-removing errors from your code. When debugging, it's very useful to be able to read and
-\*understand* the error messages.
+An important skill to learn is *debuggin\\*g. This is the process of locating
+and removing errors from your code. When debugging, it's very useful to be able
+to read and \\*understand* the error messages.
 
 .. code-block:: python
 
@@ -25,14 +25,14 @@ The code above produced the following error message.
 
 - **The first line is the start of the error message**
 - The next few lines tell you where the error is
-      - In this example it tells us the error is in line 2 and comes from the code
-        print(X)
-      - Sometimes the error is in the line before i.e. if you can't see any errors in
-        the specified line, try looking at the line above!
+      - In this example it tells us the error is in line 2 and comes from the
+        code print(X)
+      - Sometimes the error is in the line before i.e. if you can't see any
+        errors in the specified line, try looking at the line above!
 - The last line in the error message tells you the type of error
-      - In this example NameError: name 'X' is not defined. Did you mean: 'x'? tells you
-        that there is a variable that hasn't been defined. In this case the program
-        can't find the variable X.
+      - In this example NameError: name 'X' is not defined. Did you mean: 'x'?
+        tells you that there is a variable that hasn't been defined. In this
+        case the program can't find the variable X.
 
 Common Types of Errors
 ----------------------
@@ -40,7 +40,8 @@ Common Types of Errors
 - **NameError:** A variable of the specified name cannot be found.
 - **SyntaxError:** The structure of the code is invalid.
 - **TypeError:** An operation is being applied to variables of the wrong type.
-- **ValueError:** A function or operation has received a value of the wrong type.
+- **ValueError:** A function or operation has received a value of the wrong
+  type.
 
 .. dropdown:: Question 1
     :open:

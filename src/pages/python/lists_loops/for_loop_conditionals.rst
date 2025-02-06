@@ -1,7 +1,8 @@
 For Loops With Conditionals
 ===========================
 
-Just like we saw with ``while`` loops, we can put conditionals inside our ``for`` loops.
+Just like we saw with ``while`` loops, we can put conditionals inside our
+``for`` loops.
 
 Here is an example with an ``if`` statement.
 
@@ -15,8 +16,8 @@ Here is an example with an ``if`` statement.
 
 **What's happening here?**
 
-We have used ``range(5)``, which means that ``i`` will take on the values ``[0, 1, 2, 3,
-4]``. At each iteration we execute the code block:
+We have used ``range(5)``, which means that ``i`` will take on the values ``[0,
+1, 2, 3, 4]``. At each iteration we execute the code block:
 
 .. code-block:: text
 
@@ -66,8 +67,8 @@ At the **fifth** iteration ``i = 4``. We ``print(i)`` and output
 
     4
 
-Since the condition ``i == 3`` is ``False`` we don't do anything else. Since 4 is the
-last number in the sequence, we exit the loop.
+Since the condition ``i == 3`` is ``False`` we don't do anything else. Since 4
+is the last number in the sequence, we exit the loop.
 
 This is how we can represent this code diagrammatically.
 

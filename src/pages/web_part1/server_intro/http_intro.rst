@@ -1,30 +1,33 @@
 HTTP
 ====
 
-So far, the HTML files we've created are just sitting on the computer we made them on.
-If you wanted to share them with someone, you’d have to send them a copy, like emailing
-the file or putting it on a USB drive. But that means your HTML files are kind of stuck
-on their own, unable to connect with anything else.
+So far, the HTML files we've created are just sitting on the computer we made
+them on. If you wanted to share them with someone, you’d have to send them a
+copy, like emailing the file or putting it on a USB drive. But that means your
+HTML files are kind of stuck on their own, unable to connect with anything
+else.
 
-To solve this problem, the HTTP protocol was invented. It allows computers to share HTML
-files over a network, like the internet. Thanks to HTTP, your files aren't trapped —
-they can be shared across the web, and hyperlinks can connect pages from anywhere in the
-world. This combination of HTML, hyperlinks, and the internet is what we call the "World
-Wide Web."
+To solve this problem, the HTTP protocol was invented. It allows computers to
+share HTML files over a network, like the internet. Thanks to HTTP, your files
+aren't trapped — they can be shared across the web, and hyperlinks can connect
+pages from anywhere in the world. This combination of HTML, hyperlinks, and the
+internet is what we call the "World Wide Web."
 
 HTTP Protocol Overview
 ----------------------
 
-The Hypertext Transfer Protocol (HTTP) defines a client-server :term:`protocol` for the
-transmission of HTML (and associated) files over standard internet technology.
+The Hypertext Transfer Protocol (HTTP) defines a client-server :term:`protocol`
+for the transmission of HTML (and associated) files over standard internet
+technology.
 
-The term :term:`client` is interchangably used to mean the user's physical device and
-web browser. While the term :term:`server` is interchangably used to refer to the
-software which processes the requests then returns appropriate responses and the
-physical device on which the software is running.
+The term :term:`client` is interchangably used to mean the user's physical
+device and web browser. While the term :term:`server` is interchangably used to
+refer to the software which processes the requests then returns appropriate
+responses and the physical device on which the software is running.
 
-HTTP uses a "request and response" model. Clients send requests for a particular
-resource and the server provides the resource in the body of the response message.
+HTTP uses a "request and response" model. Clients send requests for a
+particular resource and the server provides the resource in the body of the
+response message.
 
 .. figure:: img/http.png
     :width: 480
@@ -41,29 +44,31 @@ In general data is exchanged over HTTP in the following steps:
 5. server sends a response conforming to HTTP protocol over TCP
 6. client and server close the TCP connection
 
-The simplest web server hosts :term:`static` content meaning that it reads the requested
-HTML files and returns them as the response.
+The simplest web server hosts :term:`static` content meaning that it reads the
+requested HTML files and returns them as the response.
 
 .. figure:: img/static_server.png
     :width: 480
     :align: center
 
-A crucial aspect of the HTTP protocol is that it is :term:`stateless`, meaning that each
-request is independent of the others and the requests cannot reference any previous
-requests. However we will see later, that we can add state to our web sites through
-shared information between client and server inside the request data.
+A crucial aspect of the HTTP protocol is that it is :term:`stateless`, meaning
+that each request is independent of the others and the requests cannot
+reference any previous requests. However we will see later, that we can add
+state to our web sites through shared information between client and server
+inside the request data.
 
 HTTP Requests and Responses
 ---------------------------
 
-Request and response messages are sent as :term:`plain text` but follow a very specific
-format.
+Request and response messages are sent as :term:`plain text` but follow a very
+specific format.
 
 Requests
 ~~~~~~~~
 
 Let's start with an example HTTP request. For example, requesting the `Google
-<https://google.com.au/>`_ homepage in your browser would send the following request:
+<https://google.com.au/>`_ homepage in your browser would send the following
+request:
 
 .. code-block:: text
 
@@ -75,13 +80,13 @@ Let's look at each line:
 1. The request line ``GET / HTTP/1.1`` consists of
 
    - the :term:`method` or type of request: ``GET``
-   - the path to the :term:`resource`, which in this case is at the root of the server:
-     ``/``
+   - the path to the :term:`resource`, which in this case is at the root of the
+     server: ``/``
    - the version: ``HTTP/1.1``
 
-2. The host line ``Host: www.google.com.au``, which is a :term:`request header field`
-   that specifies the domain name the client is requesting the resource from. This is
-   required since a single server may host many websites!
+2. The host line ``Host: www.google.com.au``, which is a :term:`request header
+   field` that specifies the domain name the client is requesting the resource
+   from. This is required since a single server may host many websites!
 
 Request Specification
 ~~~~~~~~~~~~~~~~~~~~~
@@ -158,7 +163,8 @@ Response Specification
 Breakdown:
 
 - ``VERSION`` - normally ``HTTP/1.1``
-- ``STATUS_CODE REASON_PHRASE`` - indicates the status of the request, typically one of:
+- ``STATUS_CODE REASON_PHRASE`` - indicates the status of the request,
+  typically one of:
 
   - ``200 OK``
   - ``404 NOT FOUND``

@@ -12,13 +12,15 @@ Try running the code below!
 
 Take note of the following:
 
-- ``print`` must be in lower case. If you try using ``Print``, it won't work! This is
-  because the computer is fussy! It can only understand very specific instructions.
-- ``'I love Python'`` is just a piece of text. This is the information we want to
-  display.
-- We use ' ' or " " to indicate text. (We actually refer to text as a string; more on
-  this later.)
-- We tell the computer what to display by placing the contents in circular brackets ().
+- ``print`` must be in lower case. If you try using ``Print``, it won't work!
+  This is because the computer is fussy! It can only understand very specific
+  instructions.
+- ``'I love Python'`` is just a piece of text. This is the information we want
+  to display.
+- We use ' ' or " " to indicate text. (We actually refer to text as a string;
+  more on this later.)
+- We tell the computer what to display by placing the contents in circular
+  brackets ().
 
 This is the structure of the print() function:
 

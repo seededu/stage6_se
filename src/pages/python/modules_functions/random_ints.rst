@@ -1,18 +1,20 @@
 Random Integers
 ===============
 
-It is often useful for computer programs to be able to produce random results. For
-example, games and numerical simulations involve elements of randomness. Randomness can
-be achieved using a random number generator. In Python, we can create random numbers
-using the `random <https://docs.python.org/3/library/random.html>`_ module. We will need
-to import the module at the start of our program to use it.
+It is often useful for computer programs to be able to produce random results.
+For example, games and numerical simulations involve elements of randomness.
+Randomness can be achieved using a random number generator. In Python, we can
+create random numbers using the `random
+<https://docs.python.org/3/library/random.html>`_ module. We will need to
+import the module at the start of our program to use it.
 
 .. code-block:: text
 
     import random
 
-We can generate random integers using ``random.randrange()``, which is very similar to
-the ``range()`` function. The structure of the random.``randrange()`` function is:
+We can generate random integers using ``random.randrange()``, which is very
+similar to the ``range()`` function. The structure of the
+random.``randrange()`` function is:
 
 .. code-block:: text
 
@@ -28,12 +30,13 @@ the ``range()`` function. The structure of the random.``randrange()`` function i
 
 .. note::
 
-    The start value is *included* while the end value is *excluded* and the *start*,
-    *end*, and *step_size* must be *integers*.
+    The start value is *included* while the end value is *excluded* and the
+    *start*, *end*, and *step_size* must be *integers*.
 
-**Example random.randrange(end):** By default the start value is 0, so this will
-generate random number between 0 and end, but does not include the end value. Try
-running the code below *multiple times*. You will find it will give you 0, 1 or 2.
+**Example random.randrange(end):** By default the start value is 0, so this
+will generate random number between 0 and end, but does not include the end
+value. Try running the code below *multiple times*. You will find it will give
+you 0, 1 or 2.
 
 .. code-block:: python
 
@@ -41,9 +44,9 @@ running the code below *multiple times*. You will find it will give you 0, 1 or 
 
     print(random.randrange(3))
 
-**Example random.randrange(start, end):** This will generate random integers between the
-specified start and end values but does not include the end value. The code below will
-give you either a 5, 6 or 7.
+**Example random.randrange(start, end):** This will generate random integers
+between the specified start and end values but does not include the end value.
+The code below will give you either a 5, 6 or 7.
 
 .. code-block:: python
 
@@ -51,9 +54,10 @@ give you either a 5, 6 or 7.
 
     print(random.randrange(5, 8))
 
-**Example random.randrange(start, end, step_size):** This will generate random integers
-between the specified start and end values, counting up by the specified step. It will
-not include the end value. The code below will give you either 10, 12, 14, 16 or 18.
+**Example random.randrange(start, end, step_size):** This will generate random
+integers between the specified start and end values, counting up by the
+specified step. It will not include the end value. The code below will give you
+either 10, 12, 14, 16 or 18.
 
 .. code-block:: python
 
@@ -61,8 +65,8 @@ not include the end value. The code below will give you either 10, 12, 14, 16 or
 
     print(random.randrange(10, 20, 2))
 
-Generating integers allows us to randomly select from lists. For example, the code below
-will allow us to randomly select a starting player.
+Generating integers allows us to randomly select from lists. For example, the
+code below will allow us to randomly select a starting player.
 
 .. code-block:: python
 

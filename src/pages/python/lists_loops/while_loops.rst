@@ -26,17 +26,18 @@ Here is an example:
 
 .. note::
 
-    Another way you can increment ``i`` by 1 is using ``i += 1``. This is equivalent to
-    ``i = i + 1``. Similarly you can decrease ``i`` by 1 using ``i -= 1``, which is
-    equivalent to ``i = i - 1``. Actually the ``+=`` and ``-=`` notation will work for
-    any number ``i += 3`` increase ``i`` by 3 and ``i -= 5`` decrease ``i`` by 5.
+    Another way you can increment ``i`` by 1 is using ``i += 1``. This is
+    equivalent to ``i = i + 1``. Similarly you can decrease ``i`` by 1 using
+    ``i -= 1``, which is equivalent to ``i = i - 1``. Actually the ``+=`` and
+    ``-=`` notation will work for any number ``i += 3`` increase ``i`` by 3 and
+    ``i -= 5`` decrease ``i`` by 5.
 
 **What's happening here?**
 
 We can see that the condition we have set for our while loop is ``i < 3``.
 
-At the **first** iteration ``i = 0``. This means the condition is ``True``. We execute
-the code block:
+At the **first** iteration ``i = 0``. This means the condition is ``True``. We
+execute the code block:
 
 .. code-block::
 
@@ -49,22 +50,22 @@ This means that we output:
 
     0
 
-At the **second** iteration ``i = 1``. This means the condition is ``True``. Again, we
-execute the code block and we output:
+At the **second** iteration ``i = 1``. This means the condition is ``True``.
+Again, we execute the code block and we output:
 
 .. code-block::
 
     1
 
-At the **third** iteration ``i = 2``. This means that the condition is ``True``. Again,
-we execute the code block and we output:
+At the **third** iteration ``i = 2``. This means that the condition is
+``True``. Again, we execute the code block and we output:
 
 .. code-block::
 
     2
 
-At the **fourth** iteration ``i = 3``. This means that the condition is ``False``. We do
-not execute the code block.
+At the **fourth** iteration ``i = 3``. This means that the condition is
+``False``. We do not execute the code block.
 
 This is how we can represent this code diagrammatically.
 
@@ -72,16 +73,17 @@ This is how we can represent this code diagrammatically.
     :width: 280
     :align: center
 
-Here ``i = 0`` and ``i = i + 1`` are **processes** that are happening within the program
-but aren't being shown to the user. This means we represent these with **rectangles** in
-the flowchart. The ``print`` statement results in **output** to the user so we represent
-it with a **parallelogram**. Here we colour the processes related to ``i`` in **green**
-to identify it as the variable related to the loop, but the colouring is non-standard
-and most of the time these diagrams will be shown in black and white.
+Here ``i = 0`` and ``i = i + 1`` are **processes** that are happening within
+the program but aren't being shown to the user. This means we represent these
+with **rectangles** in the flowchart. The ``print`` statement results in
+**output** to the user so we represent it with a **parallelogram**. Here we
+colour the processes related to ``i`` in **green** to identify it as the
+variable related to the loop, but the colouring is non-standard and most of the
+time these diagrams will be shown in black and white.
 
-Note that we don't always have to increment by 1 and we don't always have to start at
-``i = 0``. For example, we might want to print out all the odd numbers less than 10. We
-can do so with the following.
+Note that we don't always have to increment by 1 and we don't always have to
+start at ``i = 0``. For example, we might want to print out all the odd numbers
+less than 10. We can do so with the following.
 
 .. exec_code::
     :language: python
@@ -95,8 +97,8 @@ can do so with the following.
 
 We can see that the condition we have set for our while loop is ``i < 10``.
 
-At the **first** iteration ``i = 1``. This means the condition is ``True``. We execute
-the code block:
+At the **first** iteration ``i = 1``. This means the condition is ``True``. We
+execute the code block:
 
 .. code-block::
 
@@ -109,36 +111,36 @@ This means that we output:
 
     1
 
-At the **second** iteration ``i = 3``. This means the condition is ``True``. Again, we
-execute the code block and we output:
+At the **second** iteration ``i = 3``. This means the condition is ``True``.
+Again, we execute the code block and we output:
 
 .. code-block::
 
     3
 
-At the **third** iteration ``i = 5``. This means that the condition is ``True``. Again,
-we execute the code block and we output:
+At the **third** iteration ``i = 5``. This means that the condition is
+``True``. Again, we execute the code block and we output:
 
 .. code-block::
 
     5
 
-At the **fourth** iteration ``i = 7``. This means that the condition is ``True``. Again,
-we execute the code block and we output:
+At the **fourth** iteration ``i = 7``. This means that the condition is
+``True``. Again, we execute the code block and we output:
 
 .. code-block::
 
     7
 
-At the **fifth** iteration ``i = 9``. This means that the condition is ``True``. Again,
-we execute the code block and we output:
+At the **fifth** iteration ``i = 9``. This means that the condition is
+``True``. Again, we execute the code block and we output:
 
 .. code-block::
 
     9
 
-At the **sixth** iteration ``i = 11``. This means that the condition is ``False``. We do
-not execute the code block.
+At the **sixth** iteration ``i = 11``. This means that the condition is
+``False``. We do not execute the code block.
 
 This is how we can represent this code diagrammatically.
 

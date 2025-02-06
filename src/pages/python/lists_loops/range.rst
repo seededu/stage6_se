@@ -1,9 +1,10 @@
 Range
 =====
 
-When using ``for`` loops, you have seen that we typically loop through a list. We can
-automatically create lists of sequential values using the ``range()`` function. The
-``range()`` function creates an iterable with a specific set of numbers.
+When using ``for`` loops, you have seen that we typically loop through a list.
+We can automatically create lists of sequential values using the ``range()``
+function. The ``range()`` function creates an iterable with a specific set of
+numbers.
 
 The structure of the ``range()`` function is:
 
@@ -19,41 +20,44 @@ The structure of the ``range()`` function is:
 
     range(start, end, step_size)
 
-.. info:: The start value is *included* while the end value is *excluded* and the *start*, *end*, and *step_size* must be *integers*.
+.. note::
 
-To see exactly what the ``range()`` function produces, it's easiest to convert the
-result to a list using the ``list()`` function. Let's see some examples.
+    The start value is *included* while the end value is *excluded* and the *start*, *end*, and *step_size* must be *integers*.
 
-**Example** ``range(end):`` end value is specified. By default, ``range()`` will start
-at 0, and count up in steps of 1 to the end value, but does not include the end value.
+To see exactly what the ``range()`` function produces, it's easiest to convert
+the result to a list using the ``list()`` function. Let's see some examples.
+
+**Example** ``range(end):`` end value is specified. By default, ``range()``
+will start at 0, and count up in steps of 1 to the end value, but does not
+include the end value.
 
 .. exec_code::
     :language: python
 
     print(list(range(3)))
 
-**Example** ``range(start, end):`` start and end value is specified. ``range()`` will
-start at the specified start value, and count up in steps of 1 to the end value, but
-does not include the end value.
+**Example** ``range(start, end):`` start and end value is specified.
+``range()`` will start at the specified start value, and count up in steps of 1
+to the end value, but does not include the end value.
 
 .. exec_code::
     :language: python
 
     print(list(range(2, 5)))
 
-**Example** ``range(start, end, step):`` start and end value is specified. ``range()``
-will start at the specified start value, and count up by the specified step to the end
-value, but does not include the end value.
+**Example** ``range(start, end, step):`` start and end value is specified.
+``range()`` will start at the specified start value, and count up by the
+specified step to the end value, but does not include the end value.
 
 .. exec_code::
     :language: python
 
     print(list(range(6, 15, 3)))
 
-You can also specify a *negative* step, which means range will count down. The same
-rules apply as previously in that ``range()`` will start at the specified start value,
-and count *down* by the specified step to the end value, but does not include the end
-value.
+You can also specify a *negative* step, which means range will count down. The
+same rules apply as previously in that ``range()`` will start at the specified
+start value, and count *down* by the specified step to the end value, but does
+not include the end value.
 
 .. exec_code::
     :language: python
@@ -90,9 +94,9 @@ or
     :width: 350
     :align: center
 
-Since we know what values the iteration variable will take in a ``for`` loop using range
-(we know the **start**, the **end** and **step**), we can represent it using a flow
-chart similar to how we draw flowcharts for while loops.
+Since we know what values the iteration variable will take in a ``for`` loop
+using range (we know the **start**, the **end** and **step**), we can represent
+it using a flow chart similar to how we draw flowcharts for while loops.
 
 .. dropdown:: Question 1
     :open:

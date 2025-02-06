@@ -4,9 +4,9 @@ Databases with Flask
 Displaying Data from a Database
 -------------------------------
 
-In this example, we'll display a list of all movies from our database on the home page.
-We'll use ``session.execute`` to run a SQL query that selects all movies then insert the
-results as a list in our HTML.
+In this example, we'll display a list of all movies from our database on the
+home page. We'll use ``session.execute`` to run a SQL query that selects all
+movies then insert the results as a list in our HTML.
 
 .. code-block:: python
     :linenos:
@@ -62,18 +62,20 @@ results as a list in our HTML.
 
 Explanation:
 
-- We define the Flask app and connect to the database using the SQLite database stored
-  in the file ``movies.db``. The connection is created by ``engine.connect()``.
-- Inside the ``home()`` function, we define a SQL query to fetch all the movies from the
-  database using ``session.execute``.
-- The result of the query is processed to generate a list of HTML list items, which is
-  then displayed on the home page.
+- We define the Flask app and connect to the database using the SQLite database
+  stored in the file ``movies.db``. The connection is created by
+  ``engine.connect()``.
+- Inside the ``home()`` function, we define a SQL query to fetch all the movies
+  from the database using ``session.execute``.
+- The result of the query is processed to generate a list of HTML list items,
+  which is then displayed on the home page.
 
 Sort Results - Most Recent Reviews
 ----------------------------------
 
-Let's display the most recently reviewed movies first on the home page. We'll modify the
-SQL query to sort the results by ``review_date`` in descending order.
+Let's display the most recently reviewed movies first on the home page. We'll
+modify the SQL query to sort the results by ``review_date`` in descending
+order.
 
 .. code-block:: python
     :linenos:
@@ -129,17 +131,17 @@ SQL query to sort the results by ``review_date`` in descending order.
 
 Explanation:
 
-- This example is similar to the previous one, but now the SQL query is modified to sort
-  the movies based on ``review_date`` in descending order.
-- The rest of the function works the same way by displaying the movies and their reviews
-  sorted by the most recent date.
+- This example is similar to the previous one, but now the SQL query is
+  modified to sort the movies based on ``review_date`` in descending order.
+- The rest of the function works the same way by displaying the movies and
+  their reviews sorted by the most recent date.
 
 Sort and Limit Results - Top 10 Movies
 --------------------------------------
 
 In this example, we'll display the top 10 highest-rated movies, sorted by their
-``review_score``. We'll modify the SQL query to limit the number of results and order
-them by score.
+``review_score``. We'll modify the SQL query to limit the number of results and
+order them by score.
 
 .. code-block:: python
     :linenos:
@@ -195,7 +197,7 @@ them by score.
 
 Explanation:
 
-- This query fetches the top 10 movies with the highest review scores by using ``ORDER
-  BY review_score DESC LIMIT 10``.
-- We then process the results the same way as before, displaying only the top 10 movies
-  on the home page.
+- This query fetches the top 10 movies with the highest review scores by using
+  ``ORDER BY review_score DESC LIMIT 10``.
+- We then process the results the same way as before, displaying only the top
+  10 movies on the home page.

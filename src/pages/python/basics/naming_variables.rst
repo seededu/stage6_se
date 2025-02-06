@@ -1,13 +1,13 @@
 Naming Variables
 ================
 
-It is important you give your variables appropriate names - like how you might label
-boxes at home. If you don't **choose descriptive variable names**, it can be very
-difficult for yourself or others to read your code. This will become increasingly
-important as you write longer and more complex programs.
+It is important you give your variables appropriate names - like how you might
+label boxes at home. If you don't **choose descriptive variable names**, it can
+be very difficult for yourself or others to read your code. This will become
+increasingly important as you write longer and more complex programs.
 
-Below are two examples of code that calculates the cost of 4 pens and 2 highlighters.
-Which is easier to interpret?
+Below are two examples of code that calculates the cost of 4 pens and 2
+highlighters. Which is easier to interpret?
 
 **Program 1**
 
@@ -27,14 +27,14 @@ Which is easier to interpret?
     cost = 4 * pen + 2 * highlighter
     print(cost)
 
-In addition to using descriptive names, there are rules that you must follow when
-choosing a variable name. A variable name:
+In addition to using descriptive names, there are rules that you must follow
+when choosing a variable name. A variable name:
 
 - Must start with a letter or an underscore character
 - Can only contain alpha-numeric characters and underscores
 
-Further, variable names are **case sensitive**. This means that ``age`` and ``Age``, are
-not the same.
+Further, variable names are **case sensitive**. This means that ``age`` and
+``Age``, are not the same.
 
 .. code-block:: python
 
@@ -44,10 +44,11 @@ not the same.
     print(age)
     print(Age)
 
-Finally, you must ensure you don't name your variables using **keywords**. Keywords are
-special words in Python that have a special meaning. You will notice that often they
-will be formatted in a different colour. For example, print is a keyword. If you end up
-assigning a value to a keyword, you will overwrite it and your code won't work properly.
+Finally, you must ensure you don't name your variables using **keywords**.
+Keywords are special words in Python that have a special meaning. You will
+notice that often they will be formatted in a different colour. For example,
+print is a keyword. If you end up assigning a value to a keyword, you will
+overwrite it and your code won't work properly.
 
 .. code-block:: python
 

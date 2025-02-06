@@ -1,41 +1,44 @@
 CSS Preprocessors
 =================
 
-A CSS preprocessor is a scripting language that extends the capabilities of standard
-CSS. It allows developers to write styles more efficiently by offering features such as
-variables, nested rules, functions (mixins), and more. The preprocessor then compiles
-these enhanced styles into standard CSS that browsers can understand.
+A CSS preprocessor is a scripting language that extends the capabilities of
+standard CSS. It allows developers to write styles more efficiently by offering
+features such as variables, nested rules, functions (mixins), and more. The
+preprocessor then compiles these enhanced styles into standard CSS that
+browsers can understand.
 
 Motivation
 ----------
 
 Imagine you have a website with several CSS files, and a specific shade of blue
-(#3498db) is used for headings, buttons, and links across these files. If your client
-decides to change this colour to a different shade (say #2980b9), you would need to:
+(#3498db) is used for headings, buttons, and links across these files. If your
+client decides to change this colour to a different shade (say #2980b9), you
+would need to:
 
 1. Open each CSS file.
 2. Search for every instance of #3498db.
 3. Replace it with the new colour #2980b9.
 
-This process can be error-prone and time-consuming, especially for larger projects with
-many files and uses of that colour. There's also a risk of missing some instances or
-inadvertently changing values that shouldn't be updated.
+This process can be error-prone and time-consuming, especially for larger
+projects with many files and uses of that colour. There's also a risk of
+missing some instances or inadvertently changing values that shouldn't be
+updated.
 
 Sass
 ----
 
-Sass (Syntactically Awesome Style Sheets) is one of the most popular CSS preprocessors.
-It extends CSS with powerful features, making stylesheets easier to write, maintain, and
-scale.
+Sass (Syntactically Awesome Style Sheets) is one of the most popular CSS
+preprocessors. It extends CSS with powerful features, making stylesheets easier
+to write, maintain, and scale.
 
-With Sass, you can define a variable for your commonly used color once, and then use
-that variable throughout your stylesheets.
+With Sass, you can define a variable for your commonly used color once, and
+then use that variable throughout your stylesheets.
 
 Example
 ~~~~~~~
 
-The example below contains a snippet of Sass code where variables are defined, which
-will be substituted when compiled.
+The example below contains a snippet of Sass code where variables are defined,
+which will be substituted when compiled.
 
 .. code-block:: css
 
@@ -62,8 +65,8 @@ Bootstrap and Sass
 ------------------
 
 Bootstrap 5 is built using Sass, providing extensive customization options. By
-integrating Sass with Bootstrap 5, you can override Bootstrap variables and customize
-the design to fit your project.
+integrating Sass with Bootstrap 5, you can override Bootstrap variables and
+customize the design to fit your project.
 
 The general approach to integrating Bootstrap and Sass is to:
 
@@ -80,8 +83,8 @@ Example
 
 .. note::
 
-    For this section, we will assume that Sass has been installed. You can follow the
-    instructions here to install Sass https://sass-lang.com/install/
+    For this section, we will assume that Sass has been installed. You can
+    follow the instructions here to install Sass https://sass-lang.com/install/
 
 1. Create a SCSS file
 

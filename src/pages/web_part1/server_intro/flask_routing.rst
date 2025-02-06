@@ -1,27 +1,29 @@
 Handling Requests
 =================
 
-Flask makes it easy to manage HTTP requests by allowing us to define routes, which are
-specific URLs that trigger functions in our code. These functions process the requests
-and generate HTTP responses, which are then sent back to the user's browser.
+Flask makes it easy to manage HTTP requests by allowing us to define routes,
+which are specific URLs that trigger functions in our code. These functions
+process the requests and generate HTTP responses, which are then sent back to
+the user's browser.
 
 Route Decorator
 ---------------
 
-In Flask, we use the ``@`` symbol (called a decorator) to associate a function with a
-specific URL, also known as a route. A decorator is a special function in Python that
-modifies or extends the behavior of the function it is applied to. Decorators allow us
-to add extra functionality to functions in a clean and simple way, without changing the
-function's core code.
+In Flask, we use the ``@`` symbol (called a decorator) to associate a function
+with a specific URL, also known as a route. A decorator is a special function
+in Python that modifies or extends the behavior of the function it is applied
+to. Decorators allow us to add extra functionality to functions in a clean and
+simple way, without changing the function's core code.
 
-When you use a decorator like ``@app.route("/")``, it associates the URL ``/`` and the
-function directly below with each other inside the Flask app object's routing directory.
+When you use a decorator like ``@app.route("/")``, it associates the URL ``/``
+and the function directly below with each other inside the Flask app object's
+routing directory.
 
 Flask Routing System
 --------------------
 
-Flask's routing system is designed to be both powerful and flexible. Here's how it
-works:
+Flask's routing system is designed to be both powerful and flexible. Here's how
+it works:
 
 - You declare routes using the ``@app.route()`` decorator.
 - Each route corresponds to a different URL in your web application.
@@ -30,15 +32,15 @@ works:
 
 .. hint::
 
-    You can define your routes in any order in your code, and Flask will handle them
-    correctly. This means even if you declare a route at the bottom of your file, Flask
-    will still know how to route requests to that URL.
+    You can define your routes in any order in your code, and Flask will handle
+    them correctly. This means even if you declare a route at the bottom of
+    your file, Flask will still know how to route requests to that URL.
 
 Two Routes Example
 ------------------
 
-Below is an example with two routes: one for the home page (``/``) and another for the
-"about" page (``/about``):
+Below is an example with two routes: one for the home page (``/``) and another
+for the "about" page (``/about``):
 
 .. code-block::
 
@@ -63,18 +65,18 @@ Below is an example with two routes: one for the home page (``/``) and another f
 
 In this example:
 
-- The first route (``@app.route("/")``) maps to the function ``home()``, which returns a
-  simple message for the home page.
-- The second route (``@app.route("/about")``) maps to the function ``about()``, which
-  handles the "about" page.
-- When you visit http://127.0.0.1:5000/, the home page will show, and when you visit
-  http://127.0.0.1:5000/about, the about page will appear.
+- The first route (``@app.route("/")``) maps to the function ``home()``, which
+  returns a simple message for the home page.
+- The second route (``@app.route("/about")``) maps to the function ``about()``,
+  which handles the "about" page.
+- When you visit http://127.0.0.1:5000/, the home page will show, and when you
+  visit http://127.0.0.1:5000/about, the about page will appear.
 
 A Complete Example
 ------------------
 
-Now, let's bring everything together and build a small personal web page with multiple
-routes.
+Now, let's bring everything together and build a small personal web page with
+multiple routes.
 
 In this example, we have:
 

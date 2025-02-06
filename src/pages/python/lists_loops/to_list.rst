@@ -1,16 +1,16 @@
 Converting To Lists
 ===================
 
-It is often useful to convert variables in Python to a list so you can perform list
-operations. This can be achieved using ``list()``.
+It is often useful to convert variables in Python to a list so you can perform
+list operations. This can be achieved using ``list()``.
 
 ``list(iterable)``
 
-Only iterables can be converted to a list. An iterable is a sequence of values you can
-go through.
+Only iterables can be converted to a list. An iterable is a sequence of values
+you can go through.
 
-**Example:** Convert a string to a list. This will create a list of characters that make
-up the given string.
+**Example:** Convert a string to a list. This will create a list of characters
+that make up the given string.
 
 .. exec_code::
     :language: python
@@ -21,8 +21,8 @@ up the given string.
 If we want to create a list of strings rather than characters we can use the
 ``.split()`` method.
 
-The string is the text that you want to convert to a list and the separator is used to
-identify how the string should be broken up into different elements.
+The string is the text that you want to convert to a list and the separator is
+used to identify how the string should be broken up into different elements.
 
 **Example:** Splitting on a space.
 

@@ -1,16 +1,16 @@
 Variables
 =========
 
-Variables allow you to store information and use it throughout your program. In this
-section, you’ll learn how to define and use variables in JavaScript, understand common
-data types, and explore key concepts like naming conventions, ``typeof``, and the
-difference between ``let`` and ``const``.
+Variables allow you to store information and use it throughout your program. In
+this section, you’ll learn how to define and use variables in JavaScript,
+understand common data types, and explore key concepts like naming conventions,
+``typeof``, and the difference between ``let`` and ``const``.
 
 Defining Variables
 ------------------
 
-In JavaScript, you define variables using the ``let`` keyword. The syntax looks like
-this:
+In JavaScript, you define variables using the ``let`` keyword. The syntax looks
+like this:
 
 .. code-block:: javascript
 
@@ -34,8 +34,8 @@ You can also define a variable without giving it an initial value:
 
     let favoriteColor;
 
-This creates a variable called favoriteColor with no value assigned to it yet. We'll
-come back to this idea later!
+This creates a variable called favoriteColor with no value assigned to it yet.
+We'll come back to this idea later!
 
 Using Variables
 ---------------
@@ -58,8 +58,8 @@ You can also update the value of a variable:
 Common Data Types
 -----------------
 
-Variables in JavaScript can store different types of data. Here are the three most
-common:
+Variables in JavaScript can store different types of data. Here are the three
+most common:
 
 **String**
 
@@ -112,10 +112,11 @@ Variable Naming
 
 When naming variables, you must follow these rules:
 
-- Variable names can only include letters, numbers, underscores (_), or dollar signs
-  ($).
+- Variable names can only include letters, numbers, underscores (_), or dollar
+  signs ($).
 - Variable names must start with a letter, underscore, or dollar sign.
-- Variable names cannot be reserved keywords (e.g., ``let``, ``const``, ``if``).
+- Variable names cannot be reserved keywords (e.g., ``let``, ``const``,
+  ``if``).
 
 Examples of valid variable names:
 
@@ -136,7 +137,8 @@ CamelCase Convention
 --------------------
 
 JavaScript developers often use the `camelCase
-<https://en.wikipedia.org/wiki/Camel_case>`_ naming convention for variable names:
+<https://en.wikipedia.org/wiki/Camel_case>`_ naming convention for variable
+names:
 
 - The first word starts with a lowercase letter.
 - Each subsequent word starts with an uppercase letter.
@@ -152,9 +154,9 @@ Examples:
 let vs const
 ------------
 
-Aside from ``let``, you can also define variables with ``const``, which is short for
-"constant". Variables defined with ``const`` are used when the variable's value should
-not change.
+Aside from ``let``, you can also define variables with ``const``, which is
+short for "constant". Variables defined with ``const`` are used when the
+variable's value should not change.
 
 Example:
 
@@ -166,7 +168,8 @@ Example:
 undefined and null
 ------------------
 
-JavaScript has two special values to represent variables with no meaningful data:
+JavaScript has two special values to represent variables with no meaningful
+data:
 
 **undefined**
 

@@ -1,18 +1,18 @@
 Custom Modules
 ==============
 
-There are lots of Python modules that exist for us to use. E.g. ``math``, ``random``,
-``time`` and ``datetime`` modules.
+There are lots of Python modules that exist for us to use. E.g. ``math``,
+``random``, ``time`` and ``datetime`` modules.
 
-But if we want to write our own custom functions we can actually write our own modules!
-We just need to create a Python file:
+But if we want to write our own custom functions we can actually write our own
+modules! We just need to create a Python file:
 
 .. code-block:: text
 
     module.py
 
-where we write all of our functions. We can then import this as we would with our usual
-modules.
+where we write all of our functions. We can then import this as we would with
+our usual modules.
 
 .. code-block:: text
 

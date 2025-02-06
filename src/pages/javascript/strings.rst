@@ -2,15 +2,15 @@ Strings
 =======
 
 Strings are one of the most common data types in JavaScript, used to store and
-manipulate text. This page will introduce you to defining strings, combining them,
-working with quotes, using common string methods, and formatting text with template
-literals.
+manipulate text. This page will introduce you to defining strings, combining
+them, working with quotes, using common string methods, and formatting text
+with template literals.
 
 Defining Strings
 ----------------
 
-A string is a sequence of characters, such as letters, numbers, symbols, or spaces,
-enclosed in quotes.
+A string is a sequence of characters, such as letters, numbers, symbols, or
+spaces, enclosed in quotes.
 
 JavaScript allows you to define strings using either single or double quotes.
 
@@ -26,8 +26,8 @@ JavaScript allows you to define strings using either single or double quotes.
 
     let doubleQuoteString = "Hello, world!";
 
-Both single and double quotes work the same way, but you should be consistent in your
-code.
+Both single and double quotes work the same way, but you should be consistent
+in your code.
 
 String Concatenation
 --------------------
@@ -44,8 +44,8 @@ You can combine (or concatenate) strings using the + operator.
 Nesting Quotes
 --------------
 
-Sometimes, you need to include quotes inside a string. Use the opposite type of quote
-for the string and the nested quotes.
+Sometimes, you need to include quotes inside a string. Use the opposite type of
+quote for the string and the nested quotes.
 
 Example:
 
@@ -54,8 +54,8 @@ Example:
     let sentence = "She said, 'JavaScript is fun!'";
     console.log(sentence); // Prints: She said, 'JavaScript is fun!'
 
-If you must use the same type of quote, use a backslash (``\``) to escape the nested
-quotes:
+If you must use the same type of quote, use a backslash (``\``) to escape the
+nested quotes:
 
 .. code-block:: javascript
 
@@ -66,8 +66,8 @@ quotes:
 Useful String Methods
 ---------------------
 
-JavaScript strings come with built-in methods for performing common tasks. Here are some
-examples:
+JavaScript strings come with built-in methods for performing common tasks. Here
+are some examples:
 
 **Finding the Length of a String**
 
@@ -88,7 +88,8 @@ Strings are zero-indexed, meaning the first character is at position 0.
 
 **Splitting Strings**
 
-You can split a string into an array of smaller strings using the split() method.
+You can split a string into an array of smaller strings using the split()
+method.
 
 .. code-block:: javascript
 
@@ -116,8 +117,8 @@ You can check if a string contains another string using includes().
 Template Literals
 -----------------
 
-Template literals make working with strings easier and more powerful. They use backticks
-(`````) instead of quotes.
+Template literals make working with strings easier and more powerful. They use
+backticks (`````) instead of quotes.
 
 **Multiline Strings**
 
@@ -149,8 +150,9 @@ You can insert variables or expressions directly into a string using ${}.
 Formatting Numbers
 ------------------
 
-When working with numbers, you can format them to a specific number of decimal places
-using the ``toFixed()`` method. The result is always returned as a string.
+When working with numbers, you can format them to a specific number of decimal
+places using the ``toFixed()`` method. The result is always returned as a
+string.
 
 Example:
 

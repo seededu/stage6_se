@@ -1,8 +1,8 @@
 Booleans
 ========
 
-A Boolean is another variable type (like integers, floats and string). A Boolean can be
-a ``True`` or a ``False``.
+A Boolean is another variable type (like integers, floats and string). A
+Boolean can be a ``True`` or a ``False``.
 
 .. exec_code::
     :language: python
@@ -12,10 +12,10 @@ a ``True`` or a ``False``.
 
     print(type(x))
 
-``True`` and ``False`` are keywords. They need to be capitalised. The following code
-will return a NameError. This is because Python doesn't recognise true as a keyword
-(note it hasn't turned purple). The program is looking for ``true`` to be defined
-somewhere in the code, but it can't find it.
+``True`` and ``False`` are keywords. They need to be capitalised. The following
+code will return a NameError. This is because Python doesn't recognise true as
+a keyword (note it hasn't turned purple). The program is looking for ``true``
+to be defined somewhere in the code, but it can't find it.
 
 .. code-block:: python
 
@@ -26,8 +26,8 @@ Computers store boolean values as 0's or 1's.
 - 0 for False
 - 1 for True
 
-This means you can convert between booleans and integers. Have a look at the examples
-below.
+This means you can convert between booleans and integers. Have a look at the
+examples below.
 
 .. exec_code::
     :language: python
@@ -36,8 +36,8 @@ below.
 
     print(bool(0))
 
-Booleans are also often used in datasets to represent categorical data with two options.
-Here is an example of a student attendance sheet.
+Booleans are also often used in datasets to represent categorical data with two
+options. Here is an example of a student attendance sheet.
 
 ======= ========
 Name    Attended
@@ -48,4 +48,5 @@ Charlie 1
 David   1
 ======= ========
 
-1 indicates the student went to class and 0 indicates the student did not attend class.
+1 indicates the student went to class and 0 indicates the student did not
+attend class.

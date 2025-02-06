@@ -1,8 +1,8 @@
 Input
 =====
 
-It is often useful for a user to interact directly with their program. To do this, we
-can use ``input()`` to collect information from the user.
+It is often useful for a user to interact directly with their program. To do
+this, we can use ``input()`` to collect information from the user.
 
 Here is the structure of the ``input()`` statement.
 
@@ -23,17 +23,18 @@ Here is the structure of the ``input()`` statement.
 Input values are always strings!
 --------------------------------
 
-A very common mistake people make is that they forget that ``input()`` values are always
-strings.
+A very common mistake people make is that they forget that ``input()`` values
+are always strings.
 
 .. code-block:: python
 
     n = input("Enter your lucky number: ")
     print(type(n))
 
-Make sure you double check the variable type when you use ``input()``! If you are
-dealing with numerical input, you will have to cast the string to either an integer or a
-float. In the code below we have to convert the user's input to an integer (line 2).
+Make sure you double check the variable type when you use ``input()``! If you
+are dealing with numerical input, you will have to cast the string to either an
+integer or a float. In the code below we have to convert the user's input to an
+integer (line 2).
 
 .. code-block:: python
 

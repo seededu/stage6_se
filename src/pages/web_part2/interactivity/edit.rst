@@ -1,15 +1,16 @@
 Editing the Page and Elements
 =============================
 
-Now that you know how to find elements in the DOM, it’s time to learn how to edit and
-manipulate them. JavaScript provides several ways to update the content, attributes, and
-structure of a web page.
+Now that you know how to find elements in the DOM, it’s time to learn how to
+edit and manipulate them. JavaScript provides several ways to update the
+content, attributes, and structure of a web page.
 
 Updating Content with innerHTML
 -------------------------------
 
-The ``innerHTML`` property allows you to get or set the HTML content of an element. You
-can use it to add, update, or completely replace the content inside an element.
+The ``innerHTML`` property allows you to get or set the HTML content of an
+element. You can use it to add, update, or completely replace the content
+inside an element.
 
 **Example**
 
@@ -25,8 +26,8 @@ can use it to add, update, or completely replace the content inside an element.
 Updating Attributes
 -------------------
 
-You can update an element’s attributes by setting the corresponding directly or use
-``setAttribute``.
+You can update an element’s attributes by setting the corresponding directly or
+use ``setAttribute``.
 
 **Direct Property Access**
 
@@ -37,8 +38,8 @@ You can update an element’s attributes by setting the corresponding directly o
 
 **setAttribute(attribute, value)**
 
-The first parameter is a string corresponding to the attribute to set and the second is
-the new value.
+The first parameter is a string corresponding to the attribute to set and the
+second is the new value.
 
 .. code-block:: javascript
 
@@ -60,8 +61,8 @@ the new value.
 Styling Elements
 ----------------
 
-The ``style`` property allows you to directly modify an element’s CSS styles. You can
-change colors, sizes, margins, and more.
+The ``style`` property allows you to directly modify an element’s CSS styles.
+You can change colors, sizes, margins, and more.
 
 **Example**
 
@@ -84,8 +85,8 @@ You can dynamically create new elements and add them to the DOM using
 
 **Example**
 
-This example adds a new ``<li>`` element with the text "Item 3" is added to the end of
-the list.
+This example adds a new ``<li>`` element with the text "Item 3" is added to the
+end of the list.
 
 .. code-block:: html
 

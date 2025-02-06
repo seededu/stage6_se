@@ -1,10 +1,11 @@
 Printing
 ========
 
-One of the first things you'll want to do in JavaScript is display information on the
-console.
+One of the first things you'll want to do in JavaScript is display information
+on the console.
 
-JavaScript provides a simple method to print messages to the console: ``console.log()``.
+JavaScript provides a simple method to print messages to the console:
+``console.log()``.
 
 Try running the code below and play around with the message.
 
@@ -60,8 +61,8 @@ Common Printing Mistakes
 
     console.log "Hello";
 
-**Typos**: JavaScript is case-sensitive, so ``Console.log()`` or ``console.Log()`` will
-not work. The following will cause an error.
+**Typos**: JavaScript is case-sensitive, so ``Console.log()`` or
+``console.Log()`` will not work. The following will cause an error.
 
 .. code-block:: javascript
 
@@ -74,17 +75,18 @@ not work. The following will cause an error.
 Why Do We Use console.log()?
 ----------------------------
 
-When learning JavaScript, you might wonder why we use the full ``console.log()`` instead
-of just a simpler, single function like ``print`` in Python.
+When learning JavaScript, you might wonder why we use the full
+``console.log()`` instead of just a simpler, single function like ``print`` in
+Python.
 
-In JavaScript the console or terminal is represented by the globally available object
-``console``, which has many ways to show information. For example:
+In JavaScript the console or terminal is represented by the globally available
+object ``console``, which has many ways to show information. For example:
 
 - ``console.log()``: displays general information.
 - ``console.warn()``: displays a warning message.
 - ``console.error()``: displays an error message.
 
-The different types of printing reflect common situations that a browser encounters,
-such as a web developer using a deprecated function on a page, which might be presented
-as a warning. Likewise if something on the page isn't compliant or crashes it should be
-shown as an error on the console.
+The different types of printing reflect common situations that a browser
+encounters, such as a web developer using a deprecated function on a page,
+which might be presented as a warning. Likewise if something on the page isn't
+compliant or crashes it should be shown as an error on the console.

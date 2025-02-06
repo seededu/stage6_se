@@ -1,10 +1,10 @@
 Comments
 ========
 
-As you begin to write longer and longer programs, it's often helpful to write notes in
-your code. These are called comments. A comment is meant to be a short note explaining a
-section of code to the programmer, and is ignored by the computer. There are two types
-of comments.
+As you begin to write longer and longer programs, it's often helpful to write
+notes in your code. These are called comments. A comment is meant to be a short
+note explaining a section of code to the programmer, and is ignored by the
+computer. There are two types of comments.
 
 1. .. code-block:: python
 

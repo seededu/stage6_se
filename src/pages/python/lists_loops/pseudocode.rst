@@ -1,10 +1,11 @@
 Pseudocode
 ==========
 
-We can write our control structures such as loops in a form using pseudocode which
-allows us to write out a program without worrying about syntax. Sometimes the symbols
-and keywords used in pseudocode will vary depending on the convention you are using, but
-the idea is that pseudocode should be easy to humans to read.
+We can write our control structures such as loops in a form using pseudocode
+which allows us to write out a program without worrying about syntax. Sometimes
+the symbols and keywords used in pseudocode will vary depending on the
+convention you are using, but the idea is that pseudocode should be easy to
+humans to read.
 
 While loops
 -----------
@@ -62,7 +63,8 @@ Here is another example
         Get colour
     ENDWHILE
 
-Note that ``<>`` can be used to indicate not equal and is equivalent to using ``!=``.
+Note that ``<>`` can be used to indicate not equal and is equivalent to using
+``!=``.
 
 For loops
 ---------
@@ -92,8 +94,9 @@ Here is an example
         Display i
     NEXT i
 
-Not that for ``For`` loops in pseudocode, the loop *includes* the start and end values.
-This means that ``FOR i = 0 TO 2 STEP 1`` means that ``i`` takes the values 0, 1 and 2.
+Not that for ``For`` loops in pseudocode, the loop *includes* the start and end
+values. This means that ``FOR i = 0 TO 2 STEP 1`` means that ``i`` takes the
+values 0, 1 and 2.
 
 .. dropdown:: Question 1
     :open:

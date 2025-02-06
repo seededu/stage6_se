@@ -1,15 +1,16 @@
 While Loops With Input
 ======================
 
-It is often useful to use a ``while`` loop to request information from a user *until*
-they enter a specific string that will cause the loop to terminate.
+It is often useful to use a ``while`` loop to request information from a user
+*until* they enter a specific string that will cause the loop to terminate.
 
 .. image:: img/4_example1.png
     :width: 280
     :align: center
 
-It's important to note that this time the variable we check in our loop is obtained via
-``input()``. This means we represent it with a **parallelogram** in our flowchart.
+It's important to note that this time the variable we check in our loop is
+obtained via ``input()``. This means we represent it with a **parallelogram**
+in our flowchart.
 
 Here is an example.
 
@@ -21,9 +22,9 @@ Here is an example.
         print(number)
         number = input("Enter a number: ")
 
-What you'll notice is that each time you enter a number, the program will repeat that
-number unless that number is 5. If the user enters a 5, the condition ``number != 5`` is
-``False`` and the loop terminates.
+What you'll notice is that each time you enter a number, the program will
+repeat that number unless that number is 5. If the user enters a 5, the
+condition ``number != 5`` is ``False`` and the loop terminates.
 
 This is how we can represent this code diagrammatically.
 
@@ -31,16 +32,18 @@ This is how we can represent this code diagrammatically.
     :width: 280
     :align: center
 
-Note that it looks a little different to our previous diagrams. The main difference are:
+Note that it looks a little different to our previous diagrams. The main
+difference are:
 
-- We aren't iterating through a series of sequential values. The user decides what the
-  next value of number will be.
-- The condition we are checking is that ``number`` *is not* a specific value (in this
-  case ``number`` is not 5).
+- We aren't iterating through a series of sequential values. The user decides
+  what the next value of number will be.
+- The condition we are checking is that ``number`` *is not* a specific value
+  (in this case ``number`` is not 5).
 - ``number`` is not actually a number at all it's a string!
 
-A very common string to terminate on is the empty string ``''``, i.e. the program will
-terminate if the user presses enter without giving any other input.
+A very common string to terminate on is the empty string ``''``, i.e. the
+program will terminate if the user presses enter without giving any other
+input.
 
 .. code-block:: python
 

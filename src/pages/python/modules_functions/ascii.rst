@@ -2,8 +2,9 @@ ASCII
 =====
 
 ASCII (American Standard Code for Information Interchange) is a standard for
-representing text in computers. Each character is mapped to an integer that can also be
-represented in binary using 7 bits or as a 2-character hexadecimal number.
+representing text in computers. Each character is mapped to an integer that can
+also be represented in binary using 7 bits or as a 2-character hexadecimal
+number.
 
 .. list-table::
     :header-rows: 1
@@ -229,15 +230,16 @@ represented in binary using 7 bits or as a 2-character hexadecimal number.
       - 7a
       - 01111010
 
-In Python you can obtain the decimal number corresponding to a given letter using
-``ord()``.
+In Python you can obtain the decimal number corresponding to a given letter
+using ``ord()``.
 
-.. exec_code:: :language: python
+.. exec_code::
+    :language: python
 
     print(ord('A'))
 
-You can then find the corresponding english character for a given decimal number using
-``chr()``.
+You can then find the corresponding english character for a given decimal
+number using ``chr()``.
 
 .. exec_code::
     :language: python

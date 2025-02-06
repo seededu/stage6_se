@@ -1,8 +1,9 @@
 While Loops With Lists
 ======================
 
-It's often useful to use a loop to iterate through a list. Suppose you had the following
-list of colours. You can print out each colour using the following code:
+It's often useful to use a loop to iterate through a list. Suppose you had the
+following list of colours. You can print out each colour using the following
+code:
 
 .. code-block:: python
 
@@ -16,12 +17,12 @@ list of colours. You can print out each colour using the following code:
     print(colours[5])
     print(colours[6])
 
-What you'll have noticed is that the code is quite *repetitive*. If you ever see code
-that is repetitive, it often means it can be replaced by a loop! Have a look at the
-example below.
+What you'll have noticed is that the code is quite *repetitive*. If you ever
+see code that is repetitive, it often means it can be replaced by a loop! Have
+a look at the example below.
 
-*Recall that ``len()`` tells you the number of elements in the given list. In this case
-is ``len(colours)`` is 7.*
+*Recall that ``len()`` tells you the number of elements in the given list. In
+this case is ``len(colours)`` is 7.*
 
 .. code-block:: python
 

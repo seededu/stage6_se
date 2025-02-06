@@ -1,14 +1,16 @@
 Finding Elements
 ================
 
-When working with the DOM, one of the first things you need to do is find specific
-elements on the page. JavaScript provides several ways to locate elements.
+When working with the DOM, one of the first things you need to do is find
+specific elements on the page. JavaScript provides several ways to locate
+elements.
 
 getElementById
 --------------
 
-Use ``getElementById()`` when you want to find a single element by its unique id. This
-is one of the fastest ways to grab an element because ids are unique across the page.
+Use ``getElementById()`` when you want to find a single element by its unique
+id. This is one of the fastest ways to grab an element because ids are unique
+across the page.
 
 **Example**
 
@@ -29,8 +31,9 @@ is one of the fastest ways to grab an element because ids are unique across the 
 querySelector
 -------------
 
-Use ``querySelector()`` when you want to find the first element that matches a CSS
-selector. This method is very flexible because it supports all CSS selectors.
+Use ``querySelector()`` when you want to find the first element that matches a
+CSS selector. This method is very flexible because it supports all CSS
+selectors.
 
 **Example**
 
@@ -52,8 +55,9 @@ selector. This method is very flexible because it supports all CSS selectors.
 querySelectorAll
 ----------------
 
-Use ``querySelectorAll()`` when you want to find all elements that match a CSS selector.
-It returns a NodeList, which is like an array (you can loop through it). **Example**
+Use ``querySelectorAll()`` when you want to find all elements that match a CSS
+selector. It returns a NodeList, which is like an array (you can loop through
+it). **Example**
 
 .. code-block:: html
 
@@ -80,9 +84,9 @@ It returns a NodeList, which is like an array (you can loop through it). **Examp
 getElementsByClassName
 ----------------------
 
-Use ``getElementsByClassName()`` to find all elements with a specific class name. It
-returns an ``HTMLCollection``, which is slightly different from an array but can still
-be looped through.
+Use ``getElementsByClassName()`` to find all elements with a specific class
+name. It returns an ``HTMLCollection``, which is slightly different from an
+array but can still be looped through.
 
 .. code-block:: html
 
@@ -108,8 +112,9 @@ be looped through.
 getElementsByTagName
 --------------------
 
-Use ``getElementsByTagName()`` to find all elements with a specific tag name, like
-``<div>``, ``<p>``, or ``<button>``. This also returns an ``HTMLCollection``.
+Use ``getElementsByTagName()`` to find all elements with a specific tag name,
+like ``<div>``, ``<p>``, or ``<button>``. This also returns an
+``HTMLCollection``.
 
 .. code-block:: html
 

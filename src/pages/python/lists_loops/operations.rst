@@ -1,8 +1,8 @@
 List Operations
 ===============
 
-We can add items to the end of our list by appending them. To do this we use the
-``.append()`` method.
+We can add items to the end of our list by appending them. To do this we use
+the ``.append()`` method.
 
 Here is the syntax used for appending:
 
@@ -27,7 +27,8 @@ Conveniently, we can perform operations on lists. Here are a few examples:
       a = [-3, 4, 6, 1]
       print(len(a))
 
-- ``min(list)``, ``max(list)``: Find the minimum/maximum value in a list of numbers
+- ``min(list)``, ``max(list)``: Find the minimum/maximum value in a list of
+  numbers
 
   .. exec_code::
       :language: python

@@ -1,12 +1,12 @@
 Limit
 =====
 
-If you have a large dataset, it is impractical to display all the rows in the dataset.
-To do this in SQL, we use the ``LIMIT`` keyword to specify how many rows we would like
-to display.
+If you have a large dataset, it is impractical to display all the rows in the
+dataset. To do this in SQL, we use the ``LIMIT`` keyword to specify how many
+rows we would like to display.
 
-The ``LIMIT`` clause comes after the ``SELECT``, ``FROM``, ``WHERE`` and ``ORDER BY``
-clauses.
+The ``LIMIT`` clause comes after the ``SELECT``, ``FROM``, ``WHERE`` and
+``ORDER BY`` clauses.
 
 .. code-block:: sql
 

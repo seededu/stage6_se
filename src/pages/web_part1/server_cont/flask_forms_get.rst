@@ -1,13 +1,13 @@
 Forms - Part 1
 ==============
 
-HTML forms are essential for collecting user input on webpages. In this section we will
-learn how to create forms with HTML, how to send the form data to a webserver using a
-HTTP ``GET`` request using :term:`query strings <query string>` and handle the request
-on a web server.
+HTML forms are essential for collecting user input on webpages. In this section
+we will learn how to create forms with HTML, how to send the form data to a
+webserver using a HTTP ``GET`` request using :term:`query strings <query
+string>` and handle the request on a web server.
 
-We'll use these form submissions to filter movie reviews in our case study as an
-example.
+We'll use these form submissions to filter movie reviews in our case study as
+an example.
 
 HTML Forms
 ----------
@@ -39,24 +39,27 @@ Here's an example of a form
 
 Explanation
 
-- ``<form>`` specifies the start of a form and encapsulates all the inputs that are to
-  be submitted with the form.
-- ``<input type="text" id="term" name="term">`` creates a text input for the user's
-  search term. The ``name`` attribute will become the key in the query string.
-- ``<input type="submit" value="Search">`` creates a button to submit the form data.
+- ``<form>`` specifies the start of a form and encapsulates all the inputs that
+  are to be submitted with the form.
+- ``<input type="text" id="term" name="term">`` creates a text input for the
+  user's search term. The ``name`` attribute will become the key in the query
+  string.
+- ``<input type="submit" value="Search">`` creates a button to submit the form
+  data.
 
 Form Inputs
 -----------
 
-The HTML specification defines a number of valid ``input`` types. Common examples are:
+The HTML specification defines a number of valid ``input`` types. Common
+examples are:
 
 - ``checkbox``
 - ``number``
 - ``radio``
 - ``text``
 
-There is also a special type called ``submit``, which creates a button that submits the
-form when clicked.
+There is also a special type called ``submit``, which creates a button that
+submits the form when clicked.
 
 A full list of valid ``input`` types can be found here
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
@@ -64,12 +67,12 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
 Forms over HTTP
 ---------------
 
-When a form is submitted, the browser sends the form data to the server using HTTP. The
-two most common methods are:
+When a form is submitted, the browser sends the form data to the server using
+HTTP. The two most common methods are:
 
 - ``GET``: Sends data as part of the URL, typically used for retrieving data.
-- ``POST``: Sends data in the body of the request, used for submitting data such as
-  forms or file uploads.
+- ``POST``: Sends data in the body of the request, used for submitting data
+  such as forms or file uploads.
 
 We will focus on submititng forms using ``GET`` requests on this page.
 
@@ -78,12 +81,13 @@ We will focus on submititng forms using ``GET`` requests on this page.
     Forms using ``POST`` requests are described in
     :doc:`/web_part1/server_cont/flask_forms_post`.
 
-For forms using ``GET`` the data is encoded in the URL itself, making them ideal for:
+For forms using ``GET`` the data is encoded in the URL itself, making them
+ideal for:
 
 - Search queries
 - Filters for content (e.g., filtering movies by genre)
-- Bookmarkable URLs (since the data is visible in the URL, users can save and share the
-  link)
+- Bookmarkable URLs (since the data is visible in the URL, users can save and
+  share the link)
 
 Everyday examples include search bars on websites (e.g., Google) and filters on
 e-commerce sites (e.g., filtering by price or category).
@@ -91,8 +95,9 @@ e-commerce sites (e.g., filtering by price or category).
 Query Strings
 -------------
 
-When using the ``GET``, the data is sent in the URL as a :term:`query string`. Query
-strings consist of key-value pairs appended to the URL, and they follow this format:
+When using the ``GET``, the data is sent in the URL as a :term:`query string`.
+Query strings consist of key-value pairs appended to the URL, and they follow
+this format:
 
 .. code-block::
 
@@ -128,11 +133,12 @@ Here's an example of a form using ``GET`` where users can search by name:
 
 Explanation
 
-- ``<form action="/search" method="GET">`` creates a form that submits data to the
-  ``/search`` URL using the GET method. This means the input will appear in the URL
-  after submission.
+- ``<form action="/search" method="GET">`` creates a form that submits data to
+  the ``/search`` URL using the GET method. This means the input will appear in
+  the URL after submission.
 
-When the form is submitted with "Flask" as the search term, the URL will look like this:
+When the form is submitted with "Flask" as the search term, the URL will look
+like this:
 
     http://localhost:5000/search?term=Flask
 
@@ -162,17 +168,18 @@ Here's how you can handle the query string data in Flask:
 Explanation
 
 - The ``/search`` route listens for GET requests.
-- ``request.args.get('term', '')`` is used to retrieve the value of the ``term``
-  parameter from the URL. The `request.args` dictionary contains all the query string
-  data. If no value is provided, it defaults to an empty string (``''``).
+- ``request.args.get('term', '')`` is used to retrieve the value of the
+  ``term`` parameter from the URL. The `request.args` dictionary contains all
+  the query string data. If no value is provided, it defaults to an empty
+  string (``''``).
 - The server returns a message that displays what the user searched for.
 
 Example: Filter Reviews
 -----------------------
 
-Let's create an example where we filter the movies in the "Movie Reviews" database by
-attributes like genre or review score. The user will select filters using a form, and
-the results will be displayed based on the selected filters.
+Let's create an example where we filter the movies in the "Movie Reviews"
+database by attributes like genre or review score. The user will select filters
+using a form, and the results will be displayed based on the selected filters.
 
 Project structure:
 

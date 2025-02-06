@@ -4,8 +4,8 @@ Pseudocode and Flowcharts
 Pseudocode
 ----------
 
-When representing a function in pseudocode we use the keywords ``BEGIN`` and ``END`` to
-indicate the start and end of the function.
+When representing a function in pseudocode we use the keywords ``BEGIN`` and
+``END`` to indicate the start and end of the function.
 
 .. code-block:: text
 
@@ -13,8 +13,8 @@ indicate the start and end of the function.
         process
     END function_name
 
-If the function returns a value we use the keyword ``RETURN`` followed by the values
-that are returned
+If the function returns a value we use the keyword ``RETURN`` followed by the
+values that are returned
 
 .. code-block:: text
 
@@ -37,8 +37,8 @@ Here's an example.
         RETURN x + y
     END add (x, y)
 
-Once you have the pseudocode for a function, you can use this function in other scripts.
-For your main script you can simply use ``BEGIN`` and ``END``.
+Once you have the pseudocode for a function, you can use this function in other
+scripts. For your main script you can simply use ``BEGIN`` and ``END``.
 
 **Python code**
 
@@ -99,9 +99,9 @@ Here's an example.
     :width: 450
     :align: center
 
-Note that there are **two** flow charts here. The first shows the main script and the
-second shows the function ``add()``. The main script refers to the ``add()`` function in
-the subprocess node.
+Note that there are **two** flow charts here. The first shows the main script
+and the second shows the function ``add()``. The main script refers to the
+``add()`` function in the subprocess node.
 
 We have now seen all the flowchart symbols we will need.
 

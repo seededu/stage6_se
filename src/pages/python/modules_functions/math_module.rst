@@ -4,21 +4,22 @@ The Math Module
 Importing Functions
 -------------------
 
-The `math <https://docs.python.org/3/library/math.html>`_ module gives us access to many
-useful mathematical functions. But to use the functions we need to *import* the ``math``
-module, which we will usually do at the *top* of our Python script. There are two ways
-we recommend doing this
+The `math <https://docs.python.org/3/library/math.html>`_ module gives us
+access to many useful mathematical functions. But to use the functions we need
+to *import* the ``math`` module, which we will usually do at the *top* of our
+Python script. There are two ways we recommend doing this
 
-**Option 1:** Import the entire module. We do this if we want to access *all* of the
-available functions.
+**Option 1:** Import the entire module. We do this if we want to access *all*
+of the available functions.
 
 .. code-block:: python
 
     import math
 
-When you run this, it doesn't seem to do anything. But you'll see that this gives us
-access to all of the functions inside the ``math`` module. In order to use these
-functions, you need to indicate that they're coming from the ``math`` module using:
+When you run this, it doesn't seem to do anything. But you'll see that this
+gives us access to all of the functions inside the ``math`` module. In order to
+use these functions, you need to indicate that they're coming from the ``math``
+module using:
 
 .. code-block:: text
 
@@ -38,9 +39,10 @@ For example,
 
     from math import cos
 
-Again, this doesn't seem to do anything, but you'll see that it does give us access to
-the ``cos`` function. This time, when we use the ``cos`` function we don't need to
-explicitly say it's coming from the ``math`` library we can just use the function:
+Again, this doesn't seem to do anything, but you'll see that it does give us
+access to the ``cos`` function. This time, when we use the ``cos`` function we
+don't need to explicitly say it's coming from the ``math`` library we can just
+use the function:
 
 .. code-block:: text
 
@@ -54,8 +56,8 @@ For example,
 
     print(cos(0))
 
-If you want to import multiple functions you can so so by separating each function with
-a comma.
+If you want to import multiple functions you can so so by separating each
+function with a comma.
 
 For example,
 
@@ -66,16 +68,17 @@ For example,
     print(cos(0))
     print(sin(0))
 
-If you try to import a function that does not exist inside the ``math`` module, you will
-get an **ImportErrror**.
+If you try to import a function that does not exist inside the ``math`` module,
+you will get an **ImportErrror**.
 
 Accessing Constants
 -------------------
 
-In addition to functions, modules may also provide useful constants. For example the
-``math`` module provides :math:`\pi`, :math:`e`, :math:`\tau = 2\pi`, :math:`\infty` and
-`nan` (not a number). To use these you also have to import the ``math`` module, but
-since they are not functions, you don't need the brackets.
+In addition to functions, modules may also provide useful constants. For
+example the ``math`` module provides :math:`\pi`, :math:`e`, :math:`\tau =
+2\pi`, :math:`\infty` and `nan` (not a number). To use these you also have to
+import the ``math`` module, but since they are not functions, you don't need
+the brackets.
 
 **Import option 1**
 

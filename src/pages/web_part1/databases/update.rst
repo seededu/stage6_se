@@ -3,11 +3,11 @@ Update
 
 Sometimes we want to modify a record that already exists in our database.
 
-For example, one of our customers might move to a new house. Then we would have to
-update their postcode.
+For example, one of our customers might move to a new house. Then we would have
+to update their postcode.
 
-To perform an ``UPDATE`` we need to ``SET`` new values and we also need to specify a
-criteria to identify records ``WHERE`` we will make our changes.
+To perform an ``UPDATE`` we need to ``SET`` new values and we also need to
+specify a criteria to identify records ``WHERE`` we will make our changes.
 
 .. code-block:: sql
 
@@ -30,10 +30,11 @@ We can update our ``customers`` table to change Wilson's postcode.
 Primary Key
 -----------
 
-You will have noticed that the condition we chose was ``id = 5``, but equally, we could
-have used ``firstname = 'Wilson'``.
+You will have noticed that the condition we chose was ``id = 5``, but equally,
+we could have used ``firstname = 'Wilson'``.
 
-The difference is that ``id`` is the primary key (it's marked in the diagram by the
-underline). This means that no two records can have the same ``id``. It is possible for
-multiple records to have ``'Wilson'`` as the ``firstname``, in which case we would be
-updating the postcodes of every record where ``firstname = 'Wilson'``.
+The difference is that ``id`` is the primary key (it's marked in the diagram by
+the underline). This means that no two records can have the same ``id``. It is
+possible for multiple records to have ``'Wilson'`` as the ``firstname``, in
+which case we would be updating the postcodes of every record where ``firstname
+= 'Wilson'``.

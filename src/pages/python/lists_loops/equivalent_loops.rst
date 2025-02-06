@@ -1,9 +1,9 @@
 Equivalent Loops
 ================
 
-When programming, you'll find that there are often multiple ways to write your program
-and have it do the same thing! Have a look at the examples below. You will find that in
-each example, the programs do the exact same thing.
+When programming, you'll find that there are often multiple ways to write your
+program and have it do the same thing! Have a look at the examples below. You
+will find that in each example, the programs do the exact same thing.
 
 **Example 1:** Count 0 to 4
 
@@ -54,12 +54,12 @@ each example, the programs do the exact same thing.
     :width: 900
     :align: center
 
-When you write a loop you will have to choose whether you use a ``for`` loop or a
-``while`` loop. Often, it won't matter which one you choose as both will work. But in
-general, you would use:
+When you write a loop you will have to choose whether you use a ``for`` loop or
+a ``while`` loop. Often, it won't matter which one you choose as both will
+work. But in general, you would use:
 
-- a ``while`` loop if you don't know how many times to repeat your code - instead, you
-  will terminate your loop once a certain *condition* is met
+- a ``while`` loop if you don't know how many times to repeat your code -
+  instead, you will terminate your loop once a certain *condition* is met
 - a ``for`` loop if you know how many times you want to repeat your code
 
 .. dropdown:: Question 1

@@ -1,9 +1,9 @@
 Nested Loops
 ============
 
-You can make the block of code inside the loops as complex as you want. This means you
-can also put loops *inside* other loops, whether they be ``while`` loops or ``for``
-loops.
+You can make the block of code inside the loops as complex as you want. This
+means you can also put loops *inside* other loops, whether they be ``while``
+loops or ``for`` loops.
 
 **Example:** multiplication tables with nested ``for`` loops.
 
@@ -24,37 +24,40 @@ loops.
 
 **What's happening here?**
 
-We can see that at the **first** iteration of the outer loop, ``i = 1``. Then we run the
-code block inside this ``for`` loop, which is
+We can see that at the **first** iteration of the outer loop, ``i = 1``. Then
+we run the code block inside this ``for`` loop, which is
 
 .. code-block:: python
 
     for j in range(1, 13):
         print("{} x {} = {}".format(i, j, i * j))
 
-This is another for loop, this time with ``j`` looping from 1, ..., 12, each time
-printing ``'{} x {} = {}'.format(i, j, i*j)``. Note that for the entire duration of this
-loop running ``i`` is still 1. This means we get ``1 x 1 = 1``, ..., ``1 x 12 = 12``.
+This is another for loop, this time with ``j`` looping from 1, ..., 12, each
+time printing ``'{} x {} = {}'.format(i, j, i*j)``. Note that for the entire
+duration of this loop running ``i`` is still 1. This means we get ``1 x 1 =
+1``, ..., ``1 x 12 = 12``.
 
-We can see that at the **second** iteration of the outer loop, ``i = 2``. Again we run
-the code block inside this for loop, which is
+We can see that at the **second** iteration of the outer loop, ``i = 2``. Again
+we run the code block inside this for loop, which is
 
 .. code-block:: python
 
     for j in range(1, 13):
         print("{} x {} = {}".format(i, j, i * j))
 
-This loop will again run in its entirety with ``j`` looping from 1, ..., 12, each time
-printing ``'{} x {} = {}'.format(i, j, i*j)``. For the entire duration of this loop
-running ``i`` is still 2. This means we get ``2 x 1 = 2``, ..., ``2 x 12 = 24``.
+This loop will again run in its entirety with ``j`` looping from 1, ..., 12,
+each time printing ``'{} x {} = {}'.format(i, j, i*j)``. For the entire
+duration of this loop running ``i`` is still 2. This means we get ``2 x 1 =
+2``, ..., ``2 x 12 = 24``.
 
-We keep running through the outer loop for ``i`` = 1, ..., 12, each time running the
-inner loop. This gives us all of the standard multiplication tables.
+We keep running through the outer loop for ``i`` = 1, ..., 12, each time
+running the inner loop. This gives us all of the standard multiplication
+tables.
 
-Note that **the iteration variables you use in your outer and inner loops need to have
-different variable names**, otherwise you will overwrite the value of the iteration
-variable used in your outer loop. In this example our outer iteration variable is i and
-our inner iteration variable is ``j``.
+Note that **the iteration variables you use in your outer and inner loops need
+to have different variable names**, otherwise you will overwrite the value of
+the iteration variable used in your outer loop. In this example our outer
+iteration variable is i and our inner iteration variable is ``j``.
 
 .. image:: img/10_example0.png
     :width: 320

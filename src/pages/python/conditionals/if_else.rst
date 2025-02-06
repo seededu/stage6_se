@@ -1,15 +1,15 @@
 If-Else Statements
 ==================
 
-If you want to execute code if a condition is ``False``, we can use the ``else``
-statement.
+If you want to execute code if a condition is ``False``, we can use the
+``else`` statement.
 
 .. image:: img/2_example1.png
     :width: 250
     :align: center
 
-The ``else`` statement is always used *after* an ``if`` statement. The structure of an
-``if``-``else`` statement is:
+The ``else`` statement is always used *after* an ``if`` statement. The
+structure of an ``if``-``else`` statement is:
 
 .. code-block::
 
@@ -21,12 +21,12 @@ The ``else`` statement is always used *after* an ``if`` statement. The structure
 Take note of the following:
 
 - ``else`` is a keyword
-- The code inside the ``else`` statement only executes if the condition is ``False``.
-  The ``else`` statement doesn't have a condition after it. (Remember: *Else is lonely.
-  Else is by itself!*)
+- The code inside the ``else`` statement only executes if the condition is
+  ``False``. The ``else`` statement doesn't have a condition after it.
+  (Remember: *Else is lonely. Else is by itself!*)
 - ``:`` is placed after the ``else``
-- Similar to the ``if`` statement, the code *inside* the ``else`` statement must be
-  **indented**.
+- Similar to the ``if`` statement, the code *inside* the ``else`` statement
+  must be **indented**.
 
 Here is an example of a simple ``if``-``else`` statement.
 

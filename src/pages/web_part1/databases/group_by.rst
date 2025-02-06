@@ -1,15 +1,15 @@
 Group By
 ========
 
-It can often be useful to group data by a particular attribute. For example, consider
-the following table.
+It can often be useful to group data by a particular attribute. For example,
+consider the following table.
 
 .. figure:: img/groupby_table.png
     :width: 400
 
-Let's suppose we want to see how students performed on the exam ``BY`` class. In this
-case, there are two classes, class A and class B. What we can do, is ``GROUP BY`` class.
-The structure of a ``GROUP BY`` statement:
+Let's suppose we want to see how students performed on the exam ``BY`` class.
+In this case, there are two classes, class A and class B. What we can do, is
+``GROUP BY`` class. The structure of a ``GROUP BY`` statement:
 
 .. code-block::
 
@@ -17,8 +17,8 @@ The structure of a ``GROUP BY`` statement:
 
 The ``GROUP BY`` clause goes after a ``WHERE`` clause.
 
-We then need to provide a function that summarises information about each group. The
-functions we can use are:
+We then need to provide a function that summarises information about each
+group. The functions we can use are:
 
 - ``COUNT()``
 - ``MAX()``

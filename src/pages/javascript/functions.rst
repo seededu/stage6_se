@@ -1,9 +1,9 @@
 Functions
 =========
 
-A function is a reusable block of code designed to perform a specific task. You can
-think of it as a "mini-program" within your program. Functions make your programs more
-organised, efficient, and easier to debug.
+A function is a reusable block of code designed to perform a specific task. You
+can think of it as a "mini-program" within your program. Functions make your
+programs more organised, efficient, and easier to debug.
 
 The basic syntax for defining a function in JavaScript is:
 
@@ -16,14 +16,15 @@ The basic syntax for defining a function in JavaScript is:
     }
 
 - ``function``: The keyword used to define a function.
-- ``functionName``: The name of the function. You choose this name and use it to call
-  the function later.
-- ``parameters``: Input values passed to the function. It is optional to define these.
-- ``{ }``: The block statement containing the set of statements to execute when the
-  function is called.
+- ``functionName``: The name of the function. You choose this name and use it
+  to call the function later.
+- ``parameters``: Input values passed to the function. It is optional to define
+  these.
+- ``{ }``: The block statement containing the set of statements to execute when
+  the function is called.
 - ``return``: They keyword to specify the end of the function and return value.
-- ``value``: The returned value e.g. one of the variables defined in the function or
-  some expression.
+- ``value``: The returned value e.g. one of the variables defined in the
+  function or some expression.
 
 Examples
 --------
@@ -72,8 +73,8 @@ Functions can return a value using the return keyword.
 Default Parameters
 ------------------
 
-You can provide default values for parameters in case no value is passed during the
-function call.
+You can provide default values for parameters in case no value is passed during
+the function call.
 
 Example:
 
@@ -89,8 +90,8 @@ Example:
 Scope in Functions
 ------------------
 
-Functions create their own scope, meaning variables defined inside a function are not
-accessible outside of it.
+Functions create their own scope, meaning variables defined inside a function
+are not accessible outside of it.
 
 **Example: Local Scope**
 
@@ -119,14 +120,14 @@ Variables declared outside any function are part of the global scope.
 Functions as Values
 -------------------
 
-Functions can be assigned to variables, passed as arguments, or returned from other
-functions. This is a common pattern with built in JavaScript functions and other
-libraries.
+Functions can be assigned to variables, passed as arguments, or returned from
+other functions. This is a common pattern with built in JavaScript functions
+and other libraries.
 
 **Example: Assigning Functions to Variables**
 
-A function called ``sayHello`` is defined. The function reference is assigned to the
-variable ``x``, which we can call.
+A function called ``sayHello`` is defined. The function reference is assigned
+to the variable ``x``, which we can call.
 
 .. code-block:: javascript
 
@@ -172,9 +173,9 @@ arguments to other functions.
 
 **Example**
 
-We are passing an anonymous function (which logs This message appears after 2 seconds)
-to the ``setTimeout`` function. This means that after 2000 milliseconds have elapsed the
-anonymous function will be called.
+We are passing an anonymous function (which logs This message appears after 2
+seconds) to the ``setTimeout`` function. This means that after 2000
+milliseconds have elapsed the anonymous function will be called.
 
 .. code-block:: javascript
 
@@ -185,9 +186,9 @@ anonymous function will be called.
 Arrow Functions
 ---------------
 
-Arrow functions provide a shorter syntax for writing anonymous functions. They are
-especially useful for simple operations. We're introducing them here because you will
-often see them when reading other people's code.
+Arrow functions provide a shorter syntax for writing anonymous functions. They
+are especially useful for simple operations. We're introducing them here
+because you will often see them when reading other people's code.
 
 **Syntax**
 
@@ -210,8 +211,8 @@ We can rewrite the previous example as:
 
 **Example: Assigning arrow function to a variable**
 
-In the example below the function is still anonymous but assigned to a variable so that
-we can reference it.
+In the example below the function is still anonymous but assigned to a variable
+so that we can reference it.
 
 .. code-block:: javascript
 

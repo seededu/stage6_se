@@ -9,8 +9,8 @@ It is possible to build more complex conditions using ``and`` or ``or``.
 One way to remember this is:
 
 - if you want fish **and** chips, you are expecting **both**.
-- if you want fish **or** chips, you are only expecting **one** or the other, but you're
-  also happy if you get both.
+- if you want fish **or** chips, you are only expecting **one** or the other,
+  but you're also happy if you get both.
 
 You can visualise these rules using a truth table:
 

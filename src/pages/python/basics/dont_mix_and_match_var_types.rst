@@ -1,25 +1,26 @@
 Don't Mix and Match Variables Types
 ===================================
 
-It's important to know that you can't mix and match operations between different data
-types and that it doesn't always make sense to apply mathematical operations to strings.
+It's important to know that you can't mix and match operations between
+different data types and that it doesn't always make sense to apply
+mathematical operations to strings.
 
 .. code-block:: python
 
     print("red" - "blue")
 
-However, if you use the ``+`` operator, you'll find that it actually *concatenates*
-(joins) the strings together.
+However, if you use the ``+`` operator, you'll find that it actually
+*concatenates* (joins) the strings together.
 
 .. code-block:: python
 
     print("red" + "blue")
 
-This means that there is a difference between the *number* ``3`` and the *string*
-``'3'``.
+This means that there is a difference between the *number* ``3`` and the
+*string* ``'3'``.
 
-Another slightly odd behaviour is that you can multiply a string with a number. This
-results in the string being repeated.
+Another slightly odd behaviour is that you can multiply a string with a number.
+This results in the string being repeated.
 
 .. code-block:: python
 

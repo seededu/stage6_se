@@ -1,10 +1,11 @@
 About the Authors
 =================
 
-Dr Stephen Tierney and Dr Alison Wong are lecturers at the University of Sydney, with
-over 6 years experience in designing and building interactive online resources for
-undergraduate and postgraduate students. We teach complex units that integrate
-mathematics, statistics, machine learning, data visualisation and programming.
+Dr Stephen Tierney and Dr Alison Wong are lecturers at the University of
+Sydney, with over 6 years experience in designing and building interactive
+online resources for undergraduate and postgraduate students. We teach complex
+units that integrate mathematics, statistics, machine learning, data
+visualisation and programming.
 
 .. grid:: 2
 

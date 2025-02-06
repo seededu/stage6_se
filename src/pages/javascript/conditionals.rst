@@ -1,17 +1,17 @@
 Conditionals
 ============
 
-Conditionals allow your program to make decisions based on certain conditions. They are
-essential for creating dynamic and responsive behavior in your code. This page
-introduces boolean expressions and conditional statements like ``if``, else if, and
-else.
+Conditionals allow your program to make decisions based on certain conditions.
+They are essential for creating dynamic and responsive behavior in your code.
+This page introduces boolean expressions and conditional statements like
+``if``, else if, and else.
 
 Boolean Expressions
 -------------------
 
-A boolean expression is a statement that evaluates to either true or false. These
-expressions are the foundation of conditionals and are created using comparison
-operators and logical operators.
+A boolean expression is a statement that evaluates to either true or false.
+These expressions are the foundation of conditionals and are created using
+comparison operators and logical operators.
 
     ======== ============================= ======================= =========
     Operator Description                   Example                 Result
@@ -51,14 +51,14 @@ Try these examples yourself!
 Equal vs. Strictly Equal
 ------------------------
 
-In JavaScript, you have two ways to compare values for equality: ``==`` (equal) and
-``===`` (strictly equal).
+In JavaScript, you have two ways to compare values for equality: ``==`` (equal)
+and ``===`` (strictly equal).
 
 **Equal (==)**
 
 - Compares values only, ignoring the data type.
-- Performs type conversion, meaning it converts one or both values to the same type
-  before comparing them.
+- Performs type conversion, meaning it converts one or both values to the same
+  type before comparing them.
 
 Example:
 
@@ -80,13 +80,15 @@ Example:
 
 **Which Should You Use?**
 
-Always prefer === unless you specifically need to allow type coercion because it makes
-comparisons more predictable and avoids potential bugs caused by type conversions.
+Always prefer === unless you specifically need to allow type coercion because
+it makes comparisons more predictable and avoids potential bugs caused by type
+conversions.
 
 if
 --
 
-The ``if`` statement is used to execute a block of code only if a condition is true.
+The ``if`` statement is used to execute a block of code only if a condition is
+true.
 
 Syntax:
 
@@ -97,15 +99,18 @@ Syntax:
     }
 
 - The ``if`` keyword signals the start of the if statement
-- The condition (expression) to be evaluated is inside a pair of parentheses ``()``.
-- If the condition evaluates to ``true`` then the code inside the braces ``{}`` is run
+- The condition (expression) to be evaluated is inside a pair of parentheses
+  ``()``.
+- If the condition evaluates to ``true`` then the code inside the braces ``{}``
+  is run
 - You can put as many lines of code inside the braces as you like!
 
 .. note::
 
-    Unlike normal statements you don't need to end an ``if`` with a semicolon ``;``. The
-    braces ``{}`` denote a :term:`block statement`, which contains one or more
-    statements inside of it. Block statements do not require a semicolon at the end.
+    Unlike normal statements you don't need to end an ``if`` with a semicolon
+    ``;``. The braces ``{}`` denote a :term:`block statement`, which contains
+    one or more statements inside of it. Block statements do not require a
+    semicolon at the end.
 
 Example:
 
@@ -124,8 +129,8 @@ Example:
 else
 ----
 
-The ``else`` statement provides an alternative block of code to run if the condition is
-false.
+The ``else`` statement provides an alternative block of code to run if the
+condition is false.
 
 Syntax:
 
@@ -156,8 +161,9 @@ Example:
 else if
 -------
 
-The ``else if`` statement allows you to check multiple conditions in sequence. The first
-condition that evaluates to true will execute its block, and the rest are ignored.
+The ``else if`` statement allows you to check multiple conditions in sequence.
+The first condition that evaluates to true will execute its block, and the rest
+are ignored.
 
 Syntax:
 
@@ -194,8 +200,8 @@ Example:
 Multiple Conditions
 -------------------
 
-You can use logical operators like ``&&`` and ``||`` to check multiple conditions within
-a single if or else if statement.
+You can use logical operators like ``&&`` and ``||`` to check multiple
+conditions within a single if or else if statement.
 
 Example:
 
