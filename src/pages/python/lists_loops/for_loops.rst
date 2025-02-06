@@ -1,9 +1,5 @@
-.. role:: python(code)
-   :language: python
-
-
 For Loops
-==========
+=========
 
 ``for`` loops can be used to repeat code.
 
@@ -18,7 +14,10 @@ The structure of a for loop is:
     for variable in iterable:
         # code you want to execute
 
-.. info:: An iterable is some sequence of values you can go through. In general, our iterables will be lists, but they can also be strings!
+.. note::
+
+    An iterable is some sequence of values you can go through. In general, our
+    iterables will be lists, but they can also be strings!
 
 Here is an example:
 
@@ -30,17 +29,24 @@ Here is an example:
 
 **What's happening here?**
 
-We can see our iterable is the list ``[1, 5, 8, 2]``, and number is our variable name. 
+We can see our iterable is the list ``[1, 5, 8, 2]``, and number is our
+variable name.
 
-At the **first** iteration, ``number`` will store the **first** value in our list i.e. ``number = 1``. Then we will execute the code on ``line 2`` and print 1.
+At the **first** iteration, ``number`` will store the **first** value in our
+list i.e. ``number = 1``. Then we will execute the code on ``line 2`` and print
+1.
 
-At the **second** iteration, number will store the second value in our list i.e. ``number = 5``. Then we will execute the code on ``line 2`` and print 5.
+At the **second** iteration, number will store the second value in our list
+i.e. ``number = 5``. Then we will execute the code on ``line 2`` and print 5.
 
-At the **third** iteration, number will store the third value in our list i.e. ``number = 8``. Then we will execute the code on ``line 2`` and print 8.
+At the **third** iteration, number will store the third value in our list i.e.
+``number = 8``. Then we will execute the code on ``line 2`` and print 8.
 
-At the **fourth** iteration, number will store the fourth value in our list i.e. ``number = 2``. Then we will execute the code on ``line 2`` and print 2.
+At the **fourth** iteration, number will store the fourth value in our list
+i.e. ``number = 2``. Then we will execute the code on ``line 2`` and print 2.
 
-After the number 2 there are no more numbers left in the list so the loop terminates.
+After the number 2 there are no more numbers left in the list so the loop
+terminates.
 
 This is how we can represent this code diagrammatically.
 
@@ -60,13 +66,10 @@ Here is another example, this time with a larger code block:
 
 Take note of the following:
 
-* ``for`` is a keyword
-
-* ``in`` is a keyword
-
-* ``:`` is placed at the end of the ``for`` loop definition
-
-* The code you want *repeated* must be **indented**
+- ``for`` is a keyword
+- ``in`` is a keyword
+- ``:`` is placed at the end of the ``for`` loop definition
+- The code you want *repeated* must be **indented**
 
 .. image:: img/6_example3.png
     :width: 350
@@ -203,7 +206,7 @@ Take note of the following:
         0
         41063625
 
-    .. hint:: The ``**`` operator can be interpreted as '*to the power of*'. For example, ``2**3`` is :math:`2^3`. 
+    .. hint:: The ``**`` operator can be interpreted as '*to the power of*'. For example, ``2**3`` is :math:`2^3`.
 
     .. dropdown:: :material-regular:`lock;1.5em` Solution
       :class-title: sd-font-weight-bold

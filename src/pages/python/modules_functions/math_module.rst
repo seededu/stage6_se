@@ -1,82 +1,100 @@
-.. role:: python(code)
-   :language: python
-
 The Math Module
 ===============
 
 Importing Functions
 -------------------
 
-The `math <https://docs.python.org/3/library/math.html>`_ module gives us access to many useful mathematical functions. But to use the functions we need to *import* the ``math`` module, which we will usually do at the *top* of our Python script. There are two ways we recommend doing this
+The `math <https://docs.python.org/3/library/math.html>`_ module gives us
+access to many useful mathematical functions. But to use the functions we need
+to *import* the ``math`` module, which we will usually do at the *top* of our
+Python script. There are two ways we recommend doing this
 
-**Option 1:** Import the entire module. We do this if we want to access *all* of the available functions.
+**Option 1:** Import the entire module. We do this if we want to access *all*
+of the available functions.
 
 .. code-block:: python
 
-   import math
+    import math
 
-When you run this, it doesn't seem to do anything. But you'll see that this gives us access to all of the functions inside the ``math`` module. In order to use these functions, you need to indicate that they're coming from the ``math`` module using:
+When you run this, it doesn't seem to do anything. But you'll see that this
+gives us access to all of the functions inside the ``math`` module. In order to
+use these functions, you need to indicate that they're coming from the ``math``
+module using:
 
 .. code-block:: text
 
-   math.function()
+    math.function()
 
-For example, 
+For example,
 
 .. code-block:: python
 
-   import math
-   print(math.cos(0))
+    import math
+
+    print(math.cos(0))
 
 **Option 2:** Import specific functions from the module.
 
 .. code-block:: python
 
-   from math import cos
+    from math import cos
 
-Again, this doesn't seem to do anything, but you'll see that it does give us access to the ``cos`` function. This time, when we use the ``cos`` function we don't need to explicitly say it's coming from the ``math`` library we can just use the function:
+Again, this doesn't seem to do anything, but you'll see that it does give us
+access to the ``cos`` function. This time, when we use the ``cos`` function we
+don't need to explicitly say it's coming from the ``math`` library we can just
+use the function:
 
 .. code-block:: text
 
-   function()
+    function()
 
 For example,
 
 .. code-block:: python
 
-   from math import cos
-   print(cos(0))
+    from math import cos
 
-If you want to import multiple functions you can so so by separating each function with a comma.
+    print(cos(0))
+
+If you want to import multiple functions you can so so by separating each
+function with a comma.
 
 For example,
 
 .. code-block:: python
 
-   from math import cos, sin
-   print(cos(0))
-   print(sin(0))
+    from math import cos, sin
 
-If you try to import a function that does not exist inside the ``math`` module, you will get an **ImportErrror**.
+    print(cos(0))
+    print(sin(0))
+
+If you try to import a function that does not exist inside the ``math`` module,
+you will get an **ImportErrror**.
 
 Accessing Constants
 -------------------
 
-In addition to functions, modules may also provide useful constants. For example the ``math`` module provides :math:`\pi`, :math:`e`, :math:`\tau = 2\pi`, :math:`\infty` and `nan` (not a number). To use these you also have to import the ``math`` module, but since they are not functions, you don't need the brackets.
+In addition to functions, modules may also provide useful constants. For
+example the ``math`` module provides :math:`\pi`, :math:`e`, :math:`\tau =
+2\pi`, :math:`\infty` and `nan` (not a number). To use these you also have to
+import the ``math`` module, but since they are not functions, you don't need
+the brackets.
 
 **Import option 1**
 
 .. code-block:: python
 
-   import math
-   print(math.pi)
+    import math
+
+    print(math.pi)
 
 **Import option 2**
 
 .. code-block:: python
 
-   from math import pi
-   print(pi)
+    from math import pi
+
+    print(pi)
 
 .. dropdown:: Question 1
     :open:
@@ -85,25 +103,25 @@ In addition to functions, modules may also provide useful constants. For example
 
     Which of the following will import the ``math`` module and give you access to the function ``exp()``? *Select all that apply.*
 
-    A. 
+    A.
 
      .. code-block:: python
 
         import math
 
-    B. 
+    B.
 
      .. code-block:: python
 
         import math.exp
 
-    C. 
+    C.
 
      .. code-block:: python
 
         from math import exp
 
-    D. 
+    D.
 
      .. code-block:: python
 
@@ -120,20 +138,20 @@ In addition to functions, modules may also provide useful constants. For example
         :octicon:`issue-closed;1em;sd-text-success;` **Valid.**
 
         .. code-block:: python
-            
+
             import math.exp
 
         :octicon:`x-circle;1em;sd-text-danger;` **Invalid.**
 
         .. code-block:: python
-            
+
             from math import exp
 
         :octicon:`issue-closed;1em;sd-text-success;` **Valid.**
 
 
         .. code-block:: python
-            
+
             import exp from math
 
         :octicon:`x-circle;1em;sd-text-danger;` **Invalid.**
@@ -164,28 +182,28 @@ In addition to functions, modules may also provide useful constants. For example
 
     Look at the available functions in the `math <https://docs.python.org/3/library/math.html>`_  module. How would you convert :math:`2\pi` radians to degrees?
 
-    A. 
+    A.
 
      .. code-block:: python
 
         import math
         print(math.degrees(2*math.pi))
 
-    B. 
+    B.
 
      .. code-block:: python
 
         import math
         print(math.radians(2*pi))
 
-    C. 
+    C.
 
      .. code-block:: python
 
         from math import degrees
         print(degree(2*pi))
 
-    D. 
+    D.
 
      .. code-block:: python
 
@@ -202,7 +220,7 @@ In addition to functions, modules may also provide useful constants. For example
     :color: warning
     :icon: star
 
-    Write a program that reads in a number :math:`n` from the user and calculates :math:`n!`. Your program should use the ``factorial()`` function from the `math <https://docs.python.org/3/library/math.html>`_ library. 
+    Write a program that reads in a number :math:`n` from the user and calculates :math:`n!`. Your program should use the ``factorial()`` function from the `math <https://docs.python.org/3/library/math.html>`_ library.
 
     **Example 1**
 

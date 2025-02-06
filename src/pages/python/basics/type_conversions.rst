@@ -1,17 +1,12 @@
-.. role:: python(code)
-   :language: python
-
-
 Type Conversions
 ================
 
-It is often useful to change the type of your variables. This is called casting. Here are some useful functions:
+It is often useful to change the type of your variables. This is called
+casting. Here are some useful functions:
 
-* ``int()``: convert to integer
-
-* ``float()``: convert to float
-
-* ``str()``: convert to string
+- ``int()``: convert to integer
+- ``float()``: convert to float
+- ``str()``: convert to string
 
 .. dropdown:: Question 1
     :open:
@@ -85,8 +80,8 @@ It is often useful to change the type of your variables. This is called casting.
     :color: warning
     :icon: star
 
-    The following code takes input from a user, converts it to an integer and then adds 1. 
-    
+    The following code takes input from a user, converts it to an integer and then adds 1.
+
     .. code-block:: python
 
         n = input('Enter a number: ')

@@ -1,6 +1,3 @@
-.. role:: python(code)
-   :language: python
-
 Software engineering project
 ============================
 
@@ -271,4 +268,3 @@ Testing and evaluating
     .. dropdown:: comparing actual output with expected output
         :class-title: sd-font-weight-light
         :color:  info
-

@@ -1,53 +1,51 @@
-.. role:: python(code)
-   :language: python
-
-
 List Operations
 ===============
 
-We can add items to the end of our list by appending them. To do this we use the ``.append()`` method.
+We can add items to the end of our list by appending them. To do this we use
+the ``.append()`` method.
 
 Here is the syntax used for appending:
 
-:python:`list.append(item)`
+``list.append(item)``
 
 Here is an example where `'bee'` is added to the *end* of the list.
 
 .. exec_code::
-  :language: python
+    :language: python
 
-  animals = ['lion', 'caterpillar', 'elephant']
-  animals.append('bee')
-  print(animals)
+    animals = ['lion', 'caterpillar', 'elephant']
+    animals.append('bee')
+    print(animals)
 
 Conveniently, we can perform operations on lists. Here are a few examples:
 
-* :python:`len(list)`: Find the number of items in a list
+- ``len(list)``: Find the number of items in a list
 
   .. exec_code::
-    :language: python
+      :language: python
 
-    a = [-3, 4, 6, 1]
-    print(len(a))
+      a = [-3, 4, 6, 1]
+      print(len(a))
 
-* :python:`min(list)`, :python:`max(list)`: Find the minimum/maximum value in a list of numbers
-
-  .. exec_code::
-    :language: python
-
-    a = [-3, 4, 6, 1]
-    print(min(a))
-    print(max(a))
-
-* :python:`sum(list)`: Calculate the sum of all the values in a list of numbers
+- ``min(list)``, ``max(list)``: Find the minimum/maximum value in a list of
+  numbers
 
   .. exec_code::
-    :language: python
+      :language: python
 
-    a = [-3, 4, 6, 1]
-    print(sum(a))
+      a = [-3, 4, 6, 1]
+      print(min(a))
+      print(max(a))
 
-:python:`print(information_you_want_to_display)`.
+- ``sum(list)``: Calculate the sum of all the values in a list of numbers
+
+  .. exec_code::
+      :language: python
+
+      a = [-3, 4, 6, 1]
+      print(sum(a))
+
+``print(information_you_want_to_display)``.
 
 .. dropdown:: Question 1
     :open:
@@ -63,25 +61,25 @@ Conveniently, we can perform operations on lists. Here are a few examples:
       fruits.append('watermelons')
       print(fruits)
 
-    A. 
+    A.
 
       .. code-block:: markdown
 
         ['apples', 'bananas', 'pears']
 
-    B. 
+    B.
 
       .. code-block:: markdown
 
         ['apples', 'bananas', 'pears', 'watermelons']
 
-    C. 
+    C.
 
       .. code-block:: markdown
 
         ['apples', 'bananas', 'pears', 'oranges', 'watermelons']
 
-    D. 
+    D.
 
       .. code-block:: markdown
 
@@ -134,7 +132,7 @@ Conveniently, we can perform operations on lists. Here are a few examples:
 
       numbers = [7, 2, -1, 3, 9]
       print(min(numbers))
-    
+
     .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
@@ -156,7 +154,7 @@ Conveniently, we can perform operations on lists. Here are a few examples:
 
       numbers = [7, 2, -1, 3, 9]
       print(sum(numbers))
-    
+
     .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
@@ -187,7 +185,7 @@ Conveniently, we can perform operations on lists. Here are a few examples:
 
       What else do you need to do? Cook dinner
       ['Buy carrots', 'Wash car', 'Study for quiz', 'Cook dinner']
-      
+
     **Example 2**
 
     .. code-block:: markdown
@@ -199,7 +197,7 @@ Conveniently, we can perform operations on lists. Here are a few examples:
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. .. code-block:: 
+        .. .. code-block::
 
         ..   todo = ['Buy carrots', 'Wash car', 'Study for quiz']
 

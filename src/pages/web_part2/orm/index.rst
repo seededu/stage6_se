@@ -1,5 +1,5 @@
 Object-Relational Mapping
-==============================
+=========================
 
 .. toctree::
     :maxdepth: 2
@@ -7,4 +7,3 @@ Object-Relational Mapping
     overview
     sqlalchemy
     flask
-

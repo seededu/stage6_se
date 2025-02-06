@@ -1,15 +1,16 @@
-.. role:: python(code)
-   :language: python
-
 Pseudocode
-====================
+==========
 
-Sometimes it can be useful to write algorithms in code form without the syntax of a specific language. We can do this using **pseudocode**. This is a way of writing code in a format that is easy for a human to read. The exact symbols and keywords may vary depending on the convention you use. 
+Sometimes it can be useful to write algorithms in code form without the syntax
+of a specific language. We can do this using **pseudocode**. This is a way of
+writing code in a format that is easy for a human to read. The exact symbols
+and keywords may vary depending on the convention you use.
 
-The way in which we represent ``if``-``elif``-``else`` statements as follows. This is an example with 3 conditions.
+The way in which we represent ``if``-``elif``-``else`` statements as follows.
+This is an example with 3 conditions.
 
 .. code-block:: html
-    
+
     IF condition A THEN
         process 1
     ELSEIF condition B THEN
@@ -61,14 +62,14 @@ Here's an example!
         if weather == 'rainy':
             print('Take an umbrella!')
 
-    A. 
+    A.
 
       .. code-block:: markdown
 
         IF weather == rainy:
             Display 'Take an umbrella'
 
-    B. 
+    B.
 
       .. code-block:: markdown
 
@@ -76,7 +77,7 @@ Here's an example!
             weather == 'rainy'
         ENDIF
 
-    C. 
+    C.
 
       .. code-block:: markdown
 
@@ -84,7 +85,7 @@ Here's an example!
             Display 'Take an umbrella'
         ENDELSE
 
-    D. 
+    D.
 
       .. code-block:: markdown
 
@@ -132,13 +133,13 @@ Here's an example!
     :color: info
     :icon: question
 
-    Which of the following provides the pseudocode that corresponds to the algorithm illustrated below? 
+    Which of the following provides the pseudocode that corresponds to the algorithm illustrated below?
 
     .. image:: img/7_question2.png
         :width: 250
         :align: center
 
-    A. 
+    A.
 
       .. code-block:: markdown
 
@@ -150,7 +151,7 @@ Here's an example!
             Display 'Stop!'
         ENDIF
 
-    B. 
+    B.
 
       .. code-block:: markdown
 
@@ -162,7 +163,7 @@ Here's an example!
             Display 'Stop!'
         ENDIF
 
-    C. 
+    C.
 
       .. code-block:: markdown
 
@@ -176,7 +177,7 @@ Here's an example!
             Display 'Stop!'
         ELSE
 
-    D. 
+    D.
 
       .. code-block:: markdown
 
@@ -194,7 +195,7 @@ Here's an example!
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. D. 
+        .. D.
 
         ..     .. code-block:: markdown
 

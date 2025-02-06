@@ -1,22 +1,18 @@
-.. role:: python(code)
-   :language: python
-
-
 While Loops
 ===========
 
 While loops can be used to repeat code.
 
 .. image:: img/1_example1.png
-   :width: 280
-   :align: center
+    :width: 280
+    :align: center
 
 The structure of a ``while`` loop is:
 
 .. code-block:: text
-   
-	while condition:
-		# code that executes while condition is true
+
+    while condition:
+            # code that executes while condition is true
 
 Here is an example:
 
@@ -30,16 +26,21 @@ Here is an example:
 
 .. note::
 
-    Another way you can increment ``i`` by 1 is using ``i += 1``. This is equivalent to ``i = i + 1``. Similarly you can decrease ``i`` by 1 using ``i -= 1``, which is equivalent to ``i = i - 1``. Actually the ``+=`` and ``-=`` notation will work for any number ``i += 3`` increase ``i`` by 3 and ``i -= 5`` decrease ``i`` by 5. 
+    Another way you can increment ``i`` by 1 is using ``i += 1``. This is
+    equivalent to ``i = i + 1``. Similarly you can decrease ``i`` by 1 using
+    ``i -= 1``, which is equivalent to ``i = i - 1``. Actually the ``+=`` and
+    ``-=`` notation will work for any number ``i += 3`` increase ``i`` by 3 and
+    ``i -= 5`` decrease ``i`` by 5.
 
 **What's happening here?**
 
-We can see that the condition we have set for our while loop is ``i < 3``. 
+We can see that the condition we have set for our while loop is ``i < 3``.
 
-At the **first** iteration ``i = 0``. This means the condition is ``True``. We execute the code block: 
+At the **first** iteration ``i = 0``. This means the condition is ``True``. We
+execute the code block:
 
 .. code-block::
-    
+
     print(i)
     i = i + 1
 
@@ -49,30 +50,40 @@ This means that we output:
 
     0
 
-
-At the **second** iteration ``i = 1``. This means the condition is ``True``. Again, we execute the code block and we output:
+At the **second** iteration ``i = 1``. This means the condition is ``True``.
+Again, we execute the code block and we output:
 
 .. code-block::
-    
+
     1
 
-At the  **third** iteration ``i = 2``. This means that the condition is ``True``. Again, we execute the code block and we output:
+At the **third** iteration ``i = 2``. This means that the condition is
+``True``. Again, we execute the code block and we output:
 
 .. code-block::
-    
+
     2
 
-At the **fourth** iteration ``i = 3``. This means that the condition is ``False``. We do not execute the code block.
+At the **fourth** iteration ``i = 3``. This means that the condition is
+``False``. We do not execute the code block.
 
 This is how we can represent this code diagrammatically.
 
 .. image:: img/1_example2.png
-   :width: 280
-   :align: center
+    :width: 280
+    :align: center
 
-Here ``i = 0`` and ``i = i + 1`` are **processes** that are happening within the program but aren't being shown to the user. This means we represent these with **rectangles** in the flowchart. The ``print`` statement results in **output** to the user so we represent it with a **parallelogram**. Here we colour the processes related to ``i`` in **green** to identify it as the variable related to the loop, but the colouring is non-standard and most of the time these diagrams will be shown in black and white.
+Here ``i = 0`` and ``i = i + 1`` are **processes** that are happening within
+the program but aren't being shown to the user. This means we represent these
+with **rectangles** in the flowchart. The ``print`` statement results in
+**output** to the user so we represent it with a **parallelogram**. Here we
+colour the processes related to ``i`` in **green** to identify it as the
+variable related to the loop, but the colouring is non-standard and most of the
+time these diagrams will be shown in black and white.
 
-Note that we don't always have to increment by 1 and we don't always have to start at ``i = 0``. For example, we might want to print out all the odd numbers less than 10. We can do so with the following.
+Note that we don't always have to increment by 1 and we don't always have to
+start at ``i = 0``. For example, we might want to print out all the odd numbers
+less than 10. We can do so with the following.
 
 .. exec_code::
     :language: python
@@ -84,9 +95,10 @@ Note that we don't always have to increment by 1 and we don't always have to sta
 
 **What's happening here?**
 
-We can see that the condition we have set for our while loop is ``i < 10``. 
+We can see that the condition we have set for our while loop is ``i < 10``.
 
-At the **first** iteration ``i = 1``. This means the condition is ``True``. We execute the code block: 
+At the **first** iteration ``i = 1``. This means the condition is ``True``. We
+execute the code block:
 
 .. code-block::
 
@@ -96,40 +108,45 @@ At the **first** iteration ``i = 1``. This means the condition is ``True``. We e
 This means that we output:
 
 .. code-block::
-    
+
     1
 
-At the **second** iteration ``i = 3``. This means the condition is ``True``. Again, we execute the code block and we output:
+At the **second** iteration ``i = 3``. This means the condition is ``True``.
+Again, we execute the code block and we output:
 
 .. code-block::
 
     3
 
-At the  **third** iteration ``i = 5``. This means that the condition is ``True``. Again, we execute the code block and we output:
+At the **third** iteration ``i = 5``. This means that the condition is
+``True``. Again, we execute the code block and we output:
 
 .. code-block::
 
     5
 
-At the **fourth** iteration ``i = 7``. This means that the condition is ``True``. Again, we execute the code block and we output:
+At the **fourth** iteration ``i = 7``. This means that the condition is
+``True``. Again, we execute the code block and we output:
 
 .. code-block::
-    
+
     7
 
-At the **fifth** iteration ``i = 9``. This means that the condition is ``True``. Again, we execute the code block and we output:
+At the **fifth** iteration ``i = 9``. This means that the condition is
+``True``. Again, we execute the code block and we output:
 
 .. code-block::
-    
+
     9
 
-At the **sixth** iteration ``i = 11``. This means that the condition is ``False``. We do not execute the code block. 
-    
+At the **sixth** iteration ``i = 11``. This means that the condition is
+``False``. We do not execute the code block.
+
 This is how we can represent this code diagrammatically.
 
 .. image:: img/1_example3.png
-   :width: 280
-   :align: center
+    :width: 280
+    :align: center
 
 .. dropdown:: Question 1
     :open:
@@ -139,14 +156,14 @@ This is how we can represent this code diagrammatically.
     What do you think the output of the following will be?
 
     .. code-block::
-    
+
         i = 0
         while i < 3:
             print('hello!')
             i = i + 1
 
-    
-    A. 
+
+    A.
 
      .. code-block:: text
 
@@ -154,7 +171,7 @@ This is how we can represent this code diagrammatically.
         2
         3
 
-    B. 
+    B.
 
      .. code-block:: text
 
@@ -162,7 +179,7 @@ This is how we can represent this code diagrammatically.
         hello!
         hello!
 
-    C. 
+    C.
 
      .. code-block:: text
 
@@ -170,7 +187,7 @@ This is how we can represent this code diagrammatically.
         2 hello!
         3 hello!
 
-    D. 
+    D.
 
      .. code-block:: text
 
@@ -219,7 +236,7 @@ This is how we can represent this code diagrammatically.
     What do you think the output of the following will be?
 
     .. code-block::
-    
+
         i = 3
 
         while i > 0:
@@ -228,8 +245,8 @@ This is how we can represent this code diagrammatically.
             i = i - 1
         print('Done!')
 
-    
-    A. 
+
+    A.
 
      .. code-block:: text
 
@@ -241,7 +258,7 @@ This is how we can represent this code diagrammatically.
         3
         Done!
 
-    B. 
+    B.
 
      .. code-block:: text
 
@@ -250,7 +267,7 @@ This is how we can represent this code diagrammatically.
         3 times 5 is 15
         Done!
 
-    C. 
+    C.
 
      .. code-block:: text
 
@@ -264,7 +281,7 @@ This is how we can represent this code diagrammatically.
         5
         Done!
 
-    D. 
+    D.
 
      .. code-block:: text
 
@@ -312,7 +329,7 @@ This is how we can represent this code diagrammatically.
         33
         36
         39
-    
+
     .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
@@ -365,7 +382,7 @@ This is how we can represent this code diagrammatically.
             print(i)
             i = 3*i
 
-    A. 
+    A.
 
      .. code-block:: text
 
@@ -375,13 +392,13 @@ This is how we can represent this code diagrammatically.
         27
         81
 
-    B. 
+    B.
 
      .. code-block:: text
 
         3
 
-    C. 
+    C.
 
      .. code-block:: text
 
@@ -392,7 +409,7 @@ This is how we can represent this code diagrammatically.
         ...
         99
 
-    D. 
+    D.
 
      .. code-block:: text
 
@@ -422,7 +439,7 @@ This is how we can represent this code diagrammatically.
         while i < 25:
             count = count + 1
             i = i + 3
-            
+
         print(count)
 
     .. dropdown:: :material-regular:`lock;1.5em` Solution

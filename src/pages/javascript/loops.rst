@@ -1,15 +1,13 @@
-.. role:: js(code)
-   :language: javascript
-
 Loops
-=============
+=====
 
-Loops allow you to repeat a block of code multiple times. They are especially useful when working with arrays,
-processing data, or performing repetitive tasks. JavaScript offers several types of loops, each suited to different
+Loops allow you to repeat a block of code multiple times. They are especially
+useful when working with arrays, processing data, or performing repetitive
+tasks. JavaScript offers several types of loops, each suited to different
 scenarios.
 
 for Loop
--------------
+--------
 
 A ``for`` loop repeats a block of code a specific number of times.
 
@@ -23,14 +21,15 @@ Syntax:
 
 Explanation:
 
-- initialisation: Sets the starting point for the loop (e.g., :js:`let i = 0`).
-- condition: Specifies when the loop should stop (e.g., :js:`i < 5`).
-- increment/decrement: Updates the loop variable (e.g., :js:`i++`).
+- initialisation: Sets the starting point for the loop (e.g., ``let i = 0``).
+- condition: Specifies when the loop should stop (e.g., ``i < 5``).
+- increment/decrement: Updates the loop variable (e.g., ``i++``).
 
 .. note::
 
-    The increment/decrement expression of a :js:`for` loop often uses in place increment :js:`++` or decrement :js:`--`
-    operators. These add or subtract ``1`` from the value of the operand, e.g. :js:`i`.
+    The increment/decrement expression of a ``for`` loop often uses in place
+    increment ``++`` or decrement ``--`` operators. These add or subtract ``1``
+    from the value of the operand, e.g. ``i``.
 
 **Examples**
 
@@ -81,12 +80,11 @@ Count backward from 10 to 1:
     2
     1
 
-
 while Loop
--------------
+----------
 
-The while loop repeats a block of code as long as a condition is true. Use it when the number of iterations isn’t
-fixed or known beforehand.
+The while loop repeats a block of code as long as a condition is true. Use it
+when the number of iterations isn’t fixed or known beforehand.
 
 Syntax:
 
@@ -95,7 +93,6 @@ Syntax:
     while (condition) {
         // Code to run while condition is true
     }
-
 
 **Examples**
 
@@ -129,13 +126,12 @@ Stop when a random number exceeds 0.8
         }
     }
 
-
-
 Looping Over Objects
---------------------------
+--------------------
 
-The ``for...of`` loop is designed for iterating over iterable objects, such as arrays, strings, or sets. This style of
-loop makes your life easier because it handles stepping through the elements for you.
+The ``for...of`` loop is designed for iterating over iterable objects, such as
+arrays, strings, or sets. This style of loop makes your life easier because it
+handles stepping through the elements for you.
 
 Syntax:
 
@@ -162,7 +158,6 @@ Iterate over an array
     banana
     cherry
 
-
 Iterate over a string
 
 .. code-block:: javascript
@@ -179,4 +174,3 @@ Iterate over a string
     l
     l
     o
-

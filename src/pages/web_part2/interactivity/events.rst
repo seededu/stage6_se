@@ -1,11 +1,9 @@
-.. role:: js(code)
-   :language: javascript
-
 Events
-==============
+======
 
-Events are web developers can program responses to things like clicks, typing, or even the page loading. JavaScript lets
-you "listen" for these events and react to them with your code.
+Events are web developers can program responses to things like clicks, typing,
+or even the page loading. JavaScript lets you "listen" for these events and
+react to them with your code.
 
 An event is any interaction that happens in the browser, like:
 
@@ -14,16 +12,19 @@ An event is any interaction that happens in the browser, like:
 - Typing in an input box.
 - The page finishing loading.
 
-Programmers can create an "event handler" function that will run when an event fires.
+Programmers can create an "event handler" function that will run when an event
+fires.
 
 Event Properties
--------------------------
+----------------
 
-The simplest way to listen for an event is by assigning a function to an element’s event property, such as ``onclick``.
+The simplest way to listen for an event is by assigning a function to an
+element’s event property, such as ``onclick``.
 
 **Example: Click Event**
 
-In this example the ``onclick`` property of the button is set to a function that triggers an alert.
+In this example the ``onclick`` property of the button is set to a function
+that triggers an alert.
 
 .. code-block:: html
 
@@ -37,19 +38,17 @@ In this example the ``onclick`` property of the button is set to a function that
         };
     </script>
 
-
 Event Listeners
--------------------------
+---------------
 
-For more flexibility, use the ``addEventListener()`` method. It lets you add multiple event handlers to the same
-element.
+For more flexibility, use the ``addEventListener()`` method. It lets you add
+multiple event handlers to the same element.
 
 **Syntax**
 
 .. code-block:: javascript
 
     element.addEventListener(eventType, eventHandler);
-
 
 **Example: Click Event with addEventListener**
 
@@ -72,9 +71,10 @@ Both event listener functiosn are triggered when the button is clicked.
     </script>
 
 Removing Event Listeners
-----------------------------
+------------------------
 
-If you no longer need an event listener, you can remove it using ``removeEventListener()``.
+If you no longer need an event listener, you can remove it using
+``removeEventListener()``.
 
 **Example**
 
@@ -90,7 +90,7 @@ If you no longer need an event listener, you can remove it using ``removeEventLi
     button.removeEventListener("click", handleClick);
 
 Common Events
--------------------------
+-------------
 
 Here are some events you’ll frequently use:
 
@@ -138,15 +138,15 @@ Here are some events you’ll frequently use:
         console.log(`Key released: ${event.key}`);
     });
 
-
 Special Event Types
--------------------------
+-------------------
 
 Some events are specific to the browser or document lifecycle.
 
 **DOMContentLoaded**
 
-Fires when the HTML is fully loaded and parsed (but before external resources like images are loaded).
+Fires when the HTML is fully loaded and parsed (but before external resources
+like images are loaded).
 
 .. code-block:: javascript
 
@@ -154,10 +154,10 @@ Fires when the HTML is fully loaded and parsed (but before external resources li
         console.log("DOM is fully loaded!");
     });
 
-
 **load**
 
-Fires when the entire page (including images, stylesheets, etc.) has finished loading.
+Fires when the entire page (including images, stylesheets, etc.) has finished
+loading.
 
 .. code-block:: javascript
 

@@ -1,19 +1,23 @@
-.. role:: python(code)
-   :language: python
-
 Function Scope
 ==============
 
-Variables defined inside a function are only available within the function. This principle is know as the **scope** of the function and the variable exists in the **local scope** of that function. If a variable is used outside the scope in which it was defined, Python will throw a ``NameError``. 
+Variables defined inside a function are only available within the function.
+This principle is know as the **scope** of the function and the variable exists
+in the **local scope** of that function. If a variable is used outside the
+scope in which it was defined, Python will throw a ``NameError``.
 
 **Example**
 
-Here the variable ``y`` is created inside the function ``double``, this means this variable only exists inside the function and we cannot print ``y`` outside the function. This results in a **NameError** (*a variable of the specified name cannot be found*).
+Here the variable ``y`` is created inside the function ``double``, this means
+this variable only exists inside the function and we cannot print ``y`` outside
+the function. This results in a **NameError** (*a variable of the specified
+name cannot be found*).
 
 .. code-block:: python
 
     def double(x):
-        y = 2*x
+        y = 2 * x
+
 
     print(y)
 
@@ -25,12 +29,15 @@ Here the variable ``y`` is created inside the function ``double``, this means th
                 ^
         NameError: name 'y' is not defined
 
-Similarly, ``x`` is only created inside the function, and it also only exists *inside* the function, so we cannot print ``x`` outside the function and we get a **NameError**.
+Similarly, ``x`` is only created inside the function, and it also only exists
+*inside* the function, so we cannot print ``x`` outside the function and we get
+a **NameError**.
 
 .. code-block:: python
 
     def double(x):
-        y = 2*x
+        y = 2 * x
+
 
     print(x)
 
@@ -42,22 +49,29 @@ Similarly, ``x`` is only created inside the function, and it also only exists *i
                 ^
         NameError: name 'x' is not defined
 
-You can visualise this by drawing a box around your functions. Variables that are only defined inside the box cannot be seen outside the box. If it helps, you can make your box opaque to simulate your main program being unable to 'see in' to your function.
+You can visualise this by drawing a box around your functions. Variables that
+are only defined inside the box cannot be seen outside the box. If it helps,
+you can make your box opaque to simulate your main program being unable to 'see
+in' to your function.
 
 .. image:: img/scope1.png
-   :width: 500
-   :align: center
+    :width: 500
+    :align: center
 
 Here you can see that to the rest of the program ``x`` and ``y`` don't exist.
 
 Global Scope
 ------------
 
-While variables created inside functions cannot be seen outside of the function, any variable defined in the main program can still be seen inside the function. An example of where this might be useful is when defining constants. 
+While variables created inside functions cannot be seen outside of the
+function, any variable defined in the main program can still be seen inside the
+function. An example of where this might be useful is when defining constants.
 
 **Example**
 
-The function below calculates the speed of an object at time :math:`t` after it has been dropped. The function is able to 'see' ``g``, which stores the acceleration due to gravity since ``g`` is defined *outside* the function.
+The function below calculates the speed of an object at time :math:`t` after it
+has been dropped. The function is able to 'see' ``g``, which stores the
+acceleration due to gravity since ``g`` is defined *outside* the function.
 
 .. exec_code::
     :language: python
@@ -88,7 +102,7 @@ The function below calculates the speed of an object at time :math:`t` after it 
 
         No.
 
-        This code does not cause a **NameError** because ``s`` is defined within the local scope of the ``add`` function, and it is used within the same function. 
+        This code does not cause a **NameError** because ``s`` is defined within the local scope of the ``add`` function, and it is used within the same function.
 
 .. dropdown:: Question 2
     :open:
@@ -138,25 +152,25 @@ The function below calculates the speed of an object at time :math:`t` after it 
 
         print(check(50))
 
-    A. 
+    A.
 
      .. code-block:: text
 
         10
 
-    B. 
+    B.
 
      .. code-block:: text
 
         50
 
-    C. 
+    C.
 
      .. code-block:: text
 
         yes
 
-    D. 
+    D.
 
      .. code-block:: text
 
@@ -188,25 +202,25 @@ The function below calculates the speed of an object at time :math:`t` after it 
         check(50)
         print(x)
 
-    A. 
+    A.
 
      .. code-block:: text
 
         10
 
-    B. 
+    B.
 
      .. code-block:: text
 
         50
 
-    C. 
+    C.
 
      .. code-block:: text
 
         yes
 
-    D. 
+    D.
 
      .. code-block:: text
 
@@ -300,7 +314,7 @@ The function below calculates the speed of an object at time :math:`t` after it 
         print(energy(100))
 
     .. code-block:: text
-    
+
         8.987551787368176e+18
 
     **Example 2**
@@ -323,7 +337,7 @@ The function below calculates the speed of an object at time :math:`t` after it 
     :color: warning
     :icon: star
 
-    Write a function to calculate the volume of a cylinder. 
+    Write a function to calculate the volume of a cylinder.
 
     **Formula**
 
@@ -386,7 +400,7 @@ The function below calculates the speed of an object at time :math:`t` after it 
     **Message 2**
 
     .. code-block:: text
-    
+
         Signs point to yes
 
     **Message 3**
@@ -394,7 +408,7 @@ The function below calculates the speed of an object at time :math:`t` after it 
     .. code-block:: text
 
         You may rely on it
-    
+
     **Function specification**
 
     * name: ``eight_ball``
@@ -441,8 +455,8 @@ The function below calculates the speed of an object at time :math:`t` after it 
     .. code-block:: python
 
         print(fibonacci(6))
-    
-    .. code-block:: texton
+
+    .. code-block::
 
         8
 
@@ -451,7 +465,7 @@ The function below calculates the speed of an object at time :math:`t` after it 
     .. code-block:: python
 
         print(fibonacci(10))
-    
+
     .. code-block:: text
 
         55

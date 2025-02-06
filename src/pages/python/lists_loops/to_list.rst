@@ -1,16 +1,16 @@
-.. role:: python(code)
-   :language: python
-
 Converting To Lists
-========================
+===================
 
-It is often useful to convert variables in Python to a list so you can perform list operations. This can be achieved using ``list()``. 
+It is often useful to convert variables in Python to a list so you can perform
+list operations. This can be achieved using ``list()``.
 
 ``list(iterable)``
 
-Only iterables can be converted to a list. An iterable is a sequence of values you can go through.
+Only iterables can be converted to a list. An iterable is a sequence of values
+you can go through.
 
-**Example:** Convert a string to a list. This will create a list of characters that make up the given string.
+**Example:** Convert a string to a list. This will create a list of characters
+that make up the given string.
 
 .. exec_code::
     :language: python
@@ -18,9 +18,11 @@ Only iterables can be converted to a list. An iterable is a sequence of values y
     text = 'Hello World!'
     print(list(text))
 
-If we want to create a list of strings rather than characters we can use the ``.split()`` method.
+If we want to create a list of strings rather than characters we can use the
+``.split()`` method.
 
-The string is the text that you want to convert to a list and the separator is used to identify how the string should be broken up into different elements.
+The string is the text that you want to convert to a list and the separator is
+used to identify how the string should be broken up into different elements.
 
 **Example:** Splitting on a space.
 
@@ -48,30 +50,30 @@ The separator you use doesn't have to be a character, it can be a string.
     What do you think the output of the following code will be?
 
     .. code-block:: python
-        
+
         numbers = '12345678910'
         print(list(numbers))
 
 
-    A. 
+    A.
 
     .. code-block:: python
 
         [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-    B. 
+    B.
 
     .. code-block:: python
 
         [1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 0]
 
-    C. 
+    C.
 
     .. code-block:: python
 
         ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
 
-    D. 
+    D.
 
     .. code-block:: python
 
@@ -100,37 +102,37 @@ The separator you use doesn't have to be a character, it can be a string.
         list_fruits = fruits.split(',')
         print(list_fruits[1])
 
-    A. 
+    A.
 
     .. code-block:: python
 
         a
 
-    B. 
+    B.
 
     .. code-block:: python
 
         p
 
-    C. 
+    C.
 
     .. code-block:: python
 
         ,
 
-    D. 
+    D.
 
     .. code-block:: python
 
         apples
 
-    E. 
+    E.
 
     .. code-block:: python
 
         bananas
 
-    F. 
+    F.
 
     .. code-block:: python
 
@@ -172,7 +174,7 @@ The separator you use doesn't have to be a character, it can be a string.
 
         What do you need to buy? spaghetti tomatoes basil burrata
         ['spaghetti', 'tomatoes', 'basil', 'burrata']
-  
+
     **Example 2**
 
     .. code-block:: text

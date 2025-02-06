@@ -1,5 +1,5 @@
 Javascript
-========================
+==========
 
 .. toctree::
     :maxdepth: 2
@@ -7,6 +7,7 @@ Javascript
 
     introduction
     printing
+    comments
     statements
     variables
     arithmetic

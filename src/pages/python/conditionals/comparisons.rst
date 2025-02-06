@@ -1,30 +1,22 @@
-.. role:: python(code)
-   :language: python
-
 Comparisons
-====================
+===========
 
 In Python, when we compare values, the results return a Boolean.
 
 .. exec_code::
-  :language: python
+    :language: python
 
-  x = 10
-  print(x < 0)
+    x = 10
+    print(x < 0)
 
 We can compare values using the following operators:
 
-* ``<`` less than
-
-* ``>``  greater than
-
-* ``<=`` less than or equal to
-
-* ``>=`` greater than or equal to
-
-* ``==`` check values are equal
-
-* ``!=`` check values are not equal
+- ``<`` less than
+- ``>`` greater than
+- ``<=`` less than or equal to
+- ``>=`` greater than or equal to
+- ``==`` check values are equal
+- ``!=`` check values are not equal
 
 .. dropdown:: Question 1
     :open:
@@ -34,7 +26,7 @@ We can compare values using the following operators:
     Does the following program return ``True`` or ``False``?
 
     .. code-block:: python
-        
+
         x = 2
         print(x > 3)
 
@@ -52,7 +44,7 @@ We can compare values using the following operators:
     Does the following program return ``True`` or ``False``?
 
     .. code-block:: python
-        
+
         x = 7.2
         print(x <= 7.2)
 
@@ -72,7 +64,7 @@ We can compare values using the following operators:
     Does the following program return ``True`` or ``False``?
 
     .. code-block:: python
-        
+
         x = 2 + 4
         print(x == 6)
 
@@ -92,7 +84,7 @@ We can compare values using the following operators:
     Does the following program return ``True`` or ``False``?
 
     .. code-block:: python
-        
+
         x = 4*3
         print(x != 5)
 
@@ -112,7 +104,7 @@ We can compare values using the following operators:
     Does the following program return ``True`` or ``False``?
 
     .. code-block:: python
-        
+
         x = 2**2
         print(x != 4)
 
@@ -132,7 +124,7 @@ We can compare values using the following operators:
     Does the following program return ``True`` or ``False``?
 
     .. code-block:: python
-        
+
         x = 10
         print((x - 1) % 3 == 0 )
 
@@ -152,7 +144,7 @@ We can compare values using the following operators:
     Does the following program return ``True`` or ``False``?
 
     .. code-block:: python
-        
+
         x = 'red'
         print(x == 'red')
 

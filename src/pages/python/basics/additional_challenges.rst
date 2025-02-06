@@ -1,7 +1,3 @@
-.. role:: python(code)
-   :language: python
-
-
 Additional Challenges
 =====================
 
@@ -9,12 +5,12 @@ Additional Challenges
     :color: warning
     :icon: star
 
-    You have been provided with some code. 
-    
+    You have been provided with some code.
+
     .. code-block:: python
 
         Print('Python's awesome!')
-    
+
     The code should say Python's awesome! However, the code has some bugs!
 
     Debug this code!
@@ -29,7 +25,7 @@ Additional Challenges
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. .. code-block:: 
+        .. .. code-block::
 
         ..     print("Python's awesome!")
 
@@ -42,16 +38,16 @@ Additional Challenges
     Today is your lucky day! Your favourite store is having a sale where everything is discounted by 30%! However, the discount isn't applied until checkout.
 
     Write a program that asks the user for the original price and then gives the discounted price to 2 decimal places.
-    
+
     **Example 1**
 
     .. code-block::
 
         Enter the price ($): 10
         $7.00
-    
+
     **Example 2**
-    
+
     .. code-block::
 
         Enter the price ($): 79.99
@@ -61,7 +57,7 @@ Additional Challenges
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. .. code-block:: 
+        .. .. code-block::
 
         ..     price = float(input('Enter the price ($): '))
         ..     print('${:.2f}'.format(price - price * 0.3))
@@ -123,7 +119,7 @@ Additional Challenges
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. .. code-block:: 
+        .. .. code-block::
 
         ..     print("What are your 3 favourite foods?")
 

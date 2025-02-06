@@ -1,18 +1,17 @@
-.. role:: python(code)
-   :language: python
-
 If-Else Statements
-====================
+==================
 
-If you want  to execute code if a condition is ``False``, we can use the ``else`` statement. 
+If you want to execute code if a condition is ``False``, we can use the
+``else`` statement.
 
 .. image:: img/2_example1.png
-  :width: 250
-  :align: center
+    :width: 250
+    :align: center
 
-The ``else`` statement is always used *after* an ``if`` statement. The structure of an ``if``-``else`` statement is:
+The ``else`` statement is always used *after* an ``if`` statement. The
+structure of an ``if``-``else`` statement is:
 
-.. code-block:: 
+.. code-block::
 
     if condition:
         # code you execute if condition is true
@@ -21,13 +20,13 @@ The ``else`` statement is always used *after* an ``if`` statement. The structure
 
 Take note of the following:
 
-* ``else`` is a keyword
-
-* The code inside the ``else`` statement only executes if the condition is ``False``. The ``else`` statement doesn't have a condition after it. (Remember: *Else is lonely. Else is by itself!*)
-
-* ``:`` is placed after the ``else``
-
-* Similar to the ``if`` statement, the code *inside* the ``else`` statement must be **indented**.
+- ``else`` is a keyword
+- The code inside the ``else`` statement only executes if the condition is
+  ``False``. The ``else`` statement doesn't have a condition after it.
+  (Remember: *Else is lonely. Else is by itself!*)
+- ``:`` is placed after the ``else``
+- Similar to the ``if`` statement, the code *inside* the ``else`` statement
+  must be **indented**.
 
 Here is an example of a simple ``if``-``else`` statement.
 
@@ -36,15 +35,15 @@ Here is an example of a simple ``if``-``else`` statement.
     x = 1
 
     if x < 0:
-        print('x is a negative number')
+        print("x is a negative number")
     else:
-        print('x is a positive number')
+        print("x is a positive number")
 
 In this example the condition is False so the second print statement runs.
 
 .. image:: img/2_example2.png
-  :width: 500
-  :align: center
+    :width: 500
+    :align: center
 
 .. dropdown:: Question 1
     :open:
@@ -171,19 +170,19 @@ In this example the condition is False so the second print statement runs.
     **Example 1**
 
     .. code-block:: html
-    
+
         Enter a number: 1
         This number is odd
 
     **Example 2**
 
     .. code-block:: html
-      
+
         Enter a number: 2
         This number is even
 
     .. hint::
-        Use the modulus operator ``%`` to returns the remainder. 
+        Use the modulus operator ``%`` to returns the remainder.
 
         * When even numbers are divided by 2 the remainder is 0
 

@@ -1,20 +1,20 @@
-.. role:: python(code)
-   :language: python
-
 Functions
 =========
 
-So far we have used a lot of Python functions. You might have noticed that functions use parentheses ``()``, e.g. the ``print()`` function or the ``input()`` function.
+So far we have used a lot of Python functions. You might have noticed that
+functions use parentheses ``()``, e.g. the ``print()`` function or the
+``input()`` function.
 
-We'll now see that we can write our own functions! Functions are very useful for
+We'll now see that we can write our own functions! Functions are very useful
+for
 
-* **Reusing** blocks of code
-
-* **Isolating** parts of your program, which can make testing and debugging easier as each function can be tested individually
-
-* **Composing** programs as the logic and structure of the program can be broken down into smaller tasks that are easier to solve
-
-* **Readability** as functions generally result in less code which can make your program easier to read
+- **Reusing** blocks of code
+- **Isolating** parts of your program, which can make testing and debugging
+  easier as each function can be tested individually
+- **Composing** programs as the logic and structure of the program can be
+  broken down into smaller tasks that are easier to solve
+- **Readability** as functions generally result in less code which can make
+  your program easier to read
 
 Functions are defined using the following syntax
 
@@ -26,23 +26,21 @@ Functions are defined using the following syntax
 
 Take note of the following:
 
-* ``def`` is a keyword which signifies that this is a function definition
-
-* ``function_name`` is chosen by you and follows the same naming rules as variables
-
-* each ``parameter_i`` has a name chosen by you and is available as a variable in the function
-
-* functions don't necessarily need to be provided a parameter
-
-* ``:`` is placed after the parameter list
-
-* the function's code block must be *indented* (just like we do for if statements and loops)
-
-* ``return`` signifies that the next thing will be "given back" to the caller
+- ``def`` is a keyword which signifies that this is a function definition
+- ``function_name`` is chosen by you and follows the same naming rules as
+  variables
+- each ``parameter_i`` has a name chosen by you and is available as a variable
+  in the function
+- functions don't necessarily need to be provided a parameter
+- ``:`` is placed after the parameter list
+- the function's code block must be *indented* (just like we do for if
+  statements and loops)
+- ``return`` signifies that the next thing will be "given back" to the caller
 
 **Example 1: One parameter**
 
-Here is a simple function called ``greet`` that constructs a greeting. This function returns a string with *Hello <name>*.
+Here is a simple function called ``greet`` that constructs a greeting. This
+function returns a string with *Hello <name>*.
 
 .. exec_code::
     :language: python
@@ -52,17 +50,20 @@ Here is a simple function called ``greet`` that constructs a greeting. This func
 
     print(greet('Alison'))
 
-This function meets the following specifications. Note that function and variable names are formatted in grey and the variable types are given in brackets.
+This function meets the following specifications. Note that function and
+variable names are formatted in grey and the variable types are given in
+brackets.
 
-* Name: ``greet``
-
-* Parameters: ``name (string)``
-
-* Return: greeting message (``string``)
+- Name: ``greet``
+- Parameters: ``name (string)``
+- Return: greeting message (``string``)
 
 **Example 2: Two parameters**
 
-Here is an add function, which takes 2 parameters, ``x`` and ``y``. When you use the function you need to provide it two values. The first value that is provided to the function will be saved under the variable name ``x`` and the second value will be saved under the variable name ``y``.
+Here is an add function, which takes 2 parameters, ``x`` and ``y``. When you
+use the function you need to provide it two values. The first value that is
+provided to the function will be saved under the variable name ``x`` and the
+second value will be saved under the variable name ``y``.
 
 .. exec_code::
     :language: python
@@ -74,7 +75,9 @@ Here is an add function, which takes 2 parameters, ``x`` and ``y``. When you use
 
 **Example 3: Two parameters**
 
-Note that the order of the parameters matter. Here our divide function will divide ``x`` by ``y``. So ``divide(2, 4)`` gives 2/4 while ``divide(4, 2)`` gives 4/2.
+Note that the order of the parameters matter. Here our divide function will
+divide ``x`` by ``y``. So ``divide(2, 4)`` gives 2/4 while ``divide(4, 2)``
+gives 4/2.
 
 .. exec_code::
     :language: python
@@ -87,15 +90,14 @@ Note that the order of the parameters matter. Here our divide function will divi
 
 This function meets the following specifications.
 
-* Name: ``divide``
-
-* Parameters: ``x`` (``int`` or ``float``), ``y`` (``int`` or ``float``)
-
-* Return: ``x`` divided by ``y`` (``float``)
+- Name: ``divide``
+- Parameters: ``x`` (``int`` or ``float``), ``y`` (``int`` or ``float``)
+- Return: ``x`` divided by ``y`` (``float``)
 
 **Example 4: No parameters**
 
-Functions don't always need parameters. Here is an example of a function that gives us a list of students. Note that we still need the parentheses!
+Functions don't always need parameters. Here is an example of a function that
+gives us a list of students. Note that we still need the parentheses!
 
 .. exec_code::
     :language: python
@@ -107,11 +109,9 @@ Functions don't always need parameters. Here is an example of a function that gi
 
 This function meets the following specifications.
 
-* Name: ``get_class_list``
-
-* Parameters: ``None``
-
-* Return: ``x`` divided by ``y`` (``float``)
+- Name: ``get_class_list``
+- Parameters: ``None``
+- Return: ``x`` divided by ``y`` (``float``)
 
 .. dropdown:: Question 1
     :open:
@@ -125,29 +125,29 @@ This function meets the following specifications.
         def power(x, exponent):
             y = x**exponent
             return y
-            
+
         z = power(2, 3)
         print(z)
 
-    A. 
+    A.
 
      .. code-block:: python
 
         6
 
-    B. 
+    B.
 
      .. code-block:: python
 
         23
 
-    C. 
+    C.
 
      .. code-block:: python
 
         8
 
-    D. 
+    D.
 
      .. code-block:: python
 
@@ -210,37 +210,37 @@ This function meets the following specifications.
 
     Which of the following will return 8? *Select all that apply.*
 
-    A. 
+    A.
 
      .. code-block:: python
 
         calculate(8, 8, 4)
 
-    B. 
+    B.
 
      .. code-block:: python
 
         calculate(2, 6, 0)
 
-    C. 
+    C.
 
      .. code-block:: python
 
         calculate(2, 5, 3)
 
-    D. 
+    D.
 
      .. code-block:: python
 
         calculate(5, 7, 2)
 
-    E. 
+    E.
 
      .. code-block:: python
 
         calculate(0, 10, 1)
 
-    F. 
+    F.
 
      .. code-block:: python
 
@@ -287,7 +287,7 @@ This function meets the following specifications.
     :color: info
     :icon: question
 
-    Write a function that converts temperature in Celsius to Fahrenheit. 
+    Write a function that converts temperature in Celsius to Fahrenheit.
 
     The conversion formula is as follows:
 

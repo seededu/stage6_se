@@ -1,0 +1,6 @@
+Feature, Native Apps, Traditional Web Apps, PWAs
+Installation, Download from app store, No installation needed, Add to home screen from browser
+Offline Support, Full offline functionality, Limited or none, Works offline using caching
+Performance, Optimised for the device, Browser-dependent, Native app-like
+Updates, Via app store, Manual updates by user, Automatic updates via the web
+Cross-Platform Support, Platform-specific builds, Universal across browsers, Universal via modern browsers

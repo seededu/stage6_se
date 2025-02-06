@@ -1,5 +1,5 @@
 Networking
-====================
+==========
 
 .. toctree::
     :maxdepth: 2

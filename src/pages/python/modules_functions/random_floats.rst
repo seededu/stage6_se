@@ -1,19 +1,23 @@
-.. role:: python(code)
-   :language: python
-
 Random Floats and Using Probabilities
 =====================================
 
-Sometimes we want an event to occur with a specific probability. This can be achieved using ``random.random()``. This function produces a random float between 0 (inclusive) and 1 (not inclusive), i.e. we will get a value :math:`r` where :math:`0 \leq r < 1`.
+Sometimes we want an event to occur with a specific probability. This can be
+achieved using ``random.random()``. This function produces a random float
+between 0 (inclusive) and 1 (not inclusive), i.e. we will get a value :math:`r`
+where :math:`0 \leq r < 1`.
 
 .. code-block:: python
 
-   import random
-   print(random.random())
+    import random
 
-We can then check whether the random value is less than or equal to :math:`p`, the probability with which we want the event to occur.
+    print(random.random())
 
-For example, we can write a program to generate weather conditions, which is common in a lot of games. Our simple program will say that it's sunny 80% of the time and say that it's rainy 20% of the time.
+We can then check whether the random value is less than or equal to :math:`p`,
+the probability with which we want the event to occur.
+
+For example, we can write a program to generate weather conditions, which is
+common in a lot of games. Our simple program will say that it's sunny 80% of
+the time and say that it's rainy 20% of the time.
 
 .. code-block:: python
 
@@ -21,9 +25,9 @@ For example, we can write a program to generate weather conditions, which is com
 
     r = random.random()
     if r < 0.8:
-        print('sunny')
+        print("sunny")
     else:
-        print('rainy')
+        print("rainy")
 
 .. dropdown:: Question 1
     :open:
@@ -39,37 +43,37 @@ For example, we can write a program to generate weather conditions, which is com
         r = random.random()
         print(r*10)
 
-    A. 
+    A.
 
      .. code-block:: python
 
         0
 
-    B. 
+    B.
 
      .. code-block:: python
 
         1
 
-    C. 
+    C.
 
      .. code-block:: python
 
         10
 
-    D. 
+    D.
 
      .. code-block:: python
 
         0.5
 
-    E. 
+    E.
 
      .. code-block:: python
 
         0.368479
 
-    F. 
+    F.
 
      .. code-block:: python
 

@@ -1,29 +1,30 @@
-.. role:: python(code)
-   :language: python
-
-
 Printing
 ========
 
-In order to get the computer to display information to the screen, we use the ``print()`` function.
+In order to get the computer to display information to the screen, we use the
+``print()`` function.
 
 Try running the code below!
 
 .. code-block:: python
 
-    print('I love Python')
-
+    print("I love Python")
 
 Take note of the following:
 
-- ``print`` must be in lower case. If you try using ``Print``, it won't work! This is because the computer is fussy! It can only understand very specific instructions.
-- ``'I love Python'`` is just a piece of text. This is the information we want to display.
-- We use ' ' or " " to indicate text. (We actually refer to text as a string; more on this later.)
-- We tell the computer what to display by placing the contents in circular brackets ().
+- ``print`` must be in lower case. If you try using ``Print``, it won't work!
+  This is because the computer is fussy! It can only understand very specific
+  instructions.
+- ``'I love Python'`` is just a piece of text. This is the information we want
+  to display.
+- We use ' ' or " " to indicate text. (We actually refer to text as a string;
+  more on this later.)
+- We tell the computer what to display by placing the contents in circular
+  brackets ().
 
 This is the structure of the print() function:
 
-:python:`print(information_you_want_to_display)`.
+``print(information_you_want_to_display)``.
 
 .. dropdown:: Question
     :open:
@@ -32,37 +33,37 @@ This is the structure of the print() function:
 
     Which of the following code snippets are **valid**? *Select all that apply.*
 
-    A. 
+    A.
 
       .. code-block:: python
 
         print["I can code!"]
 
-    B. 
+    B.
 
       .. code-block:: python
 
         print('Computers are fun!')
 
-    C. 
+    C.
 
       .. code-block:: python
 
         print('Programming is awesome!)
 
-    D. 
+    D.
 
       .. code-block:: python
 
         print(Developing software is cool!)
 
-    E. 
+    E.
 
       .. code-block:: python
-        
+
         print('Programming rules!')
 
-    F. 
+    F.
 
       .. code-block:: python
 
@@ -99,7 +100,7 @@ This is the structure of the print() function:
         :octicon:`x-circle;1em;sd-text-danger;` **Invalid.** Missing quotes altogether
 
         .. code-block:: python
-            
+
             print('Programming rules!')
 
         :octicon:`issue-closed;1em;sd-text-success;` **Valid.**
@@ -108,7 +109,7 @@ This is the structure of the print() function:
 
             print('Don't code while sleepy!')
 
-        :octicon:`x-circle;1em;sd-text-danger;` **Invalid.** Python is using single quotes to identify the start and end of the string. In this case the ``'`` in don't is registering as a closing  quote so python thinks that the string is Don. 
+        :octicon:`x-circle;1em;sd-text-danger;` **Invalid.** Python is using single quotes to identify the start and end of the string. In this case the ``'`` in don't is registering as a closing  quote so python thinks that the string is Don.
 
 .. dropdown:: Code challenge: Hello World!
     :color: warning

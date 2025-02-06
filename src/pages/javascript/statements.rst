@@ -1,14 +1,12 @@
-.. role:: js(code)
-   :language: javascript
-
 Programs, Statements and Expressions
-=====================================
+====================================
 
-JavaScript programs are built from statements and expressions, the core components that define what your program does
-and how it behaves. This page will explain what statements and expressions are and how they differ.
+JavaScript programs are built from statements and expressions, the core
+components that define what your program does and how it behaves. This page
+will explain what statements and expressions are and how they differ.
 
 What is a Statement?
------------------------
+--------------------
 
 A statement is a complete instruction that JavaScript executes.
 
@@ -20,10 +18,11 @@ Examples of statements:
     console.log(person);  // Prints the value of 'name' to the console
 
 Semicolons
-----------------------------------------------
+----------
 
-In JavaScript, the semicolon (``;``) is used to signal the end of a statement. It helps the JavaScript engine know
-where one instruction ends and the next begins.
+In JavaScript, the semicolon (``;``) is used to signal the end of a statement.
+It helps the JavaScript engine know where one instruction ends and the next
+begins.
 
 Example:
 
@@ -32,14 +31,15 @@ Example:
     let greeting = "Hello"; // Correctly ended with ;
     let greeting = "Hello"  // Incorrect
 
-Although JavaScript has a feature called Automatic Semicolon Insertion (ASI) that tries to add missing semicolons for
-you, relying on it can lead to unexpected errors. It’s a good habit to include semicolons explicitly.
+Although JavaScript has a feature called Automatic Semicolon Insertion (ASI)
+that tries to add missing semicolons for you, relying on it can lead to
+unexpected errors. It’s a good habit to include semicolons explicitly.
 
 Expressions
-=================
+===========
 
-An expression is a piece of code that produces a value. Expressions can be as simple as a number or more complex like a
-calculation.
+An expression is a piece of code that produces a value. Expressions can be as
+simple as a number or more complex like a calculation.
 
 Examples of expressions:
 
@@ -57,9 +57,10 @@ Expressions can be used inside statements. For example:
     console.log(result);   // 'result' is an expression that evaluates to 8
 
 Multiple Statements on One Line
-==================================
+===============================
 
-You can write multiple statements on the same line if you separate them with semicolons:
+You can write multiple statements on the same line if you separate them with
+semicolons:
 
 .. code-block:: javascript
 

@@ -1,8 +1,8 @@
 Syllabus Map
-====================
+============
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
 
-   year11/index
-   year12/index
+    year11/index
+    year12/index

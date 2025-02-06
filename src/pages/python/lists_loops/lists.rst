@@ -1,44 +1,38 @@
-.. role:: python(code)
-   :language: python
-
-
 Lists
-=====================
+=====
 
-In Python, a list allows us to store a collection of items in a particular order.
+In Python, a list allows us to store a collection of items in a particular
+order.
 
 Here is an example of a to do list that you might have.
 
-* Buy carrots
-
-* Wash car
-
-* Study for quiz
+- Buy carrots
+- Wash car
+- Study for quiz
 
 We would create this in Python with the following:
 
-.. code-block:: 
+.. code-block::
 
-   todo = ['Buy carrots', 'Wash car', 'Study for quiz']
-   print(todo)
+    todo = ['Buy carrots', 'Wash car', 'Study for quiz']
+    print(todo)
 
-* A list is defined by square brackets ``[]``
-
-* Items in a list are separated by commas ``,``
+- A list is defined by square brackets ``[]``
+- Items in a list are separated by commas ``,``
 
 Lists can also store numbers.
 
-.. code-block:: 
+.. code-block::
 
-   numbers = [1, 2, 3, 4]
-   print(numbers)
+    numbers = [1, 2, 3, 4]
+    print(numbers)
 
 In fact, you can actually store lots of different variable types in a list.
 
-.. code-block:: 
+.. code-block::
 
-   items = [1, 'hi', 2.25]
-   print(items)
+    items = [1, 'hi', 2.25]
+    print(items)
 
 A list is actually another type of variable.
 
@@ -49,25 +43,25 @@ A list is actually another type of variable.
 
     Which of the following correctly creates a list of colours?
 
-    A. 
+    A.
 
       .. code-block:: python
 
         colours = 'pink', 'orange', 'purple'
 
-    B. 
+    B.
 
       .. code-block:: python
 
         colours = ['red', 'yellow', 'black']
 
-    C. 
+    C.
 
       .. code-block:: python
 
         colours = ['green' 'blue']
 
-    D. 
+    D.
 
       .. code-block:: python
 
@@ -121,7 +115,7 @@ A list is actually another type of variable.
       :color: dark
 
       .. **False.**
-      
+
       .. The order of the elements in the list matter. A list is only the same as another list if all the elements are the same and also in the same order.
 
       *Solution is locked*

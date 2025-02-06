@@ -1,8 +1,5 @@
-.. role:: html(code)
-   :language: html
-
 Websites
-====================
+========
 
 .. warning::
 

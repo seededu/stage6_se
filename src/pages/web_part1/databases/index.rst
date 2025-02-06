@@ -1,5 +1,5 @@
 Databases and SQL
-==============================
+=================
 
 .. toctree::
     :maxdepth: 2
@@ -16,7 +16,3 @@ Databases and SQL
     joins
     joins_more
     group_by
-
-
-
-

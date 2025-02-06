@@ -1,0 +1,7 @@
+[tool.doc8]
+
+max-line-length=79
+
+[tool.docstrfmt]
+
+line-length=79

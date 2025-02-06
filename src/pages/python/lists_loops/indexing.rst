@@ -1,14 +1,12 @@
-.. role:: python(code)
-   :language: python
-
 Indexing
-=====================
+========
 
-We can access the items of a list using indexing. This means that we can give Python a number, and it will retrieve the item sitting at that location. 
+We can access the items of a list using indexing. This means that we can give
+Python a number, and it will retrieve the item sitting at that location.
 
 Here is the syntax used for indexing:
 
-:python:`list[index]`.
+``list[index]``.
 
 Now unlike us humans who start counting at 1,
 
@@ -24,19 +22,22 @@ Below we show you the index corresponding to each item in the list months.
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
     print(months[1])
 
-Since Python starts indexing at 0, ``months[0]`` will give us the first month and ``month[1]`` will gives us the second month and so on.
+Since Python starts indexing at 0, ``months[0]`` will give us the first month
+and ``month[1]`` will gives us the second month and so on.
 
-We can also use indexing to extract a range of items. We use the square brackets ``[]`` as before and we also specify the start index followed by the end index.
+We can also use indexing to extract a range of items. We use the square
+brackets ``[]`` as before and we also specify the start index followed by the
+end index.
 
-:python:`list[start:end]`
+``list[start:end]``
 
 Note:
 
-* The start index is *inclusive*
+- The start index is *inclusive*
+- The end index is *exclusive*
 
-* The end index is *exclusive*
-
-Here is an example. We start at month 2 (March) and go up to, but *not including*, month 7 (August).
+Here is an example. We start at month 2 (March) and go up to, but *not
+including*, month 7 (August).
 
 .. exec_code::
 
@@ -52,7 +53,8 @@ If you omit the *start* index, you will automatically start at index 0.
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
     print(months[:7])
 
-If you omit the *end* index, you will automatically end at the last item in the list. Here is an example.
+If you omit the *end* index, you will automatically end at the last item in the
+list. Here is an example.
 
 .. exec_code::
 
@@ -60,7 +62,8 @@ If you omit the *end* index, you will automatically end at the last item in the 
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
     print(months[5:])
 
-You can also index from the end of the list by using negative indices. Here is an example. 
+You can also index from the end of the list by using negative indices. Here is
+an example.
 
 .. exec_code::
 
@@ -69,29 +72,33 @@ You can also index from the end of the list by using negative indices. Here is a
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
     print(months[-3])
 
-Note: the last item in the list starts at -1 whereas the first item in the list starts at 0.
+Note: the last item in the list starts at -1 whereas the first item in the list
+starts at 0.
 
 Index Errors
 ------------
-If you try to access an index that does not exist you will get an *IndexError*. See what happens when you run the following code.
 
-.. code::
+If you try to access an index that does not exist you will get an *IndexError*.
+See what happens when you run the following code.
+
+::
 
     # index:    0      1      2      3      4      5      6      7      8       9     10      11
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
     print(months[12])
 
-.. code:: text
+.. code-block:: text
 
     Traceback (most recent call last):
       File "/home/main.py", line 3, in <module>
           print(months[12])
                 ~~~~~~^^^^
       IndexError: list index out of range
-      
-This is a common error as often we forget to account for the fact that Python indexing starts at 0.
 
-.. dropdown:: Question 1 
+This is a common error as often we forget to account for the fact that Python
+indexing starts at 0.
+
+.. dropdown:: Question 1
     :open:
     :color: info
     :icon: question
@@ -128,34 +135,34 @@ This is a common error as often we forget to account for the fact that Python in
 
         ['Tue', 'Wed']
 
-    A. 
+    A.
 
       .. code-block:: python
 
         print(days[1:2])
 
-    B. 
+    B.
 
       .. code-block:: python
 
         print(days[1:3])
 
-    C. 
+    C.
 
       .. code-block:: python
 
         print(days[:2])
 
-    D. 
+    D.
 
       .. code-block:: python
 
         print(days[2])
 
-    E. 
+    E.
 
       .. code-block:: python
-        
+
         print(days[-2])
 
     .. dropdown:: :material-regular:`lock;1.5em` Solution
@@ -163,7 +170,7 @@ This is a common error as often we forget to account for the fact that Python in
         :color: dark
 
         .. .. code-block:: python
-        
+
         ..     print(days[1:3])
 
         .. Remember that the start index is *inclusive* and the last index is *exclusive*. This means that we start at index 1 and go up to, but not including index 3, which means we get ``['Tue', 'Wed']``.
@@ -174,7 +181,7 @@ This is a common error as often we forget to account for the fact that Python in
     :open:
     :color: info
     :icon: question
-    
+
     What do you think the output of the following code will be?
 
     .. code-block:: python
@@ -198,7 +205,7 @@ This is a common error as often we forget to account for the fact that Python in
     :open:
     :color: info
     :icon: question
-    
+
     What do you think the output of the following code will be?
 
     .. code-block:: python
@@ -222,7 +229,7 @@ This is a common error as often we forget to account for the fact that Python in
     :open:
     :color: info
     :icon: question
-    
+
     Consider the following list.
 
     .. code-block:: python
@@ -236,25 +243,25 @@ This is a common error as often we forget to account for the fact that Python in
         days = ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun']
         print(days[-4:])
 
-    A. 
+    A.
 
       .. code-block:: python
 
         days[-2]
 
-    B. 
+    B.
 
       .. code-block:: python
 
         days[5:6]
 
-    C. 
+    C.
 
       .. code-block:: python
 
         days[-2:-1]
 
-    D. 
+    D.
 
       .. code-block:: python
 
@@ -308,7 +315,7 @@ This is a common error as often we forget to account for the fact that Python in
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. .. code-block:: 
+        .. .. code-block::
 
         ..     shopping_list = ["carrots", "avocado", "chocolate", "toothpaste", "tomatoes"]
 
@@ -339,7 +346,7 @@ This is a common error as often we forget to account for the fact that Python in
     **Example 2**
 
     .. code-block:: markdown
-    
+
         Enter a month: 6
         June
 
@@ -353,7 +360,7 @@ This is a common error as often we forget to account for the fact that Python in
 
         ..     month = int(input('Enter a month: '))
         ..     print(months[month - 1])
-        
+
         .. The key things to remember in this solution are:
 
         .. * ``input()`` values are always strings. You will need to convert month to an integer.

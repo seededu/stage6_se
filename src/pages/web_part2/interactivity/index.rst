@@ -1,5 +1,5 @@
 Interactivity
-===========================
+=============
 
 .. toctree::
     :maxdepth: 2
@@ -11,4 +11,3 @@ Interactivity
     find
     edit
     events
-   

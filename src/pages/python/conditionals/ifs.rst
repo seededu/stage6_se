@@ -1,67 +1,66 @@
-.. role:: python(code)
-   :language: python
-
 If Statements
-====================
+=============
 
-The :python:`if` statement lets us execute a section of code if a specified condition is True.
+The ``if`` statement lets us execute a section of code if a specified condition
+is True.
 
 .. image:: img/1_example3.png
-  :width: 320
-  :align: center
+    :width: 320
+    :align: center
 
 The structure of an if statement is:
 
-.. code-block:: python
+.. code-block::
 
-  if condition:
-      # code you execute if condition is true
+    if condition:
+        # code you execute if condition is true
 
 Take note of the following:
 
-* :python:`if` is a keyword
-* The condition must evaluate to either :python:`True` or :python:`False`
-* The code inside the if statement only executes if the condition is :python:`True`
-* :python:`:` is placed at the end of the condition
-* The code inside the if statement must be indented. The indentation defines the
-  code block. This allows you to put multiple lines inside the if statement.
-* The indentation can be done using tab or spaces, as long as you're consistent!
+- ``if`` is a keyword
+- The condition must evaluate to either ``True`` or ``False``
+- The code inside the if statement only executes if the condition is ``True``
+- ``:`` is placed at the end of the condition
+- The code inside the if statement must be indented. The indentation defines
+  the code block. This allows you to put multiple lines inside the if
+  statement.
+- The indentation can be done using tab or spaces, as long as you're
+  consistent!
 
 Here is an example of a simple if statement.
 
 .. exec_code::
-  :language: python
+    :language: python
 
-  x = -2
+    x = -2
 
-  if x < 0:
-      print('x is a negative number')
+    if x < 0:
+        print('x is a negative number')
 
-In this example the condition is :python:`True` so the print statement runs.
+In this example the condition is ``True`` so the print statement runs.
 
 This is how we can represent this code diagrammatically. The green line
 indicates the 'path' the code takes.
 
 .. image:: img/1_example2.png
-  :width: 320
-  :align: center
-
+    :width: 320
+    :align: center
 
 Let's look at another example.
 
 .. exec_code::
-  :language: python
+    :language: python
 
-  x = 1
+    x = 1
 
-  if x < 0:
-      print('x is a negative number')
+    if x < 0:
+        print('x is a negative number')
 
-In this example the condition is :python:`False` so the print statement does not run.
+In this example the condition is ``False`` so the print statement does not run.
 
 .. image:: img/1_example3.png
-  :width: 320
-  :align: center
+    :width: 320
+    :align: center
 
 .. dropdown:: Question 1
     :open:
@@ -71,7 +70,7 @@ In this example the condition is :python:`False` so the print statement does not
     What do you think the output of the following code will be?
 
     .. code-block:: python
-        
+
       weather = 'rainy'
 
       if weather == 'rainy':
@@ -87,7 +86,7 @@ In this example the condition is :python:`False` so the print statement does not
         In this example we have two ``if`` statements, one after the after. If you look at the condition in the first ``if`` statement, this evaluates to ``True`` so the program prints
 
         .. code-block:: python
-          
+
           Take an umbrella!
 
         The second ``if`` statement however evaluates to ``False``, so nothing happens.
@@ -139,21 +138,21 @@ In this example the condition is :python:`False` so the print statement does not
     **Example 1**
 
     .. code-block:: html
-    
+
       Enter a number: 107
       That's a big number!
 
     **Example 2**
 
     .. code-block:: html
-      
+
       Enter a number: 2
 
     .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. .. code-block:: 
+        .. .. code-block::
 
         ..   n = int(input('Enter a number: '))
         ..   if n > 100:
@@ -170,21 +169,21 @@ In this example the condition is :python:`False` so the print statement does not
     **Example 1**
 
     .. code-block:: html
-      
+
       Enter a number: 3
       3 is lucky!
 
     **Example 2**
 
     .. code-block:: html
-    
+
       Enter a number: 5
 
     .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. .. code-block:: 
+        .. .. code-block::
 
         ..   n = int(input('Enter a number: '))
         ..   if n == 3:
@@ -205,9 +204,9 @@ In this example the condition is :python:`False` so the print statement does not
     Regardless of what colour the user says, the program should also say:
 
     .. code-block:: html
-  
+
       What a nice colour
-  
+
     Here are some examples of how your code should run.
 
     **Example 1**
@@ -219,7 +218,7 @@ In this example the condition is :python:`False` so the print statement does not
       What a nice colour
 
     **Example 2**
-  
+
     .. code-block:: html
 
       What is your favourite colour? blue
@@ -233,13 +232,13 @@ In this example the condition is :python:`False` so the print statement does not
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. .. code-block:: 
+        .. .. code-block::
 
         ..   colour = input('What is your favourite colour? ')
 
         ..   if colour == 'red':
         ..       print("That's my favourite colour!")
-              
+
         ..   print('What a nice colour')
 
         *Solution is locked*
@@ -248,7 +247,7 @@ In this example the condition is :python:`False` so the print statement does not
     :color: warning
     :icon: star
 
-    Write a program that reads in today's temperature (in degrees celsius) from the user. 
+    Write a program that reads in today's temperature (in degrees celsius) from the user.
 
     If the temperature is less than 15 degrees the program should output:
 
@@ -259,7 +258,7 @@ In this example the condition is :python:`False` so the print statement does not
     If the temperature is greater than 25 degrees the program should output:
 
     .. code-block:: html
-    
+
         Take a fan.
 
     You can assume all temperatures are given to the nearest degree.
@@ -267,21 +266,21 @@ In this example the condition is :python:`False` so the print statement does not
     **Example 1**
 
     .. code-block:: html
-      
+
       What's the temperature like today? 5
       Take a jumper!
 
     **Example 2**
 
     .. code-block:: html
-    
+
       What's the temperature like today? 30
       Take a fan.
 
     **Example 3**
 
     .. code-block:: html
-    
+
       What's the temperature like today? 20
 
 
@@ -289,7 +288,7 @@ In this example the condition is :python:`False` so the print statement does not
         :class-title: sd-font-weight-bold
         :color: dark
 
-        .. .. code-block:: 
+        .. .. code-block::
 
         ..   temp = int(input("What's the temperature like today? "))
 
