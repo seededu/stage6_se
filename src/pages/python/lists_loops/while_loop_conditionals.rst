@@ -71,7 +71,7 @@ At the **fourth** iteration ``i = 3``. This means the loop condition is
 
 This time the condition ``i == 3`` is ``True``, so we also output:
 
-.. code-block:: python
+.. code-block::
 
     Third time's the charm!
 

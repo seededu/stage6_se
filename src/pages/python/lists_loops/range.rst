@@ -22,7 +22,8 @@ The structure of the ``range()`` function is:
 
 .. note::
 
-    The start value is *included* while the end value is *excluded* and the *start*, *end*, and *step_size* must be *integers*.
+    The start value is *included* while the end value is *excluded* and the
+    *start*, *end*, and *step_size* must be *integers*.
 
 To see exactly what the ``range()`` function produces, it's easiest to convert
 the result to a list using the ``list()`` function. Let's see some examples.

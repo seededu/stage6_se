@@ -10,7 +10,7 @@ is True.
 
 The structure of an if statement is:
 
-.. code-block:: python
+.. code-block::
 
     if condition:
         # code you execute if condition is true

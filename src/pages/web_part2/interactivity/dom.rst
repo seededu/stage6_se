@@ -47,12 +47,21 @@ What Can You Do with the DOM?
 Using JavaScript, the DOM allows you to:
 
 1. Modify Content: Change text, images, or other elements on the page.
+
        Example: Replace "Hello, World!" with "Welcome to JavaScript!"
-2. Add or Remove Elements: Dynamically create new elements or delete existing ones.
+
+2. Add or Remove Elements: Dynamically create new elements or delete existing
+   ones.
+
        Example: Add a new paragraph or remove a button.
-3. Apply Styles Dynamically: Change the color, size, or other styles of elements.
+
+3. Apply Styles Dynamically: Change the color, size, or other styles of
+   elements.
+
        Example: Highlight a heading when it’s clicked.
+
 4. React to User Input: Handle events like clicks, typing, or mouse movement.
+
        Example: Show a message when a button is clicked.
 
 How Does the Browser Construct the DOM?

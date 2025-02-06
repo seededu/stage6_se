@@ -16,7 +16,8 @@ The structure of a for loop is:
 
 .. note::
 
-    An iterable is some sequence of values you can go through. In general, our iterables will be lists, but they can also be strings!
+    An iterable is some sequence of values you can go through. In general, our
+    iterables will be lists, but they can also be strings!
 
 Here is an example:
 
