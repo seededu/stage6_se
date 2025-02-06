@@ -291,8 +291,8 @@ Project structure:
 
         *   The ``/filter`` route listens for GET requests with query string parameters
             for filtering movies.
-        *   :python:`request.args.get('genre', '')` and
-            :python:`request.args.get('score', '')` retrieve the values of the
+        *   `request.args.get('genre', '')` and
+            `request.args.get('score', '')` retrieve the values of the
             ``genre`` and ``score`` parameters from the URL. If no value is provided,
             they default to an empty string (``''``).
         *   The `reviews`` table is queried to retrieve reviews that match the

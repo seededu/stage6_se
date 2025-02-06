@@ -105,11 +105,11 @@ Project structure:
 
          Explanation:
 
-         *   :python:`render_template()` is used to:
+         *   `render_template()` is used to:
 
              *   load the ``index.html`` file from the ``templates``` folder,
-             *   pass the query :python:`result` to the template engine, named
-                 :python:`movies` inside the template context.
+             *   pass the query result` to the template engine, named
+                 `movies` inside the template context.
 
     .. tab-item:: Template
 
