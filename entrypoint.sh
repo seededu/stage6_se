@@ -21,7 +21,7 @@ case "$COMMAND" in
         ;;
     checkfmt)
         echo "Checking RST formatting..."
-        uv run --no-project doc8 pages
+        uv run --no-project doc8 src/pages
         ;;
     *)
         echo "Unknown command: $COMMAND"
