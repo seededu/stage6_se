@@ -1,10 +1,12 @@
 # Build Instructions
 
-## Local Setup
+## Setup
 
 Run `setup.sh`
 
 ### Generate html
+
+Change into `src` directory and execute either of the commands below.
 
 Don't forget to activate your virtual environment!
 
@@ -16,13 +18,4 @@ Don't forget to activate your virtual environment!
 
 `make livehtml`
 
-## Docker
-
-### Build container
-
-`docker build -t stage6_se .`
-
-### Run container
-
-`docker run -it stage6_se`
 

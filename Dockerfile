@@ -1,10 +1,5 @@
 FROM python:3.11
 
-# Sphinx options documented here
-# https://www.sphinx-doc.org/en/master/man/sphinx-build.html
-#ARG SPHINXOPTS="-v"
-#ENV SPHINXOPTS=${SPHINXOPTS}
-
 COPY /src /src
 
 WORKDIR /src

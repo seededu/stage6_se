@@ -3,6 +3,8 @@
 set -e  # Exit immediately on error
 
 # Set default SPHINXOPTS if not provided
+# Sphinx options documented here
+# https://www.sphinx-doc.org/en/master/man/sphinx-build.html
 SPHINXOPTS="${SPHINXOPTS:-"-v"}"
 
 COMMAND="$1"
