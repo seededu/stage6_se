@@ -11,14 +11,12 @@ students completing the [Software Engineering](https://curriculum.nsw.edu.au/lea
 
 [https://seededu.github.io/stage6_se/](https://seededu.github.io/stage6_se/)
 
+## Building
+
+Refer to `BUILD.md`
 
 ## Contributing
 
-Contributions are welcome 
-
-## Building
-
-Refer to `BUILD.MD`
-
+Contributions are welcome. Refer to `CONTRIBUTING.md` for instructions on testing your changes.
 
 

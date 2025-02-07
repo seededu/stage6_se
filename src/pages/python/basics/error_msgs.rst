@@ -4,9 +4,9 @@ Error Messages
 Quite often while you're programming you'll find that you make mistakes and
 your program won't run or it does the wrong thing.
 
-An important skill to learn is *debuggin\\*g. This is the process of locating
+An important skill to learn is *debuggin\\\*g. This is the process of locating
 and removing errors from your code. When debugging, it's very useful to be able
-to read and \\*understand* the error messages.
+to read and \\\*understand* the error messages.
 
 .. code-block:: python
 

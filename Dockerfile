@@ -1,13 +1,8 @@
 FROM python:3.11
 
-# Sphinx options documented here
-# https://www.sphinx-doc.org/en/master/man/sphinx-build.html
-#ARG SPHINXOPTS="-v"
-#ENV SPHINXOPTS=${SPHINXOPTS}
+COPY . /stage6_se
 
-COPY /src /src
-
-WORKDIR /src
+WORKDIR /stage6_se
 
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/uv
 RUN uv venv
