@@ -6,7 +6,7 @@ Run `setup.sh`
 
 ### Generate html
 
-Change into `src` directory and execute either of the commands below.
+Execute either of the commands below.
 
 Don't forget to activate your virtual environment!
 
