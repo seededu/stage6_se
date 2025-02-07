@@ -1,8 +1,8 @@
 FROM python:3.11
 
-COPY /src /src
+COPY . /stage6_se
 
-WORKDIR /src
+WORKDIR /stage6_se
 
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/uv
 RUN uv venv

@@ -21,22 +21,35 @@ You can build and run it locally using the commands below.
 
 ### Run container
 
-By default the container will build the html. Mounting `/src` will 
+By default the container will build the html. Mounting `./src` will 
 mean that your local changes are available to the container and that
-you can capture `/src/_build` once the build is completed.
+you can capture build artifacts into `./src/_build`.
 
-`docker run -v ./src:/src -it stage6_se`
+`docker run -it -v ./src:/stage6_se/src stage6_se`
+
+## Linting and Checking Formatting
+
+To lint (auto-format) the restructured text files use:
+
+`docstrfmt ./src/pages`
+
+To check the formatting (see also tests):
+
+`doc8 ./src/pages`
 
 ## Tests
 
-### Main branch
+Before your PR is merged it needs to pass the following actions:
+- `pr_tests_build`
+- `pr_tests_lint`
 
-`act push`
+You can run these individually e.g.
 
-### Pull requests
+`act -j "pr_tests_build"`
 
-This will probably fail because `act` doesn't handle binding volumes correctly.
+Or run both as they reside in the same workflow file
 
-`act -s NETLIFY_SITE_ID={SECRET_SITE_ID} -s NETLIFY_AUTH_TOKEN=={SECRET_AUTH TOKEN} pull_request`
+`act -W '.github/workflows/pr_tests.yml`
+
 
 

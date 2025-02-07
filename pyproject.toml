@@ -1,3 +1,7 @@
+[project]
+name = "stage6_se"
+dynamic = ["version"]
+
 [tool.doc8]
 
 max-line-length=79
