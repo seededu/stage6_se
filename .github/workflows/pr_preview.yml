@@ -23,7 +23,7 @@ jobs:
     - name: Build HTML
       run: |
         mkdir _site
-        docker run -v ./_site:/stage6_se/src/_build/html stage6_se make html
+        docker run -v ./_site:/stage6_se/src/_build stage6_se make html
 
     - name: Install the Netlify CLI
       run: npm install netlify-cli -g
