@@ -16,13 +16,19 @@ author = 'Alison Wong, Stephen Tierney'
 suppress_warnings = ['misc.highlighting_failure']
 
 extensions = [
-    'sphinx_exec_code', 'sphinx_design', 'sphinx_copybutton'
+    'sphinx_exec_code', 'sphinx_design', 'sphinx_copybutton', 'sphinxcontrib.spelling'
 ]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+# Options for spelling
+# https://sphinxcontrib-spelling.readthedocs.io/en/latest/customize.html
 
+spelling_lang='en_AU'
+tokenizer_lang='en_AU'
+spelling_word_list_filename='spelling_wordlist.txt'
+spelling_exclude_patterns=['**/*.csv']
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

@@ -2,7 +2,7 @@ Conditionals
 ============
 
 Conditionals allow your program to make decisions based on certain conditions.
-They are essential for creating dynamic and responsive behavior in your code.
+They are essential for creating dynamic and responsive behaviour in your code.
 This page introduces boolean expressions and conditional statements like
 ``if``, else if, and else.
 

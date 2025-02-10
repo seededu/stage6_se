@@ -55,7 +55,7 @@ Using JavaScript, the DOM allows you to:
 
        Example: Add a new paragraph or remove a button.
 
-3. Apply Styles Dynamically: Change the color, size, or other styles of
+3. Apply Styles Dynamically: Change the colour, size, or other styles of
    elements.
 
        Example: Highlight a heading when it’s clicked.

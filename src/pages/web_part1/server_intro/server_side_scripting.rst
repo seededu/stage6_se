@@ -71,7 +71,7 @@ Glossary
 
     Dynamic
         Dynamic content on a website changes based on user interactions or data from a
-        server, such as personalized recommendations or live updates.
+        server, such as personalised recommendations or live updates.
 
     Server Side Scripting
         Server-side scripting is the process of running code on the server to generate

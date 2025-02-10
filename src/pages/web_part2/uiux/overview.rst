@@ -15,7 +15,7 @@ What is UI/UX?
 --------------
 
 - **User Interface (UI)**: The look and feel of a website. It includes things
-  like layout, buttons, colors, and typography—everything the user sees and
+  like layout, buttons, colours, and typography—everything the user sees and
   interacts with.
 - **User Experience (UX)**: The overall experience of using the website. This
   covers how intuitive, fast, and satisfying the site is to navigate. A great
@@ -51,13 +51,13 @@ You’ll learn:
 2. Front-End Frameworks: Bootstrap
 
 Building a responsive website from scratch can be time-consuming. That’s where
-frameworks like Bootstrap come in. Bootstrap provides pre-designed components
+frameworks like Bootstrap come in. Bootstrap provides predesigned components
 and tools that make creating beautiful, responsive websites faster and easier.
 
 You’ll learn:
 
 - How to use Bootstrap’s grid system to create layouts.
-- How to work with pre-built UI components like buttons, modals, and navigation
+- How to work with prebuilt UI components like buttons, modals, and navigation
   bars.
 - How frameworks streamline the design process.
 

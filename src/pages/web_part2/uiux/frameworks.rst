@@ -3,7 +3,7 @@ Front End Frameworks
 
 Building a responsive website from scratch can be a lot of work. Fortunately,
 front-end frameworks like Bootstrap can make your life much easier! They
-provide pre-designed styles, responsive layouts, and powerful components that
+provide predesigned styles, responsive layouts, and powerful components that
 allow you to create beautiful, functional websites without starting from zero.
 
 In this page, we’ll dive into `Bootstrap 5 <https://getbootstrap.com>`_, one of
@@ -12,7 +12,7 @@ the most popular front-end frameworks, and show you how to use it effectively.
 What Are Front-End Frameworks?
 ------------------------------
 
-A front-end framework is a collection of pre-written CSS and JavaScript that
+A front-end framework is a collection of prewritten CSS and JavaScript that
 simplifies the process of designing and building websites. Instead of writing
 styles and scripts from scratch, you can use a framework to:
 
@@ -91,7 +91,7 @@ Explanation
 Responsive Design and Breakpoints
 ---------------------------------
 
-Bootstrap’s grid is responsive by default, but you can customize how it behaves
+Bootstrap’s grid is responsive by default, but you can customise how it behaves
 at different screen sizes using breakpoints. Breakpoints are predefined widths
 that let you control the layout for specific device sizes.
 
@@ -146,7 +146,7 @@ styling your webpage.
 .. hint::
 
     For a full listing of the classes and components please refer directly to
-    the Bootstrap 5 documenation here
+    the Bootstrap 5 documentation here
     https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
 Classes
@@ -159,9 +159,9 @@ possible.
 
 Bootstrap provides many common text styles as classes
 
-- ``text-center``: Centers text.
+- ``text-center``: Centres text.
 - ``fw-bold``: Makes text bold.
-- ``text-muted``: Applies a lighter text color.
+- ``text-muted``: Applies a lighter text colour.
 
 **Button Classes**
 
@@ -196,7 +196,7 @@ Components
 
 One of the most exciting features of Bootstrap is its wide range of prebuilt
 components. These components save you time and effort by providing ready-made,
-customizable elements like cards and forms.
+customisable elements like cards and forms.
 
 **Cards**
 

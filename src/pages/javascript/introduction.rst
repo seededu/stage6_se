@@ -26,7 +26,7 @@ programming will broaden your understanding of programming concepts.
 Recommended Video
 -----------------
 
-To get up to speed on the history of Javascript, watch the video below.
+To get up to speed on the history of JavaScript, watch the video below.
 
 .. raw:: html
 
@@ -61,8 +61,8 @@ Key milestones in JavaScript's evolution:
   with animations, dropdown menus, and form handling.
 - 2009: The release of Node.js, a runtime that allows JavaScript to run on
   servers, opened the door for full-stack development.
-- 2015: ECMAScript 6 (ES6) introduced significant features like let, const,
-  arrow functions, and classes, modernising JavaScript.
+- 2015: ECMAScript 6 (ES6) introduced significant features like ``let``,
+  ``const``, arrow functions, and classes, modernising JavaScript.
 
 JavaScript's Impact
 -------------------

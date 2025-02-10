@@ -3,7 +3,7 @@ Big Data's Impact on the Web
 
 Big data has dramatically reshaped web architecture, introducing new
 complexities and opportunities in how websites and web applications collect,
-manage, and analyze vast amounts of information. Key aspects of this
+manage, and analyse vast amounts of information. Key aspects of this
 transformation include data mining, metadata utilisation, and streaming data
 management, each bringing innovative technologies and techniques that influence
 modern web systems.
@@ -30,7 +30,7 @@ Data Mining
 
 Data mining involves extracting useful patterns, trends, and insights from
 large datasets. In the context of web architecture, it means collecting user
-behavior data, transaction logs, and other digital footprints to inform
+behaviour data, transaction logs, and other digital footprints to inform
 decision-making and improve services.
 
 Modern web architectures handle data mining through distributed storage and
@@ -54,11 +54,11 @@ How Is Metadata Helpful?
   image metadata such as tags, descriptions, and creation dates assist in
   organising media libraries.
 - **Data Context**: By providing context to raw data, metadata aids in
-  understanding user behavior, content relevance, and system performance. This
+  understanding user behaviour, content relevance, and system performance. This
   additional layer can guide content recommendations and targeted advertising.
 - **Improved Data Quality**: Metadata can track data lineage and
-  transformations, ensuring accuracy and consistency throughout the data
-  lifecycle.
+  transformations, ensuring accuracy and consistency throughout the data life
+  cycle.
 
 Streaming Data Management
 -------------------------

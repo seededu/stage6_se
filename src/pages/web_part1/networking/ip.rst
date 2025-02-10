@@ -40,7 +40,7 @@ IP to exchange data packets. IP is the implementation of of the internet layer.
 The most common version of IP today is :term:`IPv4`, which uses addresses that
 look like this: ``192.168.0.1``.
 
-IP is responsible for labeling each packet with important information,
+IP is responsible for labelling each packet with important information,
 including:
 
 - The **source** :term:`IP address` (where the packet is coming from)
@@ -55,12 +55,12 @@ mail, computers and other devices on the internet have IP addresses. An
 connected to the internet. This address allows devices to find and communicate
 with each other.
 
-For example, when you visit a website like google.com.au, your computer is
-actually communicating with a server (a computer that provides web services)
-that has a specific IP address. While you don't see the IP address because you
-typed the domain name (like google.com), behind the scenes, your computer sends
-data to the server's IP address, and the server sends the webpage back to your
-computer's IP address.
+For example, when you visit a website like :spelling:ignore:`google.com.au`,
+your computer is actually communicating with a server (a computer that provides
+web services) that has a specific IP address. While you don't see the IP
+address because you typed the domain name (like google.com), behind the scenes,
+your computer sends data to the server's IP address, and the server sends the
+webpage back to your computer's IP address.
 
 Local and Public IP Addresses
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -85,7 +85,7 @@ IP address when they access the internet.
 Packet Routing
 ~~~~~~~~~~~~~~
 
-After data packets are labeled with IP addresses, they need to find their way
+After data packets are labelled with IP addresses, they need to find their way
 from the sender to the receiver. This is where :term:`packet routing` comes in.
 Routers are devices that sit between different parts of the internet and make
 sure that data packets are forwarded along the correct path. Think of routers
@@ -113,8 +113,8 @@ Glossary
     IP
         See :term:`Internet Protocol`
 
-    IPv4
-         IPv4 (Internet Protocol version 4) is the most commonly used version of IP,
+    :spelling:ignore:`IPv4`
+         :spelling:ignore:`IPv4` (Internet Protocol version 4) is the most commonly used version of IP,
          which assigns unique addresses to devices using a format of four numbers
          separated by dots (e.g., ``192.168.1.1``).
 

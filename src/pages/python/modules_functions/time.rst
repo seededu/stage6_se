@@ -34,7 +34,7 @@ example.
 Timing a Program
 ----------------
 
-The function ``time.time()`` tells us the current unix time (time since
+The function ``time.time()`` tells us the current Unix time (time since
 00:00:00 UTC on 1 January 1970) in seconds.
 
 .. code-block:: python
