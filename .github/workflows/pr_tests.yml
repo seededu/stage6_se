@@ -19,7 +19,7 @@ jobs:
 
     - name: Build HTML
       run: |
-        docker run stage6_se build
+        docker run stage6_se make build
 
   pr_tests_spelling:
     runs-on: ubuntu-latest
@@ -34,7 +34,7 @@ jobs:
 
     - name: Lint
       run: |
-        docker run stage6_se spelling
+        docker run stage6_se make spelling
 
   pr_tests_lint:
     runs-on: ubuntu-latest
@@ -49,4 +49,4 @@ jobs:
 
     - name: Lint
       run: |
-        docker run stage6_se checkfmt
+        docker run stage6_se make checkfmt
