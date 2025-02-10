@@ -85,7 +85,7 @@ the starting tag is contained.
     You can visualise this by drawing a 'rainbow' between each pair of opening
     and closing tags. The arches of the 'rainbow' should never cross.
 
-If you accidentally misnest the tags like this:
+If you accidentally :spelling:ignore:`mis-nest` the tags like this:
 
 .. code-block:: html
 

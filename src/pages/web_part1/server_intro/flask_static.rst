@@ -116,7 +116,7 @@ static/css/ folder.
         color: darkgreen;
     }
 
-This CSS file changes the background color of the page to light blue, the
+This CSS file changes the background colour of the page to light blue, the
 heading (``h1``) to dark blue, and the paragraph text (``p``) to dark green.
 
 .. hint::

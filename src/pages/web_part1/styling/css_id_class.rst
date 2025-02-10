@@ -113,13 +113,13 @@ Have a look at the example below.
 A few things to note:
 
 - Anything in the ``coloured`` class is red
-- Anything in the ``quote`` class is italicised and centered
+- Anything in the ``quote`` class is italicised and centred
 - The phrase "The Circle of Life" is in *both* the ``coloured`` and ``quote``
-  class so it is red, italicised and centered
+  class so it is red, italicised and centred
 
 To limit the class to specific element types place the element type before the
 ``.`` In the example below only ``<p>`` elements with ``class="quote-para"``
-will be center-aligned.
+will be centre-aligned.
 
 .. literalinclude:: ../../_static/examples/css/tag_class_selector_full.html
     :language: html

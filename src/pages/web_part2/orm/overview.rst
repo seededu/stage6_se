@@ -16,9 +16,9 @@ Why Use an ORM?
 2. **Readability**: Mixing Python and SQL often makes the code hard to read as
    queries can be long and complex. Using an ORM makes your code easier to
    read.
-3. **Security**: Since ORM handles the details of database queries, theres less
-   chance of security issues such as SQL injection or accidentally exposing the
-   wrong data to the user.
+3. **Security**: Since ORM handles the details of database queries, there's
+   less chance of security issues such as SQL injection or accidentally
+   exposing the wrong data to the user.
 4. **Flexibility**: When using an ORM you can more easily change the type of
    database that holds your data since the database queries are handled by the
    ORM, rather than manual queries which might be database specific. Most ORMs

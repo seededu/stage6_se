@@ -11,7 +11,7 @@ Route Decorator
 
 In Flask, we use the ``@`` symbol (called a decorator) to associate a function
 with a specific URL, also known as a route. A decorator is a special function
-in Python that modifies or extends the behavior of the function it is applied
+in Python that modifies or extends the behaviour of the function it is applied
 to. Decorators allow us to add extra functionality to functions in a clean and
 simple way, without changing the function's core code.
 

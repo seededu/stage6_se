@@ -1,5 +1,5 @@
-More Complicated if-elif-else Statements
-========================================
+More Complicated ``if-elif-else`` Statements
+============================================
 
 Combining conditions
 --------------------

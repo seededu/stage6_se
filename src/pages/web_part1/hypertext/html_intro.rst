@@ -29,7 +29,7 @@ Web Browser
 
 A :term:`web browser` is a software application that transforms HTML documents
 into interactive pages. Web browsers are available on most modern computing
-devices inlcuding desktop, laptop and mobile devices. It is likely that you are
+devices including desktop, laptop and mobile devices. It is likely that you are
 using a web browser right now to read this text.
 
 Examples of web browsers (sorted by market share [1]_ ):
@@ -55,14 +55,14 @@ HTML Standard
 
     You can find the latest standard here https://html.spec.whatwg.org.
 
-HTML is standardized by the World Wide Web Consortium (W3C) and the Web
+HTML is standardised by the World Wide Web Consortium (W3C) and the Web
 Hypertext Application Technology Working Group (Web Hypertext Application
 Technology Working Group) to make sure that web pages work the same way across
 different web browsers and devices.
 
 The HTML standard is important because, without a set of common rules, every
-browser might interpet HTML or display page content differently. Imagine if one
-browser showed a website with all the images out of order, while another
+browser might interpret HTML or display page content differently. Imagine if
+one browser showed a website with all the images out of order, while another
 browser made the text really small. The HTML standard creates a consistent and
 reliable experience for everyone using the web.
 
@@ -224,7 +224,7 @@ Glossary
 
     Engine
         The :term:`web browser` engine is software for interpreting HTML and
-        :term:`rendering` it into a visual form, along with any multimedia to be embded
+        :term:`rendering` it into a visual form, along with any multimedia to be embedded
         such as images.
 
     Rendering

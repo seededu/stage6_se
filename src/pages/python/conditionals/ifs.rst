@@ -247,7 +247,7 @@ In this example the condition is ``False`` so the print statement does not run.
     :color: warning
     :icon: star
 
-    Write a program that reads in today's temperature (in degrees celsius) from the user.
+    Write a program that reads in today's temperature (in degrees Celsius) from the user.
 
     If the temperature is less than 15 degrees the program should output:
 

@@ -35,7 +35,7 @@ images, multimedia, and interactive elements to websites:
 
 As browsers became more capable, web developers had to adapt, learning new
 languages and techniques to leverage these capabilities while dealing with
-inconsistent behavior across different browsers.
+inconsistent behaviour across different browsers.
 
 The Browser Wars and Standardisation
 ------------------------------------
@@ -45,11 +45,11 @@ rapid innovation but also fragmented standards. Developers often had to write
 special code to handle quirks unique to each browser. This fragmentation
 highlighted the need for standardised practices:
 
-- W3C and Web Standards: Organiisations like the World Wide Web Consortium
-  (W3C) began to define web standards, helping browsers become more consistent
-  in how they interpreted HTML, CSS, and later JavaScript. This effort
-  encouraged the development of cross-browser compatible code and made the web
-  more accessible to everyone.
+- W3C and Web Standards: Organisations like the World Wide Web Consortium (W3C)
+  began to define web standards, helping browsers become more consistent in how
+  they interpreted HTML, CSS, and later JavaScript. This effort encouraged the
+  development of cross-browser compatible code and made the web more accessible
+  to everyone.
 - Improved Tools: The emergence of validation and testing tools helped
   developers ensure their sites conformed to these standards, reducing
   browser-specific issues.

@@ -6,7 +6,7 @@ defines how elements are structured and displayed on a webpage. Understanding
 the box model is crucial because it allows you to control the spacing, borders,
 and overall layout of your content.
 
-HTML elements are categorized into two main types: :term:`block` elements and
+HTML elements are categorised into two main types: :term:`block` elements and
 :term:`inline` elements. Each element on the page belongs to either category by
 default. You can override this with your own CSS.
 
@@ -199,7 +199,7 @@ Explanation:
 - The ``<span>`` now starts on a new line and takes up the full width
   available.
 - It pushes the following ``<p>`` element to the next line.
-- The background color helps visualize the block area.
+- The background colour helps visualise the block area.
 
 Example: Make an Inline Element
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -278,7 +278,7 @@ Glossary
 
     Display
        The ``display`` property in CSS determines how an HTML element is rendered on
-       the page, controlling its layout behavior as block, inline, or other display
+       the page, controlling its layout behaviour as block, inline, or other display
        types.
 
     Inline

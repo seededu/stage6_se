@@ -152,7 +152,7 @@ the result for.
 
 In the example below, the return value from ``index`` route is cached for 60
 seconds. This means that any request to this route within a 60 seconds period
-will use the pre-computed value, which can speed up the page response time and
+will use the precomputed value, which can speed up the page response time and
 your server can handle a larger number of requests.
 
 .. code-block:: python

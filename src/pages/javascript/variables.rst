@@ -34,8 +34,8 @@ You can also define a variable without giving it an initial value:
 
     let favoriteColor;
 
-This creates a variable called favoriteColor with no value assigned to it yet.
-We'll come back to this idea later!
+This creates a variable called ``favoriteColor`` with no value assigned to it
+yet. We'll come back to this idea later!
 
 Using Variables
 ---------------
@@ -151,8 +151,8 @@ Examples:
     let totalScore;
     let isUserLoggedIn;
 
-let vs const
-------------
+``let`` vs ``const``
+--------------------
 
 Aside from ``let``, you can also define variables with ``const``, which is
 short for "constant". Variables defined with ``const`` are used when the

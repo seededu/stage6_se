@@ -19,7 +19,22 @@ jobs:
 
     - name: Build HTML
       run: |
-        docker run -e SPHINXOPTS="-W -n --keep-going" stage6_se
+        docker run stage6_se make build
+
+  pr_tests_spelling:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Build Docker image
+      run: |
+        docker build -t stage6_se .
+
+    - name: Lint
+      run: |
+        docker run stage6_se make spelling
 
   pr_tests_lint:
     runs-on: ubuntu-latest
@@ -34,4 +49,4 @@ jobs:
 
     - name: Lint
       run: |
-        docker run stage6_se checkfmt
+        docker run stage6_se make checkfmt

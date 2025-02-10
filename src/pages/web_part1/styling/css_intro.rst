@@ -3,7 +3,7 @@ Cascading Style Sheets
 
 Cascading Style Sheets (CSS) is a language used to style web pages. While HTML
 is used to structure content, CSS is what makes that content look visually
-appealing by controlling things like colors, fonts, layouts, and spacing.
+appealing by controlling things like colours, fonts, layouts, and spacing.
 Without CSS, web pages would all look the same!
 
 Customisation of a web page's style brings several advantages including:
@@ -40,7 +40,7 @@ Glossary
        for everyone.
 
     Responsive
-       esponsive design refers to making a website's layout adapt to different screen
+       Responsive design refers to making a website's layout adapt to different screen
        sizes and devices, like phones, tablets, and desktops. This ensures that the
        website looks good and functions properly no matter what device it's viewed on.
 

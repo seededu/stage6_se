@@ -1,5 +1,5 @@
-Datetime
-========
+``datetime``
+============
 
 The `datetime <https://docs.python.org/3/library/datetime.html>`_ module is
 very handy when working with dates and times.
@@ -86,8 +86,8 @@ We can also access the hour, minute and second using ``.hour``, ``.minute`` and
     print(t.minute)
     print(t.second)
 
-Datetime
---------
+``datetime``
+------------
 
 ``datetime`` objects combine the functionality of ``date`` and ``time``
 objects. To import this we use
@@ -137,8 +137,8 @@ We can also obtain the current date and time.
     from datetime import datetime
     print(datetime.now())
 
-Timedelta
----------
+``timedelta``
+-------------
 
 ``timedelta`` objects allow us to measure a change in time.
 
@@ -146,7 +146,7 @@ Timedelta
 
     from datetime import timedelta
 
-Often the greek symbol delta (:math:`\Delta`) is used to indicate a change in a
+Often the Greek symbol delta (:math:`\Delta`) is used to indicate a change in a
 quantity, which in our case will be time. When creating a ``timedelta`` object
 you can specify days, second, minutes, hours or weeks, all of which are
 optional and by default each is 0. This allows us to increment times.
@@ -156,7 +156,8 @@ optional and by default each is 0. This allows us to increment times.
     timedelta(days=days, seconds=seconds, minutes=minutes, hours=hours, weeks=weeks)
 
 For example, we can add '5 days and 2 hours' to the 31st of January 2025 at
-17:35:20, which gets us to the 5th of February 2025 at 19:35:20.
+17:35:20, which gets us to the :spelling:ignore:`5th` of February 2025 at
+19:35:20.
 
 .. exec_code::
     :language: python
@@ -203,7 +204,7 @@ Since an hour is 60 minutes, we then perform ``% 60``.
     :color: info
     :icon: question
 
-    We have previously seen how hours and minutes can be extracted from a timedelta object. Which of the following would allow you to extract seconds?
+    We have previously seen how hours and minutes can be extracted from a ``timedelta`` object. Which of the following would allow you to extract seconds?
 
     A.
 
@@ -356,7 +357,7 @@ Since an hour is 60 minutes, we then perform ``% 60``.
         Enter a year: 2028
         In 2028 your birthday will be on a Friday
 
-    You can assume you will be given a valid day, i.e. you won't be asked about the 29th of February on a non-leap year.
+    You can assume you will be given a valid day, i.e. you won't be asked about the :spelling:ignore:`29th` of February on a non-leap year.
 
     .. dropdown:: :material-regular:`lock;1.5em` Solution
       :class-title: sd-font-weight-bold

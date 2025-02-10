@@ -90,7 +90,7 @@ understand these names. They need the IP addresses of the servers that host
 these websites. This is where the :term:`Domain Name System (DNS) <Domain Name
 System>` comes in.
 
-:term:`DNS` is like the internet's phonebook. When you type a domain name into
+:term:`DNS` is like the internet's phone book. When you type a domain name into
 your browser, your computer asks a DNS server to look up the corresponding IP
 address.
 
@@ -112,7 +112,7 @@ Glossary
 .. glossary::
 
     Domain Name System
-        DNS is like the internet's phonebook, translating human-friendly domain names
+        DNS is like the internet's phone book, translating human-friendly domain names
         (like google.com) into IP addresses that computers use to find and communicate
         with websites.
 
@@ -129,7 +129,7 @@ Glossary
 
     POP3
         POP3 is a protocol used to receive emails, typically downloading messages from
-        the server to your device and removing them from the server afterward.
+        the server to your device and removing them from the server afterwards.
 
     SMTP
         SMTP is the protocol used for sending emails from your device to a mail

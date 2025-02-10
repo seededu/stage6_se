@@ -52,7 +52,7 @@ multiple event handlers to the same element.
 
 **Example: Click Event with addEventListener**
 
-Both event listener functiosn are triggered when the button is clicked.
+Both event listener functions are triggered when the button is clicked.
 
 .. code-block:: html
 
@@ -141,7 +141,7 @@ Here are some events you’ll frequently use:
 Special Event Types
 -------------------
 
-Some events are specific to the browser or document lifecycle.
+Some events are specific to the browser or document life cycle.
 
 **DOMContentLoaded**
 

@@ -209,7 +209,7 @@ In this example:
 Adjusting Content Size and Layout
 ---------------------------------
 
-Responsive design isn’t just about changing colors or widths — it’s also about
+Responsive design isn't just about changing colours or widths — it’s also about
 rearranging content to fit smaller or larger screens.
 
 Adjusting Font Sizes

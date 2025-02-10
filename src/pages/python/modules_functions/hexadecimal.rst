@@ -218,13 +218,13 @@ And we can represent purple using 640064
 
     The colour grey can be made using equal amounts of red, green and blue. Which of the following corresponds to a shade of grey? *Select all that apply.*
 
-    A. ababab
+    A. ``ababab``
 
-    B. 388338
+    B. ``388338``
 
-    C. 555555
+    C. ``555555``
 
-    D. 2288ee
+    D. ``2288ee``
 
     .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold

@@ -38,7 +38,7 @@ and focus areas:
 - Joomla: Joomla offers a balance between user-friendliness and customisation,
   making it a good choice for complex websites that require more advanced
   features than WordPress might offer out of the box.
-- Drupal: Known for its robustness and scalability, Drupal is favored for
+- Drupal: Known for its robustness and scalability, Drupal is favoured for
   large, complex sites where high levels of customisation and control over
   security and performance are needed.
 - Shopify, Wix, Squarespace: While not traditional open-source CMS platforms,
@@ -51,7 +51,7 @@ Advantages of Using a CMS
 
 1. **User-Friendly**: CMS platforms offer intuitive interfaces that allow
    non-developers to update and manage website content easily.
-2. **Speed of Development**: Pre-designed templates and plugins can
+2. **Speed of Development**: Predesigned templates and plugins can
    significantly reduce development time, allowing faster deployment of
    websites.
 3. **Customisation and Extension**: With thousands of themes and plugins

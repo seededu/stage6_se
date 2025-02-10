@@ -192,7 +192,7 @@ The separator you use doesn't have to be a character, it can be a string.
     :color: warning
     :icon: star
 
-    You want to send your friend a secret message. A simple way to do this is to put a jumble of characters between each letter you want to send. For example, if you want to send the message hello you might scramble this by placing the string qmcsyd between each letter. This means your secret message would look like this:
+    You want to send your friend a secret message. A simple way to do this is to put a jumble of characters between each letter you want to send. For example, if you want to send the message hello you might scramble this by placing the string ``"qmcsyd"`` between each letter. This means your secret message would look like this:
 
     .. code-block:: text
 

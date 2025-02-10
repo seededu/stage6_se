@@ -368,7 +368,7 @@ are ``print`` statements inside the function, the box will still print.
     :color: warning
     :icon: star
 
-    Write a function that extracts out the hours, minutes and seconds from a timedelta object.
+    Write a function that extracts out the hours, minutes and seconds from a ``timedelta`` object.
 
     **Function specification**
 

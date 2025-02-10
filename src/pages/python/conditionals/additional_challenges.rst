@@ -7,7 +7,7 @@ Additional Challenges
 
     It's December! That means it's almost Christmas.
 
-    Write a program that asks the user for the day of the month. Your program should either say how many sleeps until Christmas. Note that on the 24th there is only one sleep until Christmas so your program should not say 1 sleeps until Christmas, because it's grammatically incorrect. If it's the 25th of December your program should say Merry Christmas!.
+    Write a program that asks the user for the day of the month. Your program should either say how many sleeps until Christmas. Note that on the :spelling:ignore:`24th` there is only one sleep until Christmas so your program should not say 1 sleeps until Christmas, because it's grammatically incorrect. If it's the :spelling:ignore:`25th` of December your program should say Merry Christmas!.
 
     You program will only be given values 1-25 inclusive.
 

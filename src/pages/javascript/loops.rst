@@ -84,7 +84,7 @@ while Loop
 ----------
 
 The while loop repeats a block of code as long as a condition is true. Use it
-when the number of iterations isn’t fixed or known beforehand.
+when the number of iterations isn't fixed or known beforehand.
 
 Syntax:
 
