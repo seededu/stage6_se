@@ -156,7 +156,8 @@ optional and by default each is 0. This allows us to increment times.
     timedelta(days=days, seconds=seconds, minutes=minutes, hours=hours, weeks=weeks)
 
 For example, we can add '5 days and 2 hours' to the 31st of January 2025 at
-17:35:20, which gets us to the :spelling:ignore:`5th` of February 2025 at 19:35:20.
+17:35:20, which gets us to the :spelling:ignore:`5th` of February 2025
+at 19:35:20.
 
 .. exec_code::
     :language: python

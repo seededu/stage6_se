@@ -34,8 +34,8 @@ You can also define a variable without giving it an initial value:
 
     let favoriteColor;
 
-This creates a variable called ``favoriteColor`` with no value assigned to it yet.
-We'll come back to this idea later!
+This creates a variable called ``favoriteColor`` with no value assigned to it
+yet. We'll come back to this idea later!
 
 Using Variables
 ---------------
