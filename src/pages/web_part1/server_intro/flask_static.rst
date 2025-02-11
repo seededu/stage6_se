@@ -159,7 +159,6 @@ homepage, such as of a Chicken, and serve it using Flask.
 
     app = Flask(__name__)
 
-
     @app.route("/")  # Define the route for the home page
     def home():
         return """

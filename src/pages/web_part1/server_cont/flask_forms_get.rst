@@ -209,9 +209,10 @@ Project structure:
 
             # Connect to the database
             engine = create_engine('sqlite:///movies.db')
+            connection = engine.connect()
 
             @app.route('/search')
-            def filter_movies():
+            def search():
                 return render_template('search.html')
 
             @app.route('/filter', methods=['GET'])
@@ -222,17 +223,17 @@ Project structure:
 
                 conditions = []
                 if genre:
-                    conditions.append("genre={}".format(genre))
+                    conditions.append("genre = '{}'".format(genre))
                 if score:
-                    conditions.append("score>={}".format(score))
+                    conditions.append("review_score >= {}".format(score))
 
-                condition_str = " and ".join(conditions)
+                condition_str = " AND ".join(conditions)
 
                 # Get the movie review that match the conditions
                 query = text("SELECT * FROM reviews WHERE {}".format(condition_str))
                 result = connection.execute(query).fetchall()
 
-                return render_template('movie_list.html', movies=filtered_movies)
+                return render_template('filter.html', movies=result)
 
             app.run(debug=True, port=5000)
 
