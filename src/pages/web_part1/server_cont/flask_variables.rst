@@ -17,9 +17,11 @@ that includes a variable from the URL.
 
     app = Flask(__name__)
 
+
     @app.route("/<name>")
     def greet(name):
         return "Hello, {}!".format(name)
+
 
     app.run(debug=True, port=5000)
 
@@ -28,8 +30,8 @@ Explanation
 - Defining the route:
 
   - The ``@app.route('/<name>')`` decorator tells Flask that when someone
-    visits a URL that matches ``/<name>``, the `greet()` function should
-    be executed.
+    visits a URL that matches ``/<name>``, the `greet()` function should be
+    executed.
   - ``<name>`` is a placeholder in the URL that acts as a variable. Whatever
     value the user types in place of ``<name>`` will be passed to the
     ``greet()`` function.
