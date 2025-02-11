@@ -40,7 +40,7 @@ We have already seen that we can view all the columns in our database using
 But what if we don't need to see all of the columns? Or what if our database
 had so many columns that it isn't practical to see all the columns at once?
 
-Well the ``SELECT``` command allows us to specify which columns we are
+Well the ``SELECT`` command allows us to specify which columns we are
 interested in.
 
 .. code-block:: sql

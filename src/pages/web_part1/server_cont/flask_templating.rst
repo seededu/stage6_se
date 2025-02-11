@@ -91,17 +91,18 @@ Project structure:
 
              # Connect to the database
              engine = create_engine('sqlite:///movies.db')
+             connection = engine.connect()
 
              @app.route('/')
              def home():
                  # SQL query to select all movies
-                 query = text("SELECT * FROM reviews")
-                 result = engine.execute(query).fetchall()
+                 query = text("SELECT * FROM reviews;")
+                 result = connection.execute(query).fetchall()
 
                  # Render the template and pass the result
                  return render_template('index.html', movies=result)
 
-             app.run(debug=True)
+             app.run(debug=True, port=5000)
 
          Explanation:
 
@@ -121,7 +122,7 @@ Project structure:
              :emphasize-lines: 9-11
 
              <!DOCTYPE html>
-             <html lang="en">
+             <html>
                  <head>
                      <title>Movie Reviews</title>
                  </head>
@@ -129,7 +130,7 @@ Project structure:
                      <h1>Movie Reviews</h1>
                      <ul>
                          {% for movie in movies %}
-                             <li>{{ movie[1] }} ({{ movie[2] }}) - Score: {{ movie[5] }}</li>
+                             <li>{{ movie[1] }} - {{ movie[5] }}</li>
                          {% endfor %}
                      </ul>
                  </body>
@@ -138,7 +139,7 @@ Project structure:
          Explanation:
 
          *   Lines 9-11: The ``for`` loop iterates over each movie and displays its
-             title, year, and score using Jinja2 syntax.
+             title and score using Jinja2 syntax.
 
 Extending Templates
 -------------------
@@ -214,7 +215,7 @@ We manually specified the path to a stylesheet. For example:
 
 .. code-block:: html
 
-    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
 
 However this path will change if we change ``static_url_path`` when we create
 the ``Flask`` object. To make sure that we correctly reference the path to
