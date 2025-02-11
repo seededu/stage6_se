@@ -31,7 +31,7 @@ styles will work as expected on different browsers and devices.
 JavaScript Linters
 ------------------
 
-Tools like ESLint or JSHint: Linters analyze your JavaScript code for errors
+Tools like ESLint or JSHint: Linters analyse your JavaScript code for errors
 and enforce coding style guidelines. They identify common mistakes and
 potential bugs, making it easier to maintain clean, readable code.
 

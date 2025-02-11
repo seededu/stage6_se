@@ -4,7 +4,7 @@ Web App Manifest
 The web app manifest is a JSON file that provides essential metadata about your
 Progressive Web App (PWA). It tells the browser how your app should appear and
 behave when installed on a device. It defines the app’s name, icons, theme
-colors, and more.
+colours, and more.
 
 Including the Manifest File in Your HTML
 ----------------------------------------
@@ -144,7 +144,7 @@ Example:
 
 **background_color**
 
-Specifies the background color of the splash screen displayed while the app is
+Specifies the background colour of the splash screen displayed while the app is
 loading.
 
 Example:
@@ -155,8 +155,8 @@ Example:
 
 **theme_color**
 
-Defines the theme color of the app, which can affect the browser’s UI (e.g.,
-the color of the address bar).
+Defines the theme colour of the app, which can affect the browser’s UI (e.g.,
+the colour of the address bar).
 
 Example:
 

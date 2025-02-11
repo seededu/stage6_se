@@ -75,7 +75,7 @@ apps, traditional web apps, and PWAs.
 Technology of PWAs
 ------------------
 
-Progressive Web Apps (PWAs) efficiently utilize the browser engine that is
+Progressive Web Apps (PWAs) efficiently utilise the browser engine that is
 already installed on a user's device. Instead of bundling a separate rendering
 engine, PWAs rely on the capabilities of the user's preferred browser to
 interpret and execute the application's code. Using an existing browser engine
@@ -91,7 +91,7 @@ cross platform.
 
 The figure above visualises the difference in interaction between software
 layers for PWAs, traditional web apps and native apps (platform-specific). The
-operating system controls the lifecycle of native apps and they are closely
+operating system controls the life cycle of native apps and they are closely
 coupled together. Native apps often make use of operating system specific
 functionality, which means that they require more development effort to create
 cross platform software.
@@ -110,7 +110,7 @@ on the following pages:
 1. **Web App Manifest**
 
    - A JSON file that describes the app’s metadata (e.g., name, icons, theme
-     color), which are used to present the PWA to users like a native app.
+     colour), which are used to present the PWA to users like a native app.
 
 2. **Service Workers**
 

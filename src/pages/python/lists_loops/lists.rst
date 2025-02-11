@@ -87,7 +87,7 @@ A list is actually another type of variable.
 
           colours = ['green' 'blue']
 
-        :octicon:`issue-opened;1em;sd-text-warning;` **Is a list, but exhibits unexpected behaviour.** Notice that the commas are missing. This means that Python automatically joins the strings together so you have a list with the 'colour' greenblue rather than a list with the colours green and blue.
+        :octicon:`issue-opened;1em;sd-text-warning;` **Is a list, but exhibits unexpected behaviour.** Notice that the commas are missing. This means that Python automatically joins the strings together so you have a list with the 'colour' ``"greenblue"`` rather than a list with the colours green and blue.
 
 
         .. code-block:: python

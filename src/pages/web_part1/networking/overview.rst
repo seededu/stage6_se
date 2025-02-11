@@ -35,7 +35,7 @@ abstraction. Common examples are:
 The TCP/IP Layer Model
 ----------------------
 
-The :term:`TCP/IP model` is a framework that organizes how data is sent and
+The :term:`TCP/IP model` is a framework that organises how data is sent and
 received over the internet. It breaks down the complex process of data
 communication into four distinct **layers**, each responsible for different
 tasks. Think of it like building a house: you need different teams (plumbers,
@@ -74,12 +74,13 @@ Here's an overview of the **four layers** of the TCP/IP model:
 
 4. :term:`Network Access Layer` is the bottom layer and is responsible for
    physically sending data over the network. It includes the hardware, such as
-   Ethernet cables or Wi-Fi signals, and deals with how data is transmitted
-   between your device and the router or modem.
+   Ethernet cables or :spelling:ignore:`Wi-Fi` signals, and deals with how data
+   is transmitted between your device and the router or modem.
 
-       **Example**: When you connect to the internet through Wi-Fi, the Network
-       Access Layer manages how your device sends data to the router, which
-       then sends it out onto the internet.
+       **Example**: When you connect to the internet through
+       :spelling:ignore:`Wi-Fi`, the Network Access Layer manages how your
+       device sends data to the router, which then sends it out onto the
+       internet.
 
 .. attention::
 
@@ -98,7 +99,7 @@ Glossary
     Network Access Layer
         The Network Access Layer is responsible for the physical transmission of data,
         using devices like routers and cables to send data over networks like Ethernet
-        or Wi-Fi.
+        or :spelling:ignore:`Wi-Fi`.
 
     Network Protocol
         A network protocol is a set of rules that allows devices to communicate over a
@@ -106,7 +107,7 @@ Glossary
         HTTP, TCP, and IP.
 
     TCP/IP model
-        The TCP/IP model is a framework that organizes how data is sent over the
+        The TCP/IP model is a framework that organises how data is sent over the
         internet, dividing the process into four layers to ensure reliable and
         efficient communication.
 

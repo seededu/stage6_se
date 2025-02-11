@@ -25,13 +25,13 @@ real-time communication for live chat, online gaming, and other interactive
 applications.
 
 Alongside the evolution of HTTP, server-side scripting emerged in the 1990s,
-revolutionizing how web servers could deliver dynamic content. Early
+revolutionising how web servers could deliver dynamic content. Early
 technologies like CGI (Common Gateway Interface) allowed servers to run scripts
 and generate web pages on the fly, rather than just serving static files. This
 led to the development of more advanced scripting languages like PHP, which
 became one of the most popular tools for building dynamic websites. PHP allowed
 developers to create web applications that could interact with databases,
-handle forms, and generate personalized content. Other server-side technologies
+handle forms, and generate personalised content. Other server-side technologies
 like ASP.NET (from Microsoft) and Ruby on Rails have also played significant
 roles in making web applications more powerful and interactive.
 

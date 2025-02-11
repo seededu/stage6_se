@@ -22,7 +22,7 @@ By the end of this section, you will be able to explain:
 Transmission Control Protocol (TCP)
 -----------------------------------
 
-While data packets are traveling across the internet, they can sometimes get
+While data packets are travelling across the internet, they can sometimes get
 lost, arrive out of order, or get duplicated. This is where the
 :term:`Transmission Control Protocol (TCP) <Transmission Control Protocol>`
 comes in. TCP is the implementation of of the transport layer. TCP works
@@ -40,9 +40,9 @@ TCP ensures reliable communication by:
   right order at the destination.
 - **Error checking**: TCP checks to make sure each packet arrives without
   errors. If any packet is damaged, TCP requests a resend.
-- **Acknowledgment**: After receiving packets, the recipient sends an
-  acknowledgment to the sender, confirming that the data was received
-  correctly. If the acknowledgment doesn't arrive, the sender will resend the
+- **Acknowledgement**: After receiving packets, the recipient sends an
+  acknowledgement to the sender, confirming that the data was received
+  correctly. If the acknowledgement doesn't arrive, the sender will resend the
   packets.
 
 TCP Ports
@@ -101,9 +101,8 @@ Glossary
 .. glossary::
 
     Ephemeral port
-        An ephemeral port is a temporary port used by a computer to establish a c
-        onnection with a server, typically for short-lived communication like web
-        browsing.
+        An ephemeral port is a temporary port used by a computer to establish a connection with a server, typically for
+        short-lived communication like web browsing.
 
     TCP
         See :term:`Transmission Control Protocol`

@@ -131,7 +131,7 @@ Examples of faulty and abnormal data would include ``hello`` and ``3.5``.
           - Expected output
         * - A
           - rainy
-          - Take an umbrealla!
+          - Take an :spelling:ignore:`umbrealla`!
 
             Don't forget to take your phone!
         * - B
@@ -146,7 +146,7 @@ Examples of faulty and abnormal data would include ``hello`` and ``3.5``.
             Don't forget to take your phone!
         * - D
           - windy
-          - Don't forgt to take your phone!
+          - Don't :spelling:ignore:`forgt` to take your phone!
 
     Which input-output pairs does the following code fail on?
 
@@ -425,7 +425,7 @@ Examples of faulty and abnormal data would include ``hello`` and ``3.5``.
         if temp > 25:
             print('Take a fan.')
 
-    The program is meant to take in integers which describe the temperature to the nearest degree (in celsius). Which of the following would be considered invalid, i.e. faulty, inputs and should be tested? *Select all that apply*.
+    The program is meant to take in integers which describe the temperature to the nearest degree (in Celsius). Which of the following would be considered invalid, i.e. faulty, inputs and should be tested? *Select all that apply*.
 
     A. ``-4``
 

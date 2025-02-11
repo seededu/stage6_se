@@ -57,7 +57,7 @@ Standardisation brings benefits such as:
 - **Interoperability**: Ensures web content works consistently across different
   platforms and devices.
 - **Accessibility**: Makes the web usable for people with disabilities.
-- **Consistency**: Maintains uniform behavior and appearance across browsers.
+- **Consistency**: Maintains uniform behaviour and appearance across browsers.
 - **Ease of Maintenance**: Simplifies updates and fixes by adhering to common
   practices.
 

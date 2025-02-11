@@ -2,7 +2,7 @@ Selectors
 =========
 
 Applying styling to individual elements will quickly become tedious when you
-have a complicated document. For example, if you need to change the color of
+have a complicated document. For example, if you need to change the colour of
 headings, you will need to search through the document to find all headings and
 replace the colour value.
 
@@ -41,7 +41,7 @@ All elements of the same type can be have a style applied to them by using the
 name of the element as the selector.
 
 An example to change all paragraphs, ``<p>`` to use a particular font size and
-color is:
+colour is:
 
 .. code-block:: css
 
@@ -83,9 +83,10 @@ External CSS
 Your CSS might become quite lengthy and hard to manage. To keep your HTML
 simple you can define the CSS in a separate file with a ``.css`` extension. To
 include the styles defined in this file it is linked using a ``<link>`` tag.
-You need to specify how the linked file is **re**\lated to the HTML, in this
-case we have a stylesheet, which specifies the formatting. Then we specify the
-**h**\ypertext **ref**\erence, i.e the name of the ``.css``.
+You need to specify how the linked file is **rel**\:spelling:ignore:`ated` to
+the HTML, in this case we have a stylesheet, which specifies the formatting.
+Then we specify the **h**\:spelling:ignore:`ypertext`
+**ref**\:spelling:ignore:`erence`, i.e the name of the ``.css``.
 
 Example of external CSS definition. You can flick through the HTML and CSS
 tabs.

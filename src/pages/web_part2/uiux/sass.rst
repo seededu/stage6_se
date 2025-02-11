@@ -31,7 +31,7 @@ Sass (Syntactically Awesome Style Sheets) is one of the most popular CSS
 preprocessors. It extends CSS with powerful features, making stylesheets easier
 to write, maintain, and scale.
 
-With Sass, you can define a variable for your commonly used color once, and
+With Sass, you can define a variable for your commonly used colour once, and
 then use that variable throughout your stylesheets.
 
 Example
@@ -64,9 +64,9 @@ When compiled, this Sass code converts to:
 Bootstrap and Sass
 ------------------
 
-Bootstrap 5 is built using Sass, providing extensive customization options. By
+Bootstrap 5 is built using Sass, providing extensive customisation options. By
 integrating Sass with Bootstrap 5, you can override Bootstrap variables and
-customize the design to fit your project.
+customise the design to fit your project.
 
 The general approach to integrating Bootstrap and Sass is to:
 

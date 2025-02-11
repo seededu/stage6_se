@@ -1,5 +1,5 @@
-If-Elif-Else Statements
-=======================
+``If-Elif-Else`` Statements
+===========================
 
 To add more conditions to an ``if``-``else`` statement, we can use ``elif``.
 

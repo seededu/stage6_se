@@ -62,10 +62,11 @@ Order of Operations (PEMDAS)
 
 JavaScript follows the order of operations, also known as PEMDAS:
 
-1. **P**\arentheses
-2. **E**\xponents
-3. **M**\ultiplication (and **m**\odulo) and **D**\ivision
-4. **A**\ddition and **S**\ubtraction
+1. **P**\:spelling:ignore:`arentheses`
+2. **E**\:spelling:ignore:`xponents`
+3. **M**\:spelling:ignore:`ultiplication` (and **m**\:spelling:ignore:`odulo`)
+   and **D**\:spelling:ignore:`ivision`
+4. **A**\:spelling:ignore:`ddition` and **S**\:spelling:ignore:`ubtraction`
 
 **Example**: Multiplication happens before addition
 

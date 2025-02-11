@@ -13,7 +13,7 @@ allowing you to control how resources are fetched and cached.
 1. **Installation**
 
    - The service worker is installed when the user first visits the PWA.
-   - During installation, resources can be pre-cached for offline use.
+   - During installation, resources can be precached for offline use.
 
 2. **Activation**
 

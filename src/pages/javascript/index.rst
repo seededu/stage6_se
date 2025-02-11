@@ -1,5 +1,5 @@
-Javascript
-==========
+JavasScript
+===========
 
 .. toctree::
     :maxdepth: 2

@@ -6,7 +6,7 @@ Python.
 
 SQL does not care about:
 
-- Letter capitalisations
+- Letter capitalisation
 - New lines
 - Indentation
 

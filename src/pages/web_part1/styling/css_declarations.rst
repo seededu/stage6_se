@@ -5,7 +5,7 @@ Syntax
 ------
 
 Styling an element is performed by using a CSS declaration, which consists of
-property- value pairs, seperated by semi-colons.
+property- value pairs, separated by semi-colons.
 
 For example the syntax for two properties with values is:
 
@@ -94,9 +94,9 @@ Glossary
     Property
         A CSS property is an aspect of an element that you want to style, like ``color``,
         ``font-size``, or ``margin``. It defines what part of the element you are
-        customizing.
+        customising.
 
     Value
         A CSS value is the setting you give to a property. For instance, if the
-        property is color, the value might be ``blue`` or ``#0000FF``, telling the
-        browser what color to use for the text.
+        property is ``color``, the value might be ``blue`` or ``#0000FF``, telling the
+        browser what colour to use for the text.

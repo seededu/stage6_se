@@ -9,7 +9,7 @@ easier to explore related ideas across various documents or media.
 
 Hypertext is a fundamental idea behind many digital systems and is used not
 just on the web but in software, documentation, and multimedia projects. The
-key concept is that information doesn’t need to be organised in a strict order;
+key concept is that information doesn't need to be organised in a strict order;
 instead, it can be interconnected, allowing users to follow their own paths
 through it.
 
@@ -19,7 +19,7 @@ History
 The idea of hypertext was first proposed in the 1960s by Ted Nelson, who
 envisioned a world where information could be linked in a network of
 interconnected ideas. His vision helped shape the future of digital information
-systems, but it wasn’t until the 1980s that hypertext started becoming a
+systems, but it wasn't until the 1980s that hypertext started becoming a
 reality in everyday use.
 
 One early example of hypertext in action was Apple's HyperCard, released in
@@ -43,7 +43,7 @@ documents.
 The early web network was simple but powerful. It quickly grew as people began
 creating websites and linking to one another, turning the web into a vast,
 interconnected system. By the mid-1990s, the World Wide Web had exploded in
-popularity, revolutionizing how people accessed and shared information.
+popularity, revolutionising how people accessed and shared information.
 
 Modern Usage
 ------------
@@ -60,6 +60,6 @@ The impact of these technologies on our daily lives is enormous. In education,
 hypertext and web technologies have transformed learning, enabling students to
 access resources, participate in online courses, and collaborate with peers
 across the globe. In work, the web has made remote work, global collaboration,
-and instant communication possible. Recreation has also been revolutionized,
+and instant communication possible. Recreation has also been revolutionised,
 with streaming services, online gaming, and social media becoming central parts
 of our lives.

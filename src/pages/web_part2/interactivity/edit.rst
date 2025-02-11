@@ -62,7 +62,7 @@ Styling Elements
 ----------------
 
 The ``style`` property allows you to directly modify an element’s CSS styles.
-You can change colors, sizes, margins, and more.
+You can change colours, sizes, margins, and more.
 
 **Example**
 

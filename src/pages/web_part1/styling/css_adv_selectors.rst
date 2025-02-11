@@ -27,7 +27,7 @@ descendant selector syntax which is a sequence of selectors separated by
 whitespace.
 
 The example below selects all ``<p>`` elements nested inside ``<div>``
-elements, including further descendents.
+elements, including further descendants.
 
 .. literalinclude:: ../../_static/examples/css/descendant_selector_full.html
     :language: html

@@ -74,7 +74,7 @@ HTTP. The two most common methods are:
 - ``POST``: Sends data in the body of the request, used for submitting data
   such as forms or file uploads.
 
-We will focus on submititng forms using ``GET`` requests on this page.
+We will focus on submitting forms using ``GET`` requests on this page.
 
 .. note::
 

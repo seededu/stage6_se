@@ -41,7 +41,7 @@ https://html.spec.whatwg.org/multipage/dom.html#global-attributes
 
 It's not very common to use event attributes because:
 
-- it violates the principle of separating content (HTML) and behavior
+- it violates the principle of separating content (HTML) and behaviour
   (JavaScript)
 - it makes the code harder to read and understand, especially when the
   JavaScript is complex
@@ -52,7 +52,7 @@ Inline
 
 Inline JavaScript is written within ``<script>`` tags directly on the HTML
 page. The script can be placed in the ``<head>`` or ``<body>`` sections. This
-approach centralizes the JavaScript code but keeps it in the same file as the
+approach centralises the JavaScript code but keeps it in the same file as the
 HTML.
 
 Example

@@ -17,7 +17,7 @@ JavaScript is essential for modern web development. Its ability to handle
 everything from basic user interactions to complex applications has proven
 invaluable.
 
-Javascript Browser Model
+JavaScript Browser Model
 ------------------------
 
 When you visit a website, your browser downloads and processes (or "parses")
@@ -31,7 +31,7 @@ in the HTML through a ``<script>`` tag, known as an external script.
     :width: 480
     :align: center
 
-    The Javascript Browser Model.
+    The JavaScript Browser Model.
 
 As the browser parses the HTML, it encounters these script tags and executes
 the JavaScript code. Inline scripts are run immediately as the browser reads

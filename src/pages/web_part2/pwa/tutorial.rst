@@ -141,7 +141,7 @@ You'll notice:
 
 .. literalinclude:: ../../_static/tutorials/pwa/02_install/templates/index.html
     :language: html
-    :caption: Exerpt of ``index.html``
+    :caption: Excerpt of ``index.html``
     :linenos:
     :lines: 1-9
 
@@ -181,7 +181,7 @@ web or the server), we need to:
 
     For example in Google Chrome under the "Application > Service workers"
     developer options you can tick "Offline" at the top of the page to put the
-    window or tab into offline mode. Un-ticking the option restores the
+    window or tab into offline mode. Unticking the option restores the
     connection.
 
 The new project structure is below
@@ -235,7 +235,7 @@ Serving the Service Worker
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Part of the security restrictions of service workers is that they can only
-listen for network requests made to the same path, or descendents of the path,
+listen for network requests made to the same path, or descendants of the path,
 that they are served from. This means we need to serve the
 ``service-worker.js`` file from ``/service-worker.js`` to intercept all network
 requests made to the server.

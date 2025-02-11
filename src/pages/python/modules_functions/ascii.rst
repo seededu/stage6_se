@@ -238,7 +238,7 @@ using ``ord()``.
 
     print(ord('A'))
 
-You can then find the corresponding english character for a given decimal
+You can then find the corresponding English character for a given decimal
 number using ``chr()``.
 
 .. exec_code::
