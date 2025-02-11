@@ -43,11 +43,6 @@ At the core of a web browser contains is the :term:`engine`, which is
 responsible for interpreting HTML and :term:`rendering` it into a visual form,
 along with any multimedia to be embedded such as images.
 
-.. warning::
-
-    TODO: ADD IMAGE HERE SHOWING RELATIONSHIP BETWEEN BROWSER, ENGINE AND HTML
-    FILE
-
 HTML Standard
 -------------
 
@@ -208,10 +203,6 @@ A Complete Example
         .. raw:: html
 
             <iframe class="sd-w-100" height="200px" src="../../_static/examples/html/intro_complete.html"></iframe>
-
-.. warning::
-
-    TODO: ADD IMAGE HERE DIAGRAMMING DOCUMENT STRUCTURE
 
 Glossary
 --------
