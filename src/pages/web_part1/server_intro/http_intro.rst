@@ -115,11 +115,6 @@ Breakdown:
   - ``Accept: text/html``
   - ``Accept-Language: en``
 
-.. attention::
-
-    TODO: Add more details about header fields
-    https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Standard_request_fields
-
 Response
 ~~~~~~~~
 
