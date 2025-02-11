@@ -103,7 +103,7 @@ completed as a class activity it is recommended that students work in groups.
     :color: info
     :icon: question
 
-    Now let's focus on drawing the side edges of the square. For each row in the square there are $2n+1$ spaces between each |. Think about how you would create a subroutine called vertical(n) which will display one row for the vertical edges. This subroutine should be a procedure, which means it's a function that doesn't have a return value.
+    Now let's focus on drawing the side edges of the square. For each row in the square there are :math:`2n+1` spaces between each ``|``. Think about how you would create a subroutine called ``vertical(n)`` which will display one row for the vertical edges. This subroutine should be a procedure, which means it's a function that doesn't have a return value.
 
     **Example:** :math:`n = 1`, 3 spaces between each ``|``
 

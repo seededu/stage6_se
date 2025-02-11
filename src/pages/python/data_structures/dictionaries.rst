@@ -515,7 +515,7 @@ will get a **KeyError**.
 
     Print out the combined dictionary.
 
-    .. info:: You can assume each dictionary has the same keys.
+    .. note:: You can assume each dictionary has the same keys.
 
     .. code-block:: python
 
