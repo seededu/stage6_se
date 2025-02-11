@@ -70,6 +70,7 @@ Here's how to handle the form data in Flask:
 
     app = Flask(__name__)
 
+
     @app.route("/submit", methods=["POST"])
     def submit_form():
         name = request.form["name"]
