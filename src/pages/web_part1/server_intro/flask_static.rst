@@ -15,13 +15,14 @@ includes static files:
 
 .. code-block::
 
-    /my_flask_app
-        /static
-            /css
-                styles.css
-            /images
-                logo.png
-        app.py
+    my_flask_app
+    │
+    ├── app.py
+    └── static
+        ├── css
+        │   └── style.css
+        └── images
+            └── logo.png
 
 - ``/static/``: This directory contains all the static files like CSS, images,
   and JavaScript.
@@ -76,7 +77,7 @@ homepage.
         return """
         <html>
         <head>
-            <link rel="stylesheet" type="text/css" href="/static/css/styles.css">  <!-- Link to the CSS file -->
+            <link rel="stylesheet" type="text/css" href="/static/css/style.css">  <!-- Link to the CSS file -->
         </head>
         <body>
             <h1>Welcome to My Styled Homepage!</h1>
@@ -86,17 +87,16 @@ homepage.
         """
 
 
-    if __name__ == "__main__":
-        app.run(debug=True)
+    app.run(debug=True, port=5000)
 
 In this code:
 
 - We created a basic Flask app with a single homepage route.
 - In the ``<head>`` section of the HTML, we link to a custom CSS file located
-  at ``/static/css/styles.css``. The href points to the CSS file in the static
+  at ``/static/css/style.css``. The href points to the CSS file in the static
   folder.
 
-2. Create the ``static/css/styles.css`` file
+2. Create the ``static/css/style.css`` file
 
 Next, we create the CSS file that will style our page. Place this file in the
 static/css/ folder.
@@ -125,11 +125,12 @@ heading (``h1``) to dark blue, and the paragraph text (``p``) to dark green.
 
     .. code-block::
 
-        /my_flask_app
-            /static
-                /css
-                    styles.css
-            app.py
+        my_flask_app
+        │
+        ├── app.py
+        └── static
+            └── css
+                └── style.css
 
 3. Run the Flask App
 
@@ -148,7 +149,7 @@ Example: Serving Images
 -----------------------
 
 Now that you've learned how to serve CSS files, let’s add an image to the
-homepage, such as a selfie, and serve it using Flask.
+homepage, such as of a Chicken, and serve it using Flask.
 
 1. Update the Flask app (``app.py``)
 
@@ -164,32 +165,33 @@ homepage, such as a selfie, and serve it using Flask.
         return """
         <html>
         <head>
-            <link rel="stylesheet" type="text/css" href="/static/css/styles.css">  <!-- Link to the CSS file -->
+            <link rel="stylesheet" type="text/css" href="/static/css/style.css">  <!-- Link to the CSS file -->
         </head>
         <body>
             <h1>Welcome to My Styled Homepage!</h1>
             <p>This page is styled with custom CSS.</p>
-            <img src="/static/images/selfie.jpg" alt="My Selfie" width="300">  <!-- Serve the selfie image -->
+            <img src="/static/images/chicken.jpg" width="200">
         </body>
         </html>
         """
 
 
-    if __name__ == "__main__":
-        app.run(debug=True)
+    app.run(debug=True)
 
 In this code:
 
 - The ``<img>`` tag is used to display an image. The ``src`` attribute points
-  to the image file ``selfie.jpg`` located in the ``static/images/`` folder.
+  to the image file ``chicken.jpg`` located in the ``static/images/`` folder.
 - The width attribute sets the width of the image to 300 pixels (you can change
   it based on your ego).
 
 2. Add the Image File
 
-Place your selfie image in the ``static/images/`` folder. You can name the file
-``selfie.jpg`` or any name you prefer, as long as the file path matches what's
-in the ``<img>`` tag.
+Place your chicken image in the ``static/images/`` folder. You can name the
+file ``chicken.jpg`` or any name you prefer, as long as the file path matches
+what's in the ``<img>`` tag.
+
+You can download an example image `here </_images/chicken.jpg>`_.
 
 .. hint::
 
@@ -197,13 +199,14 @@ in the ``<img>`` tag.
 
     .. code-block::
 
-        /my_flask_app
-        /static
-            /css
-                styles.css
-            /images
-                selfie.jpg  <-- Place your selfie image here
-        app.py
+        my_flask_app
+        │
+        ├── app.py
+        └── static
+            ├── css
+            │   └── style.css
+            └── images
+                └── chicken.jpg
 
 3. Run the Flask App
 

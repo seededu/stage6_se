@@ -33,8 +33,7 @@ it works:
 .. hint::
 
     You can define your routes in any order in your code, and Flask will handle
-    them correctly. This means even if you declare a route at the bottom of
-    your file, Flask will still know how to route requests to that URL.
+    them correctly.
 
 Two Routes Example
 ------------------
@@ -60,8 +59,7 @@ for the "about" page (``/about``):
     def about():
         return "This is the about page!"
 
-    if __name__ == "__main__":
-        app.run(debug=True, port=5000)
+    app.run(debug=True, port=5000)
 
 In this example:
 
@@ -116,3 +114,5 @@ In this example, we have:
         <p>You can reach me via email at student@example.com.</p>
         <p><a href="/">Back to Home</a></p>
         """
+
+    app.run(debug=True, port=5000)

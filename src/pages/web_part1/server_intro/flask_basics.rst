@@ -9,14 +9,10 @@ Flask is an open source framework, with a large user base. Some of the worlds
 largest companies build some or all of their web applications using Flask. For
 example:
 
-- Netflix uses Flask for building internal tools.
-- Pinterest uses Flask for developing their web API
-- Linkedin
-- Uber [1]_
-
-.. caution::
-
-    TODO: FIX THESE LINKS
+- Netflix uses Flask for building internal tools [1]_
+- Pinterest uses Flask for developing their web API [2]_
+- Linkedin [3]_
+- Uber [4]_
 
 Flask simplifies web development by allowing you to create a web application
 using Python functions. All you need to do is define routes and write code to
@@ -40,8 +36,7 @@ We will start with a "Hello World!" application using Flask.
         return "Hello, World!"  # Return "Hello, World!" as a response
 
 
-    if __name__ == "__main__":
-        app.run(debug=True, port=5000)  # Run the app
+    app.run(debug=True, port=5000)  # Run the app
 
 Let's breakdown the Python script
 
@@ -54,8 +49,6 @@ Let's breakdown the Python script
   (``/``).
 - ``def hello_world():``: This function is triggered when the user visits the
   home page, and it returns the message ``"Hello, World!"``.
-- ``if __name__ == "__main__":``: This checks if the script is being run
-  directly (not imported as a module). If true, it runs the Flask app.
 - ``app.run(debug=True, port=5000)``: This starts the Flask web server with:
 
   - ``debug`` mode enabled which helps catch errors and reload the app when
@@ -104,8 +97,8 @@ current date and time.
     @app.route("/")  # Define the route for the home page
     def show_date_random_word():
          # Get current date and time
-        current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        html = f"""
+        current_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        html = '''
         <!DOCTYPE html>
         <html>
         <body>
@@ -113,11 +106,10 @@ current date and time.
             <p>Current Date and Time: {current_time}</p>
         </body>
         </html>
-        """
+        ''.format(current_time)
         return html  # Return the HTML
 
-    if __name__ == "__main__":
-        app.run(debug=True, port=5000)
+    app.run(debug=True, port=5000)
 
 The steps to run the "What's the time?" app are similar as "Hello World":
 
@@ -145,4 +137,11 @@ The steps to run the "What's the time?" app are similar as "Hello World":
 References
 ----------
 
-.. [1] https://www.uber.com/en-AU/blog/uber-tech-stack-part-two/
+.. [1] https://netflixtechblog.com/python-at-netflix-bba45dae649e
+
+.. [2]
+    https://www.quora.com/What-challenges-has-Pinterest-encountered-with-Flask
+
+.. [3] https://www.youtube.com/watch?v=OXN3wuHUBP0
+
+.. [4] https://www.uber.com/en-AU/blog/uber-tech-stack-part-two/

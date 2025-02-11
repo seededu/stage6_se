@@ -133,7 +133,7 @@ Project structure:
             :caption: app.py
             :linenos:
 
-            from flask import Flask, request, redirect, url_for
+            from flask import Flask, request, redirect, url_for, render_template
             from sqlalchemy import create_engine, text
             from datetime import datetime
 
@@ -141,6 +141,7 @@ Project structure:
 
             # Connect to the database
             engine = create_engine('sqlite:///movies.db')
+            connection = engine.connect()
 
             @app.route('/add_review', methods=['GET'])
             def show_form():
@@ -158,7 +159,7 @@ Project structure:
                 review_date = datetime.now().strftime("%Y-%m-%d")
 
                 # Insert the review into the "database"
-                insert_statement = f'''
+                insert_statement = '''
                     INSERT INTO reviews (title, release_year, genre, review_date, review_score, review_text)
                     VALUES ('{}', {}, '{}', {}, {}, '{}');
                 '''.format(title, release_year, genre, review_date, review_score, review_text)
@@ -174,7 +175,7 @@ Project structure:
     .. tab-item:: Review Form
 
         .. code-block:: html
-            :caption: new_review.html
+            :caption: add_review.html
             :linenos:
 
             <!DOCTYPE html>

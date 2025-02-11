@@ -14,7 +14,6 @@ By the end of this section, you will be able to explain:
 - How data is split into packets and sent across the internet
 - What IP addresses are and how they identify devices
 - How packets travel from one device to another
-- How TCP ensures data is delivered reliably and in the right order
 
 Data Packets
 ------------
