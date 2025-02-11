@@ -1,34 +1,56 @@
 Records
 =======
 
-A **record** is a data structure that allows you to store a fixed number of related pieces of information together as a single entity. Each piece of information in a record is called a **field**, and every field typically represents a specific attribute or property of the entity being described and fields do not have to have the same type (unlike arrays).
+A **record** is a data structure that allows you to store a fixed number of
+related pieces of information together as a single entity. Each piece of
+information in a record is called a **field**, and every field typically
+represents a specific attribute or property of the entity being described and
+fields do not have to have the same type (unlike arrays).
 
-Think of a record like a form you might fill out at a doctor's office. The form contains fields such as your name, age, phone number, and address. All these fields together describe one entity—you. Similarly, in programming, a record groups together related data into a structured format, making it easier to organise and work with.
+Think of a record like a form you might fill out at a doctor's office. The form
+contains fields such as your name, age, phone number, and address. All these
+fields together describe one entity—you. Similarly, in programming, a record
+groups together related data into a structured format, making it easier to
+organise and work with.
 
 Records in Python
 -----------------
 
-In Python, a simple and efficient way to represent records is by using **tuples**. We can create a tuple the same way we create a list but a tuple uses parentheses ``()``. A tuple is an immutable sequence of elements (meaning that once the tuple is created it can't be modified), and its fixed structure makes it a great choice for representing records with a defined set of fields. Each position in the tuple corresponds to a specific field.
+In Python, a simple and efficient way to represent records is by using
+**tuples**. We can create a tuple the same way we create a list but a tuple
+uses parentheses ``()``. A tuple is an immutable sequence of elements (meaning
+that once the tuple is created it can't be modified), and its fixed structure
+makes it a great choice for representing records with a defined set of fields.
+Each position in the tuple corresponds to a specific field.
 
-For example, suppose you want to represent a student record with their name, age, and the subjects they are taking. You can use a tuple like this:
+For example, suppose you want to represent a student record with their name,
+age, and the subjects they are taking. You can use a tuple like this:
 
 .. code-block:: python
 
-    student = ('Alex', 17, ['English', 'Maths', 'Software Engineering', 'Drama', 'Textiles'])
+    student = (
+        "Alex",
+        17,
+        ["English", "Maths", "Software Engineering", "Drama", "Textiles"],
+    )
 
 Here:
 
-* The first field ``'Alex'`` represents the student's name.
+- The first field ``'Alex'`` represents the student's name.
+- The second field ``17`` represents their age.
+- The third field ``['English', 'Maths', 'Software Engineering', 'Drama',
+  'Textiles']`` represents the subjects they are taking.
 
-* The second field ``17`` represents their age.
-
-* The third field ``['English', 'Maths', 'Software Engineering', 'Drama', 'Textiles']`` represents the subjects they are taking.
-
-To get values out of a tuple in Python we can index them the same as we do lists:
+To get values out of a tuple in Python we can index them the same as we do
+lists:
 
 .. code-block:: python
 
-    student = ('Jordan', 17, ['English', 'Maths', 'Software Engineering', 'Drama', 'Textiles'])
+    student = (
+        "Jordan",
+        17,
+        ["English", "Maths", "Software Engineering", "Drama", "Textiles"],
+    )
 
     # Accesses name
     print(student[0])
@@ -164,5 +186,5 @@ To get values out of a tuple in Python we can index them the same as we do lists
             :language: python
 
             animals = ['lion', 'caterpillar', 'elephant', 'bee']
-            animals.remove('elephant') 
+            animals.remove('elephant')
             print(animals)

@@ -1,48 +1,60 @@
 Stacks
 ======
 
-A **stack** is a simple yet powerful data structure that follows the **LIFO** principle: **Last In, First Out**. This means the last item added to the stack is the first one to be removed, much like a stack of books on a desk. When you add a book, you place it on top of the stack, and when you want a book you must first pick up the top-most book from the stack. 
+A **stack** is a simple yet powerful data structure that follows the **LIFO**
+principle: **Last In, First Out**. This means the last item added to the stack
+is the first one to be removed, much like a stack of books on a desk. When you
+add a book, you place it on top of the stack, and when you want a book you must
+first pick up the top-most book from the stack.
 
-Stacks see a lot of use in programming languages as the way computers execute functions makes use of stacks. If you call too many functions you can run into a stack overflow error (in Python this is called a **RecursionError**) which is where the common code help discussion board Stack Overflow gets its name. They are so key to programming languages that they date back to the birth of computer science, first being introduced by Alan Turing in 1946. 
+Stacks see a lot of use in programming languages as the way computers execute
+functions makes use of stacks. If you call too many functions you can run into
+a stack overflow error (in Python this is called a **RecursionError**) which is
+where the common code help discussion board Stack Overflow gets its name. They
+are so key to programming languages that they date back to the birth of
+computer science, first being introduced by Alan Turing in 1946.
 
 Key Operations in a Stack
 -------------------------
 
 Stacks have two key operations:
 
-* **Push:** Adds an item to the top of the stack.
+- **Push:** Adds an item to the top of the stack.
+- **Pop:** Removes and returns the item at the top of the stack.
 
-* **Pop:** Removes and returns the item at the top of the stack.
-
-In a stack these are the only ways to access elements. This is quite different to arrays where you can simply alter a value in the middle without interacting with the other elements.
+In a stack these are the only ways to access elements. This is quite different
+to arrays where you can simply alter a value in the middle without interacting
+with the other elements.
 
 There are two other operations which are often also implemented:
 
-* **Peek:** Returns the item at the top of the stack without removing it.
-
-* **Is Empty:** Checks if the stack is empty.
+- **Peek:** Returns the item at the top of the stack without removing it.
+- **Is Empty:** Checks if the stack is empty.
 
 How They Work
 -------------
 
 Imagine you're stacking books on a table:
 
-* When you add a book, it goes on top of the pile (Push).
+- When you add a book, it goes on top of the pile (Push).
+- When you take a book, you grab the one on top (Pop).
+- You can glance at the title of the top book without removing it (Peek).
+- You can look to see if there is anything on the table (Is Empty).
 
-* When you take a book, you grab the one on top (Pop).
+In programming, stacks are often used in scenarios like undoing operations in
+text editors.
 
-* You can glance at the title of the top book without removing it (Peek).
-
-* You can look to see if there is anything on the table (Is Empty).
-
-In programming, stacks are often used in scenarios like undoing operations in text editors.
-
-By maintaining order and ensuring the most recently added element is accessed first, stacks provide an efficient and logical way to manage certain types of data.
+By maintaining order and ensuring the most recently added element is accessed
+first, stacks provide an efficient and logical way to manage certain types of
+data.
 
 Stacks in Python
 ----------------
 
-Python has no native implementation of stacks, so if you wish to use stacks you have to implement them yourself. We will do this in the next exercise using a list to keep track of the elements in the stack, treating the end of the list as the top of the stack.
+Python has no native implementation of stacks, so if you wish to use stacks you
+have to implement them yourself. We will do this in the next exercise using a
+list to keep track of the elements in the stack, treating the end of the list
+as the top of the stack.
 
 If you want to add an element to the end of a list you can use ``.append()``:
 

@@ -1,7 +1,9 @@
 Representing and Storing Data: 8 Queens
 =======================================
 
-When taking an algorithm and implementing it in code, it's important to think about **what** data the program will need to store and **how** it will store it. 
+When taking an algorithm and implementing it in code, it's important to think
+about **what** data the program will need to store and **how** it will store
+it.
 
 .. dropdown:: Question 1
     :open:
@@ -36,7 +38,7 @@ When taking an algorithm and implementing it in code, it's important to think ab
     :icon: question
 
     Consider a program that implements backtracking to solve the 8 queens problem. Can you come up with a list of all the data you would need to store in your program?
-    
+
     .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark
@@ -50,7 +52,7 @@ When taking an algorithm and implementing it in code, it's important to think ab
 
     Create a data dictionary for all of the variables you would need to create when implementing backtracking to solve the 8 queens problem.
 
-    .. list-table:: 
+    .. list-table::
         :header-rows: 0
 
         * - Variable Name
@@ -63,7 +65,7 @@ When taking an algorithm and implementing it in code, it's important to think ab
           - |
           - |
           - |
-        
+
     .. dropdown:: :material-regular:`lock;1.5em` Solution
         :class-title: sd-font-weight-bold
         :color: dark

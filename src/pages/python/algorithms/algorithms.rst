@@ -1,7 +1,13 @@
 Algorithms
 ==========
 
-An algorithm is a set of precise instructions that when carried out will solve a task. Any time you are solving a problem you are usually applying some approach, which could be written up as an algorithm. There are many different types of algorithms that can be applied to many different types of problems. The *effectiveness* of the algorithm can often be measured by how efficient the algorithm (how quickly it reaches a solution) and the quality of the solution it yields.
+An algorithm is a set of precise instructions that when carried out will solve
+a task. Any time you are solving a problem you are usually applying some
+approach, which could be written up as an algorithm. There are many different
+types of algorithms that can be applied to many different types of problems.
+The *effectiveness* of the algorithm can often be measured by how efficient the
+algorithm (how quickly it reaches a solution) and the quality of the solution
+it yields.
 
 Key features of algorithms include sequence, selection and iteration.
 
@@ -9,39 +15,47 @@ Sequence
 --------
 
 .. image:: img/1_example1.png
-   :width: 100
-   :align: center
+    :width: 100
+    :align: center
 
-Instructions that are carried out one after the other are **sequential**. This means the instructions are carried out in the exact order they are written. 
+Instructions that are carried out one after the other are **sequential**. This
+means the instructions are carried out in the exact order they are written.
 
 Selection
 ---------
 
 .. image:: img/1_example2.png
-   :width: 450
-   :align: center
+    :width: 450
+    :align: center
 
-Some algorithms can **select** different pathways to take. In this case the algorithm will check a *condition* (or sometimes multiple condition) and the evaluation of the condition (i.e. whether the condition is true or false) will control which pathway is taken.
+Some algorithms can **select** different pathways to take. In this case the
+algorithm will check a *condition* (or sometimes multiple condition) and the
+evaluation of the condition (i.e. whether the condition is true or false) will
+control which pathway is taken.
 
 Iteration
 ---------
 
 .. image:: img/1_example5.png
-   :width: 240
-   :align: center
+    :width: 240
+    :align: center
 
-
-**Iteration** allows sections of an algorithm to be repeated a fixed number of times or until a certain condition has been met.
+**Iteration** allows sections of an algorithm to be repeated a fixed number of
+times or until a certain condition has been met.
 
 Subroutines
 -----------
 
 .. image:: img/1_example4.png
-   :width: 380
-   :align: center
+    :width: 380
+    :align: center
 
-
-**Subroutines** are algorithms that can be used in the main algorithm. They can be very useful particularly when there are aspects of the algorithm that are repetitive. They can also make it easier to write algorithms as they can be used to solve subtasks. Use of subroutines often help to make the overall algorithm easier to understand as the main algorithm can be written more concisely.
+**Subroutines** are algorithms that can be used in the main algorithm. They can
+be very useful particularly when there are aspects of the algorithm that are
+repetitive. They can also make it easier to write algorithms as they can be
+used to solve subtasks. Use of subroutines often help to make the overall
+algorithm easier to understand as the main algorithm can be written more
+concisely.
 
 .. dropdown:: Question 1
     :open:

@@ -1,39 +1,57 @@
 Structure Charts
 ================
 
-Structure charts are a traditional tool in structured software design to depict the organisation of modules within a system. Each chart represents how a program’s major components (modules or functions) are subdivided into submodules, how control flows between them, and what data is exchanged.
+Structure charts are a traditional tool in structured software design to depict
+the organisation of modules within a system. Each chart represents how a
+program’s major components (modules or functions) are subdivided into
+submodules, how control flows between them, and what data is exchanged.
 
-Structure charts are different from flowcharts because they are "static", which means that they represent how to break software or a program down into components rather than steps or procedures.
+Structure charts are different from flowcharts because they are "static", which
+means that they represent how to break software or a program down into
+components rather than steps or procedures.
 
-Structure charts allow varying levels of **abstraction**. This means that you can restrict a structure chart to only high level functions, or if you like show all functions within the system, or even a varying level of detail within parts of the chart. You can even create multiple structure charts that reference each other to help break down the system.
+Structure charts allow varying levels of **abstraction**. This means that you
+can restrict a structure chart to only high level functions, or if you like
+show all functions within the system, or even a varying level of detail within
+parts of the chart. You can even create multiple structure charts that
+reference each other to help break down the system.
 
-Structure charts are often used to help design software systems and over time the amount of detail or structure can change. This process is known as **refinement**.
+Structure charts are often used to help design software systems and over time
+the amount of detail or structure can change. This process is known as
+**refinement**.
 
 Symbols
 -------
 
 .. image:: img/7_example1.png
-   :width: 500
-   :align: center
+    :width: 500
+    :align: center
 
-* **Module or Process:** A rectangle with the module name inside represents a component such as a function.
-
-* **Parameters or Data Flow:** An empty circle with an arrow represents the flow of data or parameters of a function being called. The text next to the symbol.
-
-* **Flag or Control Parameter:** A filled circle with an arrow represents a flag, i.e. a Boolean, is passed to a module to trigger a condition.
-
-* **Decision:** The intersection of two lines with a diamond at the intersection point represents an optional execution of a component or function. *Note that a diamond can appear on a single connecting line if calling that module is optional.*
-
-* **Repetition:** A curved arrow represents a repeated action or loop.
+- **Module or Process:** A rectangle with the module name inside represents a
+  component such as a function.
+- **Parameters or Data Flow:** An empty circle with an arrow represents the
+  flow of data or parameters of a function being called. The text next to the
+  symbol.
+- **Flag or Control Parameter:** A filled circle with an arrow represents a
+  flag, i.e. a Boolean, is passed to a module to trigger a condition.
+- **Decision:** The intersection of two lines with a diamond at the
+  intersection point represents an optional execution of a component or
+  function. *Note that a diamond can appear on a single connecting line if
+  calling that module is optional.*
+- **Repetition:** A curved arrow represents a repeated action or loop.
 
 Top-Down and Bottom-Up Design
 -----------------------------
 
-Structure charts are a natural tool to design systems **top-down** as detail can be incrementally added to the chart.
+Structure charts are a natural tool to design systems **top-down** as detail
+can be incrementally added to the chart.
 
-However you can still apply structure charts in a bottom-up approach. You would first determine the lower-level modules, then illustrate how they connect together to form higher-level functionalities.
+However you can still apply structure charts in a bottom-up approach. You would
+first determine the lower-level modules, then illustrate how they connect
+together to form higher-level functionalities.
 
-The final structure chart can appear the same as a top-down chart in its final form, but conceptually you are assembling from smaller parts upwards.
+The final structure chart can appear the same as a top-down chart in its final
+form, but conceptually you are assembling from smaller parts upwards.
 
 Examples
 --------
@@ -41,87 +59,108 @@ Examples
 Library Borrowing System
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Imagine a program that handles book borrowing for a library. You might draw this as the structure chart below:
+Imagine a program that handles book borrowing for a library. You might draw
+this as the structure chart below:
 
 .. image:: img/7_example2.png
-   :width: 500
-   :align: center
+    :width: 500
+    :align: center
 
 **Explanation**
 
-* Borrow book
+- Borrow book
 
-  * The *main control module*. It coordinates all sub-tasks.
+  - The *main control module*. It coordinates all sub-tasks.
 
-    * This task will repeat for all books the user wants to borrow as indicated by the curved arrow.
+    - This task will repeat for all books the user wants to borrow as indicated
+      by the curved arrow.
 
-* Check allowed
+- Check allowed
 
-  * This sends the user's data to the system and return a flag indicating whether the user can borrow books.
+  - This sends the user's data to the system and return a flag indicating
+    whether the user can borrow books.
 
-* Check availability
+- Check availability
 
-  * This sends the book's information to the system and returns a flag indicating whether this book is available to borrow.
+  - This sends the book's information to the system and returns a flag
+    indicating whether this book is available to borrow.
 
-* Record borrow in database
+- Record borrow in database
 
-  * This sends the user's information and book's information to the database so the borrow is recorded
-
-  * The is an optional subroutine as indicated by the diamond along the call line. This subroutine will not execute if either the allowed or available flag come back as false.
+  - This sends the user's information and book's information to the database so
+    the borrow is recorded
+  - The is an optional subroutine as indicated by the diamond along the call
+    line. This subroutine will not execute if either the allowed or available
+    flag come back as false.
 
 **Top-down Approach**
 
-Following a top-down design approach, you could continue adding detail to this figure. For example, you could expand the *Checked allowed* module to have the submodules: *Check overdue*, *Check borrowing limit* and *Check user restriction (e.g. age)*, or you could expand the *Check availability* module to have the submodules: *Check not on hold* and *Check allowed to be borrowed*.
+Following a top-down design approach, you could continue adding detail to this
+figure. For example, you could expand the *Checked allowed* module to have the
+submodules: *Check overdue*, *Check borrowing limit* and *Check user
+restriction (e.g. age)*, or you could expand the *Check availability* module to
+have the submodules: *Check not on hold* and *Check allowed to be borrowed*.
 
 String Preprocessor
 ~~~~~~~~~~~~~~~~~~~
 
-Imagine a program the preprocesses text by removing unwanted punctuation and numerical digits.
+Imagine a program the preprocesses text by removing unwanted punctuation and
+numerical digits.
 
 .. image:: img/7_example3.png
-   :width: 450
-   :align: center
+    :width: 450
+    :align: center
 
 **Explanation**
 
-* Remove all
+- Remove all
 
-  * This module is given some text to clean and characters to remove, will remove all the given characters and returned the clean text.
-
-  .. code-block:: python
-
-    def remove_all(text, chars):
-        for c in chars:
-            text = text.replace(c, '')
-        return text
-
-* Remove punctuation
-
-  * This module is given some text to clean and will remove all punctuation and return the clean text. This module uses the *Remove all* module. 
+  - This module is given some text to clean and characters to remove, will
+    remove all the given characters and returned the clean text.
 
   .. code-block:: python
 
-    def remove_punctuation(text):
-        punctuation = '.,!?;:\'\"-()[]{}'
-        return remove_all(text, punctuation)
+      def remove_all(text, chars):
+          for c in chars:
+              text = text.replace(c, "")
+          return text
 
-* Remove digits
+- Remove punctuation
 
-  * This module is given some text to clean and will remove all digits and return the clean text. This module uses the *Remove all* module
+  - This module is given some text to clean and will remove all punctuation and
+    return the clean text. This module uses the *Remove all* module.
 
   .. code-block:: python
 
-    def remove_digits(text):
-        digits = '0123456789'
-        return remove_all(text, digits)
+      def remove_punctuation(text):
+          punctuation = ".,!?;:'\"-()[]{}"
+          return remove_all(text, punctuation)
 
-* Pre-process text
+- Remove digits
 
-  * The *main control module*. It coordinates the removal of punctuation and the removal of digits from the given text.
+  - This module is given some text to clean and will remove all digits and
+    return the clean text. This module uses the *Remove all* module
+
+  .. code-block:: python
+
+      def remove_digits(text):
+          digits = "0123456789"
+          return remove_all(text, digits)
+
+- Pre-process text
+
+  - The *main control module*. It coordinates the removal of punctuation and
+    the removal of digits from the given text.
 
 **Bottom-up Approach**
 
-This is an example of where a bottom-up approach might have been used where the *Remove all* module was implemented first. An advantage of the bottom-up approach is that existing modules are easily re-used. In this case *Remove all* is used by both *Remove punctuation* and *Remove digits*. You could keep expanding this up where you might have a parent process which is *Format text*, this might call *Pre-process text* and then call another another module such *Style* text. 
+This is an example of where a bottom-up approach might have been used where the
+*Remove all* module was implemented first. An advantage of the bottom-up
+approach is that existing modules are easily re-used. In this case *Remove all*
+is used by both *Remove punctuation* and *Remove digits*. You could keep
+expanding this up where you might have a parent process which is *Format text*,
+this might call *Pre-process text* and then call another another module such
+*Style* text.
 
 .. dropdown:: Question 1
     :open:

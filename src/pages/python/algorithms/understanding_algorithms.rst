@@ -1,7 +1,9 @@
 Understanding Algorithms
 ========================
 
-You'll often be faced with new algorithms and it is an important skill for you to be able to read through the algorithm and figure out what the algorithm is meant to do. Have a go at trying to understand the algorithms given below.
+You'll often be faced with new algorithms and it is an important skill for you
+to be able to read through the algorithm and figure out what the algorithm is
+meant to do. Have a go at trying to understand the algorithms given below.
 
 .. dropdown:: Question 1
     :open:
@@ -12,14 +14,14 @@ You'll often be faced with new algorithms and it is an important skill for you t
 
     .. code-block:: text
 
-        BEGIN 
+        BEGIN
             Get n
             total = 0
             i = 0
             WHILE total <= n
                 i = i + 1
                 total = total + i
-            ENDWHILE 
+            ENDWHILE
             largest = i - 1
             Display largest
         END
@@ -58,25 +60,25 @@ You'll often be faced with new algorithms and it is an important skill for you t
         9        ENDIF
         10    END
 
-    A. 
+    A.
 
         **Input:** ``word``, which given the description is expected to be a single word represented as a string.
 
         **Output:** the string *"It's the same forwards and backwards!"*
 
-    B. 
+    B.
 
         **Input:** ``word``, which given the description is expected to be a single word represented as a string and ``reverse``, which is an empty string.
 
         **Output:** the string *"It's the same forwards and backwards!"*
 
-    C. 
+    C.
 
         **Input:** ``word``, which given the description is expected to be a single word represented as a string.
 
         **Output:** the boolean value ``True``/``False``, depending whether the condition on line 7 is ``True`` or ``False`` and the string *"It's the same forwards and backwards!"*
 
-    D. 
+    D.
 
         **Input:** ``word``, which given the description is expected to be a single word represented as a string and ``reverse``, which is an empty string.
 
@@ -133,7 +135,7 @@ You'll often be faced with new algorithms and it is an important skill for you t
         8                 max_value = array[i]
         9             ELSEIF array[i] = max_value THEN
         10                 Append i to max_index
-        11             ENDIF 
+        11             ENDIF
         12             i = i + 1
         13        ENDWHILE
         14        RETURN max_index

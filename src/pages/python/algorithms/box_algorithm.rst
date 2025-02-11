@@ -4,7 +4,9 @@ Draw a Box: Algorithm
 Problem Description
 -------------------
 
-Write a program that asks the user for an integer :math:`n` and then prints a square box where the edges of the box are of length :math:`n` (as shown in the examples below).
+Write a program that asks the user for an integer :math:`n` and then prints a
+square box where the edges of the box are of length :math:`n` (as shown in the
+examples below).
 
 **Example 1:** :math:`n=1`
 
@@ -25,7 +27,6 @@ Write a program that asks the user for an integer :math:`n` and then prints a sq
     |     |
     + - - +
 
-
 **Example 3:** :math:`n=5`
 
 .. code-block:: text
@@ -39,22 +40,23 @@ Write a program that asks the user for an integer :math:`n` and then prints a sq
     |           |
     + - - - - - +
 
-Note: 
+Note:
 
-* There is a space between each ``-`` in the top and bottom edge. This means there are :math:`n` dashes and :math:`n+1` spaces between each ``+`` on the top and bottom edges, i.e. :math:`2n+1` characters.
-
-* There are :math:`2n+1` spaces between each ``|`` for the vertical edges.
+- There is a space between each ``-`` in the top and bottom edge. This means
+  there are :math:`n` dashes and :math:`n+1` spaces between each ``+`` on the
+  top and bottom edges, i.e. :math:`2n+1` characters.
+- There are :math:`2n+1` spaces between each ``|`` for the vertical edges.
 
 Class/Homework Exercises
 ------------------------
 
 What you need:
 
-* Blank A4 or A3 paper - a couple of sheets per group
+- Blank A4 or A3 paper - a couple of sheets per group
+- Pens - one for each student
 
-* Pens - one for each student
-
-Using pen and paper complete the following questions. If this is being completed as a class activity it is recommended that students work in groups.
+Using pen and paper complete the following questions. If this is being
+completed as a class activity it is recommended that students work in groups.
 
 .. dropdown:: Question 1
     :open:
@@ -74,7 +76,7 @@ Using pen and paper complete the following questions. If this is being completed
     .. code-block:: text
 
         + - - - - - +
-    
+
     Draw a flowchart to represent this subroutine. Your answer must use iteration.
 
     .. dropdown:: :material-regular:`lock;1.5em` Solution
@@ -141,7 +143,7 @@ Using pen and paper complete the following questions. If this is being completed
     :color: info
     :icon: question
 
-    Now let's put it all together. Think about how you would write the main program, which uses ``horizontal(n)`` and ``vertical(n)`` to  read in a number :math:`n` from the user and then display a box of the appropriate size. 
+    Now let's put it all together. Think about how you would write the main program, which uses ``horizontal(n)`` and ``vertical(n)`` to  read in a number :math:`n` from the user and then display a box of the appropriate size.
 
     **Example 1:** :math:`n=1`
 

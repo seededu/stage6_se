@@ -1,22 +1,32 @@
 Dictionaries
 ============
 
-A **dictionary** (mostly unrelated to a data dictionary which we saw earlier) is a versatile data structure that allows you to store data as **key-value pairs**. It is similar to a real-world dictionary where you look up a word (the key) to find its definition (the value).
+A **dictionary** (mostly unrelated to a data dictionary which we saw earlier)
+is a versatile data structure that allows you to store data as **key-value
+pairs**. It is similar to a real-world dictionary where you look up a word (the
+key) to find its definition (the value).
 
 Dictionaries are:
 
-* **Structured with key-value pairs**. Each dictionary consists of a unique key and its associated values. Keys must be **unique**.
-
-* **Unordered**. There is no innate order for the key-value pairs in a dictionary. In recent versions of Python dictionaries will maintain the order which the key-value pairs were inserted, but this is not true in other languages.
-
-* **Mutable**. Unlike records, you can add, remove or modify entries after the dictionary is created.
-
-* **Efficiently accessed**. Dictionaries are typically optimised for the fast retrieval based on their keys. In Python this is achieved by implementing them as a hash map, which is a data structure you'll learn about later.
+- **Structured with key-value pairs**. Each dictionary consists of a unique key
+  and its associated values. Keys must be **unique**.
+- **Unordered**. There is no innate order for the key-value pairs in a
+  dictionary. In recent versions of Python dictionaries will maintain the order
+  which the key-value pairs were inserted, but this is not true in other
+  languages.
+- **Mutable**. Unlike records, you can add, remove or modify entries after the
+  dictionary is created.
+- **Efficiently accessed**. Dictionaries are typically optimised for the fast
+  retrieval based on their keys. In Python this is achieved by implementing
+  them as a hash map, which is a data structure you'll learn about later.
 
 Creating A Dictionary
 ---------------------
 
-To create a dictionary in python you can use braces (i.e. ``{}``). Elements in the dictionary are key value pairs where the key and pair are separated by a colon ``:`` and elements are separated by a comma ``,``. The format of a dictionary is as follows
+To create a dictionary in python you can use braces (i.e. ``{}``). Elements in
+the dictionary are key value pairs where the key and pair are separated by a
+colon ``:`` and elements are separated by a comma ``,``. The format of a
+dictionary is as follows
 
 .. code-block:: text
 
@@ -28,27 +38,33 @@ Here's an example
 
 .. code-block:: python
 
-    wattle_high_school = {'Name': 'Wattle High School', 
-                          'Students': 84, 
-                          'Motto': 'Aliquam libero sit amet!'}
+    wattle_high_school = {
+        "Name": "Wattle High School",
+        "Students": 84,
+        "Motto": "Aliquam libero sit amet!",
+    }
 
-We can create an empty dictionary just using braces by themselves, i.e. ``{}`` the same way we can make an empty list with ``[]`` and an empty tuple with ``()``.
+We can create an empty dictionary just using braces by themselves, i.e. ``{}``
+the same way we can make an empty list with ``[]`` and an empty tuple with
+``()``.
 
 Accessing And Modifying A Dictionary
 ------------------------------------
 
-Accessing values from a dictionary is easy! Simply provide a **key as an index**:
+Accessing values from a dictionary is easy! Simply provide a **key as an
+index**:
 
 .. exec_code::
     :language: python
 
-    wattle_high_school = {'Name': 'Wattle High School', 
-                          'Students': 84, 
+    wattle_high_school = {'Name': 'Wattle High School',
+                          'Students': 84,
                           'Motto': 'Aliquam libero sit amet!'}
 
     print(wattle_high_school['Students'])
 
-To add or modify a key-value pair we access the element we want and overwrite it.
+To add or modify a key-value pair we access the element we want and overwrite
+it.
 
 .. code-block:: text
 
@@ -57,8 +73,8 @@ To add or modify a key-value pair we access the element we want and overwrite it
 .. exec_code::
     :language: python
 
-    wattle_high_school = {'Name': 'Wattle High School', 
-                          'Students': 84, 
+    wattle_high_school = {'Name': 'Wattle High School',
+                          'Students': 84,
                           'Motto': 'Aliquam libero sit amet!'}
 
     # Add a key-value pair
@@ -69,7 +85,8 @@ To add or modify a key-value pair we access the element we want and overwrite it
     wattle_high_school['Students'] = 88
     print(wattle_high_school['Students'])
 
-To delete a key-value pair we use ``del`` and access the element we want to delete.
+To delete a key-value pair we use ``del`` and access the element we want to
+delete.
 
 .. code-block:: text
 
@@ -78,8 +95,8 @@ To delete a key-value pair we use ``del`` and access the element we want to dele
 .. exec_code::
     :language: python
 
-    wattle_high_school = {'Name': 'Wattle High School', 
-                          'Students': 84, 
+    wattle_high_school = {'Name': 'Wattle High School',
+                          'Students': 84,
                           'Motto': 'Aliquam libero sit amet!'}
 
     # Remove a key-value pair
@@ -87,21 +104,22 @@ To delete a key-value pair we use ``del`` and access the element we want to dele
 
     print(wattle_high_school)
 
-Dictionaries are typically used in cases where you want to represent structured data (like a record) but you want mutability or in cases in which you want to track relationships between quantities (e.g. your contacts list).
+Dictionaries are typically used in cases where you want to represent structured
+data (like a record) but you want mutability or in cases in which you want to
+track relationships between quantities (e.g. your contacts list).
 
-There are also a few functions which allow you to iterate through the dictionary.
+There are also a few functions which allow you to iterate through the
+dictionary.
 
-* ``.keys()`` will give you a list of keys (in a random order)
-
-* ``.values()`` will give you a list of values (in a random order)
-
-* ``.items()`` will give you a list of key-value tuples (in a random order)
+- ``.keys()`` will give you a list of keys (in a random order)
+- ``.values()`` will give you a list of values (in a random order)
+- ``.items()`` will give you a list of key-value tuples (in a random order)
 
 .. exec_code::
     :language: python
 
-    wattle_high_school = {'Name': 'Wattle High School', 
-                          'Students': 84, 
+    wattle_high_school = {'Name': 'Wattle High School',
+                          'Students': 84,
                           'Motto': 'Aliquam libero sit amet!'}
     print(wattle_high_school.keys())
     print(wattle_high_school.values())
@@ -114,8 +132,8 @@ You can use any of these to iterate through the dictionary.
 .. exec_code::
     :language: python
 
-    wattle_high_school = {'Name': 'Wattle High School', 
-                          'Students': 84, 
+    wattle_high_school = {'Name': 'Wattle High School',
+                          'Students': 84,
                           'Motto': 'Aliquam libero sit amet!'}
     for key in wattle_high_school.keys(): # for key in wattle_high_school also works
         print(key)
@@ -125,8 +143,8 @@ You can use any of these to iterate through the dictionary.
 .. exec_code::
     :language: python
 
-    wattle_high_school = {'Name': 'Wattle High School', 
-                          'Students': 84, 
+    wattle_high_school = {'Name': 'Wattle High School',
+                          'Students': 84,
                           'Motto': 'Aliquam libero sit amet!'}
     for value in wattle_high_school.values():
         print(value)
@@ -136,8 +154,8 @@ You can use any of these to iterate through the dictionary.
 .. exec_code::
     :language: python
 
-    wattle_high_school = {'Name': 'Wattle High School', 
-                         'Students': 84, 
+    wattle_high_school = {'Name': 'Wattle High School',
+                         'Students': 84,
                          'Motto': 'Aliquam libero sit amet!'}
     for key, value in wattle_high_school.items():
         print('{}: {}'.format(key, value))
@@ -145,14 +163,17 @@ You can use any of these to iterate through the dictionary.
 Dictionary Errors
 -----------------
 
-If you try to access a dictionary element using a key that does not exist, you will get a **KeyError**.
+If you try to access a dictionary element using a key that does not exist, you
+will get a **KeyError**.
 
 .. code-block:: python
 
-    wattle_high_school = {'Name': 'Wattle High School', 
-                          'Students': 84, 
-                          'Motto': 'Aliquam libero sit amet!'}
-    print(wattle_high_school['Address'])
+    wattle_high_school = {
+        "Name": "Wattle High School",
+        "Students": 84,
+        "Motto": "Aliquam libero sit amet!",
+    }
+    print(wattle_high_school["Address"])
 
 .. code-block:: text
 
@@ -181,7 +202,7 @@ If you try to access a dictionary element using a key that does not exist, you w
 
      .. code-block:: python
 
-        	
+
         {'start': '9:00am', 'morning tea': '10:15am', 'lunch': '12:50pm', 'end': '3:25pm'}
 
     B.
@@ -223,7 +244,7 @@ If you try to access a dictionary element using a key that does not exist, you w
 
      .. code-block:: python
 
-        	
+
         {'Avocado': 'Tasty', 'Strawberry': 'Sometimes mouldy, makes you sick', 'Kiwifruit': 'Green'}
 
     B.
@@ -235,7 +256,7 @@ If you try to access a dictionary element using a key that does not exist, you w
     C.
 
      .. code-block:: python
- 	
+
         {'Avocado': 'Tasty', 'Strawberry': 'Extra tasty', 'Kiwifruit': 'Tasty'}
 
     D.
@@ -289,7 +310,7 @@ If you try to access a dictionary element using a key that does not exist, you w
     A.
 
      .. code-block:: python
-   	
+
         {2: 'Prime', 3: 'Prime', 4: 'Not prime', 5: 'Prime'}
 
     B.
@@ -301,7 +322,7 @@ If you try to access a dictionary element using a key that does not exist, you w
     C.
 
      .. code-block:: python
- 	
+
         {1: 'Not prime', 2: 'Prime', 4: 'Not prime', 5: 'Prime'}
     D.
 
@@ -346,7 +367,7 @@ If you try to access a dictionary element using a key that does not exist, you w
     **Example 2**
 
     .. code-block:: text
-        
+
         Enter an item name: Oranges
         The cost of Oranges is $2.48.
 
@@ -394,7 +415,7 @@ If you try to access a dictionary element using a key that does not exist, you w
     **Example 2**
 
     .. code-block:: text
-        
+
         Student ID: 3584
         Grade: 65
         Student ID: 4585
@@ -403,14 +424,14 @@ If you try to access a dictionary element using a key that does not exist, you w
         Grade: 74
         Student ID: 3696
         Grade: 91
-        Student ID: 
+        Student ID:
         4 grades entered
         {'3584': '65', '4585': '84', '1365': '74', '3696': '91'}
 
-    .. hint:: You can use ``len`` to check the number of items in a dictionary. 
+    .. hint:: You can use ``len`` to check the number of items in a dictionary.
 
         .. exec_code::
-            :language: python   
+            :language: python
 
             fruits = {'Avocado': 'Tasty',
                       'Strawberry': 'Extra tasty'}
@@ -422,14 +443,13 @@ If you try to access a dictionary element using a key that does not exist, you w
 
       *Solution is locked*
 
-
 .. dropdown:: Code challenge: Update Grades
     :color: warning
     :icon: star
 
-    You have been provided with a dictionary of students and grades. 
+    You have been provided with a dictionary of students and grades.
 
-    A remarking of the exams was done, so some of the marks require updating. 
+    A remarking of the exams was done, so some of the marks require updating.
 
     Write some Python code that:
 
@@ -455,14 +475,14 @@ If you try to access a dictionary element using a key that does not exist, you w
         Grade: 89
         Student ID: 8976
         Grade: 80
-        Student ID: 
+        Student ID:
         {'1234': 89, '8976': 80, '4366': 62, '9832': 81, '8758': 90}
 
 
     **Example 2**
 
     .. code-block:: text
-        
+
         Student ID: 4366
         Grade: 65
         Student ID: 5847
@@ -472,7 +492,7 @@ If you try to access a dictionary element using a key that does not exist, you w
     .. hint:: To check if an item is in a list of values, you can use the ``in`` and ``not in`` keywords. For example:
 
         .. exec_code::
-            :language: python   
+            :language: python
 
             nums = [6, 0, 3, -2, 2]
 
@@ -489,9 +509,9 @@ If you try to access a dictionary element using a key that does not exist, you w
     :color: warning
     :icon: star
 
-    You have been provided with two existing dictionaries. 
+    You have been provided with two existing dictionaries.
 
-    Write a Python program to combine these two dictionaries so that the value in each key-value pair is a list containing the values from both dictionaries. The value from dict1 should be first in the list. 
+    Write a Python program to combine these two dictionaries so that the value in each key-value pair is a list containing the values from both dictionaries. The value from dict1 should be first in the list.
 
     Print out the combined dictionary.
 

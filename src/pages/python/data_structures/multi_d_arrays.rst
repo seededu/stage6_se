@@ -1,59 +1,62 @@
 Multi-Dimensional Arrays
 ========================
 
-While a **one-dimensional array** is like a list of numbers arranged in a single row, **multi-dimensional arrays** allow us to represent more complex structures, like tables, grids, or even 3D spaces.
+While a **one-dimensional array** is like a list of numbers arranged in a
+single row, **multi-dimensional arrays** allow us to represent more complex
+structures, like tables, grids, or even 3D spaces.
 
 What are Multi-Dimensional Arrays?
 ----------------------------------
 
-Multi-dimensional arrays, or lists of lists in Python, can be a little tricky to get your head around. Using our chest of drawers analogy, it's like there being another chest of drawers inside every drawer. Each "dimension" adds another layer of organisation:
+Multi-dimensional arrays, or lists of lists in Python, can be a little tricky
+to get your head around. Using our chest of drawers analogy, it's like there
+being another chest of drawers inside every drawer. Each "dimension" adds
+another layer of organisation:
 
-* **1D Array:** A simple row of numbers
+- **1D Array:** A simple row of numbers
 
 .. code-block:: python
 
     array = [1, 2, 3, 4]
 
-* **2D Array:** A table with rows and columns
-
-.. code-block:: python
-
-    array = [[1, 2],
-             [3, 4]]
-
-* **3D Array:** Tables with 3 axes, or tables stacked on top of each other, like pages in a book or squares layered into a cube (blue outer brackets, green inner brackets, brown innermost brackets)
-
-.. code-block:: python
-
-    array = [[[1, 2],
-              [3, 4]],
-
-             [[5, 6],
-              [7, 8]],
-
-             [[9, 10],
-              [11, 12]],
-
-             [[13, 14],
-              [15, 16]]]
-
-Note that we often add lines in to help us visualise our arrays, but Python doesn't care whether the extra lines are there or now. For example, the following arrays are equivalent.
-
-.. code-block:: python
-
-    array = [[1, 2],
-             [3, 4]]
+- **2D Array:** A table with rows and columns
 
 .. code-block:: python
 
     array = [[1, 2], [3, 4]]
 
-2D arrays are used for things like tables, spreadsheets or black-and-white images. 3D arrays are used for things like black-and-white video, colour images (which combine a red, green and blue image) or simulations in physics and engineering. 4D arrays can be used for things like colour video (like colour images but with a time component).
+- **3D Array:** Tables with 3 axes, or tables stacked on top of each other,
+  like pages in a book or squares layered into a cube (blue outer brackets,
+  green inner brackets, brown innermost brackets)
+
+.. code-block:: python
+
+    array = [[[1, 2], [3, 4]], [[5, 6], [7, 8]], [[9, 10], [11, 12]], [[13, 14], [15, 16]]]
+
+Note that we often add lines in to help us visualise our arrays, but Python
+doesn't care whether the extra lines are there or now. For example, the
+following arrays are equivalent.
+
+.. code-block:: python
+
+    array = [[1, 2], [3, 4]]
+
+.. code-block:: python
+
+    array = [[1, 2], [3, 4]]
+
+2D arrays are used for things like tables, spreadsheets or black-and-white
+images. 3D arrays are used for things like black-and-white video, colour images
+(which combine a red, green and blue image) or simulations in physics and
+engineering. 4D arrays can be used for things like colour video (like colour
+images but with a time component).
 
 Accessing Elements in Multi-Dimensional Arrays
 ----------------------------------------------
 
-To access elements in a multi-dimensional array you can use nested arrays. Let's first see how a 2D array works. Without the white space, we can write out a 2D array like this:
+To access elements in a multi-dimensional array you can use nested arrays.
+Let's first see how a 2D array works. Without the white space, we can write out
+a 2D array like this:
 
 .. code-block:: python
 
@@ -67,14 +70,18 @@ Let's index the first element of this array.
     array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     print(array[0])
 
-The first element of this array is another array. If we want to index that array we provide another index. Since ``array[0]`` gives us ``[1, 2, 3]``, to obtain the second value of this array we use index ``[1]``. 
+The first element of this array is another array. If we want to index that
+array we provide another index. Since ``array[0]`` gives us ``[1, 2, 3]``, to
+obtain the second value of this array we use index ``[1]``.
 
 .. code-block:: python
 
     array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     print(array[0][1])
 
-In a 2D case, another way you can think of this is that you index the row, followed by the column. For this example we'll add whitespace to our formatting:
+In a 2D case, another way you can think of this is that you index the row,
+followed by the column. For this example we'll add whitespace to our
+formatting:
 
 .. exec_code::
     :language: python
@@ -87,7 +94,8 @@ In a 2D case, another way you can think of this is that you index the row, follo
 
 **Remember that Python indexing starts at 0!**
 
-As you add more dimensions to the array, you can keep adding more and more indices. Let's take a look at this example
+As you add more dimensions to the array, you can keep adding more and more
+indices. Let's take a look at this example
 
 .. exec_code::
     :language: python
@@ -105,20 +113,23 @@ As you add more dimensions to the array, you can keep adding more and more indic
     print(array[2][0])
     print(array[2][0][3])
 
-``array[2]`` will give us the *third* element stored in array, i.e. element 2, which is the 2D array
+``array[2]`` will give us the *third* element stored in array, i.e. element 2,
+which is the 2D array
 
 .. code-block:: text
 
     [[17, 18, 19, 20],
      [21, 22, 23, 24]]
 
-We can then obtain the *first* element stored in this array  i.e. element 0 ``array[2][0]``, which is the first row. We get
+We can then obtain the *first* element stored in this array i.e. element 0
+``array[2][0]``, which is the first row. We get
 
 .. code-block:: text
 
     [17, 18, 19, 20]
 
-Finally we get the *fourth* element stored in this array, i.e. element 3 ``array[2][0][3]``. We get
+Finally we get the *fourth* element stored in this array, i.e. element 3
+``array[2][0][3]``. We get
 
 .. code-block:: text
 
@@ -243,7 +254,7 @@ Finally we get the *fourth* element stored in this array, i.e. element 3 ``array
     :color: warning
     :icon: star
 
-    Create a 1D array to store the monthly maximum temperature in Sydney each month. 
+    Create a 1D array to store the monthly maximum temperature in Sydney each month.
 
     .. image:: img/temperature.png
         :width: 400
@@ -287,7 +298,7 @@ Finally we get the *fourth* element stored in this array, i.e. element 3 ``array
     :color: warning
     :icon: star
 
-    Create a 2D to represent the following image. 
+    Create a 2D to represent the following image.
 
     .. image:: img/bee.png
         :width: 200

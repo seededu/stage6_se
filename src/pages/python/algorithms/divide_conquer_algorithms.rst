@@ -3,17 +3,20 @@ Applying Divide and Conquer Algorithms
 
 **Recall**
 
-Divide and conquer algorithms are a class of algorithms that solve problems by taking the following approach:
+Divide and conquer algorithms are a class of algorithms that solve problems by
+taking the following approach:
 
-    Take a problem and beak it down into smaller problems of the same type. These subproblems are then solved independently, usually in parallel (i.e. at the same time), after which their solutions can be combined to solve the original problem.
+    Take a problem and beak it down into smaller problems of the same type.
+    These subproblems are then solved independently, usually in parallel (i.e.
+    at the same time), after which their solutions can be combined to solve the
+    original problem.
 
 Typically divide and conquer algorithms adhere to the following structure:
 
 1. **Divide.** The problem is divided into smaller subproblems.
-
 2. **Conquer.** Each subproblem is solved.
-
-3. **Combine.** The results of each subproblem are combined to solve the original problem.
+3. **Combine.** The results of each subproblem are combined to solve the
+   original problem.
 
 .. dropdown:: Question 1
     :open:
@@ -51,11 +54,11 @@ Typically divide and conquer algorithms adhere to the following structure:
     .. code-block:: text
 
         BEGIN mystery(x, y)
-    
+
             if y = 1 THEN
                 return x
             ENDIF
-            
+
             IF y is even THEN
                 RETURN mystery(x, y/2) * mystery(y/2)
             ELSE
