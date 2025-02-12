@@ -16,7 +16,11 @@ author = 'Alison Wong, Stephen Tierney'
 suppress_warnings = ['misc.highlighting_failure']
 
 extensions = [
-    'sphinx_exec_code', 'sphinx_design', 'sphinx_copybutton', 'sphinxcontrib.spelling'
+    'sphinx_design',
+    'sphinx_exec_code',
+    'sphinx_copybutton',
+    'sphinxcontrib.spelling',
+    'sphinx.ext.graphviz',
 ]
 
 templates_path = ['_templates']
