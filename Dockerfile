@@ -1,7 +1,7 @@
 FROM python:3.11
 
 RUN apt-get update
-RUN apt-get -y install libenchant-2-2
+RUN apt-get -y install libenchant-2-2 graphviz
 
 COPY . /stage6_se
 
