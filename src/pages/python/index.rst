@@ -3,6 +3,7 @@ Python
 
 .. toctree::
     :maxdepth: 2
+    :numbered: 3
 
     basics/index
     conditionals/index
