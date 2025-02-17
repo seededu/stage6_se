@@ -115,7 +115,7 @@ statement runs.
             print('GO!')
         elif light == 'yellow':
             print('Slow down!')
-        elif tlight == 'red':
+        elif light == 'red':
             print('Stop!')
         else:
             print("That can't be right. Traffic lights can't be {}.".format(light))
